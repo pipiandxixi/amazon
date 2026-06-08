@@ -31,12 +31,5 @@
       "excluded_paths": ["Toys", "Electronics"],
       "excluded_keywords": ["Battery", "Charger"]
     }
-  },
-  "keyword_filter_params": {
-    "minSearches": "500",
-    "minPurchases": "10",
-    "maxMonopolyClickRate": "60.0",
-    "minPurchaseRate": "1.0",
-    "maxAvgReviews": "1000"
   }
 }

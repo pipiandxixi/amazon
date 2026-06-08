@@ -227,7 +227,8 @@ js_scrape_code = """
 
 def main():
     parser = argparse.ArgumentParser(description="Amazon Keyword Scan Script")
-    parser.add_argument('--config', type=str, default='scripts/market_config.json', help='Path to configuration JSON')
+    parser.add_argument('--config', type=str, default='scripts/keyword_config.json', help='Path to configuration JSON')
+    parser.add_argument('--market-config', type=str, default='scripts/market_config.json', help='Path to market config JSON for risk rules')
     parser.add_argument('--categories-json', type=str, default='', help='Path to category results JSON to pull seeds dynamically')
     parser.add_argument('--seeds', type=str, default='', help='Override seeds list, comma separated')
     parser.add_argument('--date', type=str, default='', help='Date override YYYY_MM_DD')
@@ -239,8 +240,15 @@ def main():
     print("Loading config from " + args.config + "...")
     with open(args.config, 'r', encoding='utf-8') as f:
         config = json.load(f)
-    keyword_params = config.get('keyword_filter_params', {})
-    rules = config.get('risk_rules', {})
+    keyword_params = config.get('filter_params', {})
+    
+    # Load market rules for classification
+    rules = {}
+    if os.path.exists(args.market_config):
+        print("Loading market rules from " + args.market_config + "...")
+        with open(args.market_config, 'r', encoding='utf-8') as f:
+            market_config = json.load(f)
+        rules = market_config.get('risk_rules', {})
     
     # 2. Extract seeds
     seeds = []
