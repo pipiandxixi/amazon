@@ -283,7 +283,7 @@ def generate_report(config_path, config, mode, scans, date_str):
         "> [!IMPORTANT]",
         f"> 模式：`{mode}`。配置文件：`{config_path}`。",
         f"> 扫描 **{len(scans)}** 个查询、**{pages_scanned}** 页；其中 **{niches_with_results}** 个查询有结果，报告收录 **{len(keywords)}** 个关键词。",
-        f"> 排序：{'购买率' if mode == 'global' else '月搜索量'}降序。规则：月搜索量 ≥ {params.get('minSearches', 'N/A')}，月购买量 ≥ {params.get('minPurchases', 'N/A')}，购买率 ≥ {params.get('minPurchaseRate', 'N/A')}%，需供比 ≥ {params.get('minSupplyDemandRatio', 'N/A')}，商品数 ≤ {params.get('maxProducts', 'N/A')}，最大点击集中度 ≤ {params.get('maxMonopolyClickRate', 'N/A')}%，最大 Reviews ≤ {params.get('maxAvgReviews', 'N/A')}，最大标题密度 ≤ {params.get('maxTitleDensity', 'N/A')}，最大 SPR ≤ {params.get('maxSPR', 'N/A')}，最大竞价 ≤ ${params.get('maxBid', 'N/A')}。\n",
+        f"> 排序：{'购买率' if mode == 'global' else '月搜索量'}降序。规则：月搜索量 ≥ {params.get('minSearches', 'N/A')}，月购买量 ≥ {params.get('minPurchases', 'N/A')}，购买率 ≥ {params.get('minPurchaseRate', 'N/A')}%，增长率 ≥ {params.get('minGrowth', 'N/A')}%，需供比 ≥ {params.get('minSupplyDemandRatio', 'N/A')}，商品数 ≤ {params.get('maxProducts', 'N/A')}，最大点击集中度 ≤ {params.get('maxMonopolyClickRate', 'N/A')}%，最大 Reviews ≤ {params.get('maxAvgReviews', 'N/A')}，最大标题密度 ≤ {params.get('maxTitleDensity', 'N/A')}，最大 SPR ≤ {params.get('maxSPR', 'N/A')}，最大竞价 ≤ ${params.get('maxBid', 'N/A')}。\n",
     ]
     for scan in scans:
         if mode == "targeted":

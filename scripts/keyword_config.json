@@ -98,6 +98,7 @@
     "minSearches": "300",
     "minPurchases": "10",
     "minPurchaseRate": "1.0",
+    "minGrowth": "-5",
     "minSupplyDemandRatio": "2",
     "maxProducts": "30000",
     "maxMonopolyClickRate": "55.0",
