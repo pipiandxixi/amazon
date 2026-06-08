@@ -1,13 +1,22 @@
 {
   "filter_params": {
-    "minSearches": "500",
-    "minPurchases": "15",
-    "minPurchaseRate": "1.2",
-    "maxMonopolyClickRate": "55.0",
-    "maxAvgReviews": "800",
-    "maxTitleDensity": "12",
-    "maxSPR": "18",
+    "minSearches": "5000",
+    "minPurchases": "150",
+    "minPurchaseRate": "2.0",
+    "minGrowth": "0",
+    "minAvgPrice": "20",
+    "maxAvgPrice": "100",
+    "maxProducts": "5000",
+    "minSupplyDemandRatio": "20",
+    "maxMonopolyClickRate": "35.0",
+    "maxAvgReviews": "300",
+    "maxTitleDensity": "5",
+    "maxSPR": "12",
     "maxBid": "1.50"
+  },
+  "sort": {
+    "field": "purchase_rate",
+    "descending": true
   },
   "scan_policy": {
     "max_pages": 5,

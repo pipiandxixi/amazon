@@ -2,6 +2,7 @@ import argparse
 import datetime
 import json
 import os
+import re
 import time
 
 from scan_common import (
@@ -72,7 +73,13 @@ SCRAPE_KEYWORDS_JS = """
 """
 
 
-def submit_global_search(filter_params):
+def submit_global_search(filter_params, sort_config):
+    form_params = dict(filter_params)
+    form_params["marketPeriod"] = "N"
+    form_params["marketQuota"] = sort_config.get("field", "purchase_rate")
+    form_params["quotaOrder"] = "1" if sort_config.get("descending", True) else "0"
+    form_params["order.field"] = form_params["marketQuota"]
+    form_params["order.desc"] = "true" if form_params["quotaOrder"] == "1" else "false"
     fill_js = """
     (() => {
       const toggle = document.querySelector('a[name=switchVisible]');
@@ -86,12 +93,12 @@ def submit_global_search(filter_params):
         }
       });
 
-      const params = """ + json.dumps(filter_params) + """;
-      Array.from(document.querySelectorAll('input[name]')).forEach(input => {
-        if (params[input.name] !== undefined) {
-          input.value = params[input.name];
-          input.dispatchEvent(new Event('input', { bubbles: true }));
-          input.dispatchEvent(new Event('change', { bubbles: true }));
+      const params = """ + json.dumps(form_params) + """;
+      Array.from(document.querySelectorAll('input[name], select[name]')).forEach(control => {
+        if (params[control.name] !== undefined) {
+          control.value = params[control.name];
+          control.dispatchEvent(new Event('input', { bubbles: true }));
+          control.dispatchEvent(new Event('change', { bubbles: true }));
         }
       });
 
@@ -112,8 +119,19 @@ def first_keyword():
     return extract_json_object(output).get("firstKeyword", "")
 
 
+def result_total():
+    output = eval_browser(
+        "(() => { const m=document.body.innerText.match(/搜索结果数:\\\\s*([^\\\\n]+)/);"
+        " return JSON.stringify({total:m ? m[1] : ''}); })()"
+    )
+    value = extract_json_object(output).get("total", "")
+    match = re.search(r"[\d,]+", value)
+    return int(match.group(0).replace(",", "")) if match else 0
+
+
 def scan_global_keywords(config):
     filter_params = config.get("filter_params", {})
+    sort_config = config.get("sort", {})
     policy = config.get("scan_policy", {})
     max_pages = int(policy.get("max_pages", 5))
     wait_attempts = int(policy.get("wait_attempts", 12))
@@ -124,7 +142,7 @@ def scan_global_keywords(config):
     time.sleep(4)
 
     previous_first = first_keyword()
-    submission = submit_global_search(filter_params)
+    submission = submit_global_search(filter_params, sort_config)
     if "submitted" not in submission:
         raise ValueError(f"Could not submit global keyword search: {submission}")
 
@@ -137,6 +155,7 @@ def scan_global_keywords(config):
     if not state.get("ready"):
         raise ValueError(f"Global keyword results did not load: {state}")
 
+    total = result_total()
     results = []
     seen_pages = set()
     pages_scanned = 0
@@ -147,10 +166,12 @@ def scan_global_keywords(config):
             break
         seen_pages.add(signature)
         results.extend(page_items)
+        if total:
+            results = results[:total]
         pages_scanned += 1
         print(f"Scraped {len(page_items)} global keywords on page {page}.")
 
-        if page == max_pages:
+        if page == max_pages or (total and len(results) >= total):
             break
         previous_first = first_keyword()
         click_result = eval_browser("""
@@ -174,14 +195,18 @@ def scan_global_keywords(config):
         if not state.get("ready"):
             break
 
-    return results, pages_scanned
+    time.sleep(wait_interval)
+    final_total = result_total() or total
+    if final_total:
+        results = results[:final_total]
+    return results, pages_scanned, final_total
 
 
 def clean_cell(value):
     return str(value or "-").replace("\n", " <br> ").replace("|", "\\|").strip()
 
 
-def generate_report(config_path, config, keywords, pages_scanned, date_str):
+def generate_report(config_path, config, keywords, pages_scanned, total, date_str):
     params = config.get("filter_params", {})
     report_path = RESULTS_DIR / "keywords" / f"keyword_scan_report_{date_str}.md"
     os.makedirs(report_path.parent, exist_ok=True)
@@ -190,8 +215,8 @@ def generate_report(config_path, config, keywords, pages_scanned, date_str):
         f"# 亚马逊全局关键词扫描报告 ({date_str.replace('_', '-')})\n",
         "> [!IMPORTANT]",
         f"> 本报告使用 `{config_path}` 对 SellerSprite 全局关键词库进行独立扫描，没有使用任何候选类目或种子词限制。",
-        f"> 共扫描 **{pages_scanned}** 页，获得 **{len(keywords)}** 个符合条件的关键词。",
-        f"> 规则：月搜索量 ≥ {params.get('minSearches', 'N/A')}，月购买量 ≥ {params.get('minPurchases', 'N/A')}，购买率 ≥ {params.get('minPurchaseRate', 'N/A')}%，最大垄断点击率 ≤ {params.get('maxMonopolyClickRate', 'N/A')}%，最大 Reviews ≤ {params.get('maxAvgReviews', 'N/A')}，最大标题密度 ≤ {params.get('maxTitleDensity', 'N/A')}，最大 SPR ≤ {params.get('maxSPR', 'N/A')}，最大竞价 ≤ ${params.get('maxBid', 'N/A')}。\n",
+        f"> 当前过滤条件共返回 **{total or len(keywords)}** 个关键词；扫描 **{pages_scanned}** 页，报告收录 **{len(keywords)}** 个。",
+        f"> 排序：购买率降序。规则：一般性市场，月搜索量 ≥ {params.get('minSearches', 'N/A')}，月购买量 ≥ {params.get('minPurchases', 'N/A')}，购买率 ≥ {params.get('minPurchaseRate', 'N/A')}%，增长率 ≥ {params.get('minGrowth', 'N/A')}%，价格 ${params.get('minAvgPrice', 'N/A')}-${params.get('maxAvgPrice', 'N/A')}，商品数 ≤ {params.get('maxProducts', 'N/A')}，需供比 ≥ {params.get('minSupplyDemandRatio', 'N/A')}，最大点击集中度 ≤ {params.get('maxMonopolyClickRate', 'N/A')}%，最大 Reviews ≤ {params.get('maxAvgReviews', 'N/A')}，最大标题密度 ≤ {params.get('maxTitleDensity', 'N/A')}，最大 SPR ≤ {params.get('maxSPR', 'N/A')}，最大竞价 ≤ ${params.get('maxBid', 'N/A')}。\n",
         "| 序号 | 关键词 | 月搜索量 | 月购买量 / 购买率 | 月点击量 | 增长率 | 点击集中度 | 需供比 / 商品数 | PPC竞价 | 平均价格 / Reviews | 详情 |",
         "| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |",
     ]
@@ -220,8 +245,8 @@ def main():
 
     with open(args.config, encoding="utf-8") as file:
         config = json.load(file)
-    keywords, pages_scanned = scan_global_keywords(config)
-    generate_report(args.config, config, keywords, pages_scanned, date_str)
+    keywords, pages_scanned, total = scan_global_keywords(config)
+    generate_report(args.config, config, keywords, pages_scanned, total, date_str)
 
 
 if __name__ == "__main__":
