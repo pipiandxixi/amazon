@@ -12,7 +12,6 @@ from scan_common import (
     extract_json_array,
     extract_json_object,
     open_browser,
-    wait_for_query_result,
 )
 
 
@@ -73,9 +72,10 @@ SCRAPE_KEYWORDS_JS = """
 """
 
 
-def submit_global_search(filter_params, sort_config):
+def submit_search(filter_params, sort_config, term="", market_period=""):
     form_params = dict(filter_params)
-    form_params["marketPeriod"] = "N"
+    form_params["includeKeywords"] = term
+    form_params["marketPeriod"] = market_period
     form_params["marketQuota"] = sort_config.get("field", "purchase_rate")
     form_params["quotaOrder"] = "1" if sort_config.get("descending", True) else "0"
     form_params["order.field"] = form_params["marketQuota"]
@@ -85,11 +85,11 @@ def submit_global_search(filter_params, sort_config):
       const toggle = document.querySelector('a[name=switchVisible]');
       if (toggle && toggle.innerText.includes('展开')) toggle.click();
 
-      Array.from(document.querySelectorAll('input[name]')).forEach(input => {
-        if (!['station', 'order.field', 'order.desc'].includes(input.name)) {
-          input.value = '';
-          input.dispatchEvent(new Event('input', { bubbles: true }));
-          input.dispatchEvent(new Event('change', { bubbles: true }));
+      Array.from(document.querySelectorAll('input[name], select[name]')).forEach(control => {
+        if (!['station', 'order.field', 'order.desc', 'month'].includes(control.name)) {
+          control.value = '';
+          control.dispatchEvent(new Event('input', { bubbles: true }));
+          control.dispatchEvent(new Event('change', { bubbles: true }));
         }
       });
 
@@ -129,31 +129,45 @@ def result_total():
     return int(match.group(0).replace(",", "")) if match else 0
 
 
-def scan_global_keywords(config):
-    filter_params = config.get("filter_params", {})
-    sort_config = config.get("sort", {})
-    policy = config.get("scan_policy", {})
-    max_pages = int(policy.get("max_pages", 5))
+def wait_for_search(term, previous_first, attempts, interval):
+    expected = json.dumps(term.lower())
+    previous = json.dumps(previous_first)
+    js = f"""
+    (() => {{
+      const table = document.querySelector('table#table-condition-search');
+      const rows = table ? table.querySelectorAll('tbody tr').length : 0;
+      const firstRow = table ? table.querySelector('tbody tr') : null;
+      const firstKeyword = firstRow ? firstRow.innerText : '';
+      const input = document.querySelector('input[name=includeKeywords]');
+      const inputValue = input ? input.value.trim().toLowerCase() : '';
+      const loading = !!document.querySelector('.el-loading-mask, .loading, [aria-busy=true]');
+      return JSON.stringify({{
+        rows, firstKeyword, inputValue, loading,
+        ready: inputValue === {expected} && !loading && (rows === 0 || firstKeyword !== {previous})
+      }});
+    }})()
+    """
+    state = {}
+    for _ in range(attempts):
+        state = extract_json_object(eval_browser(js))
+        if state.get("ready"):
+            return state
+        time.sleep(interval)
+    return state
+
+
+def scan_query(filter_params, sort_config, policy, term="", market_period="", max_pages=1):
     wait_attempts = int(policy.get("wait_attempts", 12))
     wait_interval = float(policy.get("wait_interval_seconds", 2))
 
-    print("Opening global Keyword Research page...")
-    open_browser("https://www.sellersprite.com/v2/keyword-research")
-    time.sleep(4)
-
     previous_first = first_keyword()
-    submission = submit_global_search(filter_params, sort_config)
+    submission = submit_search(filter_params, sort_config, term=term, market_period=market_period)
     if "submitted" not in submission:
-        raise ValueError(f"Could not submit global keyword search: {submission}")
+        raise ValueError(f"Could not submit keyword search for '{term or 'GLOBAL'}': {submission}")
 
-    state = wait_for_query_result(
-        "",
-        previous_first_keyword=previous_first,
-        attempts=wait_attempts,
-        interval=wait_interval,
-    )
+    state = wait_for_search(term, previous_first, wait_attempts, wait_interval)
     if not state.get("ready"):
-        raise ValueError(f"Global keyword results did not load: {state}")
+        return [], 0, 0
 
     total = result_total()
     results = []
@@ -169,7 +183,7 @@ def scan_global_keywords(config):
         if total:
             results = results[:total]
         pages_scanned += 1
-        print(f"Scraped {len(page_items)} global keywords on page {page}.")
+        print(f"Scraped {len(page_items)} keywords for '{term or 'GLOBAL'}' on page {page}.")
 
         if page == max_pages or (total and len(results) >= total):
             break
@@ -186,12 +200,7 @@ def scan_global_keywords(config):
         """)
         if "clicked" not in click_result:
             break
-        state = wait_for_query_result(
-            "",
-            previous_first_keyword=previous_first,
-            attempts=wait_attempts,
-            interval=wait_interval,
-        )
+        state = wait_for_search(term, previous_first, wait_attempts, wait_interval)
         if not state.get("ready"):
             break
 
@@ -199,36 +208,101 @@ def scan_global_keywords(config):
     final_total = result_total() or total
     if final_total:
         results = results[:final_total]
-    return results, pages_scanned, final_total
+    return results, pages_scanned, final_total or len(results)
+
+
+def scan_keywords(config):
+    target_groups = [
+        {
+            "name": group["name"].strip(),
+            "seeds": [seed.strip() for seed in group.get("seeds", []) if seed.strip()],
+        }
+        for group in config.get("target_groups", [])
+        if group.get("name", "").strip()
+    ]
+    policy = config.get("scan_policy", {})
+    print("Opening Keyword Research page...")
+    open_browser("https://www.sellersprite.com/v2/keyword-research")
+    time.sleep(4)
+
+    if not target_groups:
+        results, pages, total = scan_query(
+            config.get("filter_params", {}),
+            config.get("sort", {}),
+            policy,
+            market_period="N",
+            max_pages=int(policy.get("max_pages", 5)),
+        )
+        return "global", [{"niche": "GLOBAL", "keywords": results, "pages": pages, "total": total}]
+
+    targeted_sort = {"field": "searches", "descending": True}
+    scans = []
+    max_pages = int(policy.get("targeted_max_pages_per_niche", 1))
+    filters = config.get("targeted_filter_params", {})
+    for index, group in enumerate(target_groups, 1):
+        niche = group["name"]
+        seeds = group["seeds"]
+        if not seeds:
+            scans.append({"niche": niche, "seeds": [], "keywords": [], "pages": 0, "total": 0})
+            continue
+        term = ",".join(seeds)
+        print(f"\n[{index}/{len(target_groups)}] Scanning niche '{niche}' with seeds: {term}")
+        results, pages, total = scan_query(
+            filters,
+            targeted_sort,
+            policy,
+            term=term,
+            market_period="",
+            max_pages=max_pages,
+        )
+        scans.append({
+            "niche": niche,
+            "seeds": seeds,
+            "keywords": results,
+            "pages": pages,
+            "total": total,
+        })
+    return "targeted", scans
 
 
 def clean_cell(value):
     return str(value or "-").replace("\n", " <br> ").replace("|", "\\|").strip()
 
 
-def generate_report(config_path, config, keywords, pages_scanned, total, date_str):
-    params = config.get("filter_params", {})
+def generate_report(config_path, config, mode, scans, date_str):
+    params = config.get("filter_params" if mode == "global" else "targeted_filter_params", {})
     report_path = RESULTS_DIR / "keywords" / f"keyword_scan_report_{date_str}.md"
     os.makedirs(report_path.parent, exist_ok=True)
+    keywords = [keyword for scan in scans for keyword in scan["keywords"]]
+    pages_scanned = sum(scan["pages"] for scan in scans)
+    total = sum(scan["total"] for scan in scans)
+    niches_with_results = sum(bool(scan["keywords"]) for scan in scans)
 
     md = [
-        f"# 亚马逊全局关键词扫描报告 ({date_str.replace('_', '-')})\n",
+        f"# 亚马逊{'全局' if mode == 'global' else '候选 Niche 定向'}关键词扫描报告 ({date_str.replace('_', '-')})\n",
         "> [!IMPORTANT]",
-        f"> 本报告使用 `{config_path}` 对 SellerSprite 全局关键词库进行独立扫描，没有使用任何候选类目或种子词限制。",
-        f"> 当前过滤条件共返回 **{total or len(keywords)}** 个关键词；扫描 **{pages_scanned}** 页，报告收录 **{len(keywords)}** 个。",
-        f"> 排序：购买率降序。规则：一般性市场，月搜索量 ≥ {params.get('minSearches', 'N/A')}，月购买量 ≥ {params.get('minPurchases', 'N/A')}，购买率 ≥ {params.get('minPurchaseRate', 'N/A')}%，增长率 ≥ {params.get('minGrowth', 'N/A')}%，价格 ${params.get('minAvgPrice', 'N/A')}-${params.get('maxAvgPrice', 'N/A')}，商品数 ≤ {params.get('maxProducts', 'N/A')}，需供比 ≥ {params.get('minSupplyDemandRatio', 'N/A')}，最大点击集中度 ≤ {params.get('maxMonopolyClickRate', 'N/A')}%，最大 Reviews ≤ {params.get('maxAvgReviews', 'N/A')}，最大标题密度 ≤ {params.get('maxTitleDensity', 'N/A')}，最大 SPR ≤ {params.get('maxSPR', 'N/A')}，最大竞价 ≤ ${params.get('maxBid', 'N/A')}。\n",
-        "| 序号 | 关键词 | 月搜索量 | 月购买量 / 购买率 | 月点击量 | 增长率 | 点击集中度 | 需供比 / 商品数 | PPC竞价 | 平均价格 / Reviews | 详情 |",
-        "| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |",
+        f"> 模式：`{mode}`。配置文件：`{config_path}`。",
+        f"> 扫描 **{len(scans)}** 个查询、**{pages_scanned}** 页；其中 **{niches_with_results}** 个查询有结果，报告收录 **{len(keywords)}** 个关键词。",
+        f"> 排序：{'购买率' if mode == 'global' else '月搜索量'}降序。规则：月搜索量 ≥ {params.get('minSearches', 'N/A')}，月购买量 ≥ {params.get('minPurchases', 'N/A')}，购买率 ≥ {params.get('minPurchaseRate', 'N/A')}%，需供比 ≥ {params.get('minSupplyDemandRatio', 'N/A')}，商品数 ≤ {params.get('maxProducts', 'N/A')}，最大点击集中度 ≤ {params.get('maxMonopolyClickRate', 'N/A')}%，最大 Reviews ≤ {params.get('maxAvgReviews', 'N/A')}，最大标题密度 ≤ {params.get('maxTitleDensity', 'N/A')}，最大 SPR ≤ {params.get('maxSPR', 'N/A')}，最大竞价 ≤ ${params.get('maxBid', 'N/A')}。\n",
     ]
-    for index, keyword in enumerate(keywords, 1):
-        md.append(
-            f"| {index} | **{clean_cell(keyword.get('keyword'))}** | "
-            f"{clean_cell(keyword.get('searches'))} | {clean_cell(keyword.get('purchases'))} | "
-            f"{clean_cell(keyword.get('clicks'))} | {clean_cell(keyword.get('growth'))} | "
-            f"{clean_cell(keyword.get('monopoly'))} | {clean_cell(keyword.get('products'))} | "
-            f"{clean_cell(keyword.get('bid'))} | {clean_cell(keyword.get('price_reviews'))} | "
-            f"{clean_cell(keyword.get('details'))} |"
-        )
+    for scan in scans:
+        if mode == "targeted":
+            md.append(f"## {scan['niche']} ({len(scan['keywords'])} captured; query total {scan['total']})\n")
+            md.append(f"> Seeds: `{', '.join(scan.get('seeds', [])) or 'none'}`\n")
+        md.extend([
+            "| 序号 | 关键词 | 月搜索量 | 月购买量 / 购买率 | 月点击量 | 增长率 | 点击集中度 | 需供比 / 商品数 | PPC竞价 | 平均价格 / Reviews | 详情 |",
+            "| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |",
+        ])
+        for index, keyword in enumerate(scan["keywords"], 1):
+            md.append(
+                f"| {index} | **{clean_cell(keyword.get('keyword'))}** | "
+                f"{clean_cell(keyword.get('searches'))} | {clean_cell(keyword.get('purchases'))} | "
+                f"{clean_cell(keyword.get('clicks'))} | {clean_cell(keyword.get('growth'))} | "
+                f"{clean_cell(keyword.get('monopoly'))} | {clean_cell(keyword.get('products'))} | "
+                f"{clean_cell(keyword.get('bid'))} | {clean_cell(keyword.get('price_reviews'))} | "
+                f"{clean_cell(keyword.get('details'))} |"
+            )
+        md.append("")
 
     with report_path.open("w", encoding="utf-8") as file:
         file.write("\n".join(md))
@@ -245,8 +319,8 @@ def main():
 
     with open(args.config, encoding="utf-8") as file:
         config = json.load(file)
-    keywords, pages_scanned, total = scan_global_keywords(config)
-    generate_report(args.config, config, keywords, pages_scanned, total, date_str)
+    mode, scans = scan_keywords(config)
+    generate_report(args.config, config, mode, scans, date_str)
 
 
 if __name__ == "__main__":
