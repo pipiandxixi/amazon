@@ -96,7 +96,7 @@ def main() -> None:
     args = parse_args()
     root = Path(__file__).resolve().parents[1]
     market_path = args.market_report or latest_report(
-        root / "results/categories", "market_scan_report_*.md"
+        root / "results", "market_scan_report_*.md"
     )
     keyword_path = args.keyword_report or latest_report(
         root / "results/keywords", "keyword_scan_report_*.md"

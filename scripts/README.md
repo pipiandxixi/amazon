@@ -13,7 +13,7 @@ The scan saves every unique category returned across the configured number of
 pages, classifies all results as green/yellow/red, and writes:
 
 ```text
-results/categories/market_scan_report_YYYY_MM_DD.md
+results/market_scan_report_YYYY_MM_DD.md
 ```
 
 It does not select a fixed Top-K. `scan_policy.target_candidate_min/max` audits
@@ -23,7 +23,7 @@ Append all fields from a SellerSprite market-research XLSX export:
 
 ```bash
 python3 scripts/import_market_excel.py /path/to/market-research.xlsx \
-  --report results/categories/market_scan_report_YYYY_MM_DD.md
+  --report results/market_scan_report_YYYY_MM_DD.md
 ```
 
 The importer uses only the Python standard library and replaces the previous

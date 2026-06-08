@@ -65,7 +65,7 @@ def category_names_from_report(report):
 def main():
     parser = argparse.ArgumentParser(description="Append SellerSprite Excel fields to market report")
     parser.add_argument("excel", help="Path to SellerSprite market-research XLSX export")
-    parser.add_argument("--report", default="results/categories/market_scan_report_2026_06_08.md")
+    parser.add_argument("--report", default="results/market_scan_report_2026_06_08.md")
     args = parser.parse_args()
 
     rows = read_sheet(args.excel)

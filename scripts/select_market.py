@@ -576,7 +576,7 @@ def generate_report(config_path, categories, date_str):
             md.append(f"  *   **{key}**：`{val_clean}`")
         md.append("\n---\n")
         
-    report_file = RESULTS_DIR / "categories" / f"market_scan_report_{date_str}.md"
+    report_file = RESULTS_DIR / f"market_scan_report_{date_str}.md"
     os.makedirs(report_file.parent, exist_ok=True)
     with open(report_file, 'w', encoding='utf-8') as f:
         f.write("\n".join(md))
