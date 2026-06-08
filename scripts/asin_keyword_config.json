@@ -1,0 +1,34 @@
+{
+  "filters": {
+    "min_searches": {"value": 300, "label": "月搜索量最小值"},
+    "min_purchases": {"value": 10, "label": "月购买量最小值"},
+    "max_organic_rank": {"value": 100, "label": "自然排名最大值"},
+    "max_spr": {"value": 20, "label": "SPR 最大值"},
+    "max_title_density": {"value": 15, "label": "标题密度最大值"},
+    "max_products": {"value": 15000, "label": "相关商品数最大值"},
+    "max_ppc_bid": {"value": 2.0, "label": "PPC 精准建议竞价最大值（美元）"},
+    "allowed_traffic_types": {
+      "value": ["自然搜索词", "广告流量词"],
+      "label": "允许的流量词类型"
+    },
+    "excluded_keywords": {
+      "value": ["hudson", "jobe", "industries", "nr3xldu"],
+      "label": "排除的品牌词、竞品词或不相关词"
+    },
+    "require_numeric_searches": {"value": true, "label": "是否排除无搜索量数据的关键词"}
+  },
+  "score_weights": {
+    "searches_per_1000": {"value": 2.0, "label": "每 1000 月搜索量的得分"},
+    "max_search_score": {"value": 10.0, "label": "搜索量最高得分"},
+    "traffic_share": {"value": 1.0, "label": "每 1% 流量占比的得分"},
+    "max_traffic_score": {"value": 30.0, "label": "流量占比最高得分"},
+    "purchases_per_20": {"value": 1.0, "label": "每 20 次月购买量的得分"},
+    "max_purchase_score": {"value": 10.0, "label": "月购买量最高得分"},
+    "top_50_organic_bonus": {"value": 10.0, "label": "自然排名前 50 的奖励分"}
+  },
+  "scan_policy": {
+    "max_keywords": {"value": 20, "label": "最多输出关键词数"},
+    "page_wait_seconds": {"value": 5, "label": "页面打开后等待秒数"},
+    "query_wait_seconds": {"value": 8, "label": "提交 ASIN 后等待秒数"}
+  }
+}

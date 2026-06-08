@@ -7,6 +7,12 @@ import argparse
 
 from scan_common import RESULTS_DIR, OpenCliError, eval_browser, open_browser
 
+def values(section):
+    return {
+        key: item.get("value") if isinstance(item, dict) and "value" in item else item
+        for key, item in section.items()
+    }
+
 def clean_name(niche_str):
     if not niche_str:
         return ""
@@ -23,8 +29,8 @@ def scrape_market(config_path, date_str):
     print("Loading configuration from " + config_path + "...")
     with open(config_path, 'r', encoding='utf-8') as f:
         config = json.load(f)
-    params = config['filter_params']
-    scan_policy = config.get('scan_policy', {})
+    params = values(config['filter_params'])
+    scan_policy = values(config.get('scan_policy', {}))
     max_pages = int(scan_policy.get('max_pages', 5))
     
     print("Opening Market Research page...")
@@ -287,8 +293,11 @@ def generate_report(config_path, categories, date_str):
     print(f"Generating market report using configuration rules from {config_path}...")
     with open(config_path, 'r', encoding='utf-8') as f:
         config = json.load(f)
-    rules = config['risk_rules']
-    scan_policy = config.get('scan_policy', {})
+    rules = {
+        level: values(rule)
+        for level, rule in config['risk_rules'].items()
+    }
+    scan_policy = values(config.get('scan_policy', {}))
         
     scored_categories = []
     for item in categories:

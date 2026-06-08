@@ -1,64 +1,40 @@
 {
-  "_field_labels": {
-    "minAvgSales": "月均销量 - 最小值",
-    "maxAvgSales": "月均销量 - 最大值",
-    "minAvgPrice": "平均价格 - 最小值",
-    "maxAvgPrice": "平均价格 - 最大值",
-    "minTotalProducts": "商品总数 - 最小值",
-    "maxAvgSellers": "平均卖家数 - 最大值",
-    "maxHeadListingBrandCrn": "头部Listing品牌集中度 - 最大值",
-    "maxHeadListingSellerCrn": "头部Listing卖家集中度 - 最大值",
-    "maxAmzRatio": "Amazon自营占比 - 最大值",
-    "minNewRatio": "新品占比 - 最小值",
-    "maxNewAvgRating": "新品平均星级 - 最大值",
-    "maxAvgWeight": "平均重量 - 最大值（lbs）",
-    "maxAvgVolume": "平均体积 - 最大值（in³）",
-    "minAvgProfit": "平均毛利率 - 最小值",
-    "maxAvgReviews": "平均评分数 - 最大值"
-  },
   "filter_params": {
-    "minAvgSales": "100",
-    "maxAvgSales": "10000",
-    "minAvgPrice": "20.0",
-    "maxAvgPrice": "",
-    "minTotalProducts": "50",
-    "maxAvgSellers": "60.0",
-    "maxHeadListingBrandCrn": "65.0",
-    "maxHeadListingSellerCrn": "65.0",
-    "maxAmzRatio": "25.0",
-    "minNewRatio": "10.0",
-    "maxNewAvgRating": "4.5",
-    "maxAvgWeight": "3.0",
-    "maxAvgVolume": "800",
-    "minAvgProfit": "50.0",
-    "maxAvgReviews": "1200"
+    "minAvgSales": {"value": "100", "label": "月均销量最小值"},
+    "maxAvgSales": {"value": "10000", "label": "月均销量最大值"},
+    "minAvgPrice": {"value": "20.0", "label": "平均价格最小值（美元）"},
+    "maxAvgPrice": {"value": "", "label": "平均价格最大值（美元，可留空）"},
+    "minTotalProducts": {"value": "50", "label": "商品总数最小值"},
+    "maxAvgSellers": {"value": "60.0", "label": "平均卖家数最大值"},
+    "maxHeadListingBrandCrn": {"value": "65.0", "label": "头部 Listing 品牌集中度最大值（百分比）"},
+    "maxHeadListingSellerCrn": {"value": "65.0", "label": "头部 Listing 卖家集中度最大值（百分比）"},
+    "maxAmzRatio": {"value": "25.0", "label": "Amazon 自营占比最大值（百分比）"},
+    "minNewRatio": {"value": "10.0", "label": "新品占比最小值（百分比）"},
+    "maxNewAvgRating": {"value": "4.5", "label": "新品平均星级最大值"},
+    "maxAvgWeight": {"value": "3.0", "label": "平均重量最大值（lbs）"},
+    "maxAvgVolume": {"value": "800", "label": "平均体积最大值（in³）"},
+    "minAvgProfit": {"value": "50.0", "label": "平均毛利率最小值（百分比）"},
+    "maxAvgReviews": {"value": "1200", "label": "平均评分数最大值"}
   },
   "scan_policy": {
-    "max_pages": 5,
-    "target_candidate_min": 8,
-    "target_candidate_max": 15
-  },
-  "_risk_rule_labels": {
-    "max_return_rate": "平均退货率上限（脚本抓取后风控）",
-    "max_weight_lbs": "平均重量上限（lbs，脚本抓取后风控）",
-    "max_reviews": "平均评分数上限（脚本抓取后风控）",
-    "excluded_keywords": "排除的类目名称关键词",
-    "excluded_paths": "排除的市场路径关键词"
+    "max_pages": {"value": 5, "label": "最多扫描页数"},
+    "target_candidate_min": {"value": 8, "label": "期望候选类目数量下限"},
+    "target_candidate_max": {"value": 15, "label": "期望候选类目数量上限"}
   },
   "risk_rules": {
     "red": {
-      "max_return_rate": 10.0,
-      "max_weight_lbs": 2.5,
-      "max_reviews": 1000,
-      "excluded_keywords": ["Insects", "Livestock", "Wormers"],
-      "excluded_paths": ["Clothing", "Shoes", "Hoodies"]
+      "max_return_rate": {"value": 10.0, "label": "平均退货率上限（百分比）"},
+      "max_weight_lbs": {"value": 2.5, "label": "平均重量上限（lbs）"},
+      "max_reviews": {"value": 1000, "label": "平均评分数上限"},
+      "excluded_keywords": {"value": ["Insects", "Livestock", "Wormers"], "label": "排除的类目名称关键词"},
+      "excluded_paths": {"value": ["Clothing", "Shoes", "Hoodies"], "label": "排除的市场路径关键词"}
     },
     "yellow": {
-      "max_return_rate": 8.0,
-      "max_weight_lbs": 2.0,
-      "max_reviews": 800,
-      "excluded_paths": ["Toys", "Electronics"],
-      "excluded_keywords": ["Battery", "Charger"]
+      "max_return_rate": {"value": 8.0, "label": "触发谨慎评级的平均退货率（百分比）"},
+      "max_weight_lbs": {"value": 2.0, "label": "触发谨慎评级的平均重量（lbs）"},
+      "max_reviews": {"value": 800, "label": "触发谨慎评级的平均评分数"},
+      "excluded_paths": {"value": ["Toys", "Electronics"], "label": "触发谨慎评级的市场路径关键词"},
+      "excluded_keywords": {"value": ["Battery", "Charger"], "label": "触发谨慎评级的类目名称关键词"}
     }
   }
 }
