@@ -1,4 +1,21 @@
 {
+  "_field_labels": {
+    "minAvgSales": "月均销量 - 最小值",
+    "maxAvgSales": "月均销量 - 最大值",
+    "minAvgPrice": "平均价格 - 最小值",
+    "maxAvgPrice": "平均价格 - 最大值",
+    "minTotalProducts": "商品总数 - 最小值",
+    "maxAvgSellers": "平均卖家数 - 最大值",
+    "maxHeadListingBrandCrn": "头部Listing品牌集中度 - 最大值",
+    "maxHeadListingSellerCrn": "头部Listing卖家集中度 - 最大值",
+    "maxAmzRatio": "Amazon自营占比 - 最大值",
+    "minNewRatio": "新品占比 - 最小值",
+    "maxNewAvgRating": "新品平均星级 - 最大值",
+    "maxAvgWeight": "平均重量 - 最大值（lbs）",
+    "maxAvgVolume": "平均体积 - 最大值（in³）",
+    "minAvgProfit": "平均毛利率 - 最小值",
+    "maxAvgReviews": "平均评分数 - 最大值"
+  },
   "filter_params": {
     "minAvgSales": "100",
     "maxAvgSales": "10000",
@@ -20,6 +37,13 @@
     "max_pages": 5,
     "target_candidate_min": 8,
     "target_candidate_max": 15
+  },
+  "_risk_rule_labels": {
+    "max_return_rate": "平均退货率上限（脚本抓取后风控）",
+    "max_weight_lbs": "平均重量上限（lbs，脚本抓取后风控）",
+    "max_reviews": "平均评分数上限（脚本抓取后风控）",
+    "excluded_keywords": "排除的类目名称关键词",
+    "excluded_paths": "排除的市场路径关键词"
   },
   "risk_rules": {
     "red": {
