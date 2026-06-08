@@ -7,7 +7,7 @@
     "minAvgPrice": "20",
     "maxAvgPrice": "100",
     "maxProducts": "5000",
-    "minSupplyDemandRatio": "20",
+    "minSupplyDemandRatio": "15",
     "maxMonopolyClickRate": "35.0",
     "maxAvgReviews": "300",
     "maxTitleDensity": "5",
