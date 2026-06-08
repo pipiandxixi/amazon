@@ -4061,3 +4061,8408 @@
   *   **搜索购买比**：`9.3‰`
 
 ---
+
+## 四、SellerSprite Excel 导出完整字段
+
+> 来源：`Market-research(200)WorkoutTop&BottomSets-US-Last-30-days.xlsx`
+> Excel 包含 **200** 个类目、**37** 个字段；其中 **196** 个类目名称可与当前市场报告直接匹配。
+
+### Workout Top & Bottom Sets (服装套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Workout Top & Bottom Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 服装套装 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Clothing:Active:Sets:Workout Top & Bottom Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：50 <br> 卖家：51 |
+| Listing样本数(TOP100) / 月总销量 | 432355.0 |
+| Listing样本数(TOP100) / 月均销量 | 4323.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 124690.0 |
+| Listing样本数(TOP100) / 平均价格($) | 28.92 |
+| Listing样本数(TOP100) / 平均评分数 | 695.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 37742.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 98%  <br> AMZ: 0%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.309 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.577 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.561 |
+| Listing样本数(TOP100) / 商品总数 | 3038.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.5775 |
+| Listing样本数(TOP100) / 平均体积(in³) | 130.481 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.96 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 82.0% |
+| 头部Listing数(TOP10) / 月均销量 | 13369.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 379562.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2236.0 |
+| 新品(半年内上架) / 新品数量 | 26.0 |
+| 新品(半年内上架) / 新品占比 | 0.26 |
+| 新品(半年内上架) / 月均销量 | 4031.0 |
+| 新品(半年内上架) / 月均销售额($) | 108942.0 |
+| 新品(半年内上架) / 平均价格($) | 26.82 |
+| 新品(半年内上架) / 平均评分数 | 112.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.179375 |
+| 所有Listing(半年内) / 同类目退货率 | 0.123008005 |
+| 所有Listing(半年内) / 搜索购买比 | 4.01962 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.06877 |
+
+### Sandals (时装凉鞋、凉拖)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Sandals |
+| Listing样本数(TOP100) / 细分市场(翻译) | 时装凉鞋、凉拖 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Girls:Shoes:Sandals |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：58 <br> 卖家：55 |
+| Listing样本数(TOP100) / 月总销量 | 388768.0 |
+| Listing样本数(TOP100) / 月均销量 | 3887.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 78177.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.89 |
+| Listing样本数(TOP100) / 平均评分数 | 1125.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 16653.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 77%  <br> AMZ: 17%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.405 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.6 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.633 |
+| Listing样本数(TOP100) / 商品总数 | 2853.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.5212 |
+| Listing样本数(TOP100) / 平均体积(in³) | 131.6465 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.97 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 66.0% |
+| 头部Listing数(TOP10) / 月均销量 | 15766.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 259300.0 |
+| 头部Listing数(TOP10) / 平均BSR | 3024.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 2282.0 |
+| 新品(半年内上架) / 月均销售额($) | 47957.0 |
+| 新品(半年内上架) / 平均价格($) | 22.2 |
+| 新品(半年内上架) / 平均评分数 | 152.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.151503 |
+| 所有Listing(半年内) / 同类目退货率 | 0.163986 |
+| 所有Listing(半年内) / 搜索购买比 | 5.93098 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.04086 |
+
+### Shrugs (女装短针织衫)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Shrugs |
+| Listing样本数(TOP100) / 细分市场(翻译) | 女装短针织衫 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Clothing:Sweaters:Shrugs |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：64 <br> 卖家：65 |
+| Listing样本数(TOP100) / 月总销量 | 292212.0 |
+| Listing样本数(TOP100) / 月均销量 | 2922.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 60808.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.28 |
+| Listing样本数(TOP100) / 平均评分数 | 875.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 36483.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 99%  <br> AMZ: 0%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.274 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.479 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.465 |
+| Listing样本数(TOP100) / 商品总数 | 1603.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4068 |
+| Listing样本数(TOP100) / 平均体积(in³) | 83.9729 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.97 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 55.0% |
+| 头部Listing数(TOP10) / 月均销量 | 8011.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 173171.0 |
+| 头部Listing数(TOP10) / 平均BSR | 69666.0 |
+| 新品(半年内上架) / 新品数量 | 21.0 |
+| 新品(半年内上架) / 新品占比 | 0.21 |
+| 新品(半年内上架) / 月均销量 | 3249.0 |
+| 新品(半年内上架) / 月均销售额($) | 69456.0 |
+| 新品(半年内上架) / 平均价格($) | 20.87 |
+| 新品(半年内上架) / 平均评分数 | 126.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.209571 |
+| 所有Listing(半年内) / 同类目退货率 | 0.24188499 |
+| 所有Listing(半年内) / 搜索购买比 | 5.40429 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0629 |
+
+### One-Pieces (连体泳衣)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | One-Pieces |
+| Listing样本数(TOP100) / 细分市场(翻译) | 连体泳衣 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Girls:Clothing:Swim:One-Pieces |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：68 <br> 卖家：61 |
+| Listing样本数(TOP100) / 月总销量 | 228151.0 |
+| Listing样本数(TOP100) / 月均销量 | 2281.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 46269.0 |
+| Listing样本数(TOP100) / 平均价格($) | 21.25 |
+| Listing样本数(TOP100) / 平均评分数 | 622.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 21923.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 12%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.313 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.413 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.506 |
+| Listing样本数(TOP100) / 商品总数 | 2583.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.2562 |
+| Listing样本数(TOP100) / 平均体积(in³) | 68.2831 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.94 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 70.0% |
+| 头部Listing数(TOP10) / 月均销量 | 7132.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 117363.0 |
+| 头部Listing数(TOP10) / 平均BSR | 4055.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 1469.0 |
+| 新品(半年内上架) / 月均销售额($) | 36563.0 |
+| 新品(半年内上架) / 平均价格($) | 25.31 |
+| 新品(半年内上架) / 平均评分数 | 80.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.131053 |
+| 所有Listing(半年内) / 同类目退货率 | 0.215473 |
+| 所有Listing(半年内) / 搜索购买比 | 5.67267 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05444 |
+
+### Outdoor Statues (户外雕像)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Outdoor Statues |
+| Listing样本数(TOP100) / 细分市场(翻译) | 户外雕像 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Outdoor Décor:Garden Sculptures & Statues:Outdoor Statues |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：73 |
+| Listing样本数(TOP100) / 月总销量 | 193889.0 |
+| Listing样本数(TOP100) / 月均销量 | 1938.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 53610.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.31 |
+| Listing样本数(TOP100) / 平均评分数 | 918.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 12447.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 92%  <br> AMZ: 3%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.365 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.455 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.469 |
+| Listing样本数(TOP100) / 商品总数 | 12058.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.1085 |
+| Listing样本数(TOP100) / 平均体积(in³) | 457.5768 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.85 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 73.0% |
+| 头部Listing数(TOP10) / 月均销量 | 7075.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 239291.0 |
+| 头部Listing数(TOP10) / 平均BSR | 1705.0 |
+| 新品(半年内上架) / 新品数量 | 19.0 |
+| 新品(半年内上架) / 新品占比 | 0.19 |
+| 新品(半年内上架) / 月均销量 | 1291.0 |
+| 新品(半年内上架) / 月均销售额($) | 28254.0 |
+| 新品(半年内上架) / 平均价格($) | 22.95 |
+| 新品(半年内上架) / 平均评分数 | 64.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.029799 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038448 |
+| 所有Listing(半年内) / 搜索购买比 | 5.13294 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.048 |
+
+### Tankini Sets (坦基尼套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Tankini Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 坦基尼套装 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Girls:Clothing:Swim:Two-Pieces:Tankinis:Tankini Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：66 <br> 卖家：66 |
+| Listing样本数(TOP100) / 月总销量 | 191538.0 |
+| Listing样本数(TOP100) / 月均销量 | 1915.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 40762.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.45 |
+| Listing样本数(TOP100) / 平均评分数 | 582.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 38336.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 91%  <br> AMZ: 5%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.338 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.477 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.495 |
+| Listing样本数(TOP100) / 商品总数 | 689.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.3014 |
+| Listing样本数(TOP100) / 平均体积(in³) | 68.3313 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.56 |
+| Listing样本数(TOP100) / A+占比 | 0.95 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 71.0% |
+| 头部Listing数(TOP10) / 月均销量 | 6476.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 114237.0 |
+| 头部Listing数(TOP10) / 平均BSR | 3501.0 |
+| 新品(半年内上架) / 新品数量 | 36.0 |
+| 新品(半年内上架) / 新品占比 | 0.36 |
+| 新品(半年内上架) / 月均销量 | 1334.0 |
+| 新品(半年内上架) / 月均销售额($) | 33489.0 |
+| 新品(半年内上架) / 平均价格($) | 25.15 |
+| 新品(半年内上架) / 平均评分数 | 56.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.153125 |
+| 所有Listing(半年内) / 同类目退货率 | 0.215473 |
+| 所有Listing(半年内) / 搜索购买比 | 5.44915 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05444 |
+
+### Liver Extracts (肝脏提取物)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Liver Extracts |
+| Listing样本数(TOP100) / 细分市场(翻译) | 肝脏提取物 |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Vitamins, Minerals & Supplements:Glandular Extracts:Liver Extracts |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：80 <br> 卖家：79 |
+| Listing样本数(TOP100) / 月总销量 | 190747.0 |
+| Listing样本数(TOP100) / 月均销量 | 1907.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 68800.0 |
+| Listing样本数(TOP100) / 平均价格($) | 30.26 |
+| Listing样本数(TOP100) / 平均评分数 | 843.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 39293.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.7 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 3%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.601 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.631 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.634 |
+| Listing样本数(TOP100) / 商品总数 | 516.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.2785 |
+| Listing样本数(TOP100) / 平均体积(in³) | 44.9379 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.68 |
+| Listing样本数(TOP100) / A+占比 | 0.91 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 82.0% |
+| 头部Listing数(TOP10) / 月均销量 | 11466.0 |
+| 头部Listing数(TOP10) / 垄断度 | 6.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 455095.0 |
+| 头部Listing数(TOP10) / 平均BSR | 7378.0 |
+| 新品(半年内上架) / 新品数量 | 16.0 |
+| 新品(半年内上架) / 新品占比 | 0.16 |
+| 新品(半年内上架) / 月均销量 | 1049.0 |
+| 新品(半年内上架) / 月均销售额($) | 34768.0 |
+| 新品(半年内上架) / 平均价格($) | 30.85 |
+| 新品(半年内上架) / 平均评分数 | 66.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.00308 |
+| 所有Listing(半年内) / 同类目退货率 | 0.0030790002 |
+| 所有Listing(半年内) / 搜索购买比 | 22.90128 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.24225001 |
+
+### Squirt Guns (水枪)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Squirt Guns |
+| Listing样本数(TOP100) / 细分市场(翻译) | 水枪 |
+| Listing样本数(TOP100) / 市场路径 | Toys & Games:Sports & Outdoor Play:Pools & Water Toys:Squirt Guns |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：65 <br> 卖家：63 |
+| Listing样本数(TOP100) / 月总销量 | 187124.0 |
+| Listing样本数(TOP100) / 月均销量 | 1871.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 45271.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.3 |
+| Listing样本数(TOP100) / 平均评分数 | 616.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 12910.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 81%  <br> AMZ: 6%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.313 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.518 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.502 |
+| Listing样本数(TOP100) / 商品总数 | 1084.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.5422 |
+| Listing样本数(TOP100) / 平均体积(in³) | 324.8037 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.53 |
+| Listing样本数(TOP100) / A+占比 | 0.9 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 74.0% |
+| 头部Listing数(TOP10) / 月均销量 | 5863.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 129515.0 |
+| 头部Listing数(TOP10) / 平均BSR | 1204.0 |
+| 新品(半年内上架) / 新品数量 | 49.0 |
+| 新品(半年内上架) / 新品占比 | 0.49 |
+| 新品(半年内上架) / 月均销量 | 1440.0 |
+| 新品(半年内上架) / 月均销售额($) | 41866.0 |
+| 新品(半年内上架) / 平均价格($) | 31.86 |
+| 新品(半年内上架) / 平均评分数 | 140.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.039259 |
+| 所有Listing(半年内) / 同类目退货率 | 0.044108 |
+| 所有Listing(半年内) / 搜索购买比 | 5.73047 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.04113 |
+
+### Shorts (短裤)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Shorts |
+| Listing样本数(TOP100) / 细分市场(翻译) | 短裤 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Clothing:Shorts |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：68 <br> 卖家：68 |
+| Listing样本数(TOP100) / 月总销量 | 185044.0 |
+| Listing样本数(TOP100) / 月均销量 | 1850.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 51474.0 |
+| Listing样本数(TOP100) / 平均价格($) | 26.75 |
+| Listing样本数(TOP100) / 平均评分数 | 937.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 62720.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 6%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.534 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.647 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.65 |
+| Listing样本数(TOP100) / 商品总数 | 10307.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.5204 |
+| Listing样本数(TOP100) / 平均体积(in³) | 85.1226 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.82 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 75.0% |
+| 头部Listing数(TOP10) / 月均销量 | 9880.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 291034.0 |
+| 头部Listing数(TOP10) / 平均BSR | 3659.0 |
+| 新品(半年内上架) / 新品数量 | 35.0 |
+| 新品(半年内上架) / 新品占比 | 0.35 |
+| 新品(半年内上架) / 月均销量 | 1306.0 |
+| 新品(半年内上架) / 月均销售额($) | 28377.0 |
+| 新品(半年内上架) / 平均价格($) | 23.95 |
+| 新品(半年内上架) / 平均评分数 | 530.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.221191 |
+| 所有Listing(半年内) / 同类目退货率 | 0.123385 |
+| 所有Listing(半年内) / 搜索购买比 | 5.00261 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.086169995 |
+
+### Rash Guard Sets (Rash Guard Sets)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Rash Guard Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | Rash Guard Sets |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Girls:Clothing:Swim:Swimwear Sets:Rash Guard Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：49 <br> 卖家：50 |
+| Listing样本数(TOP100) / 月总销量 | 173320.0 |
+| Listing样本数(TOP100) / 月均销量 | 1733.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 36436.0 |
+| Listing样本数(TOP100) / 平均价格($) | 21.18 |
+| Listing样本数(TOP100) / 平均评分数 | 446.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 88950.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 95%  <br> AMZ: 4%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.333 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.584 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.592 |
+| Listing样本数(TOP100) / 商品总数 | 571.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.3381 |
+| Listing样本数(TOP100) / 平均体积(in³) | 62.3949 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.56 |
+| Listing样本数(TOP100) / A+占比 | 0.96 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 77.0% |
+| 头部Listing数(TOP10) / 月均销量 | 5779.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 112486.0 |
+| 头部Listing数(TOP10) / 平均BSR | 5414.0 |
+| 新品(半年内上架) / 新品数量 | 34.0 |
+| 新品(半年内上架) / 新品占比 | 0.34 |
+| 新品(半年内上架) / 月均销量 | 1323.0 |
+| 新品(半年内上架) / 月均销售额($) | 26847.0 |
+| 新品(半年内上架) / 平均价格($) | 20.99 |
+| 新品(半年内上架) / 平均评分数 | 52.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.097993 |
+| 所有Listing(半年内) / 同类目退货率 | 0.215473 |
+| 所有Listing(半年内) / 搜索购买比 | 6.21023 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05444 |
+
+### Sets (套)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 套 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Girls:Clothing:Swim:Two-Pieces:Bikinis:Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：64 <br> 卖家：59 |
+| Listing样本数(TOP100) / 月总销量 | 166964.0 |
+| Listing样本数(TOP100) / 月均销量 | 1669.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 41525.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.64 |
+| Listing样本数(TOP100) / 平均评分数 | 332.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 28434.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 91%  <br> AMZ: 6%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.271 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.452 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.524 |
+| Listing样本数(TOP100) / 商品总数 | 1610.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.2917 |
+| Listing样本数(TOP100) / 平均体积(in³) | 82.2722 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.92 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 79.0% |
+| 头部Listing数(TOP10) / 月均销量 | 4522.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 114262.0 |
+| 头部Listing数(TOP10) / 平均BSR | 7872.0 |
+| 新品(半年内上架) / 新品数量 | 29.0 |
+| 新品(半年内上架) / 新品占比 | 0.29 |
+| 新品(半年内上架) / 月均销量 | 1402.0 |
+| 新品(半年内上架) / 月均销售额($) | 34073.0 |
+| 新品(半年内上架) / 平均价格($) | 24.42 |
+| 新品(半年内上架) / 平均评分数 | 76.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.17863701 |
+| 所有Listing(半年内) / 同类目退货率 | 0.215473 |
+| 所有Listing(半年内) / 搜索购买比 | 4.69256 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05444 |
+
+### Figurine Lights (雕像灯)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Figurine Lights |
+| Listing样本数(TOP100) / 细分市场(翻译) | 雕像灯 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Lighting & Ceiling Fans:Outdoor Lighting:Landscape Lighting:Figurine Lights |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：77 <br> 卖家：80 |
+| Listing样本数(TOP100) / 月总销量 | 166695.0 |
+| Listing样本数(TOP100) / 月均销量 | 1666.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 42795.0 |
+| Listing样本数(TOP100) / 平均价格($) | 25.18 |
+| Listing样本数(TOP100) / 平均评分数 | 1093.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 20779.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 92%  <br> AMZ: 1%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.482 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.564 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.549 |
+| Listing样本数(TOP100) / 商品总数 | 1481.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.3882 |
+| Listing样本数(TOP100) / 平均体积(in³) | 285.0834 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.56 |
+| Listing样本数(TOP100) / A+占比 | 0.98 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 84.0% |
+| 头部Listing数(TOP10) / 月均销量 | 8030.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 208906.0 |
+| 头部Listing数(TOP10) / 平均BSR | 14496.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 1198.0 |
+| 新品(半年内上架) / 月均销售额($) | 26627.0 |
+| 新品(半年内上架) / 平均价格($) | 23.12 |
+| 新品(半年内上架) / 平均评分数 | 93.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.023387 |
+| 所有Listing(半年内) / 同类目退货率 | 0.066659 |
+| 所有Listing(半年内) / 搜索购买比 | 4.85448 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.04982 |
+
+### Skirt Sets (裙装套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Skirt Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 裙装套装 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Clothing:Clothing Sets:Skirt Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：45 <br> 卖家：47 |
+| Listing样本数(TOP100) / 月总销量 | 160911.0 |
+| Listing样本数(TOP100) / 月均销量 | 1609.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 56135.0 |
+| Listing样本数(TOP100) / 平均价格($) | 34.96 |
+| Listing样本数(TOP100) / 平均评分数 | 166.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.0 |
+| Listing样本数(TOP100) / 平均BSR | 64351.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 74%  <br> AMZ: 1%  <br> FBM: 25% |
+| Listing样本数(TOP100) / 商品集中度 | 0.343 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.613 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.608 |
+| Listing样本数(TOP100) / 商品总数 | 3810.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.6941 |
+| Listing样本数(TOP100) / 平均体积(in³) | 113.7702 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.69 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 92.0% |
+| 头部Listing数(TOP10) / 月均销量 | 5523.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 194096.0 |
+| 头部Listing数(TOP10) / 平均BSR | 7741.0 |
+| 新品(半年内上架) / 新品数量 | 52.0 |
+| 新品(半年内上架) / 新品占比 | 0.52 |
+| 新品(半年内上架) / 月均销量 | 1530.0 |
+| 新品(半年内上架) / 月均销售额($) | 53391.0 |
+| 新品(半年内上架) / 平均价格($) | 34.31 |
+| 新品(半年内上架) / 平均评分数 | 46.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.304688 |
+| 所有Listing(半年内) / 同类目退货率 | 0.152695 |
+| 所有Listing(半年内) / 搜索购买比 | 3.2316 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.04593 |
+
+### Grill Pads & Floor Mats (烤炉垫和地垫)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Grill Pads & Floor Mats |
+| Listing样本数(TOP100) / 细分市场(翻译) | 烤炉垫和地垫 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Grills & Outdoor Cooking:Outdoor Cooking Tools & Accessories:Grill Pads & Floor Mats |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：80 <br> 卖家：75 |
+| Listing样本数(TOP100) / 月总销量 | 157343.0 |
+| Listing样本数(TOP100) / 月均销量 | 1573.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 32728.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.02 |
+| Listing样本数(TOP100) / 平均评分数 | 976.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 18003.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 86%  <br> AMZ: 9%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.435 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.505 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.55 |
+| Listing样本数(TOP100) / 商品总数 | 701.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.7349 |
+| Listing样本数(TOP100) / 平均体积(in³) | 422.9092 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.54 |
+| Listing样本数(TOP100) / A+占比 | 0.92 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 80.0% |
+| 头部Listing数(TOP10) / 月均销量 | 6846.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 152642.0 |
+| 头部Listing数(TOP10) / 平均BSR | 1627.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 1410.0 |
+| 新品(半年内上架) / 月均销售额($) | 28177.0 |
+| 新品(半年内上架) / 平均价格($) | 23.0 |
+| 新品(半年内上架) / 平均评分数 | 142.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.032541 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035097 |
+| 所有Listing(半年内) / 搜索购买比 | 11.64775 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13555999 |
+
+### Clothing (服装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Clothing |
+| Listing样本数(TOP100) / 细分市场(翻译) | 服装 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Clothing |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：71 <br> 卖家：68 |
+| Listing样本数(TOP100) / 月总销量 | 137922.0 |
+| Listing样本数(TOP100) / 月均销量 | 1379.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 32481.0 |
+| Listing样本数(TOP100) / 平均价格($) | 25.12 |
+| Listing样本数(TOP100) / 平均评分数 | 602.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 71093.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 3%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.372 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.558 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.582 |
+| Listing样本数(TOP100) / 商品总数 | 68934.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4873 |
+| Listing样本数(TOP100) / 平均体积(in³) | 194.3338 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.92 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 78.0% |
+| 头部Listing数(TOP10) / 月均销量 | 5136.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 107808.0 |
+| 头部Listing数(TOP10) / 平均BSR | 8835.0 |
+| 新品(半年内上架) / 新品数量 | 48.0 |
+| 新品(半年内上架) / 新品占比 | 0.48 |
+| 新品(半年内上架) / 月均销量 | 980.0 |
+| 新品(半年内上架) / 月均销售额($) | 20067.0 |
+| 新品(半年内上架) / 平均价格($) | 22.3 |
+| 新品(半年内上架) / 平均评分数 | 80.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | N/A |
+| 所有Listing(半年内) / 同类目退货率 | N/A |
+| 所有Listing(半年内) / 搜索购买比 | N/A |
+| 所有Listing(半年内) / 同类目搜索购买比 | N/A |
+
+### Drip Irrigation Kits (滴灌套件)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Drip Irrigation Kits |
+| Listing样本数(TOP100) / 细分市场(翻译) | 滴灌套件 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Gardening & Lawn Care:Watering Equipment:Automatic Irrigation Equipment:Drip Irrigation Kits |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：64 <br> 卖家：66 |
+| Listing样本数(TOP100) / 月总销量 | 134747.0 |
+| Listing样本数(TOP100) / 月均销量 | 1347.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 42936.0 |
+| Listing样本数(TOP100) / 平均价格($) | 32.72 |
+| Listing样本数(TOP100) / 平均评分数 | 606.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 18137.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 91%  <br> AMZ: 6%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.315 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.516 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.46 |
+| Listing样本数(TOP100) / 商品总数 | 1639.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.5237 |
+| Listing样本数(TOP100) / 平均体积(in³) | 339.8577 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.61 |
+| Listing样本数(TOP100) / A+占比 | 0.9 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 72.0% |
+| 头部Listing数(TOP10) / 月均销量 | 4246.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 131037.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2724.0 |
+| 新品(半年内上架) / 新品数量 | 33.0 |
+| 新品(半年内上架) / 新品占比 | 0.33 |
+| 新品(半年内上架) / 月均销量 | 1104.0 |
+| 新品(半年内上架) / 月均销售额($) | 35237.0 |
+| 新品(半年内上架) / 平均价格($) | 34.17 |
+| 新品(半年内上架) / 平均评分数 | 123.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.033673998 |
+| 所有Listing(半年内) / 同类目退货率 | 0.033673998 |
+| 所有Listing(半年内) / 搜索购买比 | 8.58333 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.08583 |
+
+### Self-Watering Stakes (自浇水桩)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Self-Watering Stakes |
+| Listing样本数(TOP100) / 细分市场(翻译) | 自浇水桩 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Gardening & Lawn Care:Pots, Planters & Container Accessories:Plant Container Accessories:Self-Watering Stakes |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：75 <br> 卖家：76 |
+| Listing样本数(TOP100) / 月总销量 | 131556.0 |
+| Listing样本数(TOP100) / 月均销量 | 1315.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 26505.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.73 |
+| Listing样本数(TOP100) / 平均评分数 | 840.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 20220.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 1%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.458 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.534 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.515 |
+| Listing样本数(TOP100) / 商品总数 | 929.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.4898 |
+| Listing样本数(TOP100) / 平均体积(in³) | 141.7026 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.53 |
+| Listing样本数(TOP100) / A+占比 | 0.91 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 74.0% |
+| 头部Listing数(TOP10) / 月均销量 | 6021.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 112856.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2275.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 643.0 |
+| 新品(半年内上架) / 月均销售额($) | 12745.0 |
+| 新品(半年内上架) / 平均价格($) | 20.43 |
+| 新品(半年内上架) / 平均评分数 | 463.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.027969 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035097 |
+| 所有Listing(半年内) / 搜索购买比 | 12.23124 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13555999 |
+
+### Swing Trainers (室内练习器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Swing Trainers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 室内练习器 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports:Golf:Training Equipment:Swing Trainers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：69 <br> 卖家：63 |
+| Listing样本数(TOP100) / 月总销量 | 128432.0 |
+| Listing样本数(TOP100) / 月均销量 | 1284.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 36222.0 |
+| Listing样本数(TOP100) / 平均价格($) | 38.65 |
+| Listing样本数(TOP100) / 平均评分数 | 444.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.0 |
+| Listing样本数(TOP100) / 平均BSR | 29799.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 66%  <br> AMZ: 9%  <br> FBM: 8% |
+| Listing样本数(TOP100) / 商品集中度 | 0.365 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.599 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.639 |
+| Listing样本数(TOP100) / 商品总数 | 1853.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.7049 |
+| Listing样本数(TOP100) / 平均体积(in³) | 148.4409 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.81 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 67.0% |
+| 头部Listing数(TOP10) / 月均销量 | 4692.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 71493.0 |
+| 头部Listing数(TOP10) / 平均BSR | 41119.0 |
+| 新品(半年内上架) / 新品数量 | 30.0 |
+| 新品(半年内上架) / 新品占比 | 0.3 |
+| 新品(半年内上架) / 月均销量 | 1141.0 |
+| 新品(半年内上架) / 月均销售额($) | 16418.0 |
+| 新品(半年内上架) / 平均价格($) | 19.19 |
+| 新品(半年内上架) / 平均评分数 | 22.0 |
+| 新品(半年内上架) / 平均星级 | 3.4 |
+| 所有Listing(半年内) / 退货率 | 0.043748002 |
+| 所有Listing(半年内) / 同类目退货率 | 0.045063 |
+| 所有Listing(半年内) / 搜索购买比 | 7.43701 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07428 |
+
+### Light Therapy (光照疗法)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Light Therapy |
+| Listing样本数(TOP100) / 细分市场(翻译) | 光照疗法 |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Health Care:Alternative Medicine:Light Therapy |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：64 <br> 卖家：69 |
+| Listing样本数(TOP100) / 月总销量 | 127138.0 |
+| Listing样本数(TOP100) / 月均销量 | 1271.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 86428.0 |
+| Listing样本数(TOP100) / 平均价格($) | 72.14 |
+| Listing样本数(TOP100) / 平均评分数 | 787.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 63899.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.8 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 86%  <br> AMZ: 3%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.295 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.501 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.463 |
+| Listing样本数(TOP100) / 商品总数 | 2608.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.0005 |
+| Listing样本数(TOP100) / 平均体积(in³) | 558.535 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.72 |
+| Listing样本数(TOP100) / A+占比 | 0.89 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 65.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3753.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 214136.0 |
+| 头部Listing数(TOP10) / 平均BSR | 15747.0 |
+| 新品(半年内上架) / 新品数量 | 28.0 |
+| 新品(半年内上架) / 新品占比 | 0.28 |
+| 新品(半年内上架) / 月均销量 | 1047.0 |
+| 新品(半年内上架) / 月均销售额($) | 80803.0 |
+| 新品(半年内上架) / 平均价格($) | 78.34 |
+| 新品(半年内上架) / 平均评分数 | 60.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.102919 |
+| 所有Listing(半年内) / 同类目退货率 | 0.027781999 |
+| 所有Listing(半年内) / 搜索购买比 | 4.50757 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.15804 |
+
+### Pants (长裤)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Pants |
+| Listing样本数(TOP100) / 细分市场(翻译) | 长裤 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Clothing:Pants |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：78 <br> 卖家：79 |
+| Listing样本数(TOP100) / 月总销量 | 123963.0 |
+| Listing样本数(TOP100) / 月均销量 | 1239.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 32874.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.63 |
+| Listing样本数(TOP100) / 平均评分数 | 1158.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 111108.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 5%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.348 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.547 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.478 |
+| Listing样本数(TOP100) / 商品总数 | 20643.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.6659 |
+| Listing样本数(TOP100) / 平均体积(in³) | 125.8438 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.9 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 76.0% |
+| 头部Listing数(TOP10) / 月均销量 | 4309.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 106919.0 |
+| 头部Listing数(TOP10) / 平均BSR | 9712.0 |
+| 新品(半年内上架) / 新品数量 | 25.0 |
+| 新品(半年内上架) / 新品占比 | 0.25 |
+| 新品(半年内上架) / 月均销量 | 1031.0 |
+| 新品(半年内上架) / 月均销售额($) | 26677.0 |
+| 新品(半年内上架) / 平均价格($) | 27.02 |
+| 新品(半年内上架) / 平均评分数 | 46.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.254043 |
+| 所有Listing(半年内) / 同类目退货率 | 0.21090001 |
+| 所有Listing(半年内) / 搜索购买比 | 6.83362 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07519 |
+
+### Bread Proofing Baskets (面包发酵篮)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Bread Proofing Baskets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 面包发酵篮 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Bakeware:Baking Tools & Accessories:Baking & Pastry Utensils:Bread Proofing Baskets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：71 <br> 卖家：75 |
+| Listing样本数(TOP100) / 月总销量 | 117453.0 |
+| Listing样本数(TOP100) / 月均销量 | 1174.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 31037.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.88 |
+| Listing样本数(TOP100) / 平均评分数 | 570.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.6 |
+| Listing样本数(TOP100) / 平均BSR | 18024.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 95%  <br> AMZ: 0%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.427 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.539 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.535 |
+| Listing样本数(TOP100) / 商品总数 | 1023.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.8781 |
+| Listing样本数(TOP100) / 平均体积(in³) | 409.0568 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.89 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 66.0% |
+| 头部Listing数(TOP10) / 月均销量 | 5020.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 130769.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2025.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 604.0 |
+| 新品(半年内上架) / 月均销售额($) | 16777.0 |
+| 新品(半年内上架) / 平均价格($) | 27.2 |
+| 新品(半年内上架) / 平均评分数 | 78.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.040874 |
+| 所有Listing(半年内) / 同类目退货率 | 0.061525002 |
+| 所有Listing(半年内) / 搜索购买比 | 9.56301 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.06256 |
+
+### Snorkeling Packages (套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Snorkeling Packages |
+| Listing样本数(TOP100) / 细分市场(翻译) | 套装 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports:Water Sports:Diving & Snorkeling:Snorkeling Packages |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：58 <br> 卖家：62 |
+| Listing样本数(TOP100) / 月总销量 | 116960.0 |
+| Listing样本数(TOP100) / 月均销量 | 1169.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 34593.0 |
+| Listing样本数(TOP100) / 平均价格($) | 32.66 |
+| Listing样本数(TOP100) / 平均评分数 | 1064.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 29056.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 8%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.442 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.59 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.594 |
+| Listing样本数(TOP100) / 商品总数 | 610.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.6407 |
+| Listing样本数(TOP100) / 平均体积(in³) | 394.123 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.61 |
+| Listing样本数(TOP100) / A+占比 | 0.94 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 72.0% |
+| 头部Listing数(TOP10) / 月均销量 | 5169.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 144548.0 |
+| 头部Listing数(TOP10) / 平均BSR | 23396.0 |
+| 新品(半年内上架) / 新品数量 | 25.0 |
+| 新品(半年内上架) / 新品占比 | 0.25 |
+| 新品(半年内上架) / 月均销量 | 1116.0 |
+| 新品(半年内上架) / 月均销售额($) | 24854.0 |
+| 新品(半年内上架) / 平均价格($) | 26.32 |
+| 新品(半年内上架) / 平均评分数 | 78.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.104648 |
+| 所有Listing(半年内) / 同类目退货率 | 0.104648 |
+| 所有Listing(半年内) / 搜索购买比 | 10.74434 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10744 |
+
+### Bread Knives (面包刀)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Bread Knives |
+| Listing样本数(TOP100) / 细分市场(翻译) | 面包刀 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Kitchen Utensils & Gadgets:Kitchen Knives & Accessories:Bread Knives |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：80 <br> 卖家：72 |
+| Listing样本数(TOP100) / 月总销量 | 107908.0 |
+| Listing样本数(TOP100) / 月均销量 | 1079.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 23603.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.57 |
+| Listing样本数(TOP100) / 平均评分数 | 998.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 29854.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 82%  <br> AMZ: 13%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.468 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.525 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.586 |
+| Listing样本数(TOP100) / 商品总数 | 1026.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.8113 |
+| Listing样本数(TOP100) / 平均体积(in³) | 152.3348 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.54 |
+| Listing样本数(TOP100) / A+占比 | 0.91 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 68.0% |
+| 头部Listing数(TOP10) / 月均销量 | 5046.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 125642.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2953.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 617.0 |
+| 新品(半年内上架) / 月均销售额($) | 9688.0 |
+| 新品(半年内上架) / 平均价格($) | 17.46 |
+| 新品(半年内上架) / 平均评分数 | 107.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.029209001 |
+| 所有Listing(半年内) / 同类目退货率 | 0.02952 |
+| 所有Listing(半年内) / 搜索购买比 | 13.49718 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0692 |
+
+### Lighting Products (水底灯)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Lighting Products |
+| Listing样本数(TOP100) / 细分市场(翻译) | 水底灯 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Pools, Hot Tubs & Supplies:Parts & Accessories:Lighting Products |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：71 <br> 卖家：70 |
+| Listing样本数(TOP100) / 月总销量 | 103104.0 |
+| Listing样本数(TOP100) / 月均销量 | 1031.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 50243.0 |
+| Listing样本数(TOP100) / 平均价格($) | 49.41 |
+| Listing样本数(TOP100) / 平均评分数 | 475.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 19479.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 88%  <br> AMZ: 0%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.328 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.515 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.542 |
+| Listing样本数(TOP100) / 商品总数 | 1238.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.7026 |
+| Listing样本数(TOP100) / 平均体积(in³) | 635.4793 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.67 |
+| Listing样本数(TOP100) / A+占比 | 0.97 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 76.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3378.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 209750.0 |
+| 头部Listing数(TOP10) / 平均BSR | 3725.0 |
+| 新品(半年内上架) / 新品数量 | 55.0 |
+| 新品(半年内上架) / 新品占比 | 0.55 |
+| 新品(半年内上架) / 月均销量 | 1109.0 |
+| 新品(半年内上架) / 月均销售额($) | 61518.0 |
+| 新品(半年内上架) / 平均价格($) | 51.02 |
+| 新品(半年内上架) / 平均评分数 | 60.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.067492 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035097 |
+| 所有Listing(半年内) / 搜索购买比 | 5.4537 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13555999 |
+
+### Casual Jackets (休闲夹克)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Casual Jackets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 休闲夹克 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Clothing:Coats, Jackets & Vests:Casual Jackets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：71 |
+| Listing样本数(TOP100) / 月总销量 | 102635.0 |
+| Listing样本数(TOP100) / 月均销量 | 1026.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 38205.0 |
+| Listing样本数(TOP100) / 平均价格($) | 37.65 |
+| Listing样本数(TOP100) / 平均评分数 | 833.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 80554.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 5%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.332 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.446 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.436 |
+| Listing样本数(TOP100) / 商品总数 | 6743.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.7892 |
+| Listing样本数(TOP100) / 平均体积(in³) | 188.2375 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.61 |
+| Listing样本数(TOP100) / A+占比 | 0.96 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 80.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3405.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 135138.0 |
+| 头部Listing数(TOP10) / 平均BSR | 18783.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 800.0 |
+| 新品(半年内上架) / 月均销售额($) | 27087.0 |
+| 新品(半年内上架) / 平均价格($) | 35.9 |
+| 新品(半年内上架) / 平均评分数 | 55.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.27815902 |
+| 所有Listing(半年内) / 同类目退货率 | 0.244967 |
+| 所有Listing(半年内) / 搜索购买比 | 3.99269 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.04205 |
+
+### Shilajit (Shilajit)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Shilajit |
+| Listing样本数(TOP100) / 细分市场(翻译) | Shilajit |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Vitamins, Minerals & Supplements:Herbal Supplements:Shilajit |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：78 |
+| Listing样本数(TOP100) / 月总销量 | 100999.0 |
+| Listing样本数(TOP100) / 月均销量 | 1009.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 28921.0 |
+| Listing样本数(TOP100) / 平均价格($) | 32.19 |
+| Listing样本数(TOP100) / 平均评分数 | 714.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 67607.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 83%  <br> AMZ: 2%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.523 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.632 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.616 |
+| Listing样本数(TOP100) / 商品总数 | 572.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4008 |
+| Listing样本数(TOP100) / 平均体积(in³) | 56.8467 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.68 |
+| Listing样本数(TOP100) / A+占比 | 0.94 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 59.0% |
+| 头部Listing数(TOP10) / 月均销量 | 5285.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 140052.0 |
+| 头部Listing数(TOP10) / 平均BSR | 31120.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 326.0 |
+| 新品(半年内上架) / 月均销售额($) | 10296.0 |
+| 新品(半年内上架) / 平均价格($) | 30.85 |
+| 新品(半年内上架) / 平均评分数 | 24.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.003367 |
+| 所有Listing(半年内) / 同类目退货率 | 0.002946 |
+| 所有Listing(半年内) / 搜索购买比 | 15.2522 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.22895001 |
+
+### Decorative Boxes (装饰盒)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Decorative Boxes |
+| Listing样本数(TOP100) / 细分市场(翻译) | 装饰盒 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Home Décor Products:Home Décor Accents:Decorative Accessories:Decorative Boxes |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：78 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 99269.0 |
+| Listing样本数(TOP100) / 月均销量 | 992.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 23827.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.84 |
+| Listing样本数(TOP100) / 平均评分数 | 680.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.6 |
+| Listing样本数(TOP100) / 平均BSR | 74338.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 2%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.313 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.491 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.491 |
+| Listing样本数(TOP100) / 商品总数 | 6415.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.6565 |
+| Listing样本数(TOP100) / 平均体积(in³) | 381.8847 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.77 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 67.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3103.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 70630.0 |
+| 头部Listing数(TOP10) / 平均BSR | 72300.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 788.0 |
+| 新品(半年内上架) / 月均销售额($) | 17579.0 |
+| 新品(半年内上架) / 平均价格($) | 23.16 |
+| 新品(半年内上架) / 平均评分数 | 67.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.079139 |
+| 所有Listing(半年内) / 同类目退货率 | 0.050359998 |
+| 所有Listing(半年内) / 搜索购买比 | 4.45329 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.06534 |
+
+### Pool & Deck Repair Products (油漆及密封产品)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Pool & Deck Repair Products |
+| Listing样本数(TOP100) / 细分市场(翻译) | 油漆及密封产品 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Pools, Hot Tubs & Supplies:Parts & Accessories:Pool & Deck Repair Products |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：77 <br> 卖家：71 |
+| Listing样本数(TOP100) / 月总销量 | 92366.0 |
+| Listing样本数(TOP100) / 月均销量 | 923.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 24783.0 |
+| Listing样本数(TOP100) / 平均价格($) | 32.75 |
+| Listing样本数(TOP100) / 平均评分数 | 679.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 28212.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 81%  <br> AMZ: 6%  <br> FBM: 10% |
+| Listing样本数(TOP100) / 商品集中度 | 0.489 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.566 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.615 |
+| Listing样本数(TOP100) / 商品总数 | 591.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.4125 |
+| Listing样本数(TOP100) / 平均体积(in³) | 638.6256 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.7 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 53.0% |
+| 头部Listing数(TOP10) / 月均销量 | 4513.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 84256.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2411.0 |
+| 新品(半年内上架) / 新品数量 | 23.0 |
+| 新品(半年内上架) / 新品占比 | 0.23 |
+| 新品(半年内上架) / 月均销量 | 631.0 |
+| 新品(半年内上架) / 月均销售额($) | 12599.0 |
+| 新品(半年内上架) / 平均价格($) | 19.64 |
+| 新品(半年内上架) / 平均评分数 | 56.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.019322 |
+| 所有Listing(半年内) / 同类目退货率 | 0.029515 |
+| 所有Listing(半年内) / 搜索购买比 | 23.19476 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.12637 |
+
+### Fountains (喷泉)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Fountains |
+| Listing样本数(TOP100) / 细分市场(翻译) | 喷泉 |
+| Listing样本数(TOP100) / 市场路径 | Pet Supplies:Dogs:Feeding & Watering Supplies:Fountains |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：66 <br> 卖家：65 |
+| Listing样本数(TOP100) / 月总销量 | 91637.0 |
+| Listing样本数(TOP100) / 月均销量 | 916.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 34974.0 |
+| Listing样本数(TOP100) / 平均价格($) | 38.99 |
+| Listing样本数(TOP100) / 平均评分数 | 961.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 17269.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 84%  <br> AMZ: 8%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.404 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.562 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.576 |
+| Listing样本数(TOP100) / 商品总数 | 634.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.1817 |
+| Listing样本数(TOP100) / 平均体积(in³) | 541.6858 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.64 |
+| Listing样本数(TOP100) / A+占比 | 0.93 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 71.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3702.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 138861.0 |
+| 头部Listing数(TOP10) / 平均BSR | 3812.0 |
+| 新品(半年内上架) / 新品数量 | 34.0 |
+| 新品(半年内上架) / 新品占比 | 0.34 |
+| 新品(半年内上架) / 月均销量 | 549.0 |
+| 新品(半年内上架) / 月均销售额($) | 24431.0 |
+| 新品(半年内上架) / 平均价格($) | 45.07 |
+| 新品(半年内上架) / 平均评分数 | 61.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.04779 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038934 |
+| 所有Listing(半年内) / 搜索购买比 | 10.23547 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13913 |
+
+### Button-Down Shirts (扣角领衬衫)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Button-Down Shirts |
+| Listing样本数(TOP100) / 细分市场(翻译) | 扣角领衬衫 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Novelty & More:Clothing:Novelty:Men:Shirts:Button-Down Shirts |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：59 <br> 卖家：60 |
+| Listing样本数(TOP100) / 月总销量 | 90189.0 |
+| Listing样本数(TOP100) / 月均销量 | 901.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 17672.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.38 |
+| Listing样本数(TOP100) / 平均评分数 | 319.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 104403.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 86%  <br> AMZ: 1%  <br> FBM: 12% |
+| Listing样本数(TOP100) / 商品集中度 | 0.304 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.603 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.594 |
+| Listing样本数(TOP100) / 商品总数 | 4262.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4197 |
+| Listing样本数(TOP100) / 平均体积(in³) | 88.0823 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.9 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 77.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2746.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 56739.0 |
+| 头部Listing数(TOP10) / 平均BSR | 108585.0 |
+| 新品(半年内上架) / 新品数量 | 22.0 |
+| 新品(半年内上架) / 新品占比 | 0.22 |
+| 新品(半年内上架) / 月均销量 | 729.0 |
+| 新品(半年内上架) / 月均销售额($) | 13908.0 |
+| 新品(半年内上架) / 平均价格($) | 20.28 |
+| 新品(半年内上架) / 平均评分数 | 34.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.140108 |
+| 所有Listing(半年内) / 同类目退货率 | 0.140002 |
+| 所有Listing(半年内) / 搜索购买比 | 4.18863 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.058819998 |
+
+### Trays & Bags (托盘、口袋)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Trays & Bags |
+| Listing样本数(TOP100) / 细分市场(翻译) | 托盘、口袋 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Interior Accessories:Consoles & Organizers:Trays & Bags |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：76 |
+| Listing样本数(TOP100) / 月总销量 | 88726.0 |
+| Listing样本数(TOP100) / 月均销量 | 887.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 18752.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.8 |
+| Listing样本数(TOP100) / 平均评分数 | 874.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 24743.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 96%  <br> AMZ: 0%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.377 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.463 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.464 |
+| Listing样本数(TOP100) / 商品总数 | 4414.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.192 |
+| Listing样本数(TOP100) / 平均体积(in³) | 300.7238 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.56 |
+| Listing样本数(TOP100) / A+占比 | 0.83 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 89.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3349.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 53426.0 |
+| 头部Listing数(TOP10) / 平均BSR | 79351.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 654.0 |
+| 新品(半年内上架) / 月均销售额($) | 11743.0 |
+| 新品(半年内上架) / 平均价格($) | 17.42 |
+| 新品(半年内上架) / 平均评分数 | 163.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.09416799 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038714003 |
+| 所有Listing(半年内) / 搜索购买比 | 5.9015 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.092889994 |
+
+### Hand Fuel Pumps (手动燃油泵)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Hand Fuel Pumps |
+| Listing样本数(TOP100) / 细分市场(翻译) | 手动燃油泵 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Tools & Equipment:Garage & Shop:Barrel & Hand Pumps:Hand Fuel Pumps |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：82 <br> 卖家：81 |
+| Listing样本数(TOP100) / 月总销量 | 88286.0 |
+| Listing样本数(TOP100) / 月均销量 | 882.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 21856.0 |
+| Listing样本数(TOP100) / 平均价格($) | 32.24 |
+| Listing样本数(TOP100) / 平均评分数 | 1023.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 51758.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 88%  <br> AMZ: 2%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.417 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.535 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.535 |
+| Listing样本数(TOP100) / 商品总数 | 855.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.5784 |
+| Listing样本数(TOP100) / 平均体积(in³) | 415.5113 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.95 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 80.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3678.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 61549.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2053.0 |
+| 新品(半年内上架) / 新品数量 | 25.0 |
+| 新品(半年内上架) / 新品占比 | 0.25 |
+| 新品(半年内上架) / 月均销量 | 988.0 |
+| 新品(半年内上架) / 月均销售额($) | 31452.0 |
+| 新品(半年内上架) / 平均价格($) | 37.54 |
+| 新品(半年内上架) / 平均评分数 | 154.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.042313 |
+| 所有Listing(半年内) / 同类目退货率 | 0.058748998 |
+| 所有Listing(半年内) / 搜索购买比 | 9.7877 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09074 |
+
+### Casual (休闲类)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Casual |
+| Listing样本数(TOP100) / 细分市场(翻译) | 休闲类 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Maternity:Dresses:Casual |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：55 <br> 卖家：55 |
+| Listing样本数(TOP100) / 月总销量 | 87685.0 |
+| Listing样本数(TOP100) / 月均销量 | 876.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 29900.0 |
+| Listing样本数(TOP100) / 平均价格($) | 37.65 |
+| Listing样本数(TOP100) / 平均评分数 | 860.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 136979.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 94%  <br> AMZ: 0%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.433 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.622 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.589 |
+| Listing样本数(TOP100) / 商品总数 | 919.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.7087 |
+| Listing样本数(TOP100) / 平均体积(in³) | 149.2702 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.62 |
+| Listing样本数(TOP100) / A+占比 | 0.84 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 81.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3795.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 116471.0 |
+| 头部Listing数(TOP10) / 平均BSR | 10643.0 |
+| 新品(半年内上架) / 新品数量 | 26.0 |
+| 新品(半年内上架) / 新品占比 | 0.26 |
+| 新品(半年内上架) / 月均销量 | 436.0 |
+| 新品(半年内上架) / 月均销售额($) | 19913.0 |
+| 新品(半年内上架) / 平均价格($) | 45.68 |
+| 新品(半年内上架) / 平均评分数 | 20.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | N/A |
+| 所有Listing(半年内) / 同类目退货率 | N/A |
+| 所有Listing(半年内) / 搜索购买比 | N/A |
+| 所有Listing(半年内) / 同类目搜索购买比 | N/A |
+
+### Beneficial Insects (益虫)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Beneficial Insects |
+| Listing样本数(TOP100) / 细分市场(翻译) | 益虫 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Pest Control:Beneficial Insects |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：58 <br> 卖家：54 |
+| Listing样本数(TOP100) / 月总销量 | 85364.0 |
+| Listing样本数(TOP100) / 月均销量 | 853.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 25571.0 |
+| Listing样本数(TOP100) / 平均价格($) | 31.29 |
+| Listing样本数(TOP100) / 平均评分数 | 724.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 34622.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 45%  <br> AMZ: 6%  <br> FBM: 37% |
+| Listing样本数(TOP100) / 商品集中度 | 0.369 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.584 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.572 |
+| Listing样本数(TOP100) / 商品总数 | 470.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.8895 |
+| Listing样本数(TOP100) / 平均体积(in³) | 221.1628 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.68 |
+| Listing样本数(TOP100) / A+占比 | 0.53 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 92.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3149.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 98890.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2915.0 |
+| 新品(半年内上架) / 新品数量 | 30.0 |
+| 新品(半年内上架) / 新品占比 | 0.3 |
+| 新品(半年内上架) / 月均销量 | 744.0 |
+| 新品(半年内上架) / 月均销售额($) | 23064.0 |
+| 新品(半年内上架) / 平均价格($) | 28.05 |
+| 新品(半年内上架) / 平均评分数 | 34.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.007845 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035097 |
+| 所有Listing(半年内) / 搜索购买比 | 19.02987 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13555999 |
+
+### Nozzles (喷嘴)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Nozzles |
+| Listing样本数(TOP100) / 细分市场(翻译) | 喷嘴 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Outdoor Power Tools:Replacement Parts & Accessories:Pressure Washer Parts & Accessories:Nozzles |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：69 <br> 卖家：74 |
+| Listing样本数(TOP100) / 月总销量 | 84951.0 |
+| Listing样本数(TOP100) / 月均销量 | 849.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 19384.0 |
+| Listing样本数(TOP100) / 平均价格($) | 26.98 |
+| Listing样本数(TOP100) / 平均评分数 | 497.0 |
+| Listing样本数(TOP100) / 平均星级 | 3.4 |
+| Listing样本数(TOP100) / 平均BSR | 53028.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 61%  <br> AMZ: 5%  <br> FBM: 19% |
+| Listing样本数(TOP100) / 商品集中度 | 0.493 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.549 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.575 |
+| Listing样本数(TOP100) / 商品总数 | 1031.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4424 |
+| Listing样本数(TOP100) / 平均体积(in³) | 66.3163 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.65 |
+| Listing样本数(TOP100) / A+占比 | 0.72 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 72.0% |
+| 头部Listing数(TOP10) / 月均销量 | 4186.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 79610.0 |
+| 头部Listing数(TOP10) / 平均BSR | 8518.0 |
+| 新品(半年内上架) / 新品数量 | 58.0 |
+| 新品(半年内上架) / 新品占比 | 0.58 |
+| 新品(半年内上架) / 月均销量 | 818.0 |
+| 新品(半年内上架) / 月均销售额($) | 23991.0 |
+| 新品(半年内上架) / 平均价格($) | 33.14 |
+| 新品(半年内上架) / 平均评分数 | 54.0 |
+| 新品(半年内上架) / 平均星级 | 2.6 |
+| 所有Listing(半年内) / 退货率 | 0.026326 |
+| 所有Listing(半年内) / 同类目退货率 | 0.049943 |
+| 所有Listing(半年内) / 搜索购买比 | 13.48396 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.16228001 |
+
+### Pantsuits (裤装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Pantsuits |
+| Listing样本数(TOP100) / 细分市场(翻译) | 裤装 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Clothing:Suiting & Blazers:Suit Sets:Pantsuits |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：44 <br> 卖家：48 |
+| Listing样本数(TOP100) / 月总销量 | 84603.0 |
+| Listing样本数(TOP100) / 月均销量 | 846.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 47597.0 |
+| Listing样本数(TOP100) / 平均价格($) | 57.91 |
+| Listing样本数(TOP100) / 平均评分数 | 451.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 99570.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 2%  <br> FBM: 7% |
+| Listing样本数(TOP100) / 商品集中度 | 0.442 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.644 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.615 |
+| Listing样本数(TOP100) / 商品总数 | 3264.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.4607 |
+| Listing样本数(TOP100) / 平均体积(in³) | 264.0857 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.67 |
+| Listing样本数(TOP100) / A+占比 | 0.95 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 88.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3738.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 212678.0 |
+| 头部Listing数(TOP10) / 平均BSR | 16242.0 |
+| 新品(半年内上架) / 新品数量 | 30.0 |
+| 新品(半年内上架) / 新品占比 | 0.3 |
+| 新品(半年内上架) / 月均销量 | 631.0 |
+| 新品(半年内上架) / 月均销售额($) | 37742.0 |
+| 新品(半年内上架) / 平均价格($) | 59.95 |
+| 新品(半年内上架) / 平均评分数 | 54.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.31881902 |
+| 所有Listing(半年内) / 同类目退货率 | 0.260849 |
+| 所有Listing(半年内) / 搜索购买比 | 2.07344 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.03096 |
+
+### Glasses & Goggles (眼镜和护目镜)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Glasses & Goggles |
+| Listing样本数(TOP100) / 细分市场(翻译) | 眼镜和护目镜 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports:Cycling:Glasses & Goggles |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：55 <br> 卖家：58 |
+| Listing样本数(TOP100) / 月总销量 | 83961.0 |
+| Listing样本数(TOP100) / 月均销量 | 839.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 16373.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.58 |
+| Listing样本数(TOP100) / 平均评分数 | 887.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 78997.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 86%  <br> AMZ: 0%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.402 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.555 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.51 |
+| Listing样本数(TOP100) / 商品总数 | 1032.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.2331 |
+| Listing样本数(TOP100) / 平均体积(in³) | 64.4557 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.64 |
+| Listing样本数(TOP100) / A+占比 | 0.94 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 88.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3377.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 55541.0 |
+| 头部Listing数(TOP10) / 平均BSR | 3211.0 |
+| 新品(半年内上架) / 新品数量 | 16.0 |
+| 新品(半年内上架) / 新品占比 | 0.16 |
+| 新品(半年内上架) / 月均销量 | 726.0 |
+| 新品(半年内上架) / 月均销售额($) | 10263.0 |
+| 新品(半年内上架) / 平均价格($) | 19.05 |
+| 新品(半年内上架) / 平均评分数 | 60.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.060467 |
+| 所有Listing(半年内) / 同类目退货率 | 0.052837 |
+| 所有Listing(半年内) / 搜索购买比 | 6.27508 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.12039 |
+
+### Cups (杯子)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Cups |
+| Listing样本数(TOP100) / 细分市场(翻译) | 杯子 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Event & Party Supplies:Tableware:Cups |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：71 |
+| Listing样本数(TOP100) / 月总销量 | 82408.0 |
+| Listing样本数(TOP100) / 月均销量 | 824.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 16989.0 |
+| Listing样本数(TOP100) / 平均价格($) | 21.43 |
+| Listing样本数(TOP100) / 平均评分数 | 487.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.6 |
+| Listing样本数(TOP100) / 平均BSR | 133559.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 88%  <br> AMZ: 8%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.469 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.562 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.636 |
+| Listing样本数(TOP100) / 商品总数 | 2371.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.3085 |
+| Listing样本数(TOP100) / 平均体积(in³) | 39.9236 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.51 |
+| Listing样本数(TOP100) / A+占比 | 0.65 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 65.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3868.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 72562.0 |
+| 头部Listing数(TOP10) / 平均BSR | 17266.0 |
+| 新品(半年内上架) / 新品数量 | 27.0 |
+| 新品(半年内上架) / 新品占比 | 0.27 |
+| 新品(半年内上架) / 月均销量 | 1221.0 |
+| 新品(半年内上架) / 月均销售额($) | 29126.0 |
+| 新品(半年内上架) / 平均价格($) | 26.68 |
+| 新品(半年内上架) / 平均评分数 | 523.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.039497003 |
+| 所有Listing(半年内) / 同类目退货率 | 0.037998 |
+| 所有Listing(半年内) / 搜索购买比 | 8.63317 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0766 |
+
+### Compressed Air Dusters (压缩除尘罐)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Compressed Air Dusters |
+| Listing样本数(TOP100) / 细分市场(翻译) | 压缩除尘罐 |
+| Listing样本数(TOP100) / 市场路径 | Electronics:Computers & Accessories:Computer Accessories & Peripherals:Cleaning & Repair:Compressed Air Dusters |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：75 <br> 卖家：76 |
+| Listing样本数(TOP100) / 月总销量 | 81347.0 |
+| Listing样本数(TOP100) / 月均销量 | 813.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 32612.0 |
+| Listing样本数(TOP100) / 平均价格($) | 34.09 |
+| Listing样本数(TOP100) / 平均评分数 | 349.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 33285.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.9 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 5%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.509 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.605 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.605 |
+| Listing样本数(TOP100) / 商品总数 | 11555.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.8729 |
+| Listing样本数(TOP100) / 平均体积(in³) | 44.9147 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.74 |
+| Listing样本数(TOP100) / A+占比 | 0.91 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 76.0% |
+| 头部Listing数(TOP10) / 月均销量 | 4137.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 202795.0 |
+| 头部Listing数(TOP10) / 平均BSR | 3407.0 |
+| 新品(半年内上架) / 新品数量 | 42.0 |
+| 新品(半年内上架) / 新品占比 | 0.42 |
+| 新品(半年内上架) / 月均销量 | 521.0 |
+| 新品(半年内上架) / 月均销售额($) | 15746.0 |
+| 新品(半年内上架) / 平均价格($) | 32.03 |
+| 新品(半年内上架) / 平均评分数 | 126.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.031646 |
+| 所有Listing(半年内) / 同类目退货率 | 0.031956002 |
+| 所有Listing(半年内) / 搜索购买比 | 12.97452 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.12949 |
+
+### Wrinkle & Anti-Aging Devices (皱纹和抗衰老设备)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Wrinkle & Anti-Aging Devices |
+| Listing样本数(TOP100) / 细分市场(翻译) | 皱纹和抗衰老设备 |
+| Listing样本数(TOP100) / 市场路径 | Beauty & Personal Care:Tools & Accessories:Skin Care Tools:Wrinkle & Anti-Aging Devices |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：74 <br> 卖家：75 |
+| Listing样本数(TOP100) / 月总销量 | 78129.0 |
+| Listing样本数(TOP100) / 月均销量 | 781.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 116400.0 |
+| Listing样本数(TOP100) / 平均价格($) | 112.68 |
+| Listing样本数(TOP100) / 平均评分数 | 536.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 64944.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 89%  <br> AMZ: 1%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.44 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.573 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.559 |
+| Listing样本数(TOP100) / 商品总数 | 881.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.9317 |
+| Listing样本数(TOP100) / 平均体积(in³) | 156.5241 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.72 |
+| Listing样本数(TOP100) / A+占比 | 0.95 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 49.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3439.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 653192.0 |
+| 头部Listing数(TOP10) / 平均BSR | 12449.0 |
+| 新品(半年内上架) / 新品数量 | 29.0 |
+| 新品(半年内上架) / 新品占比 | 0.29 |
+| 新品(半年内上架) / 月均销量 | 625.0 |
+| 新品(半年内上架) / 月均销售额($) | 61177.0 |
+| 新品(半年内上架) / 平均价格($) | 83.01 |
+| 新品(半年内上架) / 平均评分数 | 48.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.103866994 |
+| 所有Listing(半年内) / 同类目退货率 | 0.02199 |
+| 所有Listing(半年内) / 搜索购买比 | 3.6745 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13852 |
+
+### Herbal Supplements (草药补充剂)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Herbal Supplements |
+| Listing样本数(TOP100) / 细分市场(翻译) | 草药补充剂 |
+| Listing样本数(TOP100) / 市场路径 | Pet Supplies:Cats:Health Supplies:Supplements & Vitamins:Herbal Supplements |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：74 <br> 卖家：69 |
+| Listing样本数(TOP100) / 月总销量 | 77591.0 |
+| Listing样本数(TOP100) / 月均销量 | 775.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 17453.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.63 |
+| Listing样本数(TOP100) / 平均评分数 | 1137.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 23373.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 5%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.521 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.615 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.633 |
+| Listing样本数(TOP100) / 商品总数 | 390.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.2954 |
+| Listing样本数(TOP100) / 平均体积(in³) | 37.5723 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.64 |
+| Listing样本数(TOP100) / A+占比 | 0.88 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 47.0% |
+| 头部Listing数(TOP10) / 月均销量 | 4045.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 92391.0 |
+| 头部Listing数(TOP10) / 平均BSR | 5656.0 |
+| 新品(半年内上架) / 新品数量 | 21.0 |
+| 新品(半年内上架) / 新品占比 | 0.21 |
+| 新品(半年内上架) / 月均销量 | 319.0 |
+| 新品(半年内上架) / 月均销售额($) | 8061.0 |
+| 新品(半年内上架) / 平均价格($) | 25.64 |
+| 新品(半年内上架) / 平均评分数 | 42.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.004651 |
+| 所有Listing(半年内) / 同类目退货率 | 0.002954 |
+| 所有Listing(半年内) / 搜索购买比 | 19.57385 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.30277002 |
+
+### Wind Spinners (Wind Spinners)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Wind Spinners |
+| Listing样本数(TOP100) / 细分市场(翻译) | Wind Spinners |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Outdoor Décor:Garden Sculptures & Statues:Wind Sculptures & Spinners:Wind Spinners |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：73 |
+| Listing样本数(TOP100) / 月总销量 | 76376.0 |
+| Listing样本数(TOP100) / 月均销量 | 763.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 19108.0 |
+| Listing样本数(TOP100) / 平均价格($) | 31.21 |
+| Listing样本数(TOP100) / 平均评分数 | 472.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 32572.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 97%  <br> AMZ: 0%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.425 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.53 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.53 |
+| Listing样本数(TOP100) / 商品总数 | 1935.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.4816 |
+| Listing样本数(TOP100) / 平均体积(in³) | 258.0761 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.89 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 92.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3247.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 50245.0 |
+| 头部Listing数(TOP10) / 平均BSR | 4568.0 |
+| 新品(半年内上架) / 新品数量 | 22.0 |
+| 新品(半年内上架) / 新品占比 | 0.22 |
+| 新品(半年内上架) / 月均销量 | 742.0 |
+| 新品(半年内上架) / 月均销售额($) | 12317.0 |
+| 新品(半年内上架) / 平均价格($) | 20.62 |
+| 新品(半年内上架) / 平均评分数 | 50.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.030934999 |
+| 所有Listing(半年内) / 同类目退货率 | 0.031362 |
+| 所有Listing(半年内) / 搜索购买比 | 6.56758 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.06785 |
+
+### Old Fashioned Glasses (古典杯)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Old Fashioned Glasses |
+| Listing样本数(TOP100) / 细分市场(翻译) | 古典杯 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Dining & Entertaining:Glassware & Drinkware:Cocktail Drinkware:Old Fashioned Glasses |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：78 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 76284.0 |
+| Listing样本数(TOP100) / 月均销量 | 762.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 19106.0 |
+| Listing样本数(TOP100) / 平均价格($) | 25.55 |
+| Listing样本数(TOP100) / 平均评分数 | 1132.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 22046.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 4%  <br> FBM: 10% |
+| Listing样本数(TOP100) / 商品集中度 | 0.332 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.44 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.424 |
+| Listing样本数(TOP100) / 商品总数 | 4310.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.9443 |
+| Listing样本数(TOP100) / 平均体积(in³) | 12.1614 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.93 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 51.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2534.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 62915.0 |
+| 头部Listing数(TOP10) / 平均BSR | 3514.0 |
+| 新品(半年内上架) / 新品数量 | 29.0 |
+| 新品(半年内上架) / 新品占比 | 0.29 |
+| 新品(半年内上架) / 月均销量 | 634.0 |
+| 新品(半年内上架) / 月均销售额($) | 13954.0 |
+| 新品(半年内上架) / 平均价格($) | 21.99 |
+| 新品(半年内上架) / 平均评分数 | 31.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.046109 |
+| 所有Listing(半年内) / 同类目退货率 | 0.037998 |
+| 所有Listing(半年内) / 搜索购买比 | 5.61362 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0766 |
+
+### Active Pants (运动裤)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Active Pants |
+| Listing样本数(TOP100) / 细分市场(翻译) | 运动裤 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Men:Clothing:Active:Active Pants |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：69 <br> 卖家：67 |
+| Listing样本数(TOP100) / 月总销量 | 75750.0 |
+| Listing样本数(TOP100) / 月均销量 | 757.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 23005.0 |
+| Listing样本数(TOP100) / 平均价格($) | 33.26 |
+| Listing样本数(TOP100) / 平均评分数 | 243.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 73893.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 7%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.457 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.57 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.573 |
+| Listing样本数(TOP100) / 商品总数 | 8352.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.8228 |
+| Listing样本数(TOP100) / 平均体积(in³) | 141.6489 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.9 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 72.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3462.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 97775.0 |
+| 头部Listing数(TOP10) / 平均BSR | 88603.0 |
+| 新品(半年内上架) / 新品数量 | 35.0 |
+| 新品(半年内上架) / 新品占比 | 0.35 |
+| 新品(半年内上架) / 月均销量 | 569.0 |
+| 新品(半年内上架) / 月均销售额($) | 19696.0 |
+| 新品(半年内上架) / 平均价格($) | 35.02 |
+| 新品(半年内上架) / 平均评分数 | 94.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.132312 |
+| 所有Listing(半年内) / 同类目退货率 | 0.21090001 |
+| 所有Listing(半年内) / 搜索购买比 | 7.0169 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07519 |
+
+### Dresses (连衣裙)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Dresses |
+| Listing样本数(TOP100) / 细分市场(翻译) | 连衣裙 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Novelty & More:Clothing:Novelty:Women:Dresses |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：73 |
+| Listing样本数(TOP100) / 月总销量 | 73823.0 |
+| Listing样本数(TOP100) / 月均销量 | 738.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 28962.0 |
+| Listing样本数(TOP100) / 平均价格($) | 36.48 |
+| Listing样本数(TOP100) / 平均评分数 | 649.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 115517.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 88%  <br> AMZ: 0%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.392 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.629 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.612 |
+| Listing样本数(TOP100) / 商品总数 | 9364.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.6845 |
+| Listing样本数(TOP100) / 平均体积(in³) | 158.7447 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.88 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 81.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2892.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 122473.0 |
+| 头部Listing数(TOP10) / 平均BSR | 17833.0 |
+| 新品(半年内上架) / 新品数量 | 30.0 |
+| 新品(半年内上架) / 新品占比 | 0.3 |
+| 新品(半年内上架) / 月均销量 | 762.0 |
+| 新品(半年内上架) / 月均销售额($) | 29796.0 |
+| 新品(半年内上架) / 平均价格($) | 36.09 |
+| 新品(半年内上架) / 平均评分数 | 46.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.26729602 |
+| 所有Listing(半年内) / 同类目退货率 | 0.249143 |
+| 所有Listing(半年内) / 搜索购买比 | 2.24781 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.036259998 |
+
+### Closet Rods (壁橱杆)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Closet Rods |
+| Listing样本数(TOP100) / 细分市场(翻译) | 壁橱杆 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Storage & Organization:Clothing & Closet Storage:Closet Rods & Shelves:Closet Rods |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：54 <br> 卖家：55 |
+| Listing样本数(TOP100) / 月总销量 | 71017.0 |
+| Listing样本数(TOP100) / 月均销量 | 710.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 14993.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.98 |
+| Listing样本数(TOP100) / 平均评分数 | 562.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 193928.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 84%  <br> AMZ: 4%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.468 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.649 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.637 |
+| Listing样本数(TOP100) / 商品总数 | 770.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.2912 |
+| Listing样本数(TOP100) / 平均体积(in³) | 88.1543 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.54 |
+| Listing样本数(TOP100) / A+占比 | 0.86 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 73.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3324.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 68926.0 |
+| 头部Listing数(TOP10) / 平均BSR | 14232.0 |
+| 新品(半年内上架) / 新品数量 | 20.0 |
+| 新品(半年内上架) / 新品占比 | 0.2 |
+| 新品(半年内上架) / 月均销量 | 498.0 |
+| 新品(半年内上架) / 月均销售额($) | 11283.0 |
+| 新品(半年内上架) / 平均价格($) | 22.8 |
+| 新品(半年内上架) / 平均评分数 | 31.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.090714 |
+| 所有Listing(半年内) / 同类目退货率 | 0.08773 |
+| 所有Listing(半年内) / 搜索购买比 | 13.76511 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.12696 |
+
+### Fluid Evacuators (流体抽出器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Fluid Evacuators |
+| Listing样本数(TOP100) / 细分市场(翻译) | 流体抽出器 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Tools & Equipment:Garage & Shop:Fluid Evacuators |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：68 <br> 卖家：69 |
+| Listing样本数(TOP100) / 月总销量 | 70309.0 |
+| Listing样本数(TOP100) / 月均销量 | 703.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 22097.0 |
+| Listing样本数(TOP100) / 平均价格($) | 38.01 |
+| Listing样本数(TOP100) / 平均评分数 | 515.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.0 |
+| Listing样本数(TOP100) / 平均BSR | 32078.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 64%  <br> AMZ: 6%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.399 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.508 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.492 |
+| Listing样本数(TOP100) / 商品总数 | 720.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.8408 |
+| Listing样本数(TOP100) / 平均体积(in³) | 638.7391 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.8 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 73.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2808.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 51876.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2195.0 |
+| 新品(半年内上架) / 新品数量 | 27.0 |
+| 新品(半年内上架) / 新品占比 | 0.27 |
+| 新品(半年内上架) / 月均销量 | 389.0 |
+| 新品(半年内上架) / 月均销售额($) | 11305.0 |
+| 新品(半年内上架) / 平均价格($) | 27.56 |
+| 新品(半年内上架) / 平均评分数 | 37.0 |
+| 新品(半年内上架) / 平均星级 | 3.1 |
+| 所有Listing(半年内) / 退货率 | 0.039566 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038714003 |
+| 所有Listing(半年内) / 搜索购买比 | 9.88068 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.092889994 |
+
+### GPS Trackers (GPS 追踪器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | GPS Trackers |
+| Listing样本数(TOP100) / 细分市场(翻译) | GPS 追踪器 |
+| Listing样本数(TOP100) / 市场路径 | Electronics:GPS, Finders & Accessories:GPS Trackers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：65 <br> 卖家：69 |
+| Listing样本数(TOP100) / 月总销量 | 69500.0 |
+| Listing样本数(TOP100) / 月均销量 | 695.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 25452.0 |
+| Listing样本数(TOP100) / 平均价格($) | 39.52 |
+| Listing样本数(TOP100) / 平均评分数 | 1028.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.0 |
+| Listing样本数(TOP100) / 平均BSR | 14759.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 83%  <br> AMZ: 0%  <br> FBM: 6% |
+| Listing样本数(TOP100) / 商品集中度 | 0.448 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.561 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.573 |
+| Listing样本数(TOP100) / 商品总数 | 1135.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.2596 |
+| Listing样本数(TOP100) / 平均体积(in³) | 13.3642 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.74 |
+| Listing样本数(TOP100) / A+占比 | 0.93 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 49.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3116.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 102012.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2576.0 |
+| 新品(半年内上架) / 新品数量 | 43.0 |
+| 新品(半年内上架) / 新品占比 | 0.43 |
+| 新品(半年内上架) / 月均销量 | 461.0 |
+| 新品(半年内上架) / 月均销售额($) | 13063.0 |
+| 新品(半年内上架) / 平均价格($) | 29.68 |
+| 新品(半年内上架) / 平均评分数 | 23.0 |
+| 新品(半年内上架) / 平均星级 | 3.8 |
+| 所有Listing(半年内) / 退货率 | 0.081705 |
+| 所有Listing(半年内) / 同类目退货率 | 0.081705 |
+| 所有Listing(半年内) / 搜索购买比 | 5.29135 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05291 |
+
+### Birdhouses (鸟屋)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Birdhouses |
+| Listing样本数(TOP100) / 细分市场(翻译) | 鸟屋 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Backyard Birding & Wildlife:Birds:Birdhouses |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：59 <br> 卖家：57 |
+| Listing样本数(TOP100) / 月总销量 | 66827.0 |
+| Listing样本数(TOP100) / 月均销量 | 668.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 17648.0 |
+| Listing样本数(TOP100) / 平均价格($) | 30.93 |
+| Listing样本数(TOP100) / 平均评分数 | 620.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 39555.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 3%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.362 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.525 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.525 |
+| Listing样本数(TOP100) / 商品总数 | 1997.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.1636 |
+| Listing样本数(TOP100) / 平均体积(in³) | 573.6122 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.85 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 69.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2419.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 51042.0 |
+| 头部Listing数(TOP10) / 平均BSR | 8857.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 517.0 |
+| 新品(半年内上架) / 月均销售额($) | 11474.0 |
+| 新品(半年内上架) / 平均价格($) | 24.17 |
+| 新品(半年内上架) / 平均评分数 | 37.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.029214 |
+| 所有Listing(半年内) / 同类目退货率 | 0.055819 |
+| 所有Listing(半年内) / 搜索购买比 | 7.22348 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.04222 |
+
+### Batteries & Battery Chargers (电池和电池)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Batteries & Battery Chargers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 电池和电池 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports:Skates, Skateboards & Scooters:Scooters & Equipment:Components & Parts:Batteries & Battery Chargers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：52 <br> 卖家：53 |
+| Listing样本数(TOP100) / 月总销量 | 66611.0 |
+| Listing样本数(TOP100) / 月均销量 | 666.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 14858.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.82 |
+| Listing样本数(TOP100) / 平均评分数 | 482.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 24208.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 95%  <br> AMZ: 2%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.388 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.611 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.587 |
+| Listing样本数(TOP100) / 商品总数 | 1811.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.9553 |
+| Listing样本数(TOP100) / 平均体积(in³) | 56.7264 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.62 |
+| Listing样本数(TOP100) / A+占比 | 0.78 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 85.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2587.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 55812.0 |
+| 头部Listing数(TOP10) / 平均BSR | 3996.0 |
+| 新品(半年内上架) / 新品数量 | 18.0 |
+| 新品(半年内上架) / 新品占比 | 0.18 |
+| 新品(半年内上架) / 月均销量 | 508.0 |
+| 新品(半年内上架) / 月均销售额($) | 13199.0 |
+| 新品(半年内上架) / 平均价格($) | 24.85 |
+| 新品(半年内上架) / 平均评分数 | 64.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.098332 |
+| 所有Listing(半年内) / 同类目退货率 | 0.042597 |
+| 所有Listing(半年内) / 搜索购买比 | 9.9352 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09342 |
+
+### Car Stereo Receivers (汽车音响)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Car Stereo Receivers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 汽车音响 |
+| Listing样本数(TOP100) / 市场路径 | Electronics:Car & Vehicle Electronics:Car Electronics:Car Audio:Car Stereo Receivers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：66 <br> 卖家：75 |
+| Listing样本数(TOP100) / 月总销量 | 66546.0 |
+| Listing样本数(TOP100) / 月均销量 | 665.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 60197.0 |
+| Listing样本数(TOP100) / 平均价格($) | 105.06 |
+| Listing样本数(TOP100) / 平均评分数 | 967.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 9182.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 93%  <br> AMZ: 2%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.334 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.503 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.417 |
+| Listing样本数(TOP100) / 商品总数 | 5625.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.0295 |
+| Listing样本数(TOP100) / 平均体积(in³) | 257.7875 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.82 |
+| Listing样本数(TOP100) / A+占比 | 0.91 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 62.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2220.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 129238.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2067.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 558.0 |
+| 新品(半年内上架) / 月均销售额($) | 33172.0 |
+| 新品(半年内上架) / 平均价格($) | 79.75 |
+| 新品(半年内上架) / 平均评分数 | 215.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.146601 |
+| 所有Listing(半年内) / 同类目退货率 | 0.143941 |
+| 所有Listing(半年内) / 搜索购买比 | 2.01565 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.022839999 |
+
+### Battery Switches (接线柱)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Battery Switches |
+| Listing样本数(TOP100) / 细分市场(翻译) | 接线柱 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Replacement Parts:Batteries & Accessories:Battery Accessories:Battery Switches |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：66 <br> 卖家：67 |
+| Listing样本数(TOP100) / 月总销量 | 64762.0 |
+| Listing样本数(TOP100) / 月均销量 | 647.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 12304.0 |
+| Listing样本数(TOP100) / 平均价格($) | 21.79 |
+| Listing样本数(TOP100) / 平均评分数 | 602.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 24456.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 95%  <br> AMZ: 4%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.439 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.549 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.554 |
+| Listing样本数(TOP100) / 商品总数 | 1216.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.6609 |
+| Listing样本数(TOP100) / 平均体积(in³) | 34.6255 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.91 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 80.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2846.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 42284.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2754.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 583.0 |
+| 新品(半年内上架) / 月均销售额($) | 8409.0 |
+| 新品(半年内上架) / 平均价格($) | 15.48 |
+| 新品(半年内上架) / 平均评分数 | 36.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.055841 |
+| 所有Listing(半年内) / 同类目退货率 | 0.074346 |
+| 所有Listing(半年内) / 搜索购买比 | 12.72877 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.119090006 |
+
+### Paddleboard Accessories (冲浪板配件)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Paddleboard Accessories |
+| Listing样本数(TOP100) / 细分市场(翻译) | 冲浪板配件 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports:Water Sports:Stand-Up Paddleboarding:Paddleboard Accessories |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：81 <br> 卖家：81 |
+| Listing样本数(TOP100) / 月总销量 | 62013.0 |
+| Listing样本数(TOP100) / 月均销量 | 620.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 34916.0 |
+| Listing样本数(TOP100) / 平均价格($) | 53.14 |
+| Listing样本数(TOP100) / 平均评分数 | 345.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 26895.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 95%  <br> AMZ: 2%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.35 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.443 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.443 |
+| Listing样本数(TOP100) / 商品总数 | 886.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.4156 |
+| Listing样本数(TOP100) / 平均体积(in³) | 448.519 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.65 |
+| Listing样本数(TOP100) / A+占比 | 0.89 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 69.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2172.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 165242.0 |
+| 头部Listing数(TOP10) / 平均BSR | 4212.0 |
+| 新品(半年内上架) / 新品数量 | 27.0 |
+| 新品(半年内上架) / 新品占比 | 0.27 |
+| 新品(半年内上架) / 月均销量 | 595.0 |
+| 新品(半年内上架) / 月均销售额($) | 45046.0 |
+| 新品(半年内上架) / 平均价格($) | 76.21 |
+| 新品(半年内上架) / 平均评分数 | 33.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.041704997 |
+| 所有Listing(半年内) / 同类目退货率 | 0.045576 |
+| 所有Listing(半年内) / 搜索购买比 | 6.0687 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.08298001 |
+
+### Tap Extractors (分接抽水机)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Tap Extractors |
+| Listing样本数(TOP100) / 细分市场(翻译) | 分接抽水机 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Power & Hand Tools:Hand Tools:Taps & Dies:Tap Extractors |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：70 <br> 卖家：67 |
+| Listing样本数(TOP100) / 月总销量 | 61443.0 |
+| Listing样本数(TOP100) / 月均销量 | 614.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 13195.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.16 |
+| Listing样本数(TOP100) / 平均评分数 | 796.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 45275.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 10%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.5 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.605 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.623 |
+| Listing样本数(TOP100) / 商品总数 | 1033.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.4178 |
+| Listing样本数(TOP100) / 平均体积(in³) | 59.4481 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.89 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 77.0% |
+| 头部Listing数(TOP10) / 月均销量 | 3071.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 52022.0 |
+| 头部Listing数(TOP10) / 平均BSR | 7047.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 379.0 |
+| 新品(半年内上架) / 月均销售额($) | 6451.0 |
+| 新品(半年内上架) / 平均价格($) | 16.04 |
+| 新品(半年内上架) / 平均评分数 | 395.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.048892997 |
+| 所有Listing(半年内) / 同类目退货率 | 0.04438 |
+| 所有Listing(半年内) / 搜索购买比 | 8.29979 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.083170004 |
+
+### Poultry Fountains & Waterers (家禽自动喂水器和饮水器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Poultry Fountains & Waterers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 家禽自动喂水器和饮水器 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Farm & Ranch:Poultry Care:Poultry Feeding & Watering Supplies:Poultry Fountains & Waterers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：59 <br> 卖家：58 |
+| Listing样本数(TOP100) / 月总销量 | 60759.0 |
+| Listing样本数(TOP100) / 月均销量 | 607.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 13051.0 |
+| Listing样本数(TOP100) / 平均价格($) | 26.74 |
+| Listing样本数(TOP100) / 平均评分数 | 615.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 36037.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 88%  <br> AMZ: 2%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.407 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.561 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.561 |
+| Listing样本数(TOP100) / 商品总数 | 1076.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.1883 |
+| Listing样本数(TOP100) / 平均体积(in³) | 770.6084 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.51 |
+| Listing样本数(TOP100) / A+占比 | 0.84 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 65.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2471.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 38793.0 |
+| 头部Listing数(TOP10) / 平均BSR | 5476.0 |
+| 新品(半年内上架) / 新品数量 | 24.0 |
+| 新品(半年内上架) / 新品占比 | 0.24 |
+| 新品(半年内上架) / 月均销量 | 361.0 |
+| 新品(半年内上架) / 月均销售额($) | 15569.0 |
+| 新品(半年内上架) / 平均价格($) | 45.45 |
+| 新品(半年内上架) / 平均评分数 | 33.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.02743 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038934 |
+| 所有Listing(半年内) / 搜索购买比 | 9.71253 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13913 |
+
+### Replacement Sensors (更换传感器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Replacement Sensors |
+| Listing样本数(TOP100) / 细分市场(翻译) | 更换传感器 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Tires & Wheels:Accessories & Parts:Tire Pressure Monitoring Systems (TPMS):Replacement Sensors |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：48 <br> 卖家：53 |
+| Listing样本数(TOP100) / 月总销量 | 60721.0 |
+| Listing样本数(TOP100) / 月均销量 | 607.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 21887.0 |
+| Listing样本数(TOP100) / 平均价格($) | 46.99 |
+| Listing样本数(TOP100) / 平均评分数 | 999.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 23168.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 93%  <br> AMZ: 3%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.366 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.619 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.606 |
+| Listing样本数(TOP100) / 商品总数 | 3701.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4672 |
+| Listing样本数(TOP100) / 平均体积(in³) | 43.0272 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.68 |
+| Listing样本数(TOP100) / A+占比 | 0.93 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 81.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2224.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 38754.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2815.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 430.0 |
+| 新品(半年内上架) / 月均销售额($) | 7442.0 |
+| 新品(半年内上架) / 平均价格($) | 16.29 |
+| 新品(半年内上架) / 平均评分数 | 64.0 |
+| 新品(半年内上架) / 平均星级 | 3.8 |
+| 所有Listing(半年内) / 退货率 | 0.09197699 |
+| 所有Listing(半年内) / 同类目退货率 | 0.088016994 |
+| 所有Listing(半年内) / 搜索购买比 | 10.17792 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10689 |
+
+### Herb & Spice Mills (草本植物)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Herb & Spice Mills |
+| Listing样本数(TOP100) / 细分市场(翻译) | 草本植物 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Kitchen Utensils & Gadgets:Seasoning & Spice Tools:Herb & Spice Mills |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：70 <br> 卖家：74 |
+| Listing样本数(TOP100) / 月总销量 | 59139.0 |
+| Listing样本数(TOP100) / 月均销量 | 591.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 12316.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.71 |
+| Listing样本数(TOP100) / 平均评分数 | 759.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 34879.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 3%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.415 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.595 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.546 |
+| Listing样本数(TOP100) / 商品总数 | 602.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.5679 |
+| Listing样本数(TOP100) / 平均体积(in³) | 28.6049 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.61 |
+| Listing样本数(TOP100) / A+占比 | 0.58 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 54.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2454.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 42897.0 |
+| 头部Listing数(TOP10) / 平均BSR | 14995.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 871.0 |
+| 新品(半年内上架) / 月均销售额($) | 13068.0 |
+| 新品(半年内上架) / 平均价格($) | 15.92 |
+| 新品(半年内上架) / 平均评分数 | 49.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.035457 |
+| 所有Listing(半年内) / 同类目退货率 | 0.047296 |
+| 所有Listing(半年内) / 搜索购买比 | 4.86349 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.08383001 |
+
+### Dash Covers (仪表盘罩)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Dash Covers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 仪表盘罩 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Interior Accessories:Covers:Dash Covers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：60 <br> 卖家：59 |
+| Listing样本数(TOP100) / 月总销量 | 59074.0 |
+| Listing样本数(TOP100) / 月均销量 | 590.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 16560.0 |
+| Listing样本数(TOP100) / 平均价格($) | 30.26 |
+| Listing样本数(TOP100) / 平均评分数 | 787.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 57116.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 0%  <br> FBM: 8% |
+| Listing样本数(TOP100) / 商品集中度 | 0.377 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.629 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.629 |
+| Listing样本数(TOP100) / 商品总数 | 7539.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.198 |
+| Listing样本数(TOP100) / 平均体积(in³) | 585.4123 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.91 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 89.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2227.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 58386.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2316.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 630.0 |
+| 新品(半年内上架) / 月均销售额($) | 16632.0 |
+| 新品(半年内上架) / 平均价格($) | 24.66 |
+| 新品(半年内上架) / 平均评分数 | 249.0 |
+| 新品(半年内上架) / 平均星级 | 3.7 |
+| 所有Listing(半年内) / 退货率 | 0.065544 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038714003 |
+| 所有Listing(半年内) / 搜索购买比 | 4.32373 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.092889994 |
+
+### Pant Sets (长裤套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Pant Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 长裤套装 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Girls:Clothing:Clothing Sets:Pant Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：62 <br> 卖家：61 |
+| Listing样本数(TOP100) / 月总销量 | 59031.0 |
+| Listing样本数(TOP100) / 月均销量 | 590.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 13728.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.95 |
+| Listing样本数(TOP100) / 平均评分数 | 505.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 89787.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 98%  <br> AMZ: 1%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.235 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.421 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.421 |
+| Listing样本数(TOP100) / 商品总数 | 2653.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4967 |
+| Listing样本数(TOP100) / 平均体积(in³) | 100.8222 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.86 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 79.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1387.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 33709.0 |
+| 头部Listing数(TOP10) / 平均BSR | 34298.0 |
+| 新品(半年内上架) / 新品数量 | 46.0 |
+| 新品(半年内上架) / 新品占比 | 0.46 |
+| 新品(半年内上架) / 月均销量 | 597.0 |
+| 新品(半年内上架) / 月均销售额($) | 13100.0 |
+| 新品(半年内上架) / 平均价格($) | 21.06 |
+| 新品(半年内上架) / 平均评分数 | 86.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.109931 |
+| 所有Listing(半年内) / 同类目退货率 | 0.152695 |
+| 所有Listing(半年内) / 搜索购买比 | 3.7099 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.04593 |
+
+### Neon Accent Lights (霓虹灯)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Neon Accent Lights |
+| Listing样本数(TOP100) / 细分市场(翻译) | 霓虹灯 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Lights, Bulbs & Indicators:Accent & Off Road Lighting:LED & Neon Lights:Neon Accent Lights |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：79 |
+| Listing样本数(TOP100) / 月总销量 | 58977.0 |
+| Listing样本数(TOP100) / 月均销量 | 589.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 13221.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.14 |
+| Listing样本数(TOP100) / 平均评分数 | 944.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 35215.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 84%  <br> AMZ: 3%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.408 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.534 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.534 |
+| Listing样本数(TOP100) / 商品总数 | 1755.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.8278 |
+| Listing样本数(TOP100) / 平均体积(in³) | 74.4996 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.62 |
+| Listing样本数(TOP100) / A+占比 | 0.85 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 87.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2408.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 40101.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2818.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 596.0 |
+| 新品(半年内上架) / 月均销售额($) | 15354.0 |
+| 新品(半年内上架) / 平均价格($) | 23.97 |
+| 新品(半年内上架) / 平均评分数 | 304.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.06229 |
+| 所有Listing(半年内) / 同类目退货率 | 0.064829 |
+| 所有Listing(半年内) / 搜索购买比 | 4.21436 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.03628 |
+
+### Bladder Control Devices (膀胱控制设备)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Bladder Control Devices |
+| Listing样本数(TOP100) / 细分市场(翻译) | 膀胱控制设备 |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Health Care:Incontinence & Ostomy:Bladder Control Devices |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：76 |
+| Listing样本数(TOP100) / 月总销量 | 57187.0 |
+| Listing样本数(TOP100) / 月均销量 | 571.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 21135.0 |
+| Listing样本数(TOP100) / 平均价格($) | 31.65 |
+| Listing样本数(TOP100) / 平均评分数 | 499.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 53902.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 0%  <br> FBM: 8% |
+| Listing样本数(TOP100) / 商品集中度 | 0.325 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.468 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.461 |
+| Listing样本数(TOP100) / 商品总数 | 1870.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.5626 |
+| Listing样本数(TOP100) / 平均体积(in³) | 135.6869 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.76 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 60.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1857.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 99000.0 |
+| 头部Listing数(TOP10) / 平均BSR | 21160.0 |
+| 新品(半年内上架) / 新品数量 | 10.0 |
+| 新品(半年内上架) / 新品占比 | 0.1 |
+| 新品(半年内上架) / 月均销量 | 346.0 |
+| 新品(半年内上架) / 月均销售额($) | 12286.0 |
+| 新品(半年内上架) / 平均价格($) | 38.93 |
+| 新品(半年内上架) / 平均评分数 | 218.0 |
+| 新品(半年内上架) / 平均星级 | 3.7 |
+| 所有Listing(半年内) / 退货率 | 0.038963 |
+| 所有Listing(半年内) / 同类目退货率 | 0.027781999 |
+| 所有Listing(半年内) / 搜索购买比 | 10.63875 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.15804 |
+
+### Hand Tools (手动工具)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Hand Tools |
+| Listing样本数(TOP100) / 细分市场(翻译) | 手动工具 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Power & Hand Tools:Hand Tools |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：85 <br> 卖家：79 |
+| Listing样本数(TOP100) / 月总销量 | 56330.0 |
+| Listing样本数(TOP100) / 月均销量 | 563.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9458.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.88 |
+| Listing样本数(TOP100) / 平均评分数 | 945.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 52895.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 79%  <br> AMZ: 11%  <br> FBM: 7% |
+| Listing样本数(TOP100) / 商品集中度 | 0.443 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.48 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.569 |
+| Listing样本数(TOP100) / 商品总数 | 61573.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.4615 |
+| Listing样本数(TOP100) / 平均体积(in³) | 160.8946 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.72 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 51.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2496.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 23726.0 |
+| 头部Listing数(TOP10) / 平均BSR | 5400.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 447.0 |
+| 新品(半年内上架) / 月均销售额($) | 8997.0 |
+| 新品(半年内上架) / 平均价格($) | 25.07 |
+| 新品(半年内上架) / 平均评分数 | 57.0 |
+| 新品(半年内上架) / 平均星级 | 3.9 |
+| 所有Listing(半年内) / 退货率 | 0.037121 |
+| 所有Listing(半年内) / 同类目退货率 | 0.03838 |
+| 所有Listing(半年内) / 搜索购买比 | 14.62036 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.11303 |
+
+### Night Out (晚宴裙装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Night Out |
+| Listing样本数(TOP100) / 细分市场(翻译) | 晚宴裙装 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Clothing:Skirts:Night Out |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：71 <br> 卖家：72 |
+| Listing样本数(TOP100) / 月总销量 | 55337.0 |
+| Listing样本数(TOP100) / 月均销量 | 553.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 15735.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.93 |
+| Listing样本数(TOP100) / 平均评分数 | 542.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 131661.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 98%  <br> AMZ: 0%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.373 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.472 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.45 |
+| Listing样本数(TOP100) / 商品总数 | 1942.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4668 |
+| Listing样本数(TOP100) / 平均体积(in³) | 162.7265 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.78 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 86.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2066.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 59019.0 |
+| 头部Listing数(TOP10) / 平均BSR | 29613.0 |
+| 新品(半年内上架) / 新品数量 | 19.0 |
+| 新品(半年内上架) / 新品占比 | 0.19 |
+| 新品(半年内上架) / 月均销量 | 702.0 |
+| 新品(半年内上架) / 月均销售额($) | 21191.0 |
+| 新品(半年内上架) / 平均价格($) | 25.62 |
+| 新品(半年内上架) / 平均评分数 | 125.0 |
+| 新品(半年内上架) / 平均星级 | 3.9 |
+| 所有Listing(半年内) / 退货率 | N/A |
+| 所有Listing(半年内) / 同类目退货率 | N/A |
+| 所有Listing(半年内) / 搜索购买比 | N/A |
+| 所有Listing(半年内) / 同类目搜索购买比 | N/A |
+
+### Battery Jumper Cables (电池跳线)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Battery Jumper Cables |
+| Listing样本数(TOP100) / 细分市场(翻译) | 电池跳线 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Replacement Parts:Batteries & Accessories:Battery Accessories:Battery Jumper Cables |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：69 |
+| Listing样本数(TOP100) / 月总销量 | 54792.0 |
+| Listing样本数(TOP100) / 月均销量 | 547.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 12164.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.58 |
+| Listing样本数(TOP100) / 平均评分数 | 1156.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 46651.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 89%  <br> AMZ: 5%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.513 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.632 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.634 |
+| Listing样本数(TOP100) / 商品总数 | 777.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.4383 |
+| Listing样本数(TOP100) / 平均体积(in³) | 244.5923 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.79 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 80.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2810.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 59197.0 |
+| 头部Listing数(TOP10) / 平均BSR | 3318.0 |
+| 新品(半年内上架) / 新品数量 | 10.0 |
+| 新品(半年内上架) / 新品占比 | 0.1 |
+| 新品(半年内上架) / 月均销量 | 352.0 |
+| 新品(半年内上架) / 月均销售额($) | 8576.0 |
+| 新品(半年内上架) / 平均价格($) | 16.25 |
+| 新品(半年内上架) / 平均评分数 | 23.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.034912 |
+| 所有Listing(半年内) / 同类目退货率 | 0.034912 |
+| 所有Listing(半年内) / 搜索购买比 | 13.79707 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13797 |
+
+### Costumes (装扮服饰)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Costumes |
+| Listing样本数(TOP100) / 细分市场(翻译) | 装扮服饰 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Costumes & Accessories:Men:Costumes & Cosplay Apparel:Costumes |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：80 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 53804.0 |
+| Listing样本数(TOP100) / 月均销量 | 538.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 19174.0 |
+| Listing样本数(TOP100) / 平均价格($) | 37.4 |
+| Listing样本数(TOP100) / 平均评分数 | 1007.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 95434.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 93%  <br> AMZ: 6%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.229 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.323 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.349 |
+| Listing样本数(TOP100) / 商品总数 | 12579.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.3581 |
+| Listing样本数(TOP100) / 平均体积(in³) | 326.2726 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.9 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 77.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1232.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 36305.0 |
+| 头部Listing数(TOP10) / 平均BSR | 40873.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 579.0 |
+| 新品(半年内上架) / 月均销售额($) | 17275.0 |
+| 新品(半年内上架) / 平均价格($) | 33.99 |
+| 新品(半年内上架) / 平均评分数 | 36.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.162536 |
+| 所有Listing(半年内) / 同类目退货率 | 0.156655 |
+| 所有Listing(半年内) / 搜索购买比 | 3.10572 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.03512 |
+
+### Feeders (喂食器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Feeders |
+| Listing样本数(TOP100) / 细分市场(翻译) | 喂食器 |
+| Listing样本数(TOP100) / 市场路径 | Pet Supplies:Birds:Feeding & Watering Supplies:Feeders |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：79 <br> 卖家：80 |
+| Listing样本数(TOP100) / 月总销量 | 52962.0 |
+| Listing样本数(TOP100) / 月均销量 | 529.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 10702.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.98 |
+| Listing样本数(TOP100) / 平均评分数 | 572.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 34351.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 3%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.449 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.48 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.48 |
+| Listing样本数(TOP100) / 商品总数 | 1574.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.0801 |
+| Listing样本数(TOP100) / 平均体积(in³) | 195.9973 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.53 |
+| Listing样本数(TOP100) / A+占比 | 0.82 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 83.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2380.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 41378.0 |
+| 头部Listing数(TOP10) / 平均BSR | 14884.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 552.0 |
+| 新品(半年内上架) / 月均销售额($) | 17891.0 |
+| 新品(半年内上架) / 平均价格($) | 44.42 |
+| 新品(半年内上架) / 平均评分数 | 207.0 |
+| 新品(半年内上架) / 平均星级 | 3.4 |
+| 所有Listing(半年内) / 退货率 | 0.054422997 |
+| 所有Listing(半年内) / 同类目退货率 | 0.065731004 |
+| 所有Listing(半年内) / 搜索购买比 | 9.63352 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09192 |
+
+### Emblems (车标)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Emblems |
+| Listing样本数(TOP100) / 细分市场(翻译) | 车标 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Exterior Accessories:Emblems |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：63 <br> 卖家：76 |
+| Listing样本数(TOP100) / 月总销量 | 52875.0 |
+| Listing样本数(TOP100) / 月均销量 | 528.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 10436.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.84 |
+| Listing样本数(TOP100) / 平均评分数 | 582.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 18838.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 78%  <br> AMZ: 1%  <br> FBM: 18% |
+| Listing样本数(TOP100) / 商品集中度 | 0.262 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.465 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.35 |
+| Listing样本数(TOP100) / 商品总数 | 10756.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.1222 |
+| Listing样本数(TOP100) / 平均体积(in³) | 32.4585 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.62 |
+| Listing样本数(TOP100) / A+占比 | 0.38 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 45.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1383.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 22190.0 |
+| 头部Listing数(TOP10) / 平均BSR | 5284.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 384.0 |
+| 新品(半年内上架) / 月均销售额($) | 5511.0 |
+| 新品(半年内上架) / 平均价格($) | 14.74 |
+| 新品(半年内上架) / 平均评分数 | 22.0 |
+| 新品(半年内上架) / 平均星级 | 3.9 |
+| 所有Listing(半年内) / 退货率 | 0.047126003 |
+| 所有Listing(半年内) / 同类目退货率 | 0.046543002 |
+| 所有Listing(半年内) / 搜索购买比 | 3.83814 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0394 |
+
+### Assortments & Variety Gifts (种类)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Assortments & Variety Gifts |
+| Listing样本数(TOP100) / 细分市场(翻译) | 种类 |
+| Listing样本数(TOP100) / 市场路径 | Grocery & Gourmet Food:Food & Beverage Gifts:Assortments & Variety Gifts |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：48 <br> 卖家：53 |
+| Listing样本数(TOP100) / 月总销量 | 51572.0 |
+| Listing样本数(TOP100) / 月均销量 | 515.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 16701.0 |
+| Listing样本数(TOP100) / 平均价格($) | 32.24 |
+| Listing样本数(TOP100) / 平均评分数 | 1060.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 32026.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 86%  <br> AMZ: 4%  <br> FBM: 8% |
+| Listing样本数(TOP100) / 商品集中度 | 0.377 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.635 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.611 |
+| Listing样本数(TOP100) / 商品总数 | 840.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.4656 |
+| Listing样本数(TOP100) / 平均体积(in³) | 397.6106 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.51 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 100.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1945.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 64636.0 |
+| 头部Listing数(TOP10) / 平均BSR | 9594.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 485.0 |
+| 新品(半年内上架) / 月均销售额($) | 14167.0 |
+| 新品(半年内上架) / 平均价格($) | 26.44 |
+| 新品(半年内上架) / 平均评分数 | 29.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.003725 |
+| 所有Listing(半年内) / 同类目退货率 | 0.001907 |
+| 所有Listing(半年内) / 搜索购买比 | 6.64183 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.29152 |
+
+### Candlestick Holders (烛台座)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Candlestick Holders |
+| Listing样本数(TOP100) / 细分市场(翻译) | 烛台座 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Home Décor Products:Candles & Holders:Candleholders:Candlestick Holders |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：73 <br> 卖家：73 |
+| Listing样本数(TOP100) / 月总销量 | 50007.0 |
+| Listing样本数(TOP100) / 月均销量 | 500.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 11840.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.25 |
+| Listing样本数(TOP100) / 平均评分数 | 462.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.6 |
+| Listing样本数(TOP100) / 平均BSR | 115851.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 99%  <br> AMZ: 1%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.198 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.392 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.392 |
+| Listing样本数(TOP100) / 商品总数 | 4826.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.911 |
+| Listing样本数(TOP100) / 平均体积(in³) | 276.9239 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.54 |
+| Listing样本数(TOP100) / A+占比 | 0.8 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 95.0% |
+| 头部Listing数(TOP10) / 月均销量 | 989.0 |
+| 头部Listing数(TOP10) / 垄断度 | 1.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 16355.0 |
+| 头部Listing数(TOP10) / 平均BSR | 48150.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 536.0 |
+| 新品(半年内上架) / 月均销售额($) | 12002.0 |
+| 新品(半年内上架) / 平均价格($) | 23.32 |
+| 新品(半年内上架) / 平均评分数 | 70.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.129071 |
+| 所有Listing(半年内) / 同类目退货率 | 0.084172 |
+| 所有Listing(半年内) / 搜索购买比 | 5.05856 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05765 |
+
+### Decorative Trays (装饰性托盘)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Decorative Trays |
+| Listing样本数(TOP100) / 细分市场(翻译) | 装饰性托盘 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Home Décor Products:Home Décor Accents:Decorative Accessories:Decorative Trays |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：83 <br> 卖家：81 |
+| Listing样本数(TOP100) / 月总销量 | 49936.0 |
+| Listing样本数(TOP100) / 月均销量 | 499.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 10256.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.03 |
+| Listing样本数(TOP100) / 平均评分数 | 492.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 184526.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 92%  <br> AMZ: 2%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.354 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.43 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.435 |
+| Listing样本数(TOP100) / 商品总数 | 2833.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.517 |
+| Listing样本数(TOP100) / 平均体积(in³) | 214.3129 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.86 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 78.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1770.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 29613.0 |
+| 头部Listing数(TOP10) / 平均BSR | 55840.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 933.0 |
+| 新品(半年内上架) / 月均销售额($) | 16296.0 |
+| 新品(半年内上架) / 平均价格($) | 19.9 |
+| 新品(半年内上架) / 平均评分数 | 128.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.095189 |
+| 所有Listing(半年内) / 同类目退货率 | 0.075026006 |
+| 所有Listing(半年内) / 搜索购买比 | 4.18514 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.06061 |
+
+### Trucks (卡车)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Trucks |
+| Listing样本数(TOP100) / 细分市场(翻译) | 卡车 |
+| Listing样本数(TOP100) / 市场路径 | Toys & Games:Remote & App Controlled Vehicles & Parts:Remote & App Controlled Vehicles:Trucks |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：74 <br> 卖家：72 |
+| Listing样本数(TOP100) / 月总销量 | 49678.0 |
+| Listing样本数(TOP100) / 月均销量 | 496.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 33136.0 |
+| Listing样本数(TOP100) / 平均价格($) | 67.37 |
+| Listing样本数(TOP100) / 平均评分数 | 868.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 37254.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.9 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 6%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.333 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.481 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.484 |
+| Listing样本数(TOP100) / 商品总数 | 1478.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.4816 |
+| Listing样本数(TOP100) / 平均体积(in³) | 440.1105 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.67 |
+| Listing样本数(TOP100) / A+占比 | 0.96 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 82.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1652.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 123247.0 |
+| 头部Listing数(TOP10) / 平均BSR | 5726.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 290.0 |
+| 新品(半年内上架) / 月均销售额($) | 18262.0 |
+| 新品(半年内上架) / 平均价格($) | 74.16 |
+| 新品(半年内上架) / 平均评分数 | 147.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.077851 |
+| 所有Listing(半年内) / 同类目退货率 | 0.041058 |
+| 所有Listing(半年内) / 搜索购买比 | 1.85213 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0448 |
+
+### Plaques & Wall Art (装饰墙)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Plaques & Wall Art |
+| Listing样本数(TOP100) / 细分市场(翻译) | 装饰墙 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Outdoor Décor:Plaques & Wall Art |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：69 <br> 卖家：70 |
+| Listing样本数(TOP100) / 月总销量 | 48871.0 |
+| Listing样本数(TOP100) / 月均销量 | 488.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9093.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.35 |
+| Listing样本数(TOP100) / 平均评分数 | 619.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 38533.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 91%  <br> AMZ: 0%  <br> FBM: 6% |
+| Listing样本数(TOP100) / 商品集中度 | 0.329 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.461 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.461 |
+| Listing样本数(TOP100) / 商品总数 | 3329.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.0387 |
+| Listing样本数(TOP100) / 平均体积(in³) | 69.791 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.89 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 88.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1608.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 26682.0 |
+| 头部Listing数(TOP10) / 平均BSR | 9628.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 374.0 |
+| 新品(半年内上架) / 月均销售额($) | 7183.0 |
+| 新品(半年内上架) / 平均价格($) | 18.84 |
+| 新品(半年内上架) / 平均评分数 | 148.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.028861001 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035097 |
+| 所有Listing(半年内) / 搜索购买比 | 4.87427 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13555999 |
+
+### Accessories (配件)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Accessories |
+| Listing样本数(TOP100) / 细分市场(翻译) | 配件 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Interior Accessories:Anti-Theft:Accessories |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：61 <br> 卖家：63 |
+| Listing样本数(TOP100) / 月总销量 | 48526.0 |
+| Listing样本数(TOP100) / 月均销量 | 485.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 8291.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.81 |
+| Listing样本数(TOP100) / 平均评分数 | 1152.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 48007.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 94%  <br> AMZ: 0%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.457 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.56 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.539 |
+| Listing样本数(TOP100) / 商品总数 | 2364.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.32 |
+| Listing样本数(TOP100) / 平均体积(in³) | 39.5641 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.89 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 73.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2219.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 29872.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2771.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 389.0 |
+| 新品(半年内上架) / 月均销售额($) | 7036.0 |
+| 新品(半年内上架) / 平均价格($) | 17.61 |
+| 新品(半年内上架) / 平均评分数 | 68.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.063157 |
+| 所有Listing(半年内) / 同类目退货率 | 0.065605 |
+| 所有Listing(半年内) / 搜索购买比 | 8.94816 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07604 |
+
+### Bustiers & Corsets (紧身衣)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Bustiers & Corsets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 紧身衣 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Novelty & More:Clothing:Exotic Apparel:Women:Bustiers & Corsets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：57 <br> 卖家：59 |
+| Listing样本数(TOP100) / 月总销量 | 47618.0 |
+| Listing样本数(TOP100) / 月均销量 | 476.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 12807.0 |
+| Listing样本数(TOP100) / 平均价格($) | 26.64 |
+| Listing样本数(TOP100) / 平均评分数 | 1015.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 188129.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 94%  <br> AMZ: 0%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.414 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.629 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.622 |
+| Listing样本数(TOP100) / 商品总数 | 1456.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.3558 |
+| Listing样本数(TOP100) / 平均体积(in³) | 135.4105 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.75 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 80.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1972.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 57328.0 |
+| 头部Listing数(TOP10) / 平均BSR | 30348.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 268.0 |
+| 新品(半年内上架) / 月均销售额($) | 7115.0 |
+| 新品(半年内上架) / 平均价格($) | 28.41 |
+| 新品(半年内上架) / 平均评分数 | 37.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.255296 |
+| 所有Listing(半年内) / 同类目退货率 | 0.25410998 |
+| 所有Listing(半年内) / 搜索购买比 | 2.51206 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.02606 |
+
+### Electrical System Tools (电气系统工具)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Electrical System Tools |
+| Listing样本数(TOP100) / 细分市场(翻译) | 电气系统工具 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Tools & Equipment:Electrical System Tools |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 47594.0 |
+| Listing样本数(TOP100) / 月均销量 | 475.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 12366.0 |
+| Listing样本数(TOP100) / 平均价格($) | 31.23 |
+| Listing样本数(TOP100) / 平均评分数 | 489.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 26151.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 3%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.336 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.449 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.413 |
+| Listing样本数(TOP100) / 商品总数 | 1398.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.0037 |
+| Listing样本数(TOP100) / 平均体积(in³) | 319.2793 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.84 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 81.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1599.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 27029.0 |
+| 头部Listing数(TOP10) / 平均BSR | 4591.0 |
+| 新品(半年内上架) / 新品数量 | 21.0 |
+| 新品(半年内上架) / 新品占比 | 0.21 |
+| 新品(半年内上架) / 月均销量 | 367.0 |
+| 新品(半年内上架) / 月均销售额($) | 7072.0 |
+| 新品(半年内上架) / 平均价格($) | 18.34 |
+| 新品(半年内上架) / 平均评分数 | 46.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.023756001 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038714003 |
+| 所有Listing(半年内) / 搜索购买比 | 9.05046 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.092889994 |
+
+### Brake System Bleeding Tools (刹车排气)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Brake System Bleeding Tools |
+| Listing样本数(TOP100) / 细分市场(翻译) | 刹车排气 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Tools & Equipment:Brake Tools:Brake System Bleeding Tools |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：70 <br> 卖家：70 |
+| Listing样本数(TOP100) / 月总销量 | 47424.0 |
+| Listing样本数(TOP100) / 月均销量 | 474.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 11533.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.56 |
+| Listing样本数(TOP100) / 平均评分数 | 474.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 34378.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 83%  <br> AMZ: 7%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.347 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.504 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.512 |
+| Listing样本数(TOP100) / 商品总数 | 1024.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.58 |
+| Listing样本数(TOP100) / 平均体积(in³) | 308.8778 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.56 |
+| Listing样本数(TOP100) / A+占比 | 0.89 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 82.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1645.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 25801.0 |
+| 头部Listing数(TOP10) / 平均BSR | 4701.0 |
+| 新品(半年内上架) / 新品数量 | 21.0 |
+| 新品(半年内上架) / 新品占比 | 0.21 |
+| 新品(半年内上架) / 月均销量 | 378.0 |
+| 新品(半年内上架) / 月均销售额($) | 7390.0 |
+| 新品(半年内上架) / 平均价格($) | 18.55 |
+| 新品(半年内上架) / 平均评分数 | 34.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.046921 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038714003 |
+| 所有Listing(半年内) / 搜索购买比 | 8.85293 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.092889994 |
+
+### Kava Kava (卡瓦胡椒)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Kava Kava |
+| Listing样本数(TOP100) / 细分市场(翻译) | 卡瓦胡椒 |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Vitamins, Minerals & Supplements:Herbal Supplements:Kava Kava |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：69 <br> 卖家：69 |
+| Listing样本数(TOP100) / 月总销量 | 46884.0 |
+| Listing样本数(TOP100) / 月均销量 | 468.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 17609.0 |
+| Listing样本数(TOP100) / 平均价格($) | 35.87 |
+| Listing样本数(TOP100) / 平均评分数 | 295.0 |
+| Listing样本数(TOP100) / 平均星级 | 3.9 |
+| Listing样本数(TOP100) / 平均BSR | 94403.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 58%  <br> AMZ: 2%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.563 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.634 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.633 |
+| Listing样本数(TOP100) / 商品总数 | 336.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.6461 |
+| Listing样本数(TOP100) / 平均体积(in³) | 73.6447 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.69 |
+| Listing样本数(TOP100) / A+占比 | 0.87 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 86.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2639.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 98436.0 |
+| 头部Listing数(TOP10) / 平均BSR | 18507.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 261.0 |
+| 新品(半年内上架) / 月均销售额($) | 7018.0 |
+| 新品(半年内上架) / 平均价格($) | 26.98 |
+| 新品(半年内上架) / 平均评分数 | 28.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.0038839998 |
+| 所有Listing(半年内) / 同类目退货率 | 0.002946 |
+| 所有Listing(半年内) / 搜索购买比 | 12.21349 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.22895001 |
+
+### Cup Carriers (外卖杯托盘)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Cup Carriers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 外卖杯托盘 |
+| Listing样本数(TOP100) / 市场路径 | Industrial & Scientific:Food Service Equipment & Supplies:Disposables:Take Out Containers:Cup Carriers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：83 <br> 卖家：82 |
+| Listing样本数(TOP100) / 月总销量 | 46881.0 |
+| Listing样本数(TOP100) / 月均销量 | 468.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9079.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.15 |
+| Listing样本数(TOP100) / 平均评分数 | 431.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 26684.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.8 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 91%  <br> AMZ: 5%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.4 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.454 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.47 |
+| Listing样本数(TOP100) / 商品总数 | 955.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.6871 |
+| Listing样本数(TOP100) / 平均体积(in³) | 426.7775 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.54 |
+| Listing样本数(TOP100) / A+占比 | 0.79 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 68.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1874.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 31862.0 |
+| 头部Listing数(TOP10) / 平均BSR | 4063.0 |
+| 新品(半年内上架) / 新品数量 | 18.0 |
+| 新品(半年内上架) / 新品占比 | 0.18 |
+| 新品(半年内上架) / 月均销量 | 275.0 |
+| 新品(半年内上架) / 月均销售额($) | 3931.0 |
+| 新品(半年内上架) / 平均价格($) | 15.74 |
+| 新品(半年内上架) / 平均评分数 | 23.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.04599 |
+| 所有Listing(半年内) / 同类目退货率 | 0.057114 |
+| 所有Listing(半年内) / 搜索购买比 | 8.43054 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07751 |
+
+### Hands Free Leashes (免手持牵绳)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Hands Free Leashes |
+| Listing样本数(TOP100) / 细分市场(翻译) | 免手持牵绳 |
+| Listing样本数(TOP100) / 市场路径 | Pet Supplies:Dogs:Collars, Harnesses & Leashes:Leashes:Hands Free Leashes |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：74 <br> 卖家：74 |
+| Listing样本数(TOP100) / 月总销量 | 46292.0 |
+| Listing样本数(TOP100) / 月均销量 | 462.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9687.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.9 |
+| Listing样本数(TOP100) / 平均评分数 | 769.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 37371.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 94%  <br> AMZ: 2%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.579 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.648 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.648 |
+| Listing样本数(TOP100) / 商品总数 | 379.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.7365 |
+| Listing样本数(TOP100) / 平均体积(in³) | 106.9587 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.61 |
+| Listing样本数(TOP100) / A+占比 | 0.97 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 50.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2679.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 50221.0 |
+| 头部Listing数(TOP10) / 平均BSR | 7911.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 194.0 |
+| 新品(半年内上架) / 月均销售额($) | 4100.0 |
+| 新品(半年内上架) / 平均价格($) | 21.15 |
+| 新品(半年内上架) / 平均评分数 | 66.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.064411 |
+| 所有Listing(半年内) / 同类目退货率 | 0.055361 |
+| 所有Listing(半年内) / 搜索购买比 | 8.65104 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.14361 |
+
+### Game Mats & Boards (游戏垫和游戏板)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Game Mats & Boards |
+| Listing样本数(TOP100) / 细分市场(翻译) | 游戏垫和游戏板 |
+| Listing样本数(TOP100) / 市场路径 | Toys & Games:Games & Accessories:Game Accessories:Game Mats & Boards |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：80 <br> 卖家：80 |
+| Listing样本数(TOP100) / 月总销量 | 45504.0 |
+| Listing样本数(TOP100) / 月均销量 | 455.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 13601.0 |
+| Listing样本数(TOP100) / 平均价格($) | 30.04 |
+| Listing样本数(TOP100) / 平均评分数 | 326.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 38034.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 94%  <br> AMZ: 0%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.316 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.42 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.42 |
+| Listing样本数(TOP100) / 商品总数 | 1336.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.4704 |
+| Listing样本数(TOP100) / 平均体积(in³) | 317.3393 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.77 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 81.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1437.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 42619.0 |
+| 头部Listing数(TOP10) / 平均BSR | 8418.0 |
+| 新品(半年内上架) / 新品数量 | 31.0 |
+| 新品(半年内上架) / 新品占比 | 0.31 |
+| 新品(半年内上架) / 月均销量 | 371.0 |
+| 新品(半年内上架) / 月均销售额($) | 12491.0 |
+| 新品(半年内上架) / 平均价格($) | 34.12 |
+| 新品(半年内上架) / 平均评分数 | 30.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.075034 |
+| 所有Listing(半年内) / 同类目退货率 | 0.042433 |
+| 所有Listing(半年内) / 搜索购买比 | 3.76317 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05271 |
+
+### Hand Exercisers (手部锻炼器具)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Hand Exercisers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 手部锻炼器具 |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Medical Supplies & Equipment:Occupational & Physical Therapy Aids:Hand Exercisers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：80 |
+| Listing样本数(TOP100) / 月总销量 | 43567.0 |
+| Listing样本数(TOP100) / 月均销量 | 435.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9400.0 |
+| Listing样本数(TOP100) / 平均价格($) | 30.96 |
+| Listing样本数(TOP100) / 平均评分数 | 806.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 97698.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 7%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.568 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.634 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.631 |
+| Listing样本数(TOP100) / 商品总数 | 651.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.3524 |
+| Listing样本数(TOP100) / 平均体积(in³) | 121.4708 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.8 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 60.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2475.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 43307.0 |
+| 头部Listing数(TOP10) / 平均BSR | 22890.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 147.0 |
+| 新品(半年内上架) / 月均销售额($) | 4686.0 |
+| 新品(半年内上架) / 平均价格($) | 38.91 |
+| 新品(半年内上架) / 平均评分数 | 17.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.052963 |
+| 所有Listing(半年内) / 同类目退货率 | 0.027781999 |
+| 所有Listing(半年内) / 搜索购买比 | 9.32081 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.15804 |
+
+### Robots (机器人)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Robots |
+| Listing样本数(TOP100) / 细分市场(翻译) | 机器人 |
+| Listing样本数(TOP100) / 市场路径 | Toys & Games:Remote & App Controlled Vehicles & Parts:Robots |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：83 <br> 卖家：80 |
+| Listing样本数(TOP100) / 月总销量 | 43366.0 |
+| Listing样本数(TOP100) / 月均销量 | 433.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 20017.0 |
+| Listing样本数(TOP100) / 平均价格($) | 51.95 |
+| Listing样本数(TOP100) / 平均评分数 | 1070.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 37578.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 7%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.4 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.499 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.509 |
+| Listing样本数(TOP100) / 商品总数 | 780.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.3485 |
+| Listing样本数(TOP100) / 平均体积(in³) | 556.6451 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.66 |
+| Listing样本数(TOP100) / A+占比 | 1.0 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 64.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1733.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 59590.0 |
+| 头部Listing数(TOP10) / 平均BSR | 5619.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 307.0 |
+| 新品(半年内上架) / 月均销售额($) | 12776.0 |
+| 新品(半年内上架) / 平均价格($) | 34.46 |
+| 新品(半年内上架) / 平均评分数 | 125.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.064048 |
+| 所有Listing(半年内) / 同类目退货率 | 0.033138 |
+| 所有Listing(半年内) / 搜索购买比 | 2.88997 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.044650003 |
+
+### Nut & Bolt Assortment Sets (螺母和螺栓套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Nut & Bolt Assortment Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 螺母和螺栓套装 |
+| Listing样本数(TOP100) / 市场路径 | Industrial & Scientific:Fasteners:Nut & Bolt Assortment Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：78 |
+| Listing样本数(TOP100) / 月总销量 | 43247.0 |
+| Listing样本数(TOP100) / 月均销量 | 432.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 8803.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.09 |
+| Listing样本数(TOP100) / 平均评分数 | 279.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.6 |
+| Listing样本数(TOP100) / 平均BSR | 21931.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 99%  <br> AMZ: 0%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.305 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.405 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.405 |
+| Listing样本数(TOP100) / 商品总数 | 2413.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.6433 |
+| Listing样本数(TOP100) / 平均体积(in³) | 101.7498 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.56 |
+| Listing样本数(TOP100) / A+占比 | 0.8 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 84.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1321.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 30356.0 |
+| 头部Listing数(TOP10) / 平均BSR | 4798.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 320.0 |
+| 新品(半年内上架) / 月均销售额($) | 3895.0 |
+| 新品(半年内上架) / 平均价格($) | 12.58 |
+| 新品(半年内上架) / 平均评分数 | 23.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.046125997 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038383998 |
+| 所有Listing(半年内) / 搜索购买比 | 11.30983 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13971 |
+
+### Motion Detectors (生命探测器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Motion Detectors |
+| Listing样本数(TOP100) / 细分市场(翻译) | 生命探测器 |
+| Listing样本数(TOP100) / 市场路径 | Electronics:Security & Surveillance:Motion Detectors |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：55 <br> 卖家：58 |
+| Listing样本数(TOP100) / 月总销量 | 43181.0 |
+| Listing样本数(TOP100) / 月均销量 | 431.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 16707.0 |
+| Listing样本数(TOP100) / 平均价格($) | 38.8 |
+| Listing样本数(TOP100) / 平均评分数 | 899.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 15995.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 96%  <br> AMZ: 1%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.392 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.609 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.592 |
+| Listing样本数(TOP100) / 商品总数 | 1142.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.7074 |
+| Listing样本数(TOP100) / 平均体积(in³) | 82.3528 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.77 |
+| Listing样本数(TOP100) / A+占比 | 0.88 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 71.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1694.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 69779.0 |
+| 头部Listing数(TOP10) / 平均BSR | 3207.0 |
+| 新品(半年内上架) / 新品数量 | 16.0 |
+| 新品(半年内上架) / 新品占比 | 0.16 |
+| 新品(半年内上架) / 月均销量 | 263.0 |
+| 新品(半年内上架) / 月均销售额($) | 10162.0 |
+| 新品(半年内上架) / 平均价格($) | 34.74 |
+| 新品(半年内上架) / 平均评分数 | 71.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.06685 |
+| 所有Listing(半年内) / 同类目退货率 | 0.06685 |
+| 所有Listing(半年内) / 搜索购买比 | 9.56472 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.095649995 |
+
+### Livestock Health Supplies (牲畜健康用品)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Livestock Health Supplies |
+| Listing样本数(TOP100) / 细分市场(翻译) | 牲畜健康用品 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Farm & Ranch:Livestock Supplies:Livestock Health Supplies |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：74 <br> 卖家：67 |
+| Listing样本数(TOP100) / 月总销量 | 43097.0 |
+| Listing样本数(TOP100) / 月均销量 | 430.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 13311.0 |
+| Listing样本数(TOP100) / 平均价格($) | 31.45 |
+| Listing样本数(TOP100) / 平均评分数 | 361.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 45195.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.7 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 67%  <br> AMZ: 18%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.406 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.513 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.566 |
+| Listing样本数(TOP100) / 商品总数 | 1474.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.1962 |
+| Listing样本数(TOP100) / 平均体积(in³) | 103.8661 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.52 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 54.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1751.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 45596.0 |
+| 头部Listing数(TOP10) / 平均BSR | 7387.0 |
+| 新品(半年内上架) / 新品数量 | 21.0 |
+| 新品(半年内上架) / 新品占比 | 0.21 |
+| 新品(半年内上架) / 月均销量 | 313.0 |
+| 新品(半年内上架) / 月均销售额($) | 10630.0 |
+| 新品(半年内上架) / 平均价格($) | 32.61 |
+| 新品(半年内上架) / 平均评分数 | 11.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.017842 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035097 |
+| 所有Listing(半年内) / 搜索购买比 | 10.39151 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13555999 |
+
+### Honey Jars (蜂蜜罐子)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Honey Jars |
+| Listing样本数(TOP100) / 细分市场(翻译) | 蜂蜜罐子 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Dining & Entertaining:Dinnerware & Serveware:Serveware:Honey Jars |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：74 <br> 卖家：74 |
+| Listing样本数(TOP100) / 月总销量 | 42955.0 |
+| Listing样本数(TOP100) / 月均销量 | 429.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9120.0 |
+| Listing样本数(TOP100) / 平均价格($) | 21.74 |
+| Listing样本数(TOP100) / 平均评分数 | 662.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 43367.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 94%  <br> AMZ: 2%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.427 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.524 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.546 |
+| Listing样本数(TOP100) / 商品总数 | 707.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.8319 |
+| Listing样本数(TOP100) / 平均体积(in³) | 185.7807 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.53 |
+| Listing样本数(TOP100) / A+占比 | 0.9 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 75.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1835.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 40082.0 |
+| 头部Listing数(TOP10) / 平均BSR | 6901.0 |
+| 新品(半年内上架) / 新品数量 | 18.0 |
+| 新品(半年内上架) / 新品占比 | 0.18 |
+| 新品(半年内上架) / 月均销量 | 210.0 |
+| 新品(半年内上架) / 月均销售额($) | 3924.0 |
+| 新品(半年内上架) / 平均价格($) | 18.29 |
+| 新品(半年内上架) / 平均评分数 | 24.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.053978 |
+| 所有Listing(半年内) / 同类目退货率 | 0.046366 |
+| 所有Listing(半年内) / 搜索购买比 | 7.79161 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.08969 |
+
+### Trophies (奖杯)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Trophies |
+| Listing样本数(TOP100) / 细分市场(翻译) | 奖杯 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports & Outdoor Recreation Accessories:Trophies, Medals & Awards:Trophies |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：65 <br> 卖家：64 |
+| Listing样本数(TOP100) / 月总销量 | 42954.0 |
+| Listing样本数(TOP100) / 月均销量 | 429.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9270.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.41 |
+| Listing样本数(TOP100) / 平均评分数 | 291.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 31343.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 71%  <br> AMZ: 1%  <br> FBM: 26% |
+| Listing样本数(TOP100) / 商品集中度 | 0.276 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.46 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.467 |
+| Listing样本数(TOP100) / 商品总数 | 6638.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.9705 |
+| Listing样本数(TOP100) / 平均体积(in³) | 172.1132 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.62 |
+| Listing样本数(TOP100) / A+占比 | 0.86 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 54.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1187.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 20612.0 |
+| 头部Listing数(TOP10) / 平均BSR | 7997.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 337.0 |
+| 新品(半年内上架) / 月均销售额($) | 11024.0 |
+| 新品(半年内上架) / 平均价格($) | 29.89 |
+| 新品(半年内上架) / 平均评分数 | 29.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.025889002 |
+| 所有Listing(半年内) / 同类目退货率 | 0.045063 |
+| 所有Listing(半年内) / 搜索购买比 | 6.49451 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07428 |
+
+### Decorative Candle Lanterns (装饰性点烛灯笼)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Decorative Candle Lanterns |
+| Listing样本数(TOP100) / 细分市场(翻译) | 装饰性点烛灯笼 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Home Décor Products:Candles & Holders:Candleholders:Decorative Candle Lanterns |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：60 <br> 卖家：61 |
+| Listing样本数(TOP100) / 月总销量 | 42606.0 |
+| Listing样本数(TOP100) / 月均销量 | 426.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 14991.0 |
+| Listing样本数(TOP100) / 平均价格($) | 38.49 |
+| Listing样本数(TOP100) / 平均评分数 | 823.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 144523.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 91%  <br> AMZ: 2%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.284 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.452 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.441 |
+| Listing样本数(TOP100) / 商品总数 | 1615.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.5817 |
+| Listing样本数(TOP100) / 平均体积(in³) | 515.0843 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.61 |
+| Listing样本数(TOP100) / A+占比 | 0.88 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 78.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1212.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 32810.0 |
+| 头部Listing数(TOP10) / 平均BSR | 35281.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 377.0 |
+| 新品(半年内上架) / 月均销售额($) | 16712.0 |
+| 新品(半年内上架) / 平均价格($) | 44.48 |
+| 新品(半年内上架) / 平均评分数 | 39.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.103667 |
+| 所有Listing(半年内) / 同类目退货率 | 0.084172 |
+| 所有Listing(半年内) / 搜索购买比 | 4.02434 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05765 |
+
+### Hair Accessories (头饰)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Hair Accessories |
+| Listing样本数(TOP100) / 细分市场(翻译) | 头饰 |
+| Listing样本数(TOP100) / 市场路径 | Pet Supplies:Dogs:Apparel & Accessories:Hair Accessories |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：78 |
+| Listing样本数(TOP100) / 月总销量 | 41956.0 |
+| Listing样本数(TOP100) / 月均销量 | 419.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 8273.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.96 |
+| Listing样本数(TOP100) / 平均评分数 | 657.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 23769.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 94%  <br> AMZ: 0%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.316 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.366 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.366 |
+| Listing样本数(TOP100) / 商品总数 | 1528.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.6684 |
+| Listing样本数(TOP100) / 平均体积(in³) | 756.9769 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.56 |
+| Listing样本数(TOP100) / A+占比 | 0.77 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 76.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1325.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 13220.0 |
+| 头部Listing数(TOP10) / 平均BSR | 7178.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 299.0 |
+| 新品(半年内上架) / 月均销售额($) | 8860.0 |
+| 新品(半年内上架) / 平均价格($) | 35.07 |
+| 新品(半年内上架) / 平均评分数 | 31.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.043555997 |
+| 所有Listing(半年内) / 同类目退货率 | 0.028313 |
+| 所有Listing(半年内) / 搜索购买比 | 7.71337 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.16683 |
+
+### Horns & Sirens (喇叭)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Horns & Sirens |
+| Listing样本数(TOP100) / 细分市场(翻译) | 喇叭 |
+| Listing样本数(TOP100) / 市场路径 | Electronics:Security & Surveillance:Horns & Sirens |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：74 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 41443.0 |
+| Listing样本数(TOP100) / 月均销量 | 414.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9857.0 |
+| Listing样本数(TOP100) / 平均价格($) | 28.33 |
+| Listing样本数(TOP100) / 平均评分数 | 1160.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 18629.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 93%  <br> AMZ: 5%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.497 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.602 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.563 |
+| Listing样本数(TOP100) / 商品总数 | 1147.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.0219 |
+| Listing样本数(TOP100) / 平均体积(in³) | 78.991 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.71 |
+| Listing样本数(TOP100) / A+占比 | 0.88 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 62.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2057.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 41993.0 |
+| 头部Listing数(TOP10) / 平均BSR | 2198.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 209.0 |
+| 新品(半年内上架) / 月均销售额($) | 6369.0 |
+| 新品(半年内上架) / 平均价格($) | 29.01 |
+| 新品(半年内上架) / 平均评分数 | 28.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.038929 |
+| 所有Listing(半年内) / 同类目退货率 | 0.07509 |
+| 所有Listing(半年内) / 搜索购买比 | 6.78307 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.08597 |
+
+### Book Stands (书架)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Book Stands |
+| Listing样本数(TOP100) / 细分市场(翻译) | 书架 |
+| Listing样本数(TOP100) / 市场路径 | Office Products:Office & School Supplies:Desk Accessories & Workspace Organizers:Platforms, Stands & Shelves:Book Stands |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：81 <br> 卖家：80 |
+| Listing样本数(TOP100) / 月总销量 | 41297.0 |
+| Listing样本数(TOP100) / 月均销量 | 412.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9173.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.06 |
+| Listing样本数(TOP100) / 平均评分数 | 797.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 51717.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 98%  <br> AMZ: 1%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.595 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.642 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.642 |
+| Listing样本数(TOP100) / 商品总数 | 668.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.6461 |
+| Listing样本数(TOP100) / 平均体积(in³) | 788.1802 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.86 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 75.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2457.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 47089.0 |
+| 头部Listing数(TOP10) / 平均BSR | 6339.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 179.0 |
+| 新品(半年内上架) / 月均销售额($) | 4263.0 |
+| 新品(半年内上架) / 平均价格($) | 25.56 |
+| 新品(半年内上架) / 平均评分数 | 33.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.0596 |
+| 所有Listing(半年内) / 同类目退货率 | 0.052835997 |
+| 所有Listing(半年内) / 搜索购买比 | 7.91137 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.092939995 |
+
+### Airbrush Sets (喷漆套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Airbrush Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 喷漆套装 |
+| Listing样本数(TOP100) / 市场路径 | Arts, Crafts & Sewing:Painting, Drawing & Art Supplies:Painting:Airbrush Materials:Airbrush Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：62 <br> 卖家：61 |
+| Listing样本数(TOP100) / 月总销量 | 41210.0 |
+| Listing样本数(TOP100) / 月均销量 | 412.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 18576.0 |
+| Listing样本数(TOP100) / 平均价格($) | 51.53 |
+| Listing样本数(TOP100) / 平均评分数 | 901.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 23002.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.7 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 95%  <br> AMZ: 1%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.349 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.586 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.596 |
+| Listing样本数(TOP100) / 商品总数 | 1267.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.4975 |
+| Listing样本数(TOP100) / 平均体积(in³) | 397.4592 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.68 |
+| Listing样本数(TOP100) / A+占比 | 0.91 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 68.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1439.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 45391.0 |
+| 头部Listing数(TOP10) / 平均BSR | 4447.0 |
+| 新品(半年内上架) / 新品数量 | 16.0 |
+| 新品(半年内上架) / 新品占比 | 0.16 |
+| 新品(半年内上架) / 月均销量 | 244.0 |
+| 新品(半年内上架) / 月均销售额($) | 11966.0 |
+| 新品(半年内上架) / 平均价格($) | 44.75 |
+| 新品(半年内上架) / 平均评分数 | 128.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.046711996 |
+| 所有Listing(半年内) / 同类目退货率 | 0.037488 |
+| 所有Listing(半年内) / 搜索购买比 | 5.26168 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10263 |
+
+### Welding Helmets (焊接头盔)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Welding Helmets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 焊接头盔 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Safety & Security:Personal Protective Equipment:Head Protection:Welding Helmets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：55 <br> 卖家：56 |
+| Listing样本数(TOP100) / 月总销量 | 40737.0 |
+| Listing样本数(TOP100) / 月均销量 | 407.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 22685.0 |
+| Listing样本数(TOP100) / 平均价格($) | 61.89 |
+| Listing样本数(TOP100) / 平均评分数 | 874.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 56686.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 86%  <br> AMZ: 9%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.418 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.627 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.646 |
+| Listing样本数(TOP100) / 商品总数 | 1614.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.1588 |
+| Listing样本数(TOP100) / 平均体积(in³) | 524.947 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.65 |
+| Listing样本数(TOP100) / A+占比 | 0.86 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 73.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1704.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 83958.0 |
+| 头部Listing数(TOP10) / 平均BSR | 10057.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 247.0 |
+| 新品(半年内上架) / 月均销售额($) | 19661.0 |
+| 新品(半年内上架) / 平均价格($) | 76.02 |
+| 新品(半年内上架) / 平均评分数 | 221.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.034581 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035314 |
+| 所有Listing(半年内) / 搜索购买比 | 4.95592 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09945 |
+
+### Insulin Injectors (胰岛素注射器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Insulin Injectors |
+| Listing样本数(TOP100) / 细分市场(翻译) | 胰岛素注射器 |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Health Care:Diabetes Care:Insulin Injectors |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：56 <br> 卖家：62 |
+| Listing样本数(TOP100) / 月总销量 | 40295.0 |
+| Listing样本数(TOP100) / 月均销量 | 402.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 8501.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.29 |
+| Listing样本数(TOP100) / 平均评分数 | 479.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 90650.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 59%  <br> AMZ: 1%  <br> FBM: 7% |
+| Listing样本数(TOP100) / 商品集中度 | 0.43 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.64 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.573 |
+| Listing样本数(TOP100) / 商品总数 | 285.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4666 |
+| Listing样本数(TOP100) / 平均体积(in³) | 125.0889 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.61 |
+| Listing样本数(TOP100) / A+占比 | 0.51 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 62.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1733.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 26450.0 |
+| 头部Listing数(TOP10) / 平均BSR | 24106.0 |
+| 新品(半年内上架) / 新品数量 | 36.0 |
+| 新品(半年内上架) / 新品占比 | 0.36 |
+| 新品(半年内上架) / 月均销量 | 299.0 |
+| 新品(半年内上架) / 月均销售额($) | 9075.0 |
+| 新品(半年内上架) / 平均价格($) | 29.79 |
+| 新品(半年内上架) / 平均评分数 | 92.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.014974001 |
+| 所有Listing(半年内) / 同类目退货率 | 0.027781999 |
+| 所有Listing(半年内) / 搜索购买比 | 24.85349 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.15804 |
+
+### Alternative Medicine (替代药物)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Alternative Medicine |
+| Listing样本数(TOP100) / 细分市场(翻译) | 替代药物 |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Health Care:Alternative Medicine |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：80 <br> 卖家：86 |
+| Listing样本数(TOP100) / 月总销量 | 40156.0 |
+| Listing样本数(TOP100) / 月均销量 | 401.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 11359.0 |
+| Listing样本数(TOP100) / 平均价格($) | 39.92 |
+| Listing样本数(TOP100) / 平均评分数 | 940.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 163785.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 68%  <br> AMZ: 4%  <br> FBM: 24% |
+| Listing样本数(TOP100) / 商品集中度 | 0.555 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.589 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.592 |
+| Listing样本数(TOP100) / 商品总数 | 37769.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.5354 |
+| Listing样本数(TOP100) / 平均体积(in³) | 100.1454 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.68 |
+| Listing样本数(TOP100) / A+占比 | 0.61 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 52.0% |
+| 头部Listing数(TOP10) / 月均销量 | 2230.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 47119.0 |
+| 头部Listing数(TOP10) / 平均BSR | 18370.0 |
+| 新品(半年内上架) / 新品数量 | 30.0 |
+| 新品(半年内上架) / 新品占比 | 0.3 |
+| 新品(半年内上架) / 月均销量 | 227.0 |
+| 新品(半年内上架) / 月均销售额($) | 7246.0 |
+| 新品(半年内上架) / 平均价格($) | 55.13 |
+| 新品(半年内上架) / 平均评分数 | 16.0 |
+| 新品(半年内上架) / 平均星级 | 3.8 |
+| 所有Listing(半年内) / 退货率 | 0.025834 |
+| 所有Listing(半年内) / 同类目退货率 | 0.027781999 |
+| 所有Listing(半年内) / 搜索购买比 | 15.26167 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.15804 |
+
+### Candle Sets (蜡烛套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Candle Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 蜡烛套装 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Home Décor Products:Candles & Holders:Candles:Candle Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：78 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 39253.0 |
+| Listing样本数(TOP100) / 月均销量 | 392.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 8411.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.04 |
+| Listing样本数(TOP100) / 平均评分数 | 1132.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 205328.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.7 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 99%  <br> AMZ: 1%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.463 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.545 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.544 |
+| Listing样本数(TOP100) / 商品总数 | 1042.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.6433 |
+| Listing样本数(TOP100) / 平均体积(in³) | 18.9338 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.73 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 54.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1816.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 38567.0 |
+| 头部Listing数(TOP10) / 平均BSR | 39543.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 379.0 |
+| 新品(半年内上架) / 月均销售额($) | 9101.0 |
+| 新品(半年内上架) / 平均价格($) | 28.83 |
+| 新品(半年内上架) / 平均评分数 | 1018.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.052092 |
+| 所有Listing(半年内) / 同类目退货率 | 0.034018 |
+| 所有Listing(半年内) / 搜索购买比 | 6.19824 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.100389995 |
+
+### Oolong (乌龙)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Oolong |
+| Listing样本数(TOP100) / 细分市场(翻译) | 乌龙 |
+| Listing样本数(TOP100) / 市场路径 | Grocery & Gourmet Food:Beverages:Tea:Oolong |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：62 <br> 卖家：60 |
+| Listing样本数(TOP100) / 月总销量 | 38516.0 |
+| Listing样本数(TOP100) / 月均销量 | 385.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 7430.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.14 |
+| Listing样本数(TOP100) / 平均评分数 | 464.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 51432.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 69%  <br> AMZ: 10%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.479 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.597 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.615 |
+| Listing样本数(TOP100) / 商品总数 | 572.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4608 |
+| Listing样本数(TOP100) / 平均体积(in³) | 111.8742 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.73 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 51.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1845.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 33581.0 |
+| 头部Listing数(TOP10) / 平均BSR | 11372.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 278.0 |
+| 新品(半年内上架) / 月均销售额($) | 7272.0 |
+| 新品(半年内上架) / 平均价格($) | 25.23 |
+| 新品(半年内上架) / 平均评分数 | 35.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.002602 |
+| 所有Listing(半年内) / 同类目退货率 | 0.002361 |
+| 所有Listing(半年内) / 搜索购买比 | 18.169 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.24787001 |
+
+### Headlights (车头灯)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Headlights |
+| Listing样本数(TOP100) / 细分市场(翻译) | 车头灯 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports:Cycling:Accessories:Lights & Reflectors:Headlights |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：69 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 35959.0 |
+| Listing样本数(TOP100) / 月均销量 | 359.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 10229.0 |
+| Listing样本数(TOP100) / 平均价格($) | 33.78 |
+| Listing样本数(TOP100) / 平均评分数 | 557.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 55894.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.9 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 92%  <br> AMZ: 2%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.499 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.578 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.544 |
+| Listing样本数(TOP100) / 商品总数 | 896.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4668 |
+| Listing样本数(TOP100) / 平均体积(in³) | 32.3035 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.67 |
+| Listing样本数(TOP100) / A+占比 | 0.9 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 71.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1794.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 40775.0 |
+| 头部Listing数(TOP10) / 平均BSR | 9732.0 |
+| 新品(半年内上架) / 新品数量 | 16.0 |
+| 新品(半年内上架) / 新品占比 | 0.16 |
+| 新品(半年内上架) / 月均销量 | 268.0 |
+| 新品(半年内上架) / 月均销售额($) | 5944.0 |
+| 新品(半年内上架) / 平均价格($) | 24.41 |
+| 新品(半年内上架) / 平均评分数 | 29.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.052114 |
+| 所有Listing(半年内) / 同类目退货率 | 0.042093 |
+| 所有Listing(半年内) / 搜索购买比 | 4.69257 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05573 |
+
+### Handlebar Mounts (Handlebar Mounts)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Handlebar Mounts |
+| Listing样本数(TOP100) / 细分市场(翻译) | Handlebar Mounts |
+| Listing样本数(TOP100) / 市场路径 | Cell Phones & Accessories:Accessories:Mounts:Handlebar Mounts |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：74 <br> 卖家：75 |
+| Listing样本数(TOP100) / 月总销量 | 35620.0 |
+| Listing样本数(TOP100) / 月均销量 | 356.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 7344.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.03 |
+| Listing样本数(TOP100) / 平均评分数 | 851.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 21341.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 89%  <br> AMZ: 3%  <br> FBM: 7% |
+| Listing样本数(TOP100) / 商品集中度 | 0.558 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.619 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.616 |
+| Listing样本数(TOP100) / 商品总数 | 625.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.859 |
+| Listing样本数(TOP100) / 平均体积(in³) | 43.5258 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.69 |
+| Listing样本数(TOP100) / A+占比 | 0.83 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 64.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1986.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 34670.0 |
+| 头部Listing数(TOP10) / 平均BSR | 4545.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 179.0 |
+| 新品(半年内上架) / 月均销售额($) | 3030.0 |
+| 新品(半年内上架) / 平均价格($) | 17.98 |
+| 新品(半年内上架) / 平均评分数 | 69.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.05366 |
+| 所有Listing(半年内) / 同类目退货率 | 0.065120004 |
+| 所有Listing(半年内) / 搜索购买比 | 8.00432 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10348 |
+
+### Shoes (鞋)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Shoes |
+| Listing样本数(TOP100) / 细分市场(翻译) | 鞋 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Shoes |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：75 <br> 卖家：68 |
+| Listing样本数(TOP100) / 月总销量 | 34925.0 |
+| Listing样本数(TOP100) / 月均销量 | 349.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 17107.0 |
+| Listing样本数(TOP100) / 平均价格($) | 49.29 |
+| Listing样本数(TOP100) / 平均评分数 | 271.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 446056.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 61%  <br> AMZ: 16%  <br> FBM: 7% |
+| Listing样本数(TOP100) / 商品集中度 | 0.438 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.518 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.589 |
+| Listing样本数(TOP100) / 商品总数 | 69884.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.47 |
+| Listing样本数(TOP100) / 平均体积(in³) | 330.9647 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.71 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 50.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1530.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 74542.0 |
+| 头部Listing数(TOP10) / 平均BSR | 83062.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 671.0 |
+| 新品(半年内上架) / 月均销售额($) | 24355.0 |
+| 新品(半年内上架) / 平均价格($) | 37.81 |
+| 新品(半年内上架) / 平均评分数 | 30.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.215588 |
+| 所有Listing(半年内) / 同类目退货率 | 0.182274 |
+| 所有Listing(半年内) / 搜索购买比 | 3.0016 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.03855 |
+
+### Clutches (手拿包)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Clutches |
+| Listing样本数(TOP100) / 细分市场(翻译) | 手拿包 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Handbags & Wallets:Clutches & Evening Bags:Clutches |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：80 <br> 卖家：76 |
+| Listing样本数(TOP100) / 月总销量 | 34462.0 |
+| Listing样本数(TOP100) / 月均销量 | 344.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9659.0 |
+| Listing样本数(TOP100) / 平均价格($) | 32.44 |
+| Listing样本数(TOP100) / 平均评分数 | 452.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 194876.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 89%  <br> AMZ: 6%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.447 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.498 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.502 |
+| Listing样本数(TOP100) / 商品总数 | 1282.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.5782 |
+| Listing样本数(TOP100) / 平均体积(in³) | 148.9852 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.78 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 68.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1539.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 38482.0 |
+| 头部Listing数(TOP10) / 平均BSR | 34774.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 320.0 |
+| 新品(半年内上架) / 月均销售额($) | 7368.0 |
+| 新品(半年内上架) / 平均价格($) | 21.48 |
+| 新品(半年内上架) / 平均评分数 | 176.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.159632 |
+| 所有Listing(半年内) / 同类目退货率 | 0.133267 |
+| 所有Listing(半年内) / 搜索购买比 | 2.82445 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.02784 |
+
+### Boats (船)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Boats |
+| Listing样本数(TOP100) / 细分市场(翻译) | 船 |
+| Listing样本数(TOP100) / 市场路径 | Toys & Games:Remote & App Controlled Vehicles & Parts:Remote & App Controlled Vehicles:Boats |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：59 <br> 卖家：62 |
+| Listing样本数(TOP100) / 月总销量 | 33825.0 |
+| Listing样本数(TOP100) / 月均销量 | 338.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 16315.0 |
+| Listing样本数(TOP100) / 平均价格($) | 56.23 |
+| Listing样本数(TOP100) / 平均评分数 | 338.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 51340.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 4%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.401 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.615 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.589 |
+| Listing样本数(TOP100) / 商品总数 | 837.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.4895 |
+| Listing样本数(TOP100) / 平均体积(in³) | 317.4907 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.69 |
+| Listing样本数(TOP100) / A+占比 | 0.96 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 69.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1356.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 60780.0 |
+| 头部Listing数(TOP10) / 平均BSR | 6367.0 |
+| 新品(半年内上架) / 新品数量 | 30.0 |
+| 新品(半年内上架) / 新品占比 | 0.3 |
+| 新品(半年内上架) / 月均销量 | 308.0 |
+| 新品(半年内上架) / 月均销售额($) | 14868.0 |
+| 新品(半年内上架) / 平均价格($) | 55.97 |
+| 新品(半年内上架) / 平均评分数 | 29.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.060324997 |
+| 所有Listing(半年内) / 同类目退货率 | 0.041058 |
+| 所有Listing(半年内) / 搜索购买比 | 2.9031 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0448 |
+
+### Tattoo Kits (纹身套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Tattoo Kits |
+| Listing样本数(TOP100) / 细分市场(翻译) | 纹身套装 |
+| Listing样本数(TOP100) / 市场路径 | Beauty & Personal Care:Personal Care:Piercing & Tattoo Supplies:Tattoo Supplies:Tattoo Kits |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：48 <br> 卖家：53 |
+| Listing样本数(TOP100) / 月总销量 | 33682.0 |
+| Listing样本数(TOP100) / 月均销量 | 336.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 10048.0 |
+| Listing样本数(TOP100) / 平均价格($) | 32.8 |
+| Listing样本数(TOP100) / 平均评分数 | 530.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 83155.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 89%  <br> AMZ: 1%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.409 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.633 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.573 |
+| Listing样本数(TOP100) / 商品总数 | 500.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.5237 |
+| Listing样本数(TOP100) / 平均体积(in³) | 212.9521 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.9 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 71.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1377.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 34461.0 |
+| 头部Listing数(TOP10) / 平均BSR | 20157.0 |
+| 新品(半年内上架) / 新品数量 | 23.0 |
+| 新品(半年内上架) / 新品占比 | 0.23 |
+| 新品(半年内上架) / 月均销量 | 199.0 |
+| 新品(半年内上架) / 月均销售额($) | 5966.0 |
+| 新品(半年内上架) / 平均价格($) | 28.93 |
+| 新品(半年内上架) / 平均评分数 | 63.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.020937 |
+| 所有Listing(半年内) / 同类目退货率 | 0.02199 |
+| 所有Listing(半年内) / 搜索购买比 | 5.5302 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13852 |
+
+### Remote & App Controlled Vehicle Batteries (遥控)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Remote & App Controlled Vehicle Batteries |
+| Listing样本数(TOP100) / 细分市场(翻译) | 遥控 |
+| Listing样本数(TOP100) / 市场路径 | Toys & Games:Remote & App Controlled Vehicles & Parts:Remote & App Controlled Vehicle Parts:Remote & App Controlled Vehicle Batteries |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：50 <br> 卖家：56 |
+| Listing样本数(TOP100) / 月总销量 | 32797.0 |
+| Listing样本数(TOP100) / 月均销量 | 327.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 11301.0 |
+| Listing样本数(TOP100) / 平均价格($) | 35.6 |
+| Listing样本数(TOP100) / 平均评分数 | 455.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 34359.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 73%  <br> AMZ: 6%  <br> FBM: 9% |
+| Listing样本数(TOP100) / 商品集中度 | 0.234 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.586 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.524 |
+| Listing样本数(TOP100) / 商品总数 | 6310.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.3771 |
+| Listing样本数(TOP100) / 平均体积(in³) | 26.4068 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.67 |
+| Listing样本数(TOP100) / A+占比 | 0.62 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 70.0% |
+| 头部Listing数(TOP10) / 月均销量 | 766.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 24932.0 |
+| 头部Listing数(TOP10) / 平均BSR | 12168.0 |
+| 新品(半年内上架) / 新品数量 | 18.0 |
+| 新品(半年内上架) / 新品占比 | 0.18 |
+| 新品(半年内上架) / 月均销量 | 308.0 |
+| 新品(半年内上架) / 月均销售额($) | 10425.0 |
+| 新品(半年内上架) / 平均价格($) | 35.14 |
+| 新品(半年内上架) / 平均评分数 | 37.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.062655 |
+| 所有Listing(半年内) / 同类目退货率 | 0.020329 |
+| 所有Listing(半年内) / 搜索购买比 | 6.65393 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.23034 |
+
+### Network & Cable Testers (网络)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Network & Cable Testers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 网络 |
+| Listing样本数(TOP100) / 市场路径 | Industrial & Scientific:Test, Measure & Inspect:Network & Cable Testers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：59 <br> 卖家：62 |
+| Listing样本数(TOP100) / 月总销量 | 32621.0 |
+| Listing样本数(TOP100) / 月均销量 | 326.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 25059.0 |
+| Listing样本数(TOP100) / 平均价格($) | 119.03 |
+| Listing样本数(TOP100) / 平均评分数 | 426.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 28907.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 81%  <br> AMZ: 17%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.397 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.645 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.616 |
+| Listing样本数(TOP100) / 商品总数 | 1329.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.6134 |
+| Listing样本数(TOP100) / 平均体积(in³) | 102.7811 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.73 |
+| Listing样本数(TOP100) / A+占比 | 0.85 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 70.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1294.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 73046.0 |
+| 头部Listing数(TOP10) / 平均BSR | 5785.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 239.0 |
+| 新品(半年内上架) / 月均销售额($) | 9859.0 |
+| 新品(半年内上架) / 平均价格($) | 57.29 |
+| 新品(半年内上架) / 平均评分数 | 51.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.052297 |
+| 所有Listing(半年内) / 同类目退货率 | 0.044552002 |
+| 所有Listing(半年内) / 搜索购买比 | 9.25091 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09328 |
+
+### Sewing Storage (缝纫用品收纳用品)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Sewing Storage |
+| Listing样本数(TOP100) / 细分市场(翻译) | 缝纫用品收纳用品 |
+| Listing样本数(TOP100) / 市场路径 | Arts, Crafts & Sewing:Organization, Storage & Transport:Craft & Sewing Supplies Storage:Sewing Storage |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：83 <br> 卖家：80 |
+| Listing样本数(TOP100) / 月总销量 | 32296.0 |
+| Listing样本数(TOP100) / 月均销量 | 322.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6763.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.93 |
+| Listing样本数(TOP100) / 平均评分数 | 929.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 29168.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 9%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.405 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.505 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.504 |
+| Listing样本数(TOP100) / 商品总数 | 1250.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.1178 |
+| Listing样本数(TOP100) / 平均体积(in³) | 782.9602 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.53 |
+| Listing样本数(TOP100) / A+占比 | 0.71 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 69.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1307.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 21305.0 |
+| 头部Listing数(TOP10) / 平均BSR | 5822.0 |
+| 新品(半年内上架) / 新品数量 | 10.0 |
+| 新品(半年内上架) / 新品占比 | 0.1 |
+| 新品(半年内上架) / 月均销量 | 237.0 |
+| 新品(半年内上架) / 月均销售额($) | 4886.0 |
+| 新品(半年内上架) / 平均价格($) | 18.28 |
+| 新品(半年内上架) / 平均评分数 | 25.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.050293002 |
+| 所有Listing(半年内) / 同类目退货率 | 0.037488 |
+| 所有Listing(半年内) / 搜索购买比 | 7.59038 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10263 |
+
+### Raincoats (雨衣)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Raincoats |
+| Listing样本数(TOP100) / 细分市场(翻译) | 雨衣 |
+| Listing样本数(TOP100) / 市场路径 | Pet Supplies:Dogs:Apparel & Accessories:Raincoats |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：75 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 32189.0 |
+| Listing样本数(TOP100) / 月均销量 | 321.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 7989.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.83 |
+| Listing样本数(TOP100) / 平均评分数 | 842.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 50912.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 96%  <br> AMZ: 3%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.554 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.611 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.593 |
+| Listing样本数(TOP100) / 商品总数 | 479.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.8495 |
+| Listing样本数(TOP100) / 平均体积(in³) | 107.8662 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.88 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 71.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1783.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 44198.0 |
+| 头部Listing数(TOP10) / 平均BSR | 10551.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 102.0 |
+| 新品(半年内上架) / 月均销售额($) | 1908.0 |
+| 新品(半年内上架) / 平均价格($) | 17.44 |
+| 新品(半年内上架) / 平均评分数 | 22.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.213681 |
+| 所有Listing(半年内) / 同类目退货率 | 0.166577 |
+| 所有Listing(半年内) / 搜索购买比 | 8.816 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.06894 |
+
+### Drill Bits (钻头)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Drill Bits |
+| Listing样本数(TOP100) / 细分市场(翻译) | 钻头 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Power & Hand Tools:Power Tool Parts & Accessories:Power Drill Parts & Accessories:Drill Bits |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：78 <br> 卖家：78 |
+| Listing样本数(TOP100) / 月总销量 | 31378.0 |
+| Listing样本数(TOP100) / 月均销量 | 313.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6380.0 |
+| Listing样本数(TOP100) / 平均价格($) | 26.43 |
+| Listing样本数(TOP100) / 平均评分数 | 264.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 43177.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 86%  <br> AMZ: 9%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.48 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.529 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.546 |
+| Listing样本数(TOP100) / 商品总数 | 12681.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.9811 |
+| Listing样本数(TOP100) / 平均体积(in³) | 60.7192 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.81 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 74.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1504.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 20311.0 |
+| 头部Listing数(TOP10) / 平均BSR | 8252.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 203.0 |
+| 新品(半年内上架) / 月均销售额($) | 5687.0 |
+| 新品(半年内上架) / 平均价格($) | 25.74 |
+| 新品(半年内上架) / 平均评分数 | 45.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.026814 |
+| 所有Listing(半年内) / 同类目退货率 | 0.028178 |
+| 所有Listing(半年内) / 搜索购买比 | 12.41791 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.12810001 |
+
+### Battery Chargers (电池充电器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Battery Chargers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 电池充电器 |
+| Listing样本数(TOP100) / 市场路径 | Toys & Games:Remote & App Controlled Vehicles & Parts:Remote & App Controlled Vehicle Parts:Battery Chargers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：62 <br> 卖家：63 |
+| Listing样本数(TOP100) / 月总销量 | 31004.0 |
+| Listing样本数(TOP100) / 月均销量 | 310.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 8070.0 |
+| Listing样本数(TOP100) / 平均价格($) | 30.92 |
+| Listing样本数(TOP100) / 平均评分数 | 379.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 43828.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 95%  <br> AMZ: 5%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.257 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.449 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.454 |
+| Listing样本数(TOP100) / 商品总数 | 1891.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.5027 |
+| Listing样本数(TOP100) / 平均体积(in³) | 33.0419 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.61 |
+| Listing样本数(TOP100) / A+占比 | 0.59 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 74.0% |
+| 头部Listing数(TOP10) / 月均销量 | 796.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 11978.0 |
+| 头部Listing数(TOP10) / 平均BSR | 12349.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 232.0 |
+| 新品(半年内上架) / 月均销售额($) | 5357.0 |
+| 新品(半年内上架) / 平均价格($) | 24.74 |
+| 新品(半年内上架) / 平均评分数 | 20.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.069878995 |
+| 所有Listing(半年内) / 同类目退货率 | 0.064268 |
+| 所有Listing(半年内) / 搜索购买比 | 8.51874 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10186 |
+
+### Jerseys (球衣)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Jerseys |
+| Listing样本数(TOP100) / 细分市场(翻译) | 球衣 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Sport Specific Clothing:Soccer & Futsal:Men:Jerseys |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：47 <br> 卖家：53 |
+| Listing样本数(TOP100) / 月总销量 | 30954.0 |
+| Listing样本数(TOP100) / 月均销量 | 309.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 10745.0 |
+| Listing样本数(TOP100) / 平均价格($) | 38.1 |
+| Listing样本数(TOP100) / 平均评分数 | 130.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 197210.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 40%  <br> AMZ: 9%  <br> FBM: 37% |
+| Listing样本数(TOP100) / 商品集中度 | 0.44 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.63 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.633 |
+| Listing样本数(TOP100) / 商品总数 | 1436.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.519 |
+| Listing样本数(TOP100) / 平均体积(in³) | 204.5082 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.66 |
+| Listing样本数(TOP100) / A+占比 | 0.45 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 48.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1360.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 44069.0 |
+| 头部Listing数(TOP10) / 平均BSR | 45357.0 |
+| 新品(半年内上架) / 新品数量 | 29.0 |
+| 新品(半年内上架) / 新品占比 | 0.29 |
+| 新品(半年内上架) / 月均销量 | 341.0 |
+| 新品(半年内上架) / 月均销售额($) | 11972.0 |
+| 新品(半年内上架) / 平均价格($) | 47.92 |
+| 新品(半年内上架) / 平均评分数 | 17.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.072272 |
+| 所有Listing(半年内) / 同类目退货率 | 0.140002 |
+| 所有Listing(半年内) / 搜索购买比 | 1.97889 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.058819998 |
+
+### Cookbook Stands (菜谱架)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Cookbook Stands |
+| Listing样本数(TOP100) / 细分市场(翻译) | 菜谱架 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Kitchen Utensils & Gadgets:Kitchen Accessories:Cookbook Stands & Recipe Holders:Cookbook Stands |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：85 <br> 卖家：81 |
+| Listing样本数(TOP100) / 月总销量 | 30565.0 |
+| Listing样本数(TOP100) / 月均销量 | 305.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5395.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.65 |
+| Listing样本数(TOP100) / 平均评分数 | 712.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 70218.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 6%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.474 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.547 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.55 |
+| Listing样本数(TOP100) / 商品总数 | 404.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.871 |
+| Listing样本数(TOP100) / 平均体积(in³) | 451.7014 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.85 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 66.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1450.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 17199.0 |
+| 头部Listing数(TOP10) / 平均BSR | 10174.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 176.0 |
+| 新品(半年内上架) / 月均销售额($) | 3244.0 |
+| 新品(半年内上架) / 平均价格($) | 19.86 |
+| 新品(半年内上架) / 平均评分数 | 20.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.061661 |
+| 所有Listing(半年内) / 同类目退货率 | 0.052835997 |
+| 所有Listing(半年内) / 搜索购买比 | 7.01673 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.092939995 |
+
+### Countersink Drill Bits (沉孔钻头)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Countersink Drill Bits |
+| Listing样本数(TOP100) / 细分市场(翻译) | 沉孔钻头 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Power & Hand Tools:Power Tool Parts & Accessories:Power Drill Parts & Accessories:Drill Bits:Countersink Drill Bits |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：70 |
+| Listing样本数(TOP100) / 月总销量 | 30325.0 |
+| Listing样本数(TOP100) / 月均销量 | 303.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6043.0 |
+| Listing样本数(TOP100) / 平均价格($) | 21.48 |
+| Listing样本数(TOP100) / 平均评分数 | 588.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 63995.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 92%  <br> AMZ: 6%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.377 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.538 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.535 |
+| Listing样本数(TOP100) / 商品总数 | 1185.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4876 |
+| Listing样本数(TOP100) / 平均体积(in³) | 31.7012 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.62 |
+| Listing样本数(TOP100) / A+占比 | 0.81 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 64.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1143.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 19668.0 |
+| 头部Listing数(TOP10) / 平均BSR | 11751.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 238.0 |
+| 新品(半年内上架) / 月均销售额($) | 5475.0 |
+| 新品(半年内上架) / 平均价格($) | 22.32 |
+| 新品(半年内上架) / 平均评分数 | 50.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.018471 |
+| 所有Listing(半年内) / 同类目退货率 | 0.028178 |
+| 所有Listing(半年内) / 搜索购买比 | 10.46125 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.12810001 |
+
+### Trench Coats (风雨衣)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Trench Coats |
+| Listing样本数(TOP100) / 细分市场(翻译) | 风雨衣 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Clothing:Coats, Jackets & Vests:Trench, Rain & Anoraks:Trench Coats |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：59 <br> 卖家：57 |
+| Listing样本数(TOP100) / 月总销量 | 30117.0 |
+| Listing样本数(TOP100) / 月均销量 | 301.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 16220.0 |
+| Listing样本数(TOP100) / 平均价格($) | 54.77 |
+| Listing样本数(TOP100) / 平均评分数 | 624.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 281584.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 7%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.424 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.617 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.612 |
+| Listing样本数(TOP100) / 商品总数 | 750.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.281 |
+| Listing样本数(TOP100) / 平均体积(in³) | 238.4692 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.65 |
+| Listing样本数(TOP100) / A+占比 | 0.93 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 72.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1276.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 62721.0 |
+| 头部Listing数(TOP10) / 平均BSR | 70344.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 203.0 |
+| 新品(半年内上架) / 月均销售额($) | 12887.0 |
+| 新品(半年内上架) / 平均价格($) | 56.86 |
+| 新品(半年内上架) / 平均评分数 | 36.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.344029 |
+| 所有Listing(半年内) / 同类目退货率 | 0.244967 |
+| 所有Listing(半年内) / 搜索购买比 | 3.80846 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.04205 |
+
+### Home Décor Products (家居装饰)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Home Décor Products |
+| Listing样本数(TOP100) / 细分市场(翻译) | 家居装饰 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Home Décor Products |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：89 <br> 卖家：88 |
+| Listing样本数(TOP100) / 月总销量 | 29977.0 |
+| Listing样本数(TOP100) / 月均销量 | 299.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5117.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.56 |
+| Listing样本数(TOP100) / 平均评分数 | 406.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 242209.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 89%  <br> AMZ: 4%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.463 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.501 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.516 |
+| Listing样本数(TOP100) / 商品总数 | 66564.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.925 |
+| Listing样本数(TOP100) / 平均体积(in³) | 396.8471 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.72 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 74.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1389.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 17928.0 |
+| 头部Listing数(TOP10) / 平均BSR | 47119.0 |
+| 新品(半年内上架) / 新品数量 | 20.0 |
+| 新品(半年内上架) / 新品占比 | 0.2 |
+| 新品(半年内上架) / 月均销量 | 263.0 |
+| 新品(半年内上架) / 月均销售额($) | 5166.0 |
+| 新品(半年内上架) / 平均价格($) | 20.16 |
+| 新品(半年内上架) / 平均评分数 | 35.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.121415004 |
+| 所有Listing(半年内) / 同类目退货率 | 0.065816 |
+| 所有Listing(半年内) / 搜索购买比 | 7.252 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0717 |
+
+### Sweatpants (Sweatpants)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Sweatpants |
+| Listing样本数(TOP100) / 细分市场(翻译) | Sweatpants |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Girls:Clothing:Active:Active Pants:Sweatpants |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：49 <br> 卖家：46 |
+| Listing样本数(TOP100) / 月总销量 | 29766.0 |
+| Listing样本数(TOP100) / 月均销量 | 297.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 7954.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.22 |
+| Listing样本数(TOP100) / 平均评分数 | 337.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 206798.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 8%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.267 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.538 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.57 |
+| Listing样本数(TOP100) / 商品总数 | 833.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.0401 |
+| Listing样本数(TOP100) / 平均体积(in³) | 214.6107 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.53 |
+| Listing样本数(TOP100) / A+占比 | 0.76 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 66.0% |
+| 头部Listing数(TOP10) / 月均销量 | 794.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 17340.0 |
+| 头部Listing数(TOP10) / 平均BSR | 187447.0 |
+| 新品(半年内上架) / 新品数量 | 29.0 |
+| 新品(半年内上架) / 新品占比 | 0.29 |
+| 新品(半年内上架) / 月均销量 | 308.0 |
+| 新品(半年内上架) / 月均销售额($) | 8756.0 |
+| 新品(半年内上架) / 平均价格($) | 28.46 |
+| 新品(半年内上架) / 平均评分数 | 28.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.178071 |
+| 所有Listing(半年内) / 同类目退货率 | 0.21090001 |
+| 所有Listing(半年内) / 搜索购买比 | 3.76654 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07519 |
+
+### Tie-Downs (栓系器具)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Tie-Downs |
+| Listing样本数(TOP100) / 细分市场(翻译) | 栓系器具 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports:Boating & Sailing:Boating:Boat Trailer Accessories:Tie-Downs |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：65 <br> 卖家：62 |
+| Listing样本数(TOP100) / 月总销量 | 29685.0 |
+| Listing样本数(TOP100) / 月均销量 | 296.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 8356.0 |
+| Listing样本数(TOP100) / 平均价格($) | 26.48 |
+| Listing样本数(TOP100) / 平均评分数 | 548.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 78914.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 81%  <br> AMZ: 10%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.443 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.591 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.573 |
+| Listing样本数(TOP100) / 商品总数 | 310.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.6008 |
+| Listing样本数(TOP100) / 平均体积(in³) | 56.5989 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.68 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 51.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1316.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 38876.0 |
+| 头部Listing数(TOP10) / 平均BSR | 8231.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 294.0 |
+| 新品(半年内上架) / 月均销售额($) | 9735.0 |
+| 新品(半年内上架) / 平均价格($) | 31.15 |
+| 新品(半年内上架) / 平均评分数 | 131.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.037388 |
+| 所有Listing(半年内) / 同类目退货率 | 0.049112 |
+| 所有Listing(半年内) / 搜索购买比 | 10.47648 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09599 |
+
+### Protective Gear (防护装备)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Protective Gear |
+| Listing样本数(TOP100) / 细分市场(翻译) | 防护装备 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Farm & Ranch:Beekeeping Supplies:Protective Gear |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：55 <br> 卖家：57 |
+| Listing样本数(TOP100) / 月总销量 | 29432.0 |
+| Listing样本数(TOP100) / 月均销量 | 294.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 12794.0 |
+| Listing样本数(TOP100) / 平均价格($) | 41.94 |
+| Listing样本数(TOP100) / 平均评分数 | 277.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 64274.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 95%  <br> AMZ: 1%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.381 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.602 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.593 |
+| Listing样本数(TOP100) / 商品总数 | 913.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.6728 |
+| Listing样本数(TOP100) / 平均体积(in³) | 456.3728 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.74 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 61.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1121.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 55300.0 |
+| 头部Listing数(TOP10) / 平均BSR | 16752.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 214.0 |
+| 新品(半年内上架) / 月均销售额($) | 7550.0 |
+| 新品(半年内上架) / 平均价格($) | 39.3 |
+| 新品(半年内上架) / 平均评分数 | 34.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.039453 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038427 |
+| 所有Listing(半年内) / 搜索购买比 | 9.67869 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10492 |
+
+### Exterior Lighting (外部照明)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Exterior Lighting |
+| Listing样本数(TOP100) / 细分市场(翻译) | 外部照明 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:RV Parts & Accessories:Power & Electrical:Lighting:Exterior Lighting |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：64 <br> 卖家：61 |
+| Listing样本数(TOP100) / 月总销量 | 28905.0 |
+| Listing样本数(TOP100) / 月均销量 | 289.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6176.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.81 |
+| Listing样本数(TOP100) / 平均评分数 | 523.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 83361.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 89%  <br> AMZ: 10%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.386 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.525 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.555 |
+| Listing样本数(TOP100) / 商品总数 | 663.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.7703 |
+| Listing样本数(TOP100) / 平均体积(in³) | 137.5774 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.62 |
+| Listing样本数(TOP100) / A+占比 | 0.89 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 67.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1115.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 19358.0 |
+| 头部Listing数(TOP10) / 平均BSR | 7419.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 187.0 |
+| 新品(半年内上架) / 月均销售额($) | 5971.0 |
+| 新品(半年内上架) / 平均价格($) | 32.08 |
+| 新品(半年内上架) / 平均评分数 | 663.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.046566 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038714003 |
+| 所有Listing(半年内) / 搜索购买比 | 6.89688 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.092889994 |
+
+### Deburring Cutters (去毛刺刀具)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Deburring Cutters |
+| Listing样本数(TOP100) / 细分市场(翻译) | 去毛刺刀具 |
+| Listing样本数(TOP100) / 市场路径 | Industrial & Scientific:Cutting Tools:Deburring Cutters |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：78 |
+| Listing样本数(TOP100) / 月总销量 | 28786.0 |
+| Listing样本数(TOP100) / 月均销量 | 287.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4577.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.36 |
+| Listing样本数(TOP100) / 平均评分数 | 370.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 43574.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.8 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 94%  <br> AMZ: 2%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.558 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.634 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.634 |
+| Listing样本数(TOP100) / 商品总数 | 837.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.4687 |
+| Listing样本数(TOP100) / 平均体积(in³) | 38.8996 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.74 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 59.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1607.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 15558.0 |
+| 头部Listing数(TOP10) / 平均BSR | 6943.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 151.0 |
+| 新品(半年内上架) / 月均销售额($) | 2467.0 |
+| 新品(半年内上架) / 平均价格($) | 19.31 |
+| 新品(半年内上架) / 平均评分数 | 22.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.019297 |
+| 所有Listing(半年内) / 同类目退货率 | 0.032465998 |
+| 所有Listing(半年内) / 搜索购买比 | 14.22869 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.12100001 |
+
+### Bag Sealers (封袋机)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Bag Sealers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 封袋机 |
+| Listing样本数(TOP100) / 市场路径 | Restaurant Appliances & Equipment:Commercial Food Preparation Equipment:Commercial Food Packaging Equipment:Bag Sealers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：76 |
+| Listing样本数(TOP100) / 月总销量 | 28305.0 |
+| Listing样本数(TOP100) / 月均销量 | 283.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6470.0 |
+| Listing样本数(TOP100) / 平均价格($) | 41.2 |
+| Listing样本数(TOP100) / 平均评分数 | 469.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 71338.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 84%  <br> AMZ: 3%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.576 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.616 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.616 |
+| Listing样本数(TOP100) / 商品总数 | 686.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.561 |
+| Listing样本数(TOP100) / 平均体积(in³) | 385.0659 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.71 |
+| Listing样本数(TOP100) / A+占比 | 0.81 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 78.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1630.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 30377.0 |
+| 头部Listing数(TOP10) / 平均BSR | 5637.0 |
+| 新品(半年内上架) / 新品数量 | 24.0 |
+| 新品(半年内上架) / 新品占比 | 0.24 |
+| 新品(半年内上架) / 月均销量 | 172.0 |
+| 新品(半年内上架) / 月均销售额($) | 3898.0 |
+| 新品(半年内上架) / 平均价格($) | 49.96 |
+| 新品(半年内上架) / 平均评分数 | 57.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.060935 |
+| 所有Listing(半年内) / 同类目退货率 | 0.049214 |
+| 所有Listing(半年内) / 搜索购买比 | 14.25708 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.105129994 |
+
+### Hearing Amplifiers (助听扩音器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Hearing Amplifiers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 助听扩音器 |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Medical Supplies & Equipment:Mobility & Daily Living Aids:Hearing Aids, Amplifiers & Accessories:Hearing Amplifiers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：59 <br> 卖家：60 |
+| Listing样本数(TOP100) / 月总销量 | 28221.0 |
+| Listing样本数(TOP100) / 月均销量 | 282.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 39516.0 |
+| Listing样本数(TOP100) / 平均价格($) | 121.96 |
+| Listing样本数(TOP100) / 平均评分数 | 567.0 |
+| Listing样本数(TOP100) / 平均星级 | 3.9 |
+| Listing样本数(TOP100) / 平均BSR | 121727.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 79%  <br> AMZ: 7%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.309 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.498 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.474 |
+| Listing样本数(TOP100) / 商品总数 | 840.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.1472 |
+| Listing样本数(TOP100) / 平均体积(in³) | 47.1207 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.76 |
+| Listing样本数(TOP100) / A+占比 | 0.84 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 52.0% |
+| 头部Listing数(TOP10) / 月均销量 | 872.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 181898.0 |
+| 头部Listing数(TOP10) / 平均BSR | 34407.0 |
+| 新品(半年内上架) / 新品数量 | 36.0 |
+| 新品(半年内上架) / 新品占比 | 0.36 |
+| 新品(半年内上架) / 月均销量 | 295.0 |
+| 新品(半年内上架) / 月均销售额($) | 41566.0 |
+| 新品(半年内上架) / 平均价格($) | 123.22 |
+| 新品(半年内上架) / 平均评分数 | 59.0 |
+| 新品(半年内上架) / 平均星级 | 3.8 |
+| 所有Listing(半年内) / 退货率 | 0.21188 |
+| 所有Listing(半年内) / 同类目退货率 | 0.21188 |
+| 所有Listing(半年内) / 搜索购买比 | 4.8272 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.048270002 |
+
+### Tops (Tops)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Tops |
+| Listing样本数(TOP100) / 细分市场(翻译) | Tops |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Sport Specific Clothing:Dance:Women:Tops |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：75 |
+| Listing样本数(TOP100) / 月总销量 | 28102.0 |
+| Listing样本数(TOP100) / 月均销量 | 281.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5848.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.08 |
+| Listing样本数(TOP100) / 平均评分数 | 183.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 374749.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 92%  <br> AMZ: 4%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.562 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.642 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.634 |
+| Listing样本数(TOP100) / 商品总数 | 883.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.3309 |
+| Listing样本数(TOP100) / 平均体积(in³) | 91.3184 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.71 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 80.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1579.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 31892.0 |
+| 头部Listing数(TOP10) / 平均BSR | 45043.0 |
+| 新品(半年内上架) / 新品数量 | 24.0 |
+| 新品(半年内上架) / 新品占比 | 0.24 |
+| 新品(半年内上架) / 月均销量 | 229.0 |
+| 新品(半年内上架) / 月均销售额($) | 4091.0 |
+| 新品(半年内上架) / 平均价格($) | 18.13 |
+| 新品(半年内上架) / 平均评分数 | 12.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.206045 |
+| 所有Listing(半年内) / 同类目退货率 | 0.140002 |
+| 所有Listing(半年内) / 搜索购买比 | 4.80622 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.058819998 |
+
+### Flower Pressing (压花)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Flower Pressing |
+| Listing样本数(TOP100) / 细分市场(翻译) | 压花 |
+| Listing样本数(TOP100) / 市场路径 | Toys & Games:Arts & Crafts:Craft Kits:Flower Pressing |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：79 <br> 卖家：84 |
+| Listing样本数(TOP100) / 月总销量 | 27001.0 |
+| Listing样本数(TOP100) / 月均销量 | 270.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6515.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.48 |
+| Listing样本数(TOP100) / 平均评分数 | 175.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 94092.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 91%  <br> AMZ: 1%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.523 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.599 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.599 |
+| Listing样本数(TOP100) / 商品总数 | 156.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.6926 |
+| Listing样本数(TOP100) / 平均体积(in³) | 153.9598 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.87 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 66.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1412.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 37675.0 |
+| 头部Listing数(TOP10) / 平均BSR | 12634.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 109.0 |
+| 新品(半年内上架) / 月均销售额($) | 1877.0 |
+| 新品(半年内上架) / 平均价格($) | 19.59 |
+| 新品(半年内上架) / 平均评分数 | 14.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.028703999 |
+| 所有Listing(半年内) / 同类目退货率 | 0.026326 |
+| 所有Listing(半年内) / 搜索购买比 | 8.59741 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07379 |
+
+### Bar Tools & Drinkware (酒吧工具)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Bar Tools & Drinkware |
+| Listing样本数(TOP100) / 细分市场(翻译) | 酒吧工具 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Dining & Entertaining:Bar Tools & Drinkware |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：93 <br> 卖家：90 |
+| Listing样本数(TOP100) / 月总销量 | 26803.0 |
+| Listing样本数(TOP100) / 月均销量 | 268.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6642.0 |
+| Listing样本数(TOP100) / 平均价格($) | 25.94 |
+| Listing样本数(TOP100) / 平均评分数 | 365.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.6 |
+| Listing样本数(TOP100) / 平均BSR | 63733.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 89%  <br> AMZ: 4%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.51 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.534 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.548 |
+| Listing样本数(TOP100) / 商品总数 | 51814.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.2702 |
+| Listing样本数(TOP100) / 平均体积(in³) | 310.3259 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.74 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 61.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1366.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 36348.0 |
+| 头部Listing数(TOP10) / 平均BSR | 17315.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 121.0 |
+| 新品(半年内上架) / 月均销售额($) | 2979.0 |
+| 新品(半年内上架) / 平均价格($) | 20.95 |
+| 新品(半年内上架) / 平均评分数 | 23.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.054355998 |
+| 所有Listing(半年内) / 同类目退货率 | 0.052106 |
+| 所有Listing(半年内) / 搜索购买比 | 6.62142 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10187 |
+
+### Wood Burning Tools (木材燃烧工具)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Wood Burning Tools |
+| Listing样本数(TOP100) / 细分市场(翻译) | 木材燃烧工具 |
+| Listing样本数(TOP100) / 市场路径 | Arts, Crafts & Sewing:Crafting:Woodcrafts:Wood Burning Tools |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：61 <br> 卖家：62 |
+| Listing样本数(TOP100) / 月总销量 | 26503.0 |
+| Listing样本数(TOP100) / 月均销量 | 265.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6574.0 |
+| Listing样本数(TOP100) / 平均价格($) | 31.55 |
+| Listing样本数(TOP100) / 平均评分数 | 567.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 42309.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 75%  <br> AMZ: 1%  <br> FBM: 20% |
+| Listing样本数(TOP100) / 商品集中度 | 0.406 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.54 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.538 |
+| Listing样本数(TOP100) / 商品总数 | 648.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.072 |
+| Listing样本数(TOP100) / 平均体积(in³) | 73.3475 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.66 |
+| Listing样本数(TOP100) / A+占比 | 0.88 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 80.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1076.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 21566.0 |
+| 头部Listing数(TOP10) / 平均BSR | 8376.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 290.0 |
+| 新品(半年内上架) / 月均销售额($) | 4996.0 |
+| 新品(半年内上架) / 平均价格($) | 27.65 |
+| 新品(半年内上架) / 平均评分数 | 81.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.039968 |
+| 所有Listing(半年内) / 同类目退货率 | 0.037488 |
+| 所有Listing(半年内) / 搜索购买比 | 5.54442 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10263 |
+
+### Tea Storage Chests (茶叶罐)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Tea Storage Chests |
+| Listing样本数(TOP100) / 细分市场(翻译) | 茶叶罐 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Coffee, Tea & Espresso:Tea Accessories:Tea Storage Chests |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：83 <br> 卖家：83 |
+| Listing样本数(TOP100) / 月总销量 | 26400.0 |
+| Listing样本数(TOP100) / 月均销量 | 264.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5800.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.4 |
+| Listing样本数(TOP100) / 平均评分数 | 657.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.6 |
+| Listing样本数(TOP100) / 平均BSR | 242968.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 95%  <br> AMZ: 3%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.397 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.458 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.48 |
+| Listing样本数(TOP100) / 商品总数 | 663.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.4397 |
+| Listing样本数(TOP100) / 平均体积(in³) | 377.3232 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.54 |
+| Listing样本数(TOP100) / A+占比 | 0.89 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 71.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1049.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 19502.0 |
+| 头部Listing数(TOP10) / 平均BSR | 45584.0 |
+| 新品(半年内上架) / 新品数量 | 16.0 |
+| 新品(半年内上架) / 新品占比 | 0.16 |
+| 新品(半年内上架) / 月均销量 | 194.0 |
+| 新品(半年内上架) / 月均销售额($) | 4188.0 |
+| 新品(半年内上架) / 平均价格($) | 22.66 |
+| 新品(半年内上架) / 平均评分数 | 50.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.065422 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035095 |
+| 所有Listing(半年内) / 搜索购买比 | 6.37846 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10854 |
+
+### Floor Molding & Trim (地板压条和镶边)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Floor Molding & Trim |
+| Listing样本数(TOP100) / 细分市场(翻译) | 地板压条和镶边 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Building Supplies:Building Materials:Millwork:Moldings & Trims:Floor Molding & Trim |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：60 <br> 卖家：64 |
+| Listing样本数(TOP100) / 月总销量 | 24530.0 |
+| Listing样本数(TOP100) / 月均销量 | 245.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5348.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.66 |
+| Listing样本数(TOP100) / 平均评分数 | 389.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 102015.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.9 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 78%  <br> AMZ: 2%  <br> FBM: 9% |
+| Listing样本数(TOP100) / 商品集中度 | 0.427 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.549 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.543 |
+| Listing样本数(TOP100) / 商品总数 | 621.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.6133 |
+| Listing样本数(TOP100) / 平均体积(in³) | 125.3806 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.52 |
+| Listing样本数(TOP100) / A+占比 | 0.82 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 61.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1046.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 19468.0 |
+| 头部Listing数(TOP10) / 平均BSR | 13898.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 136.0 |
+| 新品(半年内上架) / 月均销售额($) | 2757.0 |
+| 新品(半年内上架) / 平均价格($) | 23.31 |
+| 新品(半年内上架) / 平均评分数 | 48.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.108365 |
+| 所有Listing(半年内) / 同类目退货率 | 0.12484 |
+| 所有Listing(半年内) / 搜索购买比 | 6.79561 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.056750003 |
+
+### Sound Therapy (声音疗法)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Sound Therapy |
+| Listing样本数(TOP100) / 细分市场(翻译) | 声音疗法 |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Health Care:Alternative Medicine:Sound Therapy |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：81 <br> 卖家：81 |
+| Listing样本数(TOP100) / 月总销量 | 24359.0 |
+| Listing样本数(TOP100) / 月均销量 | 243.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 12392.0 |
+| Listing样本数(TOP100) / 平均价格($) | 54.87 |
+| Listing样本数(TOP100) / 平均评分数 | 254.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 118716.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 93%  <br> AMZ: 3%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.391 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.454 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.46 |
+| Listing样本数(TOP100) / 商品总数 | 551.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.9551 |
+| Listing样本数(TOP100) / 平均体积(in³) | 85.1531 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.67 |
+| Listing样本数(TOP100) / A+占比 | 0.87 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 75.0% |
+| 头部Listing数(TOP10) / 月均销量 | 953.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 38375.0 |
+| 头部Listing数(TOP10) / 平均BSR | 46155.0 |
+| 新品(半年内上架) / 新品数量 | 33.0 |
+| 新品(半年内上架) / 新品占比 | 0.33 |
+| 新品(半年内上架) / 月均销量 | 199.0 |
+| 新品(半年内上架) / 月均销售额($) | 6953.0 |
+| 新品(半年内上架) / 平均价格($) | 32.11 |
+| 新品(半年内上架) / 平均评分数 | 32.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.063163 |
+| 所有Listing(半年内) / 同类目退货率 | 0.027781999 |
+| 所有Listing(半年内) / 搜索购买比 | 10.13834 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.15804 |
+
+### Pond Lights (池塘灯)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Pond Lights |
+| Listing样本数(TOP100) / 细分市场(翻译) | 池塘灯 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Outdoor Décor:Water Gardens & Ponds:Pond Lights |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：65 <br> 卖家：67 |
+| Listing样本数(TOP100) / 月总销量 | 24128.0 |
+| Listing样本数(TOP100) / 月均销量 | 241.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 7740.0 |
+| Listing样本数(TOP100) / 平均价格($) | 46.35 |
+| Listing样本数(TOP100) / 平均评分数 | 235.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 87206.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 5%  <br> FBM: 6% |
+| Listing样本数(TOP100) / 商品集中度 | 0.429 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.646 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.613 |
+| Listing样本数(TOP100) / 商品总数 | 439.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.5263 |
+| Listing样本数(TOP100) / 平均体积(in³) | 198.1374 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.67 |
+| Listing样本数(TOP100) / A+占比 | 0.72 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 68.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1034.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 21138.0 |
+| 头部Listing数(TOP10) / 平均BSR | 15162.0 |
+| 新品(半年内上架) / 新品数量 | 19.0 |
+| 新品(半年内上架) / 新品占比 | 0.19 |
+| 新品(半年内上架) / 月均销量 | 202.0 |
+| 新品(半年内上架) / 月均销售额($) | 9446.0 |
+| 新品(半年内上架) / 平均价格($) | 50.99 |
+| 新品(半年内上架) / 平均评分数 | 115.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.06151 |
+| 所有Listing(半年内) / 同类目退货率 | 0.078448 |
+| 所有Listing(半年内) / 搜索购买比 | 6.08684 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05737 |
+
+### Workout Top & Bottom Sets (服装套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Workout Top & Bottom Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 服装套装 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Men:Clothing:Active:Sets:Workout Top & Bottom Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：65 <br> 卖家：67 |
+| Listing样本数(TOP100) / 月总销量 | 23985.0 |
+| Listing样本数(TOP100) / 月均销量 | 239.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 7757.0 |
+| Listing样本数(TOP100) / 平均价格($) | 32.51 |
+| Listing样本数(TOP100) / 平均评分数 | 243.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 359837.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 88%  <br> AMZ: 1%  <br> FBM: 7% |
+| Listing样本数(TOP100) / 商品集中度 | 0.371 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.576 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.568 |
+| Listing样本数(TOP100) / 商品总数 | 1046.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.0849 |
+| Listing样本数(TOP100) / 平均体积(in³) | 289.9098 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.89 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 91.0% |
+| 头部Listing数(TOP10) / 月均销量 | 888.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 30573.0 |
+| 头部Listing数(TOP10) / 平均BSR | 56557.0 |
+| 新品(半年内上架) / 新品数量 | 24.0 |
+| 新品(半年内上架) / 新品占比 | 0.24 |
+| 新品(半年内上架) / 月均销量 | 335.0 |
+| 新品(半年内上架) / 月均销售额($) | 10731.0 |
+| 新品(半年内上架) / 平均价格($) | 30.13 |
+| 新品(半年内上架) / 平均评分数 | 33.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.100486 |
+| 所有Listing(半年内) / 同类目退货率 | 0.123008005 |
+| 所有Listing(半年内) / 搜索购买比 | 5.22788 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.06877 |
+
+### Paint Roller Extension Poles (油漆滚筒加长杆)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Paint Roller Extension Poles |
+| Listing样本数(TOP100) / 细分市场(翻译) | 油漆滚筒加长杆 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Paint, Wall Treatments & Supplies:Painting Supplies & Tools:Paint Application Tools:Paint Roller Extension Poles |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：82 <br> 卖家：85 |
+| Listing样本数(TOP100) / 月总销量 | 23766.0 |
+| Listing样本数(TOP100) / 月均销量 | 237.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9260.0 |
+| Listing样本数(TOP100) / 平均价格($) | 36.17 |
+| Listing样本数(TOP100) / 平均评分数 | 354.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 120895.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 81%  <br> AMZ: 5%  <br> FBM: 7% |
+| Listing样本数(TOP100) / 商品集中度 | 0.524 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.561 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.594 |
+| Listing样本数(TOP100) / 商品总数 | 393.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.0025 |
+| Listing样本数(TOP100) / 平均体积(in³) | 173.6479 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.54 |
+| Listing样本数(TOP100) / A+占比 | 0.73 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 65.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1245.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 50620.0 |
+| 头部Listing数(TOP10) / 平均BSR | 14185.0 |
+| 新品(半年内上架) / 新品数量 | 10.0 |
+| 新品(半年内上架) / 新品占比 | 0.1 |
+| 新品(半年内上架) / 月均销量 | 103.0 |
+| 新品(半年内上架) / 月均销售额($) | 6193.0 |
+| 新品(半年内上架) / 平均价格($) | 54.9 |
+| 新品(半年内上架) / 平均评分数 | 18.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.045532 |
+| 所有Listing(半年内) / 同类目退货率 | 0.064237 |
+| 所有Listing(半年内) / 搜索购买比 | 9.36944 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10077 |
+
+### Guitars & Strings (吉他)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Guitars & Strings |
+| Listing样本数(TOP100) / 细分市场(翻译) | 吉他 |
+| Listing样本数(TOP100) / 市场路径 | Toys & Games:Learning & Education:Musical Instruments:Guitars & Strings |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：77 <br> 卖家：73 |
+| Listing样本数(TOP100) / 月总销量 | 23669.0 |
+| Listing样本数(TOP100) / 月均销量 | 236.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5589.0 |
+| Listing样本数(TOP100) / 平均价格($) | 29.38 |
+| Listing样本数(TOP100) / 平均评分数 | 625.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 92572.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 78%  <br> AMZ: 3%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.545 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.584 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.625 |
+| Listing样本数(TOP100) / 商品总数 | 212.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.3004 |
+| Listing样本数(TOP100) / 平均体积(in³) | 458.2987 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.54 |
+| Listing样本数(TOP100) / A+占比 | 0.81 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 67.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1289.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 21946.0 |
+| 头部Listing数(TOP10) / 平均BSR | 9186.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 89.0 |
+| 新品(半年内上架) / 月均销售额($) | 2841.0 |
+| 新品(半年内上架) / 平均价格($) | 30.81 |
+| 新品(半年内上架) / 平均评分数 | 113.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.051227003 |
+| 所有Listing(半年内) / 同类目退货率 | 0.04776 |
+| 所有Listing(半年内) / 搜索购买比 | 6.70833 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.058319997 |
+
+### Pant Sets (长裤套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Pant Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 长裤套装 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Boys:Clothing:Clothing Sets:Pant Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：60 <br> 卖家：51 |
+| Listing样本数(TOP100) / 月总销量 | 23640.0 |
+| Listing样本数(TOP100) / 月均销量 | 236.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5778.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.24 |
+| Listing样本数(TOP100) / 平均评分数 | 365.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 251306.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 86%  <br> AMZ: 7%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.293 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.415 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.544 |
+| Listing样本数(TOP100) / 商品总数 | 1174.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.5686 |
+| Listing样本数(TOP100) / 平均体积(in³) | 141.7276 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.53 |
+| Listing样本数(TOP100) / A+占比 | 0.81 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 56.0% |
+| 头部Listing数(TOP10) / 月均销量 | 693.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 20066.0 |
+| 头部Listing数(TOP10) / 平均BSR | 74857.0 |
+| 新品(半年内上架) / 新品数量 | 22.0 |
+| 新品(半年内上架) / 新品占比 | 0.22 |
+| 新品(半年内上架) / 月均销量 | 223.0 |
+| 新品(半年内上架) / 月均销售额($) | 4303.0 |
+| 新品(半年内上架) / 平均价格($) | 17.96 |
+| 新品(半年内上架) / 平均评分数 | 26.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.108081 |
+| 所有Listing(半年内) / 同类目退货率 | 0.152695 |
+| 所有Listing(半年内) / 搜索购买比 | 4.28689 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.04593 |
+
+### Angle Grinder Wheels (角磨机砂轮)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Angle Grinder Wheels |
+| Listing样本数(TOP100) / 细分市场(翻译) | 角磨机砂轮 |
+| Listing样本数(TOP100) / 市场路径 | Industrial & Scientific:Abrasive & Finishing Products:Abrasive Wheels & Discs:Angle Grinder Wheels |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：71 |
+| Listing样本数(TOP100) / 月总销量 | 23383.0 |
+| Listing样本数(TOP100) / 月均销量 | 233.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5444.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.63 |
+| Listing样本数(TOP100) / 平均评分数 | 165.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 62962.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 52%  <br> AMZ: 12%  <br> FBM: 14% |
+| Listing样本数(TOP100) / 商品集中度 | 0.493 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.582 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.603 |
+| Listing样本数(TOP100) / 商品总数 | 417.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.5449 |
+| Listing样本数(TOP100) / 平均体积(in³) | 52.7489 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.61 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 75.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1152.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 28364.0 |
+| 头部Listing数(TOP10) / 平均BSR | 18576.0 |
+| 新品(半年内上架) / 新品数量 | 32.0 |
+| 新品(半年内上架) / 新品占比 | 0.32 |
+| 新品(半年内上架) / 月均销量 | 188.0 |
+| 新品(半年内上架) / 月均销售额($) | 4209.0 |
+| 新品(半年内上架) / 平均价格($) | 23.29 |
+| 新品(半年内上架) / 平均评分数 | 28.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.024115 |
+| 所有Listing(半年内) / 同类目退货率 | 0.021143 |
+| 所有Listing(半年内) / 搜索购买比 | 15.38827 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.19758 |
+
+### In-Dash Navigation (内置车载导航)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | In-Dash Navigation |
+| Listing样本数(TOP100) / 细分市场(翻译) | 内置车载导航 |
+| Listing样本数(TOP100) / 市场路径 | Electronics:Car & Vehicle Electronics:Car Electronics:Car Video:In-Dash Navigation |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：52 <br> 卖家：61 |
+| Listing样本数(TOP100) / 月总销量 | 23277.0 |
+| Listing样本数(TOP100) / 月均销量 | 232.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 29003.0 |
+| Listing样本数(TOP100) / 平均价格($) | 111.94 |
+| Listing样本数(TOP100) / 平均评分数 | 176.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 20784.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.8 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 89%  <br> AMZ: 1%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.291 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.577 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.457 |
+| Listing样本数(TOP100) / 商品总数 | 11204.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.4059 |
+| Listing样本数(TOP100) / 平均体积(in³) | 396.6958 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.83 |
+| Listing样本数(TOP100) / A+占比 | 0.83 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 72.0% |
+| 头部Listing数(TOP10) / 月均销量 | 677.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 107550.0 |
+| 头部Listing数(TOP10) / 平均BSR | 10183.0 |
+| 新品(半年内上架) / 新品数量 | 25.0 |
+| 新品(半年内上架) / 新品占比 | 0.25 |
+| 新品(半年内上架) / 月均销量 | 230.0 |
+| 新品(半年内上架) / 月均销售额($) | 17207.0 |
+| 新品(半年内上架) / 平均价格($) | 81.59 |
+| 新品(半年内上架) / 平均评分数 | 38.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.149223 |
+| 所有Listing(半年内) / 同类目退货率 | 0.124781996 |
+| 所有Listing(半年内) / 搜索购买比 | 2.28683 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.028369999 |
+
+### Rods (杆)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Rods |
+| Listing样本数(TOP100) / 细分市场(翻译) | 杆 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Welding & Soldering:Welding Equipment:Welding Equipment & Accessories:Arc Welding Equipment:Rods |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：62 <br> 卖家：78 |
+| Listing样本数(TOP100) / 月总销量 | 22977.0 |
+| Listing样本数(TOP100) / 月均销量 | 229.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4745.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.66 |
+| Listing样本数(TOP100) / 平均评分数 | 278.0 |
+| Listing样本数(TOP100) / 平均星级 | 3.7 |
+| Listing样本数(TOP100) / 平均BSR | 117211.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.7 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 64%  <br> AMZ: 1%  <br> FBM: 25% |
+| Listing样本数(TOP100) / 商品集中度 | 0.403 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.582 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.513 |
+| Listing样本数(TOP100) / 商品总数 | 763.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.2283 |
+| Listing样本数(TOP100) / 平均体积(in³) | 69.9515 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.69 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 77.0% |
+| 头部Listing数(TOP10) / 月均销量 | 925.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 19948.0 |
+| 头部Listing数(TOP10) / 平均BSR | 39990.0 |
+| 新品(半年内上架) / 新品数量 | 37.0 |
+| 新品(半年内上架) / 新品占比 | 0.37 |
+| 新品(半年内上架) / 月均销量 | 206.0 |
+| 新品(半年内上架) / 月均销售额($) | 2975.0 |
+| 新品(半年内上架) / 平均价格($) | 15.0 |
+| 新品(半年内上架) / 平均评分数 | 6.0 |
+| 新品(半年内上架) / 平均星级 | 2.9 |
+| 所有Listing(半年内) / 退货率 | 0.019449001 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035314 |
+| 所有Listing(半年内) / 搜索购买比 | 11.92538 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09945 |
+
+### Airplanes & Jets (飞机)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Airplanes & Jets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 飞机 |
+| Listing样本数(TOP100) / 市场路径 | Toys & Games:Remote & App Controlled Vehicles & Parts:Remote & App Controlled Vehicles:Airplanes & Jets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：52 <br> 卖家：54 |
+| Listing样本数(TOP100) / 月总销量 | 22767.0 |
+| Listing样本数(TOP100) / 月均销量 | 227.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 11252.0 |
+| Listing样本数(TOP100) / 平均价格($) | 57.95 |
+| Listing样本数(TOP100) / 平均评分数 | 256.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 72347.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 5%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.416 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.613 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.602 |
+| Listing样本数(TOP100) / 商品总数 | 1045.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.936 |
+| Listing样本数(TOP100) / 平均体积(in³) | 627.7872 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.67 |
+| Listing样本数(TOP100) / A+占比 | 0.88 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 72.0% |
+| 头部Listing数(TOP10) / 月均销量 | 947.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 37344.0 |
+| 头部Listing数(TOP10) / 平均BSR | 34056.0 |
+| 新品(半年内上架) / 新品数量 | 25.0 |
+| 新品(半年内上架) / 新品占比 | 0.25 |
+| 新品(半年内上架) / 月均销量 | 216.0 |
+| 新品(半年内上架) / 月均销售额($) | 7210.0 |
+| 新品(半年内上架) / 平均价格($) | 35.15 |
+| 新品(半年内上架) / 平均评分数 | 70.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.084557 |
+| 所有Listing(半年内) / 同类目退货率 | 0.041058 |
+| 所有Listing(半年内) / 搜索购买比 | 2.21546 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0448 |
+
+### Scoreboards & Timers (记分牌和计时器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Scoreboards & Timers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 记分牌和计时器 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports & Outdoor Recreation Accessories:Coach & Referee Gear:Scoreboards & Timers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：75 <br> 卖家：72 |
+| Listing样本数(TOP100) / 月总销量 | 22707.0 |
+| Listing样本数(TOP100) / 月均销量 | 227.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 7566.0 |
+| Listing样本数(TOP100) / 平均价格($) | 52.27 |
+| Listing样本数(TOP100) / 平均评分数 | 352.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 73372.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 89%  <br> AMZ: 5%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.448 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.541 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.541 |
+| Listing样本数(TOP100) / 商品总数 | 543.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.5395 |
+| Listing样本数(TOP100) / 平均体积(in³) | 216.1668 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.65 |
+| Listing样本数(TOP100) / A+占比 | 0.79 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 72.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1017.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 20580.0 |
+| 头部Listing数(TOP10) / 平均BSR | 9459.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 164.0 |
+| 新品(半年内上架) / 月均销售额($) | 5876.0 |
+| 新品(半年内上架) / 平均价格($) | 34.78 |
+| 新品(半年内上架) / 平均评分数 | 26.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.051342 |
+| 所有Listing(半年内) / 同类目退货率 | 0.045063 |
+| 所有Listing(半年内) / 搜索购买比 | 7.05015 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07428 |
+
+### AV Receivers & Amplifiers (AV接收机)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | AV Receivers & Amplifiers |
+| Listing样本数(TOP100) / 细分市场(翻译) | AV接收机 |
+| Listing样本数(TOP100) / 市场路径 | Electronics:Television & Video:AV Receivers & Amplifiers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：65 <br> 卖家：68 |
+| Listing样本数(TOP100) / 月总销量 | 22678.0 |
+| Listing样本数(TOP100) / 月均销量 | 226.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 18561.0 |
+| Listing样本数(TOP100) / 平均价格($) | 112.01 |
+| Listing样本数(TOP100) / 平均评分数 | 294.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 32042.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.9 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 71%  <br> AMZ: 8%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.459 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.555 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.542 |
+| Listing样本数(TOP100) / 商品总数 | 605.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.1327 |
+| Listing样本数(TOP100) / 平均体积(in³) | 192.2913 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.82 |
+| Listing样本数(TOP100) / A+占比 | 0.84 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 68.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1041.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 57625.0 |
+| 头部Listing数(TOP10) / 平均BSR | 4323.0 |
+| 新品(半年内上架) / 新品数量 | 34.0 |
+| 新品(半年内上架) / 新品占比 | 0.34 |
+| 新品(半年内上架) / 月均销量 | 242.0 |
+| 新品(半年内上架) / 月均销售额($) | 15504.0 |
+| 新品(半年内上架) / 平均价格($) | 92.59 |
+| 新品(半年内上架) / 平均评分数 | 32.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.128353 |
+| 所有Listing(半年内) / 同类目退货率 | 0.143941 |
+| 所有Listing(半年内) / 搜索购买比 | 5.62869 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.022839999 |
+
+### Training Heads (培训负责人)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Training Heads |
+| Listing样本数(TOP100) / 细分市场(翻译) | 培训负责人 |
+| Listing样本数(TOP100) / 市场路径 | Beauty & Personal Care:Salon & Spa Equipment:Training Heads |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：57 <br> 卖家：59 |
+| Listing样本数(TOP100) / 月总销量 | 22442.0 |
+| Listing样本数(TOP100) / 月均销量 | 224.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6398.0 |
+| Listing样本数(TOP100) / 平均价格($) | 28.46 |
+| Listing样本数(TOP100) / 平均评分数 | 712.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 96436.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 100%  <br> AMZ: 0%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.407 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.542 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.511 |
+| Listing样本数(TOP100) / 商品总数 | 191.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.8607 |
+| Listing样本数(TOP100) / 平均体积(in³) | 512.0935 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.88 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 98.0% |
+| 头部Listing数(TOP10) / 月均销量 | 912.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 26347.0 |
+| 头部Listing数(TOP10) / 平均BSR | 27550.0 |
+| 新品(半年内上架) / 新品数量 | 20.0 |
+| 新品(半年内上架) / 新品占比 | 0.2 |
+| 新品(半年内上架) / 月均销量 | 140.0 |
+| 新品(半年内上架) / 月均销售额($) | 3690.0 |
+| 新品(半年内上架) / 平均价格($) | 26.42 |
+| 新品(半年内上架) / 平均评分数 | 71.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | N/A |
+| 所有Listing(半年内) / 同类目退货率 | N/A |
+| 所有Listing(半年内) / 搜索购买比 | N/A |
+| 所有Listing(半年内) / 同类目搜索购买比 | N/A |
+
+### Gaiters (护腿、护脚)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Gaiters |
+| Listing样本数(TOP100) / 细分市场(翻译) | 护腿、护脚 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Outdoor Recreation:Camping & Hiking:Footwear & Accessories:Gaiters |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：67 <br> 卖家：67 |
+| Listing样本数(TOP100) / 月总销量 | 22440.0 |
+| Listing样本数(TOP100) / 月均销量 | 224.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6772.0 |
+| Listing样本数(TOP100) / 平均价格($) | 33.12 |
+| Listing样本数(TOP100) / 平均评分数 | 386.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 73070.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 0%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.445 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.561 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.57 |
+| Listing样本数(TOP100) / 商品总数 | 422.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.6839 |
+| Listing样本数(TOP100) / 平均体积(in³) | 210.9182 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.64 |
+| Listing样本数(TOP100) / A+占比 | 0.82 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 65.0% |
+| 头部Listing数(TOP10) / 月均销量 | 998.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 28908.0 |
+| 头部Listing数(TOP10) / 平均BSR | 9704.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 159.0 |
+| 新品(半年内上架) / 月均销售额($) | 4490.0 |
+| 新品(半年内上架) / 平均价格($) | 31.67 |
+| 新品(半年内上架) / 平均评分数 | 39.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.086393006 |
+| 所有Listing(半年内) / 同类目退货率 | 0.045576 |
+| 所有Listing(半年内) / 搜索购买比 | 7.24924 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.08298001 |
+
+### Wormers (虫子)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Wormers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 虫子 |
+| Listing样本数(TOP100) / 市场路径 | Pet Supplies:Cats:Health Supplies:Wormers |
+| Listing样本数(TOP100) / 样本数量 | 商品：84 <br> 品牌：49 <br> 卖家：50 |
+| Listing样本数(TOP100) / 月总销量 | 22159.0 |
+| Listing样本数(TOP100) / 月均销量 | 263.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 10689.0 |
+| Listing样本数(TOP100) / 平均价格($) | 39.21 |
+| Listing样本数(TOP100) / 平均评分数 | 68.0 |
+| Listing样本数(TOP100) / 平均星级 | 3.9 |
+| Listing样本数(TOP100) / 平均BSR | 46486.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 81%  <br> AMZ: 1%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.476 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.58 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.56 |
+| Listing样本数(TOP100) / 商品总数 | 76.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.2045 |
+| Listing样本数(TOP100) / 平均体积(in³) | 18.7026 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.74 |
+| Listing样本数(TOP100) / A+占比 | 0.33 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 69.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1055.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 41357.0 |
+| 头部Listing数(TOP10) / 平均BSR | 9327.0 |
+| 新品(半年内上架) / 新品数量 | 71.0 |
+| 新品(半年内上架) / 新品占比 | 0.85 |
+| 新品(半年内上架) / 月均销量 | 275.0 |
+| 新品(半年内上架) / 月均销售额($) | 10631.0 |
+| 新品(半年内上架) / 平均价格($) | 37.17 |
+| 新品(半年内上架) / 平均评分数 | 12.0 |
+| 新品(半年内上架) / 平均星级 | 3.8 |
+| 所有Listing(半年内) / 退货率 | 0.012824 |
+| 所有Listing(半年内) / 同类目退货率 | 0.009148 |
+| 所有Listing(半年内) / 搜索购买比 | 12.86586 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.20378 |
+
+### Cream Chargers & Whippers (奶油充电器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Cream Chargers & Whippers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 奶油充电器 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Kitchen Utensils & Gadgets:Specialty Tools & Gadgets:Cream Chargers & Whippers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：61 <br> 卖家：69 |
+| Listing样本数(TOP100) / 月总销量 | 21944.0 |
+| Listing样本数(TOP100) / 月均销量 | 219.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6757.0 |
+| Listing样本数(TOP100) / 平均价格($) | 38.45 |
+| Listing样本数(TOP100) / 平均评分数 | 438.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 83176.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 68%  <br> AMZ: 0%  <br> FBM: 21% |
+| Listing样本数(TOP100) / 商品集中度 | 0.469 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.62 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.542 |
+| Listing样本数(TOP100) / 商品总数 | 268.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.4966 |
+| Listing样本数(TOP100) / 平均体积(in³) | 135.6527 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.67 |
+| Listing样本数(TOP100) / A+占比 | 0.66 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 51.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1029.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 23820.0 |
+| 头部Listing数(TOP10) / 平均BSR | 18940.0 |
+| 新品(半年内上架) / 新品数量 | 38.0 |
+| 新品(半年内上架) / 新品占比 | 0.38 |
+| 新品(半年内上架) / 月均销量 | 250.0 |
+| 新品(半年内上架) / 月均销售额($) | 5569.0 |
+| 新品(半年内上架) / 平均价格($) | 29.53 |
+| 新品(半年内上架) / 平均评分数 | 12.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.026313 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035095 |
+| 所有Listing(半年内) / 搜索购买比 | 9.11699 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10854 |
+
+### Brake Controls (制动控制装置)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Brake Controls |
+| Listing样本数(TOP100) / 细分市场(翻译) | 制动控制装置 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Exterior Accessories:Trailer Accessories:Brake Controls |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：60 <br> 卖家：68 |
+| Listing样本数(TOP100) / 月总销量 | 21878.0 |
+| Listing样本数(TOP100) / 月均销量 | 218.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 19868.0 |
+| Listing样本数(TOP100) / 平均价格($) | 87.23 |
+| Listing样本数(TOP100) / 平均评分数 | 308.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 88443.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.8 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 75%  <br> AMZ: 11%  <br> FBM: 6% |
+| Listing样本数(TOP100) / 商品集中度 | 0.377 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.591 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.536 |
+| Listing样本数(TOP100) / 商品总数 | 700.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.2233 |
+| Listing样本数(TOP100) / 平均体积(in³) | 132.3349 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.71 |
+| Listing样本数(TOP100) / A+占比 | 0.81 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 56.0% |
+| 头部Listing数(TOP10) / 月均销量 | 824.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 70215.0 |
+| 头部Listing数(TOP10) / 平均BSR | 11789.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 159.0 |
+| 新品(半年内上架) / 月均销售额($) | 16625.0 |
+| 新品(半年内上架) / 平均价格($) | 105.92 |
+| 新品(半年内上架) / 平均评分数 | 14.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.060507998 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038714003 |
+| 所有Listing(半年内) / 搜索购买比 | 9.02048 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.092889994 |
+
+### Metric Inserts & Kits (米制刀片和套件)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Metric Inserts & Kits |
+| Listing样本数(TOP100) / 细分市场(翻译) | 米制刀片和套件 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Tools & Equipment:Thread Repair Kits:Metric Inserts & Kits |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：61 <br> 卖家：63 |
+| Listing样本数(TOP100) / 月总销量 | 21461.0 |
+| Listing样本数(TOP100) / 月均销量 | 214.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 7905.0 |
+| Listing样本数(TOP100) / 平均价格($) | 43.87 |
+| Listing样本数(TOP100) / 平均评分数 | 196.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 142807.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 7%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.49 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.602 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.626 |
+| Listing样本数(TOP100) / 商品总数 | 656.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.4889 |
+| Listing样本数(TOP100) / 平均体积(in³) | 152.012 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.67 |
+| Listing样本数(TOP100) / A+占比 | 0.67 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 80.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1052.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 29582.0 |
+| 头部Listing数(TOP10) / 平均BSR | 15551.0 |
+| 新品(半年内上架) / 新品数量 | 13.0 |
+| 新品(半年内上架) / 新品占比 | 0.13 |
+| 新品(半年内上架) / 月均销量 | 136.0 |
+| 新品(半年内上架) / 月均销售额($) | 7995.0 |
+| 新品(半年内上架) / 平均价格($) | 52.09 |
+| 新品(半年内上架) / 平均评分数 | 51.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.055958 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038714003 |
+| 所有Listing(半年内) / 搜索购买比 | 9.17915 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.092889994 |
+
+### Manual Pasta Makers (手动面条机)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Manual Pasta Makers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 手动面条机 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Kitchen Utensils & Gadgets:Pasta & Pizza Tools:Pasta Makers & Accessories:Manual Pasta Makers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：84 <br> 卖家：82 |
+| Listing样本数(TOP100) / 月总销量 | 21185.0 |
+| Listing样本数(TOP100) / 月均销量 | 211.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 8471.0 |
+| Listing样本数(TOP100) / 平均价格($) | 29.23 |
+| Listing样本数(TOP100) / 平均评分数 | 1110.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 75929.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.8 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 92%  <br> AMZ: 5%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.444 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.524 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.553 |
+| Listing样本数(TOP100) / 商品总数 | 926.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.3435 |
+| Listing样本数(TOP100) / 平均体积(in³) | 357.0627 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.77 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 58.0% |
+| 头部Listing数(TOP10) / 月均销量 | 940.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 49641.0 |
+| 头部Listing数(TOP10) / 平均BSR | 14032.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 102.0 |
+| 新品(半年内上架) / 月均销售额($) | 2510.0 |
+| 新品(半年内上架) / 平均价格($) | 22.85 |
+| 新品(半年内上架) / 平均评分数 | 15.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.054752003 |
+| 所有Listing(半年内) / 同类目退货率 | 0.060334 |
+| 所有Listing(半年内) / 搜索购买比 | 6.61402 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05948 |
+
+### Hoodies (帽衫)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Hoodies |
+| Listing样本数(TOP100) / 细分市场(翻译) | 帽衫 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Novelty & More:Clothing:Novelty:Women:Hoodies |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：80 <br> 卖家：67 |
+| Listing样本数(TOP100) / 月总销量 | 21172.0 |
+| Listing样本数(TOP100) / 月均销量 | 211.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 7701.0 |
+| Listing样本数(TOP100) / 平均价格($) | 37.42 |
+| Listing样本数(TOP100) / 平均评分数 | 257.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 277663.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 50%  <br> AMZ: 15%  <br> FBM: 17% |
+| Listing样本数(TOP100) / 商品集中度 | 0.274 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.421 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.52 |
+| Listing样本数(TOP100) / 商品总数 | 57144.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.8422 |
+| Listing样本数(TOP100) / 平均体积(in³) | 302.1462 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.64 |
+| Listing样本数(TOP100) / A+占比 | 0.55 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 49.0% |
+| 头部Listing数(TOP10) / 月均销量 | 580.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 20113.0 |
+| 头部Listing数(TOP10) / 平均BSR | 99251.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 169.0 |
+| 新品(半年内上架) / 月均销售额($) | 4663.0 |
+| 新品(半年内上架) / 平均价格($) | 31.48 |
+| 新品(半年内上架) / 平均评分数 | 30.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.058125 |
+| 所有Listing(半年内) / 同类目退货率 | 0.139157 |
+| 所有Listing(半年内) / 搜索购买比 | 1.88664 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.03983 |
+
+### Seat Covers (摩托车座套)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Seat Covers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 摩托车座套 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Motorcycle & Powersports:Accessories:Seat Covers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：61 <br> 卖家：63 |
+| Listing样本数(TOP100) / 月总销量 | 21007.0 |
+| Listing样本数(TOP100) / 月均销量 | 210.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6574.0 |
+| Listing样本数(TOP100) / 平均价格($) | 31.1 |
+| Listing样本数(TOP100) / 平均评分数 | 316.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 73287.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 88%  <br> AMZ: 2%  <br> FBM: 7% |
+| Listing样本数(TOP100) / 商品集中度 | 0.278 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.503 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.472 |
+| Listing样本数(TOP100) / 商品总数 | 3614.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.1461 |
+| Listing样本数(TOP100) / 平均体积(in³) | 279.2556 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.65 |
+| Listing样本数(TOP100) / A+占比 | 0.77 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 88.0% |
+| 头部Listing数(TOP10) / 月均销量 | 584.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 19557.0 |
+| 头部Listing数(TOP10) / 平均BSR | 13233.0 |
+| 新品(半年内上架) / 新品数量 | 19.0 |
+| 新品(半年内上架) / 新品占比 | 0.19 |
+| 新品(半年内上架) / 月均销量 | 169.0 |
+| 新品(半年内上架) / 月均销售额($) | 5030.0 |
+| 新品(半年内上架) / 平均价格($) | 30.22 |
+| 新品(半年内上架) / 平均评分数 | 35.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.052945 |
+| 所有Listing(半年内) / 同类目退货率 | 0.073850006 |
+| 所有Listing(半年内) / 搜索购买比 | 3.03603 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.03401 |
+
+### Shoulder Bags (单肩包)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Shoulder Bags |
+| Listing样本数(TOP100) / 细分市场(翻译) | 单肩包 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Men:Handbags & Shoulder Bags:Shoulder Bags |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：78 <br> 卖家：81 |
+| Listing样本数(TOP100) / 月总销量 | 20998.0 |
+| Listing样本数(TOP100) / 月均销量 | 209.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 7937.0 |
+| Listing样本数(TOP100) / 平均价格($) | 43.52 |
+| Listing样本数(TOP100) / 平均评分数 | 477.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 296135.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 7%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.448 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.56 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.571 |
+| Listing样本数(TOP100) / 商品总数 | 1042.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.9422 |
+| Listing样本数(TOP100) / 平均体积(in³) | 296.7517 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.84 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 73.0% |
+| 头部Listing数(TOP10) / 月均销量 | 941.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 32513.0 |
+| 头部Listing数(TOP10) / 平均BSR | 60795.0 |
+| 新品(半年内上架) / 新品数量 | 31.0 |
+| 新品(半年内上架) / 新品占比 | 0.31 |
+| 新品(半年内上架) / 月均销量 | 153.0 |
+| 新品(半年内上架) / 月均销售额($) | 5844.0 |
+| 新品(半年内上架) / 平均价格($) | 54.82 |
+| 新品(半年内上架) / 平均评分数 | 46.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.08689299 |
+| 所有Listing(半年内) / 同类目退货率 | 0.133267 |
+| 所有Listing(半年内) / 搜索购买比 | 4.37901 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.02784 |
+
+### Monoculars (单筒望远镜)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Monoculars |
+| Listing样本数(TOP100) / 细分市场(翻译) | 单筒望远镜 |
+| Listing样本数(TOP100) / 市场路径 | Electronics:Camera & Photo:Binoculars & Scopes:Monoculars |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：64 <br> 卖家：68 |
+| Listing样本数(TOP100) / 月总销量 | 20613.0 |
+| Listing样本数(TOP100) / 月均销量 | 206.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 12621.0 |
+| Listing样本数(TOP100) / 平均价格($) | 72.01 |
+| Listing样本数(TOP100) / 平均评分数 | 620.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 1219.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.8 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 83%  <br> AMZ: 8%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.42 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.643 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.547 |
+| Listing样本数(TOP100) / 商品总数 | 49675.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.7406 |
+| Listing样本数(TOP100) / 平均体积(in³) | 54.4832 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.77 |
+| Listing样本数(TOP100) / A+占比 | 0.91 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 66.0% |
+| 头部Listing数(TOP10) / 月均销量 | 866.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 53744.0 |
+| 头部Listing数(TOP10) / 平均BSR | 146.0 |
+| 新品(半年内上架) / 新品数量 | 22.0 |
+| 新品(半年内上架) / 新品占比 | 0.22 |
+| 新品(半年内上架) / 月均销量 | 235.0 |
+| 新品(半年内上架) / 月均销售额($) | 8084.0 |
+| 新品(半年内上架) / 平均价格($) | 41.3 |
+| 新品(半年内上架) / 平均评分数 | 45.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.070458 |
+| 所有Listing(半年内) / 同类目退货率 | 0.083923995 |
+| 所有Listing(半年内) / 搜索购买比 | 7.48953 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.04019 |
+
+### Float Valves (浮阀)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Float Valves |
+| Listing样本数(TOP100) / 细分市场(翻译) | 浮阀 |
+| Listing样本数(TOP100) / 市场路径 | Industrial & Scientific:Hydraulics, Pneumatics & Plumbing:Fittings:Valves:Float Valves |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：68 |
+| Listing样本数(TOP100) / 月总销量 | 20605.0 |
+| Listing样本数(TOP100) / 月均销量 | 206.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4138.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.85 |
+| Listing样本数(TOP100) / 平均评分数 | 183.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 41180.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 7%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.326 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.43 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.42 |
+| Listing样本数(TOP100) / 商品总数 | 705.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.6712 |
+| Listing样本数(TOP100) / 平均体积(in³) | 110.6617 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.61 |
+| Listing样本数(TOP100) / A+占比 | 0.73 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 63.0% |
+| 头部Listing数(TOP10) / 月均销量 | 671.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 13549.0 |
+| 头部Listing数(TOP10) / 平均BSR | 9864.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 166.0 |
+| 新品(半年内上架) / 月均销售额($) | 3432.0 |
+| 新品(半年内上架) / 平均价格($) | 21.8 |
+| 新品(半年内上架) / 平均评分数 | 23.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.044407 |
+| 所有Listing(半年内) / 同类目退货率 | 0.047612 |
+| 所有Listing(半年内) / 搜索购买比 | 15.71186 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.16524 |
+
+### Alarms & Anti-Theft (摩托车防盗器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Alarms & Anti-Theft |
+| Listing样本数(TOP100) / 细分市场(翻译) | 摩托车防盗器 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Motorcycle & Powersports:Accessories:Electronics:Alarms & Anti-Theft |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：77 <br> 卖家：76 |
+| Listing样本数(TOP100) / 月总销量 | 20236.0 |
+| Listing样本数(TOP100) / 月均销量 | 202.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5858.0 |
+| Listing样本数(TOP100) / 平均价格($) | 32.91 |
+| Listing样本数(TOP100) / 平均评分数 | 705.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 82447.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 4%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.389 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.489 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.47 |
+| Listing样本数(TOP100) / 商品总数 | 1018.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.8944 |
+| Listing样本数(TOP100) / 平均体积(in³) | 39.0662 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.77 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 55.0% |
+| 头部Listing数(TOP10) / 月均销量 | 786.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 22480.0 |
+| 头部Listing数(TOP10) / 平均BSR | 12196.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 111.0 |
+| 新品(半年内上架) / 月均销售额($) | 4379.0 |
+| 新品(半年内上架) / 平均价格($) | 48.4 |
+| 新品(半年内上架) / 平均评分数 | 18.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.047220003 |
+| 所有Listing(半年内) / 同类目退货率 | 0.049115 |
+| 所有Listing(半年内) / 搜索购买比 | 6.89648 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05711 |
+
+### Weaving Looms (织机)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Weaving Looms |
+| Listing样本数(TOP100) / 细分市场(翻译) | 织机 |
+| Listing样本数(TOP100) / 市场路径 | Arts, Crafts & Sewing:Crafting:Weaving & Spinning:Weaving Looms |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：85 <br> 卖家：83 |
+| Listing样本数(TOP100) / 月总销量 | 20155.0 |
+| Listing样本数(TOP100) / 月均销量 | 201.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4602.0 |
+| Listing样本数(TOP100) / 平均价格($) | 21.49 |
+| Listing样本数(TOP100) / 平均评分数 | 311.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 74774.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 4%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.543 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.575 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.602 |
+| Listing样本数(TOP100) / 商品总数 | 502.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.0109 |
+| Listing样本数(TOP100) / 平均体积(in³) | 105.2123 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.56 |
+| Listing样本数(TOP100) / A+占比 | 0.8 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 66.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1094.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 26590.0 |
+| 头部Listing数(TOP10) / 平均BSR | 7114.0 |
+| 新品(半年内上架) / 新品数量 | 28.0 |
+| 新品(半年内上架) / 新品占比 | 0.28 |
+| 新品(半年内上架) / 月均销量 | 84.0 |
+| 新品(半年内上架) / 月均销售额($) | 1345.0 |
+| 新品(半年内上架) / 平均价格($) | 17.68 |
+| 新品(半年内上架) / 平均评分数 | 16.0 |
+| 新品(半年内上架) / 平均星级 | 3.9 |
+| 所有Listing(半年内) / 退货率 | 0.033328 |
+| 所有Listing(半年内) / 同类目退货率 | 0.037488 |
+| 所有Listing(半年内) / 搜索购买比 | 5.56731 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10263 |
+
+### Leak Detection Tools (泄漏检测工具)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Leak Detection Tools |
+| Listing样本数(TOP100) / 细分市场(翻译) | 泄漏检测工具 |
+| Listing样本数(TOP100) / 市场路径 | Industrial & Scientific:Test, Measure & Inspect:Inspection & Analysis:Leak Detection Tools |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：77 <br> 卖家：81 |
+| Listing样本数(TOP100) / 月总销量 | 19719.0 |
+| Listing样本数(TOP100) / 月均销量 | 197.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 9699.0 |
+| Listing样本数(TOP100) / 平均价格($) | 100.92 |
+| Listing样本数(TOP100) / 平均评分数 | 154.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 67545.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.9 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 70%  <br> AMZ: 3%  <br> FBM: 9% |
+| Listing样本数(TOP100) / 商品集中度 | 0.512 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.539 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.539 |
+| Listing样本数(TOP100) / 商品总数 | 462.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.445 |
+| Listing样本数(TOP100) / 平均体积(in³) | 212.0001 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.69 |
+| Listing样本数(TOP100) / A+占比 | 0.66 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 53.0% |
+| 头部Listing数(TOP10) / 月均销量 | 1009.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 24181.0 |
+| 头部Listing数(TOP10) / 平均BSR | 7592.0 |
+| 新品(半年内上架) / 新品数量 | 18.0 |
+| 新品(半年内上架) / 新品占比 | 0.18 |
+| 新品(半年内上架) / 月均销量 | 331.0 |
+| 新品(半年内上架) / 月均销售额($) | 10235.0 |
+| 新品(半年内上架) / 平均价格($) | 86.38 |
+| 新品(半年内上架) / 平均评分数 | 27.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.042957 |
+| 所有Listing(半年内) / 同类目退货率 | 0.054436997 |
+| 所有Listing(半年内) / 搜索购买比 | 12.84958 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10694 |
+
+### Wedding Dresses (婚纱)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Wedding Dresses |
+| Listing样本数(TOP100) / 细分市场(翻译) | 婚纱 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Women:Clothing:Dresses:Wedding Dresses |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：53 <br> 卖家：57 |
+| Listing样本数(TOP100) / 月总销量 | 19688.0 |
+| Listing样本数(TOP100) / 月均销量 | 196.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 14782.0 |
+| Listing样本数(TOP100) / 平均价格($) | 82.75 |
+| Listing样本数(TOP100) / 平均评分数 | 171.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 648744.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 51%  <br> AMZ: 0%  <br> FBM: 38% |
+| Listing样本数(TOP100) / 商品集中度 | 0.308 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.616 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.571 |
+| Listing样本数(TOP100) / 商品总数 | 2587.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.4243 |
+| Listing样本数(TOP100) / 平均体积(in³) | 238.1708 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.73 |
+| Listing样本数(TOP100) / A+占比 | 0.9 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 95.0% |
+| 头部Listing数(TOP10) / 月均销量 | 606.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 41695.0 |
+| 头部Listing数(TOP10) / 平均BSR | 82170.0 |
+| 新品(半年内上架) / 新品数量 | 32.0 |
+| 新品(半年内上架) / 新品占比 | 0.32 |
+| 新品(半年内上架) / 月均销量 | 236.0 |
+| 新品(半年内上架) / 月均销售额($) | 15451.0 |
+| 新品(半年内上架) / 平均价格($) | 69.93 |
+| 新品(半年内上架) / 平均评分数 | 24.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | N/A |
+| 所有Listing(半年内) / 同类目退货率 | N/A |
+| 所有Listing(半年内) / 搜索购买比 | N/A |
+| 所有Listing(半年内) / 同类目搜索购买比 | N/A |
+
+### Optics Accessories (光学配件)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Optics Accessories |
+| Listing样本数(TOP100) / 细分市场(翻译) | 光学配件 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Hunting & Fishing:Shooting:Optics:Optics Accessories |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：52 <br> 卖家：57 |
+| Listing样本数(TOP100) / 月总销量 | 19349.0 |
+| Listing样本数(TOP100) / 月均销量 | 193.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5682.0 |
+| Listing样本数(TOP100) / 平均价格($) | 32.88 |
+| Listing样本数(TOP100) / 平均评分数 | 354.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 61686.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 5%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.27 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.525 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.508 |
+| Listing样本数(TOP100) / 商品总数 | 1524.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.2033 |
+| Listing样本数(TOP100) / 平均体积(in³) | 30.4807 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.66 |
+| Listing样本数(TOP100) / A+占比 | 0.69 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 56.0% |
+| 头部Listing数(TOP10) / 月均销量 | 522.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 13719.0 |
+| 头部Listing数(TOP10) / 平均BSR | 19847.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 156.0 |
+| 新品(半年内上架) / 月均销售额($) | 2362.0 |
+| 新品(半年内上架) / 平均价格($) | 14.96 |
+| 新品(半年内上架) / 平均评分数 | 18.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.056332998 |
+| 所有Listing(半年内) / 同类目退货率 | 0.045063 |
+| 所有Listing(半年内) / 搜索购买比 | 6.16364 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07428 |
+
+### Bait Traps (诱饵陷阱)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Bait Traps |
+| Listing样本数(TOP100) / 细分市场(翻译) | 诱饵陷阱 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Hunting & Fishing:Fishing:Baits & Accessories:Bait Traps |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：60 <br> 卖家：66 |
+| Listing样本数(TOP100) / 月总销量 | 19010.0 |
+| Listing样本数(TOP100) / 月均销量 | 190.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4077.0 |
+| Listing样本数(TOP100) / 平均价格($) | 26.88 |
+| Listing样本数(TOP100) / 平均评分数 | 284.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 72798.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 84%  <br> AMZ: 3%  <br> FBM: 10% |
+| Listing样本数(TOP100) / 商品集中度 | 0.46 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.609 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.568 |
+| Listing样本数(TOP100) / 商品总数 | 588.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.6779 |
+| Listing样本数(TOP100) / 平均体积(in³) | 551.175 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.54 |
+| Listing样本数(TOP100) / A+占比 | 0.71 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 55.0% |
+| 头部Listing数(TOP10) / 月均销量 | 875.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 14126.0 |
+| 头部Listing数(TOP10) / 平均BSR | 13355.0 |
+| 新品(半年内上架) / 新品数量 | 11.0 |
+| 新品(半年内上架) / 新品占比 | 0.11 |
+| 新品(半年内上架) / 月均销量 | 94.0 |
+| 新品(半年内上架) / 月均销售额($) | 2798.0 |
+| 新品(半年内上架) / 平均价格($) | 30.53 |
+| 新品(半年内上架) / 平均评分数 | 4.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.033126 |
+| 所有Listing(半年内) / 同类目退货率 | 0.054621 |
+| 所有Listing(半年内) / 搜索购买比 | 4.49488 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.06323 |
+
+### Replacement Wheels (备用轮)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Replacement Wheels |
+| Listing样本数(TOP100) / 细分市场(翻译) | 备用轮 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports:Skates, Skateboards & Scooters:Scooters & Equipment:Components & Parts:Replacement Wheels |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：45 <br> 卖家：45 |
+| Listing样本数(TOP100) / 月总销量 | 18854.0 |
+| Listing样本数(TOP100) / 月均销量 | 188.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4357.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.5 |
+| Listing样本数(TOP100) / 平均评分数 | 298.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 73113.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 92%  <br> AMZ: 3%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.337 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.645 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.645 |
+| Listing样本数(TOP100) / 商品总数 | 1473.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.0516 |
+| Listing样本数(TOP100) / 平均体积(in³) | 232.8788 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.7 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 84.0% |
+| 头部Listing数(TOP10) / 月均销量 | 635.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 12999.0 |
+| 头部Listing数(TOP10) / 平均BSR | 14786.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 119.0 |
+| 新品(半年内上架) / 月均销售额($) | 2331.0 |
+| 新品(半年内上架) / 平均价格($) | 19.99 |
+| 新品(半年内上架) / 平均评分数 | 14.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.08586799 |
+| 所有Listing(半年内) / 同类目退货率 | 0.060827 |
+| 所有Listing(半年内) / 搜索购买比 | 6.49609 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.06768 |
+
+### Fly Tying Equipment (绑蝇设备)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Fly Tying Equipment |
+| Listing样本数(TOP100) / 细分市场(翻译) | 绑蝇设备 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Hunting & Fishing:Fishing:Fly Fishing:Accessories:Fly Tying Equipment |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：58 <br> 卖家：64 |
+| Listing样本数(TOP100) / 月总销量 | 18675.0 |
+| Listing样本数(TOP100) / 月均销量 | 186.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3221.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.02 |
+| Listing样本数(TOP100) / 平均评分数 | 478.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.0 |
+| Listing样本数(TOP100) / 平均BSR | 93912.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.7 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 83%  <br> AMZ: 1%  <br> FBM: 11% |
+| Listing样本数(TOP100) / 商品集中度 | 0.472 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.627 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.633 |
+| Listing样本数(TOP100) / 商品总数 | 1118.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.2986 |
+| Listing样本数(TOP100) / 平均体积(in³) | 41.2118 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.61 |
+| Listing样本数(TOP100) / A+占比 | 0.46 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 53.0% |
+| 头部Listing数(TOP10) / 月均销量 | 882.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 11629.0 |
+| 头部Listing数(TOP10) / 平均BSR | 22179.0 |
+| 新品(半年内上架) / 新品数量 | 18.0 |
+| 新品(半年内上架) / 新品占比 | 0.18 |
+| 新品(半年内上架) / 月均销量 | 107.0 |
+| 新品(半年内上架) / 月均销售额($) | 1603.0 |
+| 新品(半年内上架) / 平均价格($) | 15.17 |
+| 新品(半年内上架) / 平均评分数 | 10.0 |
+| 新品(半年内上架) / 平均星级 | 2.3 |
+| 所有Listing(半年内) / 退货率 | 0.028448999 |
+| 所有Listing(半年内) / 同类目退货率 | 0.054621 |
+| 所有Listing(半年内) / 搜索购买比 | 6.14312 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.06323 |
+
+### Hair Dryer Stands (吹风机支架)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Hair Dryer Stands |
+| Listing样本数(TOP100) / 细分市场(翻译) | 吹风机支架 |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Medical Supplies & Equipment:Mobility & Daily Living Aids:Bathroom Safety, Aids & Accessories:Hair Dryer Stands |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：70 <br> 卖家：71 |
+| Listing样本数(TOP100) / 月总销量 | 18590.0 |
+| Listing样本数(TOP100) / 月均销量 | 185.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3318.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.87 |
+| Listing样本数(TOP100) / 平均评分数 | 219.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 140717.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 94%  <br> AMZ: 0%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.431 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.506 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.506 |
+| Listing样本数(TOP100) / 商品总数 | 557.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.3448 |
+| Listing样本数(TOP100) / 平均体积(in³) | 581.3536 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.81 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 81.0% |
+| 头部Listing数(TOP10) / 月均销量 | 801.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 11547.0 |
+| 头部Listing数(TOP10) / 平均BSR | 43849.0 |
+| 新品(半年内上架) / 新品数量 | 29.0 |
+| 新品(半年内上架) / 新品占比 | 0.29 |
+| 新品(半年内上架) / 月均销量 | 116.0 |
+| 新品(半年内上架) / 月均销售额($) | 2284.0 |
+| 新品(半年内上架) / 平均价格($) | 21.04 |
+| 新品(半年内上架) / 平均评分数 | 23.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.086644 |
+| 所有Listing(半年内) / 同类目退货率 | 0.068347 |
+| 所有Listing(半年内) / 搜索购买比 | 7.50379 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.078449994 |
+
+### Flags (标志)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Flags |
+| Listing样本数(TOP100) / 细分市场(翻译) | 标志 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports:Boating & Sailing:Boating:Boat Cabin Products:Flags |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：66 <br> 卖家：68 |
+| Listing样本数(TOP100) / 月总销量 | 18506.0 |
+| Listing样本数(TOP100) / 月均销量 | 185.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3724.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.28 |
+| Listing样本数(TOP100) / 平均评分数 | 223.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 93041.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.7 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 67%  <br> AMZ: 14%  <br> FBM: 12% |
+| Listing样本数(TOP100) / 商品集中度 | 0.379 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.627 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.602 |
+| Listing样本数(TOP100) / 商品总数 | 421.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.6035 |
+| Listing样本数(TOP100) / 平均体积(in³) | 132.0584 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.61 |
+| Listing样本数(TOP100) / A+占比 | 0.67 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 54.0% |
+| 头部Listing数(TOP10) / 月均销量 | 701.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 13717.0 |
+| 头部Listing数(TOP10) / 平均BSR | 11252.0 |
+| 新品(半年内上架) / 新品数量 | 10.0 |
+| 新品(半年内上架) / 新品占比 | 0.1 |
+| 新品(半年内上架) / 月均销量 | 199.0 |
+| 新品(半年内上架) / 月均销售额($) | 3723.0 |
+| 新品(半年内上架) / 平均价格($) | 19.93 |
+| 新品(半年内上架) / 平均评分数 | 9.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.026122 |
+| 所有Listing(半年内) / 同类目退货率 | 0.043670997 |
+| 所有Listing(半年内) / 搜索购买比 | 8.33724 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0947 |
+
+### Clothing (服装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Clothing |
+| Listing样本数(TOP100) / 细分市场(翻译) | 服装 |
+| Listing样本数(TOP100) / 市场路径 | Clothing, Shoes & Jewelry:Girls:Clothing |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：78 <br> 卖家：69 |
+| Listing样本数(TOP100) / 月总销量 | 18458.0 |
+| Listing样本数(TOP100) / 月均销量 | 184.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3515.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.36 |
+| Listing样本数(TOP100) / 平均评分数 | 95.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 369089.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 77%  <br> AMZ: 16%  <br> FBM: 6% |
+| Listing样本数(TOP100) / 商品集中度 | 0.501 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.56 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.633 |
+| Listing样本数(TOP100) / 商品总数 | 54689.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.3975 |
+| Listing样本数(TOP100) / 平均体积(in³) | 113.0001 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.53 |
+| Listing样本数(TOP100) / A+占比 | 0.69 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 68.0% |
+| 头部Listing数(TOP10) / 月均销量 | 925.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 17617.0 |
+| 头部Listing数(TOP10) / 平均BSR | 69255.0 |
+| 新品(半年内上架) / 新品数量 | 31.0 |
+| 新品(半年内上架) / 新品占比 | 0.31 |
+| 新品(半年内上架) / 月均销量 | 135.0 |
+| 新品(半年内上架) / 月均销售额($) | 3064.0 |
+| 新品(半年内上架) / 平均价格($) | 21.97 |
+| 新品(半年内上架) / 平均评分数 | 45.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | N/A |
+| 所有Listing(半年内) / 同类目退货率 | N/A |
+| 所有Listing(半年内) / 搜索购买比 | N/A |
+| 所有Listing(半年内) / 同类目搜索购买比 | N/A |
+
+### Foot Warmers (暖脚)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Foot Warmers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 暖脚 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Outdoor Recreation:Camping & Hiking:Safety & Survival:Hand & Foot Warmers:Foot Warmers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：68 <br> 卖家：74 |
+| Listing样本数(TOP100) / 月总销量 | 18208.0 |
+| Listing样本数(TOP100) / 月均销量 | 182.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4698.0 |
+| Listing样本数(TOP100) / 平均价格($) | 30.0 |
+| Listing样本数(TOP100) / 平均评分数 | 894.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 103346.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 91%  <br> AMZ: 6%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.481 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.608 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.557 |
+| Listing样本数(TOP100) / 商品总数 | 529.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.3418 |
+| Listing样本数(TOP100) / 平均体积(in³) | 157.5383 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.88 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 53.0% |
+| 头部Listing数(TOP10) / 月均销量 | 875.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 20065.0 |
+| 头部Listing数(TOP10) / 平均BSR | 19277.0 |
+| 新品(半年内上架) / 新品数量 | 10.0 |
+| 新品(半年内上架) / 新品占比 | 0.1 |
+| 新品(半年内上架) / 月均销量 | 112.0 |
+| 新品(半年内上架) / 月均销售额($) | 2795.0 |
+| 新品(半年内上架) / 平均价格($) | 24.11 |
+| 新品(半年内上架) / 平均评分数 | 80.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.232944 |
+| 所有Listing(半年内) / 同类目退货率 | 0.161117 |
+| 所有Listing(半年内) / 搜索购买比 | 10.45943 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13136 |
+
+### Bats (蝙蝠)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Bats |
+| Listing样本数(TOP100) / 细分市场(翻译) | 蝙蝠 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Backyard Birding & Wildlife:Bats |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：79 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 18073.0 |
+| Listing样本数(TOP100) / 月均销量 | 180.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5230.0 |
+| Listing样本数(TOP100) / 平均价格($) | 34.37 |
+| Listing样本数(TOP100) / 平均评分数 | 344.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 144743.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 82%  <br> AMZ: 5%  <br> FBM: 7% |
+| Listing样本数(TOP100) / 商品集中度 | 0.54 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.559 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.556 |
+| Listing样本数(TOP100) / 商品总数 | 216.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.1939 |
+| Listing样本数(TOP100) / 平均体积(in³) | 479.494 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.65 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 47.0% |
+| 头部Listing数(TOP10) / 月均销量 | 975.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 27371.0 |
+| 头部Listing数(TOP10) / 平均BSR | 16017.0 |
+| 新品(半年内上架) / 新品数量 | 21.0 |
+| 新品(半年内上架) / 新品占比 | 0.21 |
+| 新品(半年内上架) / 月均销量 | 80.0 |
+| 新品(半年内上架) / 月均销售额($) | 2522.0 |
+| 新品(半年内上架) / 平均价格($) | 35.25 |
+| 新品(半年内上架) / 平均评分数 | 6.0 |
+| 新品(半年内上架) / 平均星级 | 3.7 |
+| 所有Listing(半年内) / 退货率 | 0.026055 |
+| 所有Listing(半年内) / 同类目退货率 | 0.029515 |
+| 所有Listing(半年内) / 搜索购买比 | 14.51753 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.12637 |
+
+### Growth Charts (身高墙贴)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Growth Charts |
+| Listing样本数(TOP100) / 细分市场(翻译) | 身高墙贴 |
+| Listing样本数(TOP100) / 市场路径 | Baby Products:Nursery:Décor:Wall Décor:Growth Charts |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：78 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 17946.0 |
+| Listing样本数(TOP100) / 月均销量 | 179.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3344.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.12 |
+| Listing样本数(TOP100) / 平均评分数 | 416.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 21450.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 1%  <br> FBM: 11% |
+| Listing样本数(TOP100) / 商品集中度 | 0.434 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.474 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.474 |
+| Listing样本数(TOP100) / 商品总数 | 406.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.7985 |
+| Listing样本数(TOP100) / 平均体积(in³) | 254.7582 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.7 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 66.0% |
+| 头部Listing数(TOP10) / 月均销量 | 779.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 13259.0 |
+| 头部Listing数(TOP10) / 平均BSR | 8158.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 77.0 |
+| 新品(半年内上架) / 月均销售额($) | 1186.0 |
+| 新品(半年内上架) / 平均价格($) | 14.44 |
+| 新品(半年内上架) / 平均评分数 | 8.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.037173 |
+| 所有Listing(半年内) / 同类目退货率 | 0.047842003 |
+| 所有Listing(半年内) / 搜索购买比 | 6.9049 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.108509995 |
+
+### Candle Sconces (壁突式烛台)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Candle Sconces |
+| Listing样本数(TOP100) / 细分市场(翻译) | 壁突式烛台 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Home Décor Products:Candles & Holders:Candleholders:Candle Sconces |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：61 <br> 卖家：60 |
+| Listing样本数(TOP100) / 月总销量 | 17754.0 |
+| Listing样本数(TOP100) / 月均销量 | 177.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4778.0 |
+| Listing样本数(TOP100) / 平均价格($) | 28.03 |
+| Listing样本数(TOP100) / 平均评分数 | 346.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 291536.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 99%  <br> AMZ: 0%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.352 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.509 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.516 |
+| Listing样本数(TOP100) / 商品总数 | 585.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.884 |
+| Listing样本数(TOP100) / 平均体积(in³) | 344.7286 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.86 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 85.0% |
+| 头部Listing数(TOP10) / 月均销量 | 625.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 13988.0 |
+| 头部Listing数(TOP10) / 平均BSR | 64481.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 166.0 |
+| 新品(半年内上架) / 月均销售额($) | 4230.0 |
+| 新品(半年内上架) / 平均价格($) | 26.71 |
+| 新品(半年内上架) / 平均评分数 | 56.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.102694996 |
+| 所有Listing(半年内) / 同类目退货率 | 0.084172 |
+| 所有Listing(半年内) / 搜索购买比 | 2.92451 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05765 |
+
+### Tortilla Servers (玉米饼服务员)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Tortilla Servers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 玉米饼服务员 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Dining & Entertaining:Dinnerware & Serveware:Serveware:Tortilla Servers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：84 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 17739.0 |
+| Listing样本数(TOP100) / 月均销量 | 177.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3354.0 |
+| Listing样本数(TOP100) / 平均价格($) | 21.25 |
+| Listing样本数(TOP100) / 平均评分数 | 454.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 122531.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 86%  <br> AMZ: 8%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.558 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.58 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.65 |
+| Listing样本数(TOP100) / 商品总数 | 212.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.5748 |
+| Listing样本数(TOP100) / 平均体积(in³) | 143.4979 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.52 |
+| Listing样本数(TOP100) / A+占比 | 0.7 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 38.0% |
+| 头部Listing数(TOP10) / 月均销量 | 990.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 17107.0 |
+| 头部Listing数(TOP10) / 平均BSR | 16080.0 |
+| 新品(半年内上架) / 新品数量 | 10.0 |
+| 新品(半年内上架) / 新品占比 | 0.1 |
+| 新品(半年内上架) / 月均销量 | 67.0 |
+| 新品(半年内上架) / 月均销售额($) | 1344.0 |
+| 新品(半年内上架) / 平均价格($) | 21.64 |
+| 新品(半年内上架) / 平均评分数 | 16.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.062607996 |
+| 所有Listing(半年内) / 同类目退货率 | 0.053512998 |
+| 所有Listing(半年内) / 搜索购买比 | 6.45042 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07874 |
+
+### Devotional Candles (祈祷蜡烛)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Devotional Candles |
+| Listing样本数(TOP100) / 细分市场(翻译) | 祈祷蜡烛 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Home Décor Products:Candles & Holders:Candles:Specialty Candles:Devotional Candles |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：47 <br> 卖家：45 |
+| Listing样本数(TOP100) / 月总销量 | 17570.0 |
+| Listing样本数(TOP100) / 月均销量 | 175.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4539.0 |
+| Listing样本数(TOP100) / 平均价格($) | 25.95 |
+| Listing样本数(TOP100) / 平均评分数 | 191.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 371515.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 4%  <br> FBM: 6% |
+| Listing样本数(TOP100) / 商品集中度 | 0.355 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.611 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.645 |
+| Listing样本数(TOP100) / 商品总数 | 831.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.7427 |
+| Listing样本数(TOP100) / 平均体积(in³) | 14.2222 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.46 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 44.0% |
+| 头部Listing数(TOP10) / 月均销量 | 623.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 15306.0 |
+| 头部Listing数(TOP10) / 平均BSR | 90195.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 124.0 |
+| 新品(半年内上架) / 月均销售额($) | 4017.0 |
+| 新品(半年内上架) / 平均价格($) | 33.24 |
+| 新品(半年内上架) / 平均评分数 | 8.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.040833 |
+| 所有Listing(半年内) / 同类目退货率 | 0.034018 |
+| 所有Listing(半年内) / 搜索购买比 | 5.77389 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.100389995 |
+
+### Bulb Planters (球茎栽植器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Bulb Planters |
+| Listing样本数(TOP100) / 细分市场(翻译) | 球茎栽植器 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Gardening & Lawn Care:Hand Tools:Bulb Planters |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：78 <br> 卖家：80 |
+| Listing样本数(TOP100) / 月总销量 | 17280.0 |
+| Listing样本数(TOP100) / 月均销量 | 172.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4189.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.92 |
+| Listing样本数(TOP100) / 平均评分数 | 295.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 157053.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 4%  <br> FBM: 7% |
+| Listing样本数(TOP100) / 商品集中度 | 0.419 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.481 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.474 |
+| Listing样本数(TOP100) / 商品总数 | 201.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.3184 |
+| Listing样本数(TOP100) / 平均体积(in³) | 610.3125 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.52 |
+| Listing样本数(TOP100) / A+占比 | 0.65 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 68.0% |
+| 头部Listing数(TOP10) / 月均销量 | 724.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 18675.0 |
+| 头部Listing数(TOP10) / 平均BSR | 26194.0 |
+| 新品(半年内上架) / 新品数量 | 26.0 |
+| 新品(半年内上架) / 新品占比 | 0.26 |
+| 新品(半年内上架) / 月均销量 | 117.0 |
+| 新品(半年内上架) / 月均销售额($) | 2289.0 |
+| 新品(半年内上架) / 平均价格($) | 22.76 |
+| 新品(半年内上架) / 平均评分数 | 17.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.028978 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035097 |
+| 所有Listing(半年内) / 搜索购买比 | 13.11661 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13555999 |
+
+### Trim (装饰)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Trim |
+| Listing样本数(TOP100) / 细分市场(翻译) | 装饰 |
+| Listing样本数(TOP100) / 市场路径 | Power & Hand Tools:Power Tool Parts & Accessories:Router Parts & Accessories:Router Bits:Straight, Spiral & Trim Bits:Trim |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：54 <br> 卖家：56 |
+| Listing样本数(TOP100) / 月总销量 | 17275.0 |
+| Listing样本数(TOP100) / 月均销量 | 172.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5000.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.56 |
+| Listing样本数(TOP100) / 平均评分数 | 248.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 120967.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.9 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 83%  <br> AMZ: 11%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.43 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.619 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.623 |
+| Listing样本数(TOP100) / 商品总数 | 680.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.2691 |
+| Listing样本数(TOP100) / 平均体积(in³) | 23.3611 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.67 |
+| Listing样本数(TOP100) / A+占比 | 0.76 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 64.0% |
+| 头部Listing数(TOP10) / 月均销量 | 743.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 23591.0 |
+| 头部Listing数(TOP10) / 平均BSR | 22418.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 119.0 |
+| 新品(半年内上架) / 月均销售额($) | 4349.0 |
+| 新品(半年内上架) / 平均价格($) | 36.54 |
+| 新品(半年内上架) / 平均评分数 | 27.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.024424 |
+| 所有Listing(半年内) / 同类目退货率 | 0.030009 |
+| 所有Listing(半年内) / 搜索购买比 | 11.25348 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09904 |
+
+### Urinal Accessories (小便池配件)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Urinal Accessories |
+| Listing样本数(TOP100) / 细分市场(翻译) | 小便池配件 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Kitchen & Bath Fixtures:Bathroom Fixtures:Urinals & Urinal Parts:Urinal Accessories |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：77 <br> 卖家：73 |
+| Listing样本数(TOP100) / 月总销量 | 16896.0 |
+| Listing样本数(TOP100) / 月均销量 | 168.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5998.0 |
+| Listing样本数(TOP100) / 平均价格($) | 33.42 |
+| Listing样本数(TOP100) / 平均评分数 | 83.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 149784.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 68%  <br> AMZ: 5%  <br> FBM: 11% |
+| Listing样本数(TOP100) / 商品集中度 | 0.458 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.548 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.592 |
+| Listing样本数(TOP100) / 商品总数 | 509.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.641 |
+| Listing样本数(TOP100) / 平均体积(in³) | 226.1168 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.69 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 49.0% |
+| 头部Listing数(TOP10) / 月均销量 | 773.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 31145.0 |
+| 头部Listing数(TOP10) / 平均BSR | 100383.0 |
+| 新品(半年内上架) / 新品数量 | 25.0 |
+| 新品(半年内上架) / 新品占比 | 0.25 |
+| 新品(半年内上架) / 月均销量 | 152.0 |
+| 新品(半年内上架) / 月均销售额($) | 5240.0 |
+| 新品(半年内上架) / 平均价格($) | 26.61 |
+| 新品(半年内上架) / 平均评分数 | 11.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.018725 |
+| 所有Listing(半年内) / 同类目退货率 | 0.071948 |
+| 所有Listing(半年内) / 搜索购买比 | 25.32871 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.13555 |
+
+### Tools (工具)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Tools |
+| Listing样本数(TOP100) / 细分市场(翻译) | 工具 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Sports:Boating & Sailing:Boating:Maintenance Supplies:Tools |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：74 <br> 卖家：72 |
+| Listing样本数(TOP100) / 月总销量 | 16668.0 |
+| Listing样本数(TOP100) / 月均销量 | 166.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4500.0 |
+| Listing样本数(TOP100) / 平均价格($) | 33.49 |
+| Listing样本数(TOP100) / 平均评分数 | 187.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 84281.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 83%  <br> AMZ: 7%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.389 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.463 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.468 |
+| Listing样本数(TOP100) / 商品总数 | 843.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.4432 |
+| Listing样本数(TOP100) / 平均体积(in³) | 97.7625 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.76 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 64.0% |
+| 头部Listing数(TOP10) / 月均销量 | 648.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 10759.0 |
+| 头部Listing数(TOP10) / 平均BSR | 17239.0 |
+| 新品(半年内上架) / 新品数量 | 21.0 |
+| 新品(半年内上架) / 新品占比 | 0.21 |
+| 新品(半年内上架) / 月均销量 | 146.0 |
+| 新品(半年内上架) / 月均销售额($) | 4227.0 |
+| 新品(半年内上架) / 平均价格($) | 32.92 |
+| 新品(半年内上架) / 平均评分数 | 11.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.036353 |
+| 所有Listing(半年内) / 同类目退货率 | 0.054621 |
+| 所有Listing(半年内) / 搜索购买比 | 9.54719 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.06323 |
+
+### License Plate Frames (摩托车牌照架)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | License Plate Frames |
+| Listing样本数(TOP100) / 细分市场(翻译) | 摩托车牌照架 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Motorcycle & Powersports:Parts:Body & Frame Parts:License Plate Frames |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：69 <br> 卖家：72 |
+| Listing样本数(TOP100) / 月总销量 | 16515.0 |
+| Listing样本数(TOP100) / 月均销量 | 165.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3098.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.31 |
+| Listing样本数(TOP100) / 平均评分数 | 146.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 116187.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.9 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 81%  <br> AMZ: 5%  <br> FBM: 8% |
+| Listing样本数(TOP100) / 商品集中度 | 0.403 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.548 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.541 |
+| Listing样本数(TOP100) / 商品总数 | 1293.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.5747 |
+| Listing样本数(TOP100) / 平均体积(in³) | 60.9151 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.58 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 78.0% |
+| 头部Listing数(TOP10) / 月均销量 | 665.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 12524.0 |
+| 头部Listing数(TOP10) / 平均BSR | 13982.0 |
+| 新品(半年内上架) / 新品数量 | 23.0 |
+| 新品(半年内上架) / 新品占比 | 0.23 |
+| 新品(半年内上架) / 月均销量 | 213.0 |
+| 新品(半年内上架) / 月均销售额($) | 3888.0 |
+| 新品(半年内上架) / 平均价格($) | 16.03 |
+| 新品(半年内上架) / 平均评分数 | 8.0 |
+| 新品(半年内上架) / 平均星级 | 3.8 |
+| 所有Listing(半年内) / 退货率 | 0.041805 |
+| 所有Listing(半年内) / 同类目退货率 | 0.046999 |
+| 所有Listing(半年内) / 搜索购买比 | 3.37068 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.054530002 |
+
+### Speedometers (车速里程表)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Speedometers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 车速里程表 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Replacement Parts:Lighting & Electrical:Electrical:Gauges:Speedometers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：53 <br> 卖家：58 |
+| Listing样本数(TOP100) / 月总销量 | 16359.0 |
+| Listing样本数(TOP100) / 月均销量 | 163.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 5995.0 |
+| Listing样本数(TOP100) / 平均价格($) | 46.69 |
+| Listing样本数(TOP100) / 平均评分数 | 173.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.0 |
+| Listing样本数(TOP100) / 平均BSR | 108983.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.2 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 93%  <br> AMZ: 2%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.374 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.634 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.616 |
+| Listing样本数(TOP100) / 商品总数 | 1361.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.3943 |
+| Listing样本数(TOP100) / 平均体积(in³) | 59.8588 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.68 |
+| Listing样本数(TOP100) / A+占比 | 0.82 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 64.0% |
+| 头部Listing数(TOP10) / 月均销量 | 612.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 13910.0 |
+| 头部Listing数(TOP10) / 平均BSR | 12418.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 155.0 |
+| 新品(半年内上架) / 月均销售额($) | 3130.0 |
+| 新品(半年内上架) / 平均价格($) | 22.2 |
+| 新品(半年内上架) / 平均评分数 | 23.0 |
+| 新品(半年内上架) / 平均星级 | 3.6 |
+| 所有Listing(半年内) / 退货率 | 0.091709 |
+| 所有Listing(半年内) / 同类目退货率 | 0.040142003 |
+| 所有Listing(半年内) / 搜索购买比 | 3.01926 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.098000005 |
+
+### Food Processor Parts & Accessories (食物处理器零件)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Food Processor Parts & Accessories |
+| Listing样本数(TOP100) / 细分市场(翻译) | 食物处理器零件 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Small Appliance Parts & Accessories:Food Processor Parts & Accessories |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：70 |
+| Listing样本数(TOP100) / 月总销量 | 16119.0 |
+| Listing样本数(TOP100) / 月均销量 | 161.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4811.0 |
+| Listing样本数(TOP100) / 平均价格($) | 31.23 |
+| Listing样本数(TOP100) / 平均评分数 | 313.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 281564.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 80%  <br> AMZ: 10%  <br> FBM: 8% |
+| Listing样本数(TOP100) / 商品集中度 | 0.269 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.36 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.416 |
+| Listing样本数(TOP100) / 商品总数 | 2770.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.0756 |
+| Listing样本数(TOP100) / 平均体积(in³) | 234.9414 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.62 |
+| Listing样本数(TOP100) / A+占比 | 0.61 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 56.0% |
+| 头部Listing数(TOP10) / 月均销量 | 433.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 10595.0 |
+| 头部Listing数(TOP10) / 平均BSR | 135437.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 228.0 |
+| 新品(半年内上架) / 月均销售额($) | 4753.0 |
+| 新品(半年内上架) / 平均价格($) | 25.97 |
+| 新品(半年内上架) / 平均评分数 | 27.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.087177 |
+| 所有Listing(半年内) / 同类目退货率 | 0.052034 |
+| 所有Listing(半年内) / 搜索购买比 | 12.76149 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.106759995 |
+
+### Amplifiers (放大器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Amplifiers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 放大器 |
+| Listing样本数(TOP100) / 市场路径 | Electronics:Headphones, Earbuds & Accessories:Amplifiers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：52 <br> 卖家：60 |
+| Listing样本数(TOP100) / 月总销量 | 15913.0 |
+| Listing样本数(TOP100) / 月均销量 | 159.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 13260.0 |
+| Listing样本数(TOP100) / 平均价格($) | 90.53 |
+| Listing样本数(TOP100) / 平均评分数 | 647.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 34279.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.3 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 83%  <br> AMZ: 5%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.341 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.644 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.553 |
+| Listing样本数(TOP100) / 商品总数 | 443.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.707 |
+| Listing样本数(TOP100) / 平均体积(in³) | 49.6678 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.83 |
+| Listing样本数(TOP100) / A+占比 | 0.87 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 43.0% |
+| 头部Listing数(TOP10) / 月均销量 | 542.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 42067.0 |
+| 头部Listing数(TOP10) / 平均BSR | 8526.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 101.0 |
+| 新品(半年内上架) / 月均销售额($) | 10032.0 |
+| 新品(半年内上架) / 平均价格($) | 91.08 |
+| 新品(半年内上架) / 平均评分数 | 25.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.098239005 |
+| 所有Listing(半年内) / 同类目退货率 | 0.086538 |
+| 所有Listing(半年内) / 搜索购买比 | 4.61405 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.03304 |
+
+### Kick Plates (踢脚板)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Kick Plates |
+| Listing样本数(TOP100) / 细分市场(翻译) | 踢脚板 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Hardware:Door Hardware & Locks:Kick Plates |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：50 <br> 卖家：49 |
+| Listing样本数(TOP100) / 月总销量 | 15899.0 |
+| Listing样本数(TOP100) / 月均销量 | 158.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4124.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.06 |
+| Listing样本数(TOP100) / 平均评分数 | 111.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 110386.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 83%  <br> AMZ: 6%  <br> FBM: 8% |
+| Listing样本数(TOP100) / 商品集中度 | 0.272 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.628 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.642 |
+| Listing样本数(TOP100) / 商品总数 | 648.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.5619 |
+| Listing样本数(TOP100) / 平均体积(in³) | 170.0634 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.77 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 59.0% |
+| 头部Listing数(TOP10) / 月均销量 | 432.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 8159.0 |
+| 头部Listing数(TOP10) / 平均BSR | 30653.0 |
+| 新品(半年内上架) / 新品数量 | 10.0 |
+| 新品(半年内上架) / 新品占比 | 0.1 |
+| 新品(半年内上架) / 月均销量 | 144.0 |
+| 新品(半年内上架) / 月均销售额($) | 2161.0 |
+| 新品(半年内上架) / 平均价格($) | 17.39 |
+| 新品(半年内上架) / 平均评分数 | 22.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.080662005 |
+| 所有Listing(半年内) / 同类目退货率 | 0.070356004 |
+| 所有Listing(半年内) / 搜索购买比 | 10.65599 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.12026 |
+
+### Gutters (排水沟)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Gutters |
+| Listing样本数(TOP100) / 细分市场(翻译) | 排水沟 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Building Supplies:Building Materials:Roofing:Gutters & Accessories:Gutters |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：82 <br> 卖家：82 |
+| Listing样本数(TOP100) / 月总销量 | 15742.0 |
+| Listing样本数(TOP100) / 月均销量 | 157.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3954.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.76 |
+| Listing样本数(TOP100) / 平均评分数 | 136.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 152528.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.7 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 78%  <br> AMZ: 5%  <br> FBM: 9% |
+| Listing样本数(TOP100) / 商品集中度 | 0.481 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.532 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.55 |
+| Listing样本数(TOP100) / 商品总数 | 698.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.7514 |
+| Listing样本数(TOP100) / 平均体积(in³) | 444.2394 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.68 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 67.0% |
+| 头部Listing数(TOP10) / 月均销量 | 756.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 18968.0 |
+| 头部Listing数(TOP10) / 平均BSR | 57918.0 |
+| 新品(半年内上架) / 新品数量 | 35.0 |
+| 新品(半年内上架) / 新品占比 | 0.35 |
+| 新品(半年内上架) / 月均销量 | 100.0 |
+| 新品(半年内上架) / 月均销售额($) | 2693.0 |
+| 新品(半年内上架) / 平均价格($) | 25.97 |
+| 新品(半年内上架) / 平均评分数 | 14.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.050187003 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035314 |
+| 所有Listing(半年内) / 搜索购买比 | 10.69917 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09945 |
+
+### Fuel System (燃油系统)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Fuel System |
+| Listing样本数(TOP100) / 细分市场(翻译) | 燃油系统 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Replacement Parts:Fuel System |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：89 <br> 卖家：86 |
+| Listing样本数(TOP100) / 月总销量 | 15558.0 |
+| Listing样本数(TOP100) / 月均销量 | 155.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 2957.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.65 |
+| Listing样本数(TOP100) / 平均评分数 | 98.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 174021.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 90%  <br> AMZ: 5%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.495 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.495 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.516 |
+| Listing样本数(TOP100) / 商品总数 | 60821.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.6486 |
+| Listing样本数(TOP100) / 平均体积(in³) | 175.9119 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.74 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 76.0% |
+| 头部Listing数(TOP10) / 月均销量 | 769.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 12492.0 |
+| 头部Listing数(TOP10) / 平均BSR | 12949.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 104.0 |
+| 新品(半年内上架) / 月均销售额($) | 2835.0 |
+| 新品(半年内上架) / 平均价格($) | 29.57 |
+| 新品(半年内上架) / 平均评分数 | 5.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.043139 |
+| 所有Listing(半年内) / 同类目退货率 | 0.067567 |
+| 所有Listing(半年内) / 搜索购买比 | 12.28586 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.076230004 |
+
+### Car Rack Parts & Accessories (汽车货架零件和配件)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Car Rack Parts & Accessories |
+| Listing样本数(TOP100) / 细分市场(翻译) | 汽车货架零件和配件 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Outdoor Recreation:Accessories:Car Racks & Carriers:Car Rack Parts & Accessories |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：75 <br> 卖家：80 |
+| Listing样本数(TOP100) / 月总销量 | 15481.0 |
+| Listing样本数(TOP100) / 月均销量 | 154.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 6436.0 |
+| Listing样本数(TOP100) / 平均价格($) | 45.21 |
+| Listing样本数(TOP100) / 平均评分数 | 240.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 92676.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.4 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 71%  <br> AMZ: 10%  <br> FBM: 14% |
+| Listing样本数(TOP100) / 商品集中度 | 0.321 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.469 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.437 |
+| Listing样本数(TOP100) / 商品总数 | 1003.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.3273 |
+| Listing样本数(TOP100) / 平均体积(in³) | 470.0701 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.64 |
+| Listing样本数(TOP100) / A+占比 | 0.64 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 51.0% |
+| 头部Listing数(TOP10) / 月均销量 | 497.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 18653.0 |
+| 头部Listing数(TOP10) / 平均BSR | 20150.0 |
+| 新品(半年内上架) / 新品数量 | 14.0 |
+| 新品(半年内上架) / 新品占比 | 0.14 |
+| 新品(半年内上架) / 月均销量 | 147.0 |
+| 新品(半年内上架) / 月均销售额($) | 3939.0 |
+| 新品(半年内上架) / 平均价格($) | 33.6 |
+| 新品(半年内上架) / 平均评分数 | 7.0 |
+| 新品(半年内上架) / 平均星级 | 3.8 |
+| 所有Listing(半年内) / 退货率 | 0.067189 |
+| 所有Listing(半年内) / 同类目退货率 | 0.038714003 |
+| 所有Listing(半年内) / 搜索购买比 | 6.6665 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.092889994 |
+
+### Candleholder Sets (烛台套装)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Candleholder Sets |
+| Listing样本数(TOP100) / 细分市场(翻译) | 烛台套装 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Home Décor Products:Candles & Holders:Candleholders:Candleholder Sets |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：83 <br> 卖家：79 |
+| Listing样本数(TOP100) / 月总销量 | 15455.0 |
+| Listing样本数(TOP100) / 月均销量 | 154.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4644.0 |
+| Listing样本数(TOP100) / 平均价格($) | 30.23 |
+| Listing样本数(TOP100) / 平均评分数 | 354.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 333905.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 84%  <br> AMZ: 7%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.271 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.332 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.378 |
+| Listing样本数(TOP100) / 商品总数 | 1067.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.2481 |
+| Listing样本数(TOP100) / 平均体积(in³) | 141.9992 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.6 |
+| Listing样本数(TOP100) / A+占比 | 0.73 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 65.0% |
+| 头部Listing数(TOP10) / 月均销量 | 419.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 12511.0 |
+| 头部Listing数(TOP10) / 平均BSR | 88617.0 |
+| 新品(半年内上架) / 新品数量 | 28.0 |
+| 新品(半年内上架) / 新品占比 | 0.28 |
+| 新品(半年内上架) / 月均销量 | 133.0 |
+| 新品(半年内上架) / 月均销售额($) | 2479.0 |
+| 新品(半年内上架) / 平均价格($) | 20.91 |
+| 新品(半年内上架) / 平均评分数 | 20.0 |
+| 新品(半年内上架) / 平均星级 | 4.0 |
+| 所有Listing(半年内) / 退货率 | 0.116616 |
+| 所有Listing(半年内) / 同类目退货率 | 0.084172 |
+| 所有Listing(半年内) / 搜索购买比 | 4.25897 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05765 |
+
+### Digital Media Receivers (数字媒体接收器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Digital Media Receivers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 数字媒体接收器 |
+| Listing样本数(TOP100) / 市场路径 | Electronics:Car & Vehicle Electronics:Car Electronics:Car Audio:Digital Media Receivers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：73 <br> 卖家：72 |
+| Listing样本数(TOP100) / 月总销量 | 15305.0 |
+| Listing样本数(TOP100) / 月均销量 | 153.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 16092.0 |
+| Listing样本数(TOP100) / 平均价格($) | 157.23 |
+| Listing样本数(TOP100) / 平均评分数 | 143.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.1 |
+| Listing样本数(TOP100) / 平均BSR | 41896.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.8 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 88%  <br> AMZ: 0%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.433 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.585 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.573 |
+| Listing样本数(TOP100) / 商品总数 | 1247.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.9583 |
+| Listing样本数(TOP100) / 平均体积(in³) | 418.1743 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.85 |
+| Listing样本数(TOP100) / A+占比 | 0.88 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 67.0% |
+| 头部Listing数(TOP10) / 月均销量 | 663.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 36138.0 |
+| 头部Listing数(TOP10) / 平均BSR | 12099.0 |
+| 新品(半年内上架) / 新品数量 | 33.0 |
+| 新品(半年内上架) / 新品占比 | 0.33 |
+| 新品(半年内上架) / 月均销量 | 143.0 |
+| 新品(半年内上架) / 月均销售额($) | 13247.0 |
+| 新品(半年内上架) / 平均价格($) | 109.5 |
+| 新品(半年内上架) / 平均评分数 | 48.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.19026199 |
+| 所有Listing(半年内) / 同类目退货率 | 0.143941 |
+| 所有Listing(半年内) / 搜索购买比 | 2.31932 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.022839999 |
+
+### Serveware (碗碟)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Serveware |
+| Listing样本数(TOP100) / 细分市场(翻译) | 碗碟 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Dining & Entertaining:Novelty:Serveware |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：86 <br> 卖家：85 |
+| Listing样本数(TOP100) / 月总销量 | 14774.0 |
+| Listing样本数(TOP100) / 月均销量 | 147.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3201.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.08 |
+| Listing样本数(TOP100) / 平均评分数 | 429.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 123797.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 84%  <br> AMZ: 5%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.527 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.577 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.58 |
+| Listing样本数(TOP100) / 商品总数 | 512.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.4948 |
+| Listing样本数(TOP100) / 平均体积(in³) | 316.5735 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.56 |
+| Listing样本数(TOP100) / A+占比 | 0.58 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 58.0% |
+| 头部Listing数(TOP10) / 月均销量 | 778.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 15844.0 |
+| 头部Listing数(TOP10) / 平均BSR | 15477.0 |
+| 新品(半年内上架) / 新品数量 | 37.0 |
+| 新品(半年内上架) / 新品占比 | 0.37 |
+| 新品(半年内上架) / 月均销量 | 107.0 |
+| 新品(半年内上架) / 月均销售额($) | 2392.0 |
+| 新品(半年内上架) / 平均价格($) | 24.01 |
+| 新品(半年内上架) / 平均评分数 | 9.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.053335 |
+| 所有Listing(半年内) / 同类目退货率 | 0.050301 |
+| 所有Listing(半年内) / 搜索购买比 | 6.64098 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.085200004 |
+
+### Breast Pump Carrying Bags (奶泵携带包)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Breast Pump Carrying Bags |
+| Listing样本数(TOP100) / 细分市场(翻译) | 奶泵携带包 |
+| Listing样本数(TOP100) / 市场路径 | Baby Products:Feeding:Breastfeeding:Breast Pump Carrying Bags |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：58 <br> 卖家：60 |
+| Listing样本数(TOP100) / 月总销量 | 14543.0 |
+| Listing样本数(TOP100) / 月均销量 | 145.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4705.0 |
+| Listing样本数(TOP100) / 平均价格($) | 36.5 |
+| Listing样本数(TOP100) / 平均评分数 | 154.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 27900.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 92%  <br> AMZ: 3%  <br> FBM: 0% |
+| Listing样本数(TOP100) / 商品集中度 | 0.51 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.586 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.586 |
+| Listing样本数(TOP100) / 商品总数 | 155.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.2332 |
+| Listing样本数(TOP100) / 平均体积(in³) | 688.8293 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.62 |
+| Listing样本数(TOP100) / A+占比 | 0.91 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 64.0% |
+| 头部Listing数(TOP10) / 月均销量 | 741.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 24010.0 |
+| 头部Listing数(TOP10) / 平均BSR | 6449.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 152.0 |
+| 新品(半年内上架) / 月均销售额($) | 4302.0 |
+| 新品(半年内上架) / 平均价格($) | 28.34 |
+| 新品(半年内上架) / 平均评分数 | 46.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.091712 |
+| 所有Listing(半年内) / 同类目退货率 | 0.053469 |
+| 所有Listing(半年内) / 搜索购买比 | 5.26499 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0777 |
+
+### Collectible Vehicles (交通工具摆件)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Collectible Vehicles |
+| Listing样本数(TOP100) / 细分市场(翻译) | 交通工具摆件 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Home Décor Products:Home Décor Accents:Collectible Vehicles |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：76 <br> 卖家：74 |
+| Listing样本数(TOP100) / 月总销量 | 14539.0 |
+| Listing样本数(TOP100) / 月均销量 | 145.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 2575.0 |
+| Listing样本数(TOP100) / 平均价格($) | 23.98 |
+| Listing样本数(TOP100) / 平均评分数 | 213.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 411008.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.8 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 92%  <br> AMZ: 2%  <br> FBM: 4% |
+| Listing样本数(TOP100) / 商品集中度 | 0.52 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.637 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.648 |
+| Listing样本数(TOP100) / 商品总数 | 840.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.8947 |
+| Listing样本数(TOP100) / 平均体积(in³) | 165.9766 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.68 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 83.0% |
+| 头部Listing数(TOP10) / 月均销量 | 756.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 9538.0 |
+| 头部Listing数(TOP10) / 平均BSR | 77265.0 |
+| 新品(半年内上架) / 新品数量 | 10.0 |
+| 新品(半年内上架) / 新品占比 | 0.1 |
+| 新品(半年内上架) / 月均销量 | 184.0 |
+| 新品(半年内上架) / 月均销售额($) | 2949.0 |
+| 新品(半年内上架) / 平均价格($) | 17.47 |
+| 新品(半年内上架) / 平均评分数 | 33.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.058077 |
+| 所有Listing(半年内) / 同类目退货率 | 0.050387003 |
+| 所有Listing(半年内) / 搜索购买比 | 4.22353 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09386 |
+
+### 3D Printer Extruders (3D打印机挤出机)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | 3D Printer Extruders |
+| Listing样本数(TOP100) / 细分市场(翻译) | 3D打印机挤出机 |
+| Listing样本数(TOP100) / 市场路径 | Industrial & Scientific:Additive Manufacturing Products:3D Printer Parts & Accessories:3D Printer Extruders |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：41 <br> 卖家：46 |
+| Listing样本数(TOP100) / 月总销量 | 13613.0 |
+| Listing样本数(TOP100) / 月均销量 | 136.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 4012.0 |
+| Listing样本数(TOP100) / 平均价格($) | 27.77 |
+| Listing样本数(TOP100) / 平均评分数 | 157.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 65048.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 93%  <br> AMZ: 2%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.295 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.587 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.553 |
+| Listing样本数(TOP100) / 商品总数 | 802.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.1814 |
+| Listing样本数(TOP100) / 平均体积(in³) | 18.6019 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.69 |
+| Listing样本数(TOP100) / A+占比 | 0.66 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 80.0% |
+| 头部Listing数(TOP10) / 月均销量 | 401.0 |
+| 头部Listing数(TOP10) / 垄断度 | 2.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 12728.0 |
+| 头部Listing数(TOP10) / 平均BSR | 13717.0 |
+| 新品(半年内上架) / 新品数量 | 41.0 |
+| 新品(半年内上架) / 新品占比 | 0.41 |
+| 新品(半年内上架) / 月均销量 | 129.0 |
+| 新品(半年内上架) / 月均销售额($) | 4002.0 |
+| 新品(半年内上架) / 平均价格($) | 33.91 |
+| 新品(半年内上架) / 平均评分数 | 22.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.049936 |
+| 所有Listing(半年内) / 同类目退货率 | 0.049794998 |
+| 所有Listing(半年内) / 搜索购买比 | 8.83752 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.115380004 |
+
+### Mailbox Hardware (信箱硬件)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Mailbox Hardware |
+| Listing样本数(TOP100) / 细分市场(翻译) | 信箱硬件 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Hardware:Mailboxes & Accessories:Mailbox Accessories & Hardware:Mailbox Hardware |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：71 <br> 卖家：78 |
+| Listing样本数(TOP100) / 月总销量 | 13464.0 |
+| Listing样本数(TOP100) / 月均销量 | 134.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 2414.0 |
+| Listing样本数(TOP100) / 平均价格($) | 21.44 |
+| Listing样本数(TOP100) / 平均评分数 | 201.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 166859.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.9 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 6%  <br> FBM: 6% |
+| Listing样本数(TOP100) / 商品集中度 | 0.467 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.555 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.544 |
+| Listing样本数(TOP100) / 商品总数 | 274.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.1111 |
+| Listing样本数(TOP100) / 平均体积(in³) | 119.144 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.49 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 65.0% |
+| 头部Listing数(TOP10) / 月均销量 | 628.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 8144.0 |
+| 头部Listing数(TOP10) / 平均BSR | 28155.0 |
+| 新品(半年内上架) / 新品数量 | 26.0 |
+| 新品(半年内上架) / 新品占比 | 0.26 |
+| 新品(半年内上架) / 月均销量 | 75.0 |
+| 新品(半年内上架) / 月均销售额($) | 1486.0 |
+| 新品(半年内上架) / 平均价格($) | 21.61 |
+| 新品(半年内上架) / 平均评分数 | 13.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.076511 |
+| 所有Listing(半年内) / 同类目退货率 | 0.070356004 |
+| 所有Listing(半年内) / 搜索购买比 | 14.36528 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.12026 |
+
+### Night Vision Binoculars & Goggles (夜视双筒望远镜和护目镜)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Night Vision Binoculars & Goggles |
+| Listing样本数(TOP100) / 细分市场(翻译) | 夜视双筒望远镜和护目镜 |
+| Listing样本数(TOP100) / 市场路径 | Sports & Outdoors:Hunting & Fishing:Shooting:Optics:Night Vision:Night Vision Binoculars & Goggles |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：74 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 13374.0 |
+| Listing样本数(TOP100) / 月均销量 | 133.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 12879.0 |
+| Listing样本数(TOP100) / 平均价格($) | 99.79 |
+| Listing样本数(TOP100) / 平均评分数 | 238.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 117788.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.7 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 81%  <br> AMZ: 2%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.469 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.549 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.564 |
+| Listing样本数(TOP100) / 商品总数 | 412.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.3421 |
+| Listing样本数(TOP100) / 平均体积(in³) | 147.9124 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.76 |
+| Listing样本数(TOP100) / A+占比 | 0.86 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 77.0% |
+| 头部Listing数(TOP10) / 月均销量 | 626.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 46581.0 |
+| 头部Listing数(TOP10) / 平均BSR | 22335.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 186.0 |
+| 新品(半年内上架) / 月均销售额($) | 18855.0 |
+| 新品(半年内上架) / 平均价格($) | 117.59 |
+| 新品(半年内上架) / 平均评分数 | 131.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.15598899 |
+| 所有Listing(半年内) / 同类目退货率 | 0.045063 |
+| 所有Listing(半年内) / 搜索购买比 | 1.90393 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.07428 |
+
+### Grill Lighting (点火器)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Grill Lighting |
+| Listing样本数(TOP100) / 细分市场(翻译) | 点火器 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Grills & Outdoor Cooking:Outdoor Cooking Tools & Accessories:Grill Lighting |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：81 <br> 卖家：78 |
+| Listing样本数(TOP100) / 月总销量 | 13285.0 |
+| Listing样本数(TOP100) / 月均销量 | 132.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3537.0 |
+| Listing样本数(TOP100) / 平均价格($) | 37.59 |
+| Listing样本数(TOP100) / 平均评分数 | 607.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 138405.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.7 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 83%  <br> AMZ: 7%  <br> FBM: 5% |
+| Listing样本数(TOP100) / 商品集中度 | 0.475 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.539 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.549 |
+| Listing样本数(TOP100) / 商品总数 | 301.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.2916 |
+| Listing样本数(TOP100) / 平均体积(in³) | 233.9064 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.83 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 58.0% |
+| 头部Listing数(TOP10) / 月均销量 | 631.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 15369.0 |
+| 头部Listing数(TOP10) / 平均BSR | 23155.0 |
+| 新品(半年内上架) / 新品数量 | 10.0 |
+| 新品(半年内上架) / 新品占比 | 0.1 |
+| 新品(半年内上架) / 月均销量 | 61.0 |
+| 新品(半年内上架) / 月均销售额($) | 1984.0 |
+| 新品(半年内上架) / 平均价格($) | 39.94 |
+| 新品(半年内上架) / 平均评分数 | 20.0 |
+| 新品(半年内上架) / 平均星级 | 4.5 |
+| 所有Listing(半年内) / 退货率 | 0.054316 |
+| 所有Listing(半年内) / 同类目退货率 | 0.062280003 |
+| 所有Listing(半年内) / 搜索购买比 | 6.2651 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.05408 |
+
+### Fuel (燃油表)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Fuel |
+| Listing样本数(TOP100) / 细分市场(翻译) | 燃油表 |
+| Listing样本数(TOP100) / 市场路径 | Automotive:Replacement Parts:Lighting & Electrical:Electrical:Gauges:Fuel |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：78 <br> 卖家：74 |
+| Listing样本数(TOP100) / 月总销量 | 13179.0 |
+| Listing样本数(TOP100) / 月均销量 | 131.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3519.0 |
+| Listing样本数(TOP100) / 平均价格($) | 31.69 |
+| Listing样本数(TOP100) / 平均评分数 | 107.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.2 |
+| Listing样本数(TOP100) / 平均BSR | 160533.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.5 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 62%  <br> AMZ: 4%  <br> FBM: 10% |
+| Listing样本数(TOP100) / 商品集中度 | 0.466 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.513 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.517 |
+| Listing样本数(TOP100) / 商品总数 | 690.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.3818 |
+| Listing样本数(TOP100) / 平均体积(in³) | 62.5127 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.65 |
+| Listing样本数(TOP100) / A+占比 | 0.66 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 68.0% |
+| 头部Listing数(TOP10) / 月均销量 | 613.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 13747.0 |
+| 头部Listing数(TOP10) / 平均BSR | 23842.0 |
+| 新品(半年内上架) / 新品数量 | 18.0 |
+| 新品(半年内上架) / 新品占比 | 0.18 |
+| 新品(半年内上架) / 月均销量 | 215.0 |
+| 新品(半年内上架) / 月均销售额($) | 3292.0 |
+| 新品(半年内上架) / 平均价格($) | 20.79 |
+| 新品(半年内上架) / 平均评分数 | 5.0 |
+| 新品(半年内上架) / 平均星级 | 3.9 |
+| 所有Listing(半年内) / 退货率 | 0.048652 |
+| 所有Listing(半年内) / 同类目退货率 | 0.040142003 |
+| 所有Listing(半年内) / 搜索购买比 | 8.20823 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.098000005 |
+
+### Deviled Egg Plates (咸蛋盘)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Deviled Egg Plates |
+| Listing样本数(TOP100) / 细分市场(翻译) | 咸蛋盘 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Dining & Entertaining:Dinnerware & Serveware:Dinnerware:Plates:Specialty Plates:Deviled Egg Plates |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：82 <br> 卖家：77 |
+| Listing样本数(TOP100) / 月总销量 | 13115.0 |
+| Listing样本数(TOP100) / 月均销量 | 131.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 2795.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.0 |
+| Listing样本数(TOP100) / 平均评分数 | 349.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 130495.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.8 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 87%  <br> AMZ: 6%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.528 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.591 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.606 |
+| Listing样本数(TOP100) / 商品总数 | 303.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.8687 |
+| Listing样本数(TOP100) / 平均体积(in³) | 325.6678 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.51 |
+| Listing样本数(TOP100) / A+占比 | 0.78 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 61.0% |
+| 头部Listing数(TOP10) / 月均销量 | 692.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 14522.0 |
+| 头部Listing数(TOP10) / 平均BSR | 22517.0 |
+| 新品(半年内上架) / 新品数量 | 28.0 |
+| 新品(半年内上架) / 新品占比 | 0.28 |
+| 新品(半年内上架) / 月均销量 | 86.0 |
+| 新品(半年内上架) / 月均销售额($) | 2049.0 |
+| 新品(半年内上架) / 平均价格($) | 23.97 |
+| 新品(半年内上架) / 平均评分数 | 29.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.050064996 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035328 |
+| 所有Listing(半年内) / 搜索购买比 | 7.68335 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.122729994 |
+
+### Masonry Chisels (砌筑用凿子)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Masonry Chisels |
+| Listing样本数(TOP100) / 细分市场(翻译) | 砌筑用凿子 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Power & Hand Tools:Hand Tools:Chisels:Masonry Chisels |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：70 <br> 卖家：61 |
+| Listing样本数(TOP100) / 月总销量 | 13053.0 |
+| Listing样本数(TOP100) / 月均销量 | 130.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3124.0 |
+| Listing样本数(TOP100) / 平均价格($) | 26.8 |
+| Listing样本数(TOP100) / 平均评分数 | 246.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 179350.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 75%  <br> AMZ: 15%  <br> FBM: 1% |
+| Listing样本数(TOP100) / 商品集中度 | 0.401 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.498 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.624 |
+| Listing样本数(TOP100) / 商品总数 | 357.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.6329 |
+| Listing样本数(TOP100) / 平均体积(in³) | 81.4154 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.71 |
+| Listing样本数(TOP100) / 卖家所属地 | 美国 <br> 47.0% |
+| 头部Listing数(TOP10) / 月均销量 | 523.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 9847.0 |
+| 头部Listing数(TOP10) / 平均BSR | 31239.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 80.0 |
+| 新品(半年内上架) / 月均销售额($) | 1491.0 |
+| 新品(半年内上架) / 平均价格($) | 16.86 |
+| 新品(半年内上架) / 平均评分数 | 12.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.038862 |
+| 所有Listing(半年内) / 同类目退货率 | 0.030409 |
+| 所有Listing(半年内) / 搜索购买比 | 9.66844 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.08355 |
+
+### Aprons (围裙)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Aprons |
+| Listing样本数(TOP100) / 细分市场(翻译) | 围裙 |
+| Listing样本数(TOP100) / 市场路径 | Patio, Lawn & Garden:Gardening & Lawn Care:Gloves & Protective Gear:Aprons |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：80 <br> 卖家：78 |
+| Listing样本数(TOP100) / 月总销量 | 12747.0 |
+| Listing样本数(TOP100) / 月均销量 | 127.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3279.0 |
+| Listing样本数(TOP100) / 平均价格($) | 22.0 |
+| Listing样本数(TOP100) / 平均评分数 | 72.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 212750.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 77%  <br> AMZ: 8%  <br> FBM: 11% |
+| Listing样本数(TOP100) / 商品集中度 | 0.519 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.588 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.589 |
+| Listing样本数(TOP100) / 商品总数 | 171.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.7518 |
+| Listing样本数(TOP100) / 平均体积(in³) | 254.9572 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.76 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 77.0% |
+| 头部Listing数(TOP10) / 月均销量 | 661.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 18888.0 |
+| 头部Listing数(TOP10) / 平均BSR | 41194.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 78.0 |
+| 新品(半年内上架) / 月均销售额($) | 2215.0 |
+| 新品(半年内上架) / 平均价格($) | 26.55 |
+| 新品(半年内上架) / 平均评分数 | 6.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.03039 |
+| 所有Listing(半年内) / 同类目退货率 | 0.047964 |
+| 所有Listing(半年内) / 搜索购买比 | 8.44775 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.080469996 |
+
+### Nail Pullers (羊角起钉钳)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Nail Pullers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 羊角起钉钳 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Power & Hand Tools:Hand Tools:Nail Pullers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：78 <br> 卖家：73 |
+| Listing样本数(TOP100) / 月总销量 | 12692.0 |
+| Listing样本数(TOP100) / 月均销量 | 126.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 2369.0 |
+| Listing样本数(TOP100) / 平均价格($) | 24.2 |
+| Listing样本数(TOP100) / 平均评分数 | 371.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 191406.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.7 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 79%  <br> AMZ: 9%  <br> FBM: 3% |
+| Listing样本数(TOP100) / 商品集中度 | 0.444 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.619 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.647 |
+| Listing样本数(TOP100) / 商品总数 | 266.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 1.204 |
+| Listing样本数(TOP100) / 平均体积(in³) | 75.789 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.55 |
+| Listing样本数(TOP100) / A+占比 | 0.62 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 55.0% |
+| 头部Listing数(TOP10) / 月均销量 | 563.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 7136.0 |
+| 头部Listing数(TOP10) / 平均BSR | 36042.0 |
+| 新品(半年内上架) / 新品数量 | 12.0 |
+| 新品(半年内上架) / 新品占比 | 0.12 |
+| 新品(半年内上架) / 月均销量 | 99.0 |
+| 新品(半年内上架) / 月均销售额($) | 836.0 |
+| 新品(半年内上架) / 平均价格($) | 10.91 |
+| 新品(半年内上架) / 平均评分数 | 12.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.022732 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035314 |
+| 所有Listing(半年内) / 搜索购买比 | 9.56538 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09945 |
+
+### Cheese Knives (奶酪刀)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Cheese Knives |
+| Listing样本数(TOP100) / 细分市场(翻译) | 奶酪刀 |
+| Listing样本数(TOP100) / 市场路径 | Home & Kitchen:Kitchen & Dining:Kitchen Utensils & Gadgets:Kitchen Knives & Accessories:Specialty Knives:Cheese Knives |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：82 <br> 卖家：74 |
+| Listing样本数(TOP100) / 月总销量 | 12550.0 |
+| Listing样本数(TOP100) / 月均销量 | 125.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 2095.0 |
+| Listing样本数(TOP100) / 平均价格($) | 21.33 |
+| Listing样本数(TOP100) / 平均评分数 | 542.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.5 |
+| Listing样本数(TOP100) / 平均BSR | 104638.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 79%  <br> AMZ: 11%  <br> FBM: 2% |
+| Listing样本数(TOP100) / 商品集中度 | 0.433 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.476 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.547 |
+| Listing样本数(TOP100) / 商品总数 | 490.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.647 |
+| Listing样本数(TOP100) / 平均体积(in³) | 81.7627 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.57 |
+| Listing样本数(TOP100) / A+占比 | 0.66 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 48.0% |
+| 头部Listing数(TOP10) / 月均销量 | 543.0 |
+| 头部Listing数(TOP10) / 垄断度 | 4.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 6451.0 |
+| 头部Listing数(TOP10) / 平均BSR | 23257.0 |
+| 新品(半年内上架) / 新品数量 | 10.0 |
+| 新品(半年内上架) / 新品占比 | 0.1 |
+| 新品(半年内上架) / 月均销量 | 61.0 |
+| 新品(半年内上架) / 月均销售额($) | 915.0 |
+| 新品(半年内上架) / 平均价格($) | 17.45 |
+| 新品(半年内上架) / 平均评分数 | 38.0 |
+| 新品(半年内上架) / 平均星级 | 4.4 |
+| 所有Listing(半年内) / 退货率 | 0.040209997 |
+| 所有Listing(半年内) / 同类目退货率 | 0.02952 |
+| 所有Listing(半年内) / 搜索购买比 | 8.3324 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.0692 |
+
+### Angle (角规)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Angle |
+| Listing样本数(TOP100) / 细分市场(翻译) | 角规 |
+| Listing样本数(TOP100) / 市场路径 | Industrial & Scientific:Test, Measure & Inspect:Dimensional Measurement:Gauges:Angle |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：82 <br> 卖家：84 |
+| Listing样本数(TOP100) / 月总销量 | 12544.0 |
+| Listing样本数(TOP100) / 月均销量 | 125.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 2378.0 |
+| Listing样本数(TOP100) / 平均价格($) | 25.14 |
+| Listing样本数(TOP100) / 平均评分数 | 386.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 99452.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 2.0 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 79%  <br> AMZ: 8%  <br> FBM: 8% |
+| Listing样本数(TOP100) / 商品集中度 | 0.551 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.606 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.624 |
+| Listing样本数(TOP100) / 商品总数 | 504.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.5578 |
+| Listing样本数(TOP100) / 平均体积(in³) | 27.8457 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.66 |
+| Listing样本数(TOP100) / A+占比 | 0.72 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 64.0% |
+| 头部Listing数(TOP10) / 月均销量 | 691.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 11737.0 |
+| 头部Listing数(TOP10) / 平均BSR | 11022.0 |
+| 新品(半年内上架) / 新品数量 | 15.0 |
+| 新品(半年内上架) / 新品占比 | 0.15 |
+| 新品(半年内上架) / 月均销量 | 59.0 |
+| 新品(半年内上架) / 月均销售额($) | 1359.0 |
+| 新品(半年内上架) / 平均价格($) | 21.46 |
+| 新品(半年内上架) / 平均评分数 | 24.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.028968 |
+| 所有Listing(半年内) / 同类目退货率 | 0.054436997 |
+| 所有Listing(半年内) / 搜索购买比 | 11.41902 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.10694 |
+
+### In-Dash DVD & Video Receivers (仪表盘视频)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | In-Dash DVD & Video Receivers |
+| Listing样本数(TOP100) / 细分市场(翻译) | 仪表盘视频 |
+| Listing样本数(TOP100) / 市场路径 | Electronics:Car & Vehicle Electronics:Car Electronics:Car Video:In-Dash DVD & Video Receivers |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：82 |
+| Listing样本数(TOP100) / 月总销量 | 12492.0 |
+| Listing样本数(TOP100) / 月均销量 | 124.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 14899.0 |
+| Listing样本数(TOP100) / 平均价格($) | 150.46 |
+| Listing样本数(TOP100) / 平均评分数 | 189.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.0 |
+| Listing样本数(TOP100) / 平均BSR | 59098.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 3.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 75%  <br> AMZ: 1%  <br> FBM: 15% |
+| Listing样本数(TOP100) / 商品集中度 | 0.552 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.6 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.58 |
+| Listing样本数(TOP100) / 商品总数 | 344.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 2.7385 |
+| Listing样本数(TOP100) / 平均体积(in³) | 375.6274 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.85 |
+| Listing样本数(TOP100) / A+占比 | 0.87 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 60.0% |
+| 头部Listing数(TOP10) / 月均销量 | 690.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 71019.0 |
+| 头部Listing数(TOP10) / 平均BSR | 8401.0 |
+| 新品(半年内上架) / 新品数量 | 17.0 |
+| 新品(半年内上架) / 新品占比 | 0.17 |
+| 新品(半年内上架) / 月均销量 | 83.0 |
+| 新品(半年内上架) / 月均销售额($) | 8004.0 |
+| 新品(半年内上架) / 平均价格($) | 105.71 |
+| 新品(半年内上架) / 平均评分数 | 38.0 |
+| 新品(半年内上架) / 平均星级 | 4.2 |
+| 所有Listing(半年内) / 退货率 | 0.156541 |
+| 所有Listing(半年内) / 同类目退货率 | 0.15377499 |
+| 所有Listing(半年内) / 搜索购买比 | 2.51937 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.03101 |
+
+### Card Playing (纸牌游戏)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Card Playing |
+| Listing样本数(TOP100) / 细分市场(翻译) | 纸牌游戏 |
+| Listing样本数(TOP100) / 市场路径 | Health & Household:Medical Supplies & Equipment:Mobility & Daily Living Aids:Low Strength Aids:Card Playing |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：75 <br> 卖家：78 |
+| Listing样本数(TOP100) / 月总销量 | 12293.0 |
+| Listing样本数(TOP100) / 月均销量 | 122.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 2236.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.06 |
+| Listing样本数(TOP100) / 平均评分数 | 198.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.3 |
+| Listing样本数(TOP100) / 平均BSR | 221826.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.1 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 75%  <br> AMZ: 2%  <br> FBM: 15% |
+| Listing样本数(TOP100) / 商品集中度 | 0.497 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.589 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.589 |
+| Listing样本数(TOP100) / 商品总数 | 149.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.7804 |
+| Listing样本数(TOP100) / 平均体积(in³) | 76.9631 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.59 |
+| Listing样本数(TOP100) / A+占比 | 0.61 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 73.0% |
+| 头部Listing数(TOP10) / 月均销量 | 611.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 10365.0 |
+| 头部Listing数(TOP10) / 平均BSR | 65089.0 |
+| 新品(半年内上架) / 新品数量 | 42.0 |
+| 新品(半年内上架) / 新品占比 | 0.42 |
+| 新品(半年内上架) / 月均销量 | 100.0 |
+| 新品(半年内上架) / 月均销售额($) | 2014.0 |
+| 新品(半年内上架) / 平均价格($) | 20.55 |
+| 新品(半年内上架) / 平均评分数 | 18.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.047792003 |
+| 所有Listing(半年内) / 同类目退货率 | 0.027781999 |
+| 所有Listing(半年内) / 搜索购买比 | 10.29684 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.15804 |
+
+### Brazing Rods (钎杆)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Brazing Rods |
+| Listing样本数(TOP100) / 细分市场(翻译) | 钎杆 |
+| Listing样本数(TOP100) / 市场路径 | Tools & Home Improvement:Welding & Soldering:Soldering & Brazing Equipment:Solder & Flux:Brazing Rods |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：53 <br> 卖家：61 |
+| Listing样本数(TOP100) / 月总销量 | 12263.0 |
+| Listing样本数(TOP100) / 月均销量 | 122.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 3242.0 |
+| Listing样本数(TOP100) / 平均价格($) | 37.36 |
+| Listing样本数(TOP100) / 平均评分数 | 158.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 119697.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.9 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 61%  <br> AMZ: 3%  <br> FBM: 26% |
+| Listing样本数(TOP100) / 商品集中度 | 0.547 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.627 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.614 |
+| Listing样本数(TOP100) / 商品总数 | 294.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.6607 |
+| Listing样本数(TOP100) / 平均体积(in³) | 24.8196 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.63 |
+| Listing样本数(TOP100) / A+占比 | 0.59 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 53.0% |
+| 头部Listing数(TOP10) / 月均销量 | 671.0 |
+| 头部Listing数(TOP10) / 垄断度 | 5.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 17961.0 |
+| 头部Listing数(TOP10) / 平均BSR | 17745.0 |
+| 新品(半年内上架) / 新品数量 | 22.0 |
+| 新品(半年内上架) / 新品占比 | 0.22 |
+| 新品(半年内上架) / 月均销量 | 120.0 |
+| 新品(半年内上架) / 月均销售额($) | 3281.0 |
+| 新品(半年内上架) / 平均价格($) | 23.05 |
+| 新品(半年内上架) / 平均评分数 | 17.0 |
+| 新品(半年内上架) / 平均星级 | 4.1 |
+| 所有Listing(半年内) / 退货率 | 0.020267999 |
+| 所有Listing(半年内) / 同类目退货率 | 0.035314 |
+| 所有Listing(半年内) / 搜索购买比 | 9.99121 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.09945 |
+
+### Clothing (衣服)
+
+| 字段 | 值 |
+| :--- | :--- |
+| Listing样本数(TOP100) / 细分市场 | Clothing |
+| Listing样本数(TOP100) / 细分市场(翻译) | 衣服 |
+| Listing样本数(TOP100) / 市场路径 | Toys & Games:Stuffed Animals & Plush Toys:Stuffed Animal Clothing & Accessories:Clothing |
+| Listing样本数(TOP100) / 样本数量 | 商品：100 <br> 品牌：72 <br> 卖家：74 |
+| Listing样本数(TOP100) / 月总销量 | 12068.0 |
+| Listing样本数(TOP100) / 月均销量 | 120.0 |
+| Listing样本数(TOP100) / 月均销售额($) | 1961.0 |
+| Listing样本数(TOP100) / 平均价格($) | 20.7 |
+| Listing样本数(TOP100) / 平均评分数 | 76.0 |
+| Listing样本数(TOP100) / 平均星级 | 4.4 |
+| Listing样本数(TOP100) / 平均BSR | 123504.0 |
+| Listing样本数(TOP100) / 平均卖家数 | 1.6 |
+| Listing样本数(TOP100) / 卖家类型 | FBA: 85%  <br> AMZ: 1%  <br> FBM: 12% |
+| Listing样本数(TOP100) / 商品集中度 | 0.392 |
+| Listing样本数(TOP100) / 品牌集中度 | 0.533 |
+| Listing样本数(TOP100) / 卖家集中度 | 0.522 |
+| Listing样本数(TOP100) / 商品总数 | 885.0 |
+| Listing样本数(TOP100) / 平均重量(pounds) | 0.2856 |
+| Listing样本数(TOP100) / 平均体积(in³) | 51.3246 |
+| Listing样本数(TOP100) / 平均毛利率 | 0.58 |
+| Listing样本数(TOP100) / A+占比 | 0.47 |
+| Listing样本数(TOP100) / 卖家所属地 | 中国 <br> 74.0% |
+| 头部Listing数(TOP10) / 月均销量 | 473.0 |
+| 头部Listing数(TOP10) / 垄断度 | 3.0 |
+| 头部Listing数(TOP10) / 月均销售额($) | 5916.0 |
+| 头部Listing数(TOP10) / 平均BSR | 36444.0 |
+| 新品(半年内上架) / 新品数量 | 20.0 |
+| 新品(半年内上架) / 新品占比 | 0.2 |
+| 新品(半年内上架) / 月均销量 | 101.0 |
+| 新品(半年内上架) / 月均销售额($) | 1576.0 |
+| 新品(半年内上架) / 平均价格($) | 19.1 |
+| 新品(半年内上架) / 平均评分数 | 8.0 |
+| 新品(半年内上架) / 平均星级 | 4.3 |
+| 所有Listing(半年内) / 退货率 | 0.060521998 |
+| 所有Listing(半年内) / 同类目退货率 | 0.041888 |
+| 所有Listing(半年内) / 搜索购买比 | 4.0541 |
+| 所有Listing(半年内) / 同类目搜索购买比 | 0.04645 |

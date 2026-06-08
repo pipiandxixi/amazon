@@ -19,6 +19,16 @@ results/categories/market_scan_report_YYYY_MM_DD.md
 It does not select a fixed Top-K. `scan_policy.target_candidate_min/max` audits
 whether the green and yellow candidate pool is too broad or too narrow.
 
+Append all fields from a SellerSprite market-research XLSX export:
+
+```bash
+python3 scripts/import_market_excel.py /path/to/market-research.xlsx \
+  --report results/categories/market_scan_report_YYYY_MM_DD.md
+```
+
+The importer uses only the Python standard library and replaces the previous
+Excel appendix when rerun.
+
 ## Keyword Scan
 
 ```bash
