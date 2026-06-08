@@ -50,3 +50,13 @@ Both modes write:
 ```text
 results/keywords/keyword_scan_report_YYYY_MM_DD.md
 ```
+
+Merge all non-empty targeted keyword groups into their matching green-category
+details in the latest market report:
+
+```bash
+python3 scripts/merge_keywords_into_market_report.py
+```
+
+The merge is idempotent. Categories without recommended keywords are left
+unchanged.
