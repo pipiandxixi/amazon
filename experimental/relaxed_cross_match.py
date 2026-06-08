@@ -44,11 +44,11 @@ def get_stems(text):
 
 def main():
     # Load relaxed categories (150 items)
-    categories = load_json('/Users/zhoufan/Public/workspace/amazon/results/relaxed_one_hundred_categories_2026_06_08.json')
+    categories = load_json('/Users/zhoufan/Public/workspace/amazon/results/categories/relaxed_one_hundred_categories_2026_06_08.json')
     # Load targeted keywords (316 items)
-    keywords = load_json('/Users/zhoufan/Public/workspace/amazon/results/keyword_results_targeted_2026_06_08.json')
+    keywords = load_json('/Users/zhoufan/Public/workspace/amazon/results/keywords/keyword_results_targeted_2026_06_08.json')
     # Load global potential keywords (20 items)
-    global_kws = load_json('/Users/zhoufan/Public/workspace/amazon/results/global_potential_keywords_2026_06_08.json')
+    global_kws = load_json('/Users/zhoufan/Public/workspace/amazon/results/keywords/global_potential_keywords_2026_06_08.json')
     
     print(f"Loaded {len(categories)} relaxed categories.")
     print(f"Loaded {len(keywords)} targeted keywords.")

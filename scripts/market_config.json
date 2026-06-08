@@ -1,0 +1,35 @@
+{
+  "filter_params": {
+    "minAvgSales": "100",
+    "maxAvgSales": "10000",
+    "minAvgPrice": "20.0",
+    "maxAvgPrice": "",
+    "minTotalProducts": "50",
+    "maxAvgSellers": "60.0",
+    "maxHeadListingBrandCrn": "65.0",
+    "maxHeadListingSellerCrn": "65.0",
+    "maxAmzRatio": "25.0",
+    "minNewRatio": "10.0",
+    "maxNewAvgRating": "4.5",
+    "maxAvgWeight": "3.0",
+    "maxAvgVolume": "800",
+    "minAvgProfit": "50.0",
+    "maxAvgReviews": "1200"
+  },
+  "risk_rules": {
+    "red": {
+      "max_return_rate": 10.0,
+      "max_weight_lbs": 2.5,
+      "max_reviews": 1000,
+      "excluded_keywords": ["Insects", "Livestock", "Wormers"],
+      "excluded_paths": ["Clothing", "Shoes", "Hoodies"]
+    },
+    "yellow": {
+      "max_return_rate": 8.0,
+      "max_weight_lbs": 2.0,
+      "max_reviews": 800,
+      "excluded_paths": ["Toys", "Electronics"],
+      "excluded_keywords": ["Battery", "Charger"]
+    }
+  }
+}
