@@ -1,9 +1,17 @@
 {
   "filter_params": {
     "minSearches": "500",
-    "minPurchases": "10",
-    "maxMonopolyClickRate": "60.0",
-    "minPurchaseRate": "1.0",
-    "maxAvgReviews": "1000"
+    "minPurchases": "15",
+    "minPurchaseRate": "1.2",
+    "maxMonopolyClickRate": "55.0",
+    "maxAvgReviews": "800",
+    "maxTitleDensity": "12",
+    "maxSPR": "18",
+    "maxBid": "1.50"
+  },
+  "scan_policy": {
+    "max_pages": 5,
+    "wait_attempts": 12,
+    "wait_interval_seconds": 2
   }
 }

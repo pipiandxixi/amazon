@@ -4,19 +4,8 @@ import os
 import time
 import datetime
 import argparse
-import subprocess
 
-def parse_num(val):
-    if not val:
-        return 0
-    clean = re.sub(r'[^\d\.]', '', val.split('\n')[0])
-    return float(clean) if '.' in clean else (int(clean) if clean else 0)
-
-def parse_percent(val):
-    if not val:
-        return 0.0
-    match = re.search(r'([\d\.]+)%', val)
-    return float(match.group(1)) if match else 0.0
+from scan_common import RESULTS_DIR, OpenCliError, eval_browser, open_browser
 
 def clean_name(niche_str):
     if not niche_str:
@@ -30,18 +19,16 @@ def extract_zh_name(niche_str):
     match = re.search(r'\((.*?)\)', niche_str)
     return match.group(1).strip() if match else ''
 
-def run_opencli_cmd(cmd):
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    return result
-
 def scrape_market(config_path, date_str):
     print("Loading configuration from " + config_path + "...")
     with open(config_path, 'r', encoding='utf-8') as f:
         config = json.load(f)
     params = config['filter_params']
+    scan_policy = config.get('scan_policy', {})
+    max_pages = int(scan_policy.get('max_pages', 5))
     
     print("Opening Market Research page...")
-    run_opencli_cmd(["opencli", "browser", "ss", "open", "https://www.sellersprite.com/v2/market-research"])
+    open_browser("https://www.sellersprite.com/v2/market-research")
     time.sleep(4)
     
     # Generate form fill JS
@@ -74,8 +61,8 @@ def scrape_market(config_path, date_str):
     """
     
     print("Filling form and submitting search...")
-    res = run_opencli_cmd(["opencli", "browser", "ss", "eval", fill_form_js])
-    print("Submission status:", res.stdout.strip())
+    res = eval_browser(fill_form_js)
+    print("Submission status:", res)
     time.sleep(6)
     
     # Scrape JS using cell auto-detection logic
@@ -246,17 +233,13 @@ def scrape_market(config_path, date_str):
     """
     
     all_categories = []
+    seen_pages = set()
     
-    for page in range(1, 6):
+    for page in range(1, max_pages + 1):
         print(f"\nScraping page {page}...")
         time.sleep(2)
         
-        scrape_res = run_opencli_cmd(["opencli", "browser", "ss", "eval", scrape_page_js])
-        if scrape_res.returncode != 0:
-            print("Error running scraper:", scrape_res.stderr)
-            break
-            
-        output = scrape_res.stdout.strip()
+        output = eval_browser(scrape_page_js)
         start_idx = output.find('[')
         end_idx = output.rfind(']')
         if start_idx != -1 and end_idx != -1:
@@ -266,13 +249,18 @@ def scrape_market(config_path, date_str):
             if len(page_items) == 0:
                 print("No items found on this page, stopping pagination.")
                 break
-            all_categories.extend(page_items)
+            page_signature = json.dumps(page_items, ensure_ascii=False, sort_keys=True)
+            if page_signature in seen_pages:
+                print("Page content repeated, stopping pagination to avoid duplicate results.")
+                break
+            seen_pages.add(page_signature)
+            known_items = {json.dumps(item, ensure_ascii=False, sort_keys=True) for item in all_categories}
+            all_categories.extend(
+                item for item in page_items
+                if json.dumps(item, ensure_ascii=False, sort_keys=True) not in known_items
+            )
         else:
             print("Scraper output did not contain valid JSON.")
-            break
-            
-        if len(all_categories) >= 110:
-            print(f"Reached {len(all_categories)} categories, stopping.")
             break
             
         print("Clicking next page...")
@@ -286,26 +274,21 @@ def scrape_market(config_path, date_str):
           return "not found";
         })()
         """
-        click_res = run_opencli_cmd(["opencli", "browser", "ss", "eval", click_next_js])
-        print("Click next status:", click_res.stdout.strip())
+        click_res = eval_browser(click_next_js)
+        print("Click next status:", click_res)
+        if "not found" in click_res:
+            break
         time.sleep(4)
         
-    output_file = f"/Users/zhoufan/Public/workspace/amazon/results/categories/market_scan_results_{date_str}.json"
-    os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(all_categories, f, ensure_ascii=False, indent=2)
-        
-    print(f"\nDone! Successfully collected {len(all_categories)} categories and saved to {output_file}")
-    return output_file
+    print(f"\nDone! Successfully collected {len(all_categories)} categories.")
+    return all_categories
 
-def generate_report(config_path, json_path, date_str):
-    print("Generating report from " + json_path + " using configuration rules from " + config_path + "...")
+def generate_report(config_path, categories, date_str):
+    print(f"Generating market report using configuration rules from {config_path}...")
     with open(config_path, 'r', encoding='utf-8') as f:
         config = json.load(f)
     rules = config['risk_rules']
-    
-    with open(json_path, 'r', encoding='utf-8') as f:
-        categories = json.load(f)
+    scan_policy = config.get('scan_policy', {})
         
     scored_categories = []
     for item in categories:
@@ -501,12 +484,28 @@ def generate_report(config_path, json_path, date_str):
     red_niches = [c for c in scored_categories if c['level'] == '🔴 Red (Avoid)']
     
     print(f"Scored categories: {len(green_niches)} Green, {len(yellow_niches)} Yellow, {len(red_niches)} Red")
+    candidate_count = len(green_niches) + len(yellow_niches)
+    target_min = int(scan_policy.get('target_candidate_min', 8))
+    target_max = int(scan_policy.get('target_candidate_max', 15))
+    if candidate_count > target_max:
+        threshold_advice = (
+            f"当前候选类目有 {candidate_count} 个，超过目标上限 {target_max}。"
+            "建议提高基础过滤门槛或收紧黄色/绿色风控规则，而不是截断为固定 Top-K。"
+        )
+    elif candidate_count < target_min:
+        threshold_advice = (
+            f"当前候选类目仅有 {candidate_count} 个，低于目标下限 {target_min}。"
+            "建议适度放宽基础过滤门槛，并保留风险规则作为最终约束。"
+        )
+    else:
+        threshold_advice = f"当前候选类目有 {candidate_count} 个，位于目标区间 {target_min}-{target_max}。"
     
     # Generate Markdown Report (no hardcoded/arbitrary reasonings)
     md = []
     md.append(f"# 亚马逊选市场扫描与评估报告 ({date_str.replace('_', '-')})\n")
     md.append("> [!IMPORTANT]")
     md.append(f"> 本报告基于配置文件 `{config_path}` 中设定的过滤与风控规则进行生成。今日共分析了 **{len(categories)}** 个符合基本条件的子类目，其中最终筛选出 **{len(green_niches)}** 个适合新手的 🟢 绿色推荐赛道。")
+    md.append(f"> **数量审计**：{threshold_advice}")
     md.append("> 本报告仅输出真实抓取的指标数据，没有任何人工猜测或硬编码的推荐理由。您可以直接复制本报告的详细数据到大模型中，让其结合具体品类特性为您分析入选原因及每个指标的指导含义。\n")
     
     md.append("## 一、 风控分类结果概览\n")
@@ -577,34 +576,28 @@ def generate_report(config_path, json_path, date_str):
             md.append(f"  *   **{key}**：`{val_clean}`")
         md.append("\n---\n")
         
-    report_file = f"/Users/zhoufan/Public/workspace/amazon/results/categories/market_scan_report_{date_str}.md"
-    os.makedirs(os.path.dirname(report_file), exist_ok=True)
+    report_file = RESULTS_DIR / "categories" / f"market_scan_report_{date_str}.md"
+    os.makedirs(report_file.parent, exist_ok=True)
     with open(report_file, 'w', encoding='utf-8') as f:
         f.write("\n".join(md))
         
     print(f"Report successfully written to {report_file}")
-    return report_file
+    return str(report_file)
 
 def main():
     parser = argparse.ArgumentParser(description="Amazon Market Research Selection Script")
     parser.add_argument('--config', type=str, default='scripts/market_config.json', help='Path to configuration JSON')
-    parser.add_argument('--mode', type=str, default='both', choices=['scrape', 'report', 'both'], help='Execution mode')
     parser.add_argument('--date', type=str, default='', help='Date format YYYY_MM_DD')
     
     args = parser.parse_args()
     
     date_str = args.date if args.date else datetime.date.today().strftime('%Y_%m_%d')
     
-    if args.mode in ['scrape', 'both']:
-        json_path = scrape_market(args.config, date_str)
-    else:
-        json_path = f"/Users/zhoufan/Public/workspace/amazon/results/categories/market_scan_results_{date_str}.json"
-        
-    if args.mode in ['report', 'both']:
-        if os.path.exists(json_path):
-            generate_report(args.config, json_path, date_str)
-        else:
-            print(f"Error: JSON file not found at {json_path}. Cannot generate report.")
+    categories = scrape_market(args.config, date_str)
+    generate_report(args.config, categories, date_str)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (OpenCliError, ValueError, KeyError, json.JSONDecodeError) as exc:
+        raise SystemExit(f"Scan failed: {exc}")

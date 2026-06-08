@@ -16,6 +16,11 @@
     "minAvgProfit": "50.0",
     "maxAvgReviews": "1200"
   },
+  "scan_policy": {
+    "max_pages": 5,
+    "target_candidate_min": 8,
+    "target_candidate_max": 15
+  },
   "risk_rules": {
     "red": {
       "max_return_rate": 10.0,
