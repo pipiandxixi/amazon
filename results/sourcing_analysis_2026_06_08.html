@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon 选品货源利润分析报告 — 2026-06-08</title>
+  <style>
+    :root {
+      --green:  #16a34a;
+      --yellow: #ca8a04;
+      --red:    #dc2626;
+      --blue:   #2563eb;
+      --bg:     #f8fafc;
+      --card:   #ffffff;
+      --border: #e2e8f0;
+      --text:   #1e293b;
+      --muted:  #64748b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+      color: #fff;
+      padding: 36px 40px 28px;
+    }
+    header h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 6px; }
+    header p  { font-size: 0.9rem; opacity: 0.8; }
+    .meta-bar {
+      display: flex; gap: 24px; flex-wrap: wrap;
+      background: #1e3a5f; padding: 12px 40px;
+      font-size: 0.8rem; color: #93c5fd;
+    }
+    .meta-bar span b { color: #fff; }
+
+    main { max-width: 1100px; margin: 0 auto; padding: 32px 24px 60px; }
+
+    /* ── formula box ── */
+    .formula-box {
+      background: #eff6ff; border: 1px solid #bfdbfe;
+      border-radius: 10px; padding: 20px 24px; margin-bottom: 36px;
+    }
+    .formula-box h2 { font-size: 1rem; color: var(--blue); margin-bottom: 12px; }
+    .formula-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px;
+    }
+    .formula-item {
+      background: #fff; border: 1px solid #bfdbfe; border-radius: 8px;
+      padding: 12px 14px; text-align: center;
+    }
+    .formula-item .pct  { font-size: 1.5rem; font-weight: 700; color: var(--blue); }
+    .formula-item .lbl  { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+
+    /* ── priority banner ── */
+    .priority-section { margin-bottom: 40px; }
+    .priority-section h2 { font-size: 1.15rem; font-weight: 700; margin-bottom: 14px; border-left: 4px solid var(--blue); padding-left: 10px; }
+    .priority-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .priority-card {
+      border-radius: 10px; padding: 16px 18px; border: 1px solid var(--border);
+    }
+    .priority-card.rank1 { background: #f0fdf4; border-color: #86efac; }
+    .priority-card.rank2 { background: #fffbeb; border-color: #fde68a; }
+    .priority-card.rank3 { background: #eff6ff; border-color: #bfdbfe; }
+    .priority-card.pause { background: #fef2f2; border-color: #fca5a5; }
+    .priority-card .rank-badge {
+      display: inline-block; font-size: 0.7rem; font-weight: 700;
+      padding: 2px 8px; border-radius: 9999px; margin-bottom: 8px;
+    }
+    .rank1 .rank-badge { background: #dcfce7; color: var(--green); }
+    .rank2 .rank-badge { background: #fef9c3; color: var(--yellow); }
+    .rank3 .rank-badge { background: #dbeafe; color: var(--blue); }
+    .pause .rank-badge { background: #fee2e2; color: var(--red); }
+    .priority-card h3 { font-size: 0.95rem; margin-bottom: 4px; }
+    .priority-card p  { font-size: 0.8rem; color: var(--muted); }
+
+    /* ── product cards ── */
+    .product-section { margin-bottom: 48px; }
+    .product-section > h2 {
+      font-size: 1.15rem; font-weight: 700;
+      margin-bottom: 18px; border-left: 4px solid var(--border); padding-left: 10px;
+    }
+
+    .product-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; margin-bottom: 24px; overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,.06);
+    }
+    .product-card-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 20px; border-bottom: 1px solid var(--border);
+    }
+    .product-card-header .title-group { display: flex; align-items: center; gap: 12px; }
+    .product-card-header h3 { font-size: 1rem; font-weight: 700; }
+    .verdict-badge {
+      font-size: 0.72rem; font-weight: 700; padding: 3px 10px;
+      border-radius: 9999px; white-space: nowrap;
+    }
+    .verdict-pass    { background: #dcfce7; color: var(--green); }
+    .verdict-caution { background: #fef9c3; color: var(--yellow); }
+    .verdict-pause   { background: #fee2e2; color: var(--red); }
+
+    .product-card-body { padding: 18px 20px; }
+
+    /* key metrics row */
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px; margin-bottom: 18px;
+    }
+    .metric-box {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 8px; padding: 10px 12px;
+    }
+    .metric-box .m-val { font-size: 1.2rem; font-weight: 700; }
+    .metric-box .m-lbl { font-size: 0.72rem; color: var(--muted); margin-top: 1px; }
+    .metric-box.highlight-green .m-val { color: var(--green); }
+    .metric-box.highlight-red   .m-val { color: var(--red); }
+    .metric-box.highlight-blue  .m-val { color: var(--blue); }
+
+    /* profit bar */
+    .profit-bar-wrap { margin-bottom: 18px; }
+    .profit-bar-wrap .bar-label {
+      display: flex; justify-content: space-between;
+      font-size: 0.78rem; color: var(--muted); margin-bottom: 4px;
+    }
+    .bar-track {
+      height: 10px; background: #e2e8f0; border-radius: 9999px; overflow: hidden;
+    }
+    .bar-fill { height: 100%; border-radius: 9999px; }
+    .bar-cost    { background: #f87171; }
+    .bar-fees    { background: #fb923c; }
+    .bar-profit  { background: #4ade80; }
+
+    /* table */
+    .data-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; margin-bottom: 16px; }
+    .data-table th {
+      background: var(--bg); border: 1px solid var(--border);
+      padding: 7px 10px; text-align: left; font-weight: 600; white-space: nowrap;
+    }
+    .data-table td {
+      border: 1px solid var(--border); padding: 7px 10px; vertical-align: top;
+    }
+    .data-table tr:hover td { background: #f8fafc; }
+    .tag-green  { color: var(--green); font-weight: 600; }
+    .tag-red    { color: var(--red);   font-weight: 600; }
+    .tag-yellow { color: var(--yellow);font-weight: 600; }
+
+    /* notes & links */
+    .note-box {
+      background: #fffbeb; border: 1px solid #fde68a;
+      border-radius: 8px; padding: 12px 14px; font-size: 0.82rem;
+      color: #78350f; margin-top: 14px;
+    }
+    .note-box.info { background: #eff6ff; border-color: #bfdbfe; color: #1e40af; }
+    .note-box.danger { background: #fef2f2; border-color: #fca5a5; color: #991b1b; }
+
+    .source-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .source-link {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: #f1f5f9; border: 1px solid var(--border);
+      border-radius: 6px; padding: 5px 10px;
+      font-size: 0.78rem; color: var(--blue); text-decoration: none;
+    }
+    .source-link:hover { background: #dbeafe; border-color: #93c5fd; }
+    .source-link::before { content: "↗"; font-size: 0.7rem; }
+
+    /* next steps */
+    .next-steps {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 20px 24px; margin-top: 8px;
+    }
+    .next-steps h2 { font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+    .step-list { list-style: none; }
+    .step-list li {
+      display: flex; gap: 12px; padding: 10px 0;
+      border-bottom: 1px solid var(--border); font-size: 0.87rem;
+    }
+    .step-list li:last-child { border-bottom: none; }
+    .step-num {
+      flex-shrink: 0; width: 24px; height: 24px;
+      background: var(--blue); color: #fff;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 0.72rem; font-weight: 700;
+    }
+
+    footer {
+      text-align: center; font-size: 0.76rem; color: var(--muted);
+      padding: 20px; border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Amazon 选品货源利润分析报告</h1>
+  <p>基于卖家精灵关键词扫描 + Alibaba.com 货源报价的综合评估</p>
+</header>
+<div class="meta-bar">
+  <span>生成日期：<b>2026-06-08</b></span>
+  <span>分析品类：<b>6 个</b></span>
+  <span>利润标准：<b>货源成本 ≤ Amazon 卖价 1/3</b></span>
+  <span>数据来源：<b>卖家精灵 · Alibaba.com</b></span>
+</div>
+
+<main>
+
+  <!-- 成本结构说明 -->
+  <div class="formula-box">
+    <h2>Amazon FBA 卖家成本结构（占卖价比例估算）</h2>
+    <div class="formula-grid">
+      <div class="formula-item">
+        <div class="pct" style="color:#f87171">≤33%</div>
+        <div class="lbl">货源采购成本<br>（含头程运费）</div>
+      </div>
+      <div class="formula-item">
+        <div class="pct" style="color:#fb923c">~15%</div>
+        <div class="lbl">Amazon 平台佣金<br>（Referral Fee）</div>
+      </div>
+      <div class="formula-item">
+        <div class="pct" style="color:#fbbf24">~15–20%</div>
+        <div class="lbl">FBA 仓储 + 履约费<br>（按重量/尺寸）</div>
+      </div>
+      <div class="formula-item">
+        <div class="pct" style="color:#a78bfa">~5–10%</div>
+        <div class="lbl">广告 / 退货缓冲<br>（PPC + Return）</div>
+      </div>
+      <div class="formula-item">
+        <div class="pct" style="color:#4ade80">22–32%</div>
+        <div class="lbl">净利润空间<br>（目标区间）</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 优先级总览 -->
+  <div class="priority-section">
+    <h2>选品优先级总览</h2>
+    <div class="priority-grid">
+      <div class="priority-card rank1">
+        <span class="rank-badge">🥇 首选</span>
+        <h3>主题车牌框</h3>
+        <p>货源成本仅占卖价 4–12%，MOQ 100 件，SKU 矩阵化容易</p>
+      </div>
+      <div class="priority-card rank2">
+        <span class="rank-badge">🥈 次选</span>
+        <h3>电动自行车座垫套</h3>
+        <p>客单高、Reviews 护城河极低、电动车普及结构性顺风</p>
+      </div>
+      <div class="priority-card rank3">
+        <span class="rank-badge">🥉 第三</span>
+        <h3>喂鸟器配件套组</h3>
+        <p>圆顶 + 接种盘捆绑售，拉升客单，需求稳定增长</p>
+      </div>
+      <div class="priority-card pause">
+        <span class="rank-badge">⏸ 暂缓</span>
+        <h3>动漫/可爱扑克牌</h3>
+        <p>客单价过低，版权风险高，需溢价包装方案再入场</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-section">
+    <h2>各品类详细分析</h2>
+
+    <!-- ═══════════════════════════════════════════
+         1. 车牌框
+    ═══════════════════════════════════════════ -->
+    <div class="product-card">
+      <div class="product-card-header">
+        <div class="title-group">
+          <h3>主题车牌框（Themed License Plate Frames）</h3>
+        </div>
+        <span class="verdict-badge verdict-pass">✅ 利润极优</span>
+      </div>
+      <div class="product-card-body">
+        <div class="metrics-row">
+          <div class="metric-box highlight-blue">
+            <div class="m-val">$9.99–$22</div>
+            <div class="m-lbl">Amazon 卖价区间</div>
+          </div>
+          <div class="metric-box highlight-green">
+            <div class="m-val">$0.42–$1.20</div>
+            <div class="m-lbl">Alibaba 货源价 / 件</div>
+          </div>
+          <div class="metric-box highlight-green">
+            <div class="m-val">4–12%</div>
+            <div class="m-lbl">货源成本占卖价</div>
+          </div>
+          <div class="metric-box">
+            <div class="m-val">100 件</div>
+            <div class="m-lbl">最小起订量(MOQ)</div>
+          </div>
+          <div class="metric-box">
+            <div class="m-val">203–566</div>
+            <div class="m-lbl">月购买量（各关键词）</div>
+          </div>
+          <div class="metric-box">
+            <div class="m-val">9.0–9.8%</div>
+            <div class="m-lbl">Amazon 购买率</div>
+          </div>
+        </div>
+
+        <div class="profit-bar-wrap">
+          <div class="bar-label">
+            <span>卖价构成示意（以 $17.99 球队款为例）</span>
+            <span>$17.99</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:2px;height:20px;border-radius:6px;overflow:hidden">
+            <div style="background:#f87171;display:flex;align-items:center;justify-content:center;font-size:0.65rem;color:#fff">货源 $1</div>
+            <div style="background:#fb923c;display:flex;align-items:center;justify-content:center;font-size:0.65rem;color:#fff">佣金 $2.7</div>
+            <div style="background:#fbbf24;display:flex;align-items:center;justify-content:center;font-size:0.65rem;color:#fff">FBA $3.5</div>
+            <div style="background:#4ade80;display:flex;align-items:center;justify-content:center;font-size:0.65rem;color:#fff;font-weight:700">利润 ~$10</div>
+          </div>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>细分方向</th>
+              <th>代表关键词</th>
+              <th>月购买量</th>
+              <th>购买率</th>
+              <th>Amazon 均价</th>
+              <th>货源价</th>
+              <th>利润判断</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>动漫/IP</td>
+              <td>star wars license plate frame</td>
+              <td>566/月</td>
+              <td>9.70%</td>
+              <td>$17.95</td>
+              <td>$0.42–$1.00</td>
+              <td><span class="tag-green">✅ 极优</span></td>
+            </tr>
+            <tr>
+              <td>动漫/IP</td>
+              <td>batman license plate frame</td>
+              <td>349/月</td>
+              <td>9.25%</td>
+              <td>$19.99</td>
+              <td>$0.42–$1.00</td>
+              <td><span class="tag-green">✅ 极优</span></td>
+            </tr>
+            <tr>
+              <td>体育球队</td>
+              <td>seahawks license plate frame</td>
+              <td>203/月</td>
+              <td>9.16%</td>
+              <td>$21.85</td>
+              <td>$0.42–$1.20</td>
+              <td><span class="tag-green">✅ 极优</span></td>
+            </tr>
+            <tr>
+              <td>体育球队</td>
+              <td>steelers license plate frame</td>
+              <td>186/月</td>
+              <td>6.48%</td>
+              <td>$18.99</td>
+              <td>$0.42–$1.20</td>
+              <td><span class="tag-green">✅ 极优</span></td>
+            </tr>
+            <tr>
+              <td>动物纹</td>
+              <td>leopard license plate frame</td>
+              <td>351/月</td>
+              <td>9.13%</td>
+              <td>$9.99</td>
+              <td>$0.42–$0.80</td>
+              <td><span class="tag-green">✅ 良好</span></td>
+            </tr>
+            <tr>
+              <td>防盗功能</td>
+              <td>anti theft license plate frame</td>
+              <td>115/月</td>
+              <td>9.30%</td>
+              <td>$22.99</td>
+              <td>$0.93–$1.20</td>
+              <td><span class="tag-green">✅ 极优</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note-box info">
+          <b>策略建议：</b>每款 100 件起订，UV 印刷定制图案，先测试 Star Wars + 豹纹两款（覆盖 IP 粉丝 + 女性消费者两大客群）。同一 Listing 做 Variation 可合并评论权重。
+        </div>
+
+        <div class="source-links">
+          <a class="source-link" href="https://www.alibaba.com/showroom/license-plate-frame-wholesale.html" target="_blank">Alibaba 车牌框批发总览</a>
+          <a class="source-link" href="https://www.alibaba.com/product-detail/Low-MOQ-Design-License-Plate-Frame_1601200653315.html" target="_blank">低 MOQ 定制款详情页</a>
+          <a class="source-link" href="https://www.alibaba.com/showroom/custom-license-plate-frames-wholesale.html" target="_blank">定制车牌框批发</a>
+          <a class="source-link" href="https://www.alibaba.com/countrysearch/CN/custom-plate-frames.html" target="_blank">中国工厂直供</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         2. 电动自行车座垫套
+    ═══════════════════════════════════════════ -->
+    <div class="product-card">
+      <div class="product-card-header">
+        <div class="title-group">
+          <h3>电动自行车座垫套（E-Bike Seat Cover）</h3>
+        </div>
+        <span class="verdict-badge verdict-pass">✅ 利润良好</span>
+      </div>
+      <div class="product-card-body">
+        <div class="metrics-row">
+          <div class="metric-box highlight-blue">
+            <div class="m-val">$24.99–$27.95</div>
+            <div class="m-lbl">Amazon 卖价区间</div>
+          </div>
+          <div class="metric-box highlight-green">
+            <div class="m-val">$3.00–$8.00</div>
+            <div class="m-lbl">Alibaba 货源价 / 件（防水款）</div>
+          </div>
+          <div class="metric-box highlight-green">
+            <div class="m-val">≤32%</div>
+            <div class="m-lbl">货源成本占卖价（上限）</div>
+          </div>
+          <div class="metric-box">
+            <div class="m-val">10–30 件</div>
+            <div class="m-lbl">最小起订量(MOQ)</div>
+          </div>
+          <div class="metric-box">
+            <div class="m-val">~241/月</div>
+            <div class="m-lbl">3 词合计月购买量</div>
+          </div>
+          <div class="metric-box">
+            <div class="m-val">88–104</div>
+            <div class="m-lbl">竞品平均 Reviews</div>
+          </div>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>关键词</th>
+              <th>月搜索量</th>
+              <th>月购买量</th>
+              <th>Amazon 价</th>
+              <th>增长率</th>
+              <th>商品数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>seat cover for ebike</td>
+              <td>9,350</td>
+              <td>102</td>
+              <td>$27.95</td>
+              <td>+1.0%</td>
+              <td>2,018</td>
+            </tr>
+            <tr>
+              <td>ebike seat cover</td>
+              <td>7,973</td>
+              <td>82</td>
+              <td>$24.99</td>
+              <td>-0.3%</td>
+              <td>1,578</td>
+            </tr>
+            <tr>
+              <td>e bike seat cover</td>
+              <td>5,013</td>
+              <td>57</td>
+              <td>$24.99</td>
+              <td>+2.0%</td>
+              <td>1,315</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note-box info">
+          <b>核心优势：</b>三个关键词 Reviews 均值仅 88–104，几乎没有护城河。一个 Listing 可同时覆盖三词。重点选防水 + 防晒 PVC 材质，客户评价痛点集中在耐用性，选择加厚版材料即可形成差异。
+        </div>
+
+        <div class="source-links">
+          <a class="source-link" href="https://www.alibaba.com/showroom/ebike-seat-cover.html" target="_blank">Alibaba E-bike 座垫套总览</a>
+          <a class="source-link" href="https://www.alibaba.com/wholesale/bike-seat-cover-ebike.html" target="_blank">批发采购页</a>
+          <a class="source-link" href="https://www.alibaba.com/supplier/seat-cover-e-bike-wholesaler.html" target="_blank">优质供应商列表</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         3. 喂鸟器配件
+    ═══════════════════════════════════════════ -->
+    <div class="product-card">
+      <div class="product-card-header">
+        <div class="title-group">
+          <h3>喂鸟器配件套组（Bird Feeder Accessories Bundle）</h3>
+        </div>
+        <span class="verdict-badge verdict-pass">✅ 利润良好（需捆绑）</span>
+      </div>
+      <div class="product-card-body">
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>配件</th>
+              <th>Amazon 卖价</th>
+              <th>成本上限 (1/3)</th>
+              <th>Alibaba 货源价</th>
+              <th>MOQ</th>
+              <th>月购买量</th>
+              <th>增长率</th>
+              <th>判断</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>圆顶防雨罩（Dome）</b></td>
+              <td>$21.99</td>
+              <td>$7.33</td>
+              <td>$1.76–$6.01</td>
+              <td>100 件</td>
+              <td>286/月</td>
+              <td><span class="tag-green">+83.8%</span></td>
+              <td><span class="tag-green">✅ 优</span></td>
+            </tr>
+            <tr>
+              <td><b>防雨盖（Rain Guard）</b></td>
+              <td>$8.99</td>
+              <td style="color:var(--red)"><b>$3.00</b></td>
+              <td>$1.80–$2.22</td>
+              <td>300 套</td>
+              <td>394/月</td>
+              <td>+35.3%</td>
+              <td><span class="tag-yellow">⚠️ 单价偏低</span></td>
+            </tr>
+            <tr>
+              <td><b>接种盘（Seed Tray）</b></td>
+              <td>$16.99</td>
+              <td>$5.66</td>
+              <td>$2.35–$4.75</td>
+              <td>1–500 件</td>
+              <td>130/月</td>
+              <td><span class="tag-green">+57.6%</span></td>
+              <td><span class="tag-green">✅ 优</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note-box">
+          <b>⚠️ 注意：</b>防雨盖单品 Amazon 售价 $8.99，FBA 小件履约费约 $3–4，净利空间极薄。
+          <b>强烈建议做捆绑套装</b>（圆顶 + 接种盘，定价 $22–26），可将整体货源成本控制在 $6–8，同时提升客单价和差异化竞争力。
+        </div>
+
+        <div class="source-links">
+          <a class="source-link" href="https://www.alibaba.com/showroom/dome-bird-feeder.html" target="_blank">Alibaba 圆顶喂鸟器总览</a>
+          <a class="source-link" href="https://www.alibaba.com/showroom/bird-feeder-catcher-tray.html" target="_blank">接种托盘批发</a>
+          <a class="source-link" href="https://www.alibaba.com/showroom/bird-feeder-parts.html" target="_blank">喂鸟器配件系列</a>
+          <a class="source-link" href="https://www.alibaba.com/showroom/bird-feeder-wholesale.html" target="_blank">喂鸟器整体批发</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         4. 扑克牌（暂缓）
+    ═══════════════════════════════════════════ -->
+    <div class="product-card">
+      <div class="product-card-header">
+        <div class="title-group">
+          <h3>动漫/可爱主题扑克牌（Anime / Cute Playing Cards）</h3>
+        </div>
+        <span class="verdict-badge verdict-pause">⏸ 暂缓入场</span>
+      </div>
+      <div class="product-card-body">
+        <div class="metrics-row">
+          <div class="metric-box highlight-blue">
+            <div class="m-val">$9.58–$9.99</div>
+            <div class="m-lbl">Amazon 卖价</div>
+          </div>
+          <div class="metric-box highlight-green">
+            <div class="m-val">$0.33–$1.36</div>
+            <div class="m-lbl">Alibaba 货源价 / 副</div>
+          </div>
+          <div class="metric-box highlight-red">
+            <div class="m-val">$1–2</div>
+            <div class="m-lbl">扣除费用后净利 / 副</div>
+          </div>
+          <div class="metric-box">
+            <div class="m-val">500–1000 副</div>
+            <div class="m-lbl">MOQ（定制印刷）</div>
+          </div>
+          <div class="metric-box">
+            <div class="m-val">19–21%</div>
+            <div class="m-lbl">Amazon 购买率（极高）</div>
+          </div>
+          <div class="metric-box">
+            <div class="m-val">399–672</div>
+            <div class="m-lbl">月购买量</div>
+          </div>
+        </div>
+
+        <div class="note-box danger">
+          <b>两大风险：</b><br>
+          1. <b>绝对利润过薄</b>：卖价 $9.58，Amazon 佣金 $1.44 + FBA 履约费 $3–4，广告后净利仅 $1–2/副，利润池极小。<br>
+          2. <b>版权风险</b>：使用动漫 IP 图案面临侵权举报，账号有封禁风险。需使用<b>原创/无版权插画</b>（如日式和风无授权插画）。
+        </div>
+
+        <div class="note-box info">
+          <b>若要入场：</b>走精品礼盒包装路线，将定价提升至 $15–20（含礼盒+故事卡），货源成本控制在 $4–5，才能保证 $3–4+ 的净利。MOQ 先做 500 副测款。
+        </div>
+
+        <div class="source-links">
+          <a class="source-link" href="https://www.alibaba.com/showroom/custom-playing-cards.html" target="_blank">Alibaba 定制扑克牌总览</a>
+          <a class="source-link" href="https://www.alibaba.com/wholesale/custom-playing-cards.html" target="_blank">批发采购页</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /product-section -->
+
+  <!-- 下一步行动 -->
+  <div class="next-steps">
+    <h2>建议下一步行动</h2>
+    <ul class="step-list">
+      <li>
+        <span class="step-num">1</span>
+        <div>
+          <b>车牌框打样（本周）</b>：在 Alibaba 联系 2–3 家工厂，要求 Star Wars 款 + 豹纹款各 1 件样品，确认 UV 印刷质量和尺寸标准（美标 31.5×16cm）。目标单价 ≤ $1.00，MOQ 100 件。
+        </div>
+      </li>
+      <li>
+        <span class="step-num">2</span>
+        <div>
+          <b>E-Bike 座垫套选材（本周）</b>：在 Alibaba 筛选防水加厚 PVC 款，MOQ 10–30 件起，要求样品测试防晒耐候性。目标货源价 ≤ $7。
+        </div>
+      </li>
+      <li>
+        <span class="step-num">3</span>
+        <div>
+          <b>喂鸟器捆绑方案（下周）</b>：找可以同时供应圆顶 + 接种盘的工厂（同一供应商降低物流成本），规划套装定价 $22–26，确认捆绑包装尺寸和 FBA 重量。
+        </div>
+      </li>
+      <li>
+        <span class="step-num">4</span>
+        <div>
+          <b>首批测款预算估算</b>：车牌框 2 款 × 100 件 × $1.20 = $240 + 头程约 $60 = <b>$300</b>；E-Bike 套 30 件 × $7 = $210 + 头程 = <b>约 $280</b>。两品合计测款预算约 <b>$600</b>。
+        </div>
+      </li>
+      <li>
+        <span class="step-num">5</span>
+        <div>
+          <b>扑克牌暂缓，待方案优化</b>：先设计原创插画风格（无版权风险），同时测试 $15–20 礼盒定价在 Pinterest / TikTok 的自然流量，确认需求后再下单。
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>
+  报告生成于 2026-06-08 · 数据来源：卖家精灵关键词扫描 + Alibaba.com 公开报价 · 货源价格为参考区间，实际以供应商报价为准
+</footer>
+
+</body>
+</html>
