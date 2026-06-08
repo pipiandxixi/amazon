@@ -19,10 +19,14 @@ def parse_percent(val):
     return float(match.group(1)) if match else 0.0
 
 def clean_name(niche_str):
+    if not niche_str:
+        return ""
     name = niche_str.replace('\n', ' ').strip()
     return re.sub(r'\s*\(.*?\)\s*', '', name).strip()
 
 def extract_zh_name(niche_str):
+    if not niche_str:
+        return ""
     match = re.search(r'\((.*?)\)', niche_str)
     return match.group(1).strip() if match else ''
 
@@ -31,7 +35,7 @@ def run_opencli_cmd(cmd):
     return result
 
 def scrape_market(config_path, date_str):
-    print(f"Loading configuration from {config_path}...")
+    print("Loading configuration from " + config_path + "...")
     with open(config_path, 'r', encoding='utf-8') as f:
         config = json.load(f)
     params = config['filter_params']
@@ -41,32 +45,32 @@ def scrape_market(config_path, date_str):
     time.sleep(4)
     
     # Generate form fill JS
-    fill_form_js = f"""
-    (() => {{
+    fill_form_js = """
+    (() => {
       // 1. Expand advanced options
       const toggle = document.querySelector('a[name=switchVisible]');
-      if (toggle && toggle.innerText.includes('展开')) {{
+      if (toggle && toggle.innerText.includes('展开')) {
         toggle.click();
-      }}
+      }
       
       // 2. Fill parameters
-      const params = {json.dumps(params)};
-      Array.from(document.querySelectorAll('input[name]')).forEach(input => {{
-        if (params[input.name] !== undefined) {{
+      const params = """ + json.dumps(params) + """
+      Array.from(document.querySelectorAll('input[name]')).forEach(input => {
+        if (params[input.name] !== undefined) {
           input.value = params[input.name];
-          input.dispatchEvent(new Event('input', {{ bubbles: true }}));
-          input.dispatchEvent(new Event('change', {{ bubbles: true }}));
-        }}
-      }});
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+      });
       
       // 3. Click submit
       const btn = document.querySelector('button[type=submit]');
-      if (btn) {{
+      if (btn) {
         btn.click();
         return "submitted";
-      }}
+      }
       return "submit button not found";
-    }})()
+    })()
     """
     
     print("Filling form and submitting search...")
@@ -74,7 +78,7 @@ def scrape_market(config_path, date_str):
     print("Submission status:", res.stdout.strip())
     time.sleep(6)
     
-    # Scrape JS
+    # Scrape JS using cell auto-detection logic
     scrape_page_js = """
     (() => {
     const items = [];
@@ -85,6 +89,113 @@ def scrape_market(config_path, date_str):
       if (!r1 || !r2) continue;
       const cells = Array.from(r1.querySelectorAll('td')).map(td => td.innerText.trim());
       const details = r2.innerText.trim();
+      
+      let index = '';
+      let niche = '';
+      let sampleSize = '';
+      let monthlySales = '';
+      let avgSales = '';
+      let avgRevenue = '';
+      let avgReviewsStar = '';
+      let avgBsr = '';
+      let avgSellersPrice = '';
+      let sellerType = '';
+      let concentration = '';
+      let newCountRatio = '';
+      let totalProducts = '';
+      let returnRate = '';
+      
+      cells.forEach((cell, idx) => {
+        if (!cell) return;
+        
+        // 1. Index
+        if (/^\\d+$/.test(cell) && parseInt(cell) <= 100 && idx <= 1) {
+          index = cell;
+          return;
+        }
+        
+        // 2. Sample size
+        if (cell.includes('商品:') && cell.includes('品牌:') && !cell.includes('%')) {
+          sampleSize = cell;
+          return;
+        }
+        
+        // 3. Concentration
+        if (cell.includes('商品:') && cell.includes('品牌:') && cell.includes('%')) {
+          concentration = cell;
+          return;
+        }
+        
+        // 4. Seller type
+        if (cell.includes('FBA:') || cell.includes('AMZ:') || cell.includes('FBM:')) {
+          sellerType = cell;
+          return;
+        }
+        
+        // 5. Return rate
+        if (cell.includes('%') && cell.includes('\\n') && !cell.includes('FBA') && !cell.includes('商品')) {
+          returnRate = cell;
+          return;
+        }
+        
+        // 6. New count ratio
+        if (cell.includes('%') && (cell.includes('\\n') || cell.length < 10) && !returnRate && !sellerType && !concentration) {
+          newCountRatio = cell;
+          return;
+        }
+        
+        // 7. Average price
+        if (cell.includes('$')) {
+          avgSellersPrice = cell;
+          return;
+        }
+        
+        // 8. Niche name
+        if (/\\n\\(.*?\\)/.test(cell) || (/[a-zA-Z]/.test(cell) && /[\\u4e00-\\u9fa5]/.test(cell))) {
+          niche = cell;
+          return;
+        }
+        
+        // 9. Average sales
+        if (/\\(\\d+(\\.\\d+)?\\)/.test(cell)) {
+          avgSales = cell;
+          return;
+        }
+        
+        // 10. Average reviews & star
+        if (cell.includes('\\n') && /^\\d+(\\,\\d+)*\\n\\d+\\.\\d+$/.test(cell)) {
+          avgReviewsStar = cell;
+          return;
+        }
+        
+        // 11. Average revenue
+        if (cell.includes('\\n') && /^\\d+(\\,\\d+)*\\n\\d+(\\,\\d+)*$/.test(cell)) {
+          avgRevenue = cell;
+          return;
+        }
+        
+        // 12. Average BSR
+        if (cell.includes('\\n') && !avgRevenue && !avgReviewsStar && !avgSales && !avgSellersPrice) {
+          avgBsr = cell;
+          return;
+        }
+        
+        // 13. Total products
+        if (/^\\d+(\\,\\d+)*$/.test(cell) && !index) {
+          totalProducts = cell;
+          return;
+        }
+        
+        // 14. Monthly sales
+        if (/^\\d+(\\,\\d+)*$/.test(cell) && !totalProducts && !index) {
+          monthlySales = cell;
+          return;
+        }
+      });
+      
+      if (!niche) {
+        niche = cells[2] || cells[1] || '';
+      }
       
       const getVal = (str, label, nextLabels) => {
         const start = str.indexOf(label);
@@ -113,20 +224,20 @@ def scrape_market(config_path, date_str):
       }
       
       items.push({
-        index: cells[1],
-        niche: cells[2],
-        sampleSize: cells[3],
-        monthlySales: cells[4],
-        avgSales: cells[5],
-        avgRevenue: cells[6],
-        avgReviewsStar: cells[7],
-        avgBsr: cells[8],
-        avgSellersPrice: cells[9],
-        sellerType: cells[10],
-        concentration: cells[11],
-        newCountRatio: cells[12],
-        totalProducts: cells[13],
-        returnRate: cells[14],
+        index: index || (items.length + 1).toString(),
+        niche: niche,
+        sampleSize: sampleSize,
+        monthlySales: monthlySales,
+        avgSales: avgSales,
+        avgRevenue: avgRevenue,
+        avgReviewsStar: avgReviewsStar,
+        avgBsr: avgBsr,
+        avgSellersPrice: avgSellersPrice,
+        sellerType: sellerType,
+        concentration: concentration,
+        newCountRatio: newCountRatio,
+        totalProducts: totalProducts,
+        returnRate: returnRate,
         details: parsedDetails
       });
     }
@@ -188,7 +299,7 @@ def scrape_market(config_path, date_str):
     return output_file
 
 def generate_report(config_path, json_path, date_str):
-    print(f"Generating report from {json_path} using configuration rules from {config_path}...")
+    print("Generating report from " + json_path + " using configuration rules from " + config_path + "...")
     with open(config_path, 'r', encoding='utf-8') as f:
         config = json.load(f)
     rules = config['risk_rules']
@@ -198,63 +309,136 @@ def generate_report(config_path, json_path, date_str):
         
     scored_categories = []
     for item in categories:
-        niche_raw = item['index']
+        # Robust Python value auto-detection logic
+        all_vals = []
+        for k, v in item.items():
+            if k != 'details' and isinstance(v, str):
+                all_vals.append((k, v))
+                
+        niche_raw = ""
+        sample_size_str = ""
+        avg_sales_str = ""
+        avg_revenue_str = ""
+        avg_reviews_star_str = ""
+        avg_price_str = ""
+        seller_type_str = ""
+        concentration_str = ""
+        return_rate_str = ""
+        
+        for k, v in all_vals:
+            v_stripped = v.strip()
+            if not v_stripped:
+                continue
+            # Sample size
+            if '商品:' in v_stripped and '品牌:' in v_stripped and '%' not in v_stripped:
+                sample_size_str = v_stripped
+            # Concentration
+            elif '商品:' in v_stripped and '品牌:' in v_stripped and '%' in v_stripped:
+                concentration_str = v_stripped
+            # Seller type
+            elif 'FBA:' in v_stripped or 'AMZ:' in v_stripped or 'FBM:' in v_stripped:
+                seller_type_str = v_stripped
+            # Return rate
+            elif '%' in v_stripped and '\n' in v_stripped and 'FBA' not in v_stripped and '商品' not in v_stripped:
+                return_rate_str = v_stripped
+            # Price
+            elif '$' in v_stripped:
+                avg_price_str = v_stripped
+            # Avg sales
+            elif re.search(r'\(\d+(\.\d+)?\)', v_stripped):
+                avg_sales_str = v_stripped
+            # Avg reviews & star
+            elif '\n' in v_stripped and re.match(r'^\d+(?:\,\d+)*\n\d+\.\d+$', v_stripped):
+                avg_reviews_star_str = v_stripped
+            # Avg revenue
+            elif '\n' in v_stripped and re.match(r'^\d+(?:\,\d+)*\n\d+(?:\,\d+)*$', v_stripped):
+                avg_revenue_str = v_stripped
+            # Niche name
+            elif '\n(' in v_stripped or (any(c.isalpha() for c in v_stripped) and not any(x in v_stripped for x in ['商品', 'FBA', 'AMZ', '$', '%'])):
+                niche_raw = v_stripped
+
+        # Fallbacks to direct keys if auto-detection was not matched
+        if not niche_raw:
+            idx_val = item.get('index', '')
+            niche_val = item.get('niche', '')
+            if niche_val.startswith('商品:'):
+                niche_raw = idx_val
+            elif idx_val.isdigit():
+                niche_raw = niche_val
+            else:
+                niche_raw = niche_val if niche_val else idx_val
+
         en_name = clean_name(niche_raw)
         zh_name = extract_zh_name(niche_raw)
         
-        details = item['details']
+        details = item.get('details', {})
         path = details.get('完整市场路径', '')
         zh_path = details.get('市场路径(中文)', '')
         
-        # Parse return rate
-        return_rate_str = item.get('totalProducts', '')
-        avg_return = 5.0
+        # Parse return rate from returnRate
+        if not return_rate_str:
+            return_rate_str = item.get('returnRate', '')
+        avg_return = 0.0
         match_ret = re.findall(r'([\d\.]+)%', return_rate_str)
         if match_ret:
-            avg_return = float(match_ret[-1])
+            avg_return = float(match_ret[0])
             
         # Parse weight
         weight_str = details.get('平均重量', '')
-        weight_lbs = 1.5
+        weight_lbs = 0.0
         match_w = re.search(r'([\d\.]+)\s*pounds', weight_str)
         if match_w:
             weight_lbs = float(match_w.group(1))
+        else:
+            match_kg = re.search(r'([\d\.]+)\s*g', weight_str)
+            if match_kg:
+                weight_lbs = float(match_kg.group(1)) / 453.59
             
         # Parse price
-        price_str = item.get('avgBsr', '')
-        price_val = 30.0
-        match_p = re.search(r'\$\s*([\d\.,]+)', price_str)
+        if not avg_price_str:
+            avg_price_str = item.get('avgSellersPrice', '')
+        price_val = 0.0
+        match_p = re.search(r'\$\s*([\d\.,]+)', avg_price_str)
         if match_p:
             price_val = float(match_p.group(1).replace(',', ''))
+        else:
+            p_str_detail = details.get('新品平均价格', '')
+            match_pd = re.search(r'\$\s*([\d\.,]+)', p_str_detail)
+            if match_pd:
+                price_val = float(match_pd.group(1).replace(',', ''))
             
         # Parse reviews
-        reviews_str = item.get('avgRevenue', '')
-        reviews_val = 500
-        match_r = re.search(r'^([\d\.,]+)', reviews_str.strip())
-        if match_r:
-            reviews_val = int(match_r.group(1).replace(',', ''))
+        if not avg_reviews_star_str:
+            avg_reviews_star_str = item.get('avgReviewsStar', '')
+        reviews_val = 0
+        if avg_reviews_star_str:
+            first_line = avg_reviews_star_str.split('\n')[0].strip()
+            first_line_clean = re.sub(r'[^\d]', '', first_line)
+            if first_line_clean:
+                reviews_val = int(first_line_clean)
             
         # Parse profit margin
-        profit_val = 60.0
+        profit_val = 0.0
         profit_str = details.get('平均毛利率', '')
         match_pr = re.search(r'([\d\.]+)%', profit_str)
         if match_pr:
             profit_val = float(match_pr.group(1))
             
         # Parse concentration
-        conc_str = item.get('sellerType', '')
-        brand_conc = 50.0
-        match_bc = re.search(r'品牌:\s*([\d\.]+)%', conc_str)
+        if not concentration_str:
+            concentration_str = item.get('concentration', '')
+        brand_conc = 0.0
+        match_bc = re.search(r'品牌:\s*([\d\.]+)%', concentration_str)
         if match_bc:
             brand_conc = float(match_bc.group(1))
             
         # Parse Chinese seller ratio
         seller_loc = details.get('卖家所属地', '')
-        cn_ratio = 50.0
+        cn_ratio = 0.0
         match_cn = re.search(r'中国\|([\d\.]+)%', seller_loc)
         if match_cn:
             cn_ratio = float(match_cn.group(1))
-        elif '美国' in seller_loc:
+        else:
             match_us = re.search(r'美国\|([\d\.]+)%', seller_loc)
             if match_us:
                 cn_ratio = 100.0 - float(match_us.group(1))
@@ -277,16 +461,17 @@ def generate_report(config_path, json_path, date_str):
             
         yellow_reasons = []
         yellow_rules = rules['yellow']
-        if yellow_rules['max_return_rate'] < avg_return <= red_rules['max_return_rate']:
-            yellow_reasons.append(f"退货率偏高 (>{yellow_rules['max_return_rate']}%)")
-        if yellow_rules['max_weight_lbs'] < weight_lbs <= red_rules['max_weight_lbs']:
-            yellow_reasons.append(f"重量偏重 (>{yellow_rules['max_weight_lbs']} lbs)")
-        if yellow_rules['max_reviews'] < reviews_val <= red_rules['max_reviews']:
-            yellow_reasons.append(f"Reviews偏高 (>{yellow_rules['max_reviews']})")
-        if any(x in path for x in yellow_rules['excluded_paths']):
-            yellow_reasons.append("谨慎认证类目路径")
-        if any(x in en_name for x in yellow_rules['excluded_keywords']):
-            yellow_reasons.append("带电/合规资质敏感关键字")
+        if not red_reasons:
+            if avg_return > yellow_rules['max_return_rate']:
+                yellow_reasons.append(f"退货率偏高 (>{yellow_rules['max_return_rate']}%)")
+            if weight_lbs > yellow_rules['max_weight_lbs']:
+                yellow_reasons.append(f"重量偏重 (>{yellow_rules['max_weight_lbs']} lbs)")
+            if reviews_val > yellow_rules['max_reviews']:
+                yellow_reasons.append(f"Reviews偏高 (>{yellow_rules['max_reviews']})")
+            if any(x in path for x in yellow_rules['excluded_paths']):
+                yellow_reasons.append("谨慎认证类目路径")
+            if any(x in en_name for x in yellow_rules['excluded_keywords']):
+                yellow_reasons.append("带电/合规资质敏感关键字")
             
         if red_reasons:
             level = '🔴 Red (Avoid)'
@@ -307,62 +492,90 @@ def generate_report(config_path, json_path, date_str):
             'level': level,
             'red_reasons': red_reasons,
             'yellow_reasons': yellow_reasons,
-            'profit': profit_val
+            'profit': profit_val,
+            'details': details
         })
         
     green_niches = [c for c in scored_categories if c['level'] == '🟢 Green (Recommended)']
     yellow_niches = [c for c in scored_categories if c['level'] == '🟡 Yellow (Cautious)']
+    red_niches = [c for c in scored_categories if c['level'] == '🔴 Red (Avoid)']
     
-    print(f"Scored categories: {len(green_niches)} Green, {len(yellow_niches)} Yellow, {len(scored_categories) - len(green_niches) - len(yellow_niches)} Red")
+    print(f"Scored categories: {len(green_niches)} Green, {len(yellow_niches)} Yellow, {len(red_niches)} Red")
     
-    # Generate Markdown Report
+    # Generate Markdown Report (no hardcoded/arbitrary reasonings)
     md = []
-    md.append(f"# 亚马逊新手开店：选市场扫描与评估报告 ({date_str.replace('_', '-')})\n")
+    md.append(f"# 亚马逊选市场扫描与评估报告 ({date_str.replace('_', '-')})\n")
     md.append("> [!IMPORTANT]")
-    md.append(f"> 本报告基于配置文件中设定的过滤与风控规则进行生成。今日共分析了 **{len(categories)}** 个符合基本条件的子类目，其中最终筛选出 **{len(green_niches)}** 个适合新手的 🟢 绿色推荐赛道。")
-    md.append("> 报告数据完整真实，为您的下一阶段产品开发提供准确决策。\n")
+    md.append(f"> 本报告基于配置文件 `{config_path}` 中设定的过滤与风控规则进行生成。今日共分析了 **{len(categories)}** 个符合基本条件的子类目，其中最终筛选出 **{len(green_niches)}** 个适合新手的 🟢 绿色推荐赛道。")
+    md.append("> 本报告仅输出真实抓取的指标数据，没有任何人工猜测或硬编码的推荐理由。您可以直接复制本报告的详细数据到大模型中，让其结合具体品类特性为您分析入选原因及每个指标的指导含义。\n")
     
     md.append("## 一、 风控分类结果概览\n")
-    md.append(f"- **绿色通道 (推荐) 🟢**：共 **{len(green_niches)}** 个。产品轻小便捷（运费极低）、退货率极低、无带电安规/强认证合规红线。")
-    md.append(f"- **黄色通道 (谨慎) 🟡**：共 **{len(yellow_niches)}** 个。包含带电电子产品（如需UL/FCC安规测试的充电器、光源等）或物理退货率稍高的类目。")
-    md.append(f"- **红色通道 (避坑) 🔴**：共 **{len(scored_categories) - len(green_niches) - len(yellow_niches)}** 个。包含活体昆虫、宠物/牲畜用药、大宗家具、SKU繁杂退货高的服装，强烈建议避坑。\n")
+    md.append(f"- **绿色通道 (推荐) 🟢**：共 **{len(green_niches)}** 个。满足所有风控参数，建议重点关注。")
+    md.append(f"- **黄色通道 (谨慎) 🟡**：共 **{len(yellow_niches)}** 个。包含带电电子产品或物理退货率偏高的类目，建议深入调研。")
+    md.append(f"- **红色通道 (避坑) 🔴**：共 **{len(red_niches)}** 个。触发硬风控规则，已自动排除。\n")
     
-    md.append("## 二、 46 个绿色推荐子类目核心列表\n")
-    md.append("| 序号 | 子类目英文名 | 中文翻译/路径 | 平均价格 | 平均Reviews | 物理重量 | 退货率 | 品牌集中度 | 中国卖家比例 |")
+    md.append("## 二、 推荐与候选子类目核心列表\n")
+    md.append("### 1. 🟢 绿色推荐类目\n")
+    md.append("| 序号 | 子类目英文名 | 中文名 / 路径 | 平均价格 | 平均Reviews | 物理重量 | 退货率 | 品牌集中度 | 中国卖家比例 |")
     md.append("| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |")
     for idx, c in enumerate(green_niches):
-        md.append(f"| {idx+1} | **{c['en_name']}** | {c['zh_name']} | ${c['price']:.2f} | {c['reviews']} | {c['weight']} lbs | {c['return_rate']}% | {c['brand_conc']}% | {c['cn_ratio']}% |")
+        md.append(f"| {idx+1} | **{c['en_name']}** | {c['zh_name']} | ${c['price']:.2f} | {c['reviews']} | {c['weight']:.2f} lbs | {c['return_rate']}% | {c['brand_conc']}% | {c['cn_ratio']}% |")
         
-    md.append("\n## 三、 推荐子类目新手友好度解析\n")
+    md.append("\n### 2. 🟡 黄色候选类目\n")
+    md.append("| 序号 | 子类目英文名 | 中文名 / 路径 | 平均价格 | 平均Reviews | 物理重量 | 退货率 | 触发警示规则 |")
+    md.append("| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |")
+    for idx, c in enumerate(yellow_niches):
+        reasons_str = ", ".join(c['yellow_reasons'])
+        md.append(f"| {idx+1} | **{c['en_name']}** | {c['zh_name']} | ${c['price']:.2f} | {c['reviews']} | {c['weight']:.2f} lbs | {c['return_rate']}% | {reasons_str} |")
+
+    md.append("\n### 3. 🔴 红色排除类目摘要\n")
+    md.append("| 序号 | 子类目英文名 | 中文名 / 路径 | 平均价格 | 排除原因 |")
+    md.append("| :--- | :--- | :--- | :--- | :--- |")
+    for idx, c in enumerate(red_niches):
+        reasons_str = ", ".join(c['red_reasons'])
+        md.append(f"| {idx+1} | **{c['en_name']}** | {c['zh_name']} | ${c['price']:.2f} | {reasons_str} |")
+        
+    md.append("\n## 三、 候选类目详细数据指标画像 (供大模型分析使用)\n")
+    md.append("以下为入选的绿色与黄色子类目的完整数据指标。您可以将这些数据输入大模型（如 Gemini、Claude），让其结合具体品类特性进行深入的入选原因、产品特征及商业机会评估。\n")
+    
+    md.append("### 🟢 绿色类目详情列表\n")
     for idx, c in enumerate(green_niches):
-        reasoning = ""
-        name_l = c['en_name'].lower()
-        path_l = c['path'].lower()
-        
-        if 'basket' in name_l or 'proofing' in name_l:
-            reasoning = "厨房物理用具。天然竹木/藤编材质，零电子损坏故障，退货率极低，极易开发搭配烘焙用具的差异化套装。"
-        elif 'box' in name_l or 'tray' in name_l:
-            reasoning = "家居收纳装饰用具。买家更看重外观视觉款式，对品牌忠诚度低。高毛利率（平均57%以上），适合做外观差异化定制。"
-        elif 'nozzle' in name_l:
-            reasoning = "园艺或清洗机高压易耗配件。物理体积极其微小，重量几乎为 0。多色彩多规格喷嘴组合销售极具溢价与高转化。"
-        elif 'cup' in name_l or 'tableware' in path_l:
-            reasoning = "聚会派对易耗餐具。核心在于外观主题定制（如特定印花）或环保可降解材质开发，避开普通塑料水杯的红海竞争。"
-        elif 'extractor' in name_l or 'tool' in path_l:
-            reasoning = "五金或汽修冷门拆卸工具。典型痛点驱动，买家只看重产品本身的钢材硬度指标。退货率低，小众蓝海特性明显。"
-        elif 'mill' in name_l:
-            reasoning = "胡椒/盐磨器具。主打高品质研磨芯以提高溢价，采用木质极简风与不锈钢材质，避开纯塑料的价格竞争。"
-        elif 'feeder' in name_l:
-            reasoning = "庭院喂鸟器。刚需高复购。建议主打防松鼠防雨机械自锁设计，可大大提高售价与客单价利润。"
-        elif 'emblem' in name_l:
-            reasoning = "车辆/摩托个性标徽。极度轻小，物流成本可以忽略不计。适合小众品牌/车友俱乐部定制，溢价高昂。"
-        else:
-            reasoning = "该类目各项运营指标良好，无电器安规与检验检疫壁垒。物理重量轻便（均低于1.5磅），极其有利于新手控制初期的航空头程物流运费，流量分配也相对均匀。"
-            
-        md.append(f"### 🏆 {idx+1}. {c['en_name']} ({c['zh_name']})\n")
+        md.append(f"#### 🏆 🟢-{idx+1}. {c['en_name']} ({c['zh_name']})\n")
         md.append(f"- **完整市场路径**：`{c['path']}`")
-        md.append(f"- **核心数据**：平均客单价 `${c['price']:.2f}` | 平均 Reviews `{c['reviews']}` | 重量 `{c['weight']} lbs` | 平均退货率 `{c['return_rate']}%` | 品牌集中度 `{c['brand_conc']}%` | 中国卖家比例 `{c['cn_ratio']}%`")
-        md.append(f"- **新手友好分析**：{reasoning}\n")
-        md.append("---\n")
+        md.append("- **核心数据特征**：")
+        md.append(f"  *   **平均客单价 (Avg Price)**：`${c['price']:.2f}`")
+        md.append(f"  *   **平均 Reviews (Avg Reviews)**：`{c['reviews']} 个`")
+        md.append(f"  *   **物理重量 (Weight)**：`{c['weight']:.2f} lbs`")
+        md.append(f"  *   **平均退货率 (Return Rate)**：`{c['return_rate']}%`")
+        md.append(f"  *   **平均毛利率 (Profit Margin)**：`{c['profit']}%`")
+        md.append(f"  *   **品牌集中度 (Brand Concentration)**：`{c['brand_conc']}%`")
+        md.append(f"  *   **中国卖家比例 (Chinese Seller Ratio)**：`{c['cn_ratio']}%`")
+        
+        md.append("- **Sellersprite 抓取原始细节 (Scraped Details)**：")
+        for key, val in c['details'].items():
+            val_clean = val.replace('\n', ' ').strip()
+            md.append(f"  *   **{key}**：`{val_clean}`")
+        md.append("\n---\n")
+
+    md.append("### 🟡 黄色类目详情列表\n")
+    for idx, c in enumerate(yellow_niches):
+        md.append(f"#### 🏆 🟡-{idx+1}. {c['en_name']} ({c['zh_name']})\n")
+        md.append(f"- **完整市场路径**：`{c['path']}`")
+        md.append(f"- **触发警示项**：`{', '.join(c['yellow_reasons'])}`")
+        md.append("- **核心数据特征**：")
+        md.append(f"  *   **平均客单价 (Avg Price)**：`${c['price']:.2f}`")
+        md.append(f"  *   **平均 Reviews (Avg Reviews)**：`{c['reviews']} 个`")
+        md.append(f"  *   **物理重量 (Weight)**：`{c['weight']:.2f} lbs`")
+        md.append(f"  *   **平均退货率 (Return Rate)**：`{c['return_rate']}%`")
+        md.append(f"  *   **平均毛利率 (Profit Margin)**：`{c['profit']}%`")
+        md.append(f"  *   **品牌集中度 (Brand Concentration)**：`{c['brand_conc']}%`")
+        md.append(f"  *   **中国卖家比例 (Chinese Seller Ratio)**：`{c['cn_ratio']}%`")
+        
+        md.append("- **Sellersprite 抓取原始细节 (Scraped Details)**：")
+        for key, val in c['details'].items():
+            val_clean = val.replace('\n', ' ').strip()
+            md.append(f"  *   **{key}**：`{val_clean}`")
+        md.append("\n---\n")
         
     report_file = f"/Users/zhoufan/Public/workspace/amazon/results/categories/market_scan_report_{date_str}.md"
     os.makedirs(os.path.dirname(report_file), exist_ok=True)
