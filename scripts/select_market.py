@@ -654,17 +654,25 @@ def generate_report(config_path, categories, date_str, output_dir=None):
         path = re.sub(r'\s*市场分析\s*$', '', raw).strip()
         return path.replace('›', '>')
 
-    sidecar_items = [
-        {
+    category_map: dict = config.get("category_map", {})
+
+    def _to_sidecar(c: dict) -> dict:
+        clean = _clean_path(c["path"])
+        parts = [s.strip() for s in re.split(r'[>›]', clean) if s.strip()]
+        top_level = parts[0] if parts else ""
+        mapping = category_map.get(top_level)
+        dept = mapping.get("department") if mapping else None
+        return {
             "en_name": c["en_name"], "zh_name": c["zh_name"],
-            "path": _clean_path(c["path"]), "level": c["level"],
+            "path": clean, "level": c["level"],
             "price": c.get("price"), "reviews": c.get("reviews"),
             "weight_lbs": c.get("weight"), "return_rate": c.get("return_rate"),
             "brand_conc": c.get("brand_conc"), "cn_ratio": c.get("cn_ratio"),
-            "departments": [],
+            "product_path": parts,
+            "departments": [int(dept)] if dept is not None else [],
         }
-        for c in green_niches + yellow_niches
-    ]
+
+    sidecar_items = [_to_sidecar(c) for c in green_niches + yellow_niches]
     with open(sidecar_file, 'w', encoding='utf-8') as f:
         json.dump(sidecar_items, f, ensure_ascii=False, indent=2)
     print(f"JSON sidecar written to {sidecar_file}")
@@ -678,17 +686,34 @@ def main():
     parser.add_argument('--output-dir', type=str, default='', dest='output_dir',
                         help='Directory to write report and sidecar (pipeline mode); '
                              'defaults to results/ with date-stamped filenames')
-    parser.add_argument('--department-numbers', nargs='*', type=int, default=[],
-                        dest='department_numbers',
-                        help='SellerSprite department checkbox numbers to pre-filter '
-                             'the market page before scraping (forwarded from run_pipeline.py)')
+    parser.add_argument('--departments', nargs='*', default=[], metavar='DEPT',
+                        help='Top-level Amazon category names to pre-filter the market '
+                             'scan (e.g. "Sports & Outdoors"). Resolved to SellerSprite '
+                             'department numbers via category_map in market_config.json.')
 
     args = parser.parse_args()
 
     date_str = args.date if args.date else datetime.date.today().strftime('%Y_%m_%d')
 
+    # Resolve department names → numbers using category_map from config
+    dept_numbers: list[int] = []
+    if args.departments:
+        with open(args.config, 'r', encoding='utf-8') as f:
+            _cfg = json.load(f)
+        category_map = _cfg.get("category_map", {})
+        unknown = []
+        for name in args.departments:
+            mapping = category_map.get(name)
+            if mapping and mapping.get("department") is not None:
+                dept_numbers.append(int(mapping["department"]))
+            else:
+                unknown.append(name)
+        if unknown:
+            print(f"WARNING: no department mapping for: {unknown} — those will be skipped")
+        print(f"Departments: {args.departments} → numbers {dept_numbers}")
+
     categories = scrape_market(args.config,
-                               department_numbers=args.department_numbers or None)
+                               department_numbers=dept_numbers or None)
     generate_report(args.config, categories, date_str,
                     output_dir=args.output_dir or None)
 

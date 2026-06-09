@@ -19,7 +19,25 @@
   "scan_policy": {
     "max_pages": {"value": 5, "label": "最多扫描页数"},
     "target_candidate_min": {"value": 8, "label": "期望候选类目数量下限"},
-    "target_candidate_max": {"value": 15, "label": "期望候选类目数量上限"}
+    "target_candidate_max": {"value": 15, "label": "期望候选类目数量上限"},
+    "min_green_required": {"value": 1, "label": "继续流水线所需的最少绿色类目数"}
+  },
+  "category_map": {
+    "Sports & Outdoors":        {"department": 18},
+    "Industrial & Scientific":  {"department": 13},
+    "Home & Kitchen":           {"department": 21},
+    "Patio, Lawn & Garden":     {"department": 16},
+    "Tools & Home Improvement": {"department": 19},
+    "Health & Household":       {"department": 12},
+    "Pet Supplies":             {"department": 17},
+    "Beauty & Personal Care":   {"department": 5},
+    "Baby":                     {"department": 4},
+    "Arts, Crafts & Sewing":    {"department": 2},
+    "Office Products":          {"department": 15},
+    "Automotive":               {"department": 3},
+    "Grocery & Gourmet Food":   {"department": 10},
+    "Cell Phones & Accessories":{"department": 6},
+    "Clothing, Shoes & Jewelry":{"department": 7}
   },
   "risk_rules": {
     "red": {
