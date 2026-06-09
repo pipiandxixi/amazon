@@ -6,5 +6,5 @@ __pycache__/
 .vscode/
 .idea/
 .claude/*
-!.claude/skills/
+!.claude/skills/amazon-sourcing/**
 openspec/

@@ -1,0 +1,22 @@
+{
+  "scanned_categories": [
+    {
+      "en_name": "Trash Can Lids",
+      "path": "Home & Kitchen > Storage & Organization > Trash, Recycling & Compost > Trash Can Lids",
+      "date": "2026_06_09",
+      "run_dir": "results/2026_06_09_tools_patio_home_sports"
+    },
+    {
+      "en_name": "Float Valves",
+      "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Fittings > Valves > Float Valves",
+      "date": "2026_06_09",
+      "run_dir": "results/2026_06_09_tools_patio_home_sports"
+    },
+    {
+      "en_name": "Nozzles",
+      "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Sprayers & Accessories > Nozzles",
+      "date": "2026_06_09",
+      "run_dir": "results/2026_06_09_tools_patio_home_sports"
+    }
+  ]
+}
