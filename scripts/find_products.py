@@ -294,6 +294,44 @@ def _explain_filters(config_filters: dict) -> list[str]:
 _CN_NUMS = ["一", "二", "三", "四", "五", "六", "七"]
 
 
+def _market_metric_str(entry: dict) -> str:
+    """Format market metrics with qualitative labels based on risk thresholds."""
+    def tag_reviews(v):
+        if v <= 300:  return f"均Reviews {v}（低竞争）"
+        if v <= 800:  return f"均Reviews {v}（中等）"
+        return               f"均Reviews {v}（高竞争）"
+
+    def tag_weight(v):
+        if v <= 1.5:  return f"重量 {v:.2f}lbs（轻）"
+        if v <= 2.0:  return f"重量 {v:.2f}lbs（偏重）"
+        return               f"重量 {v:.2f}lbs（重）"
+
+    def tag_return(v):
+        if v <= 5:    return f"退货率 {v}%（低）"
+        if v <= 8:    return f"退货率 {v}%（中）"
+        return               f"退货率 {v}%（高）"
+
+    def tag_brand(v):
+        if v <= 40:   return f"品牌集中度 {v}%（分散）"
+        if v <= 65:   return f"品牌集中度 {v}%（中等）"
+        return               f"品牌集中度 {v}%（垄断）"
+
+    parts = []
+    if entry.get("price") is not None:
+        parts.append(f"均价 ${entry['price']:.2f}")
+    if entry.get("reviews") is not None:
+        parts.append(tag_reviews(entry["reviews"]))
+    if entry.get("weight_lbs") is not None:
+        parts.append(tag_weight(entry["weight_lbs"]))
+    if entry.get("return_rate") is not None:
+        parts.append(tag_return(entry["return_rate"]))
+    if entry.get("brand_conc") is not None:
+        parts.append(tag_brand(entry["brand_conc"]))
+    if entry.get("cn_ratio") is not None:
+        parts.append(f"中国卖家 {entry['cn_ratio']}%")
+    return "　".join(parts) if parts else "（指标不可用）"
+
+
 def _short_title(title: str, max_len: int = 65) -> str:
     """Extract core product name: first segment before spec separators."""
     for sep in [" – ", " — ", " | ", ", ", " - "]:
@@ -354,21 +392,7 @@ def write_report(
     # --- 市场评估摘要（来源于市场扫描，说明为何选入此类目）---
     if market_entry:
         level = market_entry.get("level", "")
-        parts = []
-        if market_entry.get("price") is not None:
-            parts.append(f"均价 ${market_entry['price']:.2f}")
-        if market_entry.get("reviews") is not None:
-            parts.append(f"均 Reviews {market_entry['reviews']}")
-        if market_entry.get("weight_lbs") is not None:
-            parts.append(f"重量 {market_entry['weight_lbs']:.2f} lbs")
-        if market_entry.get("return_rate") is not None:
-            parts.append(f"退货率 {market_entry['return_rate']}%")
-        if market_entry.get("brand_conc") is not None:
-            parts.append(f"品牌集中度 {market_entry['brand_conc']}%")
-        if market_entry.get("cn_ratio") is not None:
-            parts.append(f"中国卖家 {market_entry['cn_ratio']}%")
-        metrics_str = "　".join(parts) if parts else "（指标不可用）"
-        md.append(f"> **市场评级**：{level}　{metrics_str}\n")
+        md.append(f"> **市场评级**：{level}　{_market_metric_str(market_entry)}\n")
 
     # --- 选品原则 (inline in single mode; shared file referenced in batch mode) ---
     if include_principles:
