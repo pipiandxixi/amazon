@@ -28,6 +28,7 @@
     "Home & Kitchen":           {"department": 21},
     "Patio, Lawn & Garden":     {"department": 16},
     "Tools & Home Improvement": {"department": 19},
+    "Power & Hand Tools":       {"department": 19},
     "Health & Household":       {"department": 12},
     "Pet Supplies":             {"department": 17},
     "Beauty & Personal Care":   {"department": 5},
