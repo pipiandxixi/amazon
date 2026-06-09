@@ -650,7 +650,9 @@ def generate_report(config_path, categories, date_str, output_dir=None):
 
     def _clean_path(raw: str) -> str:
         # Strip scraping artifact " 市场分析" appended by SellerSprite market page
-        return re.sub(r'\s*市场分析\s*$', '', raw).strip()
+        # Normalize › (U+203A) to > so downstream code can split consistently
+        path = re.sub(r'\s*市场分析\s*$', '', raw).strip()
+        return path.replace('›', '>')
 
     sidecar_items = [
         {

@@ -487,10 +487,10 @@ def write_report(
 
 
 def _parse_path(raw) -> list[str]:
-    """Accept a path as list or ">"-separated string."""
+    """Accept a path as list or ">"/›-separated string."""
     if isinstance(raw, list):
         return raw
-    return [s.strip() for s in str(raw).split(">") if s.strip()]
+    return [s.strip() for s in re.split(r'[>›]', str(raw)) if s.strip()]
 
 
 def main() -> None:

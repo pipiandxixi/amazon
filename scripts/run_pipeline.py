@@ -205,10 +205,11 @@ def main() -> None:
     skipped_no_dept: list[str] = []
     for entry in market_data:
         path_str: str = entry.get("path", "")
-        top_level = path_str.split(">")[0].strip()
+        path_parts = [s.strip() for s in re.split(r'[>›]', path_str) if s.strip()]
+        top_level = path_parts[0] if path_parts else ""
         mapping = category_map.get(top_level)
         dept = mapping.get("department") if mapping else None
-        product_path = [s.strip() for s in path_str.split(">") if s.strip()]
+        product_path = path_parts
         enriched_entry = {**entry, "product_path": product_path}
         if dept is not None:
             enriched_entry["departments"] = [int(dept)]
