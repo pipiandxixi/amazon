@@ -327,6 +327,7 @@ def write_report(
     batch_total: int = 0,
     output_dir: Path | None = None,
     include_principles: bool = True,
+    market_entry: dict | None = None,
 ) -> Path:
     category = category_name or config["category"]["name"]
     cat_path = category_path or config["category"]["path"]
@@ -349,6 +350,25 @@ def write_report(
         f"> **所在品类路径**：`{' › '.join(cat_path)}`",
         f"> 共抓取 **{len(products)}** 个通过全部筛选条件的候选商品。\n",
     ]
+
+    # --- 市场评估摘要（来源于市场扫描，说明为何选入此类目）---
+    if market_entry:
+        level = market_entry.get("level", "")
+        parts = []
+        if market_entry.get("price") is not None:
+            parts.append(f"均价 ${market_entry['price']:.2f}")
+        if market_entry.get("reviews") is not None:
+            parts.append(f"均 Reviews {market_entry['reviews']}")
+        if market_entry.get("weight_lbs") is not None:
+            parts.append(f"重量 {market_entry['weight_lbs']:.2f} lbs")
+        if market_entry.get("return_rate") is not None:
+            parts.append(f"退货率 {market_entry['return_rate']}%")
+        if market_entry.get("brand_conc") is not None:
+            parts.append(f"品牌集中度 {market_entry['brand_conc']}%")
+        if market_entry.get("cn_ratio") is not None:
+            parts.append(f"中国卖家 {market_entry['cn_ratio']}%")
+        metrics_str = "　".join(parts) if parts else "（指标不可用）"
+        md.append(f"> **市场评级**：{level}　{metrics_str}\n")
 
     # --- 选品原则 (inline in single mode; shared file referenced in batch mode) ---
     if include_principles:
@@ -539,11 +559,16 @@ def main() -> None:
                     c for c in market_candidates
                     if c.get("en_name", "").lower() not in scanned_names
                 ] if market_candidates else None
+                mkt = next(
+                    (c for c in market_candidates if c.get("en_name", "").lower() == cat_name.lower()),
+                    None,
+                )
                 report = write_report(
                     config, products, date_str,
                     category_name=cat_name, category_path=cat_path,
                     uncovered_categories=uncovered, batch_total=batch_total,
                     output_dir=output_dir, include_principles=False,
+                    market_entry=mkt,
                 )
                 print(f"  Wrote {len(products)} products to {report}")
                 results_summary.append(f"  {cat_name}: {len(products)} products → {report}")

@@ -653,8 +653,14 @@ def generate_report(config_path, categories, date_str, output_dir=None):
         return re.sub(r'\s*市场分析\s*$', '', raw).strip()
 
     sidecar_items = [
-        {"en_name": c["en_name"], "zh_name": c["zh_name"], "path": _clean_path(c["path"]),
-         "level": c["level"], "departments": []}
+        {
+            "en_name": c["en_name"], "zh_name": c["zh_name"],
+            "path": _clean_path(c["path"]), "level": c["level"],
+            "price": c.get("price"), "reviews": c.get("reviews"),
+            "weight_lbs": c.get("weight"), "return_rate": c.get("return_rate"),
+            "brand_conc": c.get("brand_conc"), "cn_ratio": c.get("cn_ratio"),
+            "departments": [],
+        }
         for c in green_niches + yellow_niches
     ]
     with open(sidecar_file, 'w', encoding='utf-8') as f:

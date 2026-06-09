@@ -3,6 +3,8 @@
 > **所在品类路径**：`Home & Kitchen › Kitchen & Dining › Kitchen Utensils & Gadgets › Kitchen Knives & Accessories › Bread Knives`
 > 共抓取 **13** 个通过全部筛选条件的候选商品。
 
+> **市场评级**：🟢 Green (Recommended)　（指标不可用）
+
 > 选品原则详见 [scan_principles.md](scan_principles.md)
 
 ## 一、候选商品列表
@@ -10,8 +12,8 @@
 | # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
 |---:|---|---|---|---|---:|---:|---|---:|---|---:|---:|---:|---|---|
 | 1 | [B0GH7GQJCY](https://www.amazon.com/dp/B0GH7GQJCY) | 用于自制面包和酸面团的可调节面包刀和切片机...... | Adjustable Bread Knife & Slicer for Homemade Bread and Sourdough… | 270 / -13.13% | $6,747 | $24.99 | 53 / 26 | 4.2 | $4.35 / 68% | 1 | 93 | 1 | 0.57 pounds | 2026-02-20 3个月 |
-| 2 | [B0GK1177WJ](https://www.amazon.com/dp/B0GK1177WJ) | 10" 面包刀 | 10" Bread Knife | 282 / 13.77% | $14,097 | $49.99 | 46 / 8 | 4.8 | $4.76 / 75% | 3 | 60 | 1 | 0.93 pounds | 2026-03-04 3个月 |
-| 3 | [B0F53V5PBB](https://www.amazon.com/dp/B0F53V5PBB) | KEEMAKE 10 英寸自制面包面包刀 | KEEMAKE 10 Inch Bread Knife for Homemade Bread | 303 / 9.44% | $9,087 | $29.99 | 139 / 8 | 4.8 | $4.35 / 71% | 2 | 65 | 1 | 0.75 pounds | 2025-07-08 11个月 |
+| 2 | [B0GK1177WJ](https://www.amazon.com/dp/B0GK1177WJ) | 10" 面包刀 | 10" Bread Knife | 269 / 13.77% | $13,447 | $49.99 | 46 / 7 | 4.8 | $4.76 / 75% | 3 | 63 | 1 | 0.93 pounds | 2026-03-04 3个月 |
+| 3 | [B0F53V5PBB](https://www.amazon.com/dp/B0F53V5PBB) | 10 英寸自制面包面包刀 | 10 Inch Bread Knife for Homemade Bread | 303 / 9.44% | $9,087 | $29.99 | 139 / 8 | 4.8 | $4.35 / 71% | 2 | 65 | 1 | 0.75 pounds | 2025-07-08 11个月 |
 | 4 | [B0CSSR4C97](https://www.amazon.com/dp/B0CSSR4C97) | 创新的磁性面包 Lame 面包评分工具，Bread Lame Cutt… | Innovative Magnetic Bread Lame Bread Scoring Tool,Bread Lame Cutt… | 147 / -12.18% | $4,409 | $29.99 | 127 / 3 | 4.7 | $3.54 / 73% | 1 | 123 | 1 | 0.13 pounds | 2024-02-04 2年 4个月 |
 | 5 | [B0G5K79MQL](https://www.amazon.com/dp/B0G5K79MQL) | RICCLE 鹅面包 Lame 用于酵母面包 | RICCLE Goose Bread Lame for Sourdough Bread | 133 / 432% | $2,393 | $17.99 | 25 / 14 | 4.7 | $3.44 / 66% | 1 | 118 | 1 | 0.11 pounds | 2026-04-14 1个月 |
 | 6 | [B0FZBD3JG4](https://www.amazon.com/dp/B0FZBD3JG4) | 用于酸面团的可调节面包切片机 | Adjustable Bread Slicer for Sourdough | 221 / -23.66% | $5,277 | $23.88 | 60 / 9 | 4.0 | $4.76 / 65% | 1 | 119 | 1 | 0.82 pounds | 2026-01-03 5个月 |
@@ -29,7 +31,7 @@
 
 **2. [B0GK1177WJ](https://www.amazon.com/dp/B0GK1177WJ)** 10" Bread Knife - Sourdough Slicing Knife Professional 5Cr15MoV Stainless Steel Serrated Knives, Ergonomic Wood Handle & Full Tang Design, Gift Box Included (Single-Edge
 
-**3. [B0F53V5PBB](https://www.amazon.com/dp/B0F53V5PBB)** KEEMAKE 10 Inch Bread Knife for Homemade Bread - Ultra Sharp for Serrated Sourdough, Crusty Artisan Loaves, Bagels & Cake, High Carbon Stainless Steel Slicing Knife with Cover & Dad Gift Box
+**3. [B0F53V5PBB](https://www.amazon.com/dp/B0F53V5PBB)** 10 Inch Bread Knife for Homemade Bread - Ultra Sharp for Serrated Sourdough, Crusty Artisan Loaves, Bagels & Cake, High Carbon Stainless Steel Slicing Knife with Cover & Dad Gift Box
 
 **4. [B0CSSR4C97](https://www.amazon.com/dp/B0CSSR4C97)** Innovative Magnetic Bread Lame Bread Scoring Tool,Bread Lame Cutter,Bread Scoring Knife for Bread Baking & Sourdough Baking,Bread Razor Tool with 5 Razor Blades-Black Walnut Wood
 
@@ -221,8 +223,8 @@
 ## 五、原始数值
 
 - `B0GH7GQJCY`: 40,701 | -9,770 | -32% | 270 | -13.13% | $6,747 | 200+ | $4K+ | 1 | $24.99 | - | 53 | 26 | 4.2 | 9.63% | $4.35 | 68% | 2026-02-20 | 3个月 | FBA | -
-- `B0GK1177WJ`: 22,072 | 15,414 | 35% | 282 | 13.77% | $14,097 | 200+ | $8K+ | 3 | $49.99 | - | 46 | 8 | 4.8 | 2.84% | $4.76 | 75% | 2026-03-04 | 3个月 | FBA | -
-- `B0F53V5PBB`: 23,747 | 3,125 | 12% | 303 | 9.44% | $9,087 | 200+ | $6K+ | 2 | $29.99 | - | 139 | 8 | 4.8 | 2.64% | $4.35 | 71% | 2025-07-08 | 11个月 | FBA | -
+- `B0GK1177WJ`: 23,241 | 4,491 | 16% | 269 | 13.77% | $13,447 | 200+ | $8K+ | 3 | $49.99 | - | 46 | 7 | 4.8 | 2.6% | $4.76 | 75% | 2026-03-04 | 3个月 | FBA | -
+- `B0F53V5PBB`: 23,746 | 3,125 | 12% | 303 | 9.44% | $9,087 | 200+ | $6K+ | 2 | $29.99 | - | 139 | 8 | 4.8 | 2.64% | $4.35 | 71% | 2025-07-08 | 11个月 | FBA | -
 - `B0CSSR4C97`: 64,290 | -13,692 | -27% | 147 | -12.18% | $4,409 | 100+ | $2K+ | 1 | $29.99 | - | 127 | 3 | 4.7 | 2.04% | $3.54 | 73% | 2024-02-04 | 2年 4个月 | FBA | -
 - `B0G5K79MQL`: 58,027 | 11,228 | 17% | 133 | 432% | $2,393 | 100+ | $1K+ | 1 | $17.99 | - | 25 | 14 | 4.7 | 10.53% | $3.44 | 66% | 2026-04-14 | 1个月 | FBA | -
 - `B0FZBD3JG4`: 59,391 | -7,896 | -15% | 221 | -23.66% | $5,277 | 100+ | $2K+ | 1 | $23.88 | - | 60 | 9 | 4.0 | 4.07% | $4.76 | 65% | 2026-01-03 | 5个月 | FBA | -

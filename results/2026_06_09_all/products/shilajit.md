@@ -3,6 +3,8 @@
 > **所在品类路径**：`Health & Household › Vitamins, Minerals & Supplements › Herbal Supplements › Shilajit`
 > 共抓取 **27** 个通过全部筛选条件的候选商品。
 
+> **市场评级**：🟢 Green (Recommended)　（指标不可用）
+
 > 选品原则详见 [scan_principles.md](scan_principles.md)
 
 ## 一、候选商品列表
@@ -16,8 +18,8 @@
 | 5 | [B0G2S6Z593](https://www.amazon.com/dp/B0G2S6Z593) | Shilajit 和海苔 Ashwagandha 组合套装 - 海苔 | Shilajit and Sea Moss Ashwagandha Combo Bundle- Sea Moss | 270 / -23.01% | $7,287 | $26.99 | 37 / 15 | 4.4 | $4.09 / 70% | 1 | 80 | 1 | 0.33 pounds | 2025-12-14 5个月 |
 | 6 | [B0GQGLZMNY](https://www.amazon.com/dp/B0GQGLZMNY) | 布卢明蜂蜜棒 | Bloomin Honey Sticks | 313 / 91.25% | $10,639 | $33.99 | 21 / 14 | 4.1 | $4.76 / 71% | 1 | 86 | 1 | 0.8 pounds | 2026-03-05 3个月 |
 | 7 | [B0DNLDHPW1](https://www.amazon.com/dp/B0DNLDHPW1) | 100% 纯喜马拉雅喜来芝树脂金 500 有机 | 100% Pure Himalayan Shilajit Resin Gold 500 Organic | 273 / 42.25% | $9,006 | $32.99 | 88 / 5 | 4.3 | $4.09 / 73% | 1 | 75 | 1 | 0.29 pounds | 2025-03-31 1年 2个月 |
-| 8 | [B0DBDZ92QY](https://www.amazon.com/dp/B0DBDZ92QY) | Shilajit Pro Max 男士软糖 | Shilajit Pro Max for Men Gummies | 154 / 101.64% | $4,618 | $29.99 | 107 / - | 4.4 | $4.76 / 69% | 1 | 67 | 1 | 0.93 pounds | 2024-07-27 1年 10个月 |
-| 9 | [B0GZZ4CV44](https://www.amazon.com/dp/B0GZZ4CV44) | Symbia Bloomin 喜来芝女士软糖，60 粒软糖 | Symbia Bloomin shilajit Gummies for Women,60 Gummies | 183 / - | $6,037 | $32.99 | 4 / - | 5.0 | $4.09 / 73% | 1 | 66 | 2 | 0.35 pounds | 2026-05-09 1个月 |
+| 8 | [B0GZZ4CV44](https://www.amazon.com/dp/B0GZZ4CV44) | Symbia Bloomin 喜来芝女士软糖，60 粒软糖 | Symbia Bloomin shilajit Gummies for Women,60 Gummies | 189 / - | $6,235 | $32.99 | 4 / - | 5.0 | $4.09 / 73% | 1 | 54 | 1 | 0.35 pounds | 2026-05-09 1个月 |
+| 9 | [B0DBDZ92QY](https://www.amazon.com/dp/B0DBDZ92QY) | Shilajit Pro Max 男士软糖 | Shilajit Pro Max for Men Gummies | 154 / 101.64% | $4,618 | $29.99 | 107 / - | 4.4 | $4.76 / 69% | 1 | 67 | 1 | 0.93 pounds | 2024-07-27 1年 10个月 |
 | 10 | [B0DPNM1287](https://www.amazon.com/dp/B0DPNM1287) | HUNY Bee 活力喜来芝蜂蜜棒 | HUNY Bee Energized Shilajit Honey Sticks | 168 / -29.68% | $5,878 | $34.99 | 125 / 13 | 4.1 | $4.35 / 73% | 1 | 98 | 1 | 0.73 pounds | 2024-12-07 1年 6个月 |
 | 11 | [B0DNFLGT95](https://www.amazon.com/dp/B0DNFLGT95) | 更好的 Alt 纯喜马拉雅喜来芝软糖，含喜来芝 \|High Po… | Better Alt Pure Himalayan Shilajit Gummies with Shilajit \|High Po… | 207 / 14.84% | $5,844 | $28.23 | 82 / 5 | 4.0 | $4.35 / 70% | 1 | 85 | 1 | 0.75 pounds | 2024-11-28 1年 6个月 |
 | 12 | [B0GQRHC4XG](https://www.amazon.com/dp/B0GQRHC4XG) | 布卢明蜂蜜棒 | Bloomin Honey Sticks | 193 / 230.77% | $6,560 | $33.99 | 13 / 10 | 4.7 | $4.09 / 73% | 2 | 112 | 1 | 0.51 pounds | 2026-03-04 3个月 |
@@ -53,9 +55,9 @@
 
 **7. [B0DNLDHPW1](https://www.amazon.com/dp/B0DNLDHPW1)** 100% Pure Himalayan Shilajit Resin Gold 500 Organic | High Potency 75%+ Fulvic Acid, Humic Acid & 85+ Trace Minerals | Natural Energy & Immune Support for Men & Women | Lab Tested
 
-**8. [B0DBDZ92QY](https://www.amazon.com/dp/B0DBDZ92QY)** Shilajit Pro Max for Men Gummies | 11-in-1 Testosterone* Booster Stack with Tongkat Ali, Fadogia Agrestis, Ashwagandha | Gold Grade Himalayan | 78% Fulvic Acid | 30:1 Shilajit Extract | Manuka Honey
+**8. [B0GZZ4CV44](https://www.amazon.com/dp/B0GZZ4CV44)** Symbia Bloomin shilajit Gummies for Women,60 Gummies
 
-**9. [B0GZZ4CV44](https://www.amazon.com/dp/B0GZZ4CV44)** Symbia Bloomin shilajit Gummies for Women,60 Gummies
+**9. [B0DBDZ92QY](https://www.amazon.com/dp/B0DBDZ92QY)** Shilajit Pro Max for Men Gummies | 11-in-1 Testosterone* Booster Stack with Tongkat Ali, Fadogia Agrestis, Ashwagandha | Gold Grade Himalayan | 78% Fulvic Acid | 30:1 Shilajit Extract | Manuka Honey
 
 **10. [B0DPNM1287](https://www.amazon.com/dp/B0DPNM1287)** HUNY Bee Energized Shilajit Honey Sticks | Functional Raw Honey + TruBlk Clinically Studied Pure Himalayan Shilajit | 85+ Trace Minerals & Fulvic Acid for Clean Energy | 30 Count
 
@@ -268,8 +270,8 @@
 - `B0G2S6Z593`: 76,495 | -7,288 | -11% | 270 | -23.01% | $7,287 | 200+ | $4K+ | 1 | $26.99 | - | 37 | 15 | 4.4 | 5.56% | $4.09 | 70% | 2025-12-14 | 5个月 | FBA | -
 - `B0GQGLZMNY`: 99,769 | -3,360 | -3% | 313 | 91.25% | $10,639 | 200+ | $6K+ | 1 | $33.99 | - | 21 | 14 | 4.1 | 4.47% | $4.76 | 71% | 2026-03-05 | 3个月 | FBA | -
 - `B0DNLDHPW1`: 83,688 | -9,586 | -13% | 273 | 42.25% | $9,006 | 200+ | $6K+ | 1 | $32.99 | - | 88 | 5 | 4.3 | 1.83% | $4.09 | 73% | 2025-03-31 | 1年 2个月 | FBA | -
+- `B0GZZ4CV44`: 65,958 | 38,550 | 37% | 189 | - | $6,235 | 200+ | $6K+ | 1 | $32.99 | - | 4 | - | 5.0 | - | $4.09 | 73% | 2026-05-09 | 1个月 | FBA | -
 - `B0DBDZ92QY`: 75,400 | 23,434 | 24% | 154 | 101.64% | $4,618 | 100+ | $2K+ | 1 | $29.99 | - | 107 | - | 4.4 | - | $4.76 | 69% | 2024-07-27 | 1年 10个月 | FBA | -
-- `B0GZZ4CV44`: 73,992 | 28,820 | 28% | 183 | - | $6,037 | 100+ | $3K+ | 1 | $32.99 | - | 4 | - | 5.0 | - | $4.09 | 73% | 2026-05-09 | 1个月 | FBA | -
 - `B0DPNM1287`: 109,648 | -5,809 | -6% | 168 | -29.68% | $5,878 | 100+ | $3K+ | 1 | $34.99 | - | 125 | 13 | 4.1 | 7.74% | $4.35 | 73% | 2024-12-07 | 1年 6个月 | FBA | -
 - `B0DNFLGT95`: 98,773 | 21,369 | 20% | 207 | 14.84% | $5,844 | 100+ | $2K+ | 1 | $28.23 | 7 | 82 | 5 | 4.0 | 2.42% | $4.35 | 70% | 2024-11-28 | 1年 6个月 | FBA | -
 - `B0GQRHC4XG`: 96,122 | 12,218 | 11% | 193 | 230.77% | $6,560 | 100+ | $3K+ | 2 | $33.99 | - | 13 | 10 | 4.7 | 5.18% | $4.09 | 73% | 2026-03-04 | 3个月 | FBA | -

@@ -3,6 +3,8 @@
 > **所在品类路径**：`Patio, Lawn & Garden › Pools, Hot Tubs & Supplies › Parts & Accessories › Lighting Products`
 > 共抓取 **50** 个通过全部筛选条件的候选商品。
 
+> **市场评级**：🟢 Green (Recommended)　（指标不可用）
+
 > 选品原则详见 [scan_principles.md](scan_principles.md)
 
 ## 一、候选商品列表
@@ -21,14 +23,14 @@
 | 10 | [B0GRV2RCT8](https://www.amazon.com/dp/B0GRV2RCT8) | 太阳能浮球泳池灯 4 件装 | Solar Floating Ball Pool Lights 4 Pack | 425 / 271.43% | $22,517 | $52.98 | 17 / 12 | 4.3 | $7.28 / 71% | 1 | 94 | 1 | 2.05 pounds | 2026-04-10 1个月 |
 | 11 | [B0GHZ3X66S](https://www.amazon.com/dp/B0GHZ3X66S) | 地上和地下泳池升级磁力泳池灯 | Upgraded Magnetic Pool Lights for Above ground and inground pool | 511 / 215.08% | $18,902 | $36.99 | 38 / 5 | 4.4 | $4.46 / 73% | 2 | 45 | 1 | 0.75 pounds | 2026-03-15 2个月 |
 | 12 | [B0GKSD39QN](https://www.amazon.com/dp/B0GKSD39QN) | 26.5寸太阳能泳池浮灯 | 26.5inch Solar Pool Floats Lights | 504 / 650% | $13,603 | $26.99 | 28 / - | 4.4 | $4.87 / 67% | 1 | 131 | 1 | 0.92 pounds | 2026-04-01 2个月 |
-| 13 | [B0GHQCV9JX](https://www.amazon.com/dp/B0GHQCV9JX) | VICHTOP 太阳能浮动泳池灯（2 件装） | VICHTOP Solar Floating Pool Lights (2-Pack) | 507 / -20.1% | $18,247 | $35.99 | 75 / 37 | 4.0 | $7.01 / 66% | 2 | 49 | 2 | 1.96 pounds | 2026-03-10 2个月 |
-| 14 | [B0GCHCH52Q](https://www.amazon.com/dp/B0GCHCH52Q) | NIORSUN 浮动太阳能泳池灯（3 件装） | NIORSUN Floating Solar Pool Lights(3 Pack) | 441 / 9000% | $14,813 | $33.59 | 22 / 11 | 4.0 | $5.33 / 69% | 3 | 57 | 1 | 1.19 pounds | 2026-04-17 1个月 |
-| 15 | [B0GQY98YPK](https://www.amazon.com/dp/B0GQY98YPK) | 太阳能浮动泳池灯 - 泳池灯 | Solar Floating Pool Lights - Pool Lights | 545 / - | $32,695 | $59.99 | 18 / 12 | 4.4 | $6.40 / 74% | 3 | 130 | 1 | 1.85 pounds | 2026-05-07 1个月 |
-| 16 | [B0G8JMLK42](https://www.amazon.com/dp/B0G8JMLK42) | 漂浮泳池灯，升级版漂浮泳池灯，6000mAh Rech… | Floating Pool Lights,Upgraded Pool Lights That Float,6000mAh Rech… | 474 / 437.68% | $9,471 | $19.98 | 32 / 9 | 4.8 | $5.61 / 57% | 2 | 43 | 1 | 1.37 pounds | 2026-03-16 2个月 |
-| 17 | [B0GF18Z34X](https://www.amazon.com/dp/B0GF18Z34X) | 适用于框架式地上泳池的太阳能泳池灯 | Solar Powered Pool Lights for Framed Above Ground Pools | 518 / 455.32% | $9,319 | $17.99 | 28 / 8 | 4.6 | $6.13 / 51% | 3 | 45 | 1 | 1.34 pounds | 2026-02-28 3个月 |
-| 18 | [B0G2QWZXPZ](https://www.amazon.com/dp/B0G2QWZXPZ) | NIORSUN 浮动太阳能泳池灯 | NIORSUN Floating Solar Pool Lights | 426 / 315.56% | $17,036 | $39.99 | 33 / 11 | 4.5 | $5.72 / 71% | 3 | 46 | 1 | 1.26 pounds | 2026-03-23 2个月 |
-| 19 | [B0F1FJ7HXS](https://www.amazon.com/dp/B0F1FJ7HXS) | 漂浮泳池灯 | Floating Pool Lights | 840 / 52.82% | $47,872 | $56.99 | 98 / 11 | 4.2 | $7.17 / 72% | 5 | 39 | 1 | 2.84 pounds | 2025-04-27 1年 1个月 |
-| 20 | [B0G6Z1QM2M](https://www.amazon.com/dp/B0G6Z1QM2M) | 浮动泳池灯太阳能 | Floating Pool Lights Solar Powered | 360 / 50.41% | $10,796 | $29.99 | 50 / 13 | 4.6 | $5.61 / 66% | 2 | 73 | 1 | 1.37 pounds | 2026-02-07 4个月 |
+| 13 | [B0GCHCH52Q](https://www.amazon.com/dp/B0GCHCH52Q) | NIORSUN 浮动太阳能泳池灯（3 件装） | NIORSUN Floating Solar Pool Lights(3 Pack) | 441 / 9000% | $14,813 | $33.59 | 22 / 11 | 4.0 | $5.33 / 69% | 3 | 57 | 1 | 1.19 pounds | 2026-04-17 1个月 |
+| 14 | [B0GQY98YPK](https://www.amazon.com/dp/B0GQY98YPK) | 太阳能浮动泳池灯 - 泳池灯 | Solar Floating Pool Lights - Pool Lights | 545 / - | $32,695 | $59.99 | 18 / 12 | 4.4 | $6.40 / 74% | 3 | 130 | 1 | 1.85 pounds | 2026-05-07 1个月 |
+| 15 | [B0G8JMLK42](https://www.amazon.com/dp/B0G8JMLK42) | 漂浮泳池灯，升级版漂浮泳池灯，6000mAh Rech… | Floating Pool Lights,Upgraded Pool Lights That Float,6000mAh Rech… | 474 / 437.68% | $9,471 | $19.98 | 32 / 9 | 4.8 | $5.61 / 57% | 2 | 43 | 1 | 1.37 pounds | 2026-03-16 2个月 |
+| 16 | [B0GF18Z34X](https://www.amazon.com/dp/B0GF18Z34X) | 适用于框架式地上泳池的太阳能泳池灯 | Solar Powered Pool Lights for Framed Above Ground Pools | 518 / 455.32% | $9,319 | $17.99 | 28 / 8 | 4.6 | $6.13 / 51% | 3 | 45 | 1 | 1.34 pounds | 2026-02-28 3个月 |
+| 17 | [B0G2QWZXPZ](https://www.amazon.com/dp/B0G2QWZXPZ) | NIORSUN 浮动太阳能泳池灯 | NIORSUN Floating Solar Pool Lights | 426 / 315.56% | $17,036 | $39.99 | 33 / 11 | 4.5 | $5.72 / 71% | 3 | 46 | 1 | 1.26 pounds | 2026-03-23 2个月 |
+| 18 | [B0G6Z1QM2M](https://www.amazon.com/dp/B0G6Z1QM2M) | 浮动泳池灯太阳能 | Floating Pool Lights Solar Powered | 360 / 50.41% | $10,796 | $29.99 | 50 / 13 | 4.6 | $5.61 / 66% | 2 | 73 | 1 | 1.37 pounds | 2026-02-07 4个月 |
+| 19 | [B0GHQCV9JX](https://www.amazon.com/dp/B0GHQCV9JX) | VICHTOP 太阳能浮动泳池灯（2 件装） | VICHTOP Solar Floating Pool Lights (2-Pack) | 465 / -20.1% | $16,735 | $35.99 | 75 / 39 | 4.0 | $7.01 / 66% | 2 | 49 | 1 | 1.96 pounds | 2026-03-10 2个月 |
+| 20 | [B0F1FJ7HXS](https://www.amazon.com/dp/B0F1FJ7HXS) | 漂浮泳池灯 | Floating Pool Lights | 840 / 52.82% | $47,872 | $56.99 | 98 / 11 | 4.2 | $7.17 / 72% | 5 | 39 | 1 | 2.84 pounds | 2025-04-27 1年 1个月 |
 | 21 | [B0DWMMYNDB](https://www.amazon.com/dp/B0DWMMYNDB) | 55 英尺地上泳池太阳能泳池灯 | 55ft Solar Pool Lights for Above Ground Pools | 468 / 147.55% | $9,355 | $19.99 | 116 / 9 | 4.0 | $4.46 / 63% | 4 | 81 | 1 | 0.73 pounds | 2025-02-28 1年 3个月 |
 | 22 | [B0GGB7XQR9](https://www.amazon.com/dp/B0GGB7XQR9) | 带数字温度计和 LE 的太阳能泳池氯浮标… | Solar Powered Pool Chlorine Floater with Digital Thermometer & LE… | 260 / 353.19% | $7,277 | $27.99 | 23 / 8 | 4.2 | $6.24 / 63% | 1 | 147 | 1 | 1.23 pounds | 2026-04-01 2个月 |
 | 23 | [B0DXVSDMZF](https://www.amazon.com/dp/B0DXVSDMZF) | 明亮的 Led 泳池灯泡，120V 65W，带 6000LM E27/E26 底座泳池… | Bright Led Pool Light Bulb,120V 65W with 6000LM E27/E26 Base Pool… | 401 / 122.15% | $16,036 | $39.99 | 28 / 4 | 4.3 | $4.35 / 74% | 2 | 92 | 1 | 0.44 pounds | 2025-05-07 1年 1个月 |
@@ -41,24 +43,24 @@
 | 30 | [B0GJD2YG5K](https://www.amazon.com/dp/B0GJD2YG5K) | 8 件装太阳能泳池灯，适用于地上和地下泳池 | 8Packs Solar Pool Lights for Above Ground & In-Ground Pools | 255 / 230.88% | $15,297 | $59.99 | 25 / 5 | 4.5 | $6.14 / 75% | 2 | 140 | 1 | 1.76 pounds | 2026-04-09 2个月 |
 | 31 | [B0CTTNSX76](https://www.amazon.com/dp/B0CTTNSX76) | 65W LED 泳池灯泡，适用于地下泳池 | 65W LED Pool Light Bulb for inground Pool | 123 / 193.18% | $7,379 | $59.99 | 6 / - | 4.5 | $5.49 / 76% | 1 | 409 | 1 | 0.99 pounds | 2024-10-17 1年 7个月 |
 | 32 | [B0G6KXKVXG](https://www.amazon.com/dp/B0G6KXKVXG) | 2026 漂浮泳池灯太阳能，15 英寸充气防水… | 2026 Floating Pool Lights Solar Powered,15" Inflatable Waterproof… | 271 / 5.56% | $7,312 | $26.98 | 44 / - | 4.3 | $8.46 / 54% | 2 | 189 | 1 | 2.71 pounds | 2026-02-27 3个月 |
-| 33 | [B0GGB644JK](https://www.amazon.com/dp/B0GGB644JK) | VOLISUN 地上泳池太阳能泳池灯，9 RGB 颜色 LED… | VOLISUN Solar Pool Lights for Above Ground Pools,9 RGB Color LED… | 429 / 162.82% | $20,588 | $47.99 | 36 / 15 | 4.2 | $5.61 / 73% | 3 | 75 | 1 | 1.28 pounds | 2026-03-16 2个月 |
-| 34 | [B0DRVNRG71](https://www.amazon.com/dp/B0DRVNRG71) | 泳池温度计易于读取 | Pool Thermometer Easy to Read | 147 / 19.64% | $2,939 | $19.99 | 34 / 3 | 4.2 | $5.87 / 56% | 1 | 225 | 1 | 1.04 pounds | 2025-02-02 1年 4个月 |
-| 35 | [B0G6RSQ265](https://www.amazon.com/dp/B0G6RSQ265) | 浮动泳池灯，2026 升级版太阳能泳池灯…… | Floating Pool Lights,2026 Upgraded Solar Powered Pool Lights that… | 175 / 25.21% | $3,474 | $19.85 | 31 / 1 | 4.2 | $6.31 / 53% | 1 | 85 | 1 | 1.73 pounds | 2026-02-11 3个月 |
-| 36 | [B0G4MRZ8GV](https://www.amazon.com/dp/B0G4MRZ8GV) | 40寸太阳能泳池浮灯 | 40inch Solar Pool Floats Lights | 472 / 618.18% | $12,739 | $26.99 | 31 / - | 4.6 | $5.33 / 65% | 1 | 237 | 1 | 1.19 pounds | 2026-03-27 2个月 |
-| 37 | [B0G6SBNN2L](https://www.amazon.com/dp/B0G6SBNN2L) | 2026 太阳能泳池灯带数字泳池温度计，颜色 Changi… | 2026 Solar Pool Lights with Digital Pool Thermometer,Color Changi… | 201 / -16.36% | $3,789 | $18.85 | 37 / 12 | 4.2 | $5.22 / 57% | 2 | 122 | 1 | 0.97 pounds | 2026-03-07 3个月 |
-| 38 | [B0G8JJ8BKW](https://www.amazon.com/dp/B0G8JJ8BKW) | 太阳能泳池灯，太阳能供电地上泳池灯，框架灯… | Solar Pool Lights,Solar Powered Above Ground Pool Lights,Frame Po… | 204 / 60.87% | $4,074 | $19.97 | 30 / 7 | 4.2 | $5.22 / 59% | 2 | 136 | 1 | 0.79 pounds | 2026-03-09 3个月 |
-| 39 | [B0DSVLHR3L](https://www.amazon.com/dp/B0DSVLHR3L) | 泳池灯（4只装） | Pool Lights(4 PACK) | 249 / 33.13% | $14,788 | $59.39 | 124 / 11 | 4.1 | $6.40 / 74% | 5 | 153 | 1 | 1.83 pounds | 2025-03-20 1年 2个月 |
-| 40 | [B0G8X6721P](https://www.amazon.com/dp/B0G8X6721P) | 地下和地上泳池的泳池灯 | Pool Lights for Inground & Above Ground Pool | 183 / 24% | $5,461 | $29.84 | 20 / 6 | 4.4 | $5.13 / 68% | 2 | 114 | 1 | 1.23 pounds | 2026-04-07 2个月 |
-| 41 | [B0D93J8T91](https://www.amazon.com/dp/B0D93J8T91) | LED 泳池灯泡 12V 50W 5000LM 6500K 日光白色 LED 游泳灯… | LED Pool Light Bulb 12V 50W 5000LM 6500K Daylight White LED Swimm… | 144 / 14.73% | $5,471 | $37.99 | 75 / - | 4.0 | $4.35 / 74% | 1 | 264 | 1 | 0.68 pounds | 2024-08-08 1年 10个月 |
-| 42 | [B0GCY2K128](https://www.amazon.com/dp/B0GCY2K128) | 太阳能浮动泳池灯 | Solar Floating Pool Lights | 133 / 3833.33% | $4,787 | $35.99 | 25 / 24 | 4.6 | $4.76 / 57% | 1 | 290 | 1 | 0.75 pounds | 2026-03-23 2个月 |
-| 43 | [B0GR8YW1JR](https://www.amazon.com/dp/B0GR8YW1JR) | 太阳能泳池氯气浮标带浮灯 | Solar Pool Chlorine Floater with Floating Light | 165 / 225% | $4,701 | $28.49 | 47 / - | 4.6 | $6.42 / 69% | 3 | 194 | 1 | 1.79 pounds | 2026-03-14 2个月 |
-| 44 | [B0G6KG7PTB](https://www.amazon.com/dp/B0G6KG7PTB) | 地上泳池太阳能泳池灯 | Solar Pool Lights for Above Ground Pools | 174 / 39.52% | $8,674 | $49.85 | 27 / 8 | 4.2 | $5.61 / 74% | 2 | 202 | 2 | 1.46 pounds | 2026-03-09 3个月 |
-| 45 | [B0CGLRS59K](https://www.amazon.com/dp/B0CGLRS59K) | 4 件装 3 英寸可充电 LED 球灯 | 4-Pack 3-Inch Rechargeable LED Orb Lights | 234 / -7.26% | $7,018 | $29.99 | 7 / - | 4.1 | $5.33 / 67% | 5 | 215 | 1 | 0.99 pounds | 2023-10-21 2年 7个月 |
-| 46 | [B0GKP62C2P](https://www.amazon.com/dp/B0GKP62C2P) | 带遥控器的 Ollny 泳池灯 | Ollny Pool Lights with Remote | 167 / 127.08% | $9,183 | $54.99 | 25 / 6 | 4.4 | $6.14 / 74% | 2 | 171 | 1 | 1.7 pounds | 2026-03-12 2个月 |
-| 47 | [B0FC2HNS2W](https://www.amazon.com/dp/B0FC2HNS2W) | Govee 控制盒用于 Govee 永久户外灯 2（不可切割… | Govee Control Box for Govee Permanent Outdoor Lights 2(Non cuttab… | 285 / -36.46% | $11,397 | $39.99 | 51 / 5 | 4.1 | $3.86 / 75% | 1 | 82 | 1 | 0.15 pounds | 2025-07-04 11个月 |
-| 48 | [B0GHNK43Y3](https://www.amazon.com/dp/B0GHNK43Y3) | Glendan 太阳能泳池灯 2 件装 | Glendan Solar Pool Lights 2 Pack | 132 / 1027.27% | $2,757 | $20.89 | 18 / 8 | 4.6 | $4.87 / 62% | 4 | 209 | 1 | 0.93 pounds | 2026-02-07 4个月 |
-| 49 | [B0GV42FP64](https://www.amazon.com/dp/B0GV42FP64) | 太阳能浮动泳池灯 | Solar Floating Pool Lights | 198 / 3560% | $5,641 | $28.49 | 23 / 21 | 4.1 | $5.33 / 66% | 1 | 117 | 1 | 1.15 pounds | 2026-04-22 1个月 |
-| 50 | [B0F5HCJ48G](https://www.amazon.com/dp/B0F5HCJ48G) | 8 件装地上泳池太阳能泳池灯 | 8 Pack Solar Pool Lights for Above Ground Pools | 180 / 35.85% | $5,218 | $28.99 | 51 / 3 | 4.7 | $6.48 / 63% | 2 | 172 | 1 | 1.87 pounds | 2025-05-26 1年 |
+| 33 | [B0DRVNRG71](https://www.amazon.com/dp/B0DRVNRG71) | 泳池温度计易于读取 | Pool Thermometer Easy to Read | 147 / 19.64% | $2,939 | $19.99 | 34 / 3 | 4.2 | $5.87 / 56% | 1 | 225 | 1 | 1.04 pounds | 2025-02-02 1年 4个月 |
+| 34 | [B0G6RSQ265](https://www.amazon.com/dp/B0G6RSQ265) | 浮动泳池灯，2026 升级版太阳能泳池灯…… | Floating Pool Lights,2026 Upgraded Solar Powered Pool Lights that… | 175 / 25.21% | $3,474 | $19.85 | 31 / 1 | 4.2 | $6.31 / 53% | 1 | 85 | 1 | 1.73 pounds | 2026-02-11 3个月 |
+| 35 | [B0G4MRZ8GV](https://www.amazon.com/dp/B0G4MRZ8GV) | 40寸太阳能泳池浮灯 | 40inch Solar Pool Floats Lights | 472 / 618.18% | $12,739 | $26.99 | 31 / - | 4.6 | $5.33 / 65% | 1 | 237 | 1 | 1.19 pounds | 2026-03-27 2个月 |
+| 36 | [B0G8JJ8BKW](https://www.amazon.com/dp/B0G8JJ8BKW) | 太阳能泳池灯，太阳能供电地上泳池灯，框架灯… | Solar Pool Lights,Solar Powered Above Ground Pool Lights,Frame Po… | 204 / 60.87% | $4,074 | $19.97 | 30 / 7 | 4.2 | $5.22 / 59% | 2 | 136 | 1 | 0.79 pounds | 2026-03-09 3个月 |
+| 37 | [B0DSVLHR3L](https://www.amazon.com/dp/B0DSVLHR3L) | 泳池灯（4只装） | Pool Lights(4 PACK) | 249 / 33.13% | $14,788 | $59.39 | 124 / 11 | 4.1 | $6.40 / 74% | 5 | 153 | 1 | 1.83 pounds | 2025-03-20 1年 2个月 |
+| 38 | [B0G8X6721P](https://www.amazon.com/dp/B0G8X6721P) | 地下和地上泳池的泳池灯 | Pool Lights for Inground & Above Ground Pool | 183 / 24% | $5,461 | $29.84 | 20 / 6 | 4.4 | $5.13 / 68% | 2 | 114 | 1 | 1.23 pounds | 2026-04-07 2个月 |
+| 39 | [B0D93J8T91](https://www.amazon.com/dp/B0D93J8T91) | LED 泳池灯泡 12V 50W 5000LM 6500K 日光白色 LED 游泳灯… | LED Pool Light Bulb 12V 50W 5000LM 6500K Daylight White LED Swimm… | 144 / 14.73% | $5,471 | $37.99 | 75 / - | 4.0 | $4.35 / 74% | 1 | 264 | 1 | 0.68 pounds | 2024-08-08 1年 10个月 |
+| 40 | [B0GCY2K128](https://www.amazon.com/dp/B0GCY2K128) | 太阳能浮动泳池灯 | Solar Floating Pool Lights | 133 / 3833.33% | $4,787 | $35.99 | 25 / 24 | 4.6 | $4.76 / 57% | 1 | 290 | 1 | 0.75 pounds | 2026-03-23 2个月 |
+| 41 | [B0GR8YW1JR](https://www.amazon.com/dp/B0GR8YW1JR) | 太阳能泳池氯气浮标带浮灯 | Solar Pool Chlorine Floater with Floating Light | 165 / 225% | $4,701 | $28.49 | 47 / - | 4.6 | $6.42 / 69% | 3 | 194 | 1 | 1.79 pounds | 2026-03-14 2个月 |
+| 42 | [B0G6KG7PTB](https://www.amazon.com/dp/B0G6KG7PTB) | 地上泳池太阳能泳池灯 | Solar Pool Lights for Above Ground Pools | 174 / 39.52% | $8,674 | $49.85 | 27 / 8 | 4.2 | $5.61 / 74% | 2 | 202 | 2 | 1.46 pounds | 2026-03-09 3个月 |
+| 43 | [B0CGLRS59K](https://www.amazon.com/dp/B0CGLRS59K) | 4 件装 3 英寸可充电 LED 球灯 | 4-Pack 3-Inch Rechargeable LED Orb Lights | 234 / -7.26% | $7,018 | $29.99 | 7 / - | 4.1 | $5.33 / 67% | 5 | 215 | 1 | 0.99 pounds | 2023-10-21 2年 7个月 |
+| 44 | [B0GKP62C2P](https://www.amazon.com/dp/B0GKP62C2P) | 带遥控器的 Ollny 泳池灯 | Ollny Pool Lights with Remote | 167 / 127.08% | $9,183 | $54.99 | 25 / 6 | 4.4 | $6.14 / 74% | 2 | 171 | 1 | 1.7 pounds | 2026-03-12 2个月 |
+| 45 | [B0FC2HNS2W](https://www.amazon.com/dp/B0FC2HNS2W) | Govee 控制盒用于 Govee 永久户外灯 2（不可切割… | Govee Control Box for Govee Permanent Outdoor Lights 2(Non cuttab… | 285 / -36.46% | $11,397 | $39.99 | 51 / 5 | 4.1 | $3.86 / 75% | 1 | 82 | 1 | 0.15 pounds | 2025-07-04 11个月 |
+| 46 | [B0GHNK43Y3](https://www.amazon.com/dp/B0GHNK43Y3) | Glendan 太阳能泳池灯 2 件装 | Glendan Solar Pool Lights 2 Pack | 132 / 1027.27% | $2,757 | $20.89 | 18 / 8 | 4.6 | $4.87 / 62% | 4 | 209 | 1 | 0.93 pounds | 2026-02-07 4个月 |
+| 47 | [B0GV42FP64](https://www.amazon.com/dp/B0GV42FP64) | 太阳能浮动泳池灯 | Solar Floating Pool Lights | 198 / 3560% | $5,641 | $28.49 | 23 / 21 | 4.1 | $5.33 / 66% | 1 | 117 | 1 | 1.15 pounds | 2026-04-22 1个月 |
+| 48 | [B0GQSNQB37](https://www.amazon.com/dp/B0GQSNQB37) | 太阳能泳池灯、带水下灯的火焰漂浮泳池灯…… | Solar Pool Lights,Flame Floating Pool Lights with Underwater Ligh… | 328 / 4.37% | $7,924 | $24.16 | 39 / 16 | 4.4 | $6.31 / 59% | 2 | 108 | 1 | 1.87 pounds | 2026-04-16 1个月 |
+| 49 | [B0G6TLWN2W](https://www.amazon.com/dp/B0G6TLWN2W) | 满月浮动泳池灯 | Full Moon Floating Pool Lights | 197 / 21.55% | $5,317 | $26.99 | 39 / 13 | 4.2 | $5.22 / 66% | 3 | 196 | 1 | 1.17 pounds | 2026-03-27 2个月 |
+| 50 | [B0F5HCJ48G](https://www.amazon.com/dp/B0F5HCJ48G) | 8 件装地上泳池太阳能泳池灯 | 8 Pack Solar Pool Lights for Above Ground Pools | 166 / 55.66% | $4,812 | $28.99 | 51 / 3 | 4.7 | $6.48 / 63% | 2 | 172 | 1 | 1.87 pounds | 2025-05-26 1年 |
 
 ## 二、完整商品标题
 
@@ -86,21 +88,21 @@
 
 **12. [B0GKSD39QN](https://www.amazon.com/dp/B0GKSD39QN)** 26.5inch Solar Pool Floats Lights, IP68 Waterproof Solar Powered Floating Pool Lights, 16 RGB Colors Turtle Inflatable Light Up Pool Float for Above Ground Pools, Outdoor Swimming Pool Decorations
 
-**13. [B0GHQCV9JX](https://www.amazon.com/dp/B0GHQCV9JX)** VICHTOP Solar Floating Pool Lights (2-Pack)
+**13. [B0GCHCH52Q](https://www.amazon.com/dp/B0GCHCH52Q)** NIORSUN Floating Solar Pool Lights(3 Pack), IP68 Waterproof Solar Powered Pool Lights with Remote Control & Timer, 9 Lighting Colors& 3 Modes Pool Light for Inground Above Ground Pool, Hot Tubs
 
-**14. [B0GCHCH52Q](https://www.amazon.com/dp/B0GCHCH52Q)** NIORSUN Floating Solar Pool Lights(3 Pack), IP68 Waterproof Solar Powered Pool Lights with Remote Control & Timer, 9 Lighting Colors& 3 Modes Pool Light for Inground Above Ground Pool, Hot Tubs
+**14. [B0GQY98YPK](https://www.amazon.com/dp/B0GQY98YPK)** Solar Floating Pool Lights - Pool Lights, 18 RGB Lighting Modes, IP68 Waterproof, for Inground and Above Ground Pool, Pool Party, Bathroom, Bathtub, Garden, Pond Decor（2Pcs）
 
-**15. [B0GQY98YPK](https://www.amazon.com/dp/B0GQY98YPK)** Solar Floating Pool Lights - Pool Lights, 18 RGB Lighting Modes, IP68 Waterproof, for Inground and Above Ground Pool, Pool Party, Bathroom, Bathtub, Garden, Pond Decor（2Pcs）
+**15. [B0G8JMLK42](https://www.amazon.com/dp/B0G8JMLK42)** Floating Pool Lights,Upgraded Pool Lights That Float,6000mAh Rechargeable Color Changing Pool Lights,IP68 Waterproof LED Lighting for Inground Above Ground Swimming Pools,Hot Tub,Party 1PC
 
-**16. [B0G8JMLK42](https://www.amazon.com/dp/B0G8JMLK42)** Floating Pool Lights,Upgraded Pool Lights That Float,6000mAh Rechargeable Color Changing Pool Lights,IP68 Waterproof LED Lighting for Inground Above Ground Swimming Pools,Hot Tub,Party 1PC
+**16. [B0GF18Z34X](https://www.amazon.com/dp/B0GF18Z34X)** Solar Powered Pool Lights for Framed Above Ground Pools, Waterproof RGB Color Changing Light, Backyard Decor Accessories for Framed Swimming Pools, 4 Pack
 
-**17. [B0GF18Z34X](https://www.amazon.com/dp/B0GF18Z34X)** Solar Powered Pool Lights for Framed Above Ground Pools, Waterproof RGB Color Changing Light, Backyard Decor Accessories for Framed Swimming Pools, 4 Pack
+**17. [B0G2QWZXPZ](https://www.amazon.com/dp/B0G2QWZXPZ)** NIORSUN Floating Solar Pool Lights, 5.8 Inch IP68 Waterproof Pool Lights with Remote, 9 RGB Color LED Pool Solar Lights with Timer Auto On/Off, Pool Lights for Inground Above Ground Pools Hot Tub Spa
 
-**18. [B0G2QWZXPZ](https://www.amazon.com/dp/B0G2QWZXPZ)** NIORSUN Floating Solar Pool Lights, 5.8 Inch IP68 Waterproof Pool Lights with Remote, 9 RGB Color LED Pool Solar Lights with Timer Auto On/Off, Pool Lights for Inground Above Ground Pools Hot Tub Spa
+**18. [B0G6Z1QM2M](https://www.amazon.com/dp/B0G6Z1QM2M)** Floating Pool Lights Solar Powered, 16'' Inflatable Waterproof Clownfish Solar Pool Lights that Float, Auto On/Off LED Floating Lights for Pool Garden Backyard Outdoor Decoration - (2 Piece)
 
-**19. [B0F1FJ7HXS](https://www.amazon.com/dp/B0F1FJ7HXS)** Floating Pool Lights, 15 Inch Warm White Solar Pool Light that Float, IP68 Waterproof Inflatable Light Up Pool Balls, Float or Hang Solar Floating Lights for Pool Pond Wedding Party Decor-4PCS
+**19. [B0GHQCV9JX](https://www.amazon.com/dp/B0GHQCV9JX)** VICHTOP Solar Floating Pool Lights (2-Pack)
 
-**20. [B0G6Z1QM2M](https://www.amazon.com/dp/B0G6Z1QM2M)** Floating Pool Lights Solar Powered, 16'' Inflatable Waterproof Clownfish Solar Pool Lights that Float, Auto On/Off LED Floating Lights for Pool Garden Backyard Outdoor Decoration - (2 Piece)
+**20. [B0F1FJ7HXS](https://www.amazon.com/dp/B0F1FJ7HXS)** Floating Pool Lights, 15 Inch Warm White Solar Pool Light that Float, IP68 Waterproof Inflatable Light Up Pool Balls, Float or Hang Solar Floating Lights for Pool Pond Wedding Party Decor-4PCS
 
 **21. [B0DWMMYNDB](https://www.amazon.com/dp/B0DWMMYNDB)** 55ft Solar Pool Lights for Above Ground Pools, 150 LEDs Remote IP65 Waterproof Rope Lights, 8 Color Modes, Swimming Frame Pool Decor Accessories for Outdoor Outside Trampoline Camping
 
@@ -126,39 +128,39 @@
 
 **32. [B0G6KXKVXG](https://www.amazon.com/dp/B0G6KXKVXG)** 2026 Floating Pool Lights Solar Powered,15" Inflatable Waterproof Pool Led Glow Balls,Solar Pool Lights That Float,Color Changing Floating Light Up Ball for Pool Gifts for Pool Owner Outdoor Decor-2PC
 
-**33. [B0GGB644JK](https://www.amazon.com/dp/B0GGB644JK)** VOLISUN Solar Pool Lights for Above Ground Pools,9 RGB Color LED Pool Light,IP65 Waterproof,Built-in Rechargeable Solar Battery,Pool Lights Solar Powered for Pond,Yard Decor(6pack)
+**33. [B0DRVNRG71](https://www.amazon.com/dp/B0DRVNRG71)** Pool Thermometer Easy to Read, Solar Pool Light with 8 RGBW Color Modes, Dual Dightal Displays for Inground Above Ground Pools (Green)
 
-**34. [B0DRVNRG71](https://www.amazon.com/dp/B0DRVNRG71)** Pool Thermometer Easy to Read, Solar Pool Light with 8 RGBW Color Modes, Dual Dightal Displays for Inground Above Ground Pools (Green)
+**34. [B0G6RSQ265](https://www.amazon.com/dp/B0G6RSQ265)** Floating Pool Lights,2026 Upgraded Solar Powered Pool Lights that Float,Flickering Flame Floating Solar Lights for Pool Lighting,Hangable IP68 Waterproof Swimming LED Pool Lights for Party,Outdoor-1PC
 
-**35. [B0G6RSQ265](https://www.amazon.com/dp/B0G6RSQ265)** Floating Pool Lights,2026 Upgraded Solar Powered Pool Lights that Float,Flickering Flame Floating Solar Lights for Pool Lighting,Hangable IP68 Waterproof Swimming LED Pool Lights for Party,Outdoor-1PC
+**35. [B0G4MRZ8GV](https://www.amazon.com/dp/B0G4MRZ8GV)** 40inch Solar Pool Floats Lights, IP68 Waterproof Solar Powered Shark Floating Pool Lights,16 Colors RGB Inflatable Light Up Pool Float for Above Ground Pools, Outdoor Swimming Pool Decorations
 
-**36. [B0G4MRZ8GV](https://www.amazon.com/dp/B0G4MRZ8GV)** 40inch Solar Pool Floats Lights, IP68 Waterproof Solar Powered Shark Floating Pool Lights,16 Colors RGB Inflatable Light Up Pool Float for Above Ground Pools, Outdoor Swimming Pool Decorations
+**36. [B0G8JJ8BKW](https://www.amazon.com/dp/B0G8JJ8BKW)** Solar Pool Lights,Solar Powered Above Ground Pool Lights,Frame Pool lights Waterproof,2026 Outdoor Swimming Pool Solar Light,Color Changing Pool Light for Above Ground Pool Accessories-1PC
 
-**37. [B0G6SBNN2L](https://www.amazon.com/dp/B0G6SBNN2L)** 2026 Solar Pool Lights with Digital Pool Thermometer,Color Changing Floating Pool Lights that Float IP68 Waterproof,Hangable Solar Powered Floating Light for Pool Lighting Party Decor-1 PC
+**37. [B0DSVLHR3L](https://www.amazon.com/dp/B0DSVLHR3L)** Pool Lights(4 PACK), Ultra-High Brightness Rechargeable Submersible Pool Lights with Remote, IP68 Waterproof 22 Colors Changing Light 2600mAh Magnet LED Underwater Light for Pools, Hot Tub, Ponds
 
-**38. [B0G8JJ8BKW](https://www.amazon.com/dp/B0G8JJ8BKW)** Solar Pool Lights,Solar Powered Above Ground Pool Lights,Frame Pool lights Waterproof,2026 Outdoor Swimming Pool Solar Light,Color Changing Pool Light for Above Ground Pool Accessories-1PC
+**38. [B0G8X6721P](https://www.amazon.com/dp/B0G8X6721P)** Pool Lights for Inground & Above Ground Pool, Underwater Submersible Swimming LED Pool Light with Remote Control,Waterproof Magnetic Pools Lights for Inground Above Ground Pools,Hot tub-1 PC
 
-**39. [B0DSVLHR3L](https://www.amazon.com/dp/B0DSVLHR3L)** Pool Lights(4 PACK), Ultra-High Brightness Rechargeable Submersible Pool Lights with Remote, IP68 Waterproof 22 Colors Changing Light 2600mAh Magnet LED Underwater Light for Pools, Hot Tub, Ponds
+**39. [B0D93J8T91](https://www.amazon.com/dp/B0D93J8T91)** LED Pool Light Bulb 12V 50W 5000LM 6500K Daylight White LED Swimming Pool Light Bulb, Replaces up to 200-800W Traditionnal Bulb for Most Pentair Hayward Light Fixtures（NOT 120V）
 
-**40. [B0G8X6721P](https://www.amazon.com/dp/B0G8X6721P)** Pool Lights for Inground & Above Ground Pool, Underwater Submersible Swimming LED Pool Light with Remote Control,Waterproof Magnetic Pools Lights for Inground Above Ground Pools,Hot tub-1 PC
+**40. [B0GCY2K128](https://www.amazon.com/dp/B0GCY2K128)** Solar Floating Pool Lights, RGB Color Changing Pool Light with Breathing Effect, IP65 Waterproof Solar Powered Lights, Auto Dusk-to-Dawn Floating Decor for Swimming Pool, Pond, Garden (2 Pack)
 
-**41. [B0D93J8T91](https://www.amazon.com/dp/B0D93J8T91)** LED Pool Light Bulb 12V 50W 5000LM 6500K Daylight White LED Swimming Pool Light Bulb, Replaces up to 200-800W Traditionnal Bulb for Most Pentair Hayward Light Fixtures（NOT 120V）
+**41. [B0GR8YW1JR](https://www.amazon.com/dp/B0GR8YW1JR)** Solar Pool Chlorine Floater with Floating Light, APP-Controlled, RGB Color, IP68 Waterproof, Large Capacity for 2 Tablets, Blue
 
-**42. [B0GCY2K128](https://www.amazon.com/dp/B0GCY2K128)** Solar Floating Pool Lights, RGB Color Changing Pool Light with Breathing Effect, IP65 Waterproof Solar Powered Lights, Auto Dusk-to-Dawn Floating Decor for Swimming Pool, Pond, Garden (2 Pack)
+**42. [B0G6KG7PTB](https://www.amazon.com/dp/B0G6KG7PTB)** Solar Pool Lights for Above Ground Pools, Solar Powered Pool Lights with 10 Lighting Modes, Upgraded Pool Lights for Framed Above Ground Pools Solar Light Waterproof, Swimming Pool Accessories 2PC
 
-**43. [B0GR8YW1JR](https://www.amazon.com/dp/B0GR8YW1JR)** Solar Pool Chlorine Floater with Floating Light, APP-Controlled, RGB Color, IP68 Waterproof, Large Capacity for 2 Tablets, Blue
+**43. [B0CGLRS59K](https://www.amazon.com/dp/B0CGLRS59K)** 4-Pack 3-Inch Rechargeable LED Orb Lights – 16 Color Glow Spheres, 4 Modes, Waterproof Ambient Lighting Balls, Glowing Orbs for Indoor, Outdoor, Pool, Room, and Patio Decor
 
-**44. [B0G6KG7PTB](https://www.amazon.com/dp/B0G6KG7PTB)** Solar Pool Lights for Above Ground Pools, Solar Powered Pool Lights with 10 Lighting Modes, Upgraded Pool Lights for Framed Above Ground Pools Solar Light Waterproof, Swimming Pool Accessories 2PC
+**44. [B0GKP62C2P](https://www.amazon.com/dp/B0GKP62C2P)** Ollny Pool Lights with Remote, Rechargeable Submersible LED Lights 3000mAh Battery, 16 Colors Changing IP67 Waterproof LED Puck Lights for Above Ground Pools, Inground Pool, Ponds, Hot Tubs 4 Pack
 
-**45. [B0CGLRS59K](https://www.amazon.com/dp/B0CGLRS59K)** 4-Pack 3-Inch Rechargeable LED Orb Lights – 16 Color Glow Spheres, 4 Modes, Waterproof Ambient Lighting Balls, Glowing Orbs for Indoor, Outdoor, Pool, Room, and Patio Decor
+**45. [B0FC2HNS2W](https://www.amazon.com/dp/B0FC2HNS2W)** Govee Control Box for Govee Permanent Outdoor Lights 2(Non cuttable & Non-Pro Version), No Included Light Strings, Parts only Applicable for 50ft H705D,100ft H705E, 150ft H705F, White Version
 
-**46. [B0GKP62C2P](https://www.amazon.com/dp/B0GKP62C2P)** Ollny Pool Lights with Remote, Rechargeable Submersible LED Lights 3000mAh Battery, 16 Colors Changing IP67 Waterproof LED Puck Lights for Above Ground Pools, Inground Pool, Ponds, Hot Tubs 4 Pack
+**46. [B0GHNK43Y3](https://www.amazon.com/dp/B0GHNK43Y3)** Glendan Solar Pool Lights 2 Pack, RGB Changing Floating Pool Lights with 10m Remote Control, 4 Dimming, 13 Lighting, Timing Mode, IP68 Waterproof for Inground/Above Ground Pool, Party Decoration
 
-**47. [B0FC2HNS2W](https://www.amazon.com/dp/B0FC2HNS2W)** Govee Control Box for Govee Permanent Outdoor Lights 2(Non cuttable & Non-Pro Version), No Included Light Strings, Parts only Applicable for 50ft H705D,100ft H705E, 150ft H705F, White Version
+**47. [B0GV42FP64](https://www.amazon.com/dp/B0GV42FP64)** Solar Floating Pool Lights, RGBW Color Changing 12-LED 20H Runtime with Remote, Outdoor Pool Decorations for Beach Pond and Party, Cute Crab 2PK
 
-**48. [B0GHNK43Y3](https://www.amazon.com/dp/B0GHNK43Y3)** Glendan Solar Pool Lights 2 Pack, RGB Changing Floating Pool Lights with 10m Remote Control, 4 Dimming, 13 Lighting, Timing Mode, IP68 Waterproof for Inground/Above Ground Pool, Party Decoration
+**48. [B0GQSNQB37](https://www.amazon.com/dp/B0GQSNQB37)** Solar Pool Lights,Flame Floating Pool Lights with Underwater Light,IP68 Waterproof Solar Powered Pool Lighting, 10 Light Modes Hangable Floating Light for Pool Party,Pond Outdoor Decor,1 PC
 
-**49. [B0GV42FP64](https://www.amazon.com/dp/B0GV42FP64)** Solar Floating Pool Lights, RGBW Color Changing 12-LED 20H Runtime with Remote, Outdoor Pool Decorations for Beach Pond and Party, Cute Crab 2PK
+**49. [B0G6TLWN2W](https://www.amazon.com/dp/B0G6TLWN2W)** Full Moon Floating Pool Lights - 15" Inflatable Waterproof Solar Pool Lights that Float, Cool White&Warm White Light Up Pools Balls, Float or Hang in Pond Backyard Garden Party Decorations(2)
 
 **50. [B0F5HCJ48G](https://www.amazon.com/dp/B0F5HCJ48G)** 8 Pack Solar Pool Lights for Above Ground Pools, IP65 Waterproof LED Solar Charging and Auto Lights at Night, Essential Accessory for Summer Backyard Fence, Swimming Pool Enclosure Warm Lighting
 
@@ -341,14 +343,14 @@
 - `B0GRV2RCT8`: 23,282 | -3,589 | -18% | 425 | 271.43% | $22,517 | 300+ | $16K+ | 1 | $52.98 | - | 17 | 12 | 4.3 | 2.82% | $7.28 | 71% | 2026-04-10 | 1个月 | FBA | -
 - `B0GHZ3X66S`: 10,894 | 8,566 | 44% | 511 | 215.08% | $18,902 | 300+ | $10K+ | 2 | $36.99 | - | 38 | 5 | 4.4 | 0.98% | $4.46 | 73% | 2026-03-15 | 2个月 | FBA | -
 - `B0GKSD39QN`: 33,210 | -9,776 | -42% | 504 | 650% | $13,603 | 300+ | $8K+ | 1 | $26.99 | - | 28 | - | 4.4 | - | $4.87 | 67% | 2026-04-01 | 2个月 | FBA | -
-- `B0GHQCV9JX`: 12,413 | 8,431 | 40% | 507 | -20.1% | $18,247 | 300+ | $10K+ | 2 | $35.99 | - | 75 | 37 | 4.0 | 7.3% | $7.01 | 66% | 2026-03-10 | 2个月 | FBA | -
 - `B0GCHCH52Q`: 14,407 | 2,544 | 15% | 441 | 9000% | $14,813 | 300+ | $14K+ | 3 | $33.59 | - | 22 | 11 | 4.0 | 2.49% | $5.33 | 69% | 2026-04-17 | 1个月 | FBA | -
 - `B0GQY98YPK`: 33,403 | -25,069 | -301% | 545 | - | $32,695 | 300+ | $17K+ | 3 | $59.99 | - | 18 | 12 | 4.4 | 2.2% | $6.40 | 74% | 2026-05-07 | 1个月 | FBA | -
 - `B0G8JMLK42`: 11,786 | 4,952 | 30% | 474 | 437.68% | $9,471 | 300+ | $5K+ | 2 | $19.98 | - | 32 | 9 | 4.8 | 1.9% | $5.61 | 57% | 2026-03-16 | 2个月 | FBA | -
 - `B0GF18Z34X`: 11,747 | 2,727 | 19% | 518 | 455.32% | $9,319 | 300+ | $5K+ | 3 | $17.99 | - | 28 | 8 | 4.6 | 1.54% | $6.13 | 51% | 2026-02-28 | 3个月 | FBA | -
 - `B0G2QWZXPZ`: 12,270 | 8,488 | 42% | 426 | 315.56% | $17,036 | 300+ | $14K+ | 3 | $39.99 | - | 33 | 11 | 4.5 | 2.58% | $5.72 | 71% | 2026-03-23 | 2个月 | FBA | -
-- `B0F1FJ7HXS`: 10,173 | -1,422 | -16% | 840 | 52.82% | $47,872 | 300+ | $18K+ | 5 | $56.99 | - | 98 | 11 | 4.2 | 1.31% | $7.17 | 72% | 2025-04-27 | 1年 1个月 | FBA | -
 - `B0G6Z1QM2M`: 17,848 | 2,173 | 11% | 360 | 50.41% | $10,796 | 300+ | $9K+ | 2 | $29.99 | - | 50 | 13 | 4.6 | 3.61% | $5.61 | 66% | 2026-02-07 | 4个月 | FBA | -
+- `B0GHQCV9JX`: 12,394 | 4,956 | 29% | 465 | -20.1% | $16,735 | 300+ | $10K+ | 2 | $35.99 | - | 75 | 39 | 4.0 | 8.39% | $7.01 | 66% | 2026-03-10 | 2个月 | FBA | -
+- `B0F1FJ7HXS`: 10,162 | -1,422 | -16% | 840 | 52.82% | $47,872 | 300+ | $18K+ | 5 | $56.99 | - | 98 | 11 | 4.2 | 1.31% | $7.17 | 72% | 2025-04-27 | 1年 1个月 | FBA | -
 - `B0DWMMYNDB`: 18,612 | 2,605 | 13% | 468 | 147.55% | $9,355 | 200+ | $3K+ | 4 | $19.99 | - | 116 | 9 | 4.0 | 1.92% | $4.46 | 63% | 2025-02-28 | 1年 3个月 | FBA | -
 - `B0GGB7XQR9`: 36,711 | -4,075 | -12% | 260 | 353.19% | $7,277 | 200+ | $5K+ | 1 | $27.99 | - | 23 | 8 | 4.2 | 3.08% | $6.24 | 63% | 2026-04-01 | 2个月 | FBA | -
 - `B0DXVSDMZF`: 23,716 | 6,696 | 22% | 401 | 122.15% | $16,036 | 200+ | $7K+ | 2 | $39.99 | - | 28 | 4 | 4.3 | 1% | $4.35 | 74% | 2025-05-07 | 1年 1个月 | FBA | -
@@ -361,11 +363,9 @@
 - `B0GJD2YG5K`: 35,676 | -889 | -3% | 255 | 230.88% | $15,297 | 100+ | $5K+ | 2 | $59.99 | - | 25 | 5 | 4.5 | 1.96% | $6.14 | 75% | 2026-04-09 | 2个月 | FBA | -
 - `B0CTTNSX76`: 152,701 | -85,160 | -126% | 123 | 193.18% | $7,379 | 100+ | $5K+ | 1 | $59.99 | - | 6 | - | 4.5 | - | $5.49 | 76% | 2024-10-17 | 1年 7个月 | FBA | -
 - `B0G6KXKVXG`: 37,780 | 20,556 | 35% | 271 | 5.56% | $7,312 | 100+ | $2K+ | 2 | $26.98 | - | 44 | - | 4.3 | - | $8.46 | 54% | 2026-02-27 | 3个月 | FBA | -
-- `B0GGB644JK`: 17,054 | 8,174 | 33% | 429 | 162.82% | $20,588 | 100+ | $4K+ | 3 | $47.99 | - | 36 | 15 | 4.2 | 3.5% | $5.61 | 73% | 2026-03-16 | 2个月 | FBA | -
 - `B0DRVNRG71`: 122,141 | -81,429 | -200% | 147 | 19.64% | $2,939 | 100+ | $1K+ | 1 | $19.99 | - | 34 | 3 | 4.2 | 2.04% | $5.87 | 56% | 2025-02-02 | 1年 4个月 | FBA | -
 - `B0G6RSQ265`: 20,482 | 47,449 | 70% | 175 | 25.21% | $3,474 | 100+ | $2K+ | 1 | $19.85 | - | 31 | 1 | 4.2 | 0.57% | $6.31 | 53% | 2026-02-11 | 3个月 | FBA | -
 - `B0G4MRZ8GV`: 64,830 | -41,207 | -174% | 472 | 618.18% | $12,739 | 100+ | $2K+ | 1 | $26.99 | - | 31 | - | 4.6 | - | $5.33 | 65% | 2026-03-27 | 2个月 | FBA | -
-- `B0G6SBNN2L`: 31,595 | 44,400 | 58% | 201 | -16.36% | $3,789 | 100+ | $2K+ | 2 | $18.85 | - | 37 | 12 | 4.2 | 5.97% | $5.22 | 57% | 2026-03-07 | 3个月 | FBA | -
 - `B0G8JJ8BKW`: 35,076 | 13,393 | 28% | 204 | 60.87% | $4,074 | 100+ | $2K+ | 2 | $19.97 | - | 30 | 7 | 4.2 | 3.43% | $5.22 | 59% | 2026-03-09 | 3个月 | FBA | -
 - `B0DSVLHR3L`: 38,422 | 3,243 | 8% | 249 | 33.13% | $14,788 | 100+ | $5K+ | 5 | $59.39 | - | 124 | 11 | 4.1 | 4.42% | $6.40 | 74% | 2025-03-20 | 1年 2个月 | FBA | -
 - `B0G8X6721P`: 28,517 | 27,292 | 50% | 183 | 24% | $5,461 | 100+ | $3K+ | 2 | $29.84 | - | 20 | 6 | 4.4 | 3.28% | $5.13 | 68% | 2026-04-07 | 2个月 | FBA | -
@@ -378,4 +378,6 @@
 - `B0FC2HNS2W`: 19,063 | 113,886 | 86% | 285 | -36.46% | $11,397 | 100+ | $3K+ | 1 | $39.99 | - | 51 | 5 | 4.1 | 1.75% | $3.86 | 75% | 2025-07-04 | 11个月 | FBA | -
 - `B0GHNK43Y3`: 56,064 | 6,438 | 10% | 132 | 1027.27% | $2,757 | 100+ | $2K+ | 4 | $20.89 | - | 18 | 8 | 4.6 | 6.06% | $4.87 | 62% | 2026-02-07 | 4个月 | FBA | -
 - `B0GV42FP64`: 30,414 | 19,407 | 39% | 198 | 3560% | $5,641 | 100+ | $3K+ | 1 | $28.49 | - | 23 | 21 | 4.1 | 10.61% | $5.33 | 66% | 2026-04-22 | 1个月 | FBA | -
-- `B0F5HCJ48G`: 44,851 | 7,836 | 15% | 180 | 35.85% | $5,218 | 100+ | $2K+ | 2 | $28.99 | - | 51 | 3 | 4.7 | 1.67% | $6.48 | 63% | 2025-05-26 | 1年 | FBA | -
+- `B0GQSNQB37`: 27,911 | -3,716 | -15% | 328 | 4.37% | $7,924 | 100+ | $2K+ | 2 | $24.16 | - | 39 | 16 | 4.4 | 4.88% | $6.31 | 59% | 2026-04-16 | 1个月 | FBA | -
+- `B0G6TLWN2W`: 52,143 | -9,292 | -22% | 197 | 21.55% | $5,317 | 100+ | $3K+ | 3 | $26.99 | - | 39 | 13 | 4.2 | 6.6% | $5.22 | 66% | 2026-03-27 | 2个月 | FBA | -
+- `B0F5HCJ48G`: 44,851 | 7,836 | 15% | 166 | 55.66% | $4,812 | 100+ | $2K+ | 2 | $28.99 | - | 51 | 3 | 4.7 | 1.81% | $6.48 | 63% | 2025-05-26 | 1年 | FBA | -
