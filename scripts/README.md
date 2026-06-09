@@ -34,7 +34,6 @@ python3 scripts/find_products.py                   # stage 3, single category
 python3 scripts/find_products.py --categories-file cats.json  # stage 3, batch
 
 python3 scripts/find_asin_keywords.py B0FS72284D   # reverse keyword lookup on ASIN
-python3 scripts/import_market_excel.py market.xlsx --report results/market_scan_report.md
 ```
 
 ---

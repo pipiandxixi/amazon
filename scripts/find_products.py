@@ -294,6 +294,21 @@ def _explain_filters(config_filters: dict) -> list[str]:
 _CN_NUMS = ["一", "二", "三", "四", "五", "六", "七"]
 
 
+def _est_cogs(price_str: str, fba_fee_str: str, margin_str: str) -> str:
+    """Estimate COGS from SellerSprite margin model: cogs = price*(1-margin) - fba_fee."""
+    try:
+        price = float(re.sub(r"[^0-9.]", "", price_str))
+        fba = float(re.sub(r"[^0-9.]", "", fba_fee_str))
+        margin = float(re.sub(r"[^0-9.]", "", margin_str)) / 100
+        if price <= 0 or not (0 < margin < 1):
+            return "-"
+        cogs = price * (1 - margin) - fba
+        ratio = cogs / price * 100
+        return f"${cogs:.2f} ({ratio:.0f}%)"
+    except (ValueError, ZeroDivisionError):
+        return "-"
+
+
 def _market_metric_str(entry: dict) -> str:
     """Format market metrics with qualitative labels based on risk thresholds."""
     def tag_reviews(v):
@@ -407,18 +422,19 @@ def write_report(
     # --- 候选商品列表 ---
     md.append(f"## {next(sec)}、候选商品列表\n")
     md += [
-        "| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |",
-        "|---:|---|---|---|---|---:|---:|---|---:|---|---:|---:|---:|---|---|",
+        "| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |",
+        "|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|",
     ]
     for index, (product, short, zh) in enumerate(zip(products, short_titles, zh_names), 1):
         clean = {k: str(v).replace("|", "\\|").replace("\n", " ") for k, v in product.items()}
         short_clean = short.replace("|", "\\|")
         zh_clean = (zh or "").replace("|", "\\|")
         asin_link = f"[{clean['asin']}](https://www.amazon.com/dp/{clean['asin']})"
+        cogs = _est_cogs(clean["price"], clean["fba_fee"], clean["profit_margin"])
         md.append(
             f"| {index} | {asin_link} | {zh_clean} | {short_clean} | "
             f"{clean['monthly_sales']} / {clean['sales_growth']} | {clean['monthly_revenue']} | "
-            f"{clean['price']} | {clean['reviews']} / {clean['monthly_new_reviews']} | "
+            f"{clean['price']} | {cogs} | {clean['reviews']} / {clean['monthly_new_reviews']} | "
             f"{clean['rating']} | {clean['fba_fee']} / {clean['profit_margin']} | "
             f"{clean['variants']} | {clean['leaf_rank']} | {clean['sellers']} | "
             f"{clean['package_weight']} | {clean['listing_date']} {clean['listing_age']} |"

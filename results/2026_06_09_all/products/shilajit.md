@@ -9,35 +9,35 @@
 
 ## 一、候选商品列表
 
-| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
-|---:|---|---|---|---|---:|---:|---|---:|---|---:|---:|---:|---|---|
-| 1 | [B0GH83NW9N](https://www.amazon.com/dp/B0GH83NW9N) | Zooone 喜来芝喜马拉雅软糖含 Ashwagandha 和 Black Musli… | zooone Shilajit Himalayan Gummies with Ashwagandha & Black Musli… | 460 / -10.57% | $11,955 | $25.99 | 62 / 9 | 4.2 | $5.61 / 63% | 1 | 32 | 1 | 0.51 pounds | 2026-01-20 4个月 |
-| 2 | [B0G7XFLKQM](https://www.amazon.com/dp/B0G7XFLKQM) | 男士米英寸喜来芝 | M inch Shilajit for Men | 397 / 85.78% | $10,715 | $26.99 | 18 / 1 | 4.9 | $3.86 / 71% | 2 | 48 | 1 | 0.22 pounds | 2026-03-20 2个月 |
-| 3 | [B0GQ44P989](https://www.amazon.com/dp/B0GQ44P989) | 布卢明蜂蜜棒 | Bloomin Honey Sticks | 343 / -2.29% | $11,659 | $33.99 | 35 / 7 | 4.3 | $4.76 / 71% | 1 | 55 | 2 | 0.86 pounds | 2026-02-26 3个月 |
-| 4 | [B0GQMPHB57](https://www.amazon.com/dp/B0GQMPHB57) | 布卢明蜂蜜棒 | Bloomin Honey Sticks | 324 / -39.27% | $11,013 | $33.99 | 39 / 18 | 4.2 | $4.76 / 71% | 1 | 47 | 1 | 0.6 pounds | 2026-03-02 3个月 |
-| 5 | [B0G2S6Z593](https://www.amazon.com/dp/B0G2S6Z593) | Shilajit 和海苔 Ashwagandha 组合套装 - 海苔 | Shilajit and Sea Moss Ashwagandha Combo Bundle- Sea Moss | 270 / -23.01% | $7,287 | $26.99 | 37 / 15 | 4.4 | $4.09 / 70% | 1 | 80 | 1 | 0.33 pounds | 2025-12-14 5个月 |
-| 6 | [B0GQGLZMNY](https://www.amazon.com/dp/B0GQGLZMNY) | 布卢明蜂蜜棒 | Bloomin Honey Sticks | 313 / 91.25% | $10,639 | $33.99 | 21 / 14 | 4.1 | $4.76 / 71% | 1 | 86 | 1 | 0.8 pounds | 2026-03-05 3个月 |
-| 7 | [B0DNLDHPW1](https://www.amazon.com/dp/B0DNLDHPW1) | 100% 纯喜马拉雅喜来芝树脂金 500 有机 | 100% Pure Himalayan Shilajit Resin Gold 500 Organic | 273 / 42.25% | $9,006 | $32.99 | 88 / 5 | 4.3 | $4.09 / 73% | 1 | 75 | 1 | 0.29 pounds | 2025-03-31 1年 2个月 |
-| 8 | [B0GZZ4CV44](https://www.amazon.com/dp/B0GZZ4CV44) | Symbia Bloomin 喜来芝女士软糖，60 粒软糖 | Symbia Bloomin shilajit Gummies for Women,60 Gummies | 189 / - | $6,235 | $32.99 | 4 / - | 5.0 | $4.09 / 73% | 1 | 54 | 1 | 0.35 pounds | 2026-05-09 1个月 |
-| 9 | [B0DBDZ92QY](https://www.amazon.com/dp/B0DBDZ92QY) | Shilajit Pro Max 男士软糖 | Shilajit Pro Max for Men Gummies | 154 / 101.64% | $4,618 | $29.99 | 107 / - | 4.4 | $4.76 / 69% | 1 | 67 | 1 | 0.93 pounds | 2024-07-27 1年 10个月 |
-| 10 | [B0DPNM1287](https://www.amazon.com/dp/B0DPNM1287) | HUNY Bee 活力喜来芝蜂蜜棒 | HUNY Bee Energized Shilajit Honey Sticks | 168 / -29.68% | $5,878 | $34.99 | 125 / 13 | 4.1 | $4.35 / 73% | 1 | 98 | 1 | 0.73 pounds | 2024-12-07 1年 6个月 |
-| 11 | [B0DNFLGT95](https://www.amazon.com/dp/B0DNFLGT95) | 更好的 Alt 纯喜马拉雅喜来芝软糖，含喜来芝 \|High Po… | Better Alt Pure Himalayan Shilajit Gummies with Shilajit \|High Po… | 207 / 14.84% | $5,844 | $28.23 | 82 / 5 | 4.0 | $4.35 / 70% | 1 | 85 | 1 | 0.75 pounds | 2024-11-28 1年 6个月 |
-| 12 | [B0GQRHC4XG](https://www.amazon.com/dp/B0GQRHC4XG) | 布卢明蜂蜜棒 | Bloomin Honey Sticks | 193 / 230.77% | $6,560 | $33.99 | 13 / 10 | 4.7 | $4.09 / 73% | 2 | 112 | 1 | 0.51 pounds | 2026-03-04 3个月 |
-| 13 | [B0CZRZR9M9](https://www.amazon.com/dp/B0CZRZR9M9) | 微量矿物质喜来芝胶囊 | Trace Minerals Shilajit Capsules | 211 / 18.69% | $5,906 | $27.99 | 86 / - | 4.6 | $4.09 / 70% | 1 | 82 | 1 | 0.35 pounds | 2024-04-12 2年 1个月 |
-| 14 | [B0FXG35HTN](https://www.amazon.com/dp/B0FXG35HTN) | Adndale 喜马拉雅天然喜来芝男女软糖 | Adndale Himalayan Natural Shilajit Gummies for Men & Women | 148 / -42.01% | $3,527 | $23.83 | 46 / 9 | 4.4 | $4.35 / 67% | 1 | 80 | 1 | 0.73 pounds | 2026-01-24 4个月 |
-| 15 | [B0FMB7FSJY](https://www.amazon.com/dp/B0FMB7FSJY) | 临床线粒体复合体 | Clinical Mitochondrial Complex | 122 / 24.75% | $6,826 | $55.95 | 30 / 3 | 4.4 | $4.36 / 77% | 1 | 126 | 1 | 0.42 pounds | 2025-08-19 9个月 |
-| 16 | [B0F5BV9CHS](https://www.amazon.com/dp/B0F5BV9CHS) | KJHD Shilajit Ashwagandha 海苔软糖 | KJHD Shilajit Ashwagandha Gummies with Sea Moss | 121 / -2.34% | $3,013 | $24.90 | 56 / - | 4.2 | $4.09 / 69% | 2 | 98 | 1 | 0.42 pounds | 2025-04-30 1年 1个月 |
-| 17 | [B0DVLGRY37](https://www.amazon.com/dp/B0DVLGRY37) | Better Alt KSM 66 Ashwagandha 蜂蜜棒\|有机多花高… | Better Alt KSM 66 Ashwagandha Honey Sticks \|Organic Multiflora Hi… | 102 / -14.81% | $2,912 | $28.55 | 88 / 3 | 4.2 | $4.35 / 70% | 1 | 137 | 1 | 0.75 pounds | 2025-03-09 1年 3个月 |
-| 18 | [B0DNN4973Q](https://www.amazon.com/dp/B0DNN4973Q) | Better Alt 纯喜马拉雅喜来芝肉桂蜂蜜棒含有机… | Better Alt Pure Himalayan Shilajit Cinnamon Honey Sticks with Org… | 113 / 15.15% | $3,083 | $27.28 | 123 / 6 | 4.1 | $4.35 / 69% | 1 | 99 | 2 | 0.75 pounds | 2024-12-10 1年 5个月 |
-| 19 | [B0F1Q36826](https://www.amazon.com/dp/B0F1Q36826) | 喜马拉雅男士天然喜来芝软糖 | Himalayan Natural Shilajit Gummies for Men | 100 / -18.57% | $1,999 | $19.99 | 132 / 3 | 4.1 | $4.09 / 65% | 1 | 127 | 1 | 0.4 pounds | 2025-04-17 1年 1个月 |
-| 20 | [B0DNKX9XK6](https://www.amazon.com/dp/B0DNKX9XK6) | 纯喜马拉雅银杏叶喜来芝软糖 | Pure Himalayan Shilajit Gummies with Ginkgo Biloba | 121 / -10.6% | $4,234 | $34.99 | 82 / - | 4.4 | $4.35 / 73% | 1 | 135 | 1 | 0.6 pounds | 2025-05-07 1年 1个月 |
-| 21 | [B0GQ2WV2ZK](https://www.amazon.com/dp/B0GQ2WV2ZK) | Vitacore喜马拉雅喜来芝软糖 | VitacoreHimalayan Shilajit Gummies | 103 / -29.41% | $2,677 | $25.99 | 29 / 15 | 4.1 | $4.09 / 69% | 1 | 139 | 1 | 0.4 pounds | 2026-03-10 2个月 |
-| 22 | [B0FH24QSXJ](https://www.amazon.com/dp/B0FH24QSXJ) | 草药健康套装 | Herbal Wellness Bundle | 124 / -12.58% | $2,975 | $23.99 | 45 / 7 | 4.6 | $4.35 / 67% | 1 | 109 | 1 | 0.29 pounds | 2025-09-20 8个月 |
-| 23 | [B0CZYZ88F3](https://www.amazon.com/dp/B0CZYZ88F3) | Herb To Body 纯喜来芝苦味 - 16 盎司 | Herb To Body Pure Shilajit Bitter - 16oz | 107 / -4.65% | $3,209 | $29.99 | 37 / 6 | 4.4 | $5.76 / 66% | 3 | 139 | 2 | 1.74 pounds | 2024-04-13 2年 1个月 |
-| 24 | [B0D1NM4VHP](https://www.amazon.com/dp/B0D1NM4VHP) | 喜马拉雅喜来芝树脂 - 400 毫克高效 | Himalayan Shilajit Resin - 400mg High Potency | 121 / -10.22% | $3,024 | $24.99 | 120 / 2 | 4.3 | $4.09 / 69% | 1 | 95 | 1 | 0.37 pounds | 2024-11-16 1年 6个月 |
-| 25 | [B0DY62RBGD](https://www.amazon.com/dp/B0DY62RBGD) | Vasu 6 合 1 纯喜马拉雅金喜来芝软糖男女适用… | Vasu 6 in 1 Pure Himalayan Gold Shilajit Gummies for Men & Women… | 116 / -10.87% | $3,131 | $26.99 | 89 / 1 | 4.0 | $4.35 / 69% | 1 | 112 | 2 | 0.68 pounds | 2025-02-25 1年 3个月 |
-| 26 | [B0H1D1N8K9](https://www.amazon.com/dp/B0H1D1N8K9) | SupremeMale 10 合 1 Alpha 软糖 | SupremeMale 10 in 1 Alpha Gummies | 278 / - | $10,005 | 1 | - / 1 | - | - /  | - | 38 | 1 | 0.4 pounds | $4.09 74% |
-| 27 | [B0GYXTPZ49](https://www.amazon.com/dp/B0GYXTPZ49) | 喜来芝胶囊 600mg | Shilajit Capsules 600mg | 122 / -85.18% | $2,439 | $19.99 | 78 / 17 | 4.4 | $4.09 / 65% | 1 | 107 | 1 | 0.37 pounds | 2026-05-07 1个月 |
+| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
+|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
+| 1 | [B0GH83NW9N](https://www.amazon.com/dp/B0GH83NW9N) | Zooone 喜来芝喜马拉雅软糖含 Ashwagandha 和 Black Musli… | zooone Shilajit Himalayan Gummies with Ashwagandha & Black Musli… | 476 / -11.55% | $12,371 | $25.99 | $4.01 (15%) | 63 / 11 | 4.2 | $5.61 / 63% | 1 | 31 | 1 | 0.51 pounds | 2026-01-20 4个月 |
+| 2 | [B0G7XFLKQM](https://www.amazon.com/dp/B0G7XFLKQM) | 男士米英寸喜来芝 | M inch Shilajit for Men | 397 / 85.78% | $10,715 | $26.99 | $3.97 (15%) | 18 / 1 | 4.9 | $3.86 / 71% | 2 | 48 | 1 | 0.22 pounds | 2026-03-20 2个月 |
+| 3 | [B0GQ44P989](https://www.amazon.com/dp/B0GQ44P989) | 布卢明蜂蜜棒 | Bloomin Honey Sticks | 343 / -2.29% | $11,659 | $33.99 | $5.10 (15%) | 35 / 7 | 4.3 | $4.76 / 71% | 1 | 55 | 2 | 0.86 pounds | 2026-02-26 3个月 |
+| 4 | [B0GQMPHB57](https://www.amazon.com/dp/B0GQMPHB57) | 布卢明蜂蜜棒 | Bloomin Honey Sticks | 324 / -39.27% | $11,013 | $33.99 | $5.10 (15%) | 39 / 18 | 4.2 | $4.76 / 71% | 1 | 47 | 1 | 0.6 pounds | 2026-03-02 3个月 |
+| 5 | [B0G2S6Z593](https://www.amazon.com/dp/B0G2S6Z593) | Shilajit 和海苔 Ashwagandha 组合套装 - 海苔 | Shilajit and Sea Moss Ashwagandha Combo Bundle- Sea Moss | 270 / -23.01% | $7,287 | $26.99 | $4.01 (15%) | 37 / 15 | 4.4 | $4.09 / 70% | 1 | 80 | 1 | 0.33 pounds | 2025-12-14 5个月 |
+| 6 | [B0GQGLZMNY](https://www.amazon.com/dp/B0GQGLZMNY) | 布卢明蜂蜜棒 | Bloomin Honey Sticks | 313 / 91.25% | $10,639 | $33.99 | $5.10 (15%) | 21 / 14 | 4.1 | $4.76 / 71% | 1 | 86 | 1 | 0.8 pounds | 2026-03-05 3个月 |
+| 7 | [B0DNLDHPW1](https://www.amazon.com/dp/B0DNLDHPW1) | 100% 纯喜马拉雅喜来芝树脂金 500 有机 | 100% Pure Himalayan Shilajit Resin Gold 500 Organic | 273 / 42.25% | $9,006 | $32.99 | $4.82 (15%) | 88 / 5 | 4.3 | $4.09 / 73% | 1 | 75 | 1 | 0.29 pounds | 2025-03-31 1年 2个月 |
+| 8 | [B0GZZ4CV44](https://www.amazon.com/dp/B0GZZ4CV44) | Symbia Bloomin 喜来芝女士软糖，60 粒软糖 | Symbia Bloomin shilajit Gummies for Women,60 Gummies | 189 / - | $6,235 | $32.99 | $4.82 (15%) | 4 / - | 5.0 | $4.09 / 73% | 1 | 54 | 1 | 0.35 pounds | 2026-05-09 1个月 |
+| 9 | [B0DBDZ92QY](https://www.amazon.com/dp/B0DBDZ92QY) | Shilajit Pro Max 男士软糖 | Shilajit Pro Max for Men Gummies | 154 / 101.64% | $4,618 | $29.99 | $4.54 (15%) | 107 / - | 4.4 | $4.76 / 69% | 1 | 67 | 1 | 0.93 pounds | 2024-07-27 1年 10个月 |
+| 10 | [B0DPNM1287](https://www.amazon.com/dp/B0DPNM1287) | HUNY Bee 活力喜来芝蜂蜜棒 | HUNY Bee Energized Shilajit Honey Sticks | 168 / -29.68% | $5,878 | $34.99 | $5.10 (15%) | 125 / 13 | 4.1 | $4.35 / 73% | 1 | 98 | 1 | 0.73 pounds | 2024-12-07 1年 6个月 |
+| 11 | [B0DNFLGT95](https://www.amazon.com/dp/B0DNFLGT95) | 更好的 Alt 纯喜马拉雅喜来芝软糖，含喜来芝 \|High Po… | Better Alt Pure Himalayan Shilajit Gummies with Shilajit \|High Po… | 207 / 14.84% | $5,844 | $28.23 | $4.12 (15%) | 82 / 5 | 4.0 | $4.35 / 70% | 1 | 85 | 1 | 0.75 pounds | 2024-11-28 1年 6个月 |
+| 12 | [B0GQRHC4XG](https://www.amazon.com/dp/B0GQRHC4XG) | 布卢明蜂蜜棒 | Bloomin Honey Sticks | 193 / 230.77% | $6,560 | $33.99 | $5.09 (15%) | 13 / 10 | 4.7 | $4.09 / 73% | 2 | 112 | 1 | 0.51 pounds | 2026-03-04 3个月 |
+| 13 | [B0CZRZR9M9](https://www.amazon.com/dp/B0CZRZR9M9) | 微量矿物质喜来芝胶囊 | Trace Minerals Shilajit Capsules | 211 / 18.69% | $5,906 | $27.99 | $4.31 (15%) | 86 / - | 4.6 | $4.09 / 70% | 1 | 82 | 1 | 0.35 pounds | 2024-04-12 2年 1个月 |
+| 14 | [B0FXG35HTN](https://www.amazon.com/dp/B0FXG35HTN) | Adndale 喜马拉雅天然喜来芝男女软糖 | Adndale Himalayan Natural Shilajit Gummies for Men & Women | 148 / -42.01% | $3,527 | $23.83 | $3.51 (15%) | 46 / 9 | 4.4 | $4.35 / 67% | 1 | 80 | 1 | 0.73 pounds | 2026-01-24 4个月 |
+| 15 | [B0FMB7FSJY](https://www.amazon.com/dp/B0FMB7FSJY) | 临床线粒体复合体 | Clinical Mitochondrial Complex | 122 / 24.75% | $6,826 | $55.95 | $8.51 (15%) | 30 / 3 | 4.4 | $4.36 / 77% | 1 | 126 | 1 | 0.42 pounds | 2025-08-19 9个月 |
+| 16 | [B0F5BV9CHS](https://www.amazon.com/dp/B0F5BV9CHS) | KJHD Shilajit Ashwagandha 海苔软糖 | KJHD Shilajit Ashwagandha Gummies with Sea Moss | 121 / -2.34% | $3,013 | $24.90 | $3.63 (15%) | 56 / - | 4.2 | $4.09 / 69% | 2 | 98 | 1 | 0.42 pounds | 2025-04-30 1年 1个月 |
+| 17 | [B0DVLGRY37](https://www.amazon.com/dp/B0DVLGRY37) | Better Alt KSM 66 Ashwagandha 蜂蜜棒\|有机多花高… | Better Alt KSM 66 Ashwagandha Honey Sticks \|Organic Multiflora Hi… | 102 / -14.81% | $2,912 | $28.55 | $4.22 (15%) | 88 / 3 | 4.2 | $4.35 / 70% | 1 | 137 | 1 | 0.75 pounds | 2025-03-09 1年 3个月 |
+| 18 | [B0DNN4973Q](https://www.amazon.com/dp/B0DNN4973Q) | Better Alt 纯喜马拉雅喜来芝肉桂蜂蜜棒含有机… | Better Alt Pure Himalayan Shilajit Cinnamon Honey Sticks with Org… | 113 / 15.15% | $3,083 | $27.28 | $4.11 (15%) | 123 / 6 | 4.1 | $4.35 / 69% | 1 | 99 | 2 | 0.75 pounds | 2024-12-10 1年 5个月 |
+| 19 | [B0F1Q36826](https://www.amazon.com/dp/B0F1Q36826) | 喜马拉雅男士天然喜来芝软糖 | Himalayan Natural Shilajit Gummies for Men | 100 / -18.57% | $1,999 | $19.99 | $2.91 (15%) | 132 / 3 | 4.1 | $4.09 / 65% | 1 | 127 | 1 | 0.4 pounds | 2025-04-17 1年 1个月 |
+| 20 | [B0DNKX9XK6](https://www.amazon.com/dp/B0DNKX9XK6) | 纯喜马拉雅银杏叶喜来芝软糖 | Pure Himalayan Shilajit Gummies with Ginkgo Biloba | 121 / -10.6% | $4,234 | $34.99 | $5.10 (15%) | 82 / - | 4.4 | $4.35 / 73% | 1 | 135 | 1 | 0.6 pounds | 2025-05-07 1年 1个月 |
+| 21 | [B0GQ2WV2ZK](https://www.amazon.com/dp/B0GQ2WV2ZK) | Vitacore喜马拉雅喜来芝软糖 | VitacoreHimalayan Shilajit Gummies | 103 / -29.41% | $2,677 | $25.99 | $3.97 (15%) | 29 / 15 | 4.1 | $4.09 / 69% | 1 | 139 | 1 | 0.4 pounds | 2026-03-10 2个月 |
+| 22 | [B0FH24QSXJ](https://www.amazon.com/dp/B0FH24QSXJ) | 草药健康套装 | Herbal Wellness Bundle | 124 / -12.58% | $2,975 | $23.99 | $3.57 (15%) | 45 / 7 | 4.6 | $4.35 / 67% | 1 | 109 | 1 | 0.29 pounds | 2025-09-20 8个月 |
+| 23 | [B0CZYZ88F3](https://www.amazon.com/dp/B0CZYZ88F3) | Herb To Body 纯喜来芝苦味 - 16 盎司 | Herb To Body Pure Shilajit Bitter - 16oz | 107 / -4.65% | $3,209 | $29.99 | $4.44 (15%) | 37 / 6 | 4.4 | $5.76 / 66% | 3 | 139 | 2 | 1.74 pounds | 2024-04-13 2年 1个月 |
+| 24 | [B0D1NM4VHP](https://www.amazon.com/dp/B0D1NM4VHP) | 喜马拉雅喜来芝树脂 - 400 毫克高效 | Himalayan Shilajit Resin - 400mg High Potency | 121 / -10.22% | $3,024 | $24.99 | $3.66 (15%) | 120 / 2 | 4.3 | $4.09 / 69% | 1 | 95 | 1 | 0.37 pounds | 2024-11-16 1年 6个月 |
+| 25 | [B0DY62RBGD](https://www.amazon.com/dp/B0DY62RBGD) | Vasu 6 合 1 纯喜马拉雅金喜来芝软糖男女适用… | Vasu 6 in 1 Pure Himalayan Gold Shilajit Gummies for Men & Women… | 116 / -10.87% | $3,131 | $26.99 | $4.02 (15%) | 89 / 1 | 4.0 | $4.35 / 69% | 1 | 112 | 2 | 0.68 pounds | 2025-02-25 1年 3个月 |
+| 26 | [B0GYXTPZ49](https://www.amazon.com/dp/B0GYXTPZ49) | 喜来芝胶囊 600mg | Shilajit Capsules 600mg | 122 / -85.18% | $2,439 | $19.99 | $2.91 (15%) | 78 / 17 | 4.4 | $4.09 / 65% | 1 | 107 | 1 | 0.37 pounds | 2026-05-07 1个月 |
+| 27 | [B0H1D1N8K9](https://www.amazon.com/dp/B0H1D1N8K9) | SupremeMale 10 合 1 Alpha 软糖 | SupremeMale 10 in 1 Alpha Gummies | 277 / - | $9,969 | 1 | - | - / 1 | - | - /  | - | 45 | 1 | 0.4 pounds | $4.09 74% |
 
 ## 二、完整商品标题
 
@@ -91,9 +91,9 @@
 
 **25. [B0DY62RBGD](https://www.amazon.com/dp/B0DY62RBGD)** Vasu 6 in 1 Pure Himalayan Gold Shilajit Gummies for Men & Women with Vitamin D3 & B12, L-Arginine, Ashwagandha & Tribulus - Sugar Free Shilajit Resin - 60 Counts for Energy Support - Lab Tested
 
-**26. [B0H1D1N8K9](https://www.amazon.com/dp/B0H1D1N8K9)** SupremeMale 10 in 1 Alpha Gummies - 4000 mg Herbal Performance Blend with Ashwagandha, Tongkat Ali, Maca & Shilajit – Supports Daily Energy, Stamina & Male Wellness (1)
+**26. [B0GYXTPZ49](https://www.amazon.com/dp/B0GYXTPZ49)** Shilajit Capsules 600mg, 10-in-1 Himalayan Shilajit Supplement with Fulvic Acid, Trace Minerals, Ashwagandha, Tongkat Ali, Ginseng, Cordyceps & Sea Moss, Men & Women
 
-**27. [B0GYXTPZ49](https://www.amazon.com/dp/B0GYXTPZ49)** Shilajit Capsules 600mg, 10-in-1 Himalayan Shilajit Supplement with Fulvic Acid, Trace Minerals, Ashwagandha, Tongkat Ali, Ginseng, Cordyceps & Sea Moss, Men & Women
+**27. [B0H1D1N8K9](https://www.amazon.com/dp/B0H1D1N8K9)** SupremeMale 10 in 1 Alpha Gummies - 4000 mg Herbal Performance Blend with Ashwagandha, Tongkat Ali, Maca & Shilajit – Supports Daily Energy, Stamina & Male Wellness (1)
 
 ## 三、尚未分析的候选类目（共 149 个）
 
@@ -263,7 +263,7 @@
 
 ## 五、原始数值
 
-- `B0GH83NW9N`: 42,436 | 9,314 | 19% | 460 | -10.57% | $11,955 | 400+ | $10K+ | 1 | $25.99 | - | 62 | 9 | 4.2 | 1.96% | $5.61 | 63% | 2026-01-20 | 4个月 | FBA | -
+- `B0GH83NW9N`: 41,063 | 7,885 | 16% | 476 | -11.55% | $12,371 | 400+ | $10K+ | 1 | $25.99 | - | 63 | 11 | 4.2 | 2.31% | $5.61 | 63% | 2026-01-20 | 4个月 | FBA | -
 - `B0G7XFLKQM`: 60,723 | -14,893 | -32% | 397 | 85.78% | $10,715 | 300+ | $8K+ | 2 | $26.99 | - | 18 | 1 | 4.9 | 0.25% | $3.86 | 71% | 2026-03-20 | 2个月 | FBA | -
 - `B0GQ44P989`: 64,217 | 9,160 | 12% | 343 | -2.29% | $11,659 | 300+ | $10K+ | 1 | $33.99 | - | 35 | 7 | 4.3 | 2.04% | $4.76 | 71% | 2026-02-26 | 3个月 | FBA | -
 - `B0GQMPHB57`: 59,632 | -6,677 | -13% | 324 | -39.27% | $11,013 | 300+ | $10K+ | 1 | $33.99 | - | 39 | 18 | 4.2 | 5.56% | $4.76 | 71% | 2026-03-02 | 3个月 | FBA | -
@@ -288,5 +288,5 @@
 - `B0CZYZ88F3`: 104,579 | 9,630 | 8% | 107 | -4.65% | $3,209 | 50+ | $1K+ | 3 | $29.99 | - | 37 | 6 | 4.4 | 5.61% | $5.76 | 66% | 2024-04-13 | 2年 1个月 | FBA | -
 - `B0D1NM4VHP`: 94,797 | 30,292 | 24% | 121 | -10.22% | $3,024 | 50+ | $1K+ | 1 | $24.99 | - | 120 | 2 | 4.3 | 1.65% | $4.09 | 69% | 2024-11-16 | 1年 6个月 | FBA | -
 - `B0DY62RBGD`: 120,151 | 3,592 | 3% | 116 | -10.87% | $3,131 | 50+ | $1K+ | 1 | $26.99 | - | 89 | 1 | 4.0 | 0.86% | $4.35 | 69% | 2025-02-25 | 1年 3个月 | FBA | -
-- `B0H1D1N8K9`: 50,642 | -7,411 | -17% | 278 | - | $10,005 | - | - | 1 | $35.99 | - | 1 | - | 5.0 | - | $4.09 | 74% | 2026-05-15 | FBA | -
 - `B0GYXTPZ49`: 115,436 | -14,500 | -13% | 122 | -85.18% | $2,439 | - | - | 1 | $19.99 | - | 78 | 17 | 4.4 | 13.93% | $4.09 | 65% | 2026-05-07 | 1个月 | FBA | -
+- `B0H1D1N8K9`: 56,828 | -24,833 | -79% | 277 | - | $9,969 | - | - | 1 | $35.99 | - | 1 | - | 5.0 | - | $4.09 | 74% | 2026-05-15 | FBA | -

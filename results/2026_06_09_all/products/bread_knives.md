@@ -1,7 +1,7 @@
 # Bread Knives 合格产品扫描 (2026-06-09)
 
 > **所在品类路径**：`Home & Kitchen › Kitchen & Dining › Kitchen Utensils & Gadgets › Kitchen Knives & Accessories › Bread Knives`
-> 共抓取 **13** 个通过全部筛选条件的候选商品。
+> 共抓取 **12** 个通过全部筛选条件的候选商品。
 
 > **市场评级**：🟢 Green (Recommended)　均价 $22.34　均Reviews 772（中等）　重量 0.94lbs（轻）　退货率 2.92%（低）　品牌集中度 53.5%（中等）　中国卖家 67.0%
 
@@ -9,49 +9,46 @@
 
 ## 一、候选商品列表
 
-| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
-|---:|---|---|---|---|---:|---:|---|---:|---|---:|---:|---:|---|---|
-| 1 | [B0GH7GQJCY](https://www.amazon.com/dp/B0GH7GQJCY) | 用于自制面包和酸面团的可调节面包刀和切片机...... | Adjustable Bread Knife & Slicer for Homemade Bread and Sourdough… | 270 / -13.13% | $6,747 | $24.99 | 53 / 26 | 4.2 | $4.35 / 68% | 1 | 93 | 1 | 0.57 pounds | 2026-02-20 3个月 |
-| 2 | [B0GK1177WJ](https://www.amazon.com/dp/B0GK1177WJ) | 10" 面包刀 | 10" Bread Knife | 269 / 13.77% | $13,447 | $49.99 | 46 / 7 | 4.8 | $4.76 / 75% | 3 | 63 | 1 | 0.93 pounds | 2026-03-04 3个月 |
-| 3 | [B0F53V5PBB](https://www.amazon.com/dp/B0F53V5PBB) | 10 英寸自制面包面包刀 | 10 Inch Bread Knife for Homemade Bread | 303 / 9.44% | $9,087 | $29.99 | 139 / 8 | 4.8 | $4.35 / 71% | 2 | 65 | 1 | 0.75 pounds | 2025-07-08 11个月 |
-| 4 | [B0CSSR4C97](https://www.amazon.com/dp/B0CSSR4C97) | 创新的磁性面包 Lame 面包评分工具，Bread Lame Cutt… | Innovative Magnetic Bread Lame Bread Scoring Tool,Bread Lame Cutt… | 147 / -12.18% | $4,409 | $29.99 | 127 / 3 | 4.7 | $3.54 / 73% | 1 | 123 | 1 | 0.13 pounds | 2024-02-04 2年 4个月 |
-| 5 | [B0G5K79MQL](https://www.amazon.com/dp/B0G5K79MQL) | RICCLE 鹅面包 Lame 用于酵母面包 | RICCLE Goose Bread Lame for Sourdough Bread | 133 / 432% | $2,393 | $17.99 | 25 / 14 | 4.7 | $3.44 / 66% | 1 | 118 | 1 | 0.11 pounds | 2026-04-14 1个月 |
-| 6 | [B0FZBD3JG4](https://www.amazon.com/dp/B0FZBD3JG4) | 用于酸面团的可调节面包切片机 | Adjustable Bread Slicer for Sourdough | 221 / -23.66% | $5,277 | $23.88 | 60 / 9 | 4.0 | $4.76 / 65% | 1 | 119 | 1 | 0.82 pounds | 2026-01-03 5个月 |
-| 7 | [B0GJNJRPR6](https://www.amazon.com/dp/B0GJNJRPR6) | JACYAO'S 可提取磁力面包片 | JACYAO'S Extractable & Magnetic Bread Lame | 156 / -63.86% | $2,650 | $16.99 | 44 / 11 | 4.3 | $3.54 / 64% | 1 | 61 | 1 | 0.13 pounds | 2026-01-25 4个月 |
-| 8 | [B0F22BCM35](https://www.amazon.com/dp/B0F22BCM35) | Cutluxe 带盖面包刀 | Cutluxe Bread Knife with Cover | 194 / -36.54% | $3,102 | $15.99 | 104 / 8 | 4.8 | $4.09 / 59% | 1 | 141 | 1 | 0.49 pounds | 2025-10-02 8个月 |
-| 9 | [B0DNQZR6XW](https://www.amazon.com/dp/B0DNQZR6XW) | 10" 面包刀 | 10" Bread Knife | 312 / 8.2% | $14,648 | $46.95 | 145 / 5 | 4.8 | $4.76 / 75% | 4 | 115 | 1 | 0.93 pounds | 2025-04-07 1年 2个月 |
-| 10 | [B0DHRRFRK4](https://www.amazon.com/dp/B0DHRRFRK4) | 紫龙自制面包刀 | Purple Dragon Bread Knife for Homemade Bread | 102 / -6.9% | $3,059 | $29.99 | 124 / 2 | 4.9 | $4.35 / 71% | 3 | 114 | 1 | 0.73 pounds | 2024-12-03 1年 6个月 |
-| 11 | [B0GR8T177M](https://www.amazon.com/dp/B0GR8T177M) | 可调节面包切片机 | Adjustable Bread Slicer | 115 / 16.24% | $2,759 | $23.99 | 17 / 8 | 4.2 | $4.09 / 68% | 1 | 148 | 1 | 0.49 pounds | 2026-04-04 2个月 |
-| 12 | [B0GT4YKWJC](https://www.amazon.com/dp/B0GT4YKWJC) | 家用可调节面包刀 | Adjustable Bread Knife for Home Use | 239 / - | $6,212 | $25.99 | 1 / - | 5.0 | $4.09 / 69% | 1 | 30 | 1 | 0.49 pounds | 2026-04-03 2个月 |
-| 13 | [B0FVSC4LXJ](https://www.amazon.com/dp/B0FVSC4LXJ) | DiiHAUZZ 面包刀 | DiiHAUZZ Bread Knife | 133 / -17.28% | $3,723 | $27.99 | 101 / 64 | 4.8 | $5.22 / 66% | 4 | 310 | 1 | 1.1 pounds | 2026-02-02 4个月 |
+| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
+|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
+| 1 | [B0GK1177WJ](https://www.amazon.com/dp/B0GK1177WJ) | 10" 面包刀 | 10" Bread Knife | 269 / 13.77% | $13,447 | $49.99 | $7.74 (15%) | 46 / 7 | 4.8 | $4.76 / 75% | 3 | 63 | 1 | 0.93 pounds | 2026-03-04 3个月 |
+| 2 | [B0F53V5PBB](https://www.amazon.com/dp/B0F53V5PBB) | 10 英寸自制面包面包刀 | 10 Inch Bread Knife for Homemade Bread | 303 / 9.44% | $9,087 | $29.99 | $4.35 (14%) | 139 / 8 | 4.8 | $4.35 / 71% | 2 | 65 | 1 | 0.75 pounds | 2025-07-08 11个月 |
+| 3 | [B0CSSR4C97](https://www.amazon.com/dp/B0CSSR4C97) | 创新的磁性面包 Lame 面包评分工具，Bread Lame Cutt… | Innovative Magnetic Bread Lame Bread Scoring Tool,Bread Lame Cutt… | 147 / -12.18% | $4,409 | $29.99 | $4.56 (15%) | 127 / 3 | 4.7 | $3.54 / 73% | 1 | 123 | 1 | 0.13 pounds | 2024-02-04 2年 4个月 |
+| 4 | [B0G5K79MQL](https://www.amazon.com/dp/B0G5K79MQL) | RICCLE 鹅面包 Lame 用于酵母面包 | RICCLE Goose Bread Lame for Sourdough Bread | 133 / 432% | $2,393 | $17.99 | $2.68 (15%) | 25 / 14 | 4.7 | $3.44 / 66% | 1 | 118 | 1 | 0.11 pounds | 2026-04-14 1个月 |
+| 5 | [B0GJNJRPR6](https://www.amazon.com/dp/B0GJNJRPR6) | JACYAO'S 可提取磁力面包片 | JACYAO'S Extractable & Magnetic Bread Lame | 156 / -63.86% | $2,650 | $16.99 | $2.58 (15%) | 44 / 11 | 4.3 | $3.54 / 64% | 1 | 61 | 1 | 0.13 pounds | 2026-01-25 4个月 |
+| 6 | [B0F22BCM35](https://www.amazon.com/dp/B0F22BCM35) | Cutluxe 带盖面包刀 | Cutluxe Bread Knife with Cover | 194 / -36.54% | $3,102 | $15.99 | $2.47 (15%) | 104 / 8 | 4.8 | $4.09 / 59% | 1 | 141 | 1 | 0.49 pounds | 2025-10-02 8个月 |
+| 7 | [B0FZBD3JG4](https://www.amazon.com/dp/B0FZBD3JG4) | 用于酸面团的可调节面包切片机 | Adjustable Bread Slicer for Sourdough | 218 / -23.66% | $5,206 | $23.88 | $3.60 (15%) | 60 / 9 | 4.0 | $4.76 / 65% | 1 | 118 | 1 | 0.82 pounds | 2026-01-03 5个月 |
+| 8 | [B0DNQZR6XW](https://www.amazon.com/dp/B0DNQZR6XW) | 10" 面包刀 | 10" Bread Knife | 305 / 8.2% | $14,320 | $46.95 | $6.98 (15%) | 145 / 5 | 4.8 | $4.76 / 75% | 4 | 115 | 1 | 0.93 pounds | 2025-04-07 1年 2个月 |
+| 9 | [B0DHRRFRK4](https://www.amazon.com/dp/B0DHRRFRK4) | 紫龙自制面包刀 | Purple Dragon Bread Knife for Homemade Bread | 102 / -6.9% | $3,059 | $29.99 | $4.35 (14%) | 124 / 2 | 4.9 | $4.35 / 71% | 3 | 114 | 1 | 0.73 pounds | 2024-12-03 1年 6个月 |
+| 10 | [B0GR8T177M](https://www.amazon.com/dp/B0GR8T177M) | 可调节面包切片机 | Adjustable Bread Slicer | 115 / 16.24% | $2,759 | $23.99 | $3.59 (15%) | 17 / 8 | 4.2 | $4.09 / 68% | 1 | 148 | 1 | 0.49 pounds | 2026-04-04 2个月 |
+| 11 | [B0GT4YKWJC](https://www.amazon.com/dp/B0GT4YKWJC) | 家用可调节面包刀 | Adjustable Bread Knife for Home Use | 239 / - | $6,212 | $25.99 | $3.97 (15%) | 1 / - | 5.0 | $4.09 / 69% | 1 | 30 | 1 | 0.49 pounds | 2026-04-03 2个月 |
+| 12 | [B0FVSC4LXJ](https://www.amazon.com/dp/B0FVSC4LXJ) | DiiHAUZZ 面包刀 | DiiHAUZZ Bread Knife | 133 / -17.28% | $3,723 | $27.99 | $4.30 (15%) | 101 / 64 | 4.8 | $5.22 / 66% | 4 | 310 | 1 | 1.1 pounds | 2026-02-02 4个月 |
 
 ## 二、完整商品标题
 
-**1. [B0GH7GQJCY](https://www.amazon.com/dp/B0GH7GQJCY)** Adjustable Bread Knife & Slicer for Homemade Bread and Sourdough Loaves, Serrated Stainless Blade, 1/4- to 2-Inch Thickness Guide, Includes Bread Lame Scoring Tool
+**1. [B0GK1177WJ](https://www.amazon.com/dp/B0GK1177WJ)** 10" Bread Knife - Sourdough Slicing Knife Professional 5Cr15MoV Stainless Steel Serrated Knives, Ergonomic Wood Handle & Full Tang Design, Gift Box Included (Single-Edge
 
-**2. [B0GK1177WJ](https://www.amazon.com/dp/B0GK1177WJ)** 10" Bread Knife - Sourdough Slicing Knife Professional 5Cr15MoV Stainless Steel Serrated Knives, Ergonomic Wood Handle & Full Tang Design, Gift Box Included (Single-Edge
+**2. [B0F53V5PBB](https://www.amazon.com/dp/B0F53V5PBB)** 10 Inch Bread Knife for Homemade Bread - Ultra Sharp for Serrated Sourdough, Crusty Artisan Loaves, Bagels & Cake, High Carbon Stainless Steel Slicing Knife with Cover & Dad Gift Box
 
-**3. [B0F53V5PBB](https://www.amazon.com/dp/B0F53V5PBB)** 10 Inch Bread Knife for Homemade Bread - Ultra Sharp for Serrated Sourdough, Crusty Artisan Loaves, Bagels & Cake, High Carbon Stainless Steel Slicing Knife with Cover & Dad Gift Box
+**3. [B0CSSR4C97](https://www.amazon.com/dp/B0CSSR4C97)** Innovative Magnetic Bread Lame Bread Scoring Tool,Bread Lame Cutter,Bread Scoring Knife for Bread Baking & Sourdough Baking,Bread Razor Tool with 5 Razor Blades-Black Walnut Wood
 
-**4. [B0CSSR4C97](https://www.amazon.com/dp/B0CSSR4C97)** Innovative Magnetic Bread Lame Bread Scoring Tool,Bread Lame Cutter,Bread Scoring Knife for Bread Baking & Sourdough Baking,Bread Razor Tool with 5 Razor Blades-Black Walnut Wood
+**4. [B0G5K79MQL](https://www.amazon.com/dp/B0G5K79MQL)** RICCLE Goose Bread Lame for Sourdough Bread, Walnut Wood Bread Scoring Tool with 15 Replacement Blades, Magnetic Safety Guard and Finger Sleeves for Artisan Baking
 
-**5. [B0G5K79MQL](https://www.amazon.com/dp/B0G5K79MQL)** RICCLE Goose Bread Lame for Sourdough Bread, Walnut Wood Bread Scoring Tool with 15 Replacement Blades, Magnetic Safety Guard and Finger Sleeves for Artisan Baking
+**5. [B0GJNJRPR6](https://www.amazon.com/dp/B0GJNJRPR6)** JACYAO'S Extractable & Magnetic Bread Lame, Safe Telescopic Sourdough Scoring Tool Crafted From Black Walnut Wood and 304 Stainless Steel, Bread Scoring Tool with 11 Razor Blades & Friendly Guide
 
-**6. [B0FZBD3JG4](https://www.amazon.com/dp/B0FZBD3JG4)** Adjustable Bread Slicer for Sourdough — Precision Homemade Bread Knife with Thickness Guide, Sharp Stainless Serrated Blade, Wooden Frame, Bread Cutter for Baguettes, Gift for Bakers, Father's Day
+**6. [B0F22BCM35](https://www.amazon.com/dp/B0F22BCM35)** Cutluxe Bread Knife with Cover – 10" Razor-Sharp Serrated Stainless Steel Blade, Ergonomic Anti-Slip Handle – Perfect for Sourdough & Homemade Bread
 
-**7. [B0GJNJRPR6](https://www.amazon.com/dp/B0GJNJRPR6)** JACYAO'S Extractable & Magnetic Bread Lame, Safe Telescopic Sourdough Scoring Tool Crafted From Black Walnut Wood and 304 Stainless Steel, Bread Scoring Tool with 11 Razor Blades & Friendly Guide
+**7. [B0FZBD3JG4](https://www.amazon.com/dp/B0FZBD3JG4)** Adjustable Bread Slicer for Sourdough — Precision Homemade Bread Knife with Thickness Guide, Sharp Stainless Serrated Blade, Wooden Frame, Bread Cutter for Baguettes, Gift for Bakers, Father's Day
 
-**8. [B0F22BCM35](https://www.amazon.com/dp/B0F22BCM35)** Cutluxe Bread Knife with Cover – 10" Razor-Sharp Serrated Stainless Steel Blade, Ergonomic Anti-Slip Handle – Perfect for Sourdough & Homemade Bread
+**8. [B0DNQZR6XW](https://www.amazon.com/dp/B0DNQZR6XW)** 10" Bread Knife – Razor Sharp German Steel – Serrated Knife for Homemade Bread & Sourdough – Full Tang & Ergonomic Handle – Gift Box – Velina Series
 
-**9. [B0DNQZR6XW](https://www.amazon.com/dp/B0DNQZR6XW)** 10" Bread Knife – Razor Sharp German Steel – Serrated Knife for Homemade Bread & Sourdough – Full Tang & Ergonomic Handle – Gift Box – Velina Series
+**9. [B0DHRRFRK4](https://www.amazon.com/dp/B0DHRRFRK4)** Purple Dragon Bread Knife for Homemade Bread, Serrated Knife - German High Carbon Steel Slicing for Sourdough - Cake and Fruits - Anniversary Idea Gift - Rounded Christmas Gift for Men and Women
 
-**10. [B0DHRRFRK4](https://www.amazon.com/dp/B0DHRRFRK4)** Purple Dragon Bread Knife for Homemade Bread, Serrated Knife - German High Carbon Steel Slicing for Sourdough - Cake and Fruits - Anniversary Idea Gift - Rounded Christmas Gift for Men and Women
+**10. [B0GR8T177M](https://www.amazon.com/dp/B0GR8T177M)** Adjustable Bread Slicer, Bread Knife for Homemade Bread, Manual Slicer Cutter Sharp Serrated Stainless Steel Blade Sourdough Tools for Baguettes, Bagels & Loaves, Ideal Gift for Bakers
 
-**11. [B0GR8T177M](https://www.amazon.com/dp/B0GR8T177M)** Adjustable Bread Slicer, Bread Knife for Homemade Bread, Manual Slicer Cutter Sharp Serrated Stainless Steel Blade Sourdough Tools for Baguettes, Bagels & Loaves, Ideal Gift for Bakers
+**11. [B0GT4YKWJC](https://www.amazon.com/dp/B0GT4YKWJC)** Adjustable Bread Knife for Home Use, Wooden Sourdough Bread Slicer for Homemade Bread with Bow Design, Premium Stainless Serrated Bread Cutter for Bagels and Baguettes, Gift for People who Love Baking
 
-**12. [B0GT4YKWJC](https://www.amazon.com/dp/B0GT4YKWJC)** Adjustable Bread Knife for Home Use, Wooden Sourdough Bread Slicer for Homemade Bread with Bow Design, Premium Stainless Serrated Bread Cutter for Bagels and Baguettes, Gift for People who Love Baking
-
-**13. [B0FVSC4LXJ](https://www.amazon.com/dp/B0FVSC4LXJ)** DiiHAUZZ Bread Knife, 10 Inch Serrated Knife for Slicing Homemade Bread, Razor Sharp High Carbon Steel, Professional Bakery Kitchen Knives with Full Tang Ergonomic Handle for Sourdough, Bagel, Cake
+**12. [B0FVSC4LXJ](https://www.amazon.com/dp/B0FVSC4LXJ)** DiiHAUZZ Bread Knife, 10 Inch Serrated Knife for Slicing Homemade Bread, Razor Sharp High Carbon Steel, Professional Bakery Kitchen Knives with Full Tang Ergonomic Handle for Sourdough, Bagel, Cake
 
 ## 三、尚未分析的候选类目（共 150 个）
 
@@ -222,15 +219,14 @@
 
 ## 五、原始数值
 
-- `B0GH7GQJCY`: 40,701 | -9,770 | -32% | 270 | -13.13% | $6,747 | 200+ | $4K+ | 1 | $24.99 | - | 53 | 26 | 4.2 | 9.63% | $4.35 | 68% | 2026-02-20 | 3个月 | FBA | -
 - `B0GK1177WJ`: 23,241 | 4,491 | 16% | 269 | 13.77% | $13,447 | 200+ | $8K+ | 3 | $49.99 | - | 46 | 7 | 4.8 | 2.6% | $4.76 | 75% | 2026-03-04 | 3个月 | FBA | -
 - `B0F53V5PBB`: 23,746 | 3,125 | 12% | 303 | 9.44% | $9,087 | 200+ | $6K+ | 2 | $29.99 | - | 139 | 8 | 4.8 | 2.64% | $4.35 | 71% | 2025-07-08 | 11个月 | FBA | -
 - `B0CSSR4C97`: 64,290 | -13,692 | -27% | 147 | -12.18% | $4,409 | 100+ | $2K+ | 1 | $29.99 | - | 127 | 3 | 4.7 | 2.04% | $3.54 | 73% | 2024-02-04 | 2年 4个月 | FBA | -
 - `B0G5K79MQL`: 58,027 | 11,228 | 17% | 133 | 432% | $2,393 | 100+ | $1K+ | 1 | $17.99 | - | 25 | 14 | 4.7 | 10.53% | $3.44 | 66% | 2026-04-14 | 1个月 | FBA | -
-- `B0FZBD3JG4`: 59,391 | -7,896 | -15% | 221 | -23.66% | $5,277 | 100+ | $2K+ | 1 | $23.88 | - | 60 | 9 | 4.0 | 4.07% | $4.76 | 65% | 2026-01-03 | 5个月 | FBA | -
 - `B0GJNJRPR6`: 38,586 | -186 | 0% | 156 | -63.86% | $2,650 | 100+ | $1K+ | 1 | $16.99 | - | 44 | 11 | 4.3 | 7.05% | $3.54 | 64% | 2026-01-25 | 4个月 | FBA | -
 - `B0F22BCM35`: 76,474 | 4,865 | 6% | 194 | -36.54% | $3,102 | 100+ | $1K+ | 1 | $15.99 | - | 104 | 8 | 4.8 | 4.12% | $4.09 | 59% | 2025-10-02 | 8个月 | FBA | -
-- `B0DNQZR6XW`: 27,958 | 235 | 1% | 312 | 8.2% | $14,648 | 100+ | $4K+ | 4 | $46.95 | - | 145 | 5 | 4.8 | 1.6% | $4.76 | 75% | 2025-04-07 | 1年 2个月 | FBA | -
+- `B0FZBD3JG4`: 58,665 | 2,468 | 4% | 218 | -23.66% | $5,206 | 100+ | $2K+ | 1 | $23.88 | - | 60 | 9 | 4.0 | 4.13% | $4.76 | 65% | 2026-01-03 | 5个月 | FBA | -
+- `B0DNQZR6XW`: 27,995 | 235 | 1% | 305 | 8.2% | $14,320 | 100+ | $4K+ | 4 | $46.95 | - | 145 | 5 | 4.8 | 1.64% | $4.76 | 75% | 2025-04-07 | 1年 2个月 | FBA | -
 - `B0DHRRFRK4`: 56,681 | -9,383 | -20% | 102 | -6.9% | $3,059 | 50+ | $1K+ | 3 | $29.99 | - | 124 | 2 | 4.9 | 1.96% | $4.35 | 71% | 2024-12-03 | 1年 6个月 | FBA | -
 - `B0GR8T177M`: 80,451 | 53,511 | 40% | 115 | 16.24% | $2,759 | 50+ | $1K+ | 1 | $23.99 | - | 17 | 8 | 4.2 | 6.96% | $4.09 | 68% | 2026-04-04 | 2个月 | FBA | -
 - `B0GT4YKWJC`: 10,749 | 11,659 | 49% | 239 | - | $6,212 | - | - | 1 | $25.99 | - | 1 | - | 5.0 | - | $4.09 | 69% | 2026-04-03 | 2个月 | FBA | -
