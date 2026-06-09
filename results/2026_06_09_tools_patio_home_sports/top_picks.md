@@ -15,28 +15,28 @@
 
 ## Top 20 推荐单品
 
-| 排名 | ASIN | 品名（中文） | 类目 | 月销量 | 增长率 | 估算成本/占比 | 毛利率 | Reviews | 推荐理由 |
+| 排名 | ASIN | 品名 | 类目 | 月销量 | 增长率 | 估算成本/占比 | 毛利率 | Reviews | 推荐理由 |
 |---:|---|---|---|---:|---:|---:|---:|---:|---|
-| 1 | [B0GHNXQ5DJ](https://www.amazon.com/dp/B0GHNXQ5DJ) | 花园软管喷嘴（6喷式金属） | 喷嘴 | 783 | +372% | $3.50 (15%) | 62% | 54 | 1个月新品即爆量，单卖家，增速全场最高 |
-| 2 | [B0GDXKWPCB](https://www.amazon.com/dp/B0GDXKWPCB) | 冷水机浮阀（带黄铜适配器） | 浮阀 | 220 | +197% | $2.58 (12%) | 67% | 20 | 2个月、1个卖家、197%增长，冷水机专用缺口 |
-| 3 | [B0GTC1SYVM](https://www.amazon.com/dp/B0GTC1SYVM) | 重型垃圾桶防熊锁 MAX | 垃圾桶盖锁 | 265 | +2400% | $5.09 (15%) | 73% | 23 | 1个月爆量，73%高毛利，刚需防熊锁 |
-| 4 | [B0G5PNJBM4](https://www.amazon.com/dp/B0G5PNJBM4) | 高压软管喷嘴枪（带100cc皂液器） | 喷嘴 | 365 | +173% | $2.99 (15%) | 61% | 16 | 5个月仅16 reviews但已月销365，皂液器差异化明显 |
-| 5 | [B0GXJW95KP](https://www.amazon.com/dp/B0GXJW95KP) | 黄铜水浮阀1/2英寸（2只装） | 浮阀 | 209 | — | $3.75 (12%) | 73% | 5 | 1个月、5 reviews、5星、73%毛利，几乎无竞争 |
-| 6 | [B0GH1DNWM9](https://www.amazon.com/dp/B0GH1DNWM9) | 防熊垃圾桶锁（双金属爪，2件装） | 垃圾桶盖锁 | 255 | +5% | $4.59 (15%) | 66% | 41 | 2个月新品，金属双爪设计，卖点清晰 |
-| 7 | [B0FP5LSTN2](https://www.amazon.com/dp/B0FP5LSTN2) | 防动物垃圾桶锁绑带（2件装） | 垃圾桶盖锁 | 192 | +81% | $3.60 (15%) | 61% | 28 | 7个月持续增长，2件装低价策略奏效 |
-| 8 | [B0GCT9RJZT](https://www.amazon.com/dp/B0GCT9RJZT) | 金属花园软管喷嘴（10喷式） | 喷嘴 | 324 | +3% | $2.92 (15%) | 62% | 48 | 3个月1卖家已站稳，10喷式全能型 |
-| 9 | [B0FMQBQKRK](https://www.amazon.com/dp/B0FMQBQKRK) | 不锈钢水箱浮阀（1/2-3/4英寸） | 浮阀 | 177 | +31% | $2.75 (12%) | 63% | 32 | 6个月持续增长，不锈钢耐用卖点 |
-| 10 | [B0FY5BW963](https://www.amazon.com/dp/B0FY5BW963) | 金属双爪防滑垃圾桶盖锁 | 垃圾桶盖锁 | 156 | -3% | $4.11 (15%) | 64% | 40 | 金属爪防滑设计，微下滑但产品力强 |
-| 11 | [B0FB86HFCF](https://www.amazon.com/dp/B0FB86HFCF) | 水箱自动浮球阀（3件套1/2"&3/4"） | 浮阀 | 135 | +12% | $3.39 (12%) | 68% | 19 | 11个月仍在增长，3件装价值感强 |
-| 12 | [B0FMPV1SLD](https://www.amazon.com/dp/B0FMPV1SLD) | 户外通用垃圾桶锁（2只装） | 垃圾桶盖锁 | 108 | +48% | $4.38 (15%) | 65% | 6 | 9个月仅6 reviews，增长48%，市场仍可入 |
-| 13 | [B0FSKNB22C](https://www.amazon.com/dp/B0FSKNB22C) | 喷杆喷雾机喷嘴替换件（4只装） | 喷嘴 | 114 | +112% | $2.69 (15%) | 63% | 2 | 工业喷雾机配件，2 reviews增长112%，极度低竞争 |
-| 14 | [B0FNM93P9W](https://www.amazon.com/dp/B0FNM93P9W) | 304不锈钢水浮阀套装（4件） | 浮阀 | 148 | +38% | $3.91 (11%) | 72% | 43 | 套装策略+72%高毛利，3个卖家已入但仍有空间 |
-| 15 | [B0GGBZHJYK](https://www.amazon.com/dp/B0GGBZHJYK) | 重型金属花园软管喷嘴（拇指控制） | 喷嘴 | 138 | — | $2.55 (15%) | 57% | 7 | 1个月7 reviews，拇指控制设计差异化，2卖家 |
-| 16 | [B0GDQGPBF3](https://www.amazon.com/dp/B0GDQGPBF3) | 重型防熊垃圾桶锁（2件装） | 垃圾桶盖锁 | 112 | +20% | $2.58 (15%) | 61% | 30 | 5个月持稳增长，低价切入同赛道 |
-| 17 | [B0G7FTXC46](https://www.amazon.com/dp/B0G7FTXC46) | 点喷雾喷嘴重建套件（2件装） | 喷嘴 | 181 | +8% | $4.01 (15%) | 70% | 4 | 配件类替换件，4 reviews高毛利70%，复购属性 |
-| 18 | [B0FS72284D](https://www.amazon.com/dp/B0FS72284D) | 黄铜浮阀3/4英寸（可调节臂） | 浮阀 | 297 | +7% | $2.72 (12%) | 66% | 60 | 8个月成熟款，60 reviews但仍1卖家 |
-| 19 | [B0D29M41RM](https://www.amazon.com/dp/B0D29M41RM) | 无喷杆宽幅喷雾机喷嘴 | 喷嘴 | 140 | +9% | $4.32 (15%) | 71% | 65 | 工业宽幅喷嘴，2年老款仍在稳定增长，1卖家 |
-| 20 | [B09YQZML13](https://www.amazon.com/dp/B09YQZML13) | 黄铜浮阀1/2英寸畜牧专用（2件装） | 浮阀 | 102 | +18% | $2.19 (12%) | 61% | 59 | 4年老款仍在增长，畜牧专用场景稳定需求 |
+| 1 | [B0GHNXQ5DJ](https://www.amazon.com/dp/B0GHNXQ5DJ) | 花园软管喷嘴 / Garden Hose Nozzle | 喷嘴 | 783 | +372% | $3.50 (15%) | 62% | 54 | 1个月新品即爆量，单卖家，增速全场最高 |
+| 2 | [B0GDXKWPCB](https://www.amazon.com/dp/B0GDXKWPCB) | 冷水机浮阀 / Cooler Float Valve | 浮阀 | 220 | +197% | $2.58 (12%) | 67% | 20 | 2个月、1个卖家、197%增长，冷水机专用缺口 |
+| 3 | [B0GTC1SYVM](https://www.amazon.com/dp/B0GTC1SYVM) | 重型垃圾桶防熊锁 / Trash Can Lock MAX | 垃圾桶盖锁 | 265 | +2400% | $5.09 (15%) | 73% | 23 | 1个月爆量，73%高毛利，刚需防熊锁 |
+| 4 | [B0G5PNJBM4](https://www.amazon.com/dp/B0G5PNJBM4) | 高压喷嘴枪带皂液器 / Hose Nozzle Gun + Soap Dispenser | 喷嘴 | 365 | +173% | $2.99 (15%) | 61% | 16 | 5个月仅16 reviews但已月销365，皂液器差异化明显 |
+| 5 | [B0GXJW95KP](https://www.amazon.com/dp/B0GXJW95KP) | 黄铜水浮阀1/2" 2只装 / Brass Float Valve 2-Pack | 浮阀 | 209 | — | $3.75 (12%) | 73% | 5 | 1个月、5 reviews、5星、73%毛利，几乎无竞争 |
+| 6 | [B0GH1DNWM9](https://www.amazon.com/dp/B0GH1DNWM9) | 双金属爪防熊垃圾桶锁 / Bear Proof Can Lock Double Claw | 垃圾桶盖锁 | 255 | +5% | $4.59 (15%) | 66% | 41 | 2个月新品，金属双爪设计，卖点清晰 |
+| 7 | [B0FP5LSTN2](https://www.amazon.com/dp/B0FP5LSTN2) | 防动物垃圾桶锁绑带 / Animal Trash Can Lock Strap | 垃圾桶盖锁 | 192 | +81% | $3.60 (15%) | 61% | 28 | 7个月持续增长，2件装低价策略奏效 |
+| 8 | [B0GCT9RJZT](https://www.amazon.com/dp/B0GCT9RJZT) | 金属花园软管喷嘴 / Metal Garden Hose Nozzle | 喷嘴 | 324 | +3% | $2.92 (15%) | 62% | 48 | 3个月1卖家已站稳，10喷式全能型 |
+| 9 | [B0FMQBQKRK](https://www.amazon.com/dp/B0FMQBQKRK) | 不锈钢水箱浮阀 / Stainless Float Valve | 浮阀 | 177 | +31% | $2.75 (12%) | 63% | 32 | 6个月持续增长，不锈钢耐用卖点 |
+| 10 | [B0FY5BW963](https://www.amazon.com/dp/B0FY5BW963) | 金属双爪垃圾桶盖锁 / Double Claw Trash Can Lid Lock | 垃圾桶盖锁 | 156 | -3% | $4.11 (15%) | 64% | 40 | 金属爪防滑设计，微下滑但产品力强 |
+| 11 | [B0FB86HFCF](https://www.amazon.com/dp/B0FB86HFCF) | 水箱自动浮球阀3件套 / Auto Float Valve 3-Pack | 浮阀 | 135 | +12% | $3.39 (12%) | 68% | 19 | 11个月仍在增长，3件装价值感强 |
+| 12 | [B0FMPV1SLD](https://www.amazon.com/dp/B0FMPV1SLD) | 户外通用垃圾桶锁 / Outdoor Trash Can Lock Universal | 垃圾桶盖锁 | 108 | +48% | $4.38 (15%) | 65% | 6 | 9个月仅6 reviews，增长48%，市场仍可入 |
+| 13 | [B0FSKNB22C](https://www.amazon.com/dp/B0FSKNB22C) | 喷杆喷雾机喷嘴替换件 / Boom Sprayer Nozzle Tips | 喷嘴 | 114 | +112% | $2.69 (15%) | 63% | 2 | 工业喷雾机配件，2 reviews增长112%，极度低竞争 |
+| 14 | [B0FNM93P9W](https://www.amazon.com/dp/B0FNM93P9W) | 不锈钢水浮阀4件套 / Stainless Float Valve 4-Pack | 浮阀 | 148 | +38% | $3.91 (11%) | 72% | 43 | 套装策略+72%高毛利，3个卖家已入但仍有空间 |
+| 15 | [B0GGBZHJYK](https://www.amazon.com/dp/B0GGBZHJYK) | 重型金属软管喷嘴 / Heavy Duty Metal Hose Nozzle | 喷嘴 | 138 | — | $2.55 (15%) | 57% | 7 | 1个月7 reviews，拇指控制设计差异化，2卖家 |
+| 16 | [B0GDQGPBF3](https://www.amazon.com/dp/B0GDQGPBF3) | 重型防熊垃圾桶锁 / Bear Proof Trash Can Lock | 垃圾桶盖锁 | 112 | +20% | $2.58 (15%) | 61% | 30 | 5个月持稳增长，低价切入同赛道 |
+| 17 | [B0G7FTXC46](https://www.amazon.com/dp/B0G7FTXC46) | 点喷雾重建套件 / Spot Spray Rebuild Kit | 喷嘴 | 181 | +8% | $4.01 (15%) | 70% | 4 | 配件类替换件，4 reviews高毛利70%，复购属性 |
+| 18 | [B0FS72284D](https://www.amazon.com/dp/B0FS72284D) | 浮阀3/4英寸 / Float Valve 3/4 Inch | 浮阀 | 297 | +7% | $2.72 (12%) | 66% | 60 | 8个月成熟款，60 reviews但仍1卖家 |
+| 19 | [B0D29M41RM](https://www.amazon.com/dp/B0D29M41RM) | 无喷杆宽幅喷雾机喷嘴 / Boomless Sprayer Nozzle | 喷嘴 | 140 | +9% | $4.32 (15%) | 71% | 65 | 工业宽幅喷嘴，2年老款仍在稳定增长，1卖家 |
+| 20 | [B09YQZML13](https://www.amazon.com/dp/B09YQZML13) | 黄铜浮阀1/2"畜牧专用 / Brass Float Valve Livestock | 浮阀 | 102 | +18% | $2.19 (12%) | 61% | 59 | 4年老款仍在增长，畜牧专用场景稳定需求 |
 
 ---
 
