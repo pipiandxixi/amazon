@@ -1,0 +1,146 @@
+{
+  "_comment_departments": "实际类目编号映射（来自页面 input value）: 1=全部类目(any,勿选), 2=arts-crafts, 3=automotive, 4=baby-products, 5=beauty, 6=mobile(CellPhones), 7=fashion(Clothing), 8=computers, 9=electronics, 10=grocery, 11=handmade, 12=hpc(Health&Household), 13=industrial, 14=mi(Musical), 15=office-products, 16=lawngarden(Garden&Outdoor), 17=pets, 18=sporting, 19=tools, 20=toys-and-games, 21=kitchen(Home&Kitchen), 22=photo, 23=wireless",
+  "station": "美国",
+  "month": "",
+  "_comment_departments_usage": "standalone 模式下的默认大类范围；pipeline 运行时由 run_pipeline.py 从市场扫描结果推导并通过 --categories-file 覆盖此值（取所有候选类目 departments 的并集）",
+  "departments": [2, 4, 5, 12, 13, 15, 16, 17, 18, 19, 21],
+  "scan_policy": {
+    "max_pages": {"value": 3, "label": "每模式最多扫描页数"},
+    "wait_seconds": {"value": 6, "label": "提交筛选后等待秒数"},
+    "target_candidate_min": {"value": 15, "label": "期望绿色关键词数量下限"},
+    "target_candidate_max": {"value": 60, "label": "期望绿色关键词数量上限"}
+  },
+  "modes": [
+    {
+      "name": "趋势市场",
+      "enabled": true,
+      "_comment": "方法1&3：近3月搜索量持续增长的潜力关键词。近3月增长值+增长率双门槛，确保是持续趋势而非偶发",
+      "filter_params": {
+        "minSearches": {"value": "5000", "label": "月搜索量最小（过滤极低流量噪音）"},
+        "minGrowthTrendMin": {"value": "10000", "label": "近3月增长值最小（绝对增量要大）"},
+        "minGrowthRateTrendMin": {"value": "10", "label": "近3月增长率最小(%)"},
+        "minPurchaseRate": {"value": "3", "label": "购买率最小(%)（有真实购买意图）"},
+        "maxMonopolyClickRate": {"value": "70", "label": "点击集中度最大(%)（市场未被垄断）"}
+      },
+      "risk_rules": {
+        "red": {
+          "max_monopoly_click_rate": {"value": 80, "label": "点击集中度上限(%)"},
+          "max_bid": {"value": 5.0, "label": "CPC上限($)"}
+        },
+        "yellow": {
+          "max_monopoly_click_rate": {"value": 60, "label": "点击集中度警示(%)"},
+          "max_bid": {"value": 2.5, "label": "CPC警示($)"},
+          "min_purchase_rate": {"value": 3.0, "label": "购买率下限警示(%)"}
+        }
+      }
+    },
+    {
+      "name": "市场需求",
+      "enabled": true,
+      "_comment": "方法2：搜索量Top市场，需求量大。适合有资金实力的卖家，同时加竞争度约束",
+      "filter_params": {
+        "minSearches": {"value": "50000", "label": "月搜索量最小（高需求）"},
+        "minPurchaseRate": {"value": "5", "label": "购买率最小(%)（确认购买意图强）"},
+        "maxMonopolyClickRate": {"value": "70", "label": "点击集中度最大(%)"}
+      },
+      "risk_rules": {
+        "red": {
+          "max_monopoly_click_rate": {"value": 80, "label": "点击集中度上限(%)"},
+          "max_bid": {"value": 5.0, "label": "CPC上限($)"}
+        },
+        "yellow": {
+          "max_monopoly_click_rate": {"value": 65, "label": "点击集中度警示(%)"},
+          "max_bid": {"value": 3.0, "label": "CPC警示($)"},
+          "min_purchase_rate": {"value": 5.0, "label": "购买率下限警示(%)"}
+        }
+      }
+    },
+    {
+      "name": "搜索飙升",
+      "enabled": true,
+      "_comment": "方法4：近期搜索增长极快，可能是季节性或萌芽潜力市场。用 minGrowth（月度增长率）而非3月均值捕捉更短周期飙升",
+      "filter_params": {
+        "minSearches": {"value": "1000", "label": "月搜索量最小（过滤极低流量）"},
+        "minGrowth": {"value": "50", "label": "月搜索量增长率最小(%)（近期飙升）"},
+        "minPurchaseRate": {"value": "2", "label": "购买率最小(%)（飙升期需求真实性验证）"}
+      },
+      "risk_rules": {
+        "red": {
+          "max_monopoly_click_rate": {"value": 80, "label": "点击集中度上限(%)"},
+          "max_bid": {"value": 5.0, "label": "CPC上限($)"}
+        },
+        "yellow": {
+          "max_monopoly_click_rate": {"value": 65, "label": "点击集中度警示(%)"},
+          "max_bid": {"value": 2.5, "label": "CPC警示($)"},
+          "min_purchase_rate": {"value": 2.0, "label": "购买率下限警示(%)"}
+        }
+      }
+    },
+    {
+      "name": "高容量低竞争",
+      "enabled": true,
+      "_comment": "方法5&6：大市场容量 + 点击集中度低，竞争分散。maxMonopolyClickRate直接在过滤层去掉高垄断市场",
+      "filter_params": {
+        "minSearches": {"value": "100000", "label": "月搜索量最小（大市场）"},
+        "maxMonopolyClickRate": {"value": "50", "label": "点击集中度最大(%)（竞争分散）"},
+        "minPurchaseRate": {"value": "5", "label": "购买率最小(%)（大市场需有真实转化）"}
+      },
+      "risk_rules": {
+        "red": {
+          "max_monopoly_click_rate": {"value": 50, "label": "点击集中度上限(%)"},
+          "max_bid": {"value": 6.0, "label": "CPC上限($)"}
+        },
+        "yellow": {
+          "max_monopoly_click_rate": {"value": 40, "label": "点击集中度警示(%)"},
+          "max_bid": {"value": 3.5, "label": "CPC警示($)"},
+          "min_purchase_rate": {"value": 5.0, "label": "购买率下限警示(%)"}
+        }
+      }
+    },
+    {
+      "name": "低成本入局",
+      "enabled": true,
+      "_comment": "方法9：CPC低，广告成本可控，适合预算有限的新卖家。minAvgPrice过滤掉低客单价（利润薄）",
+      "filter_params": {
+        "maxBid": {"value": "1.5", "label": "CPC最大($)（广告成本上限）"},
+        "minPurchaseRate": {"value": "5", "label": "购买率最小(%)（低CPC仍需有转化）"},
+        "minSearches": {"value": "5000", "label": "月搜索量最小"},
+        "minAvgPrice": {"value": "15", "label": "平均价格最小($)（过滤客单价太低的品）"}
+      },
+      "risk_rules": {
+        "red": {
+          "max_monopoly_click_rate": {"value": 80, "label": "点击集中度上限(%)"},
+          "max_bid": {"value": 2.0, "label": "CPC上限($)"}
+        },
+        "yellow": {
+          "max_monopoly_click_rate": {"value": 60, "label": "点击集中度警示(%)"},
+          "max_bid": {"value": 1.5, "label": "CPC警示($)"},
+          "min_purchase_rate": {"value": 5.0, "label": "购买率下限警示(%)"}
+        }
+      }
+    },
+    {
+      "name": "长尾细分",
+      "enabled": true,
+      "_comment": "方法10：3词以上长尾关键词，需求明确，SPR低意味着头部已成交产品少，新品更容易出现",
+      "filter_params": {
+        "minWordCount": {"value": "3", "label": "最少单词数（长尾）"},
+        "minSearches": {"value": "1000", "label": "月搜索量最小"},
+        "maxSPR": {"value": "200", "label": "SPR最大（竞争程度上限）"},
+        "minPurchaseRate": {"value": "3", "label": "购买率最小(%)"},
+        "maxMonopolyClickRate": {"value": "70", "label": "点击集中度最大(%)"}
+      },
+      "risk_rules": {
+        "red": {
+          "max_monopoly_click_rate": {"value": 80, "label": "点击集中度上限(%)"},
+          "max_bid": {"value": 4.0, "label": "CPC上限($)"}
+        },
+        "yellow": {
+          "max_monopoly_click_rate": {"value": 65, "label": "点击集中度警示(%)"},
+          "max_bid": {"value": 2.0, "label": "CPC警示($)"},
+          "min_purchase_rate": {"value": 2.0, "label": "购买率下限警示(%)"}
+        }
+      }
+    }
+  ]
+}

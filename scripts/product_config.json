@@ -1,4 +1,5 @@
 {
+  "_comment_category_usage": "standalone 模式（直接运行 find_products.py）下使用此类目；pipeline 运行时 run_pipeline.py 通过 --categories-file 批量传入市场扫描结果，此字段被完全绕过",
   "category": {
     "name": "Float Valves",
     "path": [
@@ -32,7 +33,7 @@
     "fulfillment": {"value": "FBA", "label": "配送方式"}
   },
   "scan_policy": {
-    "max_products": {"value": 20, "label": "最多输出的独立商品数"},
+    "max_products": {"value": 50, "label": "最多输出的独立商品数"},
     "wait_seconds": {"value": 5, "label": "提交筛选后等待秒数"},
     "hide_variants": {"value": true, "label": "是否关闭展示所有变体"},
     "only_leaf_category_rank": {"value": true, "label": "是否只看精确叶子类目排名"}

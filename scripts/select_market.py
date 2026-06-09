@@ -1,9 +1,9 @@
 import json
 import re
-import os
 import time
 import datetime
 import argparse
+from pathlib import Path
 
 from scan_common import RESULTS_DIR, OpenCliError, eval_browser, open_browser
 
@@ -25,17 +25,64 @@ def extract_zh_name(niche_str):
     match = re.search(r'\((.*?)\)', niche_str)
     return match.group(1).strip() if match else ''
 
-def scrape_market(config_path, date_str):
+def select_departments_market(department_numbers: list) -> None:
+    """Check the given department checkboxes on the market research page.
+
+    Uses the same input[name^="departments[N]"] DOM structure as the keyword
+    research page. Silently continues if no matching checkboxes are found
+    (page DOM may differ across SellerSprite versions).
+    """
+    safe = [n for n in department_numbers if n != 1]
+    if not safe:
+        return
+    js = f"""
+    (() => {{
+      const enabled = new Set({json.dumps(safe)});
+      let checked = 0, unchecked = 0;
+      // Uncheck "全部类目" first so it doesn't override individual selections
+      const anyCb = document.querySelector('input[name="departments[1]"]');
+      if (anyCb && anyCb.checked) {{ anyCb.click(); unchecked++; }}
+      document.querySelectorAll('input[name^="departments["]').forEach(cb => {{
+        const m = cb.name.match(/departments\\[(\\d+)\\]/);
+        if (!m) return;
+        const n = parseInt(m[1]);
+        if (n === 1) return;
+        if (enabled.has(n) && !cb.checked) {{ cb.click(); checked++; }}
+        else if (!enabled.has(n) && cb.checked) {{ cb.click(); unchecked++; }}
+      }});
+      const active = Array.from(
+        document.querySelectorAll('input[name^="departments["]:checked')
+      ).map(cb => cb.name);
+      return JSON.stringify({{checked, unchecked, active}});
+    }})()
+    """
+    result = eval_browser(js)
+    print(f"  Market departments selected: {result}")
+
+
+def scrape_market(config_path, department_numbers=None):
+    """Scrape the SellerSprite market research page and return raw category items.
+
+    department_numbers: optional list of SellerSprite department checkbox numbers
+    to pre-filter the page before submitting the search form. When None or empty,
+    all departments are included (default SellerSprite behaviour).
+    """
     print("Loading configuration from " + config_path + "...")
     with open(config_path, 'r', encoding='utf-8') as f:
         config = json.load(f)
     params = values(config['filter_params'])
     scan_policy = values(config.get('scan_policy', {}))
     max_pages = int(scan_policy.get('max_pages', 5))
-    
+
     print("Opening Market Research page...")
     open_browser("https://www.sellersprite.com/v2/market-research")
     time.sleep(4)
+
+    # Pre-filter by department before submitting the search form
+    if department_numbers:
+        print(f"  Filtering by departments: {department_numbers}")
+        select_departments_market(department_numbers)
+        time.sleep(1)
     
     # Generate form fill JS
     fill_form_js = """
@@ -289,7 +336,7 @@ def scrape_market(config_path, date_str):
     print(f"\nDone! Successfully collected {len(all_categories)} categories.")
     return all_categories
 
-def generate_report(config_path, categories, date_str):
+def generate_report(config_path, categories, date_str, output_dir=None):
     print(f"Generating market report using configuration rules from {config_path}...")
     with open(config_path, 'r', encoding='utf-8') as f:
         config = json.load(f)
@@ -585,25 +632,57 @@ def generate_report(config_path, categories, date_str):
             md.append(f"  *   **{key}**：`{val_clean}`")
         md.append("\n---\n")
         
-    report_file = RESULTS_DIR / f"market_scan_report_{date_str}.md"
-    os.makedirs(report_file.parent, exist_ok=True)
+    # Pipeline mode (output_dir given): filenames without date suffix — the date
+    # is already encoded in the run directory name (results/{date}_{tag}/).
+    # Standalone mode: date in filename so multiple runs in results/ don't clash.
+    out = Path(output_dir) if output_dir else RESULTS_DIR
+    out.mkdir(parents=True, exist_ok=True)
+    if output_dir:
+        report_file = out / "market_scan_report.md"
+        sidecar_file = out / "market_scan_results.json"
+    else:
+        report_file = out / f"market_scan_report_{date_str}.md"
+        sidecar_file = out / f"market_scan_results_{date_str}.json"
+
     with open(report_file, 'w', encoding='utf-8') as f:
         f.write("\n".join(md))
-        
     print(f"Report successfully written to {report_file}")
+
+    def _clean_path(raw: str) -> str:
+        # Strip scraping artifact " 市场分析" appended by SellerSprite market page
+        return re.sub(r'\s*市场分析\s*$', '', raw).strip()
+
+    sidecar_items = [
+        {"en_name": c["en_name"], "zh_name": c["zh_name"], "path": _clean_path(c["path"]),
+         "level": c["level"], "departments": []}
+        for c in green_niches + yellow_niches
+    ]
+    with open(sidecar_file, 'w', encoding='utf-8') as f:
+        json.dump(sidecar_items, f, ensure_ascii=False, indent=2)
+    print(f"JSON sidecar written to {sidecar_file}")
     return str(report_file)
 
 def main():
     parser = argparse.ArgumentParser(description="Amazon Market Research Selection Script")
-    parser.add_argument('--config', type=str, default='scripts/market_config.json', help='Path to configuration JSON')
+    parser.add_argument('--config', type=str, default='scripts/market_config.json',
+                        help='Path to configuration JSON')
     parser.add_argument('--date', type=str, default='', help='Date format YYYY_MM_DD')
-    
+    parser.add_argument('--output-dir', type=str, default='', dest='output_dir',
+                        help='Directory to write report and sidecar (pipeline mode); '
+                             'defaults to results/ with date-stamped filenames')
+    parser.add_argument('--department-numbers', nargs='*', type=int, default=[],
+                        dest='department_numbers',
+                        help='SellerSprite department checkbox numbers to pre-filter '
+                             'the market page before scraping (forwarded from run_pipeline.py)')
+
     args = parser.parse_args()
-    
+
     date_str = args.date if args.date else datetime.date.today().strftime('%Y_%m_%d')
-    
-    categories = scrape_market(args.config, date_str)
-    generate_report(args.config, categories, date_str)
+
+    categories = scrape_market(args.config,
+                               department_numbers=args.department_numbers or None)
+    generate_report(args.config, categories, date_str,
+                    output_dir=args.output_dir or None)
 
 if __name__ == "__main__":
     try:
