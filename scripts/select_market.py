@@ -5,7 +5,7 @@ import datetime
 import argparse
 from pathlib import Path
 
-from scan_common import RESULTS_DIR, OpenCliError, eval_browser, open_browser
+from scan_common import RESULTS_DIR, OpenCliError, check_browser_ready, eval_browser, open_browser
 
 def values(section):
     return {
@@ -712,6 +712,7 @@ def main():
             print(f"WARNING: no department mapping for: {unknown} — those will be skipped")
         print(f"Departments: {args.departments} → numbers {dept_numbers}")
 
+    check_browser_ready()
     categories = scrape_market(args.config,
                                department_numbers=dept_numbers or None)
     generate_report(args.config, categories, date_str,

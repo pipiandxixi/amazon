@@ -10,7 +10,7 @@ import re
 import time
 from pathlib import Path
 
-from scan_common import RESULTS_DIR, OpenCliError, eval_browser, open_browser, extract_json_object
+from scan_common import RESULTS_DIR, OpenCliError, check_browser_ready, eval_browser, open_browser, extract_json_object
 
 KEYWORD_RESULTS_DIR = RESULTS_DIR / "keywords"
 
@@ -662,6 +662,7 @@ def main() -> None:
     wait_seconds = float(scan_policy.get("wait_seconds", 6))
     modes: list[dict] = config.get("modes", [])
 
+    check_browser_ready()
     print(f"Opening keyword research page (station={station}, month={month or 'default'})...")
     open_keyword_page(station, month)
 

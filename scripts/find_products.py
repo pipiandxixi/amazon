@@ -10,7 +10,7 @@ import re
 import time
 from pathlib import Path
 
-from scan_common import RESULTS_DIR, OpenCliError, eval_browser, extract_json_array, open_browser
+from scan_common import RESULTS_DIR, OpenCliError, check_browser_ready, eval_browser, extract_json_array, open_browser
 
 try:
     from deep_translator import GoogleTranslator as _GoogleTranslator
@@ -558,6 +558,7 @@ def main() -> None:
         filters["includeKeywords"] = ",".join(str(k) for k in kw_list if k)
         print(f"--keywords-file: includeKeywords = {filters['includeKeywords'][:80]}...")
 
+    check_browser_ready()
     open_browser("https://www.sellersprite.com/v3/product-research")
     time.sleep(5)
 

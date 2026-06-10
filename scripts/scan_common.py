@@ -1,6 +1,7 @@
 import json
 import re
 import subprocess
+import sys
 import time
 from pathlib import Path
 
@@ -30,6 +31,77 @@ def eval_browser(js, timeout=45):
 
 def open_browser(url):
     return run_opencli_cmd(["opencli", "browser", "ss", "open", url])
+
+
+def check_browser_ready() -> None:
+    """Verify the SellerSprite browser session is accessible and logged in.
+
+    Exits with a clear Chinese-language error message if:
+    - the session is not bound to any tab
+    - the bound tab is a chrome-extension:// page (extension popup)
+    - eval_browser() fails with an attach error
+    - the current sellersprite.com page shows a login form
+    """
+    # 1. Check that the session is bound and responsive
+    result = subprocess.run(
+        ["opencli", "browser", "ss", "state"],
+        capture_output=True, text=True, timeout=15,
+    )
+    if result.returncode != 0:
+        err = result.stderr.strip() or result.stdout.strip()
+        print(f"\n❌ 卖家精灵浏览器会话未连接: {err}")
+        print("请在 Chrome 中打开卖家精灵网站，然后运行以下命令绑定标签页：")
+        print("  opencli browser ss bind")
+        sys.exit(1)
+
+    # Parse current URL from state output
+    url = ""
+    for line in result.stdout.splitlines():
+        if line.startswith("url:"):
+            url = line.split(":", 1)[1].strip()
+            break
+
+    if url.startswith("chrome-extension://"):
+        print("\n❌ 当前绑定的是卖家精灵扩展弹窗，无法在此执行自动化")
+        print("请切换到卖家精灵网站页面 (https://www.sellersprite.com/)，然后重新绑定：")
+        print("  opencli browser ss bind")
+        sys.exit(1)
+
+    # 2. Confirm the extension context works (catches "attach failed" errors)
+    try:
+        eval_browser("typeof window !== 'undefined'", timeout=10)
+    except OpenCliError as exc:
+        err = str(exc)
+        if "attach failed" in err or "chrome-extension" in err:
+            print("\n❌ 卖家精灵扩展上下文不可用")
+            print("请将 Chrome 切换到卖家精灵标签页，然后重新绑定：")
+            print("  opencli browser ss bind")
+        else:
+            print(f"\n❌ 浏览器扩展错误: {exc}")
+            print("请确认卖家精灵已打开并登录后重试。")
+        sys.exit(1)
+
+    # 3. If already on sellersprite.com, do a best-effort login check
+    if "sellersprite.com" in url:
+        try:
+            out = eval_browser(
+                """(() => {
+                  const isLoginPage = !!document.querySelector(
+                    '.login-form, form[action*="login"], input[type="password"]'
+                  );
+                  const hasUser = !!document.querySelector(
+                    '.user-info, .el-avatar, [class*="nickname"], [class*="username"]'
+                  );
+                  return JSON.stringify({ isLoginPage, hasUser });
+                })()""",
+                timeout=10,
+            )
+            state = extract_json_object(out)
+            if state.get("isLoginPage") and not state.get("hasUser"):
+                print("\n❌ 卖家精灵未登录，请先在浏览器中登录账号后重试。")
+                sys.exit(1)
+        except (OpenCliError, ValueError, json.JSONDecodeError):
+            pass  # best-effort; auth errors will surface naturally in the scripts
 
 
 def extract_json_array(output):
