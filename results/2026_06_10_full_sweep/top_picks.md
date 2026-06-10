@@ -54,7 +54,7 @@
 | 42 | [B0FV8M2Y78](https://www.amazon.com/dp/B0FV8M2Y78) | A2C 原装折叠磁铁高尔夫球车手机支架，带测距仪 / A2C Original Fol… | Deck Hardware | $37.99 | 692 | +74% | 74% | 51 | 1 | 4个月 | 51 reviews仍可入局；增速+74%；74%高毛利；⚠️混入 |
 | 43 | [B0F19JNGKS](https://www.amazon.com/dp/B0F19JNGKS) | 贝壳展示盒 贝壳支架，带亚克力面板储物柜 / Seashell Display Box… | Decorative Boxes | $17.99 | 187 | +184% | 61% | 16 | 1 | 14个月 | 16 reviews低竞争；增速+184%高增长；独家卖家 |
 | 44 | [B0FWRLYCT5](https://www.amazon.com/dp/B0FWRLYCT5) | 4 件装树脂蜜蜂浇水台适用于蝴蝶花园杯浴 / 4 Pack Resin Bee Wat… | Decorative Garden Stakes | $29.99 | 305 | +126% | 60% | 19 | 1 | 7个月 | 19 reviews低竞争；增速+126%高增长；独家卖家 |
-| 45 | [B0GJZPMNL3](https://www.amazon.com/dp/B0GJZPMNL3) | 适用于浮桥的船用手机支架船用手机支架 / Boat Phone Holder Mari… | Handlebar Mounts | $17.90 | 131 | +165% | 68% | 28 | 1 | 3个月 | 28 reviews低竞争；增速+165%高增长；68%毛利 |
+| 45 | [B0GJZPMNL3](https://www.amazon.com/dp/B0GJZPMNL3) | 适用于浮桥的船用手机支架船用手机支架 / Boat Phone Holder Mari… | Handlebar Mounts | $17.90 | 131 | +165% | 68% | 28 | 1 | 3个月 | 28 reviews低竞争；增速+165%高增长；68%毛利；⚠️GMV偏低 |
 | 46 | [B0GCBNPNTC](https://www.amazon.com/dp/B0GCBNPNTC) | 汽车紫外线检漏仪染料套件 / Automotive UV Leak Detector … | Leak Detection Tools | $15.99 | 214 | +68% | 61% | 16 | 1 | 4个月 | 16 reviews低竞争；增速+68%；独家卖家 |
 | 47 | [B0FC27GFW6](https://www.amazon.com/dp/B0FC27GFW6) | 高压清洗机喷嘴涡轮喷嘴 / Pressure Washer Tips Turbo No… | Nozzles | $21.99 | 178 | +78% | 65% | 17 | 1 | 10个月 | 17 reviews低竞争；增速+78%；65%毛利 |
 | 48 | [B0DTTPB3WJ](https://www.amazon.com/dp/B0DTTPB3WJ) | 12 件装金属花朵蝴蝶蜂鸟墙壁艺术装饰 3D Met / 12 Pack Metal … | Plaques & Wall Art | $34.99 | 188 | +66% | 67% | 29 | 1 | 16个月 | 29 reviews低竞争；增速+66%；67%毛利 |
@@ -65,7 +65,7 @@
 | 53 | [B0GHRXZC8C](https://www.amazon.com/dp/B0GHRXZC8C) | 3PCS P1P/P1S 热端升级一体式0.4mm陶瓷组装电 / 3PCS P1P/P… | 3D Printer Extruders | $39.59 | 260 | +89% | 76% | 49 | 1 | 4个月 | 49 reviews仍可入局；增速+89%；76%高毛利 |
 | 54 | [B0FPQB15MY](https://www.amazon.com/dp/B0FPQB15MY) | 5PCS 木雕盘 / 5PCS Wood Carving Disc | Angle Grinder Wheels | $18.99 | 595 | +308% | 56% | 60 | 1 | 8个月 | 增速+308%高增长；独家卖家；月销595 |
 | 55 | [B0FFMDKNJ7](https://www.amazon.com/dp/B0FFMDKNJ7) | ZORUNNA 混凝土用金刚石裂纹铣刀 4.5 英寸 / ZORUNNA Diamon… | Angle Grinder Wheels | $18.99 | 307 | +13% | 67% | 22 | 1 | 9个月 | 22 reviews低竞争；67%毛利；独家卖家 |
-| 56 | [B0FSLSGZH9](https://www.amazon.com/dp/B0FSLSGZH9) | 5 件套角磨机木雕盘套装 / 5Pcs Angle Grinder Wood Carv… | Angle Grinder Wheels | $21.99 | 120 | +396% | 62% | 5 | 1 | 7个月 | 5 reviews极低竞争；增速+396%高增长；独家卖家 |
+| 56 | [B0FSLSGZH9](https://www.amazon.com/dp/B0FSLSGZH9) | 5 件套角磨机木雕盘套装 / 5Pcs Angle Grinder Wood Carv… | Angle Grinder Wheels | $21.99 | 120 | +396% | 62% | 5 | 1 | 7个月 | 5 reviews极低竞争；增速+396%高增长；独家卖家；⚠️GMV偏低 |
 | 57 | [B0G1SQTYTC](https://www.amazon.com/dp/B0G1SQTYTC) | 辣椒软胶囊补充剂 / Cayenne Pepper Softgels Supplement | Cayenne | $17.99 | 306 | +196% | 59% | 31 | 1 | 5个月 | 31 reviews仍可入局；增速+196%高增长；独家卖家 |
 | 58 | [B0GHNXXM55](https://www.amazon.com/dp/B0GHNXXM55) | 集成的内外管螺纹和铰孔工具 / Integrated Internal and Ext… | Countersink Drill Bits | $18.99 | 180 | +134% | 58% | 8 | 1 | 3个月 | 8 reviews极低竞争；增速+134%高增长；独家卖家 |
 | 59 | [B0GT98KV9Q](https://www.amazon.com/dp/B0GT98KV9Q) | 230 件套钻头套装 / 230 Pcs Drill Bit Set | Countersink Drill Bits | $37.98 | 105 | +138% | 66% | 17 | 1 | 2个月 | 17 reviews低竞争；增速+138%高增长；66%毛利 |
@@ -77,31 +77,31 @@
 - **出现次数**: 6 个 ASIN 进入 top 榜单
 - **价格区间**: $16.99 ~ $53.99
 - **最低 Reviews**: 8
-> 💡 建议在 1688 以 "Pool Heater & Heat Pump Parts" 为关键词搜索供应商，验证 COGS < 15%。
+> 💡 建议在 1688 搜索「Pool Heater & Heat Pump Parts」的中文对应关键词，锁定供应商并验证 COGS < 15%。
 
 ### Angle Grinder Wheels
 - **出现次数**: 5 个 ASIN 进入 top 榜单
 - **价格区间**: $18.99 ~ $23.99
 - **最低 Reviews**: 5
-> 💡 建议在 1688 以 "Angle Grinder Wheels" 为关键词搜索供应商，验证 COGS < 15%。
+> 💡 建议在 1688 搜索「Angle Grinder Wheels」的中文对应关键词，锁定供应商并验证 COGS < 15%。
 
 ### Grinding Discs
 - **出现次数**: 4 个 ASIN 进入 top 榜单
 - **价格区间**: $25.89 ~ $55.99
 - **最低 Reviews**: 16
-> 💡 建议在 1688 以 "Grinding Discs" 为关键词搜索供应商，验证 COGS < 15%。
+> 💡 建议在 1688 搜索「Grinding Discs」的中文对应关键词，锁定供应商并验证 COGS < 15%。
 
 ### Leak Detection Tools
 - **出现次数**: 3 个 ASIN 进入 top 榜单
 - **价格区间**: $15.99 ~ $28.99
 - **最低 Reviews**: 9
-> 💡 建议在 1688 以 "Leak Detection Tools" 为关键词搜索供应商，验证 COGS < 15%。
+> 💡 建议在 1688 搜索「Leak Detection Tools」的中文对应关键词，锁定供应商并验证 COGS < 15%。
 
 ### Cayenne
 - **出现次数**: 3 个 ASIN 进入 top 榜单
 - **价格区间**: $17.99 ~ $28.99
 - **最低 Reviews**: 3
-> 💡 建议在 1688 以 "Cayenne" 为关键词搜索供应商，验证 COGS < 15%。
+> 💡 建议在 1688 搜索「Cayenne」的中文对应关键词，锁定供应商并验证 COGS < 15%。
 
 ## 各产品详细分析（前 30 名）
 
@@ -288,3 +288,133 @@
 ## 已覆盖类目
 
 3D Printer Extruders, Angle, Angle Grinder Wheels, Automatic Feeders, Bags & Cases, Bait Traps, Bladder Control Devices, Brake System Bleeding Tools, Brazing Rods, Bread Knives, Bumper Guards, Cables & Adapters, Canvas Tools & Accessories, Car Rack Parts & Accessories, Cayenne, Cheese Knives, Chocolate Drink Mixes, Collectible Vehicles, Cookbook Stands, Cooking Utensils, Countersink Drill Bits, Deck Hardware, Decorative Boxes, Decorative Garden Stakes, Desk & Shelf Clocks, Deviled Egg Plates, Diamond Blades, Drill Bits, Electrical System Tools, Exterior Lighting, Feeders, Flags, Float Valves, Fly Tying Equipment, Forstner Drill Bits, Fuel, Fuel System, Grill Lighting, Grinding Discs, Growth Charts, Guitar & Bass Accessories, Gutters, Handlebar Mounts, Headlights, Herb & Spice Mills, Honey Jars, Insulin Injectors, Leak Detection Tools, Lighting Products, Locks, Meat Cleavers, Nail Pullers, Nozzles, Oolong, Optics Accessories, Outdoor Statues, Pipe Clamps, Plaques & Wall Art, Pool Heater & Heat Pump Parts, Pressure Regulators, Recipe Holders, Repair Kits, Scissors & Shears, Seat Belts, Seat Covers, Shilajit, Smokeless Inhalers, Soap & Lotion Dispensers, Sound Therapy, Tactical Vests, Tap Extractors, Tattoo Kits, Tie-Downs, Toilet Spare Parts, Tools, Tortilla Servers, Trash Can Lids, Trim, Trophies, Turn Signal Assemblies & Lenses, Weather Stripping, Weaving Looms, Welding Helmets, Wine Decanters, Wood Burning Tools
+
+## 市场环境小结 / 关键词信号
+
+本次全量扫描覆盖 85 个绿色子类目，共 942 个去重候选单品，最终 top 60 呈现出清晰的三大信号：
+
+**主导聚类：工业磨削工具**。Grinding Discs（4 个 ASIN）+ Angle Grinder Wheels（5 个 ASIN）合计 9 个产品进入 top 60，占据榜单约 15%，且全部为"角磨机木雕盘"这一细分产品形态——消费级木工创客趋势推动了这波需求，增速普遍 +100%~+655%，平均 reviews 仅 20 条左右，是目前信号最强的新手进入机会。
+
+**池塘加热器零件（Pool Heater Parts）集群稳健**。6 个 ASIN 进入 top 60，均为 Hayward/Raypak 等品牌的通用替换件，reviews 极低（8~25），价格 $17~$54，月销稳定 100~370 件。这是替换件细分典型形态：不需要品牌建设，老用户按型号主动搜索，回购率高，退货率低。主要风险是供应链认证——涉水电安全件可能需要 UL/ETL 认证。
+
+**⚠️ 历史数据污染**：top 60 中排名 4、6、13、52、57 等多个 Cayenne/Shilajit 类产品来自**受监管的膳食补充剂类目**（路径含 Vitamins, Minerals & Supplements），这些产品是在旧过滤规则下进入数据的。新版 market_config.json 已将该路径加入 excluded_paths，后续扫描不会再收录。新手应**跳过所有 Cayenne 和 Shilajit 产品**。
+
+---
+
+## 各产品详细分析（重点前 10 名）
+
+### 1. [B0GFNDJ71D] 双室头垫片测试仪套件 / Dual-Chamber Head Gasket Tester Kit
+**类目**: Leak Detection Tools ｜ **月销量**: 330 ｜ **增速**: +444% ｜ **毛利率**: 70% ｜ **Reviews**: 9 ｜ **上架**: 3 个月
+
+**机会点**: 汽车维修工具，仅 9 条 reviews 月销已达 330 件，说明消费者因为急需功能性工具而非依赖评价决策。$28.99 定价利润空间充足。
+
+**风险点**: 汽车诊断工具需要精准的产品文案（对应车型范围），质量不达标会引发批量退货，退货率是核心风险。需确认工具原理（气压测漏）不涉及医疗/安全认证。
+
+**建议下一步**: 在 1688 搜索"冷却系统检漏仪"/"头垫片泄漏检测套装"，目标 COGS ≤ $8（售价 28%）；核查卖家精灵该 ASIN 的退货率和 review 星级分布。
+
+---
+
+### 2. [B0FL7P55SY] 14 件套木雕盘套装 / 14PCS Angle Grinder Wood Carving Disc Set
+**类目**: Grinding Discs ｜ **月销量**: 586 ｜ **增速**: +655% ｜ **毛利率**: 69% ｜ **Reviews**: 23 ｜ **上架**: 8 个月
+
+**机会点**: 木工创客消费化趋势驱动，"套装"定位比单片更高客单（$34.99 vs $18），月销已超 500 件而 reviews 仅 23，黄金入场窗口。同类目 3 个 ASIN 同时排名，信号高度一致。
+
+**风险点**: CN 卖家已大量跟进（Grinding Discs 聚类中所有产品均由独家卖家占据，门槛拉高后新入场者会直接遭遇跟卖）；套装组合如果不差异化，跟卖压力极大。
+
+**建议下一步**: 在 1688 搜索"角磨机木雕片套装"，确认 MOQ 和 COGS 目标 ≤ 22%；设计 2-3 个差异化 SKU（如加防护手套套装、附送收纳盒）。
+
+---
+
+### 3. [B0FP5MH59D] 5 件套木雕盘套装 / 5PCS Angle Grinder Wood Carving Set
+**类目**: Grinding Discs ｜ **月销量**: 357 ｜ **增速**: +285% ｜ **毛利率**: 66% ｜ **Reviews**: 16 ｜ **上架**: 8 个月
+
+**机会点**: 同类目同期入场印证，$25.89 低价入门款，覆盖价格敏感用户。
+
+**风险点**: 与 rank 2 同类目直接竞争，需要差异化（片数、材质、尺寸组合）。
+
+**建议下一步**: 与 rank 2 对比，选择件数/价格段的空白位置切入，而非直接复制现有套装规格。
+
+---
+
+### 4. [B0GQRHC4XG] 布卢明蜂蜜棒 / Bloomin Honey Sticks（类目：Shilajit）
+⚠️ **注意**：产品实为蜂蜜棒，被卖家错误归类至 Shilajit 类目以利用小类 BSR。本产品是补充剂类目的变体混入，不可按照 Shilajit 类目逻辑采购，需直接以"蜂蜜棒"为产品搜索。该类目下产品需谨慎，参考"⚠️混入"处理逻辑。
+
+---
+
+### 5. [B0DN2VPYLN] LectroFan Micro2 / Adaptive Sound Technology
+**类目**: Sound Therapy ｜ **月销量**: 322 ｜ **增速**: +219% ｜ **毛利率**: 75% ｜ **Reviews**: 25 ｜ **上架**: 18 个月
+
+**机会点**: 18 个月仍保持 +219% 增速，说明市场需求真实扩张而非昙花一现；75% 毛利率居整个 top 60 前列；白噪声机在助眠市场持续增长。
+
+**风险点**: "LectroFan Micro2"是品牌商品名，若直接仿制面临知识产权风险。需要做差异化——不能贴牌"LectroFan"。
+
+**建议下一步**: 在 1688 搜索"白噪声机"/"助眠声音机器"；目标功能点可差异化：更轻薄、更长续航、蓝牙连接；COGS 目标 $8-10（售价 $48 的 20%）。
+
+---
+
+### 6. [B0GMTGCG3J] 辣椒素软胶囊 / Cayenne Pepper Softgels
+⚠️ **受监管产品**：FDA 监管的膳食补充剂，Amazon 需要额外审批流程。该产品及类目已在新版过滤规则中被排除，**新手不应进入此类目**，跳过。
+
+---
+
+### 7. [B0F1JPQPLZ] Avid 自行车液压制动放气套件（类目：Deck Hardware）
+⚠️ **混入产品**：液压刹车放气工具被错误归类至 Deck Hardware（船舶甲板五金），实为自行车维修配件。采购时直接搜索"自行车液压制动放气套件"，勿按 Deck Hardware 类目搜索。
+
+**机会点**：真实产品是 SRAM/Avid 液压刹车维修套件，$30.99，月销 671，reviews 28。自行车维修工具市场实质性机会，值得通过正确类目（Brake System Tools）单独扫描验证。
+
+---
+
+### 8. [B0FB3Y5TQX] 7" 金刚石研磨盘 / 7" Disc Grinding Wheel for RBG 712
+**类目**: Grinding Discs ｜ **月销量**: 195 ｜ **增速**: +90% ｜ **毛利率**: 76% ｜ **Reviews**: 23 ｜ **上架**: 11 个月
+
+**机会点**: 76% 最高毛利，专用型号（RBG 712 兼容）买家主动搜索，跟卖壁垒相对高；较高客单价 $53.99。
+
+**风险点**: 专机配件依赖特定设备保有量，市场天花板相对有限。
+
+**建议下一步**: 调研 RBG 712 设备的市场保有量和用户规模，确认替换频率。1688 搜"金刚石碗形砂轮 7 英寸"核实 COGS。
+
+---
+
+### 9. [B0FY6WGTXX] GL77A 卤素制冷剂检漏仪 / Halogen Refrigerant Leak Detector
+**类目**: Leak Detection Tools ｜ **月销量**: 239 ｜ **增速**: +90% ｜ **毛利率**: 73% ｜ **Reviews**: 27 ｜ **上架**: 6 个月
+
+**机会点**: 与 rank 1 同类目，6 个月已稳定 239 月销，技术型产品客群精准（HVAC 维修工）。
+
+**风险点**: 卤素检漏仪检测含氟制冷剂，需确认是否有 EPA/UL 合规要求；技术产品对包装文案要求较高。
+
+**建议下一步**: 与 rank 1 同批次在 1688 验证供应商，搜索"卤素制冷剂泄漏探测器"；确认是否需要额外认证。
+
+---
+
+### 10. [B0FD57M9N9] WaveJet 自动泡沫皂液器 / WaveJet Automatic Foam Soap Dispenser
+**类目**: Soap & Lotion Dispensers ｜ **月销量**: 162 ｜ **增速**: +263% ｜ **毛利率**: 73% ｜ **Reviews**: 58 ｜ **上架**: 11 个月
+
+**机会点**: 日用消费品，需求稳定，非季节性；11 个月增速仍 +263% 且 reviews 仅 58，说明类目持续扩张中；$34.99 定价符合 "好物家居" 消费决策区间。
+
+**风险点**: Reviews 58 已接近我们的 80 上限，入场时间需快；泡沫皂液器技术含量低，长期跟卖压力大，需要差异化设计（颜色/容量/传感器敏感度）。
+
+**建议下一步**: 1688 搜索"感应泡沫皂液器"；目标 COGS ≤ $9（售价 26%）；同时比对 rank 11 中的 Soap & Lotion Dispensers 类目是否有其他 ASIN 作为风险分散候选。
+
+---
+
+## 下次优先探索
+
+**工业磨削聚类深化**（高优先）：Surface Grinding Wheels 是今日新增绿色类目但 0 产品——建议用放宽的过滤条件（max_reviews 放宽至 120）单独扫描，验证这一聚类是否可扩展至更多子类目。同时建议加入 Cut-Off Wheels、Flap Discs 等相关类目。
+
+**泡沫皂液器类目覆盖**：Soap & Lotion Dispensers 有 5 个产品进入 top 60，但当前 reviews 已逼近限制，建议重新扫描并降低 reviews 上限至 60 确认有效产品池是否收窄。
+
+**汽车维修工具集群**：Leak Detection Tools 两个 ASIN 同时入榜，建议扩展至 Brake System Bleeding Tools（上次全量扫描有 14 个产品）+ Electrical System Tools 重跑。
+
+**未覆盖的新绿色类目（今日新增但未产品扫描）**：
+- Oil Pressure Tools（rev 133, CN 77% — 自营空间需要核验）
+- Tailgate Locks（rev 280, CN 65%）
+- French Bread & Baguette Pans（rev 321, 厨房类目，退货率 3.64% 极低）
+- Hunting Dog Equipment（nav-fallback 到 Hunting 层级导致 0 结果，需单独用精确叶类目路径重试）
+
+**建议下次运行参数**：
+```bash
+# 工业磨削聚类深化，放宽单类目验证
+python3 scripts/find_products.py --config scripts/product_config.json \
+  --output-dir results/2026_06_11_grinding_deep \
+  --categories-file /tmp/grinding_cats.json --top-n 40
+```

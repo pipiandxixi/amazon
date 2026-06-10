@@ -509,6 +509,114 @@
       "path": "Tools & Home Improvement › Power & Hand Tools › Hand Tools › Nail Pullers",
       "date": "2026-06-10",
       "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Brake Levers",
+      "path": "Sports & Outdoors > Sports > Cycling > Parts & Components > Bike Brakes & Parts > Brake Parts > Brake Levers",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_narrow_tools_patio_sports"
+    },
+    {
+      "en_name": "Dispensing Bottles",
+      "path": "Industrial & Scientific > Lab & Scientific Products > Glassware & Labware > Lab Bottles & Jars > Dispensing Bottles",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Relief Valves",
+      "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Fittings > Valves > Relief Valves",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Multifunction Tools",
+      "path": "Sports & Outdoors > Sports > Cycling > Bike Tools & Maintenance > Multifunction Tools",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_narrow_tools_patio_sports"
+    },
+    {
+      "en_name": "Hunting Dog Equipment",
+      "path": "Sports & Outdoors > Hunting & Fishing > Hunting > Hunting Dog Equipment",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_narrow_tools_patio_sports"
+    },
+    {
+      "en_name": "UV Phone Sterilizer Boxes",
+      "path": "Cell Phones & Accessories > Accessories > UV Phone Sterilizer Boxes",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_narrow_tools_patio_sports"
+    },
+    {
+      "en_name": "Surface Grinding Wheels",
+      "path": "Industrial & Scientific > Abrasive & Finishing Products > Abrasive Wheels & Discs > Surface Grinding Wheels",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Controls",
+      "path": "Tools & Home Improvement > Electrical > Electric Motors > Mounts & Accessories > Controls",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Latch Hook Kits",
+      "path": "Arts, Crafts & Sewing > Needlework > Latch Hook > Latch Hook Kits",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Tailgate Locks",
+      "path": "Automotive > Exterior Accessories > Truck Bed & Tailgate Accessories > Tailgate Locks",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Oil Pressure Tools",
+      "path": "Automotive > Tools & Equipment > Engine Tools > Oil Pressure Tools",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Embroidery Storage",
+      "path": "Arts, Crafts & Sewing > Organization, Storage & Transport > Craft & Sewing Supplies Storage > Embroidery Storage",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Carriers",
+      "path": "Pet Supplies > Small Animals > Carriers",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "French Bread & Baguette Pans",
+      "path": "Home & Kitchen > Kitchen & Dining > Bakeware > Bread & Loaf Pans > French Bread & Baguette Pans",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Knitting Looms & Boards",
+      "path": "Arts, Crafts & Sewing > Knitting & Crochet > Knitting Looms & Boards",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Wiring Harnesses",
+      "path": "Automotive > Motorcycle & Powersports > Parts > Electrical & Batteries > Wiring Harnesses",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Handles",
+      "path": "Appliances > Parts & Accessories > Refrigerator Parts & Accessories > Handles",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
+    },
+    {
+      "en_name": "Paper Craft Tools",
+      "path": "Arts, Crafts & Sewing > Crafting > Paper & Paper Crafts > Paper Craft Tools",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_tools_rescan"
     }
   ]
 }
