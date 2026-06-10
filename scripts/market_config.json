@@ -5,7 +5,7 @@
     "minAvgPrice": {"value": "20.0", "label": "平均价格最小值（美元）"},
     "maxAvgPrice": {"value": "", "label": "平均价格最大值（美元，可留空）"},
     "minTotalProducts": {"value": "50", "label": "商品总数最小值"},
-    "maxAvgSellers": {"value": "60.0", "label": "平均卖家数最大值"},
+    "maxAvgSellers": {"value": "20.0", "label": "平均卖家数最大值"},
     "maxHeadListingBrandCrn": {"value": "65.0", "label": "头部 Listing 品牌集中度最大值（百分比）"},
     "maxHeadListingSellerCrn": {"value": "65.0", "label": "头部 Listing 卖家集中度最大值（百分比）"},
     "maxAmzRatio": {"value": "25.0", "label": "Amazon 自营占比最大值（百分比）"},
@@ -14,7 +14,7 @@
     "maxAvgWeight": {"value": "3.0", "label": "平均重量最大值（lbs）"},
     "maxAvgVolume": {"value": "800", "label": "平均体积最大值（in³）"},
     "minAvgProfit": {"value": "50.0", "label": "平均毛利率最小值（百分比）"},
-    "maxAvgReviews": {"value": "1200", "label": "平均评分数最大值"}
+    "maxAvgReviews": {"value": "500", "label": "平均评分数最大值"}
   },
   "scan_policy": {
     "max_pages": {"value": 5, "label": "最多扫描页数"},
@@ -44,9 +44,9 @@
     "red": {
       "max_return_rate": {"value": 10.0, "label": "平均退货率上限（百分比）"},
       "max_weight_lbs": {"value": 2.5, "label": "平均重量上限（lbs）"},
-      "max_reviews": {"value": 1000, "label": "平均评分数上限"},
-      "excluded_keywords": {"value": ["Insects", "Livestock", "Wormers"], "label": "排除的类目名称关键词"},
-      "excluded_paths": {"value": ["Clothing", "Shoes", "Hoodies"], "label": "排除的市场路径关键词"}
+      "max_reviews": {"value": 550, "label": "平均评分数上限（filter 500 的兜底上限，防止 SellerSprite 分页边界漏出）"},
+      "excluded_keywords": {"value": ["Insects", "Livestock", "Wormers", "Supplement", "Softgel", "Capsule", "Vitamin", "Probiotic", "Inhaler", "Injector", "Catheter", "Syringe"], "label": "排除的类目名称关键词"},
+      "excluded_paths": {"value": ["Clothing", "Shoes", "Hoodies", "Vitamins, Minerals & Supplements", "Diabetes Care", "Incontinence & Ostomy", "Medical Supplies & Equipment", "Tattoo", "Grocery & Gourmet Food", "Alternative Medicine"], "label": "排除的市场路径关键词"}
     },
     "yellow": {
       "max_return_rate": {"value": 8.0, "label": "触发谨慎评级的平均退货率（百分比）"},

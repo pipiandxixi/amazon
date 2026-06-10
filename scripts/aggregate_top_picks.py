@@ -10,8 +10,8 @@ from __future__ import annotations
 
 import argparse
 import datetime
-import json
 import re
+from collections import Counter
 from pathlib import Path
 
 
@@ -41,6 +41,11 @@ _ROW_RE = re.compile(
 _MONTHS_RE = re.compile(r"(\d+)\s*个月")
 _YEARS_RE = re.compile(r"(\d+)\s*年")
 
+# Categories known to be abused as catch-alls (sellers miscategorize unrelated
+# products to game small-subcategory BSR). Products from these categories show
+# misleading category labels and cannot be sourced via the category name.
+_CATCHALL_CATEGORIES: frozenset[str] = frozenset({"Deck Hardware"})
+
 
 def _parse_age_months(age_str: str) -> float:
     """Convert age string like '4个月' or '1年 2个月' to total months."""
@@ -64,15 +69,11 @@ def _parse_growth(g: str) -> float | None:
         return None
 
 
-def parse_product_file(path: Path) -> tuple[str, str, list[dict]]:
-    """Return (category_en, category_zh, list_of_products)."""
+def parse_product_file(path: Path) -> tuple[str, list[dict]]:
+    """Return (category_en, list_of_products)."""
     text = path.read_text(encoding="utf-8")
 
-    # Category names
     cat_en = path.stem.replace("_", " ").title()
-    zh_m = re.search(r"市场评级.*?(?:均价|$)", text)
-    cat_zh = ""
-    # Try to get zh from file header or market line
     header_m = re.search(r"^# (.+?) 合格产品", text, re.MULTILINE)
     if header_m:
         cat_en = header_m.group(1).strip()
@@ -105,7 +106,7 @@ def parse_product_file(path: Path) -> tuple[str, str, list[dict]]:
             })
         except (ValueError, KeyError):
             continue
-    return cat_en, cat_zh, products
+    return cat_en, products
 
 
 # ---------------------------------------------------------------------------
@@ -187,6 +188,22 @@ def score_product(p: dict) -> float:
     if p["rating"] >= 4.5:
         s += 0.5
 
+    # GMV floor penalty: products with too-low absolute revenue aren't worth
+    # the sourcing investment for a new seller.
+    gmv = p["monthly_sales"] * p["price"]
+    if gmv < 2000:
+        s -= 2
+    elif gmv < 3000:
+        s -= 1
+
+    # Trend-chasing penalty: hyper-new products with explosive growth are hard
+    # for a new seller to replicate before the trend fades (60-90 day lead time).
+    if g is not None and g > 200:
+        if age < 2:
+            s -= 2
+        elif age < 3:
+            s -= 1
+
     return s
 
 
@@ -248,8 +265,49 @@ def key_reason(p: dict) -> str:
     elif p["monthly_sales"] >= 200:
         parts.append(f"月销{p['monthly_sales']}")
 
-    # Keep the 3 most impactful signals
-    return "；".join(parts[:3]) or "多项指标达标"
+    # Penalty warnings — always shown so user knows why a product ranked lower
+    warnings: list[str] = []
+    gmv = p["monthly_sales"] * p["price"]
+    if gmv < 2000:
+        warnings.append("⚠️GMV不足")
+    elif gmv < 3000:
+        warnings.append("⚠️GMV偏低")
+    if g is not None and g > 200 and age < 3:
+        warnings.append("⚠️追风口")
+
+    result = "；".join(parts[:3]) or "多项指标达标"
+    if warnings:
+        result += "；" + "；".join(warnings)
+    return result
+
+
+def _build_cluster_section(ranked_top: list[dict]) -> list[str]:
+    """Generate the 新手优先聚类 section from the top-ranked products."""
+    cat_counts = Counter(p["category"] for p in ranked_top)
+    clusters = [
+        (cat, cnt) for cat, cnt in cat_counts.most_common()
+        if cnt >= 2 and cat not in _CATCHALL_CATEGORIES
+    ][:5]
+
+    lines = ["## 新手优先聚类", ""]
+    if not clusters:
+        lines.append("_本次扫描未发现明显的产品聚类，建议扩大扫描范围或降低过滤门槛。_")
+        lines.append("")
+        return lines
+
+    for cat, cnt in clusters:
+        cat_products = [p for p in ranked_top if p["category"] == cat]
+        prices = [p["price"] for p in cat_products]
+        min_reviews = min(p["reviews"] for p in cat_products)
+        lines += [
+            f"### {cat}",
+            f"- **出现次数**: {cnt} 个 ASIN 进入 top 榜单",
+            f"- **价格区间**: ${min(prices):.2f} ~ ${max(prices):.2f}",
+            f"- **最低 Reviews**: {min_reviews}",
+            f"> 💡 建议在 1688 搜索「{cat}」的中文对应关键词，锁定供应商并验证 COGS < 15%。",
+            "",
+        ]
+    return lines
 
 
 def write_top_picks(
@@ -270,6 +328,9 @@ def write_top_picks(
             seen[asin] = p
     ranked = sorted(seen.values(), key=lambda x: x["_score"], reverse=True)
 
+    top_slice = ranked[:top_n]
+    has_catchall = any(p["category"] in _CATCHALL_CATEGORIES for p in top_slice)
+
     # Header
     lines = [
         f"# Amazon 综合选品推荐 ({date_str}{' — ' + batch_label if batch_label else ''})",
@@ -279,6 +340,12 @@ def write_top_picks(
         f"去重后共 **{len(seen)}** 个候选单品，本报告取评分前 **{min(top_n, len(seen))}** 名。",
         "",
     ]
+    if has_catchall:
+        lines += [
+            '> ⚠️ 标注“混入”的产品来自已知的“垃圾桶类目”（如 Deck Hardware），'
+            '该类目被卖家滥用归类，产品与类目无真实对应关系，供应链不可直接按类目名称搜索。',
+            "",
+        ]
 
     # Table
     lines += [
@@ -287,21 +354,27 @@ def write_top_picks(
         "| 排名 | ASIN | 品名 | 类目 | 价格 | 月销量 | 增长率 | 毛利率 | Reviews | 卖家数 | 上架时长 | 推荐理由 |",
         "|---:|---|---|---|---:|---:|---:|---:|---:|---:|---|---|",
     ]
-    for i, p in enumerate(ranked[:top_n], 1):
+    for i, p in enumerate(top_slice, 1):
         name = f"{p['zh_name']} / {p['en_name']}" if p["en_name"] else p["zh_name"]
         if len(name) > 45:
             name = name[:43] + "…"
         age_str = f"{p['age_months']:.0f}个月" if p["age_months"] >= 1 else "<1个月"
+        reason = key_reason(p)
+        if p["category"] in _CATCHALL_CATEGORIES:
+            reason += "；⚠️混入"
         lines.append(
             f"| {i} | [{p['asin']}](https://www.amazon.com/dp/{p['asin']}) "
             f"| {name} | {p['category']} "
             f"| ${p['price']:.2f} "
             f"| {p['monthly_sales']:,} | {format_growth(p['growth'])} "
             f"| {p['margin']}% | {p['reviews']} | {p['sellers']} "
-            f"| {age_str} | {key_reason(p)} |"
+            f"| {age_str} | {reason} |"
         )
 
     lines += [""]
+
+    # Newbie cluster summary
+    lines += _build_cluster_section(top_slice)
 
     # Detailed analysis for top 30 (or top_n if smaller)
     detail_n = min(30, top_n, len(seen))
@@ -359,7 +432,7 @@ def main() -> None:
     zero_result_cats: list[str] = []
 
     for f in md_files:
-        cat_en, _, products = parse_product_file(f)
+        cat_en, products = parse_product_file(f)
         scanned_cats.append(cat_en)
         if not products:
             zero_result_cats.append(cat_en)

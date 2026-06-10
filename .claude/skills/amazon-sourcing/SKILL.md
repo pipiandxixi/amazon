@@ -12,6 +12,12 @@ cat results/coverage.json 2>/dev/null || echo "{}"
 ls results/ | grep -v coverage.json | sort | tail -10
 ```
 
+**新手前置检查清单**（如为首次开店，在继续前确认以下各项）：
+- [ ] 预算 ≥ $3,000（首单备货 + FBA 头程 + PPC 启动费）
+- [ ] 已开通或计划开通 Amazon FBA（否则 FBA 毛利率数据不适用）
+- [ ] 了解 Amazon 受限类目：膳食补充剂、医疗器械、食品需要额外审批，本管道已从源头过滤这些类目
+- [ ] 了解产品责任险要求（针对 $25+ 客单价类目）
+
 Ask the user:
 1. **Use existing data or run fresh?** (default: fresh if nothing from today)
 2. **Breadth** (if fresh): narrow (1–3 depts, ~15min) / medium (4–8 depts, ~45min) / wide (all 15, ~2hr)
@@ -137,7 +143,12 @@ If the scan was run **without** `--batch-size`, generate it manually:
 python3 scripts/aggregate_top_picks.py --run-dir $RUN_DIR --top-n 50
 ```
 
-The auto-generated report contains the scored table with 推荐理由. Your job in this step is to **add the narrative sections** that require LLM judgment:
+The auto-generated report contains:
+- Scored table with 推荐理由
+- **`## 新手优先聚类`** — 自动识别的 2-5 个产品集群，每个集群有 ≥2 个 ASIN 入榜。这是新手最应关注的机会，同一类目多个 ASIN 同时排名代表信号强度高，不是偶然。优先在 1688 验证这些类目的 COGS。
+- **`⚠️混入` 标记** — 推荐理由列中含此标记的产品来自已知的"垃圾桶类目"（如 Deck Hardware），该类目被卖家滥用归类，产品与类目名称无真实对应关系。**不要按类目名称去找供货**，需直接用产品名在 1688 搜索。
+
+Your job in this step is to **add the narrative sections** that require LLM judgment:
 
 Open `$RUN_DIR/top_picks.md` and append or fill in:
 

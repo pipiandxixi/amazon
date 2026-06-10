@@ -264,6 +264,23 @@ def scrape_products(limit: int) -> list[dict[str, str]]:
     output = eval_browser(
         f"""
         (() => {{
+          // New layout: div.relation-card (card-based, no table)
+          const cards = Array.from(document.querySelectorAll('div.relation-card'));
+          if (cards.length > 0) {{
+            const products = [];
+            for (let i = 0; i < cards.length && products.length < {limit}; i++) {{
+              const card = cards[i];
+              const text = card.innerText;
+              if (!/\\bB0[A-Z0-9]{{8}}\\b/.test(text)) continue;
+              const imgDiv = card.querySelector('.img');
+              const style = imgDiv ? imgDiv.getAttribute('style') || '' : '';
+              const urlM = style.match(/url\\(["']?([^"')]+)["']?\\)/);
+              const imgUrl = urlM ? urlM[1] : '';
+              products.push({{ main: text, detail: '', imgUrl }});
+            }}
+            return JSON.stringify(products);
+          }}
+          // Fallback: legacy table layout
           const rows = Array.from(document.querySelectorAll('table tbody tr'));
           const products = [];
           for (let i = 0; i < rows.length && products.length < {limit}; i += 2) {{
@@ -281,11 +298,82 @@ def scrape_products(limit: int) -> list[dict[str, str]]:
         """
     )
     raw_products = extract_json_array(output)
-    return [parse_product(item["main"], item["detail"], item.get("imgUrl", ""))
+    return [parse_product(item["main"], item.get("detail", ""), item.get("imgUrl", ""))
             for item in raw_products]
 
 
+def _calc_listing_age(listing_date: str) -> str:
+    """Calculate age string like '8个月' or '1年 3个月' from a YYYY-MM-DD date."""
+    import datetime
+    try:
+        d = datetime.date.fromisoformat(listing_date)
+        today = datetime.date.today()
+        months = (today.year - d.year) * 12 + (today.month - d.month)
+        if months < 1:
+            return "<1个月"
+        if months < 12:
+            return f"{months}个月"
+        y, m = divmod(months, 12)
+        return f"{y}年 {m}个月" if m else f"{y}年"
+    except (ValueError, TypeError):
+        return ""
+
+
 def parse_product(main: str, detail: str, img_url: str = "") -> dict[str, str]:
+    # ── New card layout (SellerSprite v3 post-redesign) ───────────────────────
+    # Identified by: ASIN appears as bare value on its own line (no "ASIN: " prefix)
+    # and combined "评分/评分数: X.X/NNN" field.
+    if not detail and re.search(r"(?m)^B0[A-Z0-9]{8}$", main):
+        lines = [l.strip() for l in main.splitlines() if l.strip()]
+        asin_idx = next((i for i, l in enumerate(lines) if re.match(r'^B0[A-Z0-9]{8}$', l)), -1)
+        title = lines[asin_idx - 1] if asin_idx > 0 else ""
+        asin = lines[asin_idx] if asin_idx >= 0 else ""
+
+        brand_m = re.search(r'品牌:\s*\n\s*(.+)', main) or re.search(r'品牌:([^\n]+)', main)
+        sales_m = re.search(r'销量\(父\):\s*([\d,]+)', main)
+        revenue_m = re.search(r'销售额:\s*\$?([\d,]+)', main)
+        variants_m = re.search(r'变体数:\s*(\d+)', main)
+        price_m = re.search(r'价格:\s*\$([\d.]+)', main)
+        rr_m = re.search(r'评分/评分数:\s*([\d.]+)/([\d,]+)', main)
+        date_m = re.search(r'上架时间:\s*(\d{4}-\d{2}-\d{2})', main)
+        sellers_m = re.search(r'FBA卖家:\s*(\d+)', main)
+
+        # Leaf rank: multiline "#N\nin\nCategory" is the leaf rank
+        ml_ranks = re.findall(r'#([\d,]+)\s*\n\s*in\s*\n\s*([^\n]+)', main)
+        if ml_ranks:
+            leaf_rank, leaf_cat = ml_ranks[0][0], ml_ranks[0][1].strip()
+        else:
+            il_ranks = re.findall(r'#([\d,]+) in ([^\n#]{3,50})', main)
+            leaf_rank, leaf_cat = (il_ranks[-1][0], il_ranks[-1][1].strip()) if il_ranks else ("", "")
+
+        listing_date = date_m.group(1) if date_m else ""
+        return {
+            "asin": asin,
+            "parent_asin": "",
+            "title": title,
+            "brand": brand_m.group(1).strip() if brand_m else "",
+            "monthly_sales": sales_m.group(1).replace(',', '') if sales_m else "",
+            "sales_growth": "-",
+            "monthly_revenue": f"${revenue_m.group(1)}" if revenue_m else "",
+            "variants": variants_m.group(1) if variants_m else "",
+            "price": f"${price_m.group(1)}" if price_m else "",
+            "reviews": rr_m.group(2).replace(',', '') if rr_m else "",
+            "monthly_new_reviews": "",
+            "rating": rr_m.group(1) if rr_m else "",
+            "review_rate": "",
+            "fba_fee": "0",        # not shown in new layout; use 0 as placeholder
+            "profit_margin": "50%",  # SellerSprite filter guarantees ≥50%; use as floor
+            "listing_date": listing_date,
+            "listing_age": _calc_listing_age(listing_date),
+            "leaf_rank": leaf_rank,
+            "leaf_category": leaf_cat,
+            "sellers": sellers_m.group(1) if sellers_m else "",
+            "package_weight": "",
+            "raw_metrics": main[:300],
+            "image_url": img_url,
+        }
+
+    # ── Legacy table layout ───────────────────────────────────────────────────
     lines = [line.strip() for line in main.splitlines() if line.strip()]
     asin = re.search(r"ASIN:\s*([A-Z0-9]+)", main)
     parent = re.search(r"父ASIN\s*:\s*([A-Z0-9]+)", main)
@@ -667,7 +755,7 @@ def main() -> None:
             all_products: list[dict] = []
             cat_names: list[str] = []
             for f in md_files:
-                cat_en, _, products = parse_product_file(f)
+                cat_en, products = parse_product_file(f)
                 cat_names.append(cat_en)
                 for p in products:
                     p["_score"] = score_product(p)
@@ -734,6 +822,13 @@ def main() -> None:
 
         # Final flush after all categories complete
         _flush_top_picks(f"{completed_count}/{batch_total}类目完成")
+
+        if not asin_images:
+            raise SystemExit(
+                f"\n[ERROR] 全部 {batch_total} 个类目均返回 0 产品，pipeline 终止。\n"
+                "  → 检查 product_config.json 的 filters（max_reviews / max_sellers 等）是否过于严格\n"
+                f"  → top_picks.md 未生成，后续步骤无法继续"
+            )
 
         print("\n=== Batch Summary ===")
         for line in results_summary:

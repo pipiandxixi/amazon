@@ -422,16 +422,16 @@ def generate_report(config_path, categories, date_str, output_dir=None):
         if match_ret:
             avg_return = float(match_ret[0])
             
-        # Parse weight
+        # Parse weight — SellerSprite returns "X pounds" or "X lbs"; grams as fallback
         weight_str = details.get('平均重量', '')
         weight_lbs = 0.0
-        match_w = re.search(r'([\d\.]+)\s*pounds', weight_str)
+        match_w = re.search(r'([\d\.]+)\s*(?:pounds|lbs)', weight_str)
         if match_w:
             weight_lbs = float(match_w.group(1))
         else:
-            match_kg = re.search(r'([\d\.]+)\s*g', weight_str)
-            if match_kg:
-                weight_lbs = float(match_kg.group(1)) / 453.59
+            match_g = re.search(r'([\d\.]+)\s*g(?:rams?)?', weight_str)
+            if match_g:
+                weight_lbs = float(match_g.group(1)) / 453.59
             
         # Parse price
         if not avg_price_str:

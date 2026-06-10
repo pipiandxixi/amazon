@@ -267,6 +267,11 @@ def main() -> None:
     args = parser.parse_args()
 
     picks_path = Path(args.picks)
+    if not picks_path.exists():
+        raise SystemExit(
+            f"[ERROR] top_picks.md 不存在：{picks_path}\n"
+            "  → 产品扫描可能返回 0 结果，请先检查 product_config.json 的 filters"
+        )
     out_path = Path(args.out) if args.out else picks_path.parent / "top_picks_grid.jpg"
 
     products = parse_top_picks(picks_path, args.top_n)
