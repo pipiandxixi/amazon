@@ -11,6 +11,7 @@ import time
 from pathlib import Path
 
 from scan_common import RESULTS_DIR, OpenCliError, check_browser_ready, eval_browser, extract_json_array, open_browser
+from aggregate_top_picks import parse_product_file, score_product, write_top_picks
 
 try:
     from deep_translator import GoogleTranslator as _GoogleTranslator
@@ -533,6 +534,15 @@ def main() -> None:
         help="market_scan_results JSON from select_market.py; used to compute the "
              "uncovered categories section in each report",
     )
+    parser.add_argument(
+        "--batch-size", type=int, default=0, dest="batch_size",
+        help="Write top_picks.md after every N categories complete (0 = only at end). "
+             "Requires --output-dir to be set.",
+    )
+    parser.add_argument(
+        "--top-n", type=int, default=50, dest="top_n",
+        help="Number of top picks to include in top_picks.md (default 50).",
+    )
     args = parser.parse_args()
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
     date_str = args.date or datetime.date.today().strftime("%Y_%m_%d")
@@ -578,6 +588,24 @@ def main() -> None:
         results_summary: list[str] = []
         scanned_names: set[str] = set()
         batch_total = len(cats_data)
+        completed_count = 0
+
+        def _flush_top_picks(label: str) -> None:
+            if not output_dir:
+                return
+            md_files = sorted(f for f in output_dir.glob("*.md") if f.stem != "scan_principles")
+            all_products: list[dict] = []
+            cat_names: list[str] = []
+            for f in md_files:
+                cat_en, _, products = parse_product_file(f)
+                cat_names.append(cat_en)
+                for p in products:
+                    p["_score"] = score_product(p)
+                all_products.extend(products)
+            if all_products:
+                write_top_picks(output_dir.parent, all_products, cat_names, args.top_n, date_str, label)
+                print(f"  [top_picks] {label}: {len(all_products)} products across {len(cat_names)} categories")
+
         for entry in cats_data:
             cat_name = entry.get("en_name", "") or entry.get("zh_name", "unknown")
             # Prefer pre-built product_path array (from pipeline enrichment);
@@ -616,9 +644,17 @@ def main() -> None:
             except ValueError as exc:
                 print(f"  [ERROR] {cat_name}: {exc}")
                 results_summary.append(f"  {cat_name}: FAILED — {exc}")
+
+            completed_count += 1
+            if args.batch_size > 0 and completed_count % args.batch_size == 0:
+                _flush_top_picks(f"第{completed_count // args.batch_size}批 {completed_count}/{batch_total}类目")
+
             # Reload page to reset state for next category
             open_browser("https://www.sellersprite.com/v3/product-research")
             time.sleep(5)
+
+        # Final flush after all categories complete
+        _flush_top_picks(f"{completed_count}/{batch_total}类目完成")
 
         print("\n=== Batch Summary ===")
         for line in results_summary:

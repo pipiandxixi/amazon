@@ -89,7 +89,8 @@ json.dump(["kw1", ...], open("/tmp/kw.json","w"))
 
 ## Step 4 — Product scan
 
-Pick 3–8 new green categories that best match keyword signals. Prioritize uncovered ones.
+Pick green categories that best match keyword signals. Prioritize uncovered ones.  
+For **narrow** runs pick 3–8; for **full sweeps** pass all uncovered categories at once.
 
 ```python
 import json
@@ -103,8 +104,11 @@ mkdir -p $RUN_DIR/products
 python3 scripts/find_products.py --config scripts/product_config.json \
   --output-dir $RUN_DIR/products \
   --keywords-file /tmp/kw.json --categories-file /tmp/cats.json \
-  --market-sidecar $MARKET_SIDECAR
+  --market-sidecar $MARKET_SIDECAR \
+  --batch-size 15 --top-n 50
 ```
+
+`--batch-size 15` causes `top_picks.md` to be written automatically after every 15 categories and once more at the end. Omit for small runs (< 15 categories); top_picks is still written at the end.
 
 ---
 
@@ -124,37 +128,29 @@ cov_path.write_text(json.dumps(cov, ensure_ascii=False, indent=2))
 
 ---
 
-## Step 6 — Score products and write top_picks.md
+## Step 6 — Review top_picks.md and add analysis
+
+`top_picks.md` is written automatically by `find_products.py` (via `aggregate_top_picks.py`).  
+If the scan was run **without** `--batch-size`, generate it manually:
 
 ```bash
-ls $RUN_DIR/products/*.md | grep -v scan_principles
+python3 scripts/aggregate_top_picks.py --run-dir $RUN_DIR --top-n 50
 ```
 
-Read each report. Score on: reviews (< 100 strong), growth (> 10%), COGS ratio (< 25% good), margin (> 65%), sellers (1 = no competition), listing age (3–18 months). Weight reviews and growth highest.
+The auto-generated report contains the scored table with 推荐理由. Your job in this step is to **add the narrative sections** that require LLM judgment:
 
-Write `$RUN_DIR/top_picks.md`:
+Open `$RUN_DIR/top_picks.md` and append or fill in:
 
 ```markdown
-# Amazon 综合选品推荐 ({date})
-
-## 探索范围
-本次 N 个大类目，N 个子类目（N 个新覆盖）。累计已覆盖：N 个。
-
 ## 市场环境小结 / 关键词信号
-[各2–3句]
+[各2–3句：本次扫描发现的类目机会、关键词信号、竞争格局变化]
 
-## Top 20 推荐单品
-| 排名 | ASIN | 品名 | 类目 | 月销量 | 估算成本/占比 | 毛利率 | Reviews | 推荐理由 |
-|---:|---|---|---|---:|---:|---:|---:|---|
-
-品名格式：`中文名 / English Name`，取自产品报告的「中文名称」和「核心名称」列，两者合并。例：`花园软管喷嘴 / Garden Hose Nozzle`。
-
-## 各产品详细分析
+## 各产品详细分析（重点前10名）
 ### 1. [ASIN] 中文名 / English Name
-**选入理由** / **机会点** / **风险点** / **建议下一步**
+**机会点** / **风险点** / **建议下一步**
 
 ## 下次优先探索
 [尚未覆盖的绿色类目 + 建议运行参数]
 ```
 
-Be specific (actual ASINs, metrics, names). Every product needs a concrete next step. If < 20 strong candidates, say so and recommend next run scope.
+Be specific (actual ASINs, metrics). Every product needs a concrete next step. If fewer than 20 strong candidates, say so and recommend next run scope.
