@@ -105,7 +105,7 @@ python3 scripts/find_products.py --config scripts/product_config.json \
   --output-dir $RUN_DIR/products \
   --keywords-file /tmp/kw.json --categories-file /tmp/cats.json \
   --market-sidecar $MARKET_SIDECAR \
-  --batch-size 15 --top-n 50
+  --batch-size 15 --top-n 60
 ```
 
 `--batch-size 15` causes `top_picks.md` to be written automatically after every 15 categories and once more at the end. Omit for small runs (< 15 categories); top_picks is still written at the end.
@@ -154,3 +154,17 @@ Open `$RUN_DIR/top_picks.md` and append or fill in:
 ```
 
 Be specific (actual ASINs, metrics). Every product needs a concrete next step. If fewer than 20 strong candidates, say so and recommend next run scope.
+
+---
+
+## Step 7 — Generate grid image
+
+```bash
+python3 scripts/generate_grid_image.py \
+  --picks $RUN_DIR/top_picks.md \
+  --top-n 60 --width 1440
+```
+
+Output: `$RUN_DIR/top_picks_grid.jpg` — 4 columns, each card shows product image, rank badge, name, price, and 推荐理由.
+
+Image URLs are auto-loaded from `$RUN_DIR/products/asin_images.json` (written by `find_products.py` during scan). No extra steps needed if the product scan used `--output-dir`.

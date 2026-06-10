@@ -270,17 +270,22 @@ def scrape_products(limit: int) -> list[dict[str, str]]:
             const main = rows[i]?.innerText || '';
             const detail = rows[i + 1]?.innerText || '';
             if (!main.includes('ASIN:')) continue;
-            products.push({{ main, detail }});
+            const imgDiv = rows[i].querySelector('.asin-img .img');
+            const style = imgDiv ? imgDiv.getAttribute('style') || '' : '';
+            const urlM = style.match(/url\\(["']?([^"')]+)["']?\\)/);
+            const imgUrl = urlM ? urlM[1] : '';
+            products.push({{ main, detail, imgUrl }});
           }}
           return JSON.stringify(products);
         }})()
         """
     )
     raw_products = extract_json_array(output)
-    return [parse_product(item["main"], item["detail"]) for item in raw_products]
+    return [parse_product(item["main"], item["detail"], item.get("imgUrl", ""))
+            for item in raw_products]
 
 
-def parse_product(main: str, detail: str) -> dict[str, str]:
+def parse_product(main: str, detail: str, img_url: str = "") -> dict[str, str]:
     lines = [line.strip() for line in main.splitlines() if line.strip()]
     asin = re.search(r"ASIN:\s*([A-Z0-9]+)", main)
     parent = re.search(r"父ASIN\s*:\s*([A-Z0-9]+)", main)
@@ -318,6 +323,7 @@ def parse_product(main: str, detail: str) -> dict[str, str]:
         "sellers": sellers.group(1) if sellers else "",
         "package_weight": package_weight.group(1).strip() if package_weight else "",
         "raw_metrics": " | ".join(metrics),
+        "image_url": img_url,
     }
 
 
@@ -652,6 +658,7 @@ def main() -> None:
         scanned_names: set[str] = set()
         batch_total = len(cats_data)
         completed_count = 0
+        asin_images: dict[str, str] = {}  # accumulated ASIN → image_url across all categories
 
         def _flush_top_picks(label: str) -> None:
             if not output_dir:
@@ -686,6 +693,9 @@ def main() -> None:
                     hide_variants()
                     time.sleep(3)
                 products = scrape_products(int(policy.get("max_products", 20)))
+                for p in products:
+                    if p.get("image_url"):
+                        asin_images[p["asin"]] = p["image_url"]
                 scanned_names.add(cat_name.lower())
                 uncovered = [
                     c for c in market_candidates
@@ -715,6 +725,12 @@ def main() -> None:
             # Reload page to reset state for next category
             open_browser("https://www.sellersprite.com/v3/product-research")
             time.sleep(5)
+
+        # Save accumulated image URLs for use by generate_grid_image.py
+        if output_dir and asin_images:
+            img_map_path = output_dir / "asin_images.json"
+            img_map_path.write_text(json.dumps(asin_images, ensure_ascii=False, indent=2))
+            print(f"  [images] Saved {len(asin_images)} image URLs → {img_map_path}")
 
         # Final flush after all categories complete
         _flush_top_picks(f"{completed_count}/{batch_total}类目完成")

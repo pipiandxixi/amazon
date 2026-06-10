@@ -284,8 +284,8 @@ def write_top_picks(
     lines += [
         f"## Top {min(top_n, len(seen))} 推荐单品",
         "",
-        "| 排名 | ASIN | 品名 | 类目 | 月销量 | 增长率 | 毛利率 | Reviews | 卖家数 | 上架时长 | 推荐理由 |",
-        "|---:|---|---|---|---:|---:|---:|---:|---:|---|---|",
+        "| 排名 | ASIN | 品名 | 类目 | 价格 | 月销量 | 增长率 | 毛利率 | Reviews | 卖家数 | 上架时长 | 推荐理由 |",
+        "|---:|---|---|---|---:|---:|---:|---:|---:|---:|---|---|",
     ]
     for i, p in enumerate(ranked[:top_n], 1):
         name = f"{p['zh_name']} / {p['en_name']}" if p["en_name"] else p["zh_name"]
@@ -295,6 +295,7 @@ def write_top_picks(
         lines.append(
             f"| {i} | [{p['asin']}](https://www.amazon.com/dp/{p['asin']}) "
             f"| {name} | {p['category']} "
+            f"| ${p['price']:.2f} "
             f"| {p['monthly_sales']:,} | {format_growth(p['growth'])} "
             f"| {p['margin']}% | {p['reviews']} | {p['sellers']} "
             f"| {age_str} | {key_reason(p)} |"

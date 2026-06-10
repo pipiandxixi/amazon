@@ -380,8 +380,6 @@ def parse_keyword_row(row: dict) -> dict:
         "purchase_rate": purchase_rate,
         "monopoly_click_rate": monopoly_click_rate,
         "spr": spr,
-        "avg_price": 0.0,
-        "avg_reviews": 0,
         "bid": bid,
         "word_count": word_count,
         "products": products,
@@ -570,8 +568,6 @@ def generate_report(
         md.append(f"- **购买率**：`{k['purchase_rate']:.1f}%`")
         md.append(f"- **点击集中度**：`{k['monopoly_click_rate']:.1f}%`")
         md.append(f"- **SPR**：`{k['spr']}`")
-        md.append(f"- **平均价格**：`${k['avg_price']:.2f}`")
-        md.append(f"- **平均评分数**：`{k['avg_reviews']}`")
         md.append(f"- **PPC竞价**：`${k['bid']:.2f}`")
         md.append(f"- **词数**：`{k['word_count']}`")
         md.append(f"- **商品数**：`{k['products']}`")
@@ -589,8 +585,6 @@ def generate_report(
         md.append(f"- **购买率**：`{k['purchase_rate']:.1f}%`")
         md.append(f"- **点击集中度**：`{k['monopoly_click_rate']:.1f}%`")
         md.append(f"- **SPR**：`{k['spr']}`")
-        md.append(f"- **平均价格**：`${k['avg_price']:.2f}`")
-        md.append(f"- **平均评分数**：`{k['avg_reviews']}`")
         md.append(f"- **PPC竞价**：`${k['bid']:.2f}`")
         md.append(f"- **词数**：`{k['word_count']}`")
         md.append(f"- **商品数**：`{k['products']}`")
