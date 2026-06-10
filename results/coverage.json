@@ -359,6 +359,156 @@
       "path": "Industrial & Scientific › Test, Measure & Inspect › Dimensional Measurement › Gauges › Angle",
       "date": "2026_06_10",
       "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Decorative Boxes",
+      "path": "Home & Kitchen › Home Décor Products › Home Décor Accents › Decorative Accessories › Decorative Boxes",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Tap Extractors",
+      "path": "Tools & Home Improvement › Power & Hand Tools › Hand Tools › Taps & Dies › Tap Extractors",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Scissors & Shears",
+      "path": "Tools & Home Improvement › Power & Hand Tools › Hand Tools › Scissors & Shears",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Toilet Spare Parts",
+      "path": "Automotive › RV Parts & Accessories › Interior › Bath › Toilets & Parts › Toilet Spare Parts",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Trophies",
+      "path": "Sports & Outdoors › Sports & Outdoor Recreation Accessories › Trophies, Medals & Awards › Trophies",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Diamond Blades",
+      "path": "Tools & Home Improvement › Power & Hand Tools › Power Tool Parts & Accessories › Saw Blades, Parts & Accessories › Blades › Diamond Blades",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Deck Hardware",
+      "path": "Sports & Outdoors › Sports › Boating & Sailing › Boating › Hardware › Deck Hardware",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Countersink Drill Bits",
+      "path": "Tools & Home Improvement › Power & Hand Tools › Power Tool Parts & Accessories › Power Drill Parts & Accessories › Drill Bits › Countersink Drill Bits",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Turn Signal Assemblies & Lenses",
+      "path": "Automotive › Motorcycle & Powersports › Parts › Lights › Turn Signal Assemblies & Lenses",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Tie-Downs",
+      "path": "Sports & Outdoors › Sports › Boating & Sailing › Boating › Boat Trailer Accessories › Tie-Downs",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Pipe Clamps",
+      "path": "Tools & Home Improvement › Power & Hand Tools › Hand Tools › Workholding Devices › Clamps › Pipe Clamps",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Headlights",
+      "path": "Sports & Outdoors › Sports › Cycling › Accessories › Lights & Reflectors › Headlights",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Forstner Drill Bits",
+      "path": "Tools & Home Improvement › Power & Hand Tools › Power Tool Parts & Accessories › Power Drill Parts & Accessories › Drill Bits › Forstner Drill Bits",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Cooking Utensils",
+      "path": "Sports & Outdoors › Outdoor Recreation › Camping & Hiking › Camp Kitchen › Cooking Utensils",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Seat Belts",
+      "path": "Automotive › Replacement Parts › Body & Trim › Trim › Interior › Seat Belts",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Leak Detection Tools",
+      "path": "Industrial & Scientific › Test, Measure & Inspect › Inspection & Analysis › Leak Detection Tools",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Tactical Vests",
+      "path": "Sports & Outdoors › Hunting & Fishing › Tactical & Personal Defense › Protective Body Equipment › Tactical Vests",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Optics Accessories",
+      "path": "Sports & Outdoors › Hunting & Fishing › Shooting › Optics › Optics Accessories",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Fly Tying Equipment",
+      "path": "Sports & Outdoors › Hunting & Fishing › Fishing › Fly Fishing › Accessories › Fly Tying Equipment",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Bait Traps",
+      "path": "Sports & Outdoors › Hunting & Fishing › Fishing › Baits & Accessories › Bait Traps",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Flags",
+      "path": "Sports & Outdoors › Sports › Boating & Sailing › Boating › Boat Cabin Products › Flags",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Tools",
+      "path": "Sports & Outdoors › Sports › Boating & Sailing › Boating › Maintenance Supplies › Tools",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Car Rack Parts & Accessories",
+      "path": "Sports & Outdoors › Outdoor Recreation › Accessories › Car Racks & Carriers › Car Rack Parts & Accessories",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Deviled Egg Plates",
+      "path": "Home & Kitchen › Kitchen & Dining › Dining & Entertaining › Dinnerware & Serveware › Dinnerware › Plates › Specialty Plates › Deviled Egg Plates",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
+    },
+    {
+      "en_name": "Nail Pullers",
+      "path": "Tools & Home Improvement › Power & Hand Tools › Hand Tools › Nail Pullers",
+      "date": "2026-06-10",
+      "run_dir": "results/2026_06_10_full_sweep"
     }
   ]
 }
