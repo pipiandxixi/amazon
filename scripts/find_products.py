@@ -53,6 +53,48 @@ def values(section: dict) -> dict:
     }
 
 
+# ── Category-tree navigation JS templates ───────────────────────────────────
+# Kept together so the fallback strategy is easy to read and update in one place.
+
+_NAV_NODE_JS = """
+(() => {{
+  const target = {target_json};
+  const nodes = Array.from(
+    document.querySelectorAll('.category-tree .custom-tree-node .label')
+  ).filter(x => x.textContent.trim().startsWith(target) && x.offsetParent !== null);
+  if (!nodes.length) return 'not found: ' + target;
+  const content = nodes[0].closest('.el-tree-node__content');
+  if (!content) return 'row not found: ' + target;
+  if ({as_leaf}) {{
+    const cb = content.querySelector('input[type=checkbox]');
+    if (!cb) return 'checkbox not found: ' + target;
+    if (!cb.checked) cb.click();
+  }} else {{
+    const expand = content.querySelector('.el-tree-node__expand-icon');
+    if (!expand) return 'expand not found: ' + target;
+    if (!expand.classList.contains('expanded')) expand.click();
+  }}
+  return 'clicked: ' + nodes[0].textContent.trim();
+}})()
+"""
+
+_SCROLL_TREE_TOP_JS = """
+(() => {
+  const tree = document.querySelector('.category-tree');
+  if (tree) tree.scrollTop = 0;
+  return 'scrolled';
+})()
+"""
+
+
+def _nav_node(category: str, as_leaf: bool) -> str:
+    """Click one node in the SellerSprite category tree. Returns 'clicked: …' on success."""
+    return eval_browser(_NAV_NODE_JS.format(
+        target_json=json.dumps(category),
+        as_leaf="true" if as_leaf else "false",
+    ))
+
+
 def select_category(path: list[str], only_leaf_rank: bool) -> None:
     output = eval_browser(
         """
@@ -69,40 +111,61 @@ def select_category(path: list[str], only_leaf_rank: bool) -> None:
     if "opened" not in output:
         raise ValueError(output)
 
+    # ── Path navigation with two-stage fallback ──────────────────────────────
+    #
+    # SellerSprite has two separate category trees:
+    #   • Market Research (/v2): Amazon's browse-node hierarchy
+    #   • Product Research (/v3): SellerSprite's own flattened tree
+    # Paths saved from market scan use Amazon taxonomy, which diverges from the
+    # product-research tree in two ways:
+    #   A) A node exists but at the wrong depth (e.g. "Power & Hand Tools" is a
+    #      root node in /v3, not a child of "Tools & Home Improvement").
+    #      Fix: scroll tree to top so off-screen root nodes become visible, retry.
+    #   B) A node simply doesn't exist in the /v3 tree (e.g. "Fishing").
+    #      Fix: select the deepest ancestor that was found as the leaf instead.
+    #
+    # All fallback logic lives here so it can be maintained in one place.
+    # ─────────────────────────────────────────────────────────────────────────
+
+    deepest_found: int = -1  # index of the last successfully navigated segment
+
     for index, category in enumerate(path):
         time.sleep(1)
-        category_json = json.dumps(category)
-        is_leaf = index == len(path) - 1
-        output = eval_browser(
-            f"""
-            (() => {{
-              const target = {category_json};
-              const visible = Array.from(
-                document.querySelectorAll('.category-tree .custom-tree-node .label')
-              ).filter(
-                x => x.textContent.trim().startsWith(target) && x.offsetParent !== null
-              );
-              if (!visible.length) return 'not found: ' + target;
-              const content = visible[0].closest('.el-tree-node__content');
-              if (!content) return 'row not found: ' + target;
-              if ({str(is_leaf).lower()}) {{
-                const checkbox = content.querySelector('input[type=checkbox]');
-                if (!checkbox) return 'checkbox not found: ' + target;
-                if (!checkbox.checked) checkbox.click();
-              }} else {{
-                const expand = content.querySelector('.el-tree-node__expand-icon');
-                if (!expand) return 'expand control not found: ' + target;
-                if (!expand.classList.contains('expanded')) expand.click();
-              }}
-              return 'clicked: ' + visible[0].textContent.trim();
-            }})()
-            """
-        )
-        if "clicked:" not in output:
+        is_leaf = (index == len(path) - 1)
+
+        result = _nav_node(category, is_leaf)
+        if "clicked:" in result:
+            deepest_found = index
+            continue
+
+        # Stage 1 — scroll to top and retry (fixes off-screen root-level nodes)
+        eval_browser(_SCROLL_TREE_TOP_JS)
+        time.sleep(0.3)
+        result = _nav_node(category, is_leaf)
+        if "clicked:" in result:
+            deepest_found = index
+            continue
+
+        # Stage 2 — node absent from SS tree: select deepest ancestor as leaf
+        if deepest_found < 0:
             raise ValueError(
-                f"Could not select category path item '{category}'. "
-                "Open SellerSprite once and confirm the category tree is available."
+                f"Could not find root category '{path[0]}' in SellerSprite product tree."
             )
+        eval_browser(_SCROLL_TREE_TOP_JS)
+        time.sleep(0.3)
+        ancestor = path[deepest_found]
+        fallback_result = _nav_node(ancestor, as_leaf=True)
+        print(
+            f"  [nav-fallback] '{category}' absent from SS tree; "
+            f"scanning at ancestor '{ancestor}' instead."
+        )
+        if "clicked:" not in fallback_result:
+            raise ValueError(
+                f"Could not select fallback ancestor '{ancestor}' as leaf."
+            )
+        break
+
+    # ─────────────────────────────────────────────────────────────────────────
 
     output = eval_browser(
         """
