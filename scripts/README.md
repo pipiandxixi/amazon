@@ -10,37 +10,32 @@ Default outputs are grouped by run date under `results/YYYY_MM_DD/`.
 
 ---
 
-## Scripts
+## Recommended: Unified Pipeline
 
 ```bash
-python3 scripts/select_market.py                                   # stage 1
-python3 scripts/select_market.py --departments "Sports & Outdoors" # stage 1, filtered
-python3 scripts/scan_keywords.py                                   # stage 2
-python3 scripts/find_products.py                                   # stage 3, single category
-python3 scripts/find_products.py --categories-file cats.json       # stage 3, batch
-
-python3 scripts/find_asin_keywords.py B0FS72284D                   # reverse keyword lookup
+python3 scripts/run_pipeline.py
 ```
 
-The default single-category product config currently scans `Swing Trainers`.
+The unified entrypoint reads only `scripts/pipeline_config.json`. Dynamic values
+are passed in memory:
+
+```
+market candidates → product categories
+product ASINs → reverse keyword lookup
+```
+
+Result JSON files remain available for auditing, but are never used to drive the
+next stage. `pipeline_config.json` contains static filters and policies only; it
+does not contain a preselected category, keyword, product, or ASIN.
+
 Market, product, and ASIN-keyword reports record whether the free plan may have
-truncated the visible results.
+truncated visible results.
 
----
+The final human-readable output is combined into
+`results/YYYY_MM_DD/pipeline_report_YYYY_MM_DD.md`. Individual stage reports are
+kept beside it for auditing.
 
-## Workflow
+## Individual Stage Debugging
 
-Use the `amazon-sourcing` skill in Claude Code — it runs each stage and analyzes
-results between steps to decide what to forward downstream:
-
-```
-/amazon-sourcing
-```
-
-Manual order:
-```
-1. select_market.py  → market_scan_results.json  (read, decide which categories)
-2. scan_keywords.py  → keyword_scan_results.json  (read, decide which keywords)
-3. find_products.py  → products/{category}.md
-4. find_asin_keywords.py <ASIN>  → ad keyword research
-```
+The original scripts and configs remain available for isolated debugging. They
+are not the recommended end-to-end workflow.

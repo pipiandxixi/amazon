@@ -664,8 +664,8 @@ def write_report(
         md.append(f"## {next(sec)}、尚未分析的候选类目（共 {len(uncovered_categories)} 个）\n")
         md.append(
             "以下类目在市场扫描中被标记为绿色或黄色推荐，但本次产品扫描**未覆盖**。"
-            "可逐一修改 `product_config.json` 中的 `category.path` 后重新运行产品扫描，"
-            "或使用 `find_products.py --categories-file` 批量扫描（需先确认类目路径格式与产品研究页面一致）。\n"
+            "统一流水线会继续扫描剩余动态候选类目；如单独调试阶段脚本，"
+            "可使用 `find_products.py --categories-file` 批量扫描。\n"
         )
         md.append("| 序号 | 英文名称 | 中文名称 | 完整路径 |")
         md.append("| ---: | --- | --- | --- |")
@@ -686,7 +686,7 @@ def write_report(
         coverage_msg = (
             f"本次批量扫描共处理 {batch_total} 个品类。"
             + (f"市场扫描还有 {len(uncovered_categories)} 个候选类目未覆盖，" if uncovered_categories else "")
-            + "可增大 `pipeline.max_categories_to_products` 或重跑 pipeline 扩大覆盖范围。"
+            + "统一流水线会继续处理所有动态候选类目。"
         )
     else:
         coverage_msg = (

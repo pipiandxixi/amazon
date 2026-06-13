@@ -22,7 +22,7 @@
     "max_bsr_growth_rate": {"value": "", "label": "近 7 天大类 BSR 排名改善率最大值（百分比，可留空）"},
     "min_variants": {"value": "1", "label": "变体数最小值"},
     "max_variants": {"value": "5", "label": "变体数最大值"},
-    "min_price": {"value": "15", "label": "价格最小值（美元）"},
+    "min_price": {"value": "20", "label": "价格最小值（美元）"},
     "max_price": {"value": "60", "label": "价格最大值（美元）"},
     "max_reviews": {"value": "150", "label": "评分数最大值"},
     "min_monthly_new_reviews": {"value": "", "label": "月新增评分数最小值（可留空）"},

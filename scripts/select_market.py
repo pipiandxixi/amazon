@@ -60,16 +60,22 @@ def select_departments_market(department_numbers: list) -> None:
     print(f"  Market departments selected: {result}")
 
 
-def scrape_market(config_path, department_numbers=None):
+def _load_config(config_source):
+    if isinstance(config_source, dict):
+        return config_source
+    with open(config_source, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+def scrape_market(config_source, department_numbers=None):
     """Scrape the SellerSprite market research page and return raw category items.
 
     department_numbers: optional list of SellerSprite department checkbox numbers
     to pre-filter the page before submitting the search form. When None or empty,
     all departments are included (default SellerSprite behaviour).
     """
-    print("Loading configuration from " + config_path + "...")
-    with open(config_path, 'r', encoding='utf-8') as f:
-        config = json.load(f)
+    print("Loading market configuration...")
+    config = _load_config(config_source)
     params = values(config['filter_params'])
     scan_policy = values(config.get('scan_policy', {}))
     max_pages = int(scan_policy.get('max_pages', 5))
@@ -380,10 +386,13 @@ def scrape_market(config_path, department_numbers=None):
         scan_meta["stop_reason"] = "扫描正常结束"
     return all_categories, scan_meta
 
-def generate_report(config_path, categories, date_str, output_dir=None, scan_meta=None):
-    print(f"Generating market report using configuration rules from {config_path}...")
-    with open(config_path, 'r', encoding='utf-8') as f:
-        config = json.load(f)
+def generate_report(
+    config_source, categories, date_str, output_dir=None, scan_meta=None,
+    return_candidates=False,
+):
+    config_label = config_source if isinstance(config_source, str) else "unified pipeline config"
+    print(f"Generating market report using configuration rules from {config_label}...")
+    config = _load_config(config_source)
     rules = {
         level: values(rule)
         for level, rule in config['risk_rules'].items()
@@ -604,7 +613,7 @@ def generate_report(config_path, categories, date_str, output_dir=None, scan_met
     md = []
     md.append(f"# 亚马逊选市场扫描与评估报告 ({date_str.replace('_', '-')})\n")
     md.append("> [!IMPORTANT]")
-    md.append(f"> 本报告基于配置文件 `{config_path}` 中设定的过滤与风控规则进行生成。今日共分析了 **{len(categories)}** 个符合基本条件的子类目，其中最终筛选出 **{len(green_niches)}** 个适合新手的 🟢 绿色推荐赛道。")
+    md.append(f"> 本报告基于 `{config_label}` 中设定的过滤与风控规则进行生成。今日共分析了 **{len(categories)}** 个符合基本条件的子类目，其中最终筛选出 **{len(green_niches)}** 个适合新手的 🟢 绿色推荐赛道。")
     if scan_meta:
         md.append(
             f"> **抓取完整性**：扫描 **{scan_meta['pages_scanned']}** 页；"
@@ -726,6 +735,8 @@ def generate_report(config_path, categories, date_str, output_dir=None, scan_met
     with open(sidecar_file, 'w', encoding='utf-8') as f:
         json.dump(sidecar_items, f, ensure_ascii=False, indent=2)
     print(f"JSON sidecar written to {sidecar_file}")
+    if return_candidates:
+        return str(report_file), sidecar_items
     return str(report_file)
 
 def main():
