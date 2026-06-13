@@ -2,7 +2,7 @@
 """Generate a 4-column product grid image from top_picks.md.
 
 Usage:
-    python3 scripts/generate_grid_image.py --picks results/2026_06_10_full_sweep/top_picks.md
+    python3 scripts/generate_grid_image.py --picks results/2026_06_10/top_picks.md
     python3 scripts/generate_grid_image.py --picks ... --top-n 60 --width 1440 --out grid.jpg
 """
 

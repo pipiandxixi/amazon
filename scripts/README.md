@@ -6,6 +6,7 @@ Market Scan → Keyword Scan → Product Scan
 
 Scripts run against a live SellerSprite session via `opencli`.  
 Config fields: `{"value": ..., "label": "..."}` — edit `value` only.
+Default outputs are grouped by run date under `results/YYYY_MM_DD/`.
 
 ---
 

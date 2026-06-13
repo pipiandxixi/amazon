@@ -5,8 +5,8 @@ find_products.py now saves image URLs automatically during scan (to products/asi
 Use this script only for runs that predate that feature.
 
 Usage:
-    python3 scripts/fetch_asin_images.py --picks results/2026_06_10_full_sweep/top_picks.md
-    # writes to results/2026_06_10_full_sweep/products/asin_images.json (auto-detected by generate_grid_image.py)
+    python3 scripts/fetch_asin_images.py --picks results/2026_06_10/top_picks.md
+    # writes to results/2026_06_10/products/asin_images.json (auto-detected by generate_grid_image.py)
 """
 
 from __future__ import annotations

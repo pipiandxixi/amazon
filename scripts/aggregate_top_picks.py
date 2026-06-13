@@ -2,8 +2,8 @@
 """Aggregate scored product recommendations from all completed product scan files.
 
 Usage:
-    python3 scripts/aggregate_top_picks.py --run-dir results/2026_06_10_full_sweep
-    python3 scripts/aggregate_top_picks.py --run-dir results/2026_06_10_full_sweep --top-n 50
+    python3 scripts/aggregate_top_picks.py --run-dir results/2026_06_10
+    python3 scripts/aggregate_top_picks.py --run-dir results/2026_06_10 --top-n 50
 """
 
 from __future__ import annotations

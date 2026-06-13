@@ -10,7 +10,7 @@ import re
 import time
 from pathlib import Path
 
-from scan_common import RESULTS_DIR, OpenCliError, check_browser_ready, eval_browser, extract_json_array, open_browser
+from scan_common import OpenCliError, check_browser_ready, dated_results_dir, eval_browser, extract_json_array, open_browser
 from aggregate_top_picks import parse_product_file, score_product, write_top_picks
 
 try:
@@ -582,12 +582,12 @@ def write_report(
     category = category_name or config["category"]["name"]
     cat_path = category_path or config["category"]["path"]
     slug = re.sub(r"[^a-z0-9]+", "_", category.lower()).strip("_")
-    # Pipeline mode: filename is just the slug — date is encoded in the run directory.
-    # Standalone mode: full prefix with date for disambiguation in results/.
+    # Pipeline mode: filename is just the slug in the explicit output directory.
+    # Standalone mode: use the run date directory below results/.
     if output_dir:
         path = output_dir / f"{slug}.md"
     else:
-        path = RESULTS_DIR / f"product_scan_{slug}_{date_str}.md"
+        path = dated_results_dir(date_str) / f"product_scan_{slug}_{date_str}.md"
     filters = values(config["filters"])
     short_titles = [_short_title(p["title"]) for p in products]
     print(f"  Translating {len(short_titles)} product names to Chinese...")
@@ -727,7 +727,7 @@ def main() -> None:
     parser.add_argument(
         "--output-dir", default="", dest="output_dir",
         help="Directory to write product report(s) (pipeline mode); "
-             "defaults to results/ with date-stamped filenames",
+             "defaults to results/YYYY_MM_DD/",
     )
     parser.add_argument(
         "--keywords-file", default="", dest="keywords_file",
@@ -791,7 +791,7 @@ def main() -> None:
         print(f"Batch mode: {len(cats_data)} categories from {cats_path}")
 
         # Write shared principles file once for the whole batch
-        principles_dir = output_dir if output_dir else RESULTS_DIR
+        principles_dir = output_dir if output_dir else dated_results_dir(date_str)
         principles_path = write_principles_file(config, principles_dir, date_str)
         print(f"  Principles: {principles_path}")
 

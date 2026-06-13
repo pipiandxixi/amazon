@@ -1,0 +1,339 @@
+[
+  {
+    "en_name": "Swing Trainers",
+    "zh_name": "室内练习器",
+    "path": "Sports & Outdoors > Sports > Golf > Training Equipment > Swing Trainers",
+    "level": "🟢 Green (Recommended)",
+    "price": 36.27,
+    "reviews": 447,
+    "weight_lbs": 0.71,
+    "return_rate": 4.37,
+    "brand_conc": 57.8,
+    "cn_ratio": 69.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Golf",
+      "Training Equipment",
+      "Swing Trainers"
+    ],
+    "departments": [
+      18
+    ]
+  },
+  {
+    "en_name": "Lighting Products",
+    "zh_name": "水底灯",
+    "path": "Patio, Lawn & Garden > Pools, Hot Tubs & Supplies > Parts & Accessories > Lighting Products",
+    "level": "🟢 Green (Recommended)",
+    "price": 49.26,
+    "reviews": 480,
+    "weight_lbs": 1.76,
+    "return_rate": 6.75,
+    "brand_conc": 54.0,
+    "cn_ratio": 76.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Pools, Hot Tubs & Supplies",
+      "Parts & Accessories",
+      "Lighting Products"
+    ],
+    "departments": [
+      16
+    ]
+  },
+  {
+    "en_name": "Nozzles",
+    "zh_name": "喷嘴",
+    "path": "Patio, Lawn & Garden > Outdoor Power Tools > Replacement Parts & Accessories > Pressure Washer Parts & Accessories > Nozzles",
+    "level": "🟢 Green (Recommended)",
+    "price": 26.21,
+    "reviews": 488,
+    "weight_lbs": 0.42,
+    "return_rate": 2.63,
+    "brand_conc": 54.8,
+    "cn_ratio": 73.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Outdoor Power Tools",
+      "Replacement Parts & Accessories",
+      "Pressure Washer Parts & Accessories",
+      "Nozzles"
+    ],
+    "departments": [
+      16
+    ]
+  },
+  {
+    "en_name": "Cardboard Cutouts",
+    "zh_name": "硬板纸模型",
+    "path": "Home & Kitchen > Home Décor Products > Home Décor Accents > Cardboard Cutouts",
+    "level": "🟢 Green (Recommended)",
+    "price": 24.51,
+    "reviews": 295,
+    "weight_lbs": 1.29,
+    "return_rate": 4.59,
+    "brand_conc": 61.5,
+    "cn_ratio": 61.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Home Décor Products",
+      "Home Décor Accents",
+      "Cardboard Cutouts"
+    ],
+    "departments": [
+      21
+    ]
+  },
+  {
+    "en_name": "Multi-Item Party Favor Packs",
+    "zh_name": "多项目派对礼包",
+    "path": "Home & Kitchen > Event & Party Supplies > Favors > Multi-Item Party Favor Packs",
+    "level": "🟢 Green (Recommended)",
+    "price": 20.12,
+    "reviews": 161,
+    "weight_lbs": 1.04,
+    "return_rate": 4.75,
+    "brand_conc": 34.5,
+    "cn_ratio": 91.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Event & Party Supplies",
+      "Favors",
+      "Multi-Item Party Favor Packs"
+    ],
+    "departments": [
+      21
+    ]
+  },
+  {
+    "en_name": "Electrical System Tools",
+    "zh_name": "电气系统工具",
+    "path": "Automotive > Tools & Equipment > Electrical System Tools",
+    "level": "🟢 Green (Recommended)",
+    "price": 31.8,
+    "reviews": 495,
+    "weight_lbs": 1.01,
+    "return_rate": 2.38,
+    "brand_conc": 44.0,
+    "cn_ratio": 81.0,
+    "product_path": [
+      "Automotive",
+      "Tools & Equipment",
+      "Electrical System Tools"
+    ],
+    "departments": [
+      3
+    ]
+  },
+  {
+    "en_name": "Brake System Bleeding Tools",
+    "zh_name": "刹车排气",
+    "path": "Automotive > Tools & Equipment > Brake Tools > Brake System Bleeding Tools",
+    "level": "🟢 Green (Recommended)",
+    "price": 28.04,
+    "reviews": 469,
+    "weight_lbs": 1.58,
+    "return_rate": 4.69,
+    "brand_conc": 50.1,
+    "cn_ratio": 83.0,
+    "product_path": [
+      "Automotive",
+      "Tools & Equipment",
+      "Brake Tools",
+      "Brake System Bleeding Tools"
+    ],
+    "departments": [
+      3
+    ]
+  },
+  {
+    "en_name": "Trophies",
+    "zh_name": "奖杯",
+    "path": "Sports & Outdoors > Sports & Outdoor Recreation Accessories > Trophies, Medals & Awards > Trophies",
+    "level": "🟢 Green (Recommended)",
+    "price": 25.32,
+    "reviews": 297,
+    "weight_lbs": 1.01,
+    "return_rate": 2.59,
+    "brand_conc": 48.8,
+    "cn_ratio": 48.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports & Outdoor Recreation Accessories",
+      "Trophies, Medals & Awards",
+      "Trophies"
+    ],
+    "departments": [
+      18
+    ]
+  },
+  {
+    "en_name": "Grinding Discs",
+    "zh_name": "磨片",
+    "path": "Industrial & Scientific > Abrasive & Finishing Products > Abrasive Wheels & Discs > Grinding Discs",
+    "level": "🟢 Green (Recommended)",
+    "price": 24.71,
+    "reviews": 365,
+    "weight_lbs": 1.92,
+    "return_rate": 2.13,
+    "brand_conc": 47.2,
+    "cn_ratio": 80.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Abrasive & Finishing Products",
+      "Abrasive Wheels & Discs",
+      "Grinding Discs"
+    ],
+    "departments": [
+      13
+    ]
+  },
+  {
+    "en_name": "Compressed Air Dusters",
+    "zh_name": "压缩除尘罐",
+    "path": "Electronics > Computers & Accessories > Computer Accessories & Peripherals > Cleaning & Repair > Compressed Air Dusters",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 35.18,
+    "reviews": 351,
+    "weight_lbs": 0.86,
+    "return_rate": 3.16,
+    "brand_conc": 59.8,
+    "cn_ratio": 77.0,
+    "product_path": [
+      "Electronics",
+      "Computers & Accessories",
+      "Computer Accessories & Peripherals",
+      "Cleaning & Repair",
+      "Compressed Air Dusters"
+    ],
+    "departments": []
+  },
+  {
+    "en_name": "Wind Spinners",
+    "zh_name": "Wind Spinners",
+    "path": "Patio, Lawn & Garden > Outdoor Décor > Garden Sculptures & Statues > Wind Sculptures & Spinners > Wind Spinners",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 31.29,
+    "reviews": 468,
+    "weight_lbs": 2.35,
+    "return_rate": 3.09,
+    "brand_conc": 54.8,
+    "cn_ratio": 86.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Outdoor Décor",
+      "Garden Sculptures & Statues",
+      "Wind Sculptures & Spinners",
+      "Wind Spinners"
+    ],
+    "departments": [
+      16
+    ]
+  },
+  {
+    "en_name": "Paddleboard Accessories",
+    "zh_name": "冲浪板配件",
+    "path": "Sports & Outdoors > Sports > Water Sports > Stand-Up Paddleboarding > Paddleboard Accessories",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 52.63,
+    "reviews": 326,
+    "weight_lbs": 2.37,
+    "return_rate": 4.17,
+    "brand_conc": 42.9,
+    "cn_ratio": 73.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Water Sports",
+      "Stand-Up Paddleboarding",
+      "Paddleboard Accessories"
+    ],
+    "departments": [
+      18
+    ]
+  },
+  {
+    "en_name": "Batteries & Battery Chargers",
+    "zh_name": "电池和电池",
+    "path": "Sports & Outdoors > Sports > Skates, Skateboards & Scooters > Scooters & Equipment > Components & Parts > Batteries & Battery Chargers",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 25.35,
+    "reviews": 469,
+    "weight_lbs": 0.96,
+    "return_rate": 9.83,
+    "brand_conc": 61.8,
+    "cn_ratio": 84.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Skates, Skateboards & Scooters",
+      "Scooters & Equipment",
+      "Components & Parts",
+      "Batteries & Battery Chargers"
+    ],
+    "departments": [
+      18
+    ]
+  },
+  {
+    "en_name": "Decorative Trays",
+    "zh_name": "装饰性托盘",
+    "path": "Home & Kitchen > Home Décor Products > Home Décor Accents > Decorative Accessories > Decorative Trays",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 22.59,
+    "reviews": 466,
+    "weight_lbs": 1.44,
+    "return_rate": 9.52,
+    "brand_conc": 42.5,
+    "cn_ratio": 78.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Home Décor Products",
+      "Home Décor Accents",
+      "Decorative Accessories",
+      "Decorative Trays"
+    ],
+    "departments": [
+      21
+    ]
+  },
+  {
+    "en_name": "Game Mats & Boards",
+    "zh_name": "游戏垫和游戏板",
+    "path": "Toys & Games > Games & Accessories > Game Accessories > Game Mats & Boards",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 29.68,
+    "reviews": 308,
+    "weight_lbs": 2.47,
+    "return_rate": 7.5,
+    "brand_conc": 40.7,
+    "cn_ratio": 78.0,
+    "product_path": [
+      "Toys & Games",
+      "Games & Accessories",
+      "Game Accessories",
+      "Game Mats & Boards"
+    ],
+    "departments": []
+  },
+  {
+    "en_name": "Boats",
+    "zh_name": "船",
+    "path": "Toys & Games > Remote & App Controlled Vehicles & Parts > Remote & App Controlled Vehicles > Boats",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 56.64,
+    "reviews": 338,
+    "weight_lbs": 1.45,
+    "return_rate": 6.03,
+    "brand_conc": 61.7,
+    "cn_ratio": 67.0,
+    "product_path": [
+      "Toys & Games",
+      "Remote & App Controlled Vehicles & Parts",
+      "Remote & App Controlled Vehicles",
+      "Boats"
+    ],
+    "departments": []
+  }
+]

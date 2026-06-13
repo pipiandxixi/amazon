@@ -5,7 +5,7 @@ import datetime
 import argparse
 from pathlib import Path
 
-from scan_common import RESULTS_DIR, OpenCliError, check_browser_ready, eval_browser, open_browser
+from scan_common import OpenCliError, check_browser_ready, dated_results_dir, eval_browser, open_browser
 
 def values(section):
     return {
@@ -683,10 +683,9 @@ def generate_report(config_path, categories, date_str, output_dir=None, scan_met
             md.append(f"  *   **{key}**：`{val_clean}`")
         md.append("\n---\n")
         
-    # Pipeline mode (output_dir given): filenames without date suffix — the date
-    # is already encoded in the run directory name (results/{date}_{tag}/).
-    # Standalone mode: date in filename so multiple runs in results/ don't clash.
-    out = Path(output_dir) if output_dir else RESULTS_DIR
+    # Explicit output directories keep pipeline behavior. Standalone runs always
+    # write below results/YYYY_MM_DD/ instead of the results root.
+    out = Path(output_dir) if output_dir else dated_results_dir(date_str)
     out.mkdir(parents=True, exist_ok=True)
     if output_dir:
         report_file = out / "market_scan_report.md"
@@ -736,7 +735,7 @@ def main():
     parser.add_argument('--date', type=str, default='', help='Date format YYYY_MM_DD')
     parser.add_argument('--output-dir', type=str, default='', dest='output_dir',
                         help='Directory to write report and sidecar (pipeline mode); '
-                             'defaults to results/ with date-stamped filenames')
+                             'defaults to results/YYYY_MM_DD/')
     parser.add_argument('--departments', nargs='*', default=[], metavar='DEPT',
                         help='Top-level Amazon category names to pre-filter the market '
                              'scan (e.g. "Sports & Outdoors"). Resolved to SellerSprite '

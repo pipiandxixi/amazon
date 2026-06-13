@@ -10,9 +10,7 @@ import re
 import time
 from pathlib import Path
 
-from scan_common import RESULTS_DIR, OpenCliError, check_browser_ready, eval_browser, open_browser, extract_json_object
-
-KEYWORD_RESULTS_DIR = RESULTS_DIR / "keywords"
+from scan_common import OpenCliError, check_browser_ready, dated_results_dir, eval_browser, open_browser, extract_json_object
 
 # Actual column headers observed from /v2/keyword-research table (as of 2026-06):
 #  col_0: ''                     (checkbox)
@@ -590,16 +588,17 @@ def generate_report(
         md.append(f"- **商品数**：`{k['products']}`")
         md.append("\n---\n")
 
-    # Pipeline mode (output_dir given): no date suffix — date is in the run dir name.
-    # Standalone mode: date in filename so runs in results/keywords/ don't clash.
+    # Explicit output directories keep pipeline behavior. Standalone runs always
+    # write below results/YYYY_MM_DD/keywords/.
     if output_dir:
         output_dir.mkdir(parents=True, exist_ok=True)
         report_path = output_dir / "keyword_scan_report.md"
         sidecar_path = output_dir / "keyword_scan_results.json"
     else:
-        KEYWORD_RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-        report_path = KEYWORD_RESULTS_DIR / f"keyword_scan_report_{date_str}.md"
-        sidecar_path = KEYWORD_RESULTS_DIR / f"keyword_scan_results_{date_str}.json"
+        keyword_results_dir = dated_results_dir(date_str) / "keywords"
+        keyword_results_dir.mkdir(parents=True, exist_ok=True)
+        report_path = keyword_results_dir / f"keyword_scan_report_{date_str}.md"
+        sidecar_path = keyword_results_dir / f"keyword_scan_results_{date_str}.json"
 
     report_path.write_text("\n".join(md) + "\n", encoding="utf-8")
     print(f"Report written to {report_path}")
@@ -624,7 +623,7 @@ def main() -> None:
     parser.add_argument("--date", default="")
     parser.add_argument("--output-dir", default="", dest="output_dir",
                         help="Directory to write report and sidecar (pipeline mode); "
-                             "defaults to results/keywords/ with date-stamped filenames")
+                             "defaults to results/YYYY_MM_DD/keywords/")
     parser.add_argument("--categories-file", default="", dest="categories_file",
                         help="JSON file from market scan (list of {en_name, departments}); "
                              "overrides config departments with the union of all candidate departments")

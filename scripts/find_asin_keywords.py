@@ -10,7 +10,7 @@ import re
 import time
 from pathlib import Path
 
-from scan_common import RESULTS_DIR, OpenCliError, eval_browser, extract_json_array, open_browser
+from scan_common import OpenCliError, dated_results_dir, eval_browser, extract_json_array, open_browser
 
 
 SCRAPE_JS = """
@@ -206,7 +206,7 @@ def write_report(
     asin: str, items: list[dict[str, str]], raw_items: list[dict[str, str]], config: dict,
     date_str: str, result_state: dict,
 ) -> Path:
-    path = RESULTS_DIR / f"asin_keywords_{asin}_{date_str}.md"
+    path = dated_results_dir(date_str) / f"asin_keywords_{asin}_{date_str}.md"
     raw_count = len(raw_items)
     reported_total = result_state.get("reported_total")
     possible_truncation = (
