@@ -1,21 +1,25 @@
 {
   "_comment_category_usage": "standalone 模式（直接运行 find_products.py）下使用此类目；pipeline 运行时 run_pipeline.py 通过 --categories-file 批量传入市场扫描结果，此字段被完全绕过",
   "category": {
-    "name": "Float Valves",
+    "name": "Swing Trainers",
     "path": [
-      "Industrial & Scientific",
-      "Hydraulics, Pneumatics & Plumbing",
-      "Fittings",
-      "Valves",
-      "Float Valves"
+      "Sports & Outdoors",
+      "Sports",
+      "Golf",
+      "Training Equipment",
+      "Swing Trainers"
     ]
   },
   "filters": {
     "min_monthly_sales": {"value": "100", "label": "月销量最小值"},
     "max_monthly_sales": {"value": "1000", "label": "月销量最大值"},
-    "min_sales_growth": {"value": "", "label": "月销量增长率最小值（百分比，可留空）"},
-    "max_sales_growth": {"value": "", "label": "月销量增长率最大值（百分比，可留空）"},
+    "min_sales_growth": {"value": "5", "label": "月销量增长率最小值（百分比）"},
+    "max_sales_growth": {"value": "200", "label": "月销量增长率最大值（百分比；排除低基数异常暴增）"},
     "max_leaf_bsr": {"value": "", "label": "小类 BSR 最大值（可留空）"},
+    "min_bsr_growth_count": {"value": "", "label": "近 7 天大类 BSR 排名改善数量最小值（可留空）"},
+    "max_bsr_growth_count": {"value": "", "label": "近 7 天大类 BSR 排名改善数量最大值（可留空）"},
+    "min_bsr_growth_rate": {"value": "0", "label": "近 7 天大类 BSR 排名改善率最小值（百分比；正数表示改善）"},
+    "max_bsr_growth_rate": {"value": "", "label": "近 7 天大类 BSR 排名改善率最大值（百分比，可留空）"},
     "min_variants": {"value": "1", "label": "变体数最小值"},
     "max_variants": {"value": "5", "label": "变体数最大值"},
     "min_price": {"value": "15", "label": "价格最小值（美元）"},

@@ -29,6 +29,10 @@ INPUT_INDEXES = {
     "min_sales_growth": 7,
     "max_sales_growth": 8,
     "max_leaf_bsr": 12,
+    "min_bsr_growth_count": 13,
+    "max_bsr_growth_count": 14,
+    "min_bsr_growth_rate": 15,
+    "max_bsr_growth_rate": 16,
     "min_variants": 17,
     "max_variants": 18,
     "min_price": 19,
@@ -61,7 +65,12 @@ _NAV_NODE_JS = """
   const target = {target_json};
   const nodes = Array.from(
     document.querySelectorAll('.category-tree .custom-tree-node .label')
-  ).filter(x => x.textContent.trim().startsWith(target) && x.offsetParent !== null);
+  ).filter(x => {{
+    const label = x.textContent.trim();
+    const englishPath = label.split(' (')[0];
+    const leafName = englishPath.split(':').at(-1).trim();
+    return (label === target || leafName === target) && x.offsetParent !== null;
+  }});
   if (!nodes.length) return 'not found: ' + target;
   const content = nodes[0].closest('.el-tree-node__content');
   if (!content) return 'row not found: ' + target;
@@ -302,6 +311,35 @@ def scrape_products(limit: int) -> list[dict[str, str]]:
             for item in raw_products]
 
 
+def inspect_result_state() -> dict:
+    output = eval_browser(
+        """
+        (() => {
+          const cards = Array.from(document.querySelectorAll('div.relation-card'));
+          const rows = Array.from(document.querySelectorAll('table tbody tr'));
+          const visibleItems = cards.length || rows.filter(row => row.innerText.includes('ASIN:')).length;
+          const text = document.body.innerText;
+          const totalMatch = text.match(/(?:共|总计|总共)\\s*([\\d,]+)\\s*(?:条|个|件)/);
+          const nextBtn = document.querySelector('button.btn-next, .pagination .next a, .el-pagination .btn-next');
+          const parent = nextBtn?.closest('li, button');
+          const nextAvailable = !!nextBtn && !nextBtn.disabled
+            && nextBtn.getAttribute('aria-disabled') !== 'true'
+            && !parent?.classList.contains('disabled');
+          return JSON.stringify({
+            visible_items: visibleItems,
+            reported_total: totalMatch ? Number(totalMatch[1].replaceAll(',', '')) : null,
+            next_available: nextAvailable,
+            free_limit_message: text.includes('当前的会员版本无法查看全部结果')
+              || text.includes('升级套餐后可查看全部')
+          });
+        })()
+        """
+    )
+    start = output.find("{")
+    end = output.rfind("}")
+    return json.loads(output[start:end + 1])
+
+
 def _calc_listing_age(listing_date: str) -> str:
     """Calculate age string like '8个月' or '1年 3个月' from a YYYY-MM-DD date."""
     import datetime
@@ -539,6 +577,7 @@ def write_report(
     output_dir: Path | None = None,
     include_principles: bool = True,
     market_entry: dict | None = None,
+    result_state: dict | None = None,
 ) -> Path:
     category = category_name or config["category"]["name"]
     cat_path = category_path or config["category"]["path"]
@@ -561,6 +600,20 @@ def write_report(
         f"> **所在品类路径**：`{' › '.join(cat_path)}`",
         f"> 共抓取 **{len(products)}** 个通过全部筛选条件的候选商品。\n",
     ]
+    if result_state:
+        reported_total = result_state.get("reported_total")
+        possible_truncation = (
+            result_state.get("next_available", False)
+            or result_state.get("visible_items", 0) > len(products)
+            or (reported_total is not None and reported_total > len(products))
+            or result_state.get("free_limit_message", False)
+        )
+        md.append(
+            f"> **抓取完整性**：页面可见 **{result_state.get('visible_items', 0)}** 个；"
+            f"页面总数提示 **{reported_total if reported_total is not None else '未识别'}**；"
+            f"下一页 **{'可用' if result_state.get('next_available') else '不可用或未识别'}**；"
+            f"免费套餐截断风险：**{'可能存在' if possible_truncation else '未检测到'}**。\n"
+        )
 
     # --- 市场评估摘要（来源于市场扫描，说明为何选入此类目）---
     if market_entry:
@@ -780,6 +833,7 @@ def main() -> None:
                 if policy.get("hide_variants", True):
                     hide_variants()
                     time.sleep(3)
+                result_state = inspect_result_state()
                 products = scrape_products(int(policy.get("max_products", 20)))
                 for p in products:
                     if p.get("image_url"):
@@ -799,6 +853,7 @@ def main() -> None:
                     uncovered_categories=uncovered, batch_total=batch_total,
                     output_dir=output_dir, include_principles=False,
                     market_entry=mkt,
+                    result_state=result_state,
                 )
                 print(f"  Wrote {len(products)} products to {report}")
                 results_summary.append(f"  {cat_name}: {len(products)} products → {report}")
@@ -842,6 +897,7 @@ def main() -> None:
         if policy.get("hide_variants", True):
             hide_variants()
             time.sleep(3)
+        result_state = inspect_result_state()
         products = scrape_products(int(policy.get("max_products", 20)))
         # Uncovered = all market candidates except the one being scanned now
         scanned_name = config["category"]["name"].lower()
@@ -850,7 +906,8 @@ def main() -> None:
             if c.get("en_name", "").lower() != scanned_name
         ] if market_candidates else None
         report = write_report(config, products, date_str,
-                              uncovered_categories=uncovered, output_dir=output_dir)
+                              uncovered_categories=uncovered, output_dir=output_dir,
+                              result_state=result_state)
         print(f"Wrote {len(products)} products to {report}")
 
 

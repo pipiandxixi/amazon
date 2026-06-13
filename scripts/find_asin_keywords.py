@@ -16,9 +16,11 @@ from scan_common import RESULTS_DIR, OpenCliError, eval_browser, extract_json_ar
 SCRAPE_JS = """
 (() => {
   const tables = Array.from(document.querySelectorAll('table'));
-  const keywordTable = tables.find(t => Array.from(t.querySelectorAll('tbody tr')).some(
-    r => /\\n[a-zA-Z][^\\n]+/.test(r.innerText)
-  ));
+  const keywordTable = tables.find(t => {
+    const row = t.querySelector('tbody tr');
+    const cells = row ? Array.from(row.querySelectorAll('td')) : [];
+    return cells.length >= 2 && /[a-zA-Z]/.test(cells[1]?.innerText || '');
+  });
   const metricTable = tables.find(t => {
     const row = t.querySelector('tbody tr');
     return row && row.querySelectorAll('td').length >= 18 && row.innerText.includes('%');
@@ -83,6 +85,43 @@ def query_asin(asin: str) -> None:
     )
     if "submitted" not in output:
         raise ValueError(output)
+
+
+def inspect_result_state() -> dict:
+    output = eval_browser(
+        """
+        (() => {
+          const tables = Array.from(document.querySelectorAll('table'));
+          const keywordTable = tables.find(t => {
+            const row = t.querySelector('tbody tr');
+            const cells = row ? Array.from(row.querySelectorAll('td')) : [];
+            return cells.length >= 2 && /[a-zA-Z]/.test(cells[1]?.innerText || '');
+          });
+          const visibleItems = keywordTable?.querySelectorAll('tbody tr').length || 0;
+          const text = document.body.innerText;
+          const totalMatch = text.match(/(?:共|总计|总共)\\s*([\\d,]+)\\s*(?:条|个)/);
+          const nextBtn = document.querySelector('button.btn-next, .pagination .next a, .el-pagination .btn-next');
+          const parent = nextBtn?.closest('li, button');
+          const nextAvailable = !!nextBtn && !nextBtn.disabled
+            && nextBtn.getAttribute('aria-disabled') !== 'true'
+            && !parent?.classList.contains('disabled');
+          return JSON.stringify({
+            visible_items: visibleItems,
+            reported_total: totalMatch ? Number(totalMatch[1].replaceAll(',', '')) : null,
+            next_available: nextAvailable,
+            free_limit_message: text.includes('当前的会员版本无法查看全部结果')
+              || text.includes('请升级套餐后使用'),
+            metrics_available: !!tables.find(t => {
+              const row = t.querySelector('tbody tr');
+              return row && row.querySelectorAll('td').length >= 18 && row.innerText.includes('%');
+            })
+          });
+        })()
+        """
+    )
+    start = output.find("{")
+    end = output.rfind("}")
+    return json.loads(output[start:end + 1])
 
 
 def number(value: str) -> float:
@@ -164,9 +203,17 @@ def rank_keywords(
 
 
 def write_report(
-    asin: str, items: list[dict[str, str]], config: dict, raw_count: int, date_str: str
+    asin: str, items: list[dict[str, str]], raw_items: list[dict[str, str]], config: dict,
+    date_str: str, result_state: dict,
 ) -> Path:
     path = RESULTS_DIR / f"asin_keywords_{asin}_{date_str}.md"
+    raw_count = len(raw_items)
+    reported_total = result_state.get("reported_total")
+    possible_truncation = (
+        result_state.get("next_available", False)
+        or (reported_total is not None and reported_total > raw_count)
+        or result_state.get("free_limit_message", False)
+    )
     md = [
         f"# ASIN `{asin}` 推广关键词候选 ({date_str.replace('_', '-')})",
         "",
@@ -174,6 +221,12 @@ def write_report(
         "> 用于生成广告测试候选，不代表应直接使用高竞价投放。",
         f"> 筛选参数：`{json.dumps(values(config['filters']), ensure_ascii=False)}`",
         f"> 原始关键词 **{raw_count}** 个，过滤后保留 **{len(items)}** 个。",
+        f"> 抓取完整性：页面可见 **{result_state.get('visible_items', 0)}** 个；"
+        f"页面总数提示 **{reported_total if reported_total is not None else '未识别'}**；"
+        f"下一页 **{'可用' if result_state.get('next_available') else '不可用或未识别'}**；"
+        f"免费套餐截断风险：**{'可能存在' if possible_truncation else '未检测到'}**。",
+        f"> 指标可用性：**{'可用' if result_state.get('metrics_available') else '不可用'}**。"
+        "若指标不可用，过滤后 0 条不能解释为没有关键词机会。",
         "",
         "| # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |",
         "|---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|",
@@ -187,6 +240,10 @@ def write_report(
             f"{clean['title_density']} | {clean['supply_products']} | {clean['ppc_bid']} | "
             f"{clean['ad_score']} |"
         )
+    md.extend(["", "## 免费套餐当前可见原始关键词", ""])
+    for index, item in enumerate(raw_items, 1):
+        translation = item.get("translation", "").replace("\n", " / ")
+        md.append(f"{index}. **{item['keyword']}**" + (f" — {translation}" if translation else ""))
     path.write_text("\n".join(md) + "\n", encoding="utf-8")
     return path
 
@@ -216,10 +273,11 @@ def main() -> None:
     time.sleep(float(policy.get("page_wait_seconds", 5)))
     query_asin(asin)
     time.sleep(query_wait)
+    result_state = inspect_result_state()
     raw_items = extract_json_array(eval_browser(SCRAPE_JS))
     items = filter_keywords(raw_items, values(config.get("filters", {})))
     items = rank_keywords(items, values(config.get("score_weights", {})))[:limit]
-    report = write_report(asin, items, config, len(raw_items), date_str)
+    report = write_report(asin, items, raw_items, config, date_str, result_state)
     print(f"Wrote {len(items)} of {len(raw_items)} keywords to {report}")
 
 

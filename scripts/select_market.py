@@ -287,6 +287,13 @@ def scrape_market(config_path, department_numbers=None):
     
     all_categories = []
     seen_pages = set()
+    scan_meta = {
+        "pages_scanned": 0,
+        "stop_reason": "",
+        "possible_truncation": False,
+        "reported_total": None,
+        "free_limit_message": False,
+    }
     
     for page in range(1, max_pages + 1):
         print(f"\nScraping page {page}...")
@@ -301,12 +308,15 @@ def scrape_market(config_path, department_numbers=None):
             print(f"Scraped {len(page_items)} categories on page {page}")
             if len(page_items) == 0:
                 print("No items found on this page, stopping pagination.")
+                scan_meta["stop_reason"] = "页面未返回类目"
                 break
             page_signature = json.dumps(page_items, ensure_ascii=False, sort_keys=True)
             if page_signature in seen_pages:
                 print("Page content repeated, stopping pagination to avoid duplicate results.")
+                scan_meta["stop_reason"] = "下一页内容重复"
                 break
             seen_pages.add(page_signature)
+            scan_meta["pages_scanned"] = page
             known_items = {json.dumps(item, ensure_ascii=False, sort_keys=True) for item in all_categories}
             all_categories.extend(
                 item for item in page_items
@@ -314,6 +324,7 @@ def scrape_market(config_path, department_numbers=None):
             )
         else:
             print("Scraper output did not contain valid JSON.")
+            scan_meta["stop_reason"] = "页面未返回有效 JSON"
             break
             
         print("Clicking next page...")
@@ -321,6 +332,11 @@ def scrape_market(config_path, department_numbers=None):
         (() => {
           const nextBtn = document.querySelector('button.btn-next') || document.querySelector('.pagination .next a') || document.querySelector('.pagination li:last-child a');
           if (nextBtn) {
+            const parent = nextBtn.closest('li, button');
+            const disabled = nextBtn.disabled
+              || nextBtn.getAttribute('aria-disabled') === 'true'
+              || parent?.classList.contains('disabled');
+            if (disabled) return "disabled";
             nextBtn.click();
             return "clicked";
           }
@@ -329,14 +345,42 @@ def scrape_market(config_path, department_numbers=None):
         """
         click_res = eval_browser(click_next_js)
         print("Click next status:", click_res)
-        if "not found" in click_res:
+        if "not found" in click_res or "disabled" in click_res:
+            scan_meta["stop_reason"] = "已到最后一页"
             break
         time.sleep(4)
         
     print(f"\nDone! Successfully collected {len(all_categories)} categories.")
-    return all_categories
+    completeness_output = eval_browser(
+        """
+        (() => {
+          const text = document.body.innerText;
+          const total = text.match(/找到的细分行业\\s*[:：]\\s*([\\d,]+)/);
+          return JSON.stringify({
+            reported_total: total ? Number(total[1].replaceAll(',', '')) : null,
+            free_limit_message: text.includes('升级套餐后可查看全部')
+          });
+        })()
+        """
+    )
+    completeness = json.loads(
+        completeness_output[completeness_output.find("{"):completeness_output.rfind("}") + 1]
+    )
+    scan_meta.update(completeness)
+    if scan_meta["free_limit_message"] or (
+        scan_meta["reported_total"] is not None
+        and scan_meta["reported_total"] > len(all_categories)
+    ):
+        scan_meta["possible_truncation"] = True
+        scan_meta["stop_reason"] = (
+            f"免费套餐仅展示 {len(all_categories)} 个，页面提示共有 "
+            f"{scan_meta['reported_total'] or '更多'} 个类目"
+        )
+    if not scan_meta["stop_reason"]:
+        scan_meta["stop_reason"] = "扫描正常结束"
+    return all_categories, scan_meta
 
-def generate_report(config_path, categories, date_str, output_dir=None):
+def generate_report(config_path, categories, date_str, output_dir=None, scan_meta=None):
     print(f"Generating market report using configuration rules from {config_path}...")
     with open(config_path, 'r', encoding='utf-8') as f:
         config = json.load(f)
@@ -561,6 +605,13 @@ def generate_report(config_path, categories, date_str, output_dir=None):
     md.append(f"# 亚马逊选市场扫描与评估报告 ({date_str.replace('_', '-')})\n")
     md.append("> [!IMPORTANT]")
     md.append(f"> 本报告基于配置文件 `{config_path}` 中设定的过滤与风控规则进行生成。今日共分析了 **{len(categories)}** 个符合基本条件的子类目，其中最终筛选出 **{len(green_niches)}** 个适合新手的 🟢 绿色推荐赛道。")
+    if scan_meta:
+        md.append(
+            f"> **抓取完整性**：扫描 **{scan_meta['pages_scanned']}** 页；"
+            f"页面总数提示：**{scan_meta['reported_total'] if scan_meta['reported_total'] is not None else '未识别'}**；"
+            f"停止原因：{scan_meta['stop_reason']}；"
+            f"免费套餐截断风险：**{'可能存在' if scan_meta['possible_truncation'] else '未检测到'}**。"
+        )
     md.append(f"> **数量审计**：{threshold_advice}")
     md.append("> 本报告仅输出真实抓取的指标数据，没有任何人工猜测或硬编码的推荐理由。您可以直接复制本报告的详细数据到大模型中，让其结合具体品类特性为您分析入选原因及每个指标的指导含义。\n")
     
@@ -713,10 +764,10 @@ def main():
         print(f"Departments: {args.departments} → numbers {dept_numbers}")
 
     check_browser_ready()
-    categories = scrape_market(args.config,
-                               department_numbers=dept_numbers or None)
+    categories, scan_meta = scrape_market(args.config,
+                                          department_numbers=dept_numbers or None)
     generate_report(args.config, categories, date_str,
-                    output_dir=args.output_dir or None)
+                    output_dir=args.output_dir or None, scan_meta=scan_meta)
 
 if __name__ == "__main__":
     try:

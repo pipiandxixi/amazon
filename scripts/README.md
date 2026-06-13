@@ -21,6 +21,10 @@ python3 scripts/find_products.py --categories-file cats.json       # stage 3, ba
 python3 scripts/find_asin_keywords.py B0FS72284D                   # reverse keyword lookup
 ```
 
+The default single-category product config currently scans `Swing Trainers`.
+Market, product, and ASIN-keyword reports record whether the free plan may have
+truncated the visible results.
+
 ---
 
 ## Workflow
