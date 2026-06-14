@@ -259,7 +259,14 @@ def main() -> None:
     if not (args.start_from == 3 and args.skip_asin_keywords):
         check_browser_ready()
 
+    pipeline_start = time.time()
+
+    def _elapsed(since: float) -> str:
+        s = int(time.time() - since)
+        return f"{s // 60}m{s % 60:02d}s"
+
     # ── Stage 1: Market Scan (per-department) ───────────────────────────────
+    t1 = time.time()
     if args.start_from <= 1:
         raw_categories, scan_meta = _scan_all_departments(config["market"])
         market_content, candidates = market_scan.generate_report(
@@ -279,8 +286,10 @@ def main() -> None:
         market_content = data["market_content"]
         candidates = data["candidates"]
         print(f"[RESUME] Stage 1: {len(candidates)} candidate categories loaded")
+    print(f"[TIMER] Stage 1 耗时: {_elapsed(t1)}  (累计 {_elapsed(pipeline_start)})")
 
     # ── Stage 2: Product Scan ────────────────────────────────────────────────
+    t2 = time.time()
     if args.start_from <= 2:
         products, product_sections = run_products(config["products"], candidates, date_str)
         if not products:
@@ -295,17 +304,21 @@ def main() -> None:
         products = data["products"]
         product_sections = data["product_sections"]
         print(f"[RESUME] Stage 2: {len(products)} products loaded")
+    print(f"[TIMER] Stage 2 耗时: {_elapsed(t2)}  (累计 {_elapsed(pipeline_start)})")
 
     # ── Stage 3: ASIN Keyword Lookup ─────────────────────────────────────────
+    t3 = time.time()
     keyword_sections: list[str] = []
     if not args.skip_asin_keywords:
         keyword_sections = run_asin_keywords(config["asin_keywords"], products, date_str, root)
+    print(f"[TIMER] Stage 3 耗时: {_elapsed(t3)}  (累计 {_elapsed(pipeline_start)})")
 
     write_combined_report(root, date_str, market_content, product_sections, keyword_sections)
 
     # ── HTML Report ───────────────────────────────────────────────────────────
     import generate_html_report as _html_gen
     _html_gen.generate(root, date_str)
+    print(f"\n[TIMER] Pipeline 总耗时: {_elapsed(pipeline_start)}")
 
 
 if __name__ == "__main__":
