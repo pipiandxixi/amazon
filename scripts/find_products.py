@@ -104,7 +104,7 @@ def _nav_node(category: str, as_leaf: bool) -> str:
     ))
 
 
-def select_category(path: list[str], only_leaf_rank: bool) -> None:
+def select_category(path: list[str], only_leaf_rank: bool) -> str:
     output = eval_browser(
         """
         (() => {
@@ -202,6 +202,8 @@ def select_category(path: list[str], only_leaf_rank: bool) -> None:
             })()
             """
         )
+
+    return "/".join(path[:deepest_found + 1])
 
 
 def apply_filters(filters: dict[str, str]) -> None:

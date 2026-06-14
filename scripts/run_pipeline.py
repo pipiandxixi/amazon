@@ -63,12 +63,19 @@ def run_products(
 
     all_products: list[dict] = []
     product_sections: list[str] = []
+    seen_nodes: set[str] = set()
     for entry in categories:
         name = entry.get("en_name") or entry.get("zh_name") or "unknown"
         path = entry.get("product_path") or product_scan._parse_path(entry.get("path", ""))
         print(f"\n[PRODUCT CATEGORY] {name}")
         try:
-            product_scan.select_category(path, policy.get("only_leaf_category_rank", True))
+            actual_node = product_scan.select_category(path, policy.get("only_leaf_category_rank", True))
+            if actual_node in seen_nodes:
+                print(f"  [SKIP] nav-fallback collision: '{actual_node}' already scanned, skipping")
+                open_browser("https://www.sellersprite.com/v3/product-research")
+                time.sleep(float(policy.get("page_wait_seconds", 5)))
+                continue
+            seen_nodes.add(actual_node)
             product_scan.apply_filters(filters)
             time.sleep(float(policy.get("wait_seconds", 5)))
             if policy.get("hide_variants", True):
