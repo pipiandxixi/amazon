@@ -13,6 +13,7 @@ import datetime
 import html as _html
 import json
 import sys
+import urllib.parse
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -74,6 +75,8 @@ table.kwtable{width:100%;border-collapse:collapse;font-size:.8rem}
 .kwtable td:first-child{color:var(--muted);font-size:.75rem;width:2rem}
 .kw-zh{color:var(--muted);font-size:.72rem;display:block;margin-top:.1rem}
 .no-data{padding:.9rem 1.5rem;color:var(--muted);font-size:.85rem;font-style:italic}
+.kw-link{color:var(--text);text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:2px;transition:color .12s}
+.kw-link:hover{color:#1a6d38}
 .plinks{display:inline-flex;gap:.2rem;margin-left:.35rem}
 .plinks a{font-size:.58rem;padding:.05rem .28rem;border-radius:.25rem;font-weight:700;text-decoration:none;border:1px solid currentColor;line-height:1.4;opacity:.7;transition:opacity .12s}
 .plinks a:hover{opacity:1}
@@ -127,7 +130,7 @@ def _keyword_table(keywords: list[dict], asins: list[str]) -> str:
     for i, kw in enumerate(keywords, 1):
         rows.append(f"""<tr>
           <td>{i}</td>
-          <td><strong>{_e(kw.get('keyword',''))}</strong><span class="kw-zh">{_e(kw.get('translation',''))}</span></td>
+          <td><a href="https://www.sellersprite.com/v3/keyword-conversion-rate?marketId=1&reverseType=W&bidMatchType=1&keywordMatchType=all&keywordList={urllib.parse.quote(kw.get('keyword',''))}" target="_blank" rel="noopener" class="kw-link"><strong>{_e(kw.get('keyword',''))}</strong></a><span class="kw-zh">{_e(kw.get('translation',''))}</span></td>
           <td>{_e(kw.get('searches','-'))}</td>
           <td>{_e(kw.get('purchases','-'))}</td>
           <td>{_e(kw.get('traffic_share','-'))}</td>
