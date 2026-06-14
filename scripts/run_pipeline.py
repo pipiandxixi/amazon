@@ -182,6 +182,72 @@ def write_combined_report(
     return output
 
 
+def _update_index(root: Path, date_str: str) -> None:
+    """Regenerate the root index.html with links to all available HTML reports."""
+    repo_root = root.parent.parent
+    index_path = repo_root / "index.html"
+    results_dir = repo_root / "results"
+
+    # Collect all dates that have an HTML report, newest first
+    entries: list[tuple[str, str]] = []
+    for d in sorted(results_dir.iterdir(), reverse=True):
+        if d.is_dir() and (d / "html" / "report.html").exists():
+            date_display = d.name.replace("_", "-")
+            rel_path = f"results/{d.name}/html/report.html"
+            entries.append((date_display, rel_path))
+
+    if not entries:
+        return
+
+    rows = []
+    for i, (date_display, rel_path) in enumerate(entries):
+        cls = "report-link latest" if i == 0 else "report-link"
+        tag = '<span class="tag">最新</span>' if i == 0 else ""
+        rows.append(
+            f'    <a class="{cls}" href="{rel_path}">\n'
+            f'      <span class="date">{date_display}</span>\n'
+            f'      <span style="display:flex;align-items:center;gap:.5rem">{tag}<span class="arrow">→</span></span>\n'
+            f'    </a>'
+        )
+
+    html = f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amazon 选品报告</title>
+<style>
+:root{{--border:#e5e7eb;--muted:#6b7280;--bg:#f3f4f6;--card:#fff}}
+*{{box-sizing:border-box;margin:0;padding:0}}
+body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:#111827;line-height:1.5;min-height:100vh;display:flex;align-items:center;justify-content:center}}
+.wrap{{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:2.5rem 3rem;box-shadow:0 4px 24px rgba(0,0,0,.07);max-width:480px;width:100%;text-align:center}}
+h1{{font-size:1.4rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.4rem}}
+.sub{{color:var(--muted);font-size:.88rem;margin-bottom:2rem}}
+.reports{{display:flex;flex-direction:column;gap:.65rem}}
+.report-link{{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1.1rem;border:1px solid var(--border);border-radius:.6rem;text-decoration:none;color:#111827;transition:background .12s,box-shadow .12s}}
+.report-link:hover{{background:#f8fafc;box-shadow:0 2px 8px rgba(0,0,0,.06)}}
+.report-link.latest{{border-color:#86efac;background:#f0fdf4}}
+.report-link.latest:hover{{background:#dcfce7}}
+.date{{font-weight:600;font-size:.95rem}}
+.tag{{font-size:.72rem;padding:.15rem .5rem;border-radius:9999px;background:#dcfce7;color:#166534;font-weight:700}}
+.arrow{{color:var(--muted);font-size:.85rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Amazon 选品报告</h1>
+  <p class="sub">点击查看每次运行的完整选品分析</p>
+  <div class="reports">
+{chr(10).join(rows)}
+  </div>
+</div>
+</body>
+</html>"""
+
+    index_path.write_text(html, encoding="utf-8")
+    print(f"[INDEX] {index_path}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", default="scripts/pipeline_config.json")
@@ -262,6 +328,7 @@ def main() -> None:
     # ── HTML Report ───────────────────────────────────────────────────────────
     import generate_html_report as _html_gen
     _html_gen.generate(root, date_str)
+    _update_index(root, date_str)
 
 
 if __name__ == "__main__":
