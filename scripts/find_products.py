@@ -566,32 +566,23 @@ def write_principles_file(config: dict, output_dir: Path, date_str: str) -> Path
     return path
 
 
-def write_report(
+def format_report(
     config: dict,
     products: list[dict[str, str]],
     date_str: str,
     category_name: str | None = None,
     category_path: list[str] | None = None,
     batch_total: int = 0,
-    output_dir: Path | None = None,
     include_principles: bool = True,
     market_entry: dict | None = None,
     result_state: dict | None = None,
-) -> Path:
+) -> str:
+    """Build and return the markdown content string for a product scan report."""
     category = category_name or config["category"]["name"]
     cat_path = category_path or config["category"]["path"]
-    slug = re.sub(r"[^a-z0-9]+", "_", category.lower()).strip("_")
-    # Pipeline mode: filename is just the slug in the explicit output directory.
-    # Standalone mode: use the run date directory below results/.
-    if output_dir:
-        path = output_dir / f"{slug}.md"
-    else:
-        path = dated_results_dir(date_str) / f"product_scan_{slug}_{date_str}.md"
-    filters = values(config["filters"])
     short_titles = [_short_title(p["title"]) for p in products]
     print(f"  Translating {len(short_titles)} product names to Chinese...")
     zh_names = _translate_batch(short_titles)
-
     sec = iter(_CN_NUMS)
 
     md = [
@@ -613,23 +604,17 @@ def write_report(
             f"下一页 **{'可用' if result_state.get('next_available') else '不可用或未识别'}**；"
             f"免费套餐截断风险：**{'可能存在' if possible_truncation else '未检测到'}**。\n"
         )
-
-    # --- 市场评估摘要（来源于市场扫描，说明为何选入此类目）---
     if market_entry:
         level = market_entry.get("level", "")
         md.append(f"> **市场评级**：{level}　{_market_metric_str(market_entry)}\n")
 
-    # --- 选品原则 (inline in single mode; shared file referenced in batch mode) ---
     if include_principles:
         md.append(f"## {next(sec)}、选品原则\n")
         md.append("本次产品扫描依据以下量化条件筛选候选商品，每项条件均有明确的选品逻辑：\n")
         for line in _explain_filters(config["filters"]):
             md.append(line)
         md.append("")
-    else:
-        md.append("> 选品原则详见 [scan_principles.md](scan_principles.md)\n")
 
-    # --- 候选商品列表 ---
     md.append(f"## {next(sec)}、候选商品列表\n")
     md += [
         "| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |",
@@ -651,14 +636,12 @@ def write_report(
         )
     md.append("")
 
-    # --- 完整标题 ---
     md.append(f"## {next(sec)}、完整商品标题\n")
     for index, product in enumerate(products, 1):
         asin_link = f"[{product['asin']}](https://www.amazon.com/dp/{product['asin']})"
         md.append(f"**{index}. {asin_link}** {product['title']}")
         md.append("")
 
-    # --- 下一步建议 ---
     md.append(f"## {next(sec)}、下一步建议\n")
     md.append(
         "1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，"
@@ -673,12 +656,38 @@ def write_report(
         "在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。\n"
     )
 
-    # --- 原始数值 ---
     md.append(f"## {next(sec)}、原始数值\n")
     for product in products:
         md.append(f"- `{product['asin']}`: {product['raw_metrics']}")
 
-    path.write_text("\n".join(md) + "\n", encoding="utf-8")
+    return "\n".join(md) + "\n"
+
+
+def write_report(
+    config: dict,
+    products: list[dict[str, str]],
+    date_str: str,
+    category_name: str | None = None,
+    category_path: list[str] | None = None,
+    batch_total: int = 0,
+    output_dir: Path | None = None,
+    include_principles: bool = True,
+    market_entry: dict | None = None,
+    result_state: dict | None = None,
+) -> Path:
+    category = category_name or config["category"]["name"]
+    slug = re.sub(r"[^a-z0-9]+", "_", category.lower()).strip("_")
+    if output_dir:
+        path = output_dir / f"{slug}.md"
+    else:
+        path = dated_results_dir(date_str) / f"product_scan_{slug}_{date_str}.md"
+    content = format_report(
+        config, products, date_str,
+        category_name=category_name, category_path=category_path,
+        batch_total=batch_total, include_principles=include_principles,
+        market_entry=market_entry, result_state=result_state,
+    )
+    path.write_text(content, encoding="utf-8")
     return path
 
 

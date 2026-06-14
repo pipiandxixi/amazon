@@ -266,13 +266,12 @@ def rank_keywords(
     return sorted(items, key=lambda x: x["ad_score"], reverse=True)
 
 
-def write_report(
+def format_report(
     asins: list[str], category_name: str,
     items: list[dict[str, str]], raw_items: list[dict[str, str]], config: dict,
     date_str: str, result_state: dict,
-) -> Path:
-    slug = re.sub(r"[^a-z0-9]+", "_", category_name.lower()).strip("_")
-    path = dated_results_dir(date_str) / f"category_keywords_{slug}_{date_str}.md"
+) -> str:
+    """Return the markdown content string for a category keyword report."""
     raw_count = len(raw_items)
     reported_total = result_state.get("reported_total")
     possible_truncation = (
@@ -312,7 +311,17 @@ def write_report(
     for index, item in enumerate(raw_items, 1):
         translation = item.get("translation", "").replace("\n", " / ")
         md.append(f"{index}. **{item['keyword']}**" + (f" — {translation}" if translation else ""))
-    path.write_text("\n".join(md) + "\n", encoding="utf-8")
+    return "\n".join(md) + "\n"
+
+
+def write_report(
+    asins: list[str], category_name: str,
+    items: list[dict[str, str]], raw_items: list[dict[str, str]], config: dict,
+    date_str: str, result_state: dict,
+) -> Path:
+    slug = re.sub(r"[^a-z0-9]+", "_", category_name.lower()).strip("_")
+    path = dated_results_dir(date_str) / f"category_keywords_{slug}_{date_str}.md"
+    path.write_text(format_report(asins, category_name, items, raw_items, config, date_str, result_state), encoding="utf-8")
     return path
 
 

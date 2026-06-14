@@ -388,7 +388,7 @@ def scrape_market(config_source, department_numbers=None):
 
 def generate_report(
     config_source, categories, date_str, output_dir=None, scan_meta=None,
-    return_candidates=False,
+    return_candidates=False, write_report_file=True,
 ):
     config_label = config_source if isinstance(config_source, str) else "unified pipeline config"
     print(f"Generating market report using configuration rules from {config_label}...")
@@ -703,9 +703,11 @@ def generate_report(
         report_file = out / f"market_scan_report_{date_str}.md"
         sidecar_file = out / f"market_scan_results_{date_str}.json"
 
-    with open(report_file, 'w', encoding='utf-8') as f:
-        f.write("\n".join(md))
-    print(f"Report successfully written to {report_file}")
+    market_content = "\n".join(md)
+    if write_report_file:
+        with open(report_file, 'w', encoding='utf-8') as f:
+            f.write(market_content)
+        print(f"Report successfully written to {report_file}")
 
     def _clean_path(raw: str) -> str:
         # Strip scraping artifact " 市场分析" appended by SellerSprite market page
@@ -736,8 +738,8 @@ def generate_report(
         json.dump(sidecar_items, f, ensure_ascii=False, indent=2)
     print(f"JSON sidecar written to {sidecar_file}")
     if return_candidates:
-        return str(report_file), sidecar_items
-    return str(report_file)
+        return market_content, sidecar_items
+    return market_content
 
 def main():
     parser = argparse.ArgumentParser(description="Amazon Market Research Selection Script")

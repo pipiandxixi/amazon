@@ -31,17 +31,15 @@ def run_products(
     config: dict,
     categories: list[dict],
     date_str: str,
-    output_dir: Path,
-) -> list[dict]:
+) -> tuple[list[dict], list[str]]:
     policy = values(config.get("scan_policy", {}))
     filters = values(config["filters"])
 
-    output_dir.mkdir(parents=True, exist_ok=True)
-    product_scan.write_principles_file(config, output_dir, date_str)
     open_browser("https://www.sellersprite.com/v3/product-research")
     time.sleep(float(policy.get("page_wait_seconds", 5)))
 
     all_products: list[dict] = []
+    product_sections: list[str] = []
     for entry in categories:
         name = entry.get("en_name") or entry.get("zh_name") or "unknown"
         path = entry.get("product_path") or product_scan._parse_path(entry.get("path", ""))
@@ -58,20 +56,19 @@ def run_products(
             for item in products:
                 item["_category_name"] = name
             all_products.extend(products)
-            product_scan.write_report(
+            product_sections.append(product_scan.format_report(
                 config, products, date_str, category_name=name, category_path=path,
-                batch_total=len(categories),
-                output_dir=output_dir, include_principles=False,
+                batch_total=len(categories), include_principles=False,
                 market_entry=entry, result_state=state,
-            )
+            ))
         except ValueError as exc:
             print(f"  [ERROR] {name}: {exc}")
         open_browser("https://www.sellersprite.com/v3/product-research")
         time.sleep(float(policy.get("page_wait_seconds", 5)))
-    return all_products
+    return all_products, product_sections
 
 
-def run_asin_keywords(config: dict, products: list[dict], date_str: str) -> None:
+def run_asin_keywords(config: dict, products: list[dict], date_str: str) -> list[str]:
     from collections import defaultdict
     policy = values(config.get("scan_policy", {}))
     limit = int(policy.get("max_keywords", 20))
@@ -91,6 +88,7 @@ def run_asin_keywords(config: dict, products: list[dict], date_str: str) -> None
     for p in products:
         by_category[p.get("_category_name", "unknown")].append(p)
 
+    keyword_sections: list[str] = []
     for cat_name, cat_products in by_category.items():
         seen: set[str] = set()
         asins: list[str] = []
@@ -116,36 +114,37 @@ def run_asin_keywords(config: dict, products: list[dict], date_str: str) -> None
         state = asin_scan.inspect_result_state()
         raw = extract_json_array(eval_browser(asin_scan.SCRAPE_JS))
         items = asin_scan.rank_keywords(raw, values(config.get("score_weights", {})))[:limit]
-        report = asin_scan.write_report(asins, cat_name, items, raw, config, date_str, state)
-        print(f"  Wrote {len(items)} of {len(raw)} keywords to {report}")
+        keyword_sections.append(asin_scan.format_report(asins, cat_name, items, raw, config, date_str, state))
+        print(f"  {len(items)} of {len(raw)} keywords collected for {cat_name}")
+    return keyword_sections
 
 
-def write_combined_report(root: Path, date_str: str) -> Path:
-    """Combine human-readable stage reports into one review file."""
+def write_combined_report(
+    root: Path,
+    date_str: str,
+    market_content: str,
+    product_sections: list[str],
+    keyword_sections: list[str],
+) -> Path:
+    """Write the single pipeline report from in-memory stage content."""
     output = root / f"pipeline_report_{date_str}.md"
-    market_reports = sorted(root.glob("market_scan_report*.md"))
-    product_reports = sorted((root / "products").glob("*.md"))
-    asin_reports = sorted(root.glob("category_keywords_*.md"))
-    sources = market_reports + product_reports + asin_reports
-
     sections = [
         f"# 亚马逊选品完整流水线报告 ({date_str.replace('_', '-')})",
         "",
         "> 本文件汇总市场扫描、全部候选类目商品扫描和动态商品 ASIN 关键词反查结果。",
-        "> 各阶段独立报告仍保留用于审计。",
+        "",
+        "---",
+        "",
+        market_content.strip(),
         "",
     ]
-    for source in sources:
-        relative = source.relative_to(root)
-        sections.extend([
-            "---",
-            "",
-            f"<!-- source: {relative} -->",
-            source.read_text(encoding="utf-8").strip(),
-            "",
-        ])
+    for content in product_sections:
+        sections.extend(["---", "", content.strip(), ""])
+    for content in keyword_sections:
+        sections.extend(["---", "", content.strip(), ""])
     output.write_text("\n".join(sections).rstrip() + "\n", encoding="utf-8")
-    print(f"\n[COMBINED REPORT] {len(sources)} reports -> {output}")
+    total = 1 + len(product_sections) + len(keyword_sections)
+    print(f"\n[COMBINED REPORT] {total} sections -> {output}")
     return output
 
 
@@ -173,21 +172,22 @@ def main() -> None:
 
     check_browser_ready()
     raw_categories, scan_meta = market_scan.scrape_market(config["market"])
-    _, candidates = market_scan.generate_report(
+    market_content, candidates = market_scan.generate_report(
         config["market"], raw_categories, date_str, output_dir=root,
-        scan_meta=scan_meta, return_candidates=True,
+        scan_meta=scan_meta, return_candidates=True, write_report_file=False,
     )
     candidates = [item for item in candidates if item.get("level") in levels]
     if not candidates:
         raise ValueError("Market scan produced no downstream candidate categories")
     print(f"\n[HANDOFF] market -> products: {len(candidates)} categories in memory")
-    products = run_products(config["products"], candidates, date_str, root / "products")
+    products, product_sections = run_products(config["products"], candidates, date_str)
     print(f"\n[HANDOFF] products -> ASIN reverse: {len(products)} products in memory")
     if not products:
         raise ValueError("All dynamic candidate categories returned zero qualified products")
+    keyword_sections: list[str] = []
     if not args.skip_asin_keywords:
-        run_asin_keywords(config["asin_keywords"], products, date_str)
-    write_combined_report(root, date_str)
+        keyword_sections = run_asin_keywords(config["asin_keywords"], products, date_str)
+    write_combined_report(root, date_str, market_content, product_sections, keyword_sections)
 
 
 if __name__ == "__main__":
