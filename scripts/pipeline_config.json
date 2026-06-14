@@ -36,11 +36,11 @@
         "label": "平均卖家数最大值"
       },
       "maxHeadListingBrandCrn": {
-        "value": "65.0",
+        "value": "75.0",
         "label": "头部 Listing 品牌集中度最大值（百分比）"
       },
       "maxHeadListingSellerCrn": {
-        "value": "65.0",
+        "value": "75.0",
         "label": "头部 Listing 卖家集中度最大值（百分比）"
       },
       "maxAmzRatio": {
@@ -56,7 +56,7 @@
         "label": "新品平均星级最大值"
       },
       "maxAvgWeight": {
-        "value": "3.0",
+        "value": "4.5",
         "label": "平均重量最大值（lbs）"
       },
       "maxAvgVolume": {
@@ -64,11 +64,11 @@
         "label": "平均体积最大值（in³）"
       },
       "minAvgProfit": {
-        "value": "50.0",
+        "value": "40.0",
         "label": "平均毛利率最小值（百分比）"
       },
       "maxAvgReviews": {
-        "value": "500",
+        "value": "800",
         "label": "平均评分数最大值"
       }
     },
@@ -82,7 +82,7 @@
         "label": "期望候选类目数量下限"
       },
       "target_candidate_max": {
-        "value": 15,
+        "value": 25,
         "label": "期望候选类目数量上限"
       },
       "min_green_required": {
@@ -147,12 +147,12 @@
           "label": "平均退货率上限（百分比）"
         },
         "max_weight_lbs": {
-          "value": 2.5,
+          "value": 4.0,
           "label": "平均重量上限（lbs）"
         },
         "max_reviews": {
-          "value": 550,
-          "label": "平均评分数上限（filter 500 的兜底上限，防止 SellerSprite 分页边界漏出）"
+          "value": 700,
+          "label": "平均评分数上限（filter 800 的兜底，超出此值直接排除）"
         },
         "excluded_keywords": {
           "value": [
@@ -193,12 +193,12 @@
           "label": "触发谨慎评级的平均退货率（百分比）"
         },
         "max_weight_lbs": {
-          "value": 2.0,
+          "value": 2.5,
           "label": "触发谨慎评级的平均重量（lbs）"
         },
         "max_reviews": {
-          "value": 800,
-          "label": "触发谨慎评级的平均评分数"
+          "value": 550,
+          "label": "触发谨慎评级的平均评分数（550-700 区间为 Yellow，>700 为 Red）"
         },
         "excluded_paths": {
           "value": [
@@ -300,7 +300,7 @@
         "label": "FBA 运费最大值（美元，可留空）"
       },
       "max_package_weight_g": {
-        "value": "1500",
+        "value": "2000",
         "label": "包装重量最大值（克）"
       },
       "min_sellers": {
