@@ -182,6 +182,55 @@ def write_combined_report(
     return output
 
 
+def _scan_all_departments(market_config: dict) -> tuple[list[dict], dict]:
+    """Run market scan once per unique department; aggregate and deduplicate results."""
+    category_map = market_config.get("category_map", {})
+    red_excluded = values(market_config["risk_rules"]["red"]).get("excluded_paths", [])
+    allowed_kw = values(market_config["risk_rules"]["red"]).get("allowed_path_keywords", [])
+
+    # Build ordered list of unique (dept_num, dept_name), skip wholly-excluded depts
+    seen_nums: set[int] = set()
+    depts: list[tuple[int, str]] = []
+    for dept_name, dept_info in category_map.items():
+        dept_num = dept_info.get("department")
+        if not dept_num or dept_num in seen_nums:
+            continue
+        path_excluded = any(x in dept_name for x in red_excluded)
+        path_allowed = any(x in dept_name for x in allowed_kw)
+        if path_excluded and not path_allowed:
+            print(f"[MARKET] Skip excluded dept: {dept_name}")
+            continue
+        seen_nums.add(dept_num)
+        depts.append((dept_num, dept_name))
+
+    all_raw: list[dict] = []
+    seen_niches: set[str] = set()
+    total_pages = 0
+    any_truncation = False
+
+    for dept_num, dept_name in depts:
+        print(f"\n[MARKET DEPT] {dept_name} (dept={dept_num})")
+        raw, meta = market_scan.scrape_market(market_config, department_numbers=[dept_num])
+        total_pages += meta.get("pages_scanned", 0)
+        if meta.get("possible_truncation"):
+            any_truncation = True
+        for item in raw:
+            key = market_scan.clean_name(item.get("niche", ""))
+            if key and key not in seen_niches:
+                seen_niches.add(key)
+                all_raw.append(item)
+
+    print(f"\n[MARKET] {len(depts)} departments scanned → {len(all_raw)} unique categories")
+    combined_meta = {
+        "pages_scanned": total_pages,
+        "stop_reason": f"{len(depts)} 个部门各自扫描完成",
+        "possible_truncation": any_truncation,
+        "reported_total": None,
+        "free_limit_message": False,
+    }
+    return all_raw, combined_meta
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", default="scripts/pipeline_config.json")
@@ -215,9 +264,9 @@ def main() -> None:
     if not (args.start_from == 3 and args.skip_asin_keywords):
         check_browser_ready()
 
-    # ── Stage 1: Market Scan ─────────────────────────────────────────────────
+    # ── Stage 1: Market Scan (per-department) ───────────────────────────────
     if args.start_from <= 1:
-        raw_categories, scan_meta = market_scan.scrape_market(config["market"])
+        raw_categories, scan_meta = _scan_all_departments(config["market"])
         market_content, candidates = market_scan.generate_report(
             config["market"], raw_categories, date_str, output_dir=root,
             scan_meta=scan_meta, return_candidates=True, write_report_file=False,

@@ -548,8 +548,13 @@ def generate_report(
             red_reasons.append(f"Review护城河太深 (>{red_rules['max_reviews']})")
         if any(x in en_name for x in red_rules['excluded_keywords']):
             red_reasons.append("排除类关键字过滤")
+        allowed_path_kw = red_rules.get('allowed_path_keywords', [])
         if any(x in path for x in red_rules['excluded_paths']):
-            red_reasons.append("高风险类目路径过滤")
+            # Check allowlist against sub-category segments only (skip top-level dept name)
+            sub_segments = [s.strip() for s in path.split('›')][1:]
+            path_allowed = any(x in seg for x in allowed_path_kw for seg in sub_segments)
+            if not path_allowed:
+                red_reasons.append("高风险类目路径过滤")
             
         yellow_reasons = []
         yellow_rules = rules['yellow']

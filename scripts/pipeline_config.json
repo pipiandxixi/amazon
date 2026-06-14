@@ -185,6 +185,10 @@
             "Alternative Medicine"
           ],
           "label": "排除的市场路径关键词"
+        },
+        "allowed_path_keywords": {
+          "value": ["Jewelry", "Watches", "Accessories"],
+          "label": "路径排除白名单：路径含此词则不触发排除（用于保留饰品等有价值子类目）"
         }
       },
       "yellow": {
