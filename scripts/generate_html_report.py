@@ -74,11 +74,25 @@ table.kwtable{width:100%;border-collapse:collapse;font-size:.8rem}
 .kwtable td:first-child{color:var(--muted);font-size:.75rem;width:2rem}
 .kw-zh{color:var(--muted);font-size:.72rem;display:block;margin-top:.1rem}
 .no-data{padding:.9rem 1.5rem;color:var(--muted);font-size:.85rem;font-style:italic}
+.plinks{display:inline-flex;gap:.2rem;margin-left:.35rem}
+.plinks a{font-size:.58rem;padding:.05rem .28rem;border-radius:.25rem;font-weight:700;text-decoration:none;border:1px solid currentColor;line-height:1.4;opacity:.7;transition:opacity .12s}
+.plinks a:hover{opacity:1}
+.plinks a:first-child{color:#c45500}
+.plinks a:last-child{color:#1a6d38}
 """
 
 
 def _slug(name: str) -> str:
     return "".join(c if c.isalnum() else "-" for c in name.lower()).strip("-")
+
+
+def _ss_url(asin: str) -> str:
+    return (
+        f"https://www.sellersprite.com/v3/competitor-lookup?market=US"
+        f"&monthName=bsr_sales_nearly&asins=%5B%22{asin}%22%5D"
+        f"&page=1&nodeIdPaths=%5B%5D&symbolFlag=false&size=60"
+        f"&order%5Bfield%5D=amz_unit&order%5Bdesc%5D=true&lowPrice=N"
+    )
 
 
 def _product_card(p: dict) -> str:
@@ -89,7 +103,9 @@ def _product_card(p: dict) -> str:
     return f"""<div class="pcard">
       <a href="https://www.amazon.com/dp/{_e(asin)}" target="_blank" rel="noopener">{img}</a>
       <div class="pinfo">
-        <div class="pasin">{_e(asin)}</div>
+        <div class="pasin">{_e(asin)}
+          <span class="plinks"><a href="https://www.amazon.com/dp/{_e(asin)}" target="_blank" rel="noopener" title="Amazon 商品页">AMZ</a><a href="{_e(_ss_url(asin))}" target="_blank" rel="noopener" title="卖家精灵竞品分析">SS</a></span>
+        </div>
         <div class="ptitle">{_e(p.get('title',''))}</div>
         <div class="pstats">
           <div class="pstat"><span class="plabel">价格</span><span class="pval">{_e(p.get('price','-'))}</span></div>
@@ -163,7 +179,7 @@ def _category_section(cat: dict, products: list[dict], kw_entry: dict | None) ->
     keywords = kw_entry.get("keywords", []) if kw_entry else []
     asins = kw_entry.get("asins", []) if kw_entry else []
     kw_content = _keyword_table(keywords, asins)
-    kws = f"""<details>
+    kws = f"""<details open>
     <summary>关键词 ({len(keywords)})</summary>
     {kw_content}
   </details>"""
@@ -179,6 +195,67 @@ def _category_section(cat: dict, products: list[dict], kw_entry: dict | None) ->
   {prods}
   {kws}
 </section>"""
+
+
+def update_index(repo_root: Path) -> None:
+    """Regenerate the root index.html listing all dated HTML reports."""
+    results_dir = repo_root / "results"
+    entries: list[tuple[str, str]] = []
+    for d in sorted(results_dir.iterdir(), reverse=True):
+        if d.is_dir() and (d / "html" / "report.html").exists():
+            entries.append((d.name.replace("_", "-"), f"results/{d.name}/html/report.html"))
+
+    if not entries:
+        return
+
+    rows = []
+    for i, (date_display, rel_path) in enumerate(entries):
+        cls = "report-link latest" if i == 0 else "report-link"
+        tag = '<span class="tag">最新</span>' if i == 0 else ""
+        rows.append(
+            f'    <a class="{cls}" href="{rel_path}">\n'
+            f'      <span class="date">{date_display}</span>\n'
+            f'      <span style="display:flex;align-items:center;gap:.5rem">{tag}<span class="arrow">→</span></span>\n'
+            f'    </a>'
+        )
+
+    html = f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amazon 选品报告</title>
+<style>
+:root{{--border:#e5e7eb;--muted:#6b7280;--bg:#f3f4f6;--card:#fff}}
+*{{box-sizing:border-box;margin:0;padding:0}}
+body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:#111827;line-height:1.5;min-height:100vh;display:flex;align-items:center;justify-content:center}}
+.wrap{{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:2.5rem 3rem;box-shadow:0 4px 24px rgba(0,0,0,.07);max-width:480px;width:100%;text-align:center}}
+h1{{font-size:1.4rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.4rem}}
+.sub{{color:var(--muted);font-size:.88rem;margin-bottom:2rem}}
+.reports{{display:flex;flex-direction:column;gap:.65rem}}
+.report-link{{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1.1rem;border:1px solid var(--border);border-radius:.6rem;text-decoration:none;color:#111827;transition:background .12s,box-shadow .12s}}
+.report-link:hover{{background:#f8fafc;box-shadow:0 2px 8px rgba(0,0,0,.06)}}
+.report-link.latest{{border-color:#86efac;background:#f0fdf4}}
+.report-link.latest:hover{{background:#dcfce7}}
+.date{{font-weight:600;font-size:.95rem}}
+.tag{{font-size:.72rem;padding:.15rem .5rem;border-radius:9999px;background:#dcfce7;color:#166534;font-weight:700}}
+.arrow{{color:var(--muted);font-size:.85rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Amazon 选品报告</h1>
+  <p class="sub">点击查看每次运行的完整选品分析</p>
+  <div class="reports">
+{chr(10).join(rows)}
+  </div>
+</div>
+</body>
+</html>"""
+
+    index_path = repo_root / "index.html"
+    index_path.write_text(html, encoding="utf-8")
+    print(f"[INDEX] {index_path}")
 
 
 def generate(root: Path, date_str: str) -> Path:
@@ -237,6 +314,7 @@ def generate(root: Path, date_str: str) -> Path:
     out = out_dir / "report.html"
     out.write_text(page, encoding="utf-8")
     print(f"[HTML REPORT] {out}")
+    update_index(root.parent.parent)
     return out
 
 
