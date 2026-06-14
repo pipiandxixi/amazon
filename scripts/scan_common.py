@@ -10,11 +10,10 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 RESULTS_DIR = PROJECT_ROOT / "results"
 
 
-def dated_results_dir(date_str: str) -> Path:
-    """Return and create the default results directory for one run date."""
-    path = RESULTS_DIR / date_str
-    path.mkdir(parents=True, exist_ok=True)
-    return path
+def dated_results_dir(date_str: str = "") -> Path:
+    """Return and create the results directory. date_str is kept for API compat but ignored."""
+    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+    return RESULTS_DIR
 
 
 class OpenCliError(RuntimeError):

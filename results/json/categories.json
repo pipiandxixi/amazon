@@ -1,0 +1,2725 @@
+{
+  "Swing Trainers": {
+    "en_name": "Swing Trainers",
+    "zh_name": "室内练习器",
+    "path": "Sports & Outdoors > Sports > Golf > Training Equipment > Swing Trainers",
+    "level": "🟢 Green (Recommended)",
+    "price": 37.01,
+    "reviews": 448,
+    "weight_lbs": 0.71,
+    "return_rate": 4.37,
+    "brand_conc": 57.1,
+    "cn_ratio": 68.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Golf",
+      "Training Equipment",
+      "Swing Trainers"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T21:52:42"
+  },
+  "Paddleboard Accessories": {
+    "en_name": "Paddleboard Accessories",
+    "zh_name": "冲浪板配件",
+    "path": "Sports & Outdoors > Sports > Water Sports > Stand-Up Paddleboarding > Paddleboard Accessories",
+    "level": "🟢 Green (Recommended)",
+    "price": 53.08,
+    "reviews": 322,
+    "weight_lbs": 2.37,
+    "return_rate": 4.17,
+    "brand_conc": 42.7,
+    "cn_ratio": 72.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Water Sports",
+      "Stand-Up Paddleboarding",
+      "Paddleboard Accessories"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:16:46"
+  },
+  "Camping Fans": {
+    "en_name": "Camping Fans",
+    "zh_name": "露营爱好者",
+    "path": "Sports & Outdoors > Outdoor Recreation > Camping & Hiking > Camping Fans",
+    "level": "🟢 Green (Recommended)",
+    "price": 38.58,
+    "reviews": 260,
+    "weight_lbs": 2.17,
+    "return_rate": 4.56,
+    "brand_conc": 69.4,
+    "cn_ratio": 82.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Outdoor Recreation",
+      "Camping & Hiking",
+      "Camping Fans"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T21:53:28"
+  },
+  "Trophies": {
+    "en_name": "Trophies",
+    "zh_name": "奖杯",
+    "path": "Sports & Outdoors > Sports & Outdoor Recreation Accessories > Trophies, Medals & Awards > Trophies",
+    "level": "🟢 Green (Recommended)",
+    "price": 25.63,
+    "reviews": 297,
+    "weight_lbs": 1.01,
+    "return_rate": 2.59,
+    "brand_conc": 49.0,
+    "cn_ratio": 49.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports & Outdoor Recreation Accessories",
+      "Trophies, Medals & Awards",
+      "Trophies"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:17:06"
+  },
+  "Tie-Downs": {
+    "en_name": "Tie-Downs",
+    "zh_name": "栓系器具",
+    "path": "Sports & Outdoors > Sports > Boating & Sailing > Boating > Boat Trailer Accessories > Tie-Downs",
+    "level": "🟢 Green (Recommended)",
+    "price": 27.85,
+    "reviews": 546,
+    "weight_lbs": 1.62,
+    "return_rate": 3.74,
+    "brand_conc": 61.7,
+    "cn_ratio": 54.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Boating & Sailing",
+      "Boating",
+      "Boat Trailer Accessories",
+      "Tie-Downs"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:17:20"
+  },
+  "Wrist & Forearm Strengtheners": {
+    "en_name": "Wrist & Forearm Strengtheners",
+    "zh_name": "手腕和前臂加强器",
+    "path": "Sports & Outdoors > Exercise & Fitness > Strength Training Equipment > Strength Training Devices > Wrist & Forearm Strengtheners",
+    "level": "🟢 Green (Recommended)",
+    "price": 27.41,
+    "reviews": 373,
+    "weight_lbs": 2.28,
+    "return_rate": 4.53,
+    "brand_conc": 69.1,
+    "cn_ratio": 79.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Exercise & Fitness",
+      "Strength Training Equipment",
+      "Strength Training Devices",
+      "Wrist & Forearm Strengtheners"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:17:45"
+  },
+  "Scoreboards & Timers": {
+    "en_name": "Scoreboards & Timers",
+    "zh_name": "记分牌和计时器",
+    "path": "Sports & Outdoors > Sports & Outdoor Recreation Accessories > Coach & Referee Gear > Scoreboards & Timers",
+    "level": "🟢 Green (Recommended)",
+    "price": 53.46,
+    "reviews": 345,
+    "weight_lbs": 1.6,
+    "return_rate": 5.13,
+    "brand_conc": 54.1,
+    "cn_ratio": 72.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports & Outdoor Recreation Accessories",
+      "Coach & Referee Gear",
+      "Scoreboards & Timers"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:18:04"
+  },
+  "Equestrian Sports": {
+    "en_name": "Equestrian Sports",
+    "zh_name": "马术运动",
+    "path": "Sports & Outdoors > Sports > Other Sports > Equestrian Sports",
+    "level": "🟢 Green (Recommended)",
+    "price": 47.02,
+    "reviews": 193,
+    "weight_lbs": 1.67,
+    "return_rate": 4.03,
+    "brand_conc": 66.7,
+    "cn_ratio": 46.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Other Sports",
+      "Equestrian Sports"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:18:18"
+  },
+  "Interior Lights": {
+    "en_name": "Interior Lights",
+    "zh_name": "内部灯饰",
+    "path": "Sports & Outdoors > Sports > Boating & Sailing > Boating > Electrical Equipment > Interior Lights",
+    "level": "🟢 Green (Recommended)",
+    "price": 36.53,
+    "reviews": 290,
+    "weight_lbs": 0.87,
+    "return_rate": 3.55,
+    "brand_conc": 69.6,
+    "cn_ratio": 76.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Boating & Sailing",
+      "Boating",
+      "Electrical Equipment",
+      "Interior Lights"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:18:32"
+  },
+  "Flags": {
+    "en_name": "Flags",
+    "zh_name": "标志",
+    "path": "Sports & Outdoors > Sports > Boating & Sailing > Boating > Boat Cabin Products > Flags",
+    "level": "🟢 Green (Recommended)",
+    "price": 24.01,
+    "reviews": 223,
+    "weight_lbs": 0.57,
+    "return_rate": 2.61,
+    "brand_conc": 63.9,
+    "cn_ratio": 52.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Boating & Sailing",
+      "Boating",
+      "Boat Cabin Products",
+      "Flags"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:18:46"
+  },
+  "Motor Flushers": {
+    "en_name": "Motor Flushers",
+    "zh_name": "马达冲洗装置",
+    "path": "Sports & Outdoors > Sports > Boating & Sailing > Boating > Boat Engine Parts > Motor Flushers",
+    "level": "🟢 Green (Recommended)",
+    "price": 31.55,
+    "reviews": 284,
+    "weight_lbs": 1.23,
+    "return_rate": 3.62,
+    "brand_conc": 71.4,
+    "cn_ratio": 58.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Boating & Sailing",
+      "Boating",
+      "Boat Engine Parts",
+      "Motor Flushers"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:19:00"
+  },
+  "Trophy Mounts": {
+    "en_name": "Trophy Mounts",
+    "zh_name": "奖杯坐骑",
+    "path": "Sports & Outdoors > Hunting & Fishing > Hunting > Game Handling > Trophy Mounts",
+    "level": "🟢 Green (Recommended)",
+    "price": 25.66,
+    "reviews": 346,
+    "weight_lbs": 1.43,
+    "return_rate": 2.49,
+    "brand_conc": 71.2,
+    "cn_ratio": 44.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Hunting & Fishing",
+      "Hunting",
+      "Game Handling",
+      "Trophy Mounts"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:19:24"
+  },
+  "Optics Accessories": {
+    "en_name": "Optics Accessories",
+    "zh_name": "光学配件",
+    "path": "Sports & Outdoors > Hunting & Fishing > Shooting > Optics > Optics Accessories",
+    "level": "🟢 Green (Recommended)",
+    "price": 32.96,
+    "reviews": 357,
+    "weight_lbs": 0.2,
+    "return_rate": 5.63,
+    "brand_conc": 53.4,
+    "cn_ratio": 44.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Hunting & Fishing",
+      "Shooting",
+      "Optics",
+      "Optics Accessories"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:19:54"
+  },
+  "Fly Tying Equipment": {
+    "en_name": "Fly Tying Equipment",
+    "zh_name": "绑蝇设备",
+    "path": "Sports & Outdoors > Hunting & Fishing > Fishing > Fly Fishing > Accessories > Fly Tying Equipment",
+    "level": "🟢 Green (Recommended)",
+    "price": 20.69,
+    "reviews": 487,
+    "weight_lbs": 0.3,
+    "return_rate": 2.84,
+    "brand_conc": 64.8,
+    "cn_ratio": 57.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Hunting & Fishing",
+      "Fishing",
+      "Fly Fishing",
+      "Accessories",
+      "Fly Tying Equipment"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:20:15"
+  },
+  "Line Spooling Accessories": {
+    "en_name": "Line Spooling Accessories",
+    "zh_name": "线路绕线配件",
+    "path": "Sports & Outdoors > Hunting & Fishing > Fishing > Accessories > Line Spooling Accessories",
+    "level": "🟢 Green (Recommended)",
+    "price": 20.79,
+    "reviews": 364,
+    "weight_lbs": 1.98,
+    "return_rate": 3.66,
+    "brand_conc": 66.1,
+    "cn_ratio": 63.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Hunting & Fishing",
+      "Fishing",
+      "Accessories",
+      "Line Spooling Accessories"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:20:31"
+  },
+  "Team Practice Vests": {
+    "en_name": "Team Practice Vests",
+    "zh_name": "团队练习背心",
+    "path": "Sports & Outdoors > Sports & Outdoor Recreation Accessories > Field, Court & Rink Equipment > Team Practice Vests",
+    "level": "🟢 Green (Recommended)",
+    "price": 33.17,
+    "reviews": 186,
+    "weight_lbs": 2.21,
+    "return_rate": 6.66,
+    "brand_conc": 66.9,
+    "cn_ratio": 83.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports & Outdoor Recreation Accessories",
+      "Field, Court & Rink Equipment",
+      "Team Practice Vests"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:20:46"
+  },
+  "Tools": {
+    "en_name": "Tools",
+    "zh_name": "工具",
+    "path": "Sports & Outdoors > Sports > Boating & Sailing > Boating > Maintenance Supplies > Tools",
+    "level": "🟢 Green (Recommended)",
+    "price": 34.67,
+    "reviews": 185,
+    "weight_lbs": 1.48,
+    "return_rate": 3.64,
+    "brand_conc": 45.8,
+    "cn_ratio": 66.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Boating & Sailing",
+      "Boating",
+      "Maintenance Supplies",
+      "Tools"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:21:00"
+  },
+  "Reel Replacement Parts": {
+    "en_name": "Reel Replacement Parts",
+    "zh_name": "卷盘更换部件",
+    "path": "Sports & Outdoors > Hunting & Fishing > Fishing > Reels & Accessories > Reel Replacement Parts",
+    "level": "🟢 Green (Recommended)",
+    "price": 27.25,
+    "reviews": 108,
+    "weight_lbs": 1.38,
+    "return_rate": 5.58,
+    "brand_conc": 71.3,
+    "cn_ratio": 70.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Hunting & Fishing",
+      "Fishing",
+      "Reels & Accessories",
+      "Reel Replacement Parts"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:21:15"
+  },
+  "Shafts": {
+    "en_name": "Shafts",
+    "zh_name": "杆身",
+    "path": "Sports & Outdoors > Sports > Golf > Golf Club Parts > Shafts",
+    "level": "🟢 Green (Recommended)",
+    "price": 27.08,
+    "reviews": 95,
+    "weight_lbs": 0.15,
+    "return_rate": 3.27,
+    "brand_conc": 62.3,
+    "cn_ratio": 59.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Golf",
+      "Golf Club Parts",
+      "Shafts"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:21:30"
+  },
+  "Training Putters": {
+    "en_name": "Training Putters",
+    "zh_name": "练习推杆",
+    "path": "Sports & Outdoors > Sports > Golf > Training Equipment > Training Putters",
+    "level": "🟢 Green (Recommended)",
+    "price": 30.9,
+    "reviews": 196,
+    "weight_lbs": 1.38,
+    "return_rate": 4.05,
+    "brand_conc": 65.8,
+    "cn_ratio": 62.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Golf",
+      "Training Equipment",
+      "Training Putters"
+    ],
+    "departments": [
+      18
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:21:44"
+  },
+  "Cups": {
+    "en_name": "Cups",
+    "zh_name": "杯子",
+    "path": "Home & Kitchen > Event & Party Supplies > Tableware > Cups",
+    "level": "🟢 Green (Recommended)",
+    "price": 21.5,
+    "reviews": 467,
+    "weight_lbs": 1.32,
+    "return_rate": 3.95,
+    "brand_conc": 59.9,
+    "cn_ratio": 66.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Event & Party Supplies",
+      "Tableware",
+      "Cups"
+    ],
+    "departments": [
+      21
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:22:08"
+  },
+  "Cardboard Cutouts": {
+    "en_name": "Cardboard Cutouts",
+    "zh_name": "硬板纸模型",
+    "path": "Home & Kitchen > Home Décor Products > Home Décor Accents > Cardboard Cutouts",
+    "level": "🟢 Green (Recommended)",
+    "price": 24.38,
+    "reviews": 295,
+    "weight_lbs": 1.31,
+    "return_rate": 4.59,
+    "brand_conc": 61.0,
+    "cn_ratio": 62.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Home Décor Products",
+      "Home Décor Accents",
+      "Cardboard Cutouts"
+    ],
+    "departments": [
+      21
+    ],
+    "products": [],
+    "keywords": null,
+    "last_updated": "2026-06-14T22:22:37"
+  },
+  "Bar Tools & Drinkware": {
+    "en_name": "Bar Tools & Drinkware",
+    "zh_name": "酒吧工具",
+    "path": "Home & Kitchen > Kitchen & Dining > Dining & Entertaining > Bar Tools & Drinkware",
+    "level": "🟢 Green (Recommended)",
+    "price": 26.8,
+    "reviews": 376,
+    "weight_lbs": 1.51,
+    "return_rate": 5.44,
+    "brand_conc": 55.9,
+    "cn_ratio": 62.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Kitchen & Dining",
+      "Dining & Entertaining",
+      "Bar Tools & Drinkware"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Steam Cleaner & Steam Mop Replacement Parts": {
+    "en_name": "Steam Cleaner & Steam Mop Replacement Parts",
+    "zh_name": "蒸汽清洗机",
+    "path": "Home & Kitchen > Vacuums & Floor Care > Steam Cleaners, Steam Mops & Accessories > Steam Cleaner & Steam Mop Replacement Parts",
+    "level": "🟢 Green (Recommended)",
+    "price": 21.27,
+    "reviews": 363,
+    "weight_lbs": 0.82,
+    "return_rate": 4.59,
+    "brand_conc": 69.8,
+    "cn_ratio": 75.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Vacuums & Floor Care",
+      "Steam Cleaners, Steam Mops & Accessories",
+      "Steam Cleaner & Steam Mop Replacement Parts"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Tortilla Servers": {
+    "en_name": "Tortilla Servers",
+    "zh_name": "玉米饼服务员",
+    "path": "Home & Kitchen > Kitchen & Dining > Dining & Entertaining > Dinnerware & Serveware > Serveware > Tortilla Servers",
+    "level": "🟢 Green (Recommended)",
+    "price": 21.77,
+    "reviews": 439,
+    "weight_lbs": 1.74,
+    "return_rate": 6.26,
+    "brand_conc": 58.8,
+    "cn_ratio": 43.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Kitchen & Dining",
+      "Dining & Entertaining",
+      "Dinnerware & Serveware",
+      "Serveware",
+      "Tortilla Servers"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Devotional Candles": {
+    "en_name": "Devotional Candles",
+    "zh_name": "祈祷蜡烛",
+    "path": "Home & Kitchen > Home Décor Products > Candles & Holders > Candles > Specialty Candles > Devotional Candles",
+    "level": "🟢 Green (Recommended)",
+    "price": 26.05,
+    "reviews": 196,
+    "weight_lbs": 1.77,
+    "return_rate": 4.08,
+    "brand_conc": 62.4,
+    "cn_ratio": 55.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Home Décor Products",
+      "Candles & Holders",
+      "Candles",
+      "Specialty Candles",
+      "Devotional Candles"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Serveware": {
+    "en_name": "Serveware",
+    "zh_name": "碗碟",
+    "path": "Home & Kitchen > Kitchen & Dining > Dining & Entertaining > Novelty > Serveware",
+    "level": "🟢 Green (Recommended)",
+    "price": 21.82,
+    "reviews": 416,
+    "weight_lbs": 1.47,
+    "return_rate": 5.33,
+    "brand_conc": 57.5,
+    "cn_ratio": 63.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Kitchen & Dining",
+      "Dining & Entertaining",
+      "Novelty",
+      "Serveware"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Lighting Products": {
+    "en_name": "Lighting Products",
+    "zh_name": "水底灯",
+    "path": "Patio, Lawn & Garden > Pools, Hot Tubs & Supplies > Parts & Accessories > Lighting Products",
+    "level": "🟢 Green (Recommended)",
+    "price": 47.85,
+    "reviews": 482,
+    "weight_lbs": 1.72,
+    "return_rate": 6.75,
+    "brand_conc": 51.9,
+    "cn_ratio": 74.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Pools, Hot Tubs & Supplies",
+      "Parts & Accessories",
+      "Lighting Products"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Nozzles": {
+    "en_name": "Nozzles",
+    "zh_name": "喷嘴",
+    "path": "Patio, Lawn & Garden > Outdoor Power Tools > Replacement Parts & Accessories > Pressure Washer Parts & Accessories > Nozzles",
+    "level": "🟢 Green (Recommended)",
+    "price": 26.24,
+    "reviews": 490,
+    "weight_lbs": 0.44,
+    "return_rate": 2.63,
+    "brand_conc": 53.8,
+    "cn_ratio": 74.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Outdoor Power Tools",
+      "Replacement Parts & Accessories",
+      "Pressure Washer Parts & Accessories",
+      "Nozzles"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Wind Spinners": {
+    "en_name": "Wind Spinners",
+    "zh_name": "Wind Spinners",
+    "path": "Patio, Lawn & Garden > Outdoor Décor > Garden Sculptures & Statues > Wind Sculptures & Spinners > Wind Spinners",
+    "level": "🟢 Green (Recommended)",
+    "price": 31.43,
+    "reviews": 472,
+    "weight_lbs": 2.36,
+    "return_rate": 3.09,
+    "brand_conc": 54.6,
+    "cn_ratio": 85.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Outdoor Décor",
+      "Garden Sculptures & Statues",
+      "Wind Sculptures & Spinners",
+      "Wind Spinners"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Attachments": {
+    "en_name": "Attachments",
+    "zh_name": "附件",
+    "path": "Patio, Lawn & Garden > Outdoor Power Tools > Replacement Parts & Accessories > String Trimmer Parts & Accessories > Attachments",
+    "level": "🟢 Green (Recommended)",
+    "price": 39.59,
+    "reviews": 222,
+    "weight_lbs": 2.19,
+    "return_rate": 3.07,
+    "brand_conc": 72.2,
+    "cn_ratio": 78.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Outdoor Power Tools",
+      "Replacement Parts & Accessories",
+      "String Trimmer Parts & Accessories",
+      "Attachments"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Hoes": {
+    "en_name": "Hoes",
+    "zh_name": "园艺锄",
+    "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Hand Tools > Hoes",
+    "level": "🟢 Green (Recommended)",
+    "price": 27.68,
+    "reviews": 319,
+    "weight_lbs": 2.41,
+    "return_rate": 3.1,
+    "brand_conc": 51.9,
+    "cn_ratio": 72.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Gardening & Lawn Care",
+      "Hand Tools",
+      "Hoes"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Pond Lights": {
+    "en_name": "Pond Lights",
+    "zh_name": "池塘灯",
+    "path": "Patio, Lawn & Garden > Outdoor Décor > Water Gardens & Ponds > Pond Lights",
+    "level": "🟢 Green (Recommended)",
+    "price": 46.62,
+    "reviews": 245,
+    "weight_lbs": 1.64,
+    "return_rate": 6.15,
+    "brand_conc": 67.1,
+    "cn_ratio": 75.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Outdoor Décor",
+      "Water Gardens & Ponds",
+      "Pond Lights"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Feeders": {
+    "en_name": "Feeders",
+    "zh_name": "喂食器",
+    "path": "Patio, Lawn & Garden > Backyard Birding & Wildlife > Squirrels > Feeders",
+    "level": "🟢 Green (Recommended)",
+    "price": 25.06,
+    "reviews": 217,
+    "weight_lbs": 2.2,
+    "return_rate": 2.83,
+    "brand_conc": 67.6,
+    "cn_ratio": 70.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Backyard Birding & Wildlife",
+      "Squirrels",
+      "Feeders"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Energy Controllers": {
+    "en_name": "Energy Controllers",
+    "zh_name": "能源控制器",
+    "path": "Patio, Lawn & Garden > Generators & Portable Power > Solar & Wind Power > Energy Controllers",
+    "level": "🟢 Green (Recommended)",
+    "price": 81.15,
+    "reviews": 388,
+    "weight_lbs": 2.11,
+    "return_rate": 7.01,
+    "brand_conc": 70.3,
+    "cn_ratio": 66.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Generators & Portable Power",
+      "Solar & Wind Power",
+      "Energy Controllers"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Diverters": {
+    "en_name": "Diverters",
+    "zh_name": "分流器",
+    "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Watering Equipment > Rain Barrels & Accessories > Diverters",
+    "level": "🟢 Green (Recommended)",
+    "price": 26.61,
+    "reviews": 205,
+    "weight_lbs": 1.58,
+    "return_rate": 3.4,
+    "brand_conc": 70.8,
+    "cn_ratio": 79.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Gardening & Lawn Care",
+      "Watering Equipment",
+      "Rain Barrels & Accessories",
+      "Diverters"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Bats": {
+    "en_name": "Bats",
+    "zh_name": "蝙蝠",
+    "path": "Patio, Lawn & Garden > Backyard Birding & Wildlife > Bats",
+    "level": "🟢 Green (Recommended)",
+    "price": 32.07,
+    "reviews": 342,
+    "weight_lbs": 2.1,
+    "return_rate": 2.61,
+    "brand_conc": 56.1,
+    "cn_ratio": 47.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Backyard Birding & Wildlife",
+      "Bats"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Gazing Balls": {
+    "en_name": "Gazing Balls",
+    "zh_name": "反射球",
+    "path": "Patio, Lawn & Garden > Outdoor Décor > Garden Sculptures & Statues > Gazing Balls",
+    "level": "🟢 Green (Recommended)",
+    "price": 38.09,
+    "reviews": 292,
+    "weight_lbs": 2.26,
+    "return_rate": 4.79,
+    "brand_conc": 63.6,
+    "cn_ratio": 77.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Outdoor Décor",
+      "Garden Sculptures & Statues",
+      "Gazing Balls"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Machetes": {
+    "en_name": "Machetes",
+    "zh_name": "弯刀",
+    "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Hand Tools > Machetes",
+    "level": "🟢 Green (Recommended)",
+    "price": 32.55,
+    "reviews": 455,
+    "weight_lbs": 1.36,
+    "return_rate": 2.54,
+    "brand_conc": 64.9,
+    "cn_ratio": 46.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Gardening & Lawn Care",
+      "Hand Tools",
+      "Machetes"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Indoor Air Quality Meters": {
+    "en_name": "Indoor Air Quality Meters",
+    "zh_name": "室内空气质量测试仪",
+    "path": "Industrial & Scientific > Test, Measure & Inspect > Airflow & Air Quality > Indoor Air Quality Meters",
+    "level": "🟢 Green (Recommended)",
+    "price": 72.17,
+    "reviews": 303,
+    "weight_lbs": 0.53,
+    "return_rate": 7.8,
+    "brand_conc": 70.2,
+    "cn_ratio": 63.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Test, Measure & Inspect",
+      "Airflow & Air Quality",
+      "Indoor Air Quality Meters"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Grinding Discs": {
+    "en_name": "Grinding Discs",
+    "zh_name": "磨片",
+    "path": "Industrial & Scientific > Abrasive & Finishing Products > Abrasive Wheels & Discs > Grinding Discs",
+    "level": "🟢 Green (Recommended)",
+    "price": 23.53,
+    "reviews": 360,
+    "weight_lbs": 2.02,
+    "return_rate": 2.13,
+    "brand_conc": 46.8,
+    "cn_ratio": 81.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Abrasive & Finishing Products",
+      "Abrasive Wheels & Discs",
+      "Grinding Discs"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Network & Cable Testers": {
+    "en_name": "Network & Cable Testers",
+    "zh_name": "网络",
+    "path": "Industrial & Scientific > Test, Measure & Inspect > Network & Cable Testers",
+    "level": "🟢 Green (Recommended)",
+    "price": 117.9,
+    "reviews": 422,
+    "weight_lbs": 0.6,
+    "return_rate": 5.23,
+    "brand_conc": 63.0,
+    "cn_ratio": 68.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Test, Measure & Inspect",
+      "Network & Cable Testers"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "3D Printer Platforms": {
+    "en_name": "3D Printer Platforms",
+    "zh_name": "3D打印机平台",
+    "path": "Industrial & Scientific > Additive Manufacturing Products > 3D Printer Parts & Accessories > 3D Printer Platforms",
+    "level": "🟢 Green (Recommended)",
+    "price": 23.55,
+    "reviews": 216,
+    "weight_lbs": 2.0,
+    "return_rate": 4.56,
+    "brand_conc": 71.7,
+    "cn_ratio": 68.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Additive Manufacturing Products",
+      "3D Printer Parts & Accessories",
+      "3D Printer Platforms"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Angle Grinder Wheels": {
+    "en_name": "Angle Grinder Wheels",
+    "zh_name": "角磨机砂轮",
+    "path": "Industrial & Scientific > Abrasive & Finishing Products > Abrasive Wheels & Discs > Angle Grinder Wheels",
+    "level": "🟢 Green (Recommended)",
+    "price": 23.91,
+    "reviews": 159,
+    "weight_lbs": 1.54,
+    "return_rate": 2.41,
+    "brand_conc": 59.9,
+    "cn_ratio": 79.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Abrasive & Finishing Products",
+      "Abrasive Wheels & Discs",
+      "Angle Grinder Wheels"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Float Valves": {
+    "en_name": "Float Valves",
+    "zh_name": "浮阀",
+    "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Fittings > Valves > Float Valves",
+    "level": "🟢 Green (Recommended)",
+    "price": 20.45,
+    "reviews": 182,
+    "weight_lbs": 0.64,
+    "return_rate": 4.44,
+    "brand_conc": 42.7,
+    "cn_ratio": 67.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Hydraulics, Pneumatics & Plumbing",
+      "Fittings",
+      "Valves",
+      "Float Valves"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Leak Detection Tools": {
+    "en_name": "Leak Detection Tools",
+    "zh_name": "泄漏检测工具",
+    "path": "Industrial & Scientific > Test, Measure & Inspect > Inspection & Analysis > Leak Detection Tools",
+    "level": "🟢 Green (Recommended)",
+    "price": 76.34,
+    "reviews": 154,
+    "weight_lbs": 1.47,
+    "return_rate": 4.3,
+    "brand_conc": 55.1,
+    "cn_ratio": 48.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Test, Measure & Inspect",
+      "Inspection & Analysis",
+      "Leak Detection Tools"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Machine Tool Inspection Mirrors": {
+    "en_name": "Machine Tool Inspection Mirrors",
+    "zh_name": "机床检测镜",
+    "path": "Industrial & Scientific > Test, Measure & Inspect > Inspection & Analysis > Optical Inspection Apparatus > Machine Tool Inspection Mirrors",
+    "level": "🟢 Green (Recommended)",
+    "price": 21.53,
+    "reviews": 261,
+    "weight_lbs": 0.68,
+    "return_rate": 2.09,
+    "brand_conc": 69.2,
+    "cn_ratio": 78.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Test, Measure & Inspect",
+      "Inspection & Analysis",
+      "Optical Inspection Apparatus",
+      "Machine Tool Inspection Mirrors"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Lab Supply Dispensers": {
+    "en_name": "Lab Supply Dispensers",
+    "zh_name": "实验室用品分配器",
+    "path": "Industrial & Scientific > Lab & Scientific Products > Lab Furniture > Lab Supply Dispensers",
+    "level": "🟢 Green (Recommended)",
+    "price": 29.8,
+    "reviews": 171,
+    "weight_lbs": 2.19,
+    "return_rate": 4.45,
+    "brand_conc": 62.7,
+    "cn_ratio": 58.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Lab & Scientific Products",
+      "Lab Furniture",
+      "Lab Supply Dispensers"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Unmanned Aerial Vehicles)": {
+    "en_name": "Unmanned Aerial Vehicles)",
+    "zh_name": "UAVs",
+    "path": "Industrial & Scientific > Robotics > Unmanned Aerial Vehicles (UAVs)",
+    "level": "🟢 Green (Recommended)",
+    "price": 84.75,
+    "reviews": 145,
+    "weight_lbs": 0.62,
+    "return_rate": 7.1,
+    "brand_conc": 69.2,
+    "cn_ratio": 81.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Robotics",
+      "Unmanned Aerial Vehicles (UAVs)"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Hose Clamping Tools": {
+    "en_name": "Hose Clamping Tools",
+    "zh_name": "软管夹紧工具",
+    "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Fittings > Fitting Clamps > Hose Fitting Clamps > Hose Clamping Tools",
+    "level": "🟢 Green (Recommended)",
+    "price": 21.11,
+    "reviews": 212,
+    "weight_lbs": 1.15,
+    "return_rate": 3.61,
+    "brand_conc": 69.6,
+    "cn_ratio": 79.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Hydraulics, Pneumatics & Plumbing",
+      "Fittings",
+      "Fitting Clamps",
+      "Hose Fitting Clamps",
+      "Hose Clamping Tools"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Tactile Switches": {
+    "en_name": "Tactile Switches",
+    "zh_name": "触摸式开关",
+    "path": "Industrial & Scientific > Industrial Electrical > Controls & Indicators > Industrial Switches > Tactile Switches",
+    "level": "🟢 Green (Recommended)",
+    "price": 26.62,
+    "reviews": 57,
+    "weight_lbs": 0.29,
+    "return_rate": 7.31,
+    "brand_conc": 72.2,
+    "cn_ratio": 95.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Industrial Electrical",
+      "Controls & Indicators",
+      "Industrial Switches",
+      "Tactile Switches"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Electrically Conductive Adhesives": {
+    "en_name": "Electrically Conductive Adhesives",
+    "zh_name": "导电性粘合剂",
+    "path": "Industrial & Scientific > Adhesives, Sealants & Lubricants > Industrial Adhesives > Electrically Conductive Adhesives",
+    "level": "🟢 Green (Recommended)",
+    "price": 25.39,
+    "reviews": 256,
+    "weight_lbs": 0.59,
+    "return_rate": 2.14,
+    "brand_conc": 69.8,
+    "cn_ratio": 52.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Adhesives, Sealants & Lubricants",
+      "Industrial Adhesives",
+      "Electrically Conductive Adhesives"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Pressure Regulators": {
+    "en_name": "Pressure Regulators",
+    "zh_name": "压力调节器",
+    "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Fittings > Valves > Pressure Regulators",
+    "level": "🟢 Green (Recommended)",
+    "price": 91.76,
+    "reviews": 157,
+    "weight_lbs": 2.13,
+    "return_rate": 6.61,
+    "brand_conc": 66.4,
+    "cn_ratio": 43.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Hydraulics, Pneumatics & Plumbing",
+      "Fittings",
+      "Valves",
+      "Pressure Regulators"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "3D Printer Extruders": {
+    "en_name": "3D Printer Extruders",
+    "zh_name": "3D打印机挤出机",
+    "path": "Industrial & Scientific > Additive Manufacturing Products > 3D Printer Parts & Accessories > 3D Printer Extruders",
+    "level": "🟢 Green (Recommended)",
+    "price": 28.93,
+    "reviews": 160,
+    "weight_lbs": 0.18,
+    "return_rate": 4.99,
+    "brand_conc": 57.6,
+    "cn_ratio": 78.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Additive Manufacturing Products",
+      "3D Printer Parts & Accessories",
+      "3D Printer Extruders"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Angle": {
+    "en_name": "Angle",
+    "zh_name": "角规",
+    "path": "Industrial & Scientific > Test, Measure & Inspect > Dimensional Measurement > Gauges > Angle",
+    "level": "🟢 Green (Recommended)",
+    "price": 22.64,
+    "reviews": 392,
+    "weight_lbs": 0.53,
+    "return_rate": 2.9,
+    "brand_conc": 61.0,
+    "cn_ratio": 65.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Test, Measure & Inspect",
+      "Dimensional Measurement",
+      "Gauges",
+      "Angle"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Relief Valves": {
+    "en_name": "Relief Valves",
+    "zh_name": "减压阀",
+    "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Fittings > Valves > Relief Valves",
+    "level": "🟢 Green (Recommended)",
+    "price": 46.38,
+    "reviews": 125,
+    "weight_lbs": 0.96,
+    "return_rate": 6.22,
+    "brand_conc": 56.6,
+    "cn_ratio": 49.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Hydraulics, Pneumatics & Plumbing",
+      "Fittings",
+      "Valves",
+      "Relief Valves"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Shim Stock": {
+    "en_name": "Shim Stock",
+    "zh_name": "衬垫",
+    "path": "Industrial & Scientific > Raw Materials > Shims & Shim Stock > Shim Stock",
+    "level": "🟢 Green (Recommended)",
+    "price": 20.21,
+    "reviews": 129,
+    "weight_lbs": 1.74,
+    "return_rate": 3.03,
+    "brand_conc": 74.8,
+    "cn_ratio": 55.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Raw Materials",
+      "Shims & Shim Stock",
+      "Shim Stock"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Continuous & Piano": {
+    "en_name": "Continuous & Piano",
+    "zh_name": "连续铰链和钢琴铰链",
+    "path": "Industrial & Scientific > Industrial Hardware > Hinges > Continuous & Piano",
+    "level": "🟢 Green (Recommended)",
+    "price": 25.21,
+    "reviews": 63,
+    "weight_lbs": 1.19,
+    "return_rate": 5.54,
+    "brand_conc": 69.2,
+    "cn_ratio": 69.1,
+    "product_path": [
+      "Industrial & Scientific",
+      "Industrial Hardware",
+      "Hinges",
+      "Continuous & Piano"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Outlet Boxes": {
+    "en_name": "Outlet Boxes",
+    "zh_name": "插座盒",
+    "path": "Tools & Home Improvement > Electrical > Electrical Boxes, Conduits & Fittings > Outlet Boxes",
+    "level": "🟢 Green (Recommended)",
+    "price": 20.03,
+    "reviews": 526,
+    "weight_lbs": 1.12,
+    "return_rate": 5.94,
+    "brand_conc": 56.7,
+    "cn_ratio": 55.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Electrical",
+      "Electrical Boxes, Conduits & Fittings",
+      "Outlet Boxes"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Auger Drill Bits": {
+    "en_name": "Auger Drill Bits",
+    "zh_name": "螺旋钻钻头",
+    "path": "Tools & Home Improvement > Power & Hand Tools > Power Tool Parts & Accessories > Power Drill Parts & Accessories > Drill Bits > Auger Drill Bits",
+    "level": "🟢 Green (Recommended)",
+    "price": 24.58,
+    "reviews": 532,
+    "weight_lbs": 1.99,
+    "return_rate": 3.79,
+    "brand_conc": 67.7,
+    "cn_ratio": 69.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Power & Hand Tools",
+      "Power Tool Parts & Accessories",
+      "Power Drill Parts & Accessories",
+      "Drill Bits",
+      "Auger Drill Bits"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Drill Bits": {
+    "en_name": "Drill Bits",
+    "zh_name": "钻头",
+    "path": "Tools & Home Improvement > Power & Hand Tools > Power Tool Parts & Accessories > Power Drill Parts & Accessories > Drill Bits",
+    "level": "🟢 Green (Recommended)",
+    "price": 26.49,
+    "reviews": 262,
+    "weight_lbs": 1.0,
+    "return_rate": 2.68,
+    "brand_conc": 52.1,
+    "cn_ratio": 77.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Power & Hand Tools",
+      "Power Tool Parts & Accessories",
+      "Power Drill Parts & Accessories",
+      "Drill Bits"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Countertop & Tile Paint": {
+    "en_name": "Countertop & Tile Paint",
+    "zh_name": "台面",
+    "path": "Tools & Home Improvement > Paint, Wall Treatments & Supplies > Paint & Primer > Specialty Paint > Countertop & Tile Paint",
+    "level": "🟢 Green (Recommended)",
+    "price": 40.48,
+    "reviews": 386,
+    "weight_lbs": 1.91,
+    "return_rate": 5.69,
+    "brand_conc": 72.8,
+    "cn_ratio": 62.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Paint, Wall Treatments & Supplies",
+      "Paint & Primer",
+      "Specialty Paint",
+      "Countertop & Tile Paint"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Pipe Wrenches": {
+    "en_name": "Pipe Wrenches",
+    "zh_name": "管钳",
+    "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Wrenches > Pipe Wrenches",
+    "level": "🟢 Green (Recommended)",
+    "price": 30.43,
+    "reviews": 347,
+    "weight_lbs": 2.4,
+    "return_rate": 5.27,
+    "brand_conc": 63.0,
+    "cn_ratio": 69.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Power & Hand Tools",
+      "Hand Tools",
+      "Wrenches",
+      "Pipe Wrenches"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Paint Roller Extension Poles": {
+    "en_name": "Paint Roller Extension Poles",
+    "zh_name": "油漆滚筒加长杆",
+    "path": "Tools & Home Improvement > Paint, Wall Treatments & Supplies > Painting Supplies & Tools > Paint Application Tools > Paint Roller Extension Poles",
+    "level": "🟢 Green (Recommended)",
+    "price": 38.69,
+    "reviews": 352,
+    "weight_lbs": 2.03,
+    "return_rate": 4.55,
+    "brand_conc": 55.6,
+    "cn_ratio": 65.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Paint, Wall Treatments & Supplies",
+      "Painting Supplies & Tools",
+      "Paint Application Tools",
+      "Paint Roller Extension Poles"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Rods": {
+    "en_name": "Rods",
+    "zh_name": "杆",
+    "path": "Tools & Home Improvement > Welding & Soldering > Welding Equipment > Welding Equipment & Accessories > Arc Welding Equipment > Rods",
+    "level": "🟢 Green (Recommended)",
+    "price": 21.84,
+    "reviews": 197,
+    "weight_lbs": 2.17,
+    "return_rate": 1.94,
+    "brand_conc": 57.0,
+    "cn_ratio": 75.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Welding & Soldering",
+      "Welding Equipment",
+      "Welding Equipment & Accessories",
+      "Arc Welding Equipment",
+      "Rods"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Soffit Vents": {
+    "en_name": "Soffit Vents",
+    "zh_name": "檐口通风口",
+    "path": "Tools & Home Improvement > Building Supplies > Building Materials > Roofing > Vents > Soffit Vents",
+    "level": "🟢 Green (Recommended)",
+    "price": 21.53,
+    "reviews": 227,
+    "weight_lbs": 1.6,
+    "return_rate": 7.65,
+    "brand_conc": 72.5,
+    "cn_ratio": 58.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Building Supplies",
+      "Building Materials",
+      "Roofing",
+      "Vents",
+      "Soffit Vents"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Sensors": {
+    "en_name": "Sensors",
+    "zh_name": "传感器",
+    "path": "Tools & Home Improvement > Building Supplies > Building Materials > Doors > Garage Doors, Openers & Parts > Hardware > Sensors",
+    "level": "🟢 Green (Recommended)",
+    "price": 26.26,
+    "reviews": 183,
+    "weight_lbs": 0.44,
+    "return_rate": 7.01,
+    "brand_conc": 64.1,
+    "cn_ratio": 73.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Building Supplies",
+      "Building Materials",
+      "Doors",
+      "Garage Doors, Openers & Parts",
+      "Hardware",
+      "Sensors"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Gutters": {
+    "en_name": "Gutters",
+    "zh_name": "排水沟",
+    "path": "Tools & Home Improvement > Building Supplies > Building Materials > Roofing > Gutters & Accessories > Gutters",
+    "level": "🟢 Green (Recommended)",
+    "price": 23.86,
+    "reviews": 122,
+    "weight_lbs": 1.75,
+    "return_rate": 5.02,
+    "brand_conc": 56.7,
+    "cn_ratio": 70.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Building Supplies",
+      "Building Materials",
+      "Roofing",
+      "Gutters & Accessories",
+      "Gutters"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Mailbox Hardware": {
+    "en_name": "Mailbox Hardware",
+    "zh_name": "信箱硬件",
+    "path": "Tools & Home Improvement > Hardware > Mailboxes & Accessories > Mailbox Accessories & Hardware > Mailbox Hardware",
+    "level": "🟢 Green (Recommended)",
+    "price": 21.23,
+    "reviews": 212,
+    "weight_lbs": 1.04,
+    "return_rate": 7.65,
+    "brand_conc": 54.5,
+    "cn_ratio": 65.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Hardware",
+      "Mailboxes & Accessories",
+      "Mailbox Accessories & Hardware",
+      "Mailbox Hardware"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Nibblers": {
+    "en_name": "Nibblers",
+    "zh_name": "切片机",
+    "path": "Tools & Home Improvement > Power & Hand Tools > Power Tools > Shears & Nibblers > Nibblers",
+    "level": "🟢 Green (Recommended)",
+    "price": 65.19,
+    "reviews": 199,
+    "weight_lbs": 2.21,
+    "return_rate": 5.35,
+    "brand_conc": 70.0,
+    "cn_ratio": 69.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Power & Hand Tools",
+      "Power Tools",
+      "Shears & Nibblers",
+      "Nibblers"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Brazing Rods": {
+    "en_name": "Brazing Rods",
+    "zh_name": "钎杆",
+    "path": "Tools & Home Improvement > Welding & Soldering > Soldering & Brazing Equipment > Solder & Flux > Brazing Rods",
+    "level": "🟢 Green (Recommended)",
+    "price": 39.35,
+    "reviews": 136,
+    "weight_lbs": 0.65,
+    "return_rate": 2.03,
+    "brand_conc": 60.8,
+    "cn_ratio": 59.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Welding & Soldering",
+      "Soldering & Brazing Equipment",
+      "Solder & Flux",
+      "Brazing Rods"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Nail Pullers": {
+    "en_name": "Nail Pullers",
+    "zh_name": "羊角起钉钳",
+    "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Nail Pullers",
+    "level": "🟢 Green (Recommended)",
+    "price": 23.31,
+    "reviews": 346,
+    "weight_lbs": 1.15,
+    "return_rate": 2.27,
+    "brand_conc": 62.6,
+    "cn_ratio": 54.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Power & Hand Tools",
+      "Hand Tools",
+      "Nail Pullers"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Batteries & Battery Chargers": {
+    "en_name": "Batteries & Battery Chargers",
+    "zh_name": "电池和电池",
+    "path": "Sports & Outdoors > Sports > Skates, Skateboards & Scooters > Scooters & Equipment > Components & Parts > Batteries & Battery Chargers",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 25.18,
+    "reviews": 470,
+    "weight_lbs": 0.95,
+    "return_rate": 9.83,
+    "brand_conc": 61.4,
+    "cn_ratio": 84.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Skates, Skateboards & Scooters",
+      "Scooters & Equipment",
+      "Components & Parts",
+      "Batteries & Battery Chargers"
+    ],
+    "departments": [
+      18
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Kayak Accessories": {
+    "en_name": "Kayak Accessories",
+    "zh_name": "皮艇配件",
+    "path": "Sports & Outdoors > Sports > Water Sports > Kayaking > Kayak Accessories",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 24.8,
+    "reviews": 498,
+    "weight_lbs": 3.05,
+    "return_rate": 3.98,
+    "brand_conc": 38.9,
+    "cn_ratio": 74.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Water Sports",
+      "Kayaking",
+      "Kayak Accessories"
+    ],
+    "departments": [
+      18
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Fitness Circles": {
+    "en_name": "Fitness Circles",
+    "zh_name": "服务圈",
+    "path": "Sports & Outdoors > Exercise & Fitness > Pilates > Fitness Circles",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 28.72,
+    "reviews": 607,
+    "weight_lbs": 2.84,
+    "return_rate": 6.16,
+    "brand_conc": 68.5,
+    "cn_ratio": 68.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Exercise & Fitness",
+      "Pilates",
+      "Fitness Circles"
+    ],
+    "departments": [
+      18
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Headlights": {
+    "en_name": "Headlights",
+    "zh_name": "车头灯",
+    "path": "Sports & Outdoors > Sports > Cycling > Accessories > Lights & Reflectors > Headlights",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 32.82,
+    "reviews": 567,
+    "weight_lbs": 0.46,
+    "return_rate": 5.21,
+    "brand_conc": 57.5,
+    "cn_ratio": 72.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Cycling",
+      "Accessories",
+      "Lights & Reflectors",
+      "Headlights"
+    ],
+    "departments": [
+      18
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Cooking Utensils": {
+    "en_name": "Cooking Utensils",
+    "zh_name": "厨具",
+    "path": "Sports & Outdoors > Outdoor Recreation > Camping & Hiking > Camp Kitchen > Cooking Utensils",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 31.38,
+    "reviews": 627,
+    "weight_lbs": 1.72,
+    "return_rate": 3.17,
+    "brand_conc": 57.0,
+    "cn_ratio": 53.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Outdoor Recreation",
+      "Camping & Hiking",
+      "Camp Kitchen",
+      "Cooking Utensils"
+    ],
+    "departments": [
+      18
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Gaiters": {
+    "en_name": "Gaiters",
+    "zh_name": "护腿、护脚",
+    "path": "Sports & Outdoors > Outdoor Recreation > Camping & Hiking > Footwear & Accessories > Gaiters",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 32.44,
+    "reviews": 392,
+    "weight_lbs": 0.71,
+    "return_rate": 8.64,
+    "brand_conc": 52.2,
+    "cn_ratio": 67.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Outdoor Recreation",
+      "Camping & Hiking",
+      "Footwear & Accessories",
+      "Gaiters"
+    ],
+    "departments": [
+      18
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Replacement Wheels": {
+    "en_name": "Replacement Wheels",
+    "zh_name": "备用轮",
+    "path": "Sports & Outdoors > Sports > Skates, Skateboards & Scooters > Scooters & Equipment > Components & Parts > Replacement Wheels",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 25.82,
+    "reviews": 299,
+    "weight_lbs": 2.2,
+    "return_rate": 8.59,
+    "brand_conc": 64.8,
+    "cn_ratio": 90.0,
+    "product_path": [
+      "Sports & Outdoors",
+      "Sports",
+      "Skates, Skateboards & Scooters",
+      "Scooters & Equipment",
+      "Components & Parts",
+      "Replacement Wheels"
+    ],
+    "departments": [
+      18
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Bread Proofing Baskets": {
+    "en_name": "Bread Proofing Baskets",
+    "zh_name": "面包发酵篮",
+    "path": "Home & Kitchen > Kitchen & Dining > Bakeware > Baking Tools & Accessories > Baking & Pastry Utensils > Bread Proofing Baskets",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 29.0,
+    "reviews": 570,
+    "weight_lbs": 2.03,
+    "return_rate": 4.09,
+    "brand_conc": 53.8,
+    "cn_ratio": 67.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Kitchen & Dining",
+      "Bakeware",
+      "Baking Tools & Accessories",
+      "Baking & Pastry Utensils",
+      "Bread Proofing Baskets"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Decorative Boxes": {
+    "en_name": "Decorative Boxes",
+    "zh_name": "装饰盒",
+    "path": "Home & Kitchen > Home Décor Products > Home Décor Accents > Decorative Accessories > Decorative Boxes",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 23.78,
+    "reviews": 694,
+    "weight_lbs": 1.57,
+    "return_rate": 7.91,
+    "brand_conc": 54.4,
+    "cn_ratio": 67.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Home Décor Products",
+      "Home Décor Accents",
+      "Decorative Accessories",
+      "Decorative Boxes"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Toilet Paper Storage Containers": {
+    "en_name": "Toilet Paper Storage Containers",
+    "zh_name": "纸巾架纸巾盒",
+    "path": "Home & Kitchen > Bath > Bathroom Accessories > Holders & Dispensers > Toilet Paper Storage Containers",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 22.71,
+    "reviews": 700,
+    "weight_lbs": 1.9,
+    "return_rate": 5.95,
+    "brand_conc": 67.2,
+    "cn_ratio": 73.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Bath",
+      "Bathroom Accessories",
+      "Holders & Dispensers",
+      "Toilet Paper Storage Containers"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Honey Jars": {
+    "en_name": "Honey Jars",
+    "zh_name": "蜂蜜罐子",
+    "path": "Home & Kitchen > Kitchen & Dining > Dining & Entertaining > Dinnerware & Serveware > Serveware > Honey Jars",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 21.65,
+    "reviews": 637,
+    "weight_lbs": 1.8,
+    "return_rate": 5.4,
+    "brand_conc": 71.5,
+    "cn_ratio": 71.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Kitchen & Dining",
+      "Dining & Entertaining",
+      "Dinnerware & Serveware",
+      "Serveware",
+      "Honey Jars"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Decorative Trays": {
+    "en_name": "Decorative Trays",
+    "zh_name": "装饰性托盘",
+    "path": "Home & Kitchen > Home Décor Products > Home Décor Accents > Decorative Accessories > Decorative Trays",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 22.23,
+    "reviews": 466,
+    "weight_lbs": 1.45,
+    "return_rate": 9.52,
+    "brand_conc": 42.1,
+    "cn_ratio": 78.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Home Décor Products",
+      "Home Décor Accents",
+      "Decorative Accessories",
+      "Decorative Trays"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Pillars": {
+    "en_name": "Pillars",
+    "zh_name": "柱蜡",
+    "path": "Home & Kitchen > Home Décor Products > Candles & Holders > Candles > Pillars",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 31.07,
+    "reviews": 691,
+    "weight_lbs": 3.7,
+    "return_rate": 7.44,
+    "brand_conc": 59.2,
+    "cn_ratio": 67.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Home Décor Products",
+      "Candles & Holders",
+      "Candles",
+      "Pillars"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Floor Pillows & Cushions": {
+    "en_name": "Floor Pillows & Cushions",
+    "zh_name": "地板枕头",
+    "path": "Home & Kitchen > Bedding > Decorative Pillows, Inserts & Covers > Floor Pillows & Cushions",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 38.14,
+    "reviews": 613,
+    "weight_lbs": 3.84,
+    "return_rate": 8.98,
+    "brand_conc": 63.8,
+    "cn_ratio": 72.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Bedding",
+      "Decorative Pillows, Inserts & Covers",
+      "Floor Pillows & Cushions"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Egg Baskets": {
+    "en_name": "Egg Baskets",
+    "zh_name": "蛋篮",
+    "path": "Home & Kitchen > Kitchen & Dining > Storage & Organization > Racks & Holders > Egg Baskets",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 26.31,
+    "reviews": 354,
+    "weight_lbs": 3.55,
+    "return_rate": 2.4,
+    "brand_conc": 60.5,
+    "cn_ratio": 75.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Kitchen & Dining",
+      "Storage & Organization",
+      "Racks & Holders",
+      "Egg Baskets"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Picture Frames": {
+    "en_name": "Picture Frames",
+    "zh_name": "画框",
+    "path": "Home & Kitchen > Home Décor Products > Kids' Room Décor > Accents > Picture Frames",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 30.71,
+    "reviews": 302,
+    "weight_lbs": 3.18,
+    "return_rate": 5.68,
+    "brand_conc": 74.6,
+    "cn_ratio": 65.7,
+    "product_path": [
+      "Home & Kitchen",
+      "Home Décor Products",
+      "Kids' Room Décor",
+      "Accents",
+      "Picture Frames"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Tea Storage Chests": {
+    "en_name": "Tea Storage Chests",
+    "zh_name": "茶叶罐",
+    "path": "Home & Kitchen > Kitchen & Dining > Coffee, Tea & Espresso > Tea Accessories > Tea Storage Chests",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 24.18,
+    "reviews": 658,
+    "weight_lbs": 2.38,
+    "return_rate": 6.54,
+    "brand_conc": 46.3,
+    "cn_ratio": 72.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Kitchen & Dining",
+      "Coffee, Tea & Espresso",
+      "Tea Accessories",
+      "Tea Storage Chests"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Vertical Blinds": {
+    "en_name": "Vertical Blinds",
+    "zh_name": "垂直百叶窗",
+    "path": "Home & Kitchen > Home Décor Products > Window Treatments > Blinds & Shades > Vertical Blinds",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 37.31,
+    "reviews": 498,
+    "weight_lbs": 2.67,
+    "return_rate": 5.62,
+    "brand_conc": 73.4,
+    "cn_ratio": 68.0,
+    "product_path": [
+      "Home & Kitchen",
+      "Home Décor Products",
+      "Window Treatments",
+      "Blinds & Shades",
+      "Vertical Blinds"
+    ],
+    "departments": [
+      21
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Drip Irrigation Kits": {
+    "en_name": "Drip Irrigation Kits",
+    "zh_name": "滴灌套件",
+    "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Watering Equipment > Automatic Irrigation Equipment > Drip Irrigation Kits",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 33.3,
+    "reviews": 618,
+    "weight_lbs": 2.58,
+    "return_rate": 3.37,
+    "brand_conc": 50.8,
+    "cn_ratio": 70.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Gardening & Lawn Care",
+      "Watering Equipment",
+      "Automatic Irrigation Equipment",
+      "Drip Irrigation Kits"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Pool & Deck Repair Products": {
+    "en_name": "Pool & Deck Repair Products",
+    "zh_name": "油漆及密封产品",
+    "path": "Patio, Lawn & Garden > Pools, Hot Tubs & Supplies > Parts & Accessories > Pool & Deck Repair Products",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 31.79,
+    "reviews": 682,
+    "weight_lbs": 2.28,
+    "return_rate": 1.93,
+    "brand_conc": 57.6,
+    "cn_ratio": 48.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Pools, Hot Tubs & Supplies",
+      "Parts & Accessories",
+      "Pool & Deck Repair Products"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Poultry Fountains & Waterers": {
+    "en_name": "Poultry Fountains & Waterers",
+    "zh_name": "家禽自动喂水器和饮水器",
+    "path": "Patio, Lawn & Garden > Farm & Ranch > Poultry Care > Poultry Feeding & Watering Supplies > Poultry Fountains & Waterers",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 24.7,
+    "reviews": 623,
+    "weight_lbs": 1.88,
+    "return_rate": 2.74,
+    "brand_conc": 55.0,
+    "cn_ratio": 69.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Farm & Ranch",
+      "Poultry Care",
+      "Poultry Feeding & Watering Supplies",
+      "Poultry Fountains & Waterers"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Birdhouses": {
+    "en_name": "Birdhouses",
+    "zh_name": "鸟屋",
+    "path": "Patio, Lawn & Garden > Backyard Birding & Wildlife > Birds > Birdhouses",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 27.97,
+    "reviews": 613,
+    "weight_lbs": 2.16,
+    "return_rate": 2.92,
+    "brand_conc": 52.7,
+    "cn_ratio": 73.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Backyard Birding & Wildlife",
+      "Birds",
+      "Birdhouses"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Beekeeping Supplies": {
+    "en_name": "Beekeeping Supplies",
+    "zh_name": "养蜂用品",
+    "path": "Patio, Lawn & Garden > Farm & Ranch > Beekeeping Supplies",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 31.75,
+    "reviews": 377,
+    "weight_lbs": 3.74,
+    "return_rate": 2.6,
+    "brand_conc": 52.5,
+    "cn_ratio": 74.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Farm & Ranch",
+      "Beekeeping Supplies"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Plaques & Wall Art": {
+    "en_name": "Plaques & Wall Art",
+    "zh_name": "装饰墙",
+    "path": "Patio, Lawn & Garden > Outdoor Décor > Plaques & Wall Art",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 20.05,
+    "reviews": 617,
+    "weight_lbs": 1.1,
+    "return_rate": 2.89,
+    "brand_conc": 46.8,
+    "cn_ratio": 89.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Outdoor Décor",
+      "Plaques & Wall Art"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Outdoor Clocks": {
+    "en_name": "Outdoor Clocks",
+    "zh_name": "户外钟表",
+    "path": "Patio, Lawn & Garden > Outdoor Décor > Outdoor Clocks",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 48.07,
+    "reviews": 385,
+    "weight_lbs": 3.17,
+    "return_rate": 6.65,
+    "brand_conc": 66.0,
+    "cn_ratio": 77.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Outdoor Décor",
+      "Outdoor Clocks"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Protective Gear": {
+    "en_name": "Protective Gear",
+    "zh_name": "防护装备",
+    "path": "Patio, Lawn & Garden > Farm & Ranch > Beekeeping Supplies > Protective Gear",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 42.27,
+    "reviews": 269,
+    "weight_lbs": 3.09,
+    "return_rate": 3.95,
+    "brand_conc": 58.5,
+    "cn_ratio": 64.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Farm & Ranch",
+      "Beekeeping Supplies",
+      "Protective Gear"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Bulb Planters": {
+    "en_name": "Bulb Planters",
+    "zh_name": "球茎栽植器",
+    "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Hand Tools > Bulb Planters",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 26.18,
+    "reviews": 283,
+    "weight_lbs": 2.54,
+    "return_rate": 2.9,
+    "brand_conc": 50.2,
+    "cn_ratio": 74.0,
+    "product_path": [
+      "Patio, Lawn & Garden",
+      "Gardening & Lawn Care",
+      "Hand Tools",
+      "Bulb Planters"
+    ],
+    "departments": [
+      16
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Cup Carriers": {
+    "en_name": "Cup Carriers",
+    "zh_name": "外卖杯托盘",
+    "path": "Industrial & Scientific > Food Service Equipment & Supplies > Disposables > Take Out Containers > Cup Carriers",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 22.27,
+    "reviews": 440,
+    "weight_lbs": 2.62,
+    "return_rate": 4.6,
+    "brand_conc": 43.7,
+    "cn_ratio": 67.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Food Service Equipment & Supplies",
+      "Disposables",
+      "Take Out Containers",
+      "Cup Carriers"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Pipes": {
+    "en_name": "Pipes",
+    "zh_name": "管道",
+    "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Tubes, Pipes & Hoses > Pipes",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 32.0,
+    "reviews": 153,
+    "weight_lbs": 3.61,
+    "return_rate": 5.33,
+    "brand_conc": 68.9,
+    "cn_ratio": 49.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Hydraulics, Pneumatics & Plumbing",
+      "Tubes, Pipes & Hoses",
+      "Pipes"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "EMF Meters": {
+    "en_name": "EMF Meters",
+    "zh_name": "电磁波计",
+    "path": "Industrial & Scientific > Test, Measure & Inspect > Electrical Testing > EMF Meters",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 59.14,
+    "reviews": 340,
+    "weight_lbs": 0.79,
+    "return_rate": 9.7,
+    "brand_conc": 70.8,
+    "cn_ratio": 71.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Test, Measure & Inspect",
+      "Electrical Testing",
+      "EMF Meters"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Accessories": {
+    "en_name": "Accessories",
+    "zh_name": "辅料",
+    "path": "Industrial & Scientific > Retail Store Fixtures & Equipment > Retail Shelving & Wall Displays > Pegboard & Fixtures > Accessories",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 21.04,
+    "reviews": 310,
+    "weight_lbs": 3.23,
+    "return_rate": 5.23,
+    "brand_conc": 64.6,
+    "cn_ratio": 64.0,
+    "product_path": [
+      "Industrial & Scientific",
+      "Retail Store Fixtures & Equipment",
+      "Retail Shelving & Wall Displays",
+      "Pegboard & Fixtures",
+      "Accessories"
+    ],
+    "departments": [
+      13
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Diamond Blades": {
+    "en_name": "Diamond Blades",
+    "zh_name": "钻石刀片",
+    "path": "Tools & Home Improvement > Power & Hand Tools > Power Tool Parts & Accessories > Saw Blades, Parts & Accessories > Blades > Diamond Blades",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 22.35,
+    "reviews": 568,
+    "weight_lbs": 0.84,
+    "return_rate": 2.39,
+    "brand_conc": 62.7,
+    "cn_ratio": 74.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Power & Hand Tools",
+      "Power Tool Parts & Accessories",
+      "Saw Blades, Parts & Accessories",
+      "Blades",
+      "Diamond Blades"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Angle Clamps": {
+    "en_name": "Angle Clamps",
+    "zh_name": "角夹钳",
+    "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Workholding Devices > Clamps > Angle Clamps",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 35.63,
+    "reviews": 697,
+    "weight_lbs": 3.19,
+    "return_rate": 4.55,
+    "brand_conc": 54.7,
+    "cn_ratio": 74.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Power & Hand Tools",
+      "Hand Tools",
+      "Workholding Devices",
+      "Clamps",
+      "Angle Clamps"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Tap & Die Sets": {
+    "en_name": "Tap & Die Sets",
+    "zh_name": "敲击",
+    "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Taps & Dies > Tap & Die Sets",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 43.33,
+    "reviews": 297,
+    "weight_lbs": 3.86,
+    "return_rate": 3.87,
+    "brand_conc": 45.6,
+    "cn_ratio": 67.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Power & Hand Tools",
+      "Hand Tools",
+      "Taps & Dies",
+      "Tap & Die Sets"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Bolt Cutters": {
+    "en_name": "Bolt Cutters",
+    "zh_name": "螺栓切割器",
+    "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Cutters > Bolt Cutters",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 42.21,
+    "reviews": 455,
+    "weight_lbs": 2.89,
+    "return_rate": 5.4,
+    "brand_conc": 72.0,
+    "cn_ratio": 47.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Power & Hand Tools",
+      "Hand Tools",
+      "Cutters",
+      "Bolt Cutters"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Urinal Accessories": {
+    "en_name": "Urinal Accessories",
+    "zh_name": "小便池配件",
+    "path": "Tools & Home Improvement > Kitchen & Bath Fixtures > Bathroom Fixtures > Urinals & Urinal Parts > Urinal Accessories",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 34.34,
+    "reviews": 81,
+    "weight_lbs": 2.71,
+    "return_rate": 1.87,
+    "brand_conc": 55.1,
+    "cn_ratio": 52.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Kitchen & Bath Fixtures",
+      "Bathroom Fixtures",
+      "Urinals & Urinal Parts",
+      "Urinal Accessories"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Kick Plates": {
+    "en_name": "Kick Plates",
+    "zh_name": "踢脚板",
+    "path": "Tools & Home Improvement > Hardware > Door Hardware & Locks > Kick Plates",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 28.13,
+    "reviews": 127,
+    "weight_lbs": 1.59,
+    "return_rate": 8.07,
+    "brand_conc": 60.0,
+    "cn_ratio": 65.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Hardware",
+      "Door Hardware & Locks",
+      "Kick Plates"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  },
+  "Masonry Chisels": {
+    "en_name": "Masonry Chisels",
+    "zh_name": "砌筑用凿子",
+    "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Chisels > Masonry Chisels",
+    "level": "🟡 Yellow (Cautious)",
+    "price": 27.19,
+    "reviews": 251,
+    "weight_lbs": 2.62,
+    "return_rate": 3.89,
+    "brand_conc": 50.4,
+    "cn_ratio": 55.0,
+    "product_path": [
+      "Tools & Home Improvement",
+      "Power & Hand Tools",
+      "Hand Tools",
+      "Chisels",
+      "Masonry Chisels"
+    ],
+    "departments": [
+      19
+    ],
+    "products": null,
+    "keywords": null,
+    "last_updated": null
+  }
+}

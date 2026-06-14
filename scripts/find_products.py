@@ -155,24 +155,32 @@ def select_category(path: list[str], only_leaf_rank: bool) -> str:
             deepest_found = index
             continue
 
-        # Stage 2 — node absent from SS tree: select deepest ancestor as leaf
+        # Node not found at this level — skip and try the next segment.
+        # SellerSprite's product tree collapses levels vs Amazon taxonomy
+        # (e.g. "Golf" is a direct child of "Sports & Outdoors", not of "Sports").
+        # Skipping missing intermediate nodes lets us reach the deepest match.
         if deepest_found < 0:
             raise ValueError(
                 f"Could not find root category '{path[0]}' in SellerSprite product tree."
             )
+        print(f"  [nav-skip] '{category}' not in tree, trying next level...")
+        continue
+
+    # After the loop: if we never reached the leaf, re-select the deepest found
+    # node as a leaf (checking the checkbox instead of just expanding).
+    if deepest_found < len(path) - 1:
         eval_browser(_SCROLL_TREE_TOP_JS)
         time.sleep(0.3)
         ancestor = path[deepest_found]
         fallback_result = _nav_node(ancestor, as_leaf=True)
         print(
-            f"  [nav-fallback] '{category}' absent from SS tree; "
-            f"scanning at ancestor '{ancestor}' instead."
+            f"  [nav-fallback] deepest match '{ancestor}' selected as leaf "
+            f"(skipped: {path[deepest_found + 1:]})"
         )
         if "clicked:" not in fallback_result:
             raise ValueError(
                 f"Could not select fallback ancestor '{ancestor}' as leaf."
             )
-        break
 
     # ─────────────────────────────────────────────────────────────────────────
 
@@ -203,7 +211,8 @@ def select_category(path: list[str], only_leaf_rank: bool) -> str:
             """
         )
 
-    return "/".join(path[:deepest_found + 1])
+    selected_depth = deepest_found if deepest_found >= 0 else 0
+    return "/".join(path[:selected_depth + 1])
 
 
 def apply_filters(filters: dict[str, str]) -> None:

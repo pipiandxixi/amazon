@@ -1,0 +1,2398 @@
+{
+  "market_content": "# 亚马逊选市场扫描与评估报告 (2026-06-14)\n\n> [!IMPORTANT]\n> 本报告基于 `unified pipeline config` 中设定的过滤与风控规则进行生成。今日共分析了 **170** 个符合基本条件的子类目，其中最终筛选出 **72** 个适合新手的 🟢 绿色推荐赛道。\n> **抓取完整性**：扫描 **6** 页；页面总数提示：**未识别**；停止原因：6 批次扫描完成；免费套餐截断风险：**可能存在**。\n> **数量审计**：当前候选类目有 110 个，超过目标上限 25。建议提高基础过滤门槛或收紧黄色/绿色风控规则，而不是截断为固定 Top-K。\n> 本报告仅输出真实抓取的指标数据，没有任何人工猜测或硬编码的推荐理由。您可以直接复制本报告的详细数据到大模型中，让其结合具体品类特性为您分析入选原因及每个指标的指导含义。\n\n## 一、 风控分类结果概览\n\n- **绿色通道 (推荐) 🟢**：共 **72** 个。满足所有风控参数，建议重点关注。\n- **黄色通道 (谨慎) 🟡**：共 **38** 个。包含带电电子产品或物理退货率偏高的类目，建议深入调研。\n- **红色通道 (避坑) 🔴**：共 **60** 个。触发硬风控规则，已自动排除。\n\n## 二、 推荐与候选子类目核心列表\n\n### 1. 🟢 绿色推荐类目\n\n| 序号 | 子类目英文名 | 中文名 / 路径 | 平均价格 | 平均Reviews | 物理重量 | 退货率 | 品牌集中度 | 中国卖家比例 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| 1 | **Swing Trainers** | 室内练习器 | $37.01 | 448 | 0.71 lbs | 4.37% | 57.1% | 68.0% |\n| 2 | **Paddleboard Accessories** | 冲浪板配件 | $53.08 | 322 | 2.37 lbs | 4.17% | 42.7% | 72.0% |\n| 3 | **Camping Fans** | 露营爱好者 | $38.58 | 260 | 2.17 lbs | 4.56% | 69.4% | 82.0% |\n| 4 | **Trophies** | 奖杯 | $25.63 | 297 | 1.01 lbs | 2.59% | 49.0% | 49.0% |\n| 5 | **Tie-Downs** | 栓系器具 | $27.85 | 546 | 1.62 lbs | 3.74% | 61.7% | 54.0% |\n| 6 | **Wrist & Forearm Strengtheners** | 手腕和前臂加强器 | $27.41 | 373 | 2.28 lbs | 4.53% | 69.1% | 79.0% |\n| 7 | **Scoreboards & Timers** | 记分牌和计时器 | $53.46 | 345 | 1.60 lbs | 5.13% | 54.1% | 72.0% |\n| 8 | **Equestrian Sports** | 马术运动 | $47.02 | 193 | 1.67 lbs | 4.03% | 66.7% | 46.0% |\n| 9 | **Interior Lights** | 内部灯饰 | $36.53 | 290 | 0.87 lbs | 3.55% | 69.6% | 76.0% |\n| 10 | **Flags** | 标志 | $24.01 | 223 | 0.57 lbs | 2.61% | 63.9% | 52.0% |\n| 11 | **Motor Flushers** | 马达冲洗装置 | $31.55 | 284 | 1.23 lbs | 3.62% | 71.4% | 58.0% |\n| 12 | **Trophy Mounts** | 奖杯坐骑 | $25.66 | 346 | 1.43 lbs | 2.49% | 71.2% | 44.0% |\n| 13 | **Optics Accessories** | 光学配件 | $32.96 | 357 | 0.20 lbs | 5.63% | 53.4% | 44.0% |\n| 14 | **Fly Tying Equipment** | 绑蝇设备 | $20.69 | 487 | 0.30 lbs | 2.84% | 64.8% | 57.0% |\n| 15 | **Line Spooling Accessories** | 线路绕线配件 | $20.79 | 364 | 1.98 lbs | 3.66% | 66.1% | 63.0% |\n| 16 | **Team Practice Vests** | 团队练习背心 | $33.17 | 186 | 2.21 lbs | 6.66% | 66.9% | 83.0% |\n| 17 | **Tools** | 工具 | $34.67 | 185 | 1.48 lbs | 3.64% | 45.8% | 66.0% |\n| 18 | **Reel Replacement Parts** | 卷盘更换部件 | $27.25 | 108 | 1.38 lbs | 5.58% | 71.3% | 70.0% |\n| 19 | **Shafts** | 杆身 | $27.08 | 95 | 0.15 lbs | 3.27% | 62.3% | 59.0% |\n| 20 | **Training Putters** | 练习推杆 | $30.90 | 196 | 1.38 lbs | 4.05% | 65.8% | 62.0% |\n| 21 | **Cups** | 杯子 | $21.50 | 467 | 1.32 lbs | 3.95% | 59.9% | 66.0% |\n| 22 | **Cardboard Cutouts** | 硬板纸模型 | $24.38 | 295 | 1.31 lbs | 4.59% | 61.0% | 62.0% |\n| 23 | **Bar Tools & Drinkware** | 酒吧工具 | $26.80 | 376 | 1.51 lbs | 5.44% | 55.9% | 62.0% |\n| 24 | **Steam Cleaner & Steam Mop Replacement Parts** | 蒸汽清洗机 | $21.27 | 363 | 0.82 lbs | 4.59% | 69.8% | 75.0% |\n| 25 | **Tortilla Servers** | 玉米饼服务员 | $21.77 | 439 | 1.74 lbs | 6.26% | 58.8% | 43.0% |\n| 26 | **Devotional Candles** | 祈祷蜡烛 | $26.05 | 196 | 1.77 lbs | 4.08% | 62.4% | 55.0% |\n| 27 | **Serveware** | 碗碟 | $21.82 | 416 | 1.47 lbs | 5.33% | 57.5% | 63.0% |\n| 28 | **Lighting Products** | 水底灯 | $47.85 | 482 | 1.72 lbs | 6.75% | 51.9% | 74.0% |\n| 29 | **Nozzles** | 喷嘴 | $26.24 | 490 | 0.44 lbs | 2.63% | 53.8% | 74.0% |\n| 30 | **Wind Spinners** | Wind Spinners | $31.43 | 472 | 2.36 lbs | 3.09% | 54.6% | 85.0% |\n| 31 | **Attachments** | 附件 | $39.59 | 222 | 2.19 lbs | 3.07% | 72.2% | 78.0% |\n| 32 | **Hoes** | 园艺锄 | $27.68 | 319 | 2.41 lbs | 3.1% | 51.9% | 72.0% |\n| 33 | **Pond Lights** | 池塘灯 | $46.62 | 245 | 1.64 lbs | 6.15% | 67.1% | 75.0% |\n| 34 | **Feeders** | 喂食器 | $25.06 | 217 | 2.20 lbs | 2.83% | 67.6% | 70.0% |\n| 35 | **Energy Controllers** | 能源控制器 | $81.15 | 388 | 2.11 lbs | 7.01% | 70.3% | 66.0% |\n| 36 | **Diverters** | 分流器 | $26.61 | 205 | 1.58 lbs | 3.4% | 70.8% | 79.0% |\n| 37 | **Bats** | 蝙蝠 | $32.07 | 342 | 2.10 lbs | 2.61% | 56.1% | 47.0% |\n| 38 | **Gazing Balls** | 反射球 | $38.09 | 292 | 2.26 lbs | 4.79% | 63.6% | 77.0% |\n| 39 | **Machetes** | 弯刀 | $32.55 | 455 | 1.36 lbs | 2.54% | 64.9% | 46.0% |\n| 40 | **Indoor Air Quality Meters** | 室内空气质量测试仪 | $72.17 | 303 | 0.53 lbs | 7.8% | 70.2% | 63.0% |\n| 41 | **Grinding Discs** | 磨片 | $23.53 | 360 | 2.02 lbs | 2.13% | 46.8% | 81.0% |\n| 42 | **Network & Cable Testers** | 网络 | $117.90 | 422 | 0.60 lbs | 5.23% | 63.0% | 68.0% |\n| 43 | **3D Printer Platforms** | 3D打印机平台 | $23.55 | 216 | 2.00 lbs | 4.56% | 71.7% | 68.0% |\n| 44 | **Angle Grinder Wheels** | 角磨机砂轮 | $23.91 | 159 | 1.54 lbs | 2.41% | 59.9% | 79.0% |\n| 45 | **Float Valves** | 浮阀 | $20.45 | 182 | 0.64 lbs | 4.44% | 42.7% | 67.0% |\n| 46 | **Leak Detection Tools** | 泄漏检测工具 | $76.34 | 154 | 1.47 lbs | 4.3% | 55.1% | 48.0% |\n| 47 | **Machine Tool Inspection Mirrors** | 机床检测镜 | $21.53 | 261 | 0.68 lbs | 2.09% | 69.2% | 78.0% |\n| 48 | **Lab Supply Dispensers** | 实验室用品分配器 | $29.80 | 171 | 2.19 lbs | 4.45% | 62.7% | 58.0% |\n| 49 | **Unmanned Aerial Vehicles)** | UAVs | $84.75 | 145 | 0.62 lbs | 7.1% | 69.2% | 81.0% |\n| 50 | **Hose Clamping Tools** | 软管夹紧工具 | $21.11 | 212 | 1.15 lbs | 3.61% | 69.6% | 79.0% |\n| 51 | **Tactile Switches** | 触摸式开关 | $26.62 | 57 | 0.29 lbs | 7.31% | 72.2% | 95.0% |\n| 52 | **Electrically Conductive Adhesives** | 导电性粘合剂 | $25.39 | 256 | 0.59 lbs | 2.14% | 69.8% | 52.0% |\n| 53 | **Pressure Regulators** | 压力调节器 | $91.76 | 157 | 2.13 lbs | 6.61% | 66.4% | 43.0% |\n| 54 | **3D Printer Extruders** | 3D打印机挤出机 | $28.93 | 160 | 0.18 lbs | 4.99% | 57.6% | 78.0% |\n| 55 | **Angle** | 角规 | $22.64 | 392 | 0.53 lbs | 2.9% | 61.0% | 65.0% |\n| 56 | **Relief Valves** | 减压阀 | $46.38 | 125 | 0.96 lbs | 6.22% | 56.6% | 49.0% |\n| 57 | **Shim Stock** | 衬垫 | $20.21 | 129 | 1.74 lbs | 3.03% | 74.8% | 55.0% |\n| 58 | **Continuous & Piano** | 连续铰链和钢琴铰链 | $25.21 | 63 | 1.19 lbs | 5.54% | 69.2% | 69.1% |\n| 59 | **Outlet Boxes** | 插座盒 | $20.03 | 526 | 1.12 lbs | 5.94% | 56.7% | 55.0% |\n| 60 | **Auger Drill Bits** | 螺旋钻钻头 | $24.58 | 532 | 1.99 lbs | 3.79% | 67.7% | 69.0% |\n| 61 | **Drill Bits** | 钻头 | $26.49 | 262 | 1.00 lbs | 2.68% | 52.1% | 77.0% |\n| 62 | **Countertop & Tile Paint** | 台面 | $40.48 | 386 | 1.91 lbs | 5.69% | 72.8% | 62.0% |\n| 63 | **Pipe Wrenches** | 管钳 | $30.43 | 347 | 2.40 lbs | 5.27% | 63.0% | 69.0% |\n| 64 | **Paint Roller Extension Poles** | 油漆滚筒加长杆 | $38.69 | 352 | 2.03 lbs | 4.55% | 55.6% | 65.0% |\n| 65 | **Rods** | 杆 | $21.84 | 197 | 2.17 lbs | 1.94% | 57.0% | 75.0% |\n| 66 | **Soffit Vents** | 檐口通风口 | $21.53 | 227 | 1.60 lbs | 7.65% | 72.5% | 58.0% |\n| 67 | **Sensors** | 传感器 | $26.26 | 183 | 0.44 lbs | 7.01% | 64.1% | 73.0% |\n| 68 | **Gutters** | 排水沟 | $23.86 | 122 | 1.75 lbs | 5.02% | 56.7% | 70.0% |\n| 69 | **Mailbox Hardware** | 信箱硬件 | $21.23 | 212 | 1.04 lbs | 7.65% | 54.5% | 65.0% |\n| 70 | **Nibblers** | 切片机 | $65.19 | 199 | 2.21 lbs | 5.35% | 70.0% | 69.0% |\n| 71 | **Brazing Rods** | 钎杆 | $39.35 | 136 | 0.65 lbs | 2.03% | 60.8% | 59.0% |\n| 72 | **Nail Pullers** | 羊角起钉钳 | $23.31 | 346 | 1.15 lbs | 2.27% | 62.6% | 54.0% |\n\n### 2. 🟡 黄色候选类目\n\n| 序号 | 子类目英文名 | 中文名 / 路径 | 平均价格 | 平均Reviews | 物理重量 | 退货率 | 触发警示规则 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| 1 | **Batteries & Battery Chargers** | 电池和电池 | $25.18 | 470 | 0.95 lbs | 9.83% | 退货率偏高 (>8.0%), 带电/合规资质敏感关键字 |\n| 2 | **Kayak Accessories** | 皮艇配件 | $24.80 | 498 | 3.05 lbs | 3.98% | 重量偏重 (>2.5 lbs) |\n| 3 | **Fitness Circles** | 服务圈 | $28.72 | 607 | 2.84 lbs | 6.16% | 重量偏重 (>2.5 lbs), Reviews偏高 (>550) |\n| 4 | **Headlights** | 车头灯 | $32.82 | 567 | 0.46 lbs | 5.21% | Reviews偏高 (>550) |\n| 5 | **Cooking Utensils** | 厨具 | $31.38 | 627 | 1.72 lbs | 3.17% | Reviews偏高 (>550) |\n| 6 | **Gaiters** | 护腿、护脚 | $32.44 | 392 | 0.71 lbs | 8.64% | 退货率偏高 (>8.0%) |\n| 7 | **Replacement Wheels** | 备用轮 | $25.82 | 299 | 2.20 lbs | 8.59% | 退货率偏高 (>8.0%) |\n| 8 | **Bread Proofing Baskets** | 面包发酵篮 | $29.00 | 570 | 2.03 lbs | 4.09% | Reviews偏高 (>550) |\n| 9 | **Decorative Boxes** | 装饰盒 | $23.78 | 694 | 1.57 lbs | 7.91% | Reviews偏高 (>550) |\n| 10 | **Toilet Paper Storage Containers** | 纸巾架纸巾盒 | $22.71 | 700 | 1.90 lbs | 5.95% | Reviews偏高 (>550) |\n| 11 | **Honey Jars** | 蜂蜜罐子 | $21.65 | 637 | 1.80 lbs | 5.4% | Reviews偏高 (>550) |\n| 12 | **Decorative Trays** | 装饰性托盘 | $22.23 | 466 | 1.45 lbs | 9.52% | 退货率偏高 (>8.0%) |\n| 13 | **Pillars** | 柱蜡 | $31.07 | 691 | 3.70 lbs | 7.44% | 重量偏重 (>2.5 lbs), Reviews偏高 (>550) |\n| 14 | **Floor Pillows & Cushions** | 地板枕头 | $38.14 | 613 | 3.84 lbs | 8.98% | 退货率偏高 (>8.0%), 重量偏重 (>2.5 lbs), Reviews偏高 (>550) |\n| 15 | **Egg Baskets** | 蛋篮 | $26.31 | 354 | 3.55 lbs | 2.4% | 重量偏重 (>2.5 lbs) |\n| 16 | **Picture Frames** | 画框 | $30.71 | 302 | 3.18 lbs | 5.68% | 重量偏重 (>2.5 lbs) |\n| 17 | **Tea Storage Chests** | 茶叶罐 | $24.18 | 658 | 2.38 lbs | 6.54% | Reviews偏高 (>550) |\n| 18 | **Vertical Blinds** | 垂直百叶窗 | $37.31 | 498 | 2.67 lbs | 5.62% | 重量偏重 (>2.5 lbs) |\n| 19 | **Drip Irrigation Kits** | 滴灌套件 | $33.30 | 618 | 2.58 lbs | 3.37% | 重量偏重 (>2.5 lbs), Reviews偏高 (>550) |\n| 20 | **Pool & Deck Repair Products** | 油漆及密封产品 | $31.79 | 682 | 2.28 lbs | 1.93% | Reviews偏高 (>550) |\n| 21 | **Poultry Fountains & Waterers** | 家禽自动喂水器和饮水器 | $24.70 | 623 | 1.88 lbs | 2.74% | Reviews偏高 (>550) |\n| 22 | **Birdhouses** | 鸟屋 | $27.97 | 613 | 2.16 lbs | 2.92% | Reviews偏高 (>550) |\n| 23 | **Beekeeping Supplies** | 养蜂用品 | $31.75 | 377 | 3.74 lbs | 2.6% | 重量偏重 (>2.5 lbs) |\n| 24 | **Plaques & Wall Art** | 装饰墙 | $20.05 | 617 | 1.10 lbs | 2.89% | Reviews偏高 (>550) |\n| 25 | **Outdoor Clocks** | 户外钟表 | $48.07 | 385 | 3.17 lbs | 6.65% | 重量偏重 (>2.5 lbs) |\n| 26 | **Protective Gear** | 防护装备 | $42.27 | 269 | 3.09 lbs | 3.95% | 重量偏重 (>2.5 lbs) |\n| 27 | **Bulb Planters** | 球茎栽植器 | $26.18 | 283 | 2.54 lbs | 2.9% | 重量偏重 (>2.5 lbs) |\n| 28 | **Cup Carriers** | 外卖杯托盘 | $22.27 | 440 | 2.62 lbs | 4.6% | 重量偏重 (>2.5 lbs) |\n| 29 | **Pipes** | 管道 | $32.00 | 153 | 3.61 lbs | 5.33% | 重量偏重 (>2.5 lbs) |\n| 30 | **EMF Meters** | 电磁波计 | $59.14 | 340 | 0.79 lbs | 9.7% | 退货率偏高 (>8.0%) |\n| 31 | **Accessories** | 辅料 | $21.04 | 310 | 3.23 lbs | 5.23% | 重量偏重 (>2.5 lbs) |\n| 32 | **Diamond Blades** | 钻石刀片 | $22.35 | 568 | 0.84 lbs | 2.39% | Reviews偏高 (>550) |\n| 33 | **Angle Clamps** | 角夹钳 | $35.63 | 697 | 3.19 lbs | 4.55% | 重量偏重 (>2.5 lbs), Reviews偏高 (>550) |\n| 34 | **Tap & Die Sets** | 敲击 | $43.33 | 297 | 3.86 lbs | 3.87% | 重量偏重 (>2.5 lbs) |\n| 35 | **Bolt Cutters** | 螺栓切割器 | $42.21 | 455 | 2.89 lbs | 5.4% | 重量偏重 (>2.5 lbs) |\n| 36 | **Urinal Accessories** | 小便池配件 | $34.34 | 81 | 2.71 lbs | 1.87% | 重量偏重 (>2.5 lbs) |\n| 37 | **Kick Plates** | 踢脚板 | $28.13 | 127 | 1.59 lbs | 8.07% | 退货率偏高 (>8.0%) |\n| 38 | **Masonry Chisels** | 砌筑用凿子 | $27.19 | 251 | 2.62 lbs | 3.89% | 重量偏重 (>2.5 lbs) |\n\n### 3. 🔴 红色排除类目摘要\n\n| 序号 | 子类目英文名 | 中文名 / 路径 | 平均价格 | 排除原因 |\n| :--- | :--- | :--- | :--- | :--- |\n| 1 | **Game & Trail Cameras** | 游戏 | $91.35 | Review护城河太深 (>700) |\n| 2 | **Aquatic Fitness Equipment** | 水上健身器材 | $33.14 | 重量超标 (>4.0 lbs) |\n| 3 | **Shovels** | 铲子 | $31.91 | Review护城河太深 (>700) |\n| 4 | **Handheld Steamers** | 手持式蒸汽机 | $67.20 | 重量超标 (>4.0 lbs) |\n| 5 | **Closet Rods** | 壁橱杆 | $23.35 | 高风险类目路径过滤 |\n| 6 | **Shelf Dividers** | 货架分隔器 | $24.84 | 重量超标 (>4.0 lbs) |\n| 7 | **Herb & Spice Mills** | 草本植物 | $22.09 | Review护城河太深 (>700) |\n| 8 | **Coffee Containers** | Coffee Containers | $27.21 | Review护城河太深 (>700) |\n| 9 | **Candlestick Holders** | 烛台座 | $24.18 | 退货率过高 (>10.0%) |\n| 10 | **Cookbook Stands** | 菜谱架 | $24.90 | Review护城河太深 (>700) |\n| 11 | **Meat Cleavers** | 切肉刀 | $47.55 | Review护城河太深 (>700) |\n| 12 | **Liquor Decanters** | 酒瓶 | $40.21 | Review护城河太深 (>700) |\n| 13 | **Stand Mixer Accessories** | 立式搅拌机配件 | $38.19 | 退货率过高 (>10.0%) |\n| 14 | **Candle Sconces** | 壁突式烛台 | $28.14 | 退货率过高 (>10.0%) |\n| 15 | **Moscow Mule Mugs** | 铜杯 | $37.99 | Review护城河太深 (>700) |\n| 16 | **Trellises** | 格架 | $26.71 | 重量超标 (>4.0 lbs) |\n| 17 | **Pool Hoses** | 泳池软管 | $31.60 | Review护城河太深 (>700) |\n| 18 | **Beneficial Insects** | 益虫 | $31.09 | Review护城河太深 (>700), 排除类关键字过滤 |\n| 19 | **Birdhouse Accessories** | 鸟舍配件 | $23.60 | Review护城河太深 (>700) |\n| 20 | **Livestock Health Supplies** | 牲畜健康用品 | $31.76 | 排除类关键字过滤 |\n| 21 | **Lances & Wands** | 喷枪和长杆喷头 | $41.50 | 重量超标 (>4.0 lbs) |\n| 22 | **Ventilation Equipment** | 通风设备 | $52.53 | 重量超标 (>4.0 lbs) |\n| 23 | **Pruning Shears** | 修枝剪 | $92.87 | 重量超标 (>4.0 lbs) |\n| 24 | **Insect Hotels** | 昆虫旅馆 | $35.97 | 重量超标 (>4.0 lbs) |\n| 25 | **Pizza Boxes** | 披萨盒 | $28.42 | 重量超标 (>4.0 lbs) |\n| 26 | **Sheets & Plates** | 桌子 | $41.05 | 重量超标 (>4.0 lbs) |\n| 27 | **Wall Lamps & Sconces** | 壁灯 | $48.01 | 退货率过高 (>10.0%) |\n| 28 | **Wall Molding & Trim** | 墙压条和镶边 | $21.67 | 退货率过高 (>10.0%) |\n| 29 | **Spotlights** | 聚光灯 | $28.32 | 退货率过高 (>10.0%) |\n| 30 | **Bidets** | 洗手间 | $30.06 | Review护城河太深 (>700) |\n| 31 | **Wrench Sets** | 扳手套装 | $48.67 | 退货率过高 (>10.0%), 重量超标 (>4.0 lbs) |\n| 32 | **Guards** | 监护人 | $47.65 | 重量超标 (>4.0 lbs) |\n| 33 | **Floor Molding & Trim** | 地板压条和镶边 | $25.91 | 退货率过高 (>10.0%) |\n| 34 | **Marble Tiles** | 大理石瓷砖 | $38.91 | 退货率过高 (>10.0%) |\n| 35 | **Short Sets** | 短盘比赛 | $28.49 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 36 | **Pullovers** | 套头衫 | $22.12 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 37 | **Dresses** | Dresses | $32.04 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |\n| 38 | **Workout Top & Bottom Sets** | 服装套装 | $28.82 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |\n| 39 | **Vests** | 针织背心 | $21.37 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 40 | **Polos** | Polos | $20.98 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |\n| 41 | **Tankini Sets** | 坦基尼套装 | $22.41 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 42 | **Rash Guard Sets** | Rash Guard Sets | $20.98 | 高风险类目路径过滤 |\n| 43 | **Sets** | 套 | $24.13 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 44 | **Skirt Sets** | 裙装套装 | $35.46 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 45 | **Clothing** | 服装 | $24.85 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 46 | **Track & Active Jackets** | 风衣、夹克 | $29.81 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |\n| 47 | **Skirts** | 裙子 | $24.15 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 48 | **Pants & Capris** | 长裤和紧身裤 | $22.90 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |\n| 49 | **Button-Down Shirts** | 扣角领衬衫 | $21.08 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 50 | **Jumpsuits & Rompers** | 连身裤 | $20.63 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 51 | **Pantsuits** | 裤装 | $61.92 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 52 | **Active Pants** | 运动裤 | $32.73 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 53 | **Pant Sets** | 长裤套装 | $22.70 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 54 | **Night Out** | 晚宴裙装 | $28.31 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 55 | **Top-Handle Bags** | 手拎包 | $46.84 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 56 | **Jerseys** | Jerseys | $25.46 | 高风险类目路径过滤 |\n| 57 | **Accessory Sets** | 配饰套装 | $20.31 | 退货率过高 (>10.0%) |\n| 58 | **Sandals** | 凉鞋 | $24.08 | 退货率过高 (>10.0%), 高风险类目路径过滤 |\n| 59 | **Active Base Layers** | 贴身运动衣 | $36.92 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |\n| 60 | **Special Occasion** | 特殊场合 | $58.99 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |\n\n## 三、 候选类目详细数据指标画像 (供大模型分析使用)\n\n以下为入选的绿色与黄色子类目的完整数据指标。您可以将这些数据输入大模型（如 Gemini、Claude），让其结合具体品类特性进行深入的入选原因、产品特征及商业机会评估。\n\n### 🟢 绿色类目详情列表\n\n#### 🏆 🟢-1. Swing Trainers (室内练习器)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Golf › Training Equipment › Swing Trainers  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$37.01`\n  *   **平均 Reviews (Avg Reviews)**：`448 个`\n  *   **物理重量 (Weight)**：`0.71 lbs`\n  *   **平均退货率 (Return Rate)**：`4.37%`\n  *   **平均毛利率 (Profit Margin)**：`58.39%`\n  *   **品牌集中度 (Brand Concentration)**：`57.1%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`68.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Golf › Training Equipment › Swing Trainers  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动与健身 › 高尔夫球场 › 用品 训练 › 室内练习器`\n  *   **A+数量占比**：`80%`\n  *   **新品平均评分数**：`24`\n  *   **新品平均价格**：`$ 18.27`\n  *   **新品平均星级**：`3.6`\n  *   **新品月均销量**：`1,043`\n  *   **新品月均销售额**：`$15,154`\n  *   **平均重量**：`0.71 pounds (321 g)`\n  *   **平均体积**：`150.45 in³ (2,465 cm³)`\n  *   **平均毛利率**：`58.39%`\n  *   **卖家所属地**：`中国|68.0%`\n  *   **搜索购买比**：`7.4‰`\n\n---\n\n#### 🏆 🟢-2. Paddleboard Accessories (冲浪板配件)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Water Sports › Stand-Up Paddleboarding › Paddleboard Accessories  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$53.08`\n  *   **平均 Reviews (Avg Reviews)**：`322 个`\n  *   **物理重量 (Weight)**：`2.37 lbs`\n  *   **平均退货率 (Return Rate)**：`4.17%`\n  *   **平均毛利率 (Profit Margin)**：`64.36%`\n  *   **品牌集中度 (Brand Concentration)**：`42.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`72.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Water Sports › Stand-Up Paddleboarding › Paddleboard Accessories  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动的 › 划船和你 › 立式单肩肩背 › 冲浪板配件`\n  *   **A+数量占比**：`88%`\n  *   **新品平均评分数**：`35`\n  *   **新品平均价格**：`$ 76.83`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`651`\n  *   **新品月均销售额**：`$50,572`\n  *   **平均重量**：`2.37 pounds (1,077 g)`\n  *   **平均体积**：`425.27 in³ (6,969 cm³)`\n  *   **平均毛利率**：`64.36%`\n  *   **卖家所属地**：`中国|72.0%`\n  *   **搜索购买比**：`6.1‰`\n\n---\n\n#### 🏆 🟢-3. Camping Fans (露营爱好者)\n\n- **完整市场路径**：`Sports & Outdoors › Outdoor Recreation › Camping & Hiking › Camping Fans  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$38.58`\n  *   **平均 Reviews (Avg Reviews)**：`260 个`\n  *   **物理重量 (Weight)**：`2.17 lbs`\n  *   **平均退货率 (Return Rate)**：`4.56%`\n  *   **平均毛利率 (Profit Margin)**：`63.98%`\n  *   **品牌集中度 (Brand Concentration)**：`69.4%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`82.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Outdoor Recreation › Camping & Hiking › Camping Fans  市场分析`\n  *   **市场路径(中文)**：`Sports & Outdoors › Outdoor Recreation › Camping & Hiking › 露营爱好者`\n  *   **A+数量占比**：`89%`\n  *   **新品平均评分数**：`28`\n  *   **新品平均价格**：`$ 41.82`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`288`\n  *   **新品月均销售额**：`$11,612`\n  *   **平均重量**：`2.17 pounds (984 g)`\n  *   **平均体积**：`528.55 in³ (8,661 cm³)`\n  *   **平均毛利率**：`63.98%`\n  *   **卖家所属地**：`中国|82.0%`\n  *   **搜索购买比**：`5.8‰`\n\n---\n\n#### 🏆 🟢-4. Trophies (奖杯)\n\n- **完整市场路径**：`Sports & Outdoors › Sports & Outdoor Recreation Accessories › Trophies, Medals & Awards › Trophies  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$25.63`\n  *   **平均 Reviews (Avg Reviews)**：`297 个`\n  *   **物理重量 (Weight)**：`1.01 lbs`\n  *   **平均退货率 (Return Rate)**：`2.59%`\n  *   **平均毛利率 (Profit Margin)**：`62.86%`\n  *   **品牌集中度 (Brand Concentration)**：`49.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`49.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports & Outdoor Recreation Accessories › Trophies, Medals & Awards › Trophies  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 辅料 › 、奖牌 › 奖杯`\n  *   **A+数量占比**：`86%`\n  *   **新品平均评分数**：`34`\n  *   **新品平均价格**：`$ 30.54`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`544`\n  *   **新品月均销售额**：`$21,199`\n  *   **平均重量**：`1.01 pounds (458 g)`\n  *   **平均体积**：`179.64 in³ (2,944 cm³)`\n  *   **平均毛利率**：`62.86%`\n  *   **卖家所属地**：`中国|49.0%`\n  *   **搜索购买比**：`6.5‰`\n\n---\n\n#### 🏆 🟢-5. Tie-Downs (栓系器具)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Boating & Sailing › Boating › Boat Trailer Accessories › Tie-Downs  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$27.85`\n  *   **平均 Reviews (Avg Reviews)**：`546 个`\n  *   **物理重量 (Weight)**：`1.62 lbs`\n  *   **平均退货率 (Return Rate)**：`3.74%`\n  *   **平均毛利率 (Profit Margin)**：`58.74%`\n  *   **品牌集中度 (Brand Concentration)**：`61.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`54.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Boating & Sailing › Boating › Boat Trailer Accessories › Tie-Downs  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动与健身 › 划船和珊瑚 › 划船 › 拖船配件 › 栓系器具`\n  *   **A+数量占比**：`72%`\n  *   **新品平均评分数**：`112`\n  *   **新品平均价格**：`$ 37.04`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`293`\n  *   **新品月均销售额**：`$10,086`\n  *   **平均重量**：`1.62 pounds (735 g)`\n  *   **平均体积**：`52.58 in³ (862 cm³)`\n  *   **平均毛利率**：`58.74%`\n  *   **卖家所属地**：`中国|54.0%`\n  *   **搜索购买比**：`10.5‰`\n\n---\n\n#### 🏆 🟢-6. Wrist & Forearm Strengtheners (手腕和前臂加强器)\n\n- **完整市场路径**：`Sports & Outdoors › Exercise & Fitness › Strength Training Equipment › Strength Training Devices › Wrist & Forearm Strengtheners  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$27.41`\n  *   **平均 Reviews (Avg Reviews)**：`373 个`\n  *   **物理重量 (Weight)**：`2.28 lbs`\n  *   **平均退货率 (Return Rate)**：`4.53%`\n  *   **平均毛利率 (Profit Margin)**：`55.34%`\n  *   **品牌集中度 (Brand Concentration)**：`69.1%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`79.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Exercise & Fitness › Strength Training Equipment › Strength Training Devices › Wrist & Forearm Strengtheners  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 锻炼身体 › 力量训练设备 › 力量训练设备 › 手腕和前臂加强器`\n  *   **A+数量占比**：`75%`\n  *   **新品平均评分数**：`17`\n  *   **新品平均价格**：`$ 26.74`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`92`\n  *   **新品月均销售额**：`$2,096`\n  *   **平均重量**：`2.28 pounds (1,034 g)`\n  *   **平均体积**：`202.28 in³ (3,315 cm³)`\n  *   **平均毛利率**：`55.34%`\n  *   **卖家所属地**：`中国|79.0%`\n  *   **搜索购买比**：`8.2‰`\n\n---\n\n#### 🏆 🟢-7. Scoreboards & Timers (记分牌和计时器)\n\n- **完整市场路径**：`Sports & Outdoors › Sports & Outdoor Recreation Accessories › Coach & Referee Gear › Scoreboards & Timers  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$53.46`\n  *   **平均 Reviews (Avg Reviews)**：`345 个`\n  *   **物理重量 (Weight)**：`1.60 lbs`\n  *   **平均退货率 (Return Rate)**：`5.13%`\n  *   **平均毛利率 (Profit Margin)**：`65.36%`\n  *   **品牌集中度 (Brand Concentration)**：`54.1%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`72.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports & Outdoor Recreation Accessories › Coach & Referee Gear › Scoreboards & Timers  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 辅料 › 教练 › 记分牌和计时器`\n  *   **A+数量占比**：`83%`\n  *   **新品平均评分数**：`24`\n  *   **新品平均价格**：`$ 33.13`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`174`\n  *   **新品月均销售额**：`$6,138`\n  *   **平均重量**：`1.60 pounds (727 g)`\n  *   **平均体积**：`230.27 in³ (3,773 cm³)`\n  *   **平均毛利率**：`65.36%`\n  *   **卖家所属地**：`中国|72.0%`\n  *   **搜索购买比**：`7.1‰`\n\n---\n\n#### 🏆 🟢-8. Equestrian Sports (马术运动)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Other Sports › Equestrian Sports  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$47.02`\n  *   **平均 Reviews (Avg Reviews)**：`193 个`\n  *   **物理重量 (Weight)**：`1.67 lbs`\n  *   **平均退货率 (Return Rate)**：`4.03%`\n  *   **平均毛利率 (Profit Margin)**：`63.72%`\n  *   **品牌集中度 (Brand Concentration)**：`66.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`46.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Other Sports › Equestrian Sports  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动与健身 › 其他运动 › 马术运动`\n  *   **A+数量占比**：`57%`\n  *   **新品平均评分数**：`12`\n  *   **新品平均价格**：`$ 39.26`\n  *   **新品平均星级**：`4.0`\n  *   **新品月均销量**：`147`\n  *   **新品月均销售额**：`$5,459`\n  *   **平均重量**：`1.67 pounds (757 g)`\n  *   **平均体积**：`293.31 in³ (4,806 cm³)`\n  *   **平均毛利率**：`63.72%`\n  *   **卖家所属地**：`美国|54.0%`\n  *   **搜索购买比**：`10.7‰`\n\n---\n\n#### 🏆 🟢-9. Interior Lights (内部灯饰)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Boating & Sailing › Boating › Electrical Equipment › Interior Lights  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$36.53`\n  *   **平均 Reviews (Avg Reviews)**：`290 个`\n  *   **物理重量 (Weight)**：`0.87 lbs`\n  *   **平均退货率 (Return Rate)**：`3.55%`\n  *   **平均毛利率 (Profit Margin)**：`67.6%`\n  *   **品牌集中度 (Brand Concentration)**：`69.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`76.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Boating & Sailing › Boating › Electrical Equipment › Interior Lights  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动与健身 › 划船和珊瑚 › 划船 › 电器设备 › 内部灯饰`\n  *   **A+数量占比**：`95%`\n  *   **新品平均评分数**：`41`\n  *   **新品平均价格**：`$ 38.29`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`265`\n  *   **新品月均销售额**：`$11,340`\n  *   **平均重量**：`0.87 pounds (394 g)`\n  *   **平均体积**：`72.03 in³ (1,180 cm³)`\n  *   **平均毛利率**：`67.6%`\n  *   **卖家所属地**：`中国|76.0%`\n  *   **搜索购买比**：`5.4‰`\n\n---\n\n#### 🏆 🟢-10. Flags (标志)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Boating & Sailing › Boating › Boat Cabin Products › Flags  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$24.01`\n  *   **平均 Reviews (Avg Reviews)**：`223 个`\n  *   **物理重量 (Weight)**：`0.57 lbs`\n  *   **平均退货率 (Return Rate)**：`2.61%`\n  *   **平均毛利率 (Profit Margin)**：`60.43%`\n  *   **品牌集中度 (Brand Concentration)**：`63.9%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`52.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Boating & Sailing › Boating › Boat Cabin Products › Flags  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动与健身 › 划船和珊瑚 › 划船 › 船用家具 › 标志`\n  *   **A+数量占比**：`68%`\n  *   **新品平均评分数**：`10`\n  *   **新品平均价格**：`$ 20.29`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`215`\n  *   **新品月均销售额**：`$4,180`\n  *   **平均重量**：`0.57 pounds (259 g)`\n  *   **平均体积**：`145.64 in³ (2,387 cm³)`\n  *   **平均毛利率**：`60.43%`\n  *   **卖家所属地**：`中国|52.0%`\n  *   **搜索购买比**：`8.3‰`\n\n---\n\n#### 🏆 🟢-11. Motor Flushers (马达冲洗装置)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Boating & Sailing › Boating › Boat Engine Parts › Motor Flushers  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$31.55`\n  *   **平均 Reviews (Avg Reviews)**：`284 个`\n  *   **物理重量 (Weight)**：`1.23 lbs`\n  *   **平均退货率 (Return Rate)**：`3.62%`\n  *   **平均毛利率 (Profit Margin)**：`59.9%`\n  *   **品牌集中度 (Brand Concentration)**：`71.4%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`58.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Boating & Sailing › Boating › Boat Engine Parts › Motor Flushers  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动与健身 › 划船和珊瑚 › 划船 › 船引擎零配件 › 马达冲洗装置`\n  *   **A+数量占比**：`59%`\n  *   **新品平均评分数**：`5`\n  *   **新品平均价格**：`$ 29.92`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`63`\n  *   **新品月均销售额**：`$1,994`\n  *   **平均重量**：`1.23 pounds (556 g)`\n  *   **平均体积**：`258.34 in³ (4,233 cm³)`\n  *   **平均毛利率**：`59.9%`\n  *   **卖家所属地**：`中国|58.0%`\n  *   **搜索购买比**：`9.2‰`\n\n---\n\n#### 🏆 🟢-12. Trophy Mounts (奖杯坐骑)\n\n- **完整市场路径**：`Sports & Outdoors › Hunting & Fishing › Hunting › Game Handling › Trophy Mounts  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$25.66`\n  *   **平均 Reviews (Avg Reviews)**：`346 个`\n  *   **物理重量 (Weight)**：`1.43 lbs`\n  *   **平均退货率 (Return Rate)**：`2.49%`\n  *   **平均毛利率 (Profit Margin)**：`58.0%`\n  *   **品牌集中度 (Brand Concentration)**：`71.2%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`44.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Hunting & Fishing › Hunting › Game Handling › Trophy Mounts  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 狩猎和钓鱼 › 惺惺相惜 › 游戏处理 › 奖杯坐骑`\n  *   **A+数量占比**：`52%`\n  *   **新品平均评分数**：`16`\n  *   **新品平均价格**：`$ 26.33`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`147`\n  *   **新品月均销售额**：`$3,954`\n  *   **平均重量**：`1.43 pounds (650 g)`\n  *   **平均体积**：`204.64 in³ (3,353 cm³)`\n  *   **平均毛利率**：`58%`\n  *   **卖家所属地**：`美国|56.0%`\n  *   **搜索购买比**：`9.9‰`\n\n---\n\n#### 🏆 🟢-13. Optics Accessories (光学配件)\n\n- **完整市场路径**：`Sports & Outdoors › Hunting & Fishing › Shooting › Optics › Optics Accessories  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$32.96`\n  *   **平均 Reviews (Avg Reviews)**：`357 个`\n  *   **物理重量 (Weight)**：`0.20 lbs`\n  *   **平均退货率 (Return Rate)**：`5.63%`\n  *   **平均毛利率 (Profit Margin)**：`65.62%`\n  *   **品牌集中度 (Brand Concentration)**：`53.4%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`44.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Hunting & Fishing › Shooting › Optics › Optics Accessories  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 狩猎和钓鱼 › 射击 › 光学元件 › 光学配件`\n  *   **A+数量占比**：`69%`\n  *   **新品平均评分数**：`20`\n  *   **新品平均价格**：`$ 15.25`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`159`\n  *   **新品月均销售额**：`$2,432`\n  *   **平均重量**：`0.20 pounds (89 g)`\n  *   **平均体积**：`35.69 in³ (585 cm³)`\n  *   **平均毛利率**：`65.62%`\n  *   **卖家所属地**：`美国|56.0%`\n  *   **搜索购买比**：`6.2‰`\n\n---\n\n#### 🏆 🟢-14. Fly Tying Equipment (绑蝇设备)\n\n- **完整市场路径**：`Sports & Outdoors › Hunting & Fishing › Fishing › Fly Fishing › Accessories › Fly Tying Equipment  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$20.69`\n  *   **平均 Reviews (Avg Reviews)**：`487 个`\n  *   **物理重量 (Weight)**：`0.30 lbs`\n  *   **平均退货率 (Return Rate)**：`2.84%`\n  *   **平均毛利率 (Profit Margin)**：`60.88%`\n  *   **品牌集中度 (Brand Concentration)**：`64.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`57.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Hunting & Fishing › Fishing › Fly Fishing › Accessories › Fly Tying Equipment  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 狩猎和钓鱼 › 钓鱼 › 飞钓 › 配件 › 绑蝇设备`\n  *   **A+数量占比**：`47%`\n  *   **新品平均评分数**：`9`\n  *   **新品平均价格**：`$ 15.64`\n  *   **新品平均星级**：`2.5`\n  *   **新品月均销量**：`97`\n  *   **新品月均销售额**：`$1,384`\n  *   **平均重量**：`0.30 pounds (138 g)`\n  *   **平均体积**：`40.01 in³ (656 cm³)`\n  *   **平均毛利率**：`60.88%`\n  *   **卖家所属地**：`中国|57.0%`\n  *   **搜索购买比**：`6.1‰`\n\n---\n\n#### 🏆 🟢-15. Line Spooling Accessories (线路绕线配件)\n\n- **完整市场路径**：`Sports & Outdoors › Hunting & Fishing › Fishing › Accessories › Line Spooling Accessories  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$20.79`\n  *   **平均 Reviews (Avg Reviews)**：`364 个`\n  *   **物理重量 (Weight)**：`1.98 lbs`\n  *   **平均退货率 (Return Rate)**：`3.66%`\n  *   **平均毛利率 (Profit Margin)**：`57.25%`\n  *   **品牌集中度 (Brand Concentration)**：`66.1%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`63.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Hunting & Fishing › Fishing › Accessories › Line Spooling Accessories  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 狩猎和钓鱼 › 钓鱼 › 配件 › 线路绕线配件`\n  *   **A+数量占比**：`66%`\n  *   **新品平均评分数**：`8`\n  *   **新品平均价格**：`$ 14.99`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`84`\n  *   **新品月均销售额**：`$1,286`\n  *   **平均重量**：`1.98 pounds (900 g)`\n  *   **平均体积**：`99.21 in³ (1,626 cm³)`\n  *   **平均毛利率**：`57.25%`\n  *   **卖家所属地**：`中国|63.0%`\n  *   **搜索购买比**：`5.5‰`\n\n---\n\n#### 🏆 🟢-16. Team Practice Vests (团队练习背心)\n\n- **完整市场路径**：`Sports & Outdoors › Sports & Outdoor Recreation Accessories › Field, Court & Rink Equipment › Team Practice Vests  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$33.17`\n  *   **平均 Reviews (Avg Reviews)**：`186 个`\n  *   **物理重量 (Weight)**：`2.21 lbs`\n  *   **平均退货率 (Return Rate)**：`6.66%`\n  *   **平均毛利率 (Profit Margin)**：`60.59%`\n  *   **品牌集中度 (Brand Concentration)**：`66.9%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`83.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports & Outdoor Recreation Accessories › Field, Court & Rink Equipment › Team Practice Vests  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 辅料 › 场，法院 › 团队练习背心`\n  *   **A+数量占比**：`83%`\n  *   **新品平均评分数**：`12`\n  *   **新品平均价格**：`$ 23.05`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`51`\n  *   **新品月均销售额**：`$1,198`\n  *   **平均重量**：`2.21 pounds (1,003 g)`\n  *   **平均体积**：`385.61 in³ (6,319 cm³)`\n  *   **平均毛利率**：`60.59%`\n  *   **卖家所属地**：`中国|83.0%`\n  *   **搜索购买比**：`7.5‰`\n\n---\n\n#### 🏆 🟢-17. Tools (工具)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Boating & Sailing › Boating › Maintenance Supplies › Tools  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$34.67`\n  *   **平均 Reviews (Avg Reviews)**：`185 个`\n  *   **物理重量 (Weight)**：`1.48 lbs`\n  *   **平均退货率 (Return Rate)**：`3.64%`\n  *   **平均毛利率 (Profit Margin)**：`63.27%`\n  *   **品牌集中度 (Brand Concentration)**：`45.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`66.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Boating & Sailing › Boating › Maintenance Supplies › Tools  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动与健身 › 划船和珊瑚 › 划船 › 维修器材 › 工具`\n  *   **A+数量占比**：`75%`\n  *   **新品平均评分数**：`9`\n  *   **新品平均价格**：`$ 30.21`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`157`\n  *   **新品月均销售额**：`$4,299`\n  *   **平均重量**：`1.48 pounds (671 g)`\n  *   **平均体积**：`100.43 in³ (1,646 cm³)`\n  *   **平均毛利率**：`63.27%`\n  *   **卖家所属地**：`中国|66.0%`\n  *   **搜索购买比**：`9.5‰`\n\n---\n\n#### 🏆 🟢-18. Reel Replacement Parts (卷盘更换部件)\n\n- **完整市场路径**：`Sports & Outdoors › Hunting & Fishing › Fishing › Reels & Accessories › Reel Replacement Parts  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$27.25`\n  *   **平均 Reviews (Avg Reviews)**：`108 个`\n  *   **物理重量 (Weight)**：`1.38 lbs`\n  *   **平均退货率 (Return Rate)**：`5.58%`\n  *   **平均毛利率 (Profit Margin)**：`61.36%`\n  *   **品牌集中度 (Brand Concentration)**：`71.3%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`70.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Hunting & Fishing › Fishing › Reels & Accessories › Reel Replacement Parts  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 狩猎和钓鱼 › 钓鱼 › 卷轴和配件 › 卷盘更换部件`\n  *   **A+数量占比**：`63%`\n  *   **新品平均评分数**：`14`\n  *   **新品平均价格**：`$ 16.91`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`127`\n  *   **新品月均销售额**：`$2,005`\n  *   **平均重量**：`1.38 pounds (627 g)`\n  *   **平均体积**：`26.05 in³ (427 cm³)`\n  *   **平均毛利率**：`61.36%`\n  *   **卖家所属地**：`中国|70.0%`\n  *   **搜索购买比**：`3.9‰`\n\n---\n\n#### 🏆 🟢-19. Shafts (杆身)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Golf › Golf Club Parts › Shafts  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$27.08`\n  *   **平均 Reviews (Avg Reviews)**：`95 个`\n  *   **物理重量 (Weight)**：`0.15 lbs`\n  *   **平均退货率 (Return Rate)**：`3.27%`\n  *   **平均毛利率 (Profit Margin)**：`60.87%`\n  *   **品牌集中度 (Brand Concentration)**：`62.3%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`59.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Golf › Golf Club Parts › Shafts  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动与健身 › 高尔夫球场 › 球杆 › 杆身`\n  *   **A+数量占比**：`36%`\n  *   **新品平均评分数**：`11`\n  *   **新品平均价格**：`$ 25.36`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`131`\n  *   **新品月均销售额**：`$3,296`\n  *   **平均重量**：`0.15 pounds (69 g)`\n  *   **平均体积**：`57.95 in³ (950 cm³)`\n  *   **平均毛利率**：`60.87%`\n  *   **卖家所属地**：`中国|59.0%`\n  *   **搜索购买比**：`4.8‰`\n\n---\n\n#### 🏆 🟢-20. Training Putters (练习推杆)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Golf › Training Equipment › Training Putters  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$30.90`\n  *   **平均 Reviews (Avg Reviews)**：`196 个`\n  *   **物理重量 (Weight)**：`1.38 lbs`\n  *   **平均退货率 (Return Rate)**：`4.05%`\n  *   **平均毛利率 (Profit Margin)**：`60.83%`\n  *   **品牌集中度 (Brand Concentration)**：`65.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`62.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Golf › Training Equipment › Training Putters  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动与健身 › 高尔夫球场 › 用品 训练 › 练习推杆`\n  *   **A+数量占比**：`79%`\n  *   **新品平均评分数**：`48`\n  *   **新品平均价格**：`$ 34.61`\n  *   **新品平均星级**：`3.9`\n  *   **新品月均销量**：`69`\n  *   **新品月均销售额**：`$1,982`\n  *   **平均重量**：`1.38 pounds (627 g)`\n  *   **平均体积**：`220.44 in³ (3,612 cm³)`\n  *   **平均毛利率**：`60.83%`\n  *   **卖家所属地**：`中国|62.0%`\n  *   **搜索购买比**：`8.0‰`\n\n---\n\n#### 🏆 🟢-21. Cups (杯子)\n\n- **完整市场路径**：`Home & Kitchen › Event & Party Supplies › Tableware › Cups  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$21.50`\n  *   **平均 Reviews (Avg Reviews)**：`467 个`\n  *   **物理重量 (Weight)**：`1.32 lbs`\n  *   **平均退货率 (Return Rate)**：`3.95%`\n  *   **平均毛利率 (Profit Margin)**：`51.58%`\n  *   **品牌集中度 (Brand Concentration)**：`59.9%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`66.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Event & Party Supplies › Tableware › Cups  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 活动 › 餐具 › 杯子`\n  *   **A+数量占比**：`61%`\n  *   **新品平均评分数**：`453`\n  *   **新品平均价格**：`$ 25.45`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`1,201`\n  *   **新品月均销售额**：`$31,541`\n  *   **平均重量**：`1.32 pounds (600 g)`\n  *   **平均体积**：`40.20 in³ (659 cm³)`\n  *   **平均毛利率**：`51.58%`\n  *   **卖家所属地**：`中国|66.0%`\n  *   **搜索购买比**：`8.6‰`\n\n---\n\n#### 🏆 🟢-22. Cardboard Cutouts (硬板纸模型)\n\n- **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Cardboard Cutouts  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$24.38`\n  *   **平均 Reviews (Avg Reviews)**：`295 个`\n  *   **物理重量 (Weight)**：`1.31 lbs`\n  *   **平均退货率 (Return Rate)**：`4.59%`\n  *   **平均毛利率 (Profit Margin)**：`60.41%`\n  *   **品牌集中度 (Brand Concentration)**：`61.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`62.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Cardboard Cutouts  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 家居装饰 › 家居装饰品 › 硬板纸模型`\n  *   **A+数量占比**：`76%`\n  *   **新品平均评分数**：`27`\n  *   **新品平均价格**：`$ 22.88`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`482`\n  *   **新品月均销售额**：`$11,431`\n  *   **平均重量**：`1.31 pounds (594 g)`\n  *   **平均体积**：`337.59 in³ (5,532 cm³)`\n  *   **平均毛利率**：`60.41%`\n  *   **卖家所属地**：`中国|62.0%`\n  *   **搜索购买比**：`6.4‰`\n\n---\n\n#### 🏆 🟢-23. Bar Tools & Drinkware (酒吧工具)\n\n- **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Dining & Entertaining › Bar Tools & Drinkware  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$26.80`\n  *   **平均 Reviews (Avg Reviews)**：`376 个`\n  *   **物理重量 (Weight)**：`1.51 lbs`\n  *   **平均退货率 (Return Rate)**：`5.44%`\n  *   **平均毛利率 (Profit Margin)**：`58.57%`\n  *   **品牌集中度 (Brand Concentration)**：`55.9%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`62.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Dining & Entertaining › Bar Tools & Drinkware  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 厨房 › 美食购物 › 酒吧工具`\n  *   **A+数量占比**：`74%`\n  *   **新品平均评分数**：`22`\n  *   **新品平均价格**：`$ 19.78`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`119`\n  *   **新品月均销售额**：`$2,618`\n  *   **平均重量**：`1.51 pounds (683 g)`\n  *   **平均体积**：`315.76 in³ (5,174 cm³)`\n  *   **平均毛利率**：`58.57%`\n  *   **卖家所属地**：`中国|62.0%`\n  *   **搜索购买比**：`6.6‰`\n\n---\n\n#### 🏆 🟢-24. Steam Cleaner & Steam Mop Replacement Parts (蒸汽清洗机)\n\n- **完整市场路径**：`Home & Kitchen › Vacuums & Floor Care › Steam Cleaners, Steam Mops & Accessories › Steam Cleaner & Steam Mop Replacement Parts  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$21.27`\n  *   **平均 Reviews (Avg Reviews)**：`363 个`\n  *   **物理重量 (Weight)**：`0.82 lbs`\n  *   **平均退货率 (Return Rate)**：`4.59%`\n  *   **平均毛利率 (Profit Margin)**：`57.08%`\n  *   **品牌集中度 (Brand Concentration)**：`69.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`75.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Vacuums & Floor Care › Steam Cleaners, Steam Mops & Accessories › Steam Cleaner & Steam Mop Replacement Parts  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 吸尘器 › 蒸汽清洗机，蒸汽拖把 › 蒸汽清洗机`\n  *   **A+数量占比**：`60%`\n  *   **新品平均评分数**：`15`\n  *   **新品平均价格**：`$ 25.99`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`167`\n  *   **新品月均销售额**：`$6,439`\n  *   **平均重量**：`0.82 pounds (372 g)`\n  *   **平均体积**：`181.19 in³ (2,969 cm³)`\n  *   **平均毛利率**：`57.08%`\n  *   **卖家所属地**：`中国|75.0%`\n  *   **搜索购买比**：`12.3‰`\n\n---\n\n#### 🏆 🟢-25. Tortilla Servers (玉米饼服务员)\n\n- **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Dining & Entertaining › Dinnerware & Serveware › Serveware › Tortilla Servers  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$21.77`\n  *   **平均 Reviews (Avg Reviews)**：`439 个`\n  *   **物理重量 (Weight)**：`1.74 lbs`\n  *   **平均退货率 (Return Rate)**：`6.26%`\n  *   **平均毛利率 (Profit Margin)**：`53.32%`\n  *   **品牌集中度 (Brand Concentration)**：`58.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`43.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Dining & Entertaining › Dinnerware & Serveware › Serveware › Tortilla Servers  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 厨房 › 美食购物 › 小甜甜 › 碗碟 › 玉米饼服务员`\n  *   **A+数量占比**：`69%`\n  *   **新品平均评分数**：`14`\n  *   **新品平均价格**：`$ 21.45`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`62`\n  *   **新品月均销售额**：`$1,343`\n  *   **平均重量**：`1.74 pounds (788 g)`\n  *   **平均体积**：`140.33 in³ (2,300 cm³)`\n  *   **平均毛利率**：`53.32%`\n  *   **卖家所属地**：`中国|43.0%`\n  *   **搜索购买比**：`6.5‰`\n\n---\n\n#### 🏆 🟢-26. Devotional Candles (祈祷蜡烛)\n\n- **完整市场路径**：`Home & Kitchen › Home Décor Products › Candles & Holders › Candles › Specialty Candles › Devotional Candles  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$26.05`\n  *   **平均 Reviews (Avg Reviews)**：`196 个`\n  *   **物理重量 (Weight)**：`1.77 lbs`\n  *   **平均退货率 (Return Rate)**：`4.08%`\n  *   **平均毛利率 (Profit Margin)**：`60.33%`\n  *   **品牌集中度 (Brand Concentration)**：`62.4%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`55.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Home Décor Products › Candles & Holders › Candles › Specialty Candles › Devotional Candles  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 家居装饰 › 蜡烛 › 蜡烛 › 特种蜡烛 › 祈祷蜡烛`\n  *   **A+数量占比**：`48%`\n  *   **新品平均评分数**：`8`\n  *   **新品平均价格**：`$ 28.69`\n  *   **新品平均星级**：`4.1`\n  *   **新品月均销量**：`100`\n  *   **新品月均销售额**：`$2,888`\n  *   **平均重量**：`1.77 pounds (801 g)`\n  *   **平均体积**：`13.46 in³ (221 cm³)`\n  *   **平均毛利率**：`60.33%`\n  *   **卖家所属地**：`美国|45.0%`\n  *   **搜索购买比**：`5.8‰`\n\n---\n\n#### 🏆 🟢-27. Serveware (碗碟)\n\n- **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Dining & Entertaining › Novelty › Serveware  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$21.82`\n  *   **平均 Reviews (Avg Reviews)**：`416 个`\n  *   **物理重量 (Weight)**：`1.47 lbs`\n  *   **平均退货率 (Return Rate)**：`5.33%`\n  *   **平均毛利率 (Profit Margin)**：`55.88%`\n  *   **品牌集中度 (Brand Concentration)**：`57.5%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`63.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Dining & Entertaining › Novelty › Serveware  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 厨房 › 美食购物 › 新颖性 › 碗碟`\n  *   **A+数量占比**：`57%`\n  *   **新品平均评分数**：`9`\n  *   **新品平均价格**：`$ 24.12`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`113`\n  *   **新品月均销售额**：`$2,459`\n  *   **平均重量**：`1.47 pounds (667 g)`\n  *   **平均体积**：`253.36 in³ (4,152 cm³)`\n  *   **平均毛利率**：`55.88%`\n  *   **卖家所属地**：`中国|63.0%`\n  *   **搜索购买比**：`6.6‰`\n\n---\n\n#### 🏆 🟢-28. Lighting Products (水底灯)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Pools, Hot Tubs & Supplies › Parts & Accessories › Lighting Products  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$47.85`\n  *   **平均 Reviews (Avg Reviews)**：`482 个`\n  *   **物理重量 (Weight)**：`1.72 lbs`\n  *   **平均退货率 (Return Rate)**：`6.75%`\n  *   **平均毛利率 (Profit Margin)**：`66.79%`\n  *   **品牌集中度 (Brand Concentration)**：`51.9%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`74.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Pools, Hot Tubs & Supplies › Parts & Accessories › Lighting Products  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 泳池及配件 › 零配件 › 水底灯`\n  *   **A+数量占比**：`95%`\n  *   **新品平均评分数**：`82`\n  *   **新品平均价格**：`$ 47.76`\n  *   **新品平均星级**：`4.1`\n  *   **新品月均销量**：`1,236`\n  *   **新品月均销售额**：`$66,017`\n  *   **平均重量**：`1.72 pounds (781 g)`\n  *   **平均体积**：`633.46 in³ (10,381 cm³)`\n  *   **平均毛利率**：`66.79%`\n  *   **卖家所属地**：`中国|74.0%`\n  *   **搜索购买比**：`5.5‰`\n\n---\n\n#### 🏆 🟢-29. Nozzles (喷嘴)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Outdoor Power Tools › Replacement Parts & Accessories › Pressure Washer Parts & Accessories › Nozzles  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$26.24`\n  *   **平均 Reviews (Avg Reviews)**：`490 个`\n  *   **物理重量 (Weight)**：`0.44 lbs`\n  *   **平均退货率 (Return Rate)**：`2.63%`\n  *   **平均毛利率 (Profit Margin)**：`63.66%`\n  *   **品牌集中度 (Brand Concentration)**：`53.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`74.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Outdoor Power Tools › Replacement Parts & Accessories › Pressure Washer Parts & Accessories › Nozzles  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 电动工具 › 替换件和配件 › 高压清洗机配件 › 喷嘴`\n  *   **A+数量占比**：`71%`\n  *   **新品平均评分数**：`55`\n  *   **新品平均价格**：`$ 32.04`\n  *   **新品平均星级**：`2.6`\n  *   **新品月均销量**：`839`\n  *   **新品月均销售额**：`$23,205`\n  *   **平均重量**：`0.44 pounds (200 g)`\n  *   **平均体积**：`70.03 in³ (1,148 cm³)`\n  *   **平均毛利率**：`63.66%`\n  *   **卖家所属地**：`中国|74.0%`\n  *   **搜索购买比**：`13.5‰`\n\n---\n\n#### 🏆 🟢-30. Wind Spinners (Wind Spinners)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Garden Sculptures & Statues › Wind Sculptures & Spinners › Wind Spinners  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$31.43`\n  *   **平均 Reviews (Avg Reviews)**：`472 个`\n  *   **物理重量 (Weight)**：`2.36 lbs`\n  *   **平均退货率 (Return Rate)**：`3.09%`\n  *   **平均毛利率 (Profit Margin)**：`59.7%`\n  *   **品牌集中度 (Brand Concentration)**：`54.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`85.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Garden Sculptures & Statues › Wind Sculptures & Spinners › Wind Spinners  市场分析`\n  *   **市场路径(中文)**：`Patio, Lawn & Garden › Outdoor Décor › Garden Sculptures & Statues › Wind Sculptures & Spinners › Wind Spinners`\n  *   **A+数量占比**：`89%`\n  *   **新品平均评分数**：`51`\n  *   **新品平均价格**：`$ 21.94`\n  *   **新品平均星级**：`3.9`\n  *   **新品月均销量**：`749`\n  *   **新品月均销售额**：`$13,820`\n  *   **平均重量**：`2.36 pounds (1,070 g)`\n  *   **平均体积**：`269.46 in³ (4,416 cm³)`\n  *   **平均毛利率**：`59.7%`\n  *   **卖家所属地**：`中国|85.0%`\n  *   **搜索购买比**：`6.6‰`\n\n---\n\n#### 🏆 🟢-31. Attachments (附件)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Outdoor Power Tools › Replacement Parts & Accessories › String Trimmer Parts & Accessories › Attachments  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$39.59`\n  *   **平均 Reviews (Avg Reviews)**：`222 个`\n  *   **物理重量 (Weight)**：`2.19 lbs`\n  *   **平均退货率 (Return Rate)**：`3.07%`\n  *   **平均毛利率 (Profit Margin)**：`59.78%`\n  *   **品牌集中度 (Brand Concentration)**：`72.2%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`78.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Outdoor Power Tools › Replacement Parts & Accessories › String Trimmer Parts & Accessories › Attachments  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 电动工具 › 替换件和配件 › 打草机零配件 › 附件`\n  *   **A+数量占比**：`67%`\n  *   **新品平均评分数**：`16`\n  *   **新品平均价格**：`$ 23.81`\n  *   **新品平均星级**：`4.1`\n  *   **新品月均销量**：`179`\n  *   **新品月均销售额**：`$3,913`\n  *   **平均重量**：`2.19 pounds (995 g)`\n  *   **平均体积**：`328.07 in³ (5,376 cm³)`\n  *   **平均毛利率**：`59.78%`\n  *   **卖家所属地**：`中国|78.0%`\n  *   **搜索购买比**：`14.0‰`\n\n---\n\n#### 🏆 🟢-32. Hoes (园艺锄)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Hand Tools › Hoes  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$27.68`\n  *   **平均 Reviews (Avg Reviews)**：`319 个`\n  *   **物理重量 (Weight)**：`2.41 lbs`\n  *   **平均退货率 (Return Rate)**：`3.1%`\n  *   **平均毛利率 (Profit Margin)**：`48.96%`\n  *   **品牌集中度 (Brand Concentration)**：`51.9%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`72.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Hand Tools › Hoes  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 园艺和微笑护理 › 手动园艺工具 › 园艺锄`\n  *   **A+数量占比**：`79%`\n  *   **新品平均评分数**：`22`\n  *   **新品平均价格**：`$ 23.95`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`128`\n  *   **新品月均销售额**：`$3,155`\n  *   **平均重量**：`2.41 pounds (1,094 g)`\n  *   **平均体积**：`787.26 in³ (12,901 cm³)`\n  *   **平均毛利率**：`48.96%`\n  *   **卖家所属地**：`中国|72.0%`\n  *   **搜索购买比**：`8.7‰`\n\n---\n\n#### 🏆 🟢-33. Pond Lights (池塘灯)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Water Gardens & Ponds › Pond Lights  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$46.62`\n  *   **平均 Reviews (Avg Reviews)**：`245 个`\n  *   **物理重量 (Weight)**：`1.64 lbs`\n  *   **平均退货率 (Return Rate)**：`6.15%`\n  *   **平均毛利率 (Profit Margin)**：`66.66%`\n  *   **品牌集中度 (Brand Concentration)**：`67.1%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`75.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Water Gardens & Ponds › Pond Lights  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 彩绘装饰 › 池塘、喷泉 › 池塘灯`\n  *   **A+数量占比**：`75%`\n  *   **新品平均评分数**：`21`\n  *   **新品平均价格**：`$ 52.55`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`191`\n  *   **新品月均销售额**：`$8,963`\n  *   **平均重量**：`1.64 pounds (745 g)`\n  *   **平均体积**：`141.88 in³ (2,325 cm³)`\n  *   **平均毛利率**：`66.66%`\n  *   **卖家所属地**：`中国|75.0%`\n  *   **搜索购买比**：`6.1‰`\n\n---\n\n#### 🏆 🟢-34. Feeders (喂食器)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Backyard Birding & Wildlife › Squirrels › Feeders  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$25.06`\n  *   **平均 Reviews (Avg Reviews)**：`217 个`\n  *   **物理重量 (Weight)**：`2.20 lbs`\n  *   **平均退货率 (Return Rate)**：`2.83%`\n  *   **平均毛利率 (Profit Margin)**：`54.24%`\n  *   **品牌集中度 (Brand Concentration)**：`67.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`70.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Backyard Birding & Wildlife › Squirrels › Feeders  市场分析`\n  *   **市场路径(中文)**：`Patio, Lawn & Garden › Backyard Birding & Wildlife › Squirrels › 喂食器`\n  *   **A+数量占比**：`73%`\n  *   **新品平均评分数**：`26`\n  *   **新品平均价格**：`$ 24.07`\n  *   **新品平均星级**：`4.1`\n  *   **新品月均销量**：`148`\n  *   **新品月均销售额**：`$3,303`\n  *   **平均重量**：`2.20 pounds (998 g)`\n  *   **平均体积**：`773.35 in³ (12,673 cm³)`\n  *   **平均毛利率**：`54.24%`\n  *   **卖家所属地**：`中国|70.0%`\n  *   **搜索购买比**：`10.2‰`\n\n---\n\n#### 🏆 🟢-35. Energy Controllers (能源控制器)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Generators & Portable Power › Solar & Wind Power › Energy Controllers  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$81.15`\n  *   **平均 Reviews (Avg Reviews)**：`388 个`\n  *   **物理重量 (Weight)**：`2.11 lbs`\n  *   **平均退货率 (Return Rate)**：`7.01%`\n  *   **平均毛利率 (Profit Margin)**：`71.21%`\n  *   **品牌集中度 (Brand Concentration)**：`70.3%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`66.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Generators & Portable Power › Solar & Wind Power › Energy Controllers  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 发电机和便携式电源 › 太阳能和风力发电 › 能源控制器`\n  *   **A+数量占比**：`86%`\n  *   **新品平均评分数**：`21`\n  *   **新品平均价格**：`$ 35.99`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`149`\n  *   **新品月均销售额**：`$4,841`\n  *   **平均重量**：`2.11 pounds (957 g)`\n  *   **平均体积**：`231.45 in³ (3,793 cm³)`\n  *   **平均毛利率**：`71.21%`\n  *   **卖家所属地**：`中国|66.0%`\n  *   **搜索购买比**：`6.2‰`\n\n---\n\n#### 🏆 🟢-36. Diverters (分流器)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Watering Equipment › Rain Barrels & Accessories › Diverters  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$26.61`\n  *   **平均 Reviews (Avg Reviews)**：`205 个`\n  *   **物理重量 (Weight)**：`1.58 lbs`\n  *   **平均退货率 (Return Rate)**：`3.4%`\n  *   **平均毛利率 (Profit Margin)**：`58.27%`\n  *   **品牌集中度 (Brand Concentration)**：`70.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`79.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Watering Equipment › Rain Barrels & Accessories › Diverters  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 园艺和微笑护理 › 浇灌工具 › 雨水收集桶和配件 › 分流器`\n  *   **A+数量占比**：`71%`\n  *   **新品平均评分数**：`4`\n  *   **新品平均价格**：`$ 27.09`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`63`\n  *   **新品月均销售额**：`$1,832`\n  *   **平均重量**：`1.58 pounds (717 g)`\n  *   **平均体积**：`215.72 in³ (3,535 cm³)`\n  *   **平均毛利率**：`58.27%`\n  *   **卖家所属地**：`中国|79.0%`\n  *   **搜索购买比**：`8.2‰`\n\n---\n\n#### 🏆 🟢-37. Bats (蝙蝠)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Backyard Birding & Wildlife › Bats  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$32.07`\n  *   **平均 Reviews (Avg Reviews)**：`342 个`\n  *   **物理重量 (Weight)**：`2.10 lbs`\n  *   **平均退货率 (Return Rate)**：`2.61%`\n  *   **平均毛利率 (Profit Margin)**：`59.36%`\n  *   **品牌集中度 (Brand Concentration)**：`56.1%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`47.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Backyard Birding & Wildlife › Bats  市场分析`\n  *   **市场路径(中文)**：`Patio, Lawn & Garden › Backyard Birding & Wildlife › 蝙蝠`\n  *   **A+数量占比**：`65%`\n  *   **新品平均评分数**：`7`\n  *   **新品平均价格**：`$ 35.74`\n  *   **新品平均星级**：`3.7`\n  *   **新品月均销量**：`84`\n  *   **新品月均销售额**：`$2,756`\n  *   **平均重量**：`2.10 pounds (953 g)`\n  *   **平均体积**：`465.25 in³ (7,624 cm³)`\n  *   **平均毛利率**：`59.36%`\n  *   **卖家所属地**：`中国|47.0%`\n  *   **搜索购买比**：`14.5‰`\n\n---\n\n#### 🏆 🟢-38. Gazing Balls (反射球)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Garden Sculptures & Statues › Gazing Balls  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$38.09`\n  *   **平均 Reviews (Avg Reviews)**：`292 个`\n  *   **物理重量 (Weight)**：`2.26 lbs`\n  *   **平均退货率 (Return Rate)**：`4.79%`\n  *   **平均毛利率 (Profit Margin)**：`56.57%`\n  *   **品牌集中度 (Brand Concentration)**：`63.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`77.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Garden Sculptures & Statues › Gazing Balls  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 彩绘装饰 › 雕塑、雕像 › 反射球`\n  *   **A+数量占比**：`74%`\n  *   **新品平均评分数**：`22`\n  *   **新品平均价格**：`$ 49.28`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`135`\n  *   **新品月均销售额**：`$6,932`\n  *   **平均重量**：`2.26 pounds (1,024 g)`\n  *   **平均体积**：`741.91 in³ (12,158 cm³)`\n  *   **平均毛利率**：`56.57%`\n  *   **卖家所属地**：`中国|77.0%`\n  *   **搜索购买比**：`4.9‰`\n\n---\n\n#### 🏆 🟢-39. Machetes (弯刀)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Hand Tools › Machetes  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$32.55`\n  *   **平均 Reviews (Avg Reviews)**：`455 个`\n  *   **物理重量 (Weight)**：`1.36 lbs`\n  *   **平均退货率 (Return Rate)**：`2.54%`\n  *   **平均毛利率 (Profit Margin)**：`56.85%`\n  *   **品牌集中度 (Brand Concentration)**：`64.9%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`46.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Hand Tools › Machetes  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 园艺和微笑护理 › 手动园艺工具 › 弯刀`\n  *   **A+数量占比**：`69%`\n  *   **新品平均评分数**：`9`\n  *   **新品平均价格**：`$ 35.13`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`94`\n  *   **新品月均销售额**：`$3,270`\n  *   **平均重量**：`1.36 pounds (615 g)`\n  *   **平均体积**：`195.02 in³ (3,196 cm³)`\n  *   **平均毛利率**：`56.85%`\n  *   **卖家所属地**：`美国|54.0%`\n  *   **搜索购买比**：`3.7‰`\n\n---\n\n#### 🏆 🟢-40. Indoor Air Quality Meters (室内空气质量测试仪)\n\n- **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Airflow & Air Quality › Indoor Air Quality Meters  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$72.17`\n  *   **平均 Reviews (Avg Reviews)**：`303 个`\n  *   **物理重量 (Weight)**：`0.53 lbs`\n  *   **平均退货率 (Return Rate)**：`7.8%`\n  *   **平均毛利率 (Profit Margin)**：`77.64%`\n  *   **品牌集中度 (Brand Concentration)**：`70.2%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`63.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Airflow & Air Quality › Indoor Air Quality Meters  市场分析`\n  *   **市场路径(中文)**：`工业类 › 测试，测量 › 气流 › 室内空气质量测试仪`\n  *   **A+数量占比**：`84%`\n  *   **新品平均评分数**：`31`\n  *   **新品平均价格**：`$ 66.66`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`354`\n  *   **新品月均销售额**：`$24,648`\n  *   **平均重量**：`0.53 pounds (239 g)`\n  *   **平均体积**：`73.14 in³ (1,199 cm³)`\n  *   **平均毛利率**：`77.64%`\n  *   **卖家所属地**：`中国|63.0%`\n  *   **搜索购买比**：`8.6‰`\n\n---\n\n#### 🏆 🟢-41. Grinding Discs (磨片)\n\n- **完整市场路径**：`Industrial & Scientific › Abrasive & Finishing Products › Abrasive Wheels & Discs › Grinding Discs  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$23.53`\n  *   **平均 Reviews (Avg Reviews)**：`360 个`\n  *   **物理重量 (Weight)**：`2.02 lbs`\n  *   **平均退货率 (Return Rate)**：`2.13%`\n  *   **平均毛利率 (Profit Margin)**：`60.83%`\n  *   **品牌集中度 (Brand Concentration)**：`46.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`81.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Abrasive & Finishing Products › Abrasive Wheels & Discs › Grinding Discs  市场分析`\n  *   **市场路径(中文)**：`工业类 › 磨削加工 › 研磨砂轮 › 磨片`\n  *   **A+数量占比**：`82%`\n  *   **新品平均评分数**：`15`\n  *   **新品平均价格**：`$ 22.82`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`397`\n  *   **新品月均销售额**：`$7,480`\n  *   **平均重量**：`2.02 pounds (918 g)`\n  *   **平均体积**：`13.04 in³ (214 cm³)`\n  *   **平均毛利率**：`60.83%`\n  *   **卖家所属地**：`中国|81.0%`\n  *   **搜索购买比**：`15.0‰`\n\n---\n\n#### 🏆 🟢-42. Network & Cable Testers (网络)\n\n- **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Network & Cable Testers  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$117.90`\n  *   **平均 Reviews (Avg Reviews)**：`422 个`\n  *   **物理重量 (Weight)**：`0.60 lbs`\n  *   **平均退货率 (Return Rate)**：`5.23%`\n  *   **平均毛利率 (Profit Margin)**：`72.48%`\n  *   **品牌集中度 (Brand Concentration)**：`63.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`68.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Network & Cable Testers  市场分析`\n  *   **市场路径(中文)**：`工业类 › 测试，测量 › 网络`\n  *   **A+数量占比**：`93%`\n  *   **新品平均评分数**：`54`\n  *   **新品平均价格**：`$ 54.3`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`257`\n  *   **新品月均销售额**：`$9,725`\n  *   **平均重量**：`0.60 pounds (271 g)`\n  *   **平均体积**：`101.43 in³ (1,662 cm³)`\n  *   **平均毛利率**：`72.48%`\n  *   **卖家所属地**：`中国|68.0%`\n  *   **搜索购买比**：`9.3‰`\n\n---\n\n#### 🏆 🟢-43. 3D Printer Platforms (3D打印机平台)\n\n- **完整市场路径**：`Industrial & Scientific › Additive Manufacturing Products › 3D Printer Parts & Accessories › 3D Printer Platforms  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$23.55`\n  *   **平均 Reviews (Avg Reviews)**：`216 个`\n  *   **物理重量 (Weight)**：`2.00 lbs`\n  *   **平均退货率 (Return Rate)**：`4.56%`\n  *   **平均毛利率 (Profit Margin)**：`64.67%`\n  *   **品牌集中度 (Brand Concentration)**：`71.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`68.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Additive Manufacturing Products › 3D Printer Parts & Accessories › 3D Printer Platforms  市场分析`\n  *   **市场路径(中文)**：`工业类 › 增材制造产品 › 3D打印机零件 › 3D打印机平台`\n  *   **A+数量占比**：`58%`\n  *   **新品平均评分数**：`29`\n  *   **新品平均价格**：`$ 33.34`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`177`\n  *   **新品月均销售额**：`$5,101`\n  *   **平均重量**：`2.00 pounds (907 g)`\n  *   **平均体积**：`778.25 in³ (12,753 cm³)`\n  *   **平均毛利率**：`64.67%`\n  *   **卖家所属地**：`中国|68.0%`\n  *   **搜索购买比**：`8.4‰`\n\n---\n\n#### 🏆 🟢-44. Angle Grinder Wheels (角磨机砂轮)\n\n- **完整市场路径**：`Industrial & Scientific › Abrasive & Finishing Products › Abrasive Wheels & Discs › Angle Grinder Wheels  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$23.91`\n  *   **平均 Reviews (Avg Reviews)**：`159 个`\n  *   **物理重量 (Weight)**：`1.54 lbs`\n  *   **平均退货率 (Return Rate)**：`2.41%`\n  *   **平均毛利率 (Profit Margin)**：`64.94%`\n  *   **品牌集中度 (Brand Concentration)**：`59.9%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`79.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Abrasive & Finishing Products › Abrasive Wheels & Discs › Angle Grinder Wheels  市场分析`\n  *   **市场路径(中文)**：`工业类 › 磨削加工 › 研磨砂轮 › 角磨机砂轮`\n  *   **A+数量占比**：`62%`\n  *   **新品平均评分数**：`3`\n  *   **新品平均价格**：`$ 23.37`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`227`\n  *   **新品月均销售额**：`$4,558`\n  *   **平均重量**：`1.54 pounds (700 g)`\n  *   **平均体积**：`51.82 in³ (849 cm³)`\n  *   **平均毛利率**：`64.94%`\n  *   **卖家所属地**：`中国|79.0%`\n  *   **搜索购买比**：`15.4‰`\n\n---\n\n#### 🏆 🟢-45. Float Valves (浮阀)\n\n- **完整市场路径**：`Industrial & Scientific › Hydraulics, Pneumatics & Plumbing › Fittings › Valves › Float Valves  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$20.45`\n  *   **平均 Reviews (Avg Reviews)**：`182 个`\n  *   **物理重量 (Weight)**：`0.64 lbs`\n  *   **平均退货率 (Return Rate)**：`4.44%`\n  *   **平均毛利率 (Profit Margin)**：`61.06%`\n  *   **品牌集中度 (Brand Concentration)**：`42.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`67.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Hydraulics, Pneumatics & Plumbing › Fittings › Valves › Float Valves  市场分析`\n  *   **市场路径(中文)**：`工业类 › 液压系统、气动系统 › 配件 › 阀门 › 浮阀`\n  *   **A+数量占比**：`72%`\n  *   **新品平均评分数**：`21`\n  *   **新品平均价格**：`$ 21.59`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`159`\n  *   **新品月均销售额**：`$3,343`\n  *   **平均重量**：`0.64 pounds (288 g)`\n  *   **平均体积**：`104.63 in³ (1,715 cm³)`\n  *   **平均毛利率**：`61.06%`\n  *   **卖家所属地**：`中国|67.0%`\n  *   **搜索购买比**：`15.7‰`\n\n---\n\n#### 🏆 🟢-46. Leak Detection Tools (泄漏检测工具)\n\n- **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Inspection & Analysis › Leak Detection Tools  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$76.34`\n  *   **平均 Reviews (Avg Reviews)**：`154 个`\n  *   **物理重量 (Weight)**：`1.47 lbs`\n  *   **平均退货率 (Return Rate)**：`4.3%`\n  *   **平均毛利率 (Profit Margin)**：`69.39%`\n  *   **品牌集中度 (Brand Concentration)**：`55.1%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`48.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Inspection & Analysis › Leak Detection Tools  市场分析`\n  *   **市场路径(中文)**：`工业类 › 测试，测量 › 检查 › 泄漏检测工具`\n  *   **A+数量占比**：`65%`\n  *   **新品平均评分数**：`28`\n  *   **新品平均价格**：`$ 84.5`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`341`\n  *   **新品月均销售额**：`$11,474`\n  *   **平均重量**：`1.47 pounds (667 g)`\n  *   **平均体积**：`195.71 in³ (3,207 cm³)`\n  *   **平均毛利率**：`69.39%`\n  *   **卖家所属地**：`美国|52.0%`\n  *   **搜索购买比**：`12.8‰`\n\n---\n\n#### 🏆 🟢-47. Machine Tool Inspection Mirrors (机床检测镜)\n\n- **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Inspection & Analysis › Optical Inspection Apparatus › Machine Tool Inspection Mirrors  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$21.53`\n  *   **平均 Reviews (Avg Reviews)**：`261 个`\n  *   **物理重量 (Weight)**：`0.68 lbs`\n  *   **平均退货率 (Return Rate)**：`2.09%`\n  *   **平均毛利率 (Profit Margin)**：`59.14%`\n  *   **品牌集中度 (Brand Concentration)**：`69.2%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`78.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Inspection & Analysis › Optical Inspection Apparatus › Machine Tool Inspection Mirrors  市场分析`\n  *   **市场路径(中文)**：`工业类 › 测试，测量 › 检查 › 光学检测仪器 › 机床检测镜`\n  *   **A+数量占比**：`48%`\n  *   **新品平均评分数**：`1`\n  *   **新品平均价格**：`$ 23.63`\n  *   **新品平均星级**：`4.0`\n  *   **新品月均销量**：`25`\n  *   **新品月均销售额**：`$494`\n  *   **平均重量**：`0.68 pounds (308 g)`\n  *   **平均体积**：`334.92 in³ (5,488 cm³)`\n  *   **平均毛利率**：`59.14%`\n  *   **卖家所属地**：`中国|78.0%`\n  *   **搜索购买比**：`16.0‰`\n\n---\n\n#### 🏆 🟢-48. Lab Supply Dispensers (实验室用品分配器)\n\n- **完整市场路径**：`Industrial & Scientific › Lab & Scientific Products › Lab Furniture › Lab Supply Dispensers  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$29.80`\n  *   **平均 Reviews (Avg Reviews)**：`171 个`\n  *   **物理重量 (Weight)**：`2.19 lbs`\n  *   **平均退货率 (Return Rate)**：`4.45%`\n  *   **平均毛利率 (Profit Margin)**：`58.21%`\n  *   **品牌集中度 (Brand Concentration)**：`62.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`58.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Lab & Scientific Products › Lab Furniture › Lab Supply Dispensers  市场分析`\n  *   **市场路径(中文)**：`工业类 › 实验室 › 实验室家具 › 实验室用品分配器`\n  *   **A+数量占比**：`68%`\n  *   **新品平均评分数**：`17`\n  *   **新品平均价格**：`$ 30.53`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`103`\n  *   **新品月均销售额**：`$1,948`\n  *   **平均重量**：`2.19 pounds (994 g)`\n  *   **平均体积**：`468.03 in³ (7,670 cm³)`\n  *   **平均毛利率**：`58.21%`\n  *   **卖家所属地**：`中国|58.0%`\n  *   **搜索购买比**：`19.5‰`\n\n---\n\n#### 🏆 🟢-49. Unmanned Aerial Vehicles) (UAVs)\n\n- **完整市场路径**：`Industrial & Scientific › Robotics › Unmanned Aerial Vehicles (UAVs)  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$84.75`\n  *   **平均 Reviews (Avg Reviews)**：`145 个`\n  *   **物理重量 (Weight)**：`0.62 lbs`\n  *   **平均退货率 (Return Rate)**：`7.1%`\n  *   **平均毛利率 (Profit Margin)**：`67.64%`\n  *   **品牌集中度 (Brand Concentration)**：`69.2%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`81.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Robotics › Unmanned Aerial Vehicles (UAVs)  市场分析`\n  *   **市场路径(中文)**：`工业类 › 机器人技术 › 无人驾驶飞行器 (UAV)`\n  *   **A+数量占比**：`57%`\n  *   **新品平均评分数**：`12`\n  *   **新品平均价格**：`$ 305.68`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`84`\n  *   **新品月均销售额**：`$31,178`\n  *   **平均重量**：`0.62 pounds (280 g)`\n  *   **平均体积**：`144.11 in³ (2,361 cm³)`\n  *   **平均毛利率**：`67.64%`\n  *   **卖家所属地**：`中国|81.0%`\n  *   **搜索购买比**：`3.4‰`\n\n---\n\n#### 🏆 🟢-50. Hose Clamping Tools (软管夹紧工具)\n\n- **完整市场路径**：`Industrial & Scientific › Hydraulics, Pneumatics & Plumbing › Fittings › Fitting Clamps › Hose Fitting Clamps › Hose Clamping Tools  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$21.11`\n  *   **平均 Reviews (Avg Reviews)**：`212 个`\n  *   **物理重量 (Weight)**：`1.15 lbs`\n  *   **平均退货率 (Return Rate)**：`3.61%`\n  *   **平均毛利率 (Profit Margin)**：`56.31%`\n  *   **品牌集中度 (Brand Concentration)**：`69.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`79.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Hydraulics, Pneumatics & Plumbing › Fittings › Fitting Clamps › Hose Fitting Clamps › Hose Clamping Tools  市场分析`\n  *   **市场路径(中文)**：`工业类 › 液压系统、气动系统 › 配件 › 安装夹具 › 管接头夹 › 软管夹紧工具`\n  *   **A+数量占比**：`50%`\n  *   **新品平均评分数**：`15`\n  *   **新品平均价格**：`$ 14.75`\n  *   **新品平均星级**：`3.9`\n  *   **新品月均销量**：`65`\n  *   **新品月均销售额**：`$1,066`\n  *   **平均重量**：`1.15 pounds (524 g)`\n  *   **平均体积**：`70.36 in³ (1,153 cm³)`\n  *   **平均毛利率**：`56.31%`\n  *   **卖家所属地**：`中国|79.0%`\n  *   **搜索购买比**：`10.5‰`\n\n---\n\n#### 🏆 🟢-51. Tactile Switches (触摸式开关)\n\n- **完整市场路径**：`Industrial & Scientific › Industrial Electrical › Controls & Indicators › Industrial Switches › Tactile Switches  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$26.62`\n  *   **平均 Reviews (Avg Reviews)**：`57 个`\n  *   **物理重量 (Weight)**：`0.29 lbs`\n  *   **平均退货率 (Return Rate)**：`7.31%`\n  *   **平均毛利率 (Profit Margin)**：`57.65%`\n  *   **品牌集中度 (Brand Concentration)**：`72.2%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`95.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Industrial Electrical › Controls & Indicators › Industrial Switches › Tactile Switches  市场分析`\n  *   **市场路径(中文)**：`工业类 › 工业电气 › 控制措施 › 工业开关 › 触摸式开关`\n  *   **A+数量占比**：`42%`\n  *   **新品平均评分数**：`7`\n  *   **新品平均价格**：`$ 21.71`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`123`\n  *   **新品月均销售额**：`$1,295`\n  *   **平均重量**：`0.29 pounds (133 g)`\n  *   **平均体积**：`25.39 in³ (416 cm³)`\n  *   **平均毛利率**：`57.65%`\n  *   **卖家所属地**：`中国|95.0%`\n  *   **搜索购买比**：`10.9‰`\n\n---\n\n#### 🏆 🟢-52. Electrically Conductive Adhesives (导电性粘合剂)\n\n- **完整市场路径**：`Industrial & Scientific › Adhesives, Sealants & Lubricants › Industrial Adhesives › Electrically Conductive Adhesives  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$25.39`\n  *   **平均 Reviews (Avg Reviews)**：`256 个`\n  *   **物理重量 (Weight)**：`0.59 lbs`\n  *   **平均退货率 (Return Rate)**：`2.14%`\n  *   **平均毛利率 (Profit Margin)**：`63.8%`\n  *   **品牌集中度 (Brand Concentration)**：`69.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`52.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Adhesives, Sealants & Lubricants › Industrial Adhesives › Electrically Conductive Adhesives  市场分析`\n  *   **市场路径(中文)**：`工业类 › 粘合剂、密封剂 › 工业胶粘剂 › 导电性粘合剂`\n  *   **A+数量占比**：`54%`\n  *   **新品平均评分数**：`8`\n  *   **新品平均价格**：`$ 14.69`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`83`\n  *   **新品月均销售额**：`$1,044`\n  *   **平均重量**：`0.59 pounds (267 g)`\n  *   **平均体积**：`82.46 in³ (1,351 cm³)`\n  *   **平均毛利率**：`63.8%`\n  *   **卖家所属地**：`中国|52.0%`\n  *   **搜索购买比**：`20.8‰`\n\n---\n\n#### 🏆 🟢-53. Pressure Regulators (压力调节器)\n\n- **完整市场路径**：`Industrial & Scientific › Hydraulics, Pneumatics & Plumbing › Fittings › Valves › Pressure Regulators  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$91.76`\n  *   **平均 Reviews (Avg Reviews)**：`157 个`\n  *   **物理重量 (Weight)**：`2.13 lbs`\n  *   **平均退货率 (Return Rate)**：`6.61%`\n  *   **平均毛利率 (Profit Margin)**：`75.48%`\n  *   **品牌集中度 (Brand Concentration)**：`66.4%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`43.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Hydraulics, Pneumatics & Plumbing › Fittings › Valves › Pressure Regulators  市场分析`\n  *   **市场路径(中文)**：`工业类 › 液压系统、气动系统 › 配件 › 阀门 › 压力调节器`\n  *   **A+数量占比**：`58%`\n  *   **新品平均评分数**：`13`\n  *   **新品平均价格**：`$ 73.19`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`146`\n  *   **新品月均销售额**：`$11,987`\n  *   **平均重量**：`2.13 pounds (965 g)`\n  *   **平均体积**：`162.61 in³ (2,665 cm³)`\n  *   **平均毛利率**：`75.48%`\n  *   **卖家所属地**：`美国|57.0%`\n  *   **搜索购买比**：`14.1‰`\n\n---\n\n#### 🏆 🟢-54. 3D Printer Extruders (3D打印机挤出机)\n\n- **完整市场路径**：`Industrial & Scientific › Additive Manufacturing Products › 3D Printer Parts & Accessories › 3D Printer Extruders  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$28.93`\n  *   **平均 Reviews (Avg Reviews)**：`160 个`\n  *   **物理重量 (Weight)**：`0.18 lbs`\n  *   **平均退货率 (Return Rate)**：`4.99%`\n  *   **平均毛利率 (Profit Margin)**：`68.65%`\n  *   **品牌集中度 (Brand Concentration)**：`57.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`78.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Additive Manufacturing Products › 3D Printer Parts & Accessories › 3D Printer Extruders  市场分析`\n  *   **市场路径(中文)**：`工业类 › 增材制造产品 › 3D打印机零件 › 3D打印机挤出机`\n  *   **A+数量占比**：`66%`\n  *   **新品平均评分数**：`19`\n  *   **新品平均价格**：`$ 34.67`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`119`\n  *   **新品月均销售额**：`$4,073`\n  *   **平均重量**：`0.18 pounds (82 g)`\n  *   **平均体积**：`29.04 in³ (476 cm³)`\n  *   **平均毛利率**：`68.65%`\n  *   **卖家所属地**：`中国|78.0%`\n  *   **搜索购买比**：`8.8‰`\n\n---\n\n#### 🏆 🟢-55. Angle (角规)\n\n- **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Dimensional Measurement › Gauges › Angle  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$22.64`\n  *   **平均 Reviews (Avg Reviews)**：`392 个`\n  *   **物理重量 (Weight)**：`0.53 lbs`\n  *   **平均退货率 (Return Rate)**：`2.9%`\n  *   **平均毛利率 (Profit Margin)**：`65.33%`\n  *   **品牌集中度 (Brand Concentration)**：`61.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`65.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Dimensional Measurement › Gauges › Angle  市场分析`\n  *   **市场路径(中文)**：`工业类 › 测试，测量 › 尺寸测量 › 计量器 › 角规`\n  *   **A+数量占比**：`68%`\n  *   **新品平均评分数**：`22`\n  *   **新品平均价格**：`$ 21.84`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`61`\n  *   **新品月均销售额**：`$1,306`\n  *   **平均重量**：`0.53 pounds (242 g)`\n  *   **平均体积**：`24.31 in³ (398 cm³)`\n  *   **平均毛利率**：`65.33%`\n  *   **卖家所属地**：`中国|65.0%`\n  *   **搜索购买比**：`11.4‰`\n\n---\n\n#### 🏆 🟢-56. Relief Valves (减压阀)\n\n- **完整市场路径**：`Industrial & Scientific › Hydraulics, Pneumatics & Plumbing › Fittings › Valves › Relief Valves  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$46.38`\n  *   **平均 Reviews (Avg Reviews)**：`125 个`\n  *   **物理重量 (Weight)**：`0.96 lbs`\n  *   **平均退货率 (Return Rate)**：`6.22%`\n  *   **平均毛利率 (Profit Margin)**：`69.83%`\n  *   **品牌集中度 (Brand Concentration)**：`56.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`49.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Hydraulics, Pneumatics & Plumbing › Fittings › Valves › Relief Valves  市场分析`\n  *   **市场路径(中文)**：`工业类 › 液压系统、气动系统 › 配件 › 阀门 › 减压阀`\n  *   **A+数量占比**：`51%`\n  *   **新品平均评分数**：`4`\n  *   **新品平均价格**：`$ 51.12`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`60`\n  *   **新品月均销售额**：`$2,317`\n  *   **平均重量**：`0.96 pounds (435 g)`\n  *   **平均体积**：`46.60 in³ (764 cm³)`\n  *   **平均毛利率**：`69.83%`\n  *   **卖家所属地**：`美国|51.0%`\n  *   **搜索购买比**：`19.4‰`\n\n---\n\n#### 🏆 🟢-57. Shim Stock (衬垫)\n\n- **完整市场路径**：`Industrial & Scientific › Raw Materials › Shims & Shim Stock › Shim Stock  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$20.21`\n  *   **平均 Reviews (Avg Reviews)**：`129 个`\n  *   **物理重量 (Weight)**：`1.74 lbs`\n  *   **平均退货率 (Return Rate)**：`3.03%`\n  *   **平均毛利率 (Profit Margin)**：`56.37%`\n  *   **品牌集中度 (Brand Concentration)**：`74.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`55.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Raw Materials › Shims & Shim Stock › Shim Stock  市场分析`\n  *   **市场路径(中文)**：`工业类 › 素材 › 垫片 › 衬垫`\n  *   **A+数量占比**：`38%`\n  *   **新品平均评分数**：`4`\n  *   **新品平均价格**：`$ 8.96`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`18`\n  *   **新品月均销售额**：`$168`\n  *   **平均重量**：`1.74 pounds (789 g)`\n  *   **平均体积**：`133.04 in³ (2,180 cm³)`\n  *   **平均毛利率**：`56.37%`\n  *   **卖家所属地**：`中国|55.0%`\n  *   **搜索购买比**：`16.7‰`\n\n---\n\n#### 🏆 🟢-58. Continuous & Piano (连续铰链和钢琴铰链)\n\n- **完整市场路径**：`Industrial & Scientific › Industrial Hardware › Hinges › Continuous & Piano  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$25.21`\n  *   **平均 Reviews (Avg Reviews)**：`63 个`\n  *   **物理重量 (Weight)**：`1.19 lbs`\n  *   **平均退货率 (Return Rate)**：`5.54%`\n  *   **平均毛利率 (Profit Margin)**：`58.1%`\n  *   **品牌集中度 (Brand Concentration)**：`69.2%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`69.1%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Industrial Hardware › Hinges › Continuous & Piano  市场分析`\n  *   **市场路径(中文)**：`工业类 › 工业硬件 › 铰链 › 连续铰链和钢琴铰链`\n  *   **A+数量占比**：`47.06%`\n  *   **新品平均评分数**：`10`\n  *   **新品平均价格**：`$ 35.73`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`55`\n  *   **新品月均销售额**：`$1,001`\n  *   **平均重量**：`1.19 pounds (540 g)`\n  *   **平均体积**：`17.08 in³ (280 cm³)`\n  *   **平均毛利率**：`58.1%`\n  *   **卖家所属地**：`中国|69.1%`\n  *   **搜索购买比**：`15.5‰`\n\n---\n\n#### 🏆 🟢-59. Outlet Boxes (插座盒)\n\n- **完整市场路径**：`Tools & Home Improvement › Electrical › Electrical Boxes, Conduits & Fittings › Outlet Boxes  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$20.03`\n  *   **平均 Reviews (Avg Reviews)**：`526 个`\n  *   **物理重量 (Weight)**：`1.12 lbs`\n  *   **平均退货率 (Return Rate)**：`5.94%`\n  *   **平均毛利率 (Profit Margin)**：`51.73%`\n  *   **品牌集中度 (Brand Concentration)**：`56.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`55.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Electrical › Electrical Boxes, Conduits & Fittings › Outlet Boxes  市场分析`\n  *   **市场路径(中文)**：`工具 › 电气 › 电气箱、导管 › 插座盒`\n  *   **A+数量占比**：`80%`\n  *   **新品平均评分数**：`61`\n  *   **新品平均价格**：`$ 23.44`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`514`\n  *   **新品月均销售额**：`$12,128`\n  *   **平均重量**：`1.12 pounds (506 g)`\n  *   **平均体积**：`99.31 in³ (1,627 cm³)`\n  *   **平均毛利率**：`51.73%`\n  *   **卖家所属地**：`中国|55.0%`\n  *   **搜索购买比**：`16.6‰`\n\n---\n\n#### 🏆 🟢-60. Auger Drill Bits (螺旋钻钻头)\n\n- **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Power Tool Parts & Accessories › Power Drill Parts & Accessories › Drill Bits › Auger Drill Bits  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$24.58`\n  *   **平均 Reviews (Avg Reviews)**：`532 个`\n  *   **物理重量 (Weight)**：`1.99 lbs`\n  *   **平均退货率 (Return Rate)**：`3.79%`\n  *   **平均毛利率 (Profit Margin)**：`54.46%`\n  *   **品牌集中度 (Brand Concentration)**：`67.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`69.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Power Tool Parts & Accessories › Power Drill Parts & Accessories › Drill Bits › Auger Drill Bits  市场分析`\n  *   **市场路径(中文)**：`工具 › 权力 › 电动工具零件 › 电钻零件 › 钻头 › 螺旋钻钻头`\n  *   **A+数量占比**：`78%`\n  *   **新品平均评分数**：`174`\n  *   **新品平均价格**：`$ 25.91`\n  *   **新品平均星级**：`3.7`\n  *   **新品月均销量**：`595`\n  *   **新品月均销售额**：`$16,607`\n  *   **平均重量**：`1.99 pounds (902 g)`\n  *   **平均体积**：`281.78 in³ (4,617 cm³)`\n  *   **平均毛利率**：`54.46%`\n  *   **卖家所属地**：`中国|69.0%`\n  *   **搜索购买比**：`11.2‰`\n\n---\n\n#### 🏆 🟢-61. Drill Bits (钻头)\n\n- **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Power Tool Parts & Accessories › Power Drill Parts & Accessories › Drill Bits  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$26.49`\n  *   **平均 Reviews (Avg Reviews)**：`262 个`\n  *   **物理重量 (Weight)**：`1.00 lbs`\n  *   **平均退货率 (Return Rate)**：`2.68%`\n  *   **平均毛利率 (Profit Margin)**：`60.32%`\n  *   **品牌集中度 (Brand Concentration)**：`52.1%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`77.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Power Tool Parts & Accessories › Power Drill Parts & Accessories › Drill Bits  市场分析`\n  *   **市场路径(中文)**：`工具 › 权力 › 电动工具零件 › 电钻零件 › 钻头`\n  *   **A+数量占比**：`79%`\n  *   **新品平均评分数**：`27`\n  *   **新品平均价格**：`$ 21.78`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`186`\n  *   **新品月均销售额**：`$3,959`\n  *   **平均重量**：`1.00 pounds (454 g)`\n  *   **平均体积**：`60.26 in³ (988 cm³)`\n  *   **平均毛利率**：`60.32%`\n  *   **卖家所属地**：`中国|77.0%`\n  *   **搜索购买比**：`12.4‰`\n\n---\n\n#### 🏆 🟢-62. Countertop & Tile Paint (台面)\n\n- **完整市场路径**：`Tools & Home Improvement › Paint, Wall Treatments & Supplies › Paint & Primer › Specialty Paint › Countertop & Tile Paint  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$40.48`\n  *   **平均 Reviews (Avg Reviews)**：`386 个`\n  *   **物理重量 (Weight)**：`1.91 lbs`\n  *   **平均退货率 (Return Rate)**：`5.69%`\n  *   **平均毛利率 (Profit Margin)**：`61.63%`\n  *   **品牌集中度 (Brand Concentration)**：`72.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`62.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Paint, Wall Treatments & Supplies › Paint & Primer › Specialty Paint › Countertop & Tile Paint  市场分析`\n  *   **市场路径(中文)**：`工具 › 正面，正面照 › 涂料 › 特种油漆 › 台面`\n  *   **A+数量占比**：`89%`\n  *   **新品平均评分数**：`133`\n  *   **新品平均价格**：`$ 31.1`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`286`\n  *   **新品月均销售额**：`$7,203`\n  *   **平均重量**：`1.91 pounds (867 g)`\n  *   **平均体积**：`253.72 in³ (4,158 cm³)`\n  *   **平均毛利率**：`61.63%`\n  *   **卖家所属地**：`中国|62.0%`\n  *   **搜索购买比**：`6.8‰`\n\n---\n\n#### 🏆 🟢-63. Pipe Wrenches (管钳)\n\n- **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Wrenches › Pipe Wrenches  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$30.43`\n  *   **平均 Reviews (Avg Reviews)**：`347 个`\n  *   **物理重量 (Weight)**：`2.40 lbs`\n  *   **平均退货率 (Return Rate)**：`5.27%`\n  *   **平均毛利率 (Profit Margin)**：`57.77%`\n  *   **品牌集中度 (Brand Concentration)**：`63.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`69.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Wrenches › Pipe Wrenches  市场分析`\n  *   **市场路径(中文)**：`工具 › 权力 › 手动工具 › 扳手 › 管钳`\n  *   **A+数量占比**：`76%`\n  *   **新品平均评分数**：`16`\n  *   **新品平均价格**：`$ 17.9`\n  *   **新品平均星级**：`3.8`\n  *   **新品月均销量**：`130`\n  *   **新品月均销售额**：`$2,187`\n  *   **平均重量**：`2.40 pounds (1,089 g)`\n  *   **平均体积**：`112.28 in³ (1,840 cm³)`\n  *   **平均毛利率**：`57.77%`\n  *   **卖家所属地**：`中国|69.0%`\n  *   **搜索购买比**：`8.5‰`\n\n---\n\n#### 🏆 🟢-64. Paint Roller Extension Poles (油漆滚筒加长杆)\n\n- **完整市场路径**：`Tools & Home Improvement › Paint, Wall Treatments & Supplies › Painting Supplies & Tools › Paint Application Tools › Paint Roller Extension Poles  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$38.69`\n  *   **平均 Reviews (Avg Reviews)**：`352 个`\n  *   **物理重量 (Weight)**：`2.03 lbs`\n  *   **平均退货率 (Return Rate)**：`4.55%`\n  *   **平均毛利率 (Profit Margin)**：`54.49%`\n  *   **品牌集中度 (Brand Concentration)**：`55.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`65.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Paint, Wall Treatments & Supplies › Painting Supplies & Tools › Paint Application Tools › Paint Roller Extension Poles  市场分析`\n  *   **市场路径(中文)**：`工具 › 正面，正面照 › 绘画用品 › 油漆应用 › 油漆滚筒加长杆`\n  *   **A+数量占比**：`73%`\n  *   **新品平均评分数**：`16`\n  *   **新品平均价格**：`$ 45.6`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`100`\n  *   **新品月均销售额**：`$4,652`\n  *   **平均重量**：`2.03 pounds (921 g)`\n  *   **平均体积**：`188.68 in³ (3,092 cm³)`\n  *   **平均毛利率**：`54.49%`\n  *   **卖家所属地**：`中国|65.0%`\n  *   **搜索购买比**：`9.4‰`\n\n---\n\n#### 🏆 🟢-65. Rods (杆)\n\n- **完整市场路径**：`Tools & Home Improvement › Welding & Soldering › Welding Equipment › Welding Equipment & Accessories › Arc Welding Equipment › Rods  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$21.84`\n  *   **平均 Reviews (Avg Reviews)**：`197 个`\n  *   **物理重量 (Weight)**：`2.17 lbs`\n  *   **平均退货率 (Return Rate)**：`1.94%`\n  *   **平均毛利率 (Profit Margin)**：`58.93%`\n  *   **品牌集中度 (Brand Concentration)**：`57.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`75.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Welding & Soldering › Welding Equipment › Welding Equipment & Accessories › Arc Welding Equipment › Rods  市场分析`\n  *   **市场路径(中文)**：`工具 › 焊接 › 焊接设备 › 焊接设备 › 电弧焊接设备 › 杆`\n  *   **A+数量占比**：`67%`\n  *   **新品平均评分数**：`7`\n  *   **新品平均价格**：`$ 15.83`\n  *   **新品平均星级**：`2.7`\n  *   **新品月均销量**：`199`\n  *   **新品月均销售额**：`$2,895`\n  *   **平均重量**：`2.17 pounds (982 g)`\n  *   **平均体积**：`69.49 in³ (1,139 cm³)`\n  *   **平均毛利率**：`58.93%`\n  *   **卖家所属地**：`中国|75.0%`\n  *   **搜索购买比**：`11.9‰`\n\n---\n\n#### 🏆 🟢-66. Soffit Vents (檐口通风口)\n\n- **完整市场路径**：`Tools & Home Improvement › Building Supplies › Building Materials › Roofing › Vents › Soffit Vents  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$21.53`\n  *   **平均 Reviews (Avg Reviews)**：`227 个`\n  *   **物理重量 (Weight)**：`1.60 lbs`\n  *   **平均退货率 (Return Rate)**：`7.65%`\n  *   **平均毛利率 (Profit Margin)**：`53.26%`\n  *   **品牌集中度 (Brand Concentration)**：`72.5%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`58.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Building Supplies › Building Materials › Roofing › Vents › Soffit Vents  市场分析`\n  *   **市场路径(中文)**：`工具 › 建筑用品 › 建筑材料 › 屋顶工程 › 通风口 › 檐口通风口`\n  *   **A+数量占比**：`56%`\n  *   **新品平均评分数**：`12`\n  *   **新品平均价格**：`$ 15.04`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`84`\n  *   **新品月均销售额**：`$1,272`\n  *   **平均重量**：`1.60 pounds (725 g)`\n  *   **平均体积**：`134.77 in³ (2,209 cm³)`\n  *   **平均毛利率**：`53.26%`\n  *   **卖家所属地**：`中国|58.0%`\n  *   **搜索购买比**：`16.1‰`\n\n---\n\n#### 🏆 🟢-67. Sensors (传感器)\n\n- **完整市场路径**：`Tools & Home Improvement › Building Supplies › Building Materials › Doors › Garage Doors, Openers & Parts › Hardware › Sensors  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$26.26`\n  *   **平均 Reviews (Avg Reviews)**：`183 个`\n  *   **物理重量 (Weight)**：`0.44 lbs`\n  *   **平均退货率 (Return Rate)**：`7.01%`\n  *   **平均毛利率 (Profit Margin)**：`60.27%`\n  *   **品牌集中度 (Brand Concentration)**：`64.1%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`73.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Building Supplies › Building Materials › Doors › Garage Doors, Openers & Parts › Hardware › Sensors  市场分析`\n  *   **市场路径(中文)**：`工具 › 建筑用品 › 建筑材料 › 门 › 车库门，开锁器 › 硬件设施 › 传感器`\n  *   **A+数量占比**：`58%`\n  *   **新品平均评分数**：`8`\n  *   **新品平均价格**：`$ 20.61`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`56`\n  *   **新品月均销售额**：`$1,110`\n  *   **平均重量**：`0.44 pounds (199 g)`\n  *   **平均体积**：`48.64 in³ (797 cm³)`\n  *   **平均毛利率**：`60.27%`\n  *   **卖家所属地**：`中国|73.0%`\n  *   **搜索购买比**：`23.4‰`\n\n---\n\n#### 🏆 🟢-68. Gutters (排水沟)\n\n- **完整市场路径**：`Tools & Home Improvement › Building Supplies › Building Materials › Roofing › Gutters & Accessories › Gutters  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$23.86`\n  *   **平均 Reviews (Avg Reviews)**：`122 个`\n  *   **物理重量 (Weight)**：`1.75 lbs`\n  *   **平均退货率 (Return Rate)**：`5.02%`\n  *   **平均毛利率 (Profit Margin)**：`53.96%`\n  *   **品牌集中度 (Brand Concentration)**：`56.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`70.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Building Supplies › Building Materials › Roofing › Gutters & Accessories › Gutters  市场分析`\n  *   **市场路径(中文)**：`工具 › 建筑用品 › 建筑材料 › 屋顶工程 › 排水沟 › 排水沟`\n  *   **A+数量占比**：`61%`\n  *   **新品平均评分数**：`14`\n  *   **新品平均价格**：`$ 24.9`\n  *   **新品平均星级**：`4.1`\n  *   **新品月均销量**：`98`\n  *   **新品月均销售额**：`$2,549`\n  *   **平均重量**：`1.75 pounds (796 g)`\n  *   **平均体积**：`513.26 in³ (8,411 cm³)`\n  *   **平均毛利率**：`53.96%`\n  *   **卖家所属地**：`中国|70.0%`\n  *   **搜索购买比**：`10.7‰`\n\n---\n\n#### 🏆 🟢-69. Mailbox Hardware (信箱硬件)\n\n- **完整市场路径**：`Tools & Home Improvement › Hardware › Mailboxes & Accessories › Mailbox Accessories & Hardware › Mailbox Hardware  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$21.23`\n  *   **平均 Reviews (Avg Reviews)**：`212 个`\n  *   **物理重量 (Weight)**：`1.04 lbs`\n  *   **平均退货率 (Return Rate)**：`7.65%`\n  *   **平均毛利率 (Profit Margin)**：`56.82%`\n  *   **品牌集中度 (Brand Concentration)**：`54.5%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`65.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Hardware › Mailboxes & Accessories › Mailbox Accessories & Hardware › Mailbox Hardware  市场分析`\n  *   **市场路径(中文)**：`工具 › 硬件设施 › 邮箱 › 信箱配件 › 信箱硬件`\n  *   **A+数量占比**：`47%`\n  *   **新品平均评分数**：`15`\n  *   **新品平均价格**：`$ 20.76`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`86`\n  *   **新品月均销售额**：`$1,592`\n  *   **平均重量**：`1.04 pounds (472 g)`\n  *   **平均体积**：`111.74 in³ (1,831 cm³)`\n  *   **平均毛利率**：`56.82%`\n  *   **卖家所属地**：`中国|65.0%`\n  *   **搜索购买比**：`14.4‰`\n\n---\n\n#### 🏆 🟢-70. Nibblers (切片机)\n\n- **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Power Tools › Shears & Nibblers › Nibblers  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$65.19`\n  *   **平均 Reviews (Avg Reviews)**：`199 个`\n  *   **物理重量 (Weight)**：`2.21 lbs`\n  *   **平均退货率 (Return Rate)**：`5.35%`\n  *   **平均毛利率 (Profit Margin)**：`67.91%`\n  *   **品牌集中度 (Brand Concentration)**：`70.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`69.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Power Tools › Shears & Nibblers › Nibblers  市场分析`\n  *   **市场路径(中文)**：`工具 › 权力 › 电动工具 › 剪切机 › 切片机`\n  *   **A+数量占比**：`69%`\n  *   **新品平均评分数**：`9`\n  *   **新品平均价格**：`$ 43.86`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`77`\n  *   **新品月均销售额**：`$2,671`\n  *   **平均重量**：`2.21 pounds (1,005 g)`\n  *   **平均体积**：`181.41 in³ (2,973 cm³)`\n  *   **平均毛利率**：`67.91%`\n  *   **卖家所属地**：`中国|69.0%`\n  *   **搜索购买比**：`8.6‰`\n\n---\n\n#### 🏆 🟢-71. Brazing Rods (钎杆)\n\n- **完整市场路径**：`Tools & Home Improvement › Welding & Soldering › Soldering & Brazing Equipment › Solder & Flux › Brazing Rods  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$39.35`\n  *   **平均 Reviews (Avg Reviews)**：`136 个`\n  *   **物理重量 (Weight)**：`0.65 lbs`\n  *   **平均退货率 (Return Rate)**：`2.03%`\n  *   **平均毛利率 (Profit Margin)**：`62.95%`\n  *   **品牌集中度 (Brand Concentration)**：`60.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`59.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Welding & Soldering › Soldering & Brazing Equipment › Solder & Flux › Brazing Rods  市场分析`\n  *   **市场路径(中文)**：`工具 › 焊接 › 焊接 › 焊接 › 钎杆`\n  *   **A+数量占比**：`56%`\n  *   **新品平均评分数**：`9`\n  *   **新品平均价格**：`$ 18.71`\n  *   **新品平均星级**：`3.9`\n  *   **新品月均销量**：`100`\n  *   **新品月均销售额**：`$2,104`\n  *   **平均重量**：`0.65 pounds (296 g)`\n  *   **平均体积**：`21.88 in³ (359 cm³)`\n  *   **平均毛利率**：`62.95%`\n  *   **卖家所属地**：`中国|59.0%`\n  *   **搜索购买比**：`10.0‰`\n\n---\n\n#### 🏆 🟢-72. Nail Pullers (羊角起钉钳)\n\n- **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Nail Pullers  市场分析`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$23.31`\n  *   **平均 Reviews (Avg Reviews)**：`346 个`\n  *   **物理重量 (Weight)**：`1.15 lbs`\n  *   **平均退货率 (Return Rate)**：`2.27%`\n  *   **平均毛利率 (Profit Margin)**：`55.26%`\n  *   **品牌集中度 (Brand Concentration)**：`62.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`54.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Nail Pullers  市场分析`\n  *   **市场路径(中文)**：`工具 › 权力 › 手动工具 › 羊角起钉钳`\n  *   **A+数量占比**：`62%`\n  *   **新品平均评分数**：`10`\n  *   **新品平均价格**：`$ 11.72`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`101`\n  *   **新品月均销售额**：`$864`\n  *   **平均重量**：`1.15 pounds (524 g)`\n  *   **平均体积**：`70.84 in³ (1,161 cm³)`\n  *   **平均毛利率**：`55.26%`\n  *   **卖家所属地**：`中国|54.0%`\n  *   **搜索购买比**：`9.6‰`\n\n---\n\n### 🟡 黄色类目详情列表\n\n#### 🏆 🟡-1. Batteries & Battery Chargers (电池和电池)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Skates, Skateboards & Scooters › Scooters & Equipment › Components & Parts › Batteries & Battery Chargers  市场分析`\n- **触发警示项**：`退货率偏高 (>8.0%), 带电/合规资质敏感关键字`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$25.18`\n  *   **平均 Reviews (Avg Reviews)**：`470 个`\n  *   **物理重量 (Weight)**：`0.95 lbs`\n  *   **平均退货率 (Return Rate)**：`9.83%`\n  *   **平均毛利率 (Profit Margin)**：`62.58%`\n  *   **品牌集中度 (Brand Concentration)**：`61.4%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`84.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Skates, Skateboards & Scooters › Scooters & Equipment › Components & Parts › Batteries & Battery Chargers  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动的 › 溜冰鞋、滑板和滑板车 › 自行车车 › 自行车车配件 › 电池和电池`\n  *   **A+数量占比**：`81%`\n  *   **新品平均评分数**：`74`\n  *   **新品平均价格**：`$ 34.11`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`590`\n  *   **新品月均销售额**：`$17,597`\n  *   **平均重量**：`0.95 pounds (429 g)`\n  *   **平均体积**：`56.33 in³ (923 cm³)`\n  *   **平均毛利率**：`62.58%`\n  *   **卖家所属地**：`中国|84.0%`\n  *   **搜索购买比**：`9.9‰`\n\n---\n\n#### 🏆 🟡-2. Kayak Accessories (皮艇配件)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Water Sports › Kayaking › Kayak Accessories  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$24.80`\n  *   **平均 Reviews (Avg Reviews)**：`498 个`\n  *   **物理重量 (Weight)**：`3.05 lbs`\n  *   **平均退货率 (Return Rate)**：`3.98%`\n  *   **平均毛利率 (Profit Margin)**：`56.88%`\n  *   **品牌集中度 (Brand Concentration)**：`38.9%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`74.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Water Sports › Kayaking › Kayak Accessories  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动的 › 划船和你 › 皮艇 › 皮艇配件`\n  *   **A+数量占比**：`85%`\n  *   **新品平均评分数**：`161`\n  *   **新品平均价格**：`$ 27.03`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`387`\n  *   **新品月均销售额**：`$9,593`\n  *   **平均重量**：`3.05 pounds (1,385 g)`\n  *   **平均体积**：`368.34 in³ (6,036 cm³)`\n  *   **平均毛利率**：`56.88%`\n  *   **卖家所属地**：`中国|74.0%`\n  *   **搜索购买比**：`5.9‰`\n\n---\n\n#### 🏆 🟡-3. Fitness Circles (服务圈)\n\n- **完整市场路径**：`Sports & Outdoors › Exercise & Fitness › Pilates › Fitness Circles  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs), Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$28.72`\n  *   **平均 Reviews (Avg Reviews)**：`607 个`\n  *   **物理重量 (Weight)**：`2.84 lbs`\n  *   **平均退货率 (Return Rate)**：`6.16%`\n  *   **平均毛利率 (Profit Margin)**：`53.97%`\n  *   **品牌集中度 (Brand Concentration)**：`68.5%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`68.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Exercise & Fitness › Pilates › Fitness Circles  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 锻炼身体 › 普拉提 › 服务圈`\n  *   **A+数量占比**：`96%`\n  *   **新品平均评分数**：`311`\n  *   **新品平均价格**：`$ 28.19`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`285`\n  *   **新品月均销售额**：`$6,156`\n  *   **平均重量**：`2.84 pounds (1,290 g)`\n  *   **平均体积**：`519.02 in³ (8,505 cm³)`\n  *   **平均毛利率**：`53.97%`\n  *   **卖家所属地**：`中国|68.0%`\n  *   **搜索购买比**：`5.7‰`\n\n---\n\n#### 🏆 🟡-4. Headlights (车头灯)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Cycling › Accessories › Lights & Reflectors › Headlights  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$32.82`\n  *   **平均 Reviews (Avg Reviews)**：`567 个`\n  *   **物理重量 (Weight)**：`0.46 lbs`\n  *   **平均退货率 (Return Rate)**：`5.21%`\n  *   **平均毛利率 (Profit Margin)**：`67.2%`\n  *   **品牌集中度 (Brand Concentration)**：`57.5%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`72.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Cycling › Accessories › Lights & Reflectors › Headlights  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动的 › 骑自行车 › 配件 › 车灯、镜面反射 › 车头灯`\n  *   **A+数量占比**：`92%`\n  *   **新品平均评分数**：`28`\n  *   **新品平均价格**：`$ 24.56`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`270`\n  *   **新品月均销售额**：`$6,033`\n  *   **平均重量**：`0.46 pounds (211 g)`\n  *   **平均体积**：`31.39 in³ (514 cm³)`\n  *   **平均毛利率**：`67.2%`\n  *   **卖家所属地**：`中国|72.0%`\n  *   **搜索购买比**：`4.7‰`\n\n---\n\n#### 🏆 🟡-5. Cooking Utensils (厨具)\n\n- **完整市场路径**：`Sports & Outdoors › Outdoor Recreation › Camping & Hiking › Camp Kitchen › Cooking Utensils  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$31.38`\n  *   **平均 Reviews (Avg Reviews)**：`627 个`\n  *   **物理重量 (Weight)**：`1.72 lbs`\n  *   **平均退货率 (Return Rate)**：`3.17%`\n  *   **平均毛利率 (Profit Margin)**：`59.36%`\n  *   **品牌集中度 (Brand Concentration)**：`57.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`53.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Outdoor Recreation › Camping & Hiking › Camp Kitchen › Cooking Utensils  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 外出休闲 › 露营和远足 › 露营炊具 › 厨具`\n  *   **A+数量占比**：`80%`\n  *   **新品平均评分数**：`13`\n  *   **新品平均价格**：`$ 26.36`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`135`\n  *   **新品月均销售额**：`$3,613`\n  *   **平均重量**：`1.72 pounds (781 g)`\n  *   **平均体积**：`373.52 in³ (6,121 cm³)`\n  *   **平均毛利率**：`59.36%`\n  *   **卖家所属地**：`美国|47.0%`\n  *   **搜索购买比**：`5.3‰`\n\n---\n\n#### 🏆 🟡-6. Gaiters (护腿、护脚)\n\n- **完整市场路径**：`Sports & Outdoors › Outdoor Recreation › Camping & Hiking › Footwear & Accessories › Gaiters  市场分析`\n- **触发警示项**：`退货率偏高 (>8.0%)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$32.44`\n  *   **平均 Reviews (Avg Reviews)**：`392 个`\n  *   **物理重量 (Weight)**：`0.71 lbs`\n  *   **平均退货率 (Return Rate)**：`8.64%`\n  *   **平均毛利率 (Profit Margin)**：`64.0%`\n  *   **品牌集中度 (Brand Concentration)**：`52.2%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`67.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Outdoor Recreation › Camping & Hiking › Footwear & Accessories › Gaiters  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 外出休闲 › 露营和远足 › 鞋类及配件 › 护腿、护脚`\n  *   **A+数量占比**：`85%`\n  *   **新品平均评分数**：`35`\n  *   **新品平均价格**：`$ 35.5`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`151`\n  *   **新品月均销售额**：`$4,438`\n  *   **平均重量**：`0.71 pounds (320 g)`\n  *   **平均体积**：`201.71 in³ (3,305 cm³)`\n  *   **平均毛利率**：`64%`\n  *   **卖家所属地**：`中国|67.0%`\n  *   **搜索购买比**：`7.2‰`\n\n---\n\n#### 🏆 🟡-7. Replacement Wheels (备用轮)\n\n- **完整市场路径**：`Sports & Outdoors › Sports › Skates, Skateboards & Scooters › Scooters & Equipment › Components & Parts › Replacement Wheels  市场分析`\n- **触发警示项**：`退货率偏高 (>8.0%)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$25.82`\n  *   **平均 Reviews (Avg Reviews)**：`299 个`\n  *   **物理重量 (Weight)**：`2.20 lbs`\n  *   **平均退货率 (Return Rate)**：`8.59%`\n  *   **平均毛利率 (Profit Margin)**：`57.92%`\n  *   **品牌集中度 (Brand Concentration)**：`64.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`90.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Sports & Outdoors › Sports › Skates, Skateboards & Scooters › Scooters & Equipment › Components & Parts › Replacement Wheels  市场分析`\n  *   **市场路径(中文)**：`运动与户外 › 运动的 › 溜冰鞋、滑板和滑板车 › 自行车车 › 自行车车配件 › 备用轮`\n  *   **A+数量占比**：`69%`\n  *   **新品平均评分数**：`12`\n  *   **新品平均价格**：`$ 21.04`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`105`\n  *   **新品月均销售额**：`$2,170`\n  *   **平均重量**：`2.20 pounds (998 g)`\n  *   **平均体积**：`242.65 in³ (3,976 cm³)`\n  *   **平均毛利率**：`57.92%`\n  *   **卖家所属地**：`中国|90.0%`\n  *   **搜索购买比**：`6.5‰`\n\n---\n\n#### 🏆 🟡-8. Bread Proofing Baskets (面包发酵篮)\n\n- **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Bakeware › Baking Tools & Accessories › Baking & Pastry Utensils › Bread Proofing Baskets  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$29.00`\n  *   **平均 Reviews (Avg Reviews)**：`570 个`\n  *   **物理重量 (Weight)**：`2.03 lbs`\n  *   **平均退货率 (Return Rate)**：`4.09%`\n  *   **平均毛利率 (Profit Margin)**：`56.61%`\n  *   **品牌集中度 (Brand Concentration)**：`53.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`67.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Bakeware › Baking Tools & Accessories › Baking & Pastry Utensils › Bread Proofing Baskets  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 厨房 › 烘焙用具 › 烘焙工具 › 烘焙 › 面包发酵篮`\n  *   **A+数量占比**：`88%`\n  *   **新品平均评分数**：`92`\n  *   **新品平均价格**：`$ 28.1`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`588`\n  *   **新品月均销售额**：`$16,379`\n  *   **平均重量**：`2.03 pounds (919 g)`\n  *   **平均体积**：`393.57 in³ (6,449 cm³)`\n  *   **平均毛利率**：`56.61%`\n  *   **卖家所属地**：`中国|67.0%`\n  *   **搜索购买比**：`9.6‰`\n\n---\n\n#### 🏆 🟡-9. Decorative Boxes (装饰盒)\n\n- **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Decorative Accessories › Decorative Boxes  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$23.78`\n  *   **平均 Reviews (Avg Reviews)**：`694 个`\n  *   **物理重量 (Weight)**：`1.57 lbs`\n  *   **平均退货率 (Return Rate)**：`7.91%`\n  *   **平均毛利率 (Profit Margin)**：`57.46%`\n  *   **品牌集中度 (Brand Concentration)**：`54.4%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`67.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Decorative Accessories › Decorative Boxes  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 家居装饰 › 家居装饰品 › 装饰配件 › 装饰盒`\n  *   **A+数量占比**：`76%`\n  *   **新品平均评分数**：`66`\n  *   **新品平均价格**：`$ 21.72`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`890`\n  *   **新品月均销售额**：`$20,682`\n  *   **平均重量**：`1.57 pounds (710 g)`\n  *   **平均体积**：`325.95 in³ (5,341 cm³)`\n  *   **平均毛利率**：`57.46%`\n  *   **卖家所属地**：`中国|67.0%`\n  *   **搜索购买比**：`4.5‰`\n\n---\n\n#### 🏆 🟡-10. Toilet Paper Storage Containers (纸巾架纸巾盒)\n\n- **完整市场路径**：`Home & Kitchen › Bath › Bathroom Accessories › Holders & Dispensers › Toilet Paper Storage Containers  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$22.71`\n  *   **平均 Reviews (Avg Reviews)**：`700 个`\n  *   **物理重量 (Weight)**：`1.90 lbs`\n  *   **平均退货率 (Return Rate)**：`5.95%`\n  *   **平均毛利率 (Profit Margin)**：`51.61%`\n  *   **品牌集中度 (Brand Concentration)**：`67.2%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`73.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Bath › Bathroom Accessories › Holders & Dispensers › Toilet Paper Storage Containers  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 卫浴 › 常用配件 › 持有者 › 纸巾架纸巾盒`\n  *   **A+数量占比**：`92%`\n  *   **新品平均评分数**：`50`\n  *   **新品平均价格**：`$ 18.98`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`433`\n  *   **新品月均销售额**：`$7,706`\n  *   **平均重量**：`1.90 pounds (861 g)`\n  *   **平均体积**：`292.41 in³ (4,792 cm³)`\n  *   **平均毛利率**：`51.61%`\n  *   **卖家所属地**：`中国|73.0%`\n  *   **搜索购买比**：`7.9‰`\n\n---\n\n#### 🏆 🟡-11. Honey Jars (蜂蜜罐子)\n\n- **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Dining & Entertaining › Dinnerware & Serveware › Serveware › Honey Jars  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$21.65`\n  *   **平均 Reviews (Avg Reviews)**：`637 个`\n  *   **物理重量 (Weight)**：`1.80 lbs`\n  *   **平均退货率 (Return Rate)**：`5.4%`\n  *   **平均毛利率 (Profit Margin)**：`53.27%`\n  *   **品牌集中度 (Brand Concentration)**：`71.5%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`71.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Dining & Entertaining › Dinnerware & Serveware › Serveware › Honey Jars  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 厨房 › 美食购物 › 小甜甜 › 碗碟 › 蜂蜜罐子`\n  *   **A+数量占比**：`90%`\n  *   **新品平均评分数**：`19`\n  *   **新品平均价格**：`$ 18.12`\n  *   **新品平均星级**：`3.9`\n  *   **新品月均销量**：`1,348`\n  *   **新品月均销售额**：`$25,779`\n  *   **平均重量**：`1.80 pounds (818 g)`\n  *   **平均体积**：`173.96 in³ (2,851 cm³)`\n  *   **平均毛利率**：`53.27%`\n  *   **卖家所属地**：`中国|71.0%`\n  *   **搜索购买比**：`7.8‰`\n\n---\n\n#### 🏆 🟡-12. Decorative Trays (装饰性托盘)\n\n- **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Decorative Accessories › Decorative Trays  市场分析`\n- **触发警示项**：`退货率偏高 (>8.0%)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$22.23`\n  *   **平均 Reviews (Avg Reviews)**：`466 个`\n  *   **物理重量 (Weight)**：`1.45 lbs`\n  *   **平均退货率 (Return Rate)**：`9.52%`\n  *   **平均毛利率 (Profit Margin)**：`56.79%`\n  *   **品牌集中度 (Brand Concentration)**：`42.1%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`78.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Decorative Accessories › Decorative Trays  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 家居装饰 › 家居装饰品 › 装饰配件 › 装饰性托盘`\n  *   **A+数量占比**：`85%`\n  *   **新品平均评分数**：`125`\n  *   **新品平均价格**：`$ 22.18`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`669`\n  *   **新品月均销售额**：`$12,639`\n  *   **平均重量**：`1.45 pounds (658 g)`\n  *   **平均体积**：`226.34 in³ (3,709 cm³)`\n  *   **平均毛利率**：`56.79%`\n  *   **卖家所属地**：`中国|78.0%`\n  *   **搜索购买比**：`4.2‰`\n\n---\n\n#### 🏆 🟡-13. Pillars (柱蜡)\n\n- **完整市场路径**：`Home & Kitchen › Home Décor Products › Candles & Holders › Candles › Pillars  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs), Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$31.07`\n  *   **平均 Reviews (Avg Reviews)**：`691 个`\n  *   **物理重量 (Weight)**：`3.70 lbs`\n  *   **平均退货率 (Return Rate)**：`7.44%`\n  *   **平均毛利率 (Profit Margin)**：`57.19%`\n  *   **品牌集中度 (Brand Concentration)**：`59.2%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`67.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Home Décor Products › Candles & Holders › Candles › Pillars  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 家居装饰 › 蜡烛 › 蜡烛 › 柱蜡`\n  *   **A+数量占比**：`73%`\n  *   **新品平均评分数**：`41`\n  *   **新品平均价格**：`$ 25.45`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`273`\n  *   **新品月均销售额**：`$6,248`\n  *   **平均重量**：`3.70 pounds (1,678 g)`\n  *   **平均体积**：`74.66 in³ (1,223 cm³)`\n  *   **平均毛利率**：`57.19%`\n  *   **卖家所属地**：`中国|67.0%`\n  *   **搜索购买比**：`7.3‰`\n\n---\n\n#### 🏆 🟡-14. Floor Pillows & Cushions (地板枕头)\n\n- **完整市场路径**：`Home & Kitchen › Bedding › Decorative Pillows, Inserts & Covers › Floor Pillows & Cushions  市场分析`\n- **触发警示项**：`退货率偏高 (>8.0%), 重量偏重 (>2.5 lbs), Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$38.14`\n  *   **平均 Reviews (Avg Reviews)**：`613 个`\n  *   **物理重量 (Weight)**：`3.84 lbs`\n  *   **平均退货率 (Return Rate)**：`8.98%`\n  *   **平均毛利率 (Profit Margin)**：`59.91%`\n  *   **品牌集中度 (Brand Concentration)**：`63.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`72.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Bedding › Decorative Pillows, Inserts & Covers › Floor Pillows & Cushions  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 床上用品 › 装饰性枕头，插页 › 地板枕头`\n  *   **A+数量占比**：`80%`\n  *   **新品平均评分数**：`783`\n  *   **新品平均价格**：`$ 38.36`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`185`\n  *   **新品月均销售额**：`$6,868`\n  *   **平均重量**：`3.84 pounds (1,740 g)`\n  *   **平均体积**：`681.76 in³ (11,172 cm³)`\n  *   **平均毛利率**：`59.91%`\n  *   **卖家所属地**：`中国|72.0%`\n  *   **搜索购买比**：`4.7‰`\n\n---\n\n#### 🏆 🟡-15. Egg Baskets (蛋篮)\n\n- **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Storage & Organization › Racks & Holders › Egg Baskets  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$26.31`\n  *   **平均 Reviews (Avg Reviews)**：`354 个`\n  *   **物理重量 (Weight)**：`3.55 lbs`\n  *   **平均退货率 (Return Rate)**：`2.4%`\n  *   **平均毛利率 (Profit Margin)**：`50.98%`\n  *   **品牌集中度 (Brand Concentration)**：`60.5%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`75.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Storage & Organization › Racks & Holders › Egg Baskets  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 厨房 › 储存 › 篮架 › 蛋篮`\n  *   **A+数量占比**：`80%`\n  *   **新品平均评分数**：`38`\n  *   **新品平均价格**：`$ 23.68`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`163`\n  *   **新品月均销售额**：`$3,511`\n  *   **平均重量**：`3.55 pounds (1,610 g)`\n  *   **平均体积**：`554.33 in³ (9,084 cm³)`\n  *   **平均毛利率**：`50.98%`\n  *   **卖家所属地**：`中国|75.0%`\n  *   **搜索购买比**：`8.2‰`\n\n---\n\n#### 🏆 🟡-16. Picture Frames (画框)\n\n- **完整市场路径**：`Home & Kitchen › Home Décor Products › Kids' Room Décor › Accents › Picture Frames  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$30.71`\n  *   **平均 Reviews (Avg Reviews)**：`302 个`\n  *   **物理重量 (Weight)**：`3.18 lbs`\n  *   **平均退货率 (Return Rate)**：`5.68%`\n  *   **平均毛利率 (Profit Margin)**：`56.14%`\n  *   **品牌集中度 (Brand Concentration)**：`74.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`65.7%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Home Décor Products › Kids' Room Décor › Accents › Picture Frames  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 家居装饰 › 儿童房的装饰 › 重音 › 画框`\n  *   **A+数量占比**：`71.72%`\n  *   **新品平均评分数**：`15`\n  *   **新品平均价格**：`$ 22.88`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`50`\n  *   **新品月均销售额**：`$1,279`\n  *   **平均重量**：`3.18 pounds (1,444 g)`\n  *   **平均体积**：`51.74 in³ (848 cm³)`\n  *   **平均毛利率**：`56.14%`\n  *   **卖家所属地**：`中国|65.7%`\n  *   **搜索购买比**：`12.1‰`\n\n---\n\n#### 🏆 🟡-17. Tea Storage Chests (茶叶罐)\n\n- **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Coffee, Tea & Espresso › Tea Accessories › Tea Storage Chests  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$24.18`\n  *   **平均 Reviews (Avg Reviews)**：`658 个`\n  *   **物理重量 (Weight)**：`2.38 lbs`\n  *   **平均退货率 (Return Rate)**：`6.54%`\n  *   **平均毛利率 (Profit Margin)**：`53.26%`\n  *   **品牌集中度 (Brand Concentration)**：`46.3%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`72.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Coffee, Tea & Espresso › Tea Accessories › Tea Storage Chests  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 厨房 › 咖啡、茶 › 茶叶配件 › 茶叶罐`\n  *   **A+数量占比**：`88%`\n  *   **新品平均评分数**：`50`\n  *   **新品平均价格**：`$ 23.66`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`176`\n  *   **新品月均销售额**：`$3,845`\n  *   **平均重量**：`2.38 pounds (1,079 g)`\n  *   **平均体积**：`386.22 in³ (6,329 cm³)`\n  *   **平均毛利率**：`53.26%`\n  *   **卖家所属地**：`中国|72.0%`\n  *   **搜索购买比**：`6.4‰`\n\n---\n\n#### 🏆 🟡-18. Vertical Blinds (垂直百叶窗)\n\n- **完整市场路径**：`Home & Kitchen › Home Décor Products › Window Treatments › Blinds & Shades › Vertical Blinds  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$37.31`\n  *   **平均 Reviews (Avg Reviews)**：`498 个`\n  *   **物理重量 (Weight)**：`2.67 lbs`\n  *   **平均退货率 (Return Rate)**：`5.62%`\n  *   **平均毛利率 (Profit Margin)**：`57.14%`\n  *   **品牌集中度 (Brand Concentration)**：`73.4%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`68.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Home & Kitchen › Home Décor Products › Window Treatments › Blinds & Shades › Vertical Blinds  市场分析`\n  *   **市场路径(中文)**：`家居用品 › 家居装饰 › 窗饰 › 百叶窗 › 垂直百叶窗`\n  *   **A+数量占比**：`54%`\n  *   **新品平均评分数**：`5`\n  *   **新品平均价格**：`$ 58.23`\n  *   **新品平均星级**：`4.0`\n  *   **新品月均销量**：`74`\n  *   **新品月均销售额**：`$3,670`\n  *   **平均重量**：`2.67 pounds (1,212 g)`\n  *   **平均体积**：`539.09 in³ (8,834 cm³)`\n  *   **平均毛利率**：`57.14%`\n  *   **卖家所属地**：`中国|68.0%`\n  *   **搜索购买比**：`5.7‰`\n\n---\n\n#### 🏆 🟡-19. Drip Irrigation Kits (滴灌套件)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Watering Equipment › Automatic Irrigation Equipment › Drip Irrigation Kits  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs), Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$33.30`\n  *   **平均 Reviews (Avg Reviews)**：`618 个`\n  *   **物理重量 (Weight)**：`2.58 lbs`\n  *   **平均退货率 (Return Rate)**：`3.37%`\n  *   **平均毛利率 (Profit Margin)**：`61.61%`\n  *   **品牌集中度 (Brand Concentration)**：`50.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`70.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Watering Equipment › Automatic Irrigation Equipment › Drip Irrigation Kits  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 园艺和微笑护理 › 浇灌工具 › 打药机 › 滴灌套件`\n  *   **A+数量占比**：`91%`\n  *   **新品平均评分数**：`125`\n  *   **新品平均价格**：`$ 34.63`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`1,127`\n  *   **新品月均销售额**：`$36,155`\n  *   **平均重量**：`2.58 pounds (1,170 g)`\n  *   **平均体积**：`341.29 in³ (5,593 cm³)`\n  *   **平均毛利率**：`61.61%`\n  *   **卖家所属地**：`中国|70.0%`\n  *   **搜索购买比**：`8.6‰`\n\n---\n\n#### 🏆 🟡-20. Pool & Deck Repair Products (油漆及密封产品)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Pools, Hot Tubs & Supplies › Parts & Accessories › Pool & Deck Repair Products  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$31.79`\n  *   **平均 Reviews (Avg Reviews)**：`682 个`\n  *   **物理重量 (Weight)**：`2.28 lbs`\n  *   **平均退货率 (Return Rate)**：`1.93%`\n  *   **平均毛利率 (Profit Margin)**：`58.44%`\n  *   **品牌集中度 (Brand Concentration)**：`57.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`48.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Pools, Hot Tubs & Supplies › Parts & Accessories › Pool & Deck Repair Products  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 泳池及配件 › 零配件 › 油漆及密封产品`\n  *   **A+数量占比**：`69%`\n  *   **新品平均评分数**：`62`\n  *   **新品平均价格**：`$ 19.47`\n  *   **新品平均星级**：`4.1`\n  *   **新品月均销量**：`688`\n  *   **新品月均销售额**：`$13,545`\n  *   **平均重量**：`2.28 pounds (1,032 g)`\n  *   **平均体积**：`643.59 in³ (10,547 cm³)`\n  *   **平均毛利率**：`58.44%`\n  *   **卖家所属地**：`美国|52.0%`\n  *   **搜索购买比**：`23.2‰`\n\n---\n\n#### 🏆 🟡-21. Poultry Fountains & Waterers (家禽自动喂水器和饮水器)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Farm & Ranch › Poultry Care › Poultry Feeding & Watering Supplies › Poultry Fountains & Waterers  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$24.70`\n  *   **平均 Reviews (Avg Reviews)**：`623 个`\n  *   **物理重量 (Weight)**：`1.88 lbs`\n  *   **平均退货率 (Return Rate)**：`2.74%`\n  *   **平均毛利率 (Profit Margin)**：`50.86%`\n  *   **品牌集中度 (Brand Concentration)**：`55.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`69.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Farm & Ranch › Poultry Care › Poultry Feeding & Watering Supplies › Poultry Fountains & Waterers  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 农场和牧场 › 家禽养护 › 家禽喂食喂水用具 › 家禽自动喂水器和饮水器`\n  *   **A+数量占比**：`83%`\n  *   **新品平均评分数**：`38`\n  *   **新品平均价格**：`$ 39.62`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`374`\n  *   **新品月均销售额**：`$13,949`\n  *   **平均重量**：`1.88 pounds (851 g)`\n  *   **平均体积**：`663.87 in³ (10,879 cm³)`\n  *   **平均毛利率**：`50.86%`\n  *   **卖家所属地**：`中国|69.0%`\n  *   **搜索购买比**：`9.7‰`\n\n---\n\n#### 🏆 🟡-22. Birdhouses (鸟屋)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Backyard Birding & Wildlife › Birds › Birdhouses  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$27.97`\n  *   **平均 Reviews (Avg Reviews)**：`613 个`\n  *   **物理重量 (Weight)**：`2.16 lbs`\n  *   **平均退货率 (Return Rate)**：`2.92%`\n  *   **平均毛利率 (Profit Margin)**：`55.84%`\n  *   **品牌集中度 (Brand Concentration)**：`52.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`73.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Backyard Birding & Wildlife › Birds › Birdhouses  市场分析`\n  *   **市场路径(中文)**：`Patio, Lawn & Garden › Backyard Birding & Wildlife › Birds › 鸟屋`\n  *   **A+数量占比**：`82%`\n  *   **新品平均评分数**：`40`\n  *   **新品平均价格**：`$ 23.11`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`508`\n  *   **新品月均销售额**：`$11,958`\n  *   **平均重量**：`2.16 pounds (982 g)`\n  *   **平均体积**：`576.73 in³ (9,451 cm³)`\n  *   **平均毛利率**：`55.84%`\n  *   **卖家所属地**：`中国|73.0%`\n  *   **搜索购买比**：`7.2‰`\n\n---\n\n#### 🏆 🟡-23. Beekeeping Supplies (养蜂用品)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Farm & Ranch › Beekeeping Supplies  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$31.75`\n  *   **平均 Reviews (Avg Reviews)**：`377 个`\n  *   **物理重量 (Weight)**：`3.74 lbs`\n  *   **平均退货率 (Return Rate)**：`2.6%`\n  *   **平均毛利率 (Profit Margin)**：`54.33%`\n  *   **品牌集中度 (Brand Concentration)**：`52.5%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`74.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Farm & Ranch › Beekeeping Supplies  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 农场和牧场 › 养蜂用品`\n  *   **A+数量占比**：`81%`\n  *   **新品平均评分数**：`117`\n  *   **新品平均价格**：`$ 25.39`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`398`\n  *   **新品月均销售额**：`$10,337`\n  *   **平均重量**：`3.74 pounds (1,698 g)`\n  *   **平均体积**：`789.74 in³ (12,941 cm³)`\n  *   **平均毛利率**：`54.33%`\n  *   **卖家所属地**：`中国|74.0%`\n  *   **搜索购买比**：`12.9‰`\n\n---\n\n#### 🏆 🟡-24. Plaques & Wall Art (装饰墙)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Plaques & Wall Art  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$20.05`\n  *   **平均 Reviews (Avg Reviews)**：`617 个`\n  *   **物理重量 (Weight)**：`1.10 lbs`\n  *   **平均退货率 (Return Rate)**：`2.89%`\n  *   **平均毛利率 (Profit Margin)**：`57.97%`\n  *   **品牌集中度 (Brand Concentration)**：`46.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`89.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Plaques & Wall Art  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 彩绘装饰 › 装饰墙`\n  *   **A+数量占比**：`89%`\n  *   **新品平均评分数**：`146`\n  *   **新品平均价格**：`$ 15.35`\n  *   **新品平均星级**：`4.1`\n  *   **新品月均销量**：`314`\n  *   **新品月均销售额**：`$4,954`\n  *   **平均重量**：`1.10 pounds (500 g)`\n  *   **平均体积**：`78.56 in³ (1,287 cm³)`\n  *   **平均毛利率**：`57.97%`\n  *   **卖家所属地**：`中国|89.0%`\n  *   **搜索购买比**：`4.9‰`\n\n---\n\n#### 🏆 🟡-25. Outdoor Clocks (户外钟表)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Outdoor Clocks  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$48.07`\n  *   **平均 Reviews (Avg Reviews)**：`385 个`\n  *   **物理重量 (Weight)**：`3.17 lbs`\n  *   **平均退货率 (Return Rate)**：`6.65%`\n  *   **平均毛利率 (Profit Margin)**：`59.5%`\n  *   **品牌集中度 (Brand Concentration)**：`66.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`77.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Outdoor Clocks  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 彩绘装饰 › 户外钟表`\n  *   **A+数量占比**：`92%`\n  *   **新品平均评分数**：`55`\n  *   **新品平均价格**：`$ 51.35`\n  *   **新品平均星级**：`4.3`\n  *   **新品月均销量**：`253`\n  *   **新品月均销售额**：`$10,841`\n  *   **平均重量**：`3.17 pounds (1,438 g)`\n  *   **平均体积**：`92.58 in³ (1,517 cm³)`\n  *   **平均毛利率**：`59.5%`\n  *   **卖家所属地**：`中国|77.0%`\n  *   **搜索购买比**：`7.0‰`\n\n---\n\n#### 🏆 🟡-26. Protective Gear (防护装备)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Farm & Ranch › Beekeeping Supplies › Protective Gear  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$42.27`\n  *   **平均 Reviews (Avg Reviews)**：`269 个`\n  *   **物理重量 (Weight)**：`3.09 lbs`\n  *   **平均退货率 (Return Rate)**：`3.95%`\n  *   **平均毛利率 (Profit Margin)**：`59.5%`\n  *   **品牌集中度 (Brand Concentration)**：`58.5%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`64.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Farm & Ranch › Beekeeping Supplies › Protective Gear  市场分析`\n  *   **市场路径(中文)**：`Patio, Lawn & Garden › Farm & Ranch › Beekeeping Supplies › 防护装备`\n  *   **A+数量占比**：`73%`\n  *   **新品平均评分数**：`58`\n  *   **新品平均价格**：`$ 43.01`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`187`\n  *   **新品月均销售额**：`$7,744`\n  *   **平均重量**：`3.09 pounds (1,400 g)`\n  *   **平均体积**：`504.82 in³ (8,272 cm³)`\n  *   **平均毛利率**：`59.5%`\n  *   **卖家所属地**：`中国|64.0%`\n  *   **搜索购买比**：`9.7‰`\n\n---\n\n#### 🏆 🟡-27. Bulb Planters (球茎栽植器)\n\n- **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Hand Tools › Bulb Planters  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$26.18`\n  *   **平均 Reviews (Avg Reviews)**：`283 个`\n  *   **物理重量 (Weight)**：`2.54 lbs`\n  *   **平均退货率 (Return Rate)**：`2.9%`\n  *   **平均毛利率 (Profit Margin)**：`51.88%`\n  *   **品牌集中度 (Brand Concentration)**：`50.2%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`74.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Hand Tools › Bulb Planters  市场分析`\n  *   **市场路径(中文)**：`庭院、草坪和园艺 › 园艺和微笑护理 › 手动园艺工具 › 球茎栽植器`\n  *   **A+数量占比**：`67%`\n  *   **新品平均评分数**：`17`\n  *   **新品平均价格**：`$ 23.63`\n  *   **新品平均星级**：`4.1`\n  *   **新品月均销量**：`92`\n  *   **新品月均销售额**：`$1,720`\n  *   **平均重量**：`2.54 pounds (1,151 g)`\n  *   **平均体积**：`702.23 in³ (11,507 cm³)`\n  *   **平均毛利率**：`51.88%`\n  *   **卖家所属地**：`中国|74.0%`\n  *   **搜索购买比**：`13.1‰`\n\n---\n\n#### 🏆 🟡-28. Cup Carriers (外卖杯托盘)\n\n- **完整市场路径**：`Industrial & Scientific › Food Service Equipment & Supplies › Disposables › Take Out Containers › Cup Carriers  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$22.27`\n  *   **平均 Reviews (Avg Reviews)**：`440 个`\n  *   **物理重量 (Weight)**：`2.62 lbs`\n  *   **平均退货率 (Return Rate)**：`4.6%`\n  *   **平均毛利率 (Profit Margin)**：`54.38%`\n  *   **品牌集中度 (Brand Concentration)**：`43.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`67.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Food Service Equipment & Supplies › Disposables › Take Out Containers › Cup Carriers  市场分析`\n  *   **市场路径(中文)**：`工业类 › 食品服务设备 › 一次性用品 › 外卖容器 › 外卖杯托盘`\n  *   **A+数量占比**：`79%`\n  *   **新品平均评分数**：`32`\n  *   **新品平均价格**：`$ 14.87`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`249`\n  *   **新品月均销售额**：`$3,487`\n  *   **平均重量**：`2.62 pounds (1,187 g)`\n  *   **平均体积**：`417.91 in³ (6,848 cm³)`\n  *   **平均毛利率**：`54.38%`\n  *   **卖家所属地**：`中国|67.0%`\n  *   **搜索购买比**：`8.4‰`\n\n---\n\n#### 🏆 🟡-29. Pipes (管道)\n\n- **完整市场路径**：`Industrial & Scientific › Hydraulics, Pneumatics & Plumbing › Tubes, Pipes & Hoses › Pipes  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$32.00`\n  *   **平均 Reviews (Avg Reviews)**：`153 个`\n  *   **物理重量 (Weight)**：`3.61 lbs`\n  *   **平均退货率 (Return Rate)**：`5.33%`\n  *   **平均毛利率 (Profit Margin)**：`54.91%`\n  *   **品牌集中度 (Brand Concentration)**：`68.9%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`49.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Hydraulics, Pneumatics & Plumbing › Tubes, Pipes & Hoses › Pipes  市场分析`\n  *   **市场路径(中文)**：`工业类 › 液压系统、气动系统 › 管子，管子 › 管道`\n  *   **A+数量占比**：`48%`\n  *   **新品平均评分数**：`7`\n  *   **新品平均价格**：`$ 17.05`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`177`\n  *   **新品月均销售额**：`$2,780`\n  *   **平均重量**：`3.61 pounds (1,636 g)`\n  *   **平均体积**：`755.85 in³ (12,386 cm³)`\n  *   **平均毛利率**：`54.91%`\n  *   **卖家所属地**：`美国|51.0%`\n  *   **搜索购买比**：`11.3‰`\n\n---\n\n#### 🏆 🟡-30. EMF Meters (电磁波计)\n\n- **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Electrical Testing › EMF Meters  市场分析`\n- **触发警示项**：`退货率偏高 (>8.0%)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$59.14`\n  *   **平均 Reviews (Avg Reviews)**：`340 个`\n  *   **物理重量 (Weight)**：`0.79 lbs`\n  *   **平均退货率 (Return Rate)**：`9.7%`\n  *   **平均毛利率 (Profit Margin)**：`74.59%`\n  *   **品牌集中度 (Brand Concentration)**：`70.8%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`71.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Test, Measure & Inspect › Electrical Testing › EMF Meters  市场分析`\n  *   **市场路径(中文)**：`工业类 › 测试，测量 › 电气测试 › 电磁波计`\n  *   **A+数量占比**：`79%`\n  *   **新品平均评分数**：`8`\n  *   **新品平均价格**：`$ 64.39`\n  *   **新品平均星级**：`3.8`\n  *   **新品月均销量**：`52`\n  *   **新品月均销售额**：`$3,217`\n  *   **平均重量**：`0.79 pounds (356 g)`\n  *   **平均体积**：`118.53 in³ (1,942 cm³)`\n  *   **平均毛利率**：`74.59%`\n  *   **卖家所属地**：`中国|71.0%`\n  *   **搜索购买比**：`6.4‰`\n\n---\n\n#### 🏆 🟡-31. Accessories (辅料)\n\n- **完整市场路径**：`Industrial & Scientific › Retail Store Fixtures & Equipment › Retail Shelving & Wall Displays › Pegboard & Fixtures › Accessories  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$21.04`\n  *   **平均 Reviews (Avg Reviews)**：`310 个`\n  *   **物理重量 (Weight)**：`3.23 lbs`\n  *   **平均退货率 (Return Rate)**：`5.23%`\n  *   **平均毛利率 (Profit Margin)**：`57.84%`\n  *   **品牌集中度 (Brand Concentration)**：`64.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`64.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Industrial & Scientific › Retail Store Fixtures & Equipment › Retail Shelving & Wall Displays › Pegboard & Fixtures › Accessories  市场分析`\n  *   **市场路径(中文)**：`工业类 › 零售商店设备 › 零售货架 › 钉板 › 辅料`\n  *   **A+数量占比**：`50%`\n  *   **新品平均评分数**：`5`\n  *   **新品平均价格**：`$ 17.85`\n  *   **新品平均星级**：`4.0`\n  *   **新品月均销量**：`45`\n  *   **新品月均销售额**：`$784`\n  *   **平均重量**：`3.23 pounds (1,463 g)`\n  *   **平均体积**：`235.25 in³ (3,855 cm³)`\n  *   **平均毛利率**：`57.84%`\n  *   **卖家所属地**：`中国|64.0%`\n  *   **搜索购买比**：`10.6‰`\n\n---\n\n#### 🏆 🟡-32. Diamond Blades (钻石刀片)\n\n- **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Power Tool Parts & Accessories › Saw Blades, Parts & Accessories › Blades › Diamond Blades  市场分析`\n- **触发警示项**：`Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$22.35`\n  *   **平均 Reviews (Avg Reviews)**：`568 个`\n  *   **物理重量 (Weight)**：`0.84 lbs`\n  *   **平均退货率 (Return Rate)**：`2.39%`\n  *   **平均毛利率 (Profit Margin)**：`61.6%`\n  *   **品牌集中度 (Brand Concentration)**：`62.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`74.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Power Tool Parts & Accessories › Saw Blades, Parts & Accessories › Blades › Diamond Blades  市场分析`\n  *   **市场路径(中文)**：`工具 › 权力 › 电动工具零件 › 锯片，零件 › 刀片 › 钻石刀片`\n  *   **A+数量占比**：`91%`\n  *   **新品平均评分数**：`43`\n  *   **新品平均价格**：`$ 16.41`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`254`\n  *   **新品月均销售额**：`$4,175`\n  *   **平均重量**：`0.84 pounds (380 g)`\n  *   **平均体积**：`13.45 in³ (220 cm³)`\n  *   **平均毛利率**：`61.6%`\n  *   **卖家所属地**：`中国|74.0%`\n  *   **搜索购买比**：`12.4‰`\n\n---\n\n#### 🏆 🟡-33. Angle Clamps (角夹钳)\n\n- **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Workholding Devices › Clamps › Angle Clamps  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs), Reviews偏高 (>550)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$35.63`\n  *   **平均 Reviews (Avg Reviews)**：`697 个`\n  *   **物理重量 (Weight)**：`3.19 lbs`\n  *   **平均退货率 (Return Rate)**：`4.55%`\n  *   **平均毛利率 (Profit Margin)**：`62.66%`\n  *   **品牌集中度 (Brand Concentration)**：`54.7%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`74.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Workholding Devices › Clamps › Angle Clamps  市场分析`\n  *   **市场路径(中文)**：`工具和家庭装修 › 电动和手动工具 › 手动工具 › 工件夹持装置 › 夹钳 › 角夹钳`\n  *   **A+数量占比**：`91%`\n  *   **新品平均评分数**：`76`\n  *   **新品平均价格**：`$ 37.69`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`311`\n  *   **新品月均销售额**：`$13,173`\n  *   **平均重量**：`3.19 pounds (1,448 g)`\n  *   **平均体积**：`199.62 in³ (3,271 cm³)`\n  *   **平均毛利率**：`62.66%`\n  *   **卖家所属地**：`中国|74.0%`\n  *   **搜索购买比**：`9.5‰`\n\n---\n\n#### 🏆 🟡-34. Tap & Die Sets (敲击)\n\n- **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Taps & Dies › Tap & Die Sets  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$43.33`\n  *   **平均 Reviews (Avg Reviews)**：`297 个`\n  *   **物理重量 (Weight)**：`3.86 lbs`\n  *   **平均退货率 (Return Rate)**：`3.87%`\n  *   **平均毛利率 (Profit Margin)**：`60.01%`\n  *   **品牌集中度 (Brand Concentration)**：`45.6%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`67.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Taps & Dies › Tap & Die Sets  市场分析`\n  *   **市场路径(中文)**：`工具 › 权力 › 手动工具 › 水龙头 › 敲击`\n  *   **A+数量占比**：`81%`\n  *   **新品平均评分数**：`24`\n  *   **新品平均价格**：`$ 30.94`\n  *   **新品平均星级**：`3.7`\n  *   **新品月均销量**：`195`\n  *   **新品月均销售额**：`$4,807`\n  *   **平均重量**：`3.86 pounds (1,752 g)`\n  *   **平均体积**：`202.47 in³ (3,318 cm³)`\n  *   **平均毛利率**：`60.01%`\n  *   **卖家所属地**：`中国|67.0%`\n  *   **搜索购买比**：`8.1‰`\n\n---\n\n#### 🏆 🟡-35. Bolt Cutters (螺栓切割器)\n\n- **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Cutters › Bolt Cutters  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$42.21`\n  *   **平均 Reviews (Avg Reviews)**：`455 个`\n  *   **物理重量 (Weight)**：`2.89 lbs`\n  *   **平均退货率 (Return Rate)**：`5.4%`\n  *   **平均毛利率 (Profit Margin)**：`58.33%`\n  *   **品牌集中度 (Brand Concentration)**：`72.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`47.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Cutters › Bolt Cutters  市场分析`\n  *   **市场路径(中文)**：`工具 › 权力 › 手动工具 › 切割器 › 螺栓切割器`\n  *   **A+数量占比**：`69%`\n  *   **新品平均评分数**：`14`\n  *   **新品平均价格**：`$ 32.93`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`43`\n  *   **新品月均销售额**：`$1,055`\n  *   **平均重量**：`2.89 pounds (1,309 g)`\n  *   **平均体积**：`166.62 in³ (2,730 cm³)`\n  *   **平均毛利率**：`58.33%`\n  *   **卖家所属地**：`中国|47.0%`\n  *   **搜索购买比**：`10.1‰`\n\n---\n\n#### 🏆 🟡-36. Urinal Accessories (小便池配件)\n\n- **完整市场路径**：`Tools & Home Improvement › Kitchen & Bath Fixtures › Bathroom Fixtures › Urinals & Urinal Parts › Urinal Accessories  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$34.34`\n  *   **平均 Reviews (Avg Reviews)**：`81 个`\n  *   **物理重量 (Weight)**：`2.71 lbs`\n  *   **平均退货率 (Return Rate)**：`1.87%`\n  *   **平均毛利率 (Profit Margin)**：`59.16%`\n  *   **品牌集中度 (Brand Concentration)**：`55.1%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`52.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Kitchen & Bath Fixtures › Bathroom Fixtures › Urinals & Urinal Parts › Urinal Accessories  市场分析`\n  *   **市场路径(中文)**：`工具 › 厨房 › 卫浴设备 › 小便池 › 小便池配件`\n  *   **A+数量占比**：`68%`\n  *   **新品平均评分数**：`12`\n  *   **新品平均价格**：`$ 27.82`\n  *   **新品平均星级**：`4.5`\n  *   **新品月均销量**：`157`\n  *   **新品月均销售额**：`$5,496`\n  *   **平均重量**：`2.71 pounds (1,228 g)`\n  *   **平均体积**：`232.89 in³ (3,816 cm³)`\n  *   **平均毛利率**：`59.16%`\n  *   **卖家所属地**：`中国|52.0%`\n  *   **搜索购买比**：`25.3‰`\n\n---\n\n#### 🏆 🟡-37. Kick Plates (踢脚板)\n\n- **完整市场路径**：`Tools & Home Improvement › Hardware › Door Hardware & Locks › Kick Plates  市场分析`\n- **触发警示项**：`退货率偏高 (>8.0%)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$28.13`\n  *   **平均 Reviews (Avg Reviews)**：`127 个`\n  *   **物理重量 (Weight)**：`1.59 lbs`\n  *   **平均退货率 (Return Rate)**：`8.07%`\n  *   **平均毛利率 (Profit Margin)**：`55.44%`\n  *   **品牌集中度 (Brand Concentration)**：`60.0%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`65.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Hardware › Door Hardware & Locks › Kick Plates  市场分析`\n  *   **市场路径(中文)**：`工具 › 硬件设施 › 门五金 › 踢脚板`\n  *   **A+数量占比**：`73%`\n  *   **新品平均评分数**：`24`\n  *   **新品平均价格**：`$ 15.64`\n  *   **新品平均星级**：`4.4`\n  *   **新品月均销量**：`144`\n  *   **新品月均销售额**：`$1,967`\n  *   **平均重量**：`1.59 pounds (723 g)`\n  *   **平均体积**：`183.73 in³ (3,011 cm³)`\n  *   **平均毛利率**：`55.44%`\n  *   **卖家所属地**：`中国|65.0%`\n  *   **搜索购买比**：`10.7‰`\n\n---\n\n#### 🏆 🟡-38. Masonry Chisels (砌筑用凿子)\n\n- **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Chisels › Masonry Chisels  市场分析`\n- **触发警示项**：`重量偏重 (>2.5 lbs)`\n- **核心数据特征**：\n  *   **平均客单价 (Avg Price)**：`$27.19`\n  *   **平均 Reviews (Avg Reviews)**：`251 个`\n  *   **物理重量 (Weight)**：`2.62 lbs`\n  *   **平均退货率 (Return Rate)**：`3.89%`\n  *   **平均毛利率 (Profit Margin)**：`55.51%`\n  *   **品牌集中度 (Brand Concentration)**：`50.4%`\n  *   **中国卖家比例 (Chinese Seller Ratio)**：`55.0%`\n- **Sellersprite 抓取原始细节 (Scraped Details)**：\n  *   **完整市场路径**：`Tools & Home Improvement › Power & Hand Tools › Hand Tools › Chisels › Masonry Chisels  市场分析`\n  *   **市场路径(中文)**：`工具 › 权力 › 手动工具 › 凿子 › 砌筑用凿子`\n  *   **A+数量占比**：`66%`\n  *   **新品平均评分数**：`10`\n  *   **新品平均价格**：`$ 17.38`\n  *   **新品平均星级**：`4.2`\n  *   **新品月均销量**：`71`\n  *   **新品月均销售额**：`$1,369`\n  *   **平均重量**：`2.62 pounds (1,190 g)`\n  *   **平均体积**：`67.58 in³ (1,108 cm³)`\n  *   **平均毛利率**：`55.51%`\n  *   **卖家所属地**：`中国|55.0%`\n  *   **搜索购买比**：`9.7‰`\n\n---\n",
+  "candidates": [
+    {
+      "en_name": "Swing Trainers",
+      "zh_name": "室内练习器",
+      "path": "Sports & Outdoors > Sports > Golf > Training Equipment > Swing Trainers",
+      "level": "🟢 Green (Recommended)",
+      "price": 37.01,
+      "reviews": 448,
+      "weight_lbs": 0.71,
+      "return_rate": 4.37,
+      "brand_conc": 57.1,
+      "cn_ratio": 68.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Golf",
+        "Training Equipment",
+        "Swing Trainers"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Paddleboard Accessories",
+      "zh_name": "冲浪板配件",
+      "path": "Sports & Outdoors > Sports > Water Sports > Stand-Up Paddleboarding > Paddleboard Accessories",
+      "level": "🟢 Green (Recommended)",
+      "price": 53.08,
+      "reviews": 322,
+      "weight_lbs": 2.37,
+      "return_rate": 4.17,
+      "brand_conc": 42.7,
+      "cn_ratio": 72.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Water Sports",
+        "Stand-Up Paddleboarding",
+        "Paddleboard Accessories"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Camping Fans",
+      "zh_name": "露营爱好者",
+      "path": "Sports & Outdoors > Outdoor Recreation > Camping & Hiking > Camping Fans",
+      "level": "🟢 Green (Recommended)",
+      "price": 38.58,
+      "reviews": 260,
+      "weight_lbs": 2.17,
+      "return_rate": 4.56,
+      "brand_conc": 69.4,
+      "cn_ratio": 82.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Outdoor Recreation",
+        "Camping & Hiking",
+        "Camping Fans"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Trophies",
+      "zh_name": "奖杯",
+      "path": "Sports & Outdoors > Sports & Outdoor Recreation Accessories > Trophies, Medals & Awards > Trophies",
+      "level": "🟢 Green (Recommended)",
+      "price": 25.63,
+      "reviews": 297,
+      "weight_lbs": 1.01,
+      "return_rate": 2.59,
+      "brand_conc": 49.0,
+      "cn_ratio": 49.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports & Outdoor Recreation Accessories",
+        "Trophies, Medals & Awards",
+        "Trophies"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Tie-Downs",
+      "zh_name": "栓系器具",
+      "path": "Sports & Outdoors > Sports > Boating & Sailing > Boating > Boat Trailer Accessories > Tie-Downs",
+      "level": "🟢 Green (Recommended)",
+      "price": 27.85,
+      "reviews": 546,
+      "weight_lbs": 1.62,
+      "return_rate": 3.74,
+      "brand_conc": 61.7,
+      "cn_ratio": 54.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Boating & Sailing",
+        "Boating",
+        "Boat Trailer Accessories",
+        "Tie-Downs"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Wrist & Forearm Strengtheners",
+      "zh_name": "手腕和前臂加强器",
+      "path": "Sports & Outdoors > Exercise & Fitness > Strength Training Equipment > Strength Training Devices > Wrist & Forearm Strengtheners",
+      "level": "🟢 Green (Recommended)",
+      "price": 27.41,
+      "reviews": 373,
+      "weight_lbs": 2.28,
+      "return_rate": 4.53,
+      "brand_conc": 69.1,
+      "cn_ratio": 79.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Exercise & Fitness",
+        "Strength Training Equipment",
+        "Strength Training Devices",
+        "Wrist & Forearm Strengtheners"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Scoreboards & Timers",
+      "zh_name": "记分牌和计时器",
+      "path": "Sports & Outdoors > Sports & Outdoor Recreation Accessories > Coach & Referee Gear > Scoreboards & Timers",
+      "level": "🟢 Green (Recommended)",
+      "price": 53.46,
+      "reviews": 345,
+      "weight_lbs": 1.6,
+      "return_rate": 5.13,
+      "brand_conc": 54.1,
+      "cn_ratio": 72.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports & Outdoor Recreation Accessories",
+        "Coach & Referee Gear",
+        "Scoreboards & Timers"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Equestrian Sports",
+      "zh_name": "马术运动",
+      "path": "Sports & Outdoors > Sports > Other Sports > Equestrian Sports",
+      "level": "🟢 Green (Recommended)",
+      "price": 47.02,
+      "reviews": 193,
+      "weight_lbs": 1.67,
+      "return_rate": 4.03,
+      "brand_conc": 66.7,
+      "cn_ratio": 46.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Other Sports",
+        "Equestrian Sports"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Interior Lights",
+      "zh_name": "内部灯饰",
+      "path": "Sports & Outdoors > Sports > Boating & Sailing > Boating > Electrical Equipment > Interior Lights",
+      "level": "🟢 Green (Recommended)",
+      "price": 36.53,
+      "reviews": 290,
+      "weight_lbs": 0.87,
+      "return_rate": 3.55,
+      "brand_conc": 69.6,
+      "cn_ratio": 76.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Boating & Sailing",
+        "Boating",
+        "Electrical Equipment",
+        "Interior Lights"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Flags",
+      "zh_name": "标志",
+      "path": "Sports & Outdoors > Sports > Boating & Sailing > Boating > Boat Cabin Products > Flags",
+      "level": "🟢 Green (Recommended)",
+      "price": 24.01,
+      "reviews": 223,
+      "weight_lbs": 0.57,
+      "return_rate": 2.61,
+      "brand_conc": 63.9,
+      "cn_ratio": 52.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Boating & Sailing",
+        "Boating",
+        "Boat Cabin Products",
+        "Flags"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Motor Flushers",
+      "zh_name": "马达冲洗装置",
+      "path": "Sports & Outdoors > Sports > Boating & Sailing > Boating > Boat Engine Parts > Motor Flushers",
+      "level": "🟢 Green (Recommended)",
+      "price": 31.55,
+      "reviews": 284,
+      "weight_lbs": 1.23,
+      "return_rate": 3.62,
+      "brand_conc": 71.4,
+      "cn_ratio": 58.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Boating & Sailing",
+        "Boating",
+        "Boat Engine Parts",
+        "Motor Flushers"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Trophy Mounts",
+      "zh_name": "奖杯坐骑",
+      "path": "Sports & Outdoors > Hunting & Fishing > Hunting > Game Handling > Trophy Mounts",
+      "level": "🟢 Green (Recommended)",
+      "price": 25.66,
+      "reviews": 346,
+      "weight_lbs": 1.43,
+      "return_rate": 2.49,
+      "brand_conc": 71.2,
+      "cn_ratio": 44.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Hunting & Fishing",
+        "Hunting",
+        "Game Handling",
+        "Trophy Mounts"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Optics Accessories",
+      "zh_name": "光学配件",
+      "path": "Sports & Outdoors > Hunting & Fishing > Shooting > Optics > Optics Accessories",
+      "level": "🟢 Green (Recommended)",
+      "price": 32.96,
+      "reviews": 357,
+      "weight_lbs": 0.2,
+      "return_rate": 5.63,
+      "brand_conc": 53.4,
+      "cn_ratio": 44.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Hunting & Fishing",
+        "Shooting",
+        "Optics",
+        "Optics Accessories"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Fly Tying Equipment",
+      "zh_name": "绑蝇设备",
+      "path": "Sports & Outdoors > Hunting & Fishing > Fishing > Fly Fishing > Accessories > Fly Tying Equipment",
+      "level": "🟢 Green (Recommended)",
+      "price": 20.69,
+      "reviews": 487,
+      "weight_lbs": 0.3,
+      "return_rate": 2.84,
+      "brand_conc": 64.8,
+      "cn_ratio": 57.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Hunting & Fishing",
+        "Fishing",
+        "Fly Fishing",
+        "Accessories",
+        "Fly Tying Equipment"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Line Spooling Accessories",
+      "zh_name": "线路绕线配件",
+      "path": "Sports & Outdoors > Hunting & Fishing > Fishing > Accessories > Line Spooling Accessories",
+      "level": "🟢 Green (Recommended)",
+      "price": 20.79,
+      "reviews": 364,
+      "weight_lbs": 1.98,
+      "return_rate": 3.66,
+      "brand_conc": 66.1,
+      "cn_ratio": 63.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Hunting & Fishing",
+        "Fishing",
+        "Accessories",
+        "Line Spooling Accessories"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Team Practice Vests",
+      "zh_name": "团队练习背心",
+      "path": "Sports & Outdoors > Sports & Outdoor Recreation Accessories > Field, Court & Rink Equipment > Team Practice Vests",
+      "level": "🟢 Green (Recommended)",
+      "price": 33.17,
+      "reviews": 186,
+      "weight_lbs": 2.21,
+      "return_rate": 6.66,
+      "brand_conc": 66.9,
+      "cn_ratio": 83.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports & Outdoor Recreation Accessories",
+        "Field, Court & Rink Equipment",
+        "Team Practice Vests"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Tools",
+      "zh_name": "工具",
+      "path": "Sports & Outdoors > Sports > Boating & Sailing > Boating > Maintenance Supplies > Tools",
+      "level": "🟢 Green (Recommended)",
+      "price": 34.67,
+      "reviews": 185,
+      "weight_lbs": 1.48,
+      "return_rate": 3.64,
+      "brand_conc": 45.8,
+      "cn_ratio": 66.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Boating & Sailing",
+        "Boating",
+        "Maintenance Supplies",
+        "Tools"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Reel Replacement Parts",
+      "zh_name": "卷盘更换部件",
+      "path": "Sports & Outdoors > Hunting & Fishing > Fishing > Reels & Accessories > Reel Replacement Parts",
+      "level": "🟢 Green (Recommended)",
+      "price": 27.25,
+      "reviews": 108,
+      "weight_lbs": 1.38,
+      "return_rate": 5.58,
+      "brand_conc": 71.3,
+      "cn_ratio": 70.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Hunting & Fishing",
+        "Fishing",
+        "Reels & Accessories",
+        "Reel Replacement Parts"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Shafts",
+      "zh_name": "杆身",
+      "path": "Sports & Outdoors > Sports > Golf > Golf Club Parts > Shafts",
+      "level": "🟢 Green (Recommended)",
+      "price": 27.08,
+      "reviews": 95,
+      "weight_lbs": 0.15,
+      "return_rate": 3.27,
+      "brand_conc": 62.3,
+      "cn_ratio": 59.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Golf",
+        "Golf Club Parts",
+        "Shafts"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Training Putters",
+      "zh_name": "练习推杆",
+      "path": "Sports & Outdoors > Sports > Golf > Training Equipment > Training Putters",
+      "level": "🟢 Green (Recommended)",
+      "price": 30.9,
+      "reviews": 196,
+      "weight_lbs": 1.38,
+      "return_rate": 4.05,
+      "brand_conc": 65.8,
+      "cn_ratio": 62.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Golf",
+        "Training Equipment",
+        "Training Putters"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Cups",
+      "zh_name": "杯子",
+      "path": "Home & Kitchen > Event & Party Supplies > Tableware > Cups",
+      "level": "🟢 Green (Recommended)",
+      "price": 21.5,
+      "reviews": 467,
+      "weight_lbs": 1.32,
+      "return_rate": 3.95,
+      "brand_conc": 59.9,
+      "cn_ratio": 66.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Event & Party Supplies",
+        "Tableware",
+        "Cups"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Cardboard Cutouts",
+      "zh_name": "硬板纸模型",
+      "path": "Home & Kitchen > Home Décor Products > Home Décor Accents > Cardboard Cutouts",
+      "level": "🟢 Green (Recommended)",
+      "price": 24.38,
+      "reviews": 295,
+      "weight_lbs": 1.31,
+      "return_rate": 4.59,
+      "brand_conc": 61.0,
+      "cn_ratio": 62.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Home Décor Products",
+        "Home Décor Accents",
+        "Cardboard Cutouts"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Bar Tools & Drinkware",
+      "zh_name": "酒吧工具",
+      "path": "Home & Kitchen > Kitchen & Dining > Dining & Entertaining > Bar Tools & Drinkware",
+      "level": "🟢 Green (Recommended)",
+      "price": 26.8,
+      "reviews": 376,
+      "weight_lbs": 1.51,
+      "return_rate": 5.44,
+      "brand_conc": 55.9,
+      "cn_ratio": 62.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Bar Tools & Drinkware"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Steam Cleaner & Steam Mop Replacement Parts",
+      "zh_name": "蒸汽清洗机",
+      "path": "Home & Kitchen > Vacuums & Floor Care > Steam Cleaners, Steam Mops & Accessories > Steam Cleaner & Steam Mop Replacement Parts",
+      "level": "🟢 Green (Recommended)",
+      "price": 21.27,
+      "reviews": 363,
+      "weight_lbs": 0.82,
+      "return_rate": 4.59,
+      "brand_conc": 69.8,
+      "cn_ratio": 75.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Vacuums & Floor Care",
+        "Steam Cleaners, Steam Mops & Accessories",
+        "Steam Cleaner & Steam Mop Replacement Parts"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Tortilla Servers",
+      "zh_name": "玉米饼服务员",
+      "path": "Home & Kitchen > Kitchen & Dining > Dining & Entertaining > Dinnerware & Serveware > Serveware > Tortilla Servers",
+      "level": "🟢 Green (Recommended)",
+      "price": 21.77,
+      "reviews": 439,
+      "weight_lbs": 1.74,
+      "return_rate": 6.26,
+      "brand_conc": 58.8,
+      "cn_ratio": 43.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Dinnerware & Serveware",
+        "Serveware",
+        "Tortilla Servers"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Devotional Candles",
+      "zh_name": "祈祷蜡烛",
+      "path": "Home & Kitchen > Home Décor Products > Candles & Holders > Candles > Specialty Candles > Devotional Candles",
+      "level": "🟢 Green (Recommended)",
+      "price": 26.05,
+      "reviews": 196,
+      "weight_lbs": 1.77,
+      "return_rate": 4.08,
+      "brand_conc": 62.4,
+      "cn_ratio": 55.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Home Décor Products",
+        "Candles & Holders",
+        "Candles",
+        "Specialty Candles",
+        "Devotional Candles"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Serveware",
+      "zh_name": "碗碟",
+      "path": "Home & Kitchen > Kitchen & Dining > Dining & Entertaining > Novelty > Serveware",
+      "level": "🟢 Green (Recommended)",
+      "price": 21.82,
+      "reviews": 416,
+      "weight_lbs": 1.47,
+      "return_rate": 5.33,
+      "brand_conc": 57.5,
+      "cn_ratio": 63.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Novelty",
+        "Serveware"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Lighting Products",
+      "zh_name": "水底灯",
+      "path": "Patio, Lawn & Garden > Pools, Hot Tubs & Supplies > Parts & Accessories > Lighting Products",
+      "level": "🟢 Green (Recommended)",
+      "price": 47.85,
+      "reviews": 482,
+      "weight_lbs": 1.72,
+      "return_rate": 6.75,
+      "brand_conc": 51.9,
+      "cn_ratio": 74.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Pools, Hot Tubs & Supplies",
+        "Parts & Accessories",
+        "Lighting Products"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Nozzles",
+      "zh_name": "喷嘴",
+      "path": "Patio, Lawn & Garden > Outdoor Power Tools > Replacement Parts & Accessories > Pressure Washer Parts & Accessories > Nozzles",
+      "level": "🟢 Green (Recommended)",
+      "price": 26.24,
+      "reviews": 490,
+      "weight_lbs": 0.44,
+      "return_rate": 2.63,
+      "brand_conc": 53.8,
+      "cn_ratio": 74.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Outdoor Power Tools",
+        "Replacement Parts & Accessories",
+        "Pressure Washer Parts & Accessories",
+        "Nozzles"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Wind Spinners",
+      "zh_name": "Wind Spinners",
+      "path": "Patio, Lawn & Garden > Outdoor Décor > Garden Sculptures & Statues > Wind Sculptures & Spinners > Wind Spinners",
+      "level": "🟢 Green (Recommended)",
+      "price": 31.43,
+      "reviews": 472,
+      "weight_lbs": 2.36,
+      "return_rate": 3.09,
+      "brand_conc": 54.6,
+      "cn_ratio": 85.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Outdoor Décor",
+        "Garden Sculptures & Statues",
+        "Wind Sculptures & Spinners",
+        "Wind Spinners"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Attachments",
+      "zh_name": "附件",
+      "path": "Patio, Lawn & Garden > Outdoor Power Tools > Replacement Parts & Accessories > String Trimmer Parts & Accessories > Attachments",
+      "level": "🟢 Green (Recommended)",
+      "price": 39.59,
+      "reviews": 222,
+      "weight_lbs": 2.19,
+      "return_rate": 3.07,
+      "brand_conc": 72.2,
+      "cn_ratio": 78.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Outdoor Power Tools",
+        "Replacement Parts & Accessories",
+        "String Trimmer Parts & Accessories",
+        "Attachments"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Hoes",
+      "zh_name": "园艺锄",
+      "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Hand Tools > Hoes",
+      "level": "🟢 Green (Recommended)",
+      "price": 27.68,
+      "reviews": 319,
+      "weight_lbs": 2.41,
+      "return_rate": 3.1,
+      "brand_conc": 51.9,
+      "cn_ratio": 72.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Gardening & Lawn Care",
+        "Hand Tools",
+        "Hoes"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Pond Lights",
+      "zh_name": "池塘灯",
+      "path": "Patio, Lawn & Garden > Outdoor Décor > Water Gardens & Ponds > Pond Lights",
+      "level": "🟢 Green (Recommended)",
+      "price": 46.62,
+      "reviews": 245,
+      "weight_lbs": 1.64,
+      "return_rate": 6.15,
+      "brand_conc": 67.1,
+      "cn_ratio": 75.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Outdoor Décor",
+        "Water Gardens & Ponds",
+        "Pond Lights"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Feeders",
+      "zh_name": "喂食器",
+      "path": "Patio, Lawn & Garden > Backyard Birding & Wildlife > Squirrels > Feeders",
+      "level": "🟢 Green (Recommended)",
+      "price": 25.06,
+      "reviews": 217,
+      "weight_lbs": 2.2,
+      "return_rate": 2.83,
+      "brand_conc": 67.6,
+      "cn_ratio": 70.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Backyard Birding & Wildlife",
+        "Squirrels",
+        "Feeders"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Energy Controllers",
+      "zh_name": "能源控制器",
+      "path": "Patio, Lawn & Garden > Generators & Portable Power > Solar & Wind Power > Energy Controllers",
+      "level": "🟢 Green (Recommended)",
+      "price": 81.15,
+      "reviews": 388,
+      "weight_lbs": 2.11,
+      "return_rate": 7.01,
+      "brand_conc": 70.3,
+      "cn_ratio": 66.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Generators & Portable Power",
+        "Solar & Wind Power",
+        "Energy Controllers"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Diverters",
+      "zh_name": "分流器",
+      "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Watering Equipment > Rain Barrels & Accessories > Diverters",
+      "level": "🟢 Green (Recommended)",
+      "price": 26.61,
+      "reviews": 205,
+      "weight_lbs": 1.58,
+      "return_rate": 3.4,
+      "brand_conc": 70.8,
+      "cn_ratio": 79.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Gardening & Lawn Care",
+        "Watering Equipment",
+        "Rain Barrels & Accessories",
+        "Diverters"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Bats",
+      "zh_name": "蝙蝠",
+      "path": "Patio, Lawn & Garden > Backyard Birding & Wildlife > Bats",
+      "level": "🟢 Green (Recommended)",
+      "price": 32.07,
+      "reviews": 342,
+      "weight_lbs": 2.1,
+      "return_rate": 2.61,
+      "brand_conc": 56.1,
+      "cn_ratio": 47.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Backyard Birding & Wildlife",
+        "Bats"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Gazing Balls",
+      "zh_name": "反射球",
+      "path": "Patio, Lawn & Garden > Outdoor Décor > Garden Sculptures & Statues > Gazing Balls",
+      "level": "🟢 Green (Recommended)",
+      "price": 38.09,
+      "reviews": 292,
+      "weight_lbs": 2.26,
+      "return_rate": 4.79,
+      "brand_conc": 63.6,
+      "cn_ratio": 77.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Outdoor Décor",
+        "Garden Sculptures & Statues",
+        "Gazing Balls"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Machetes",
+      "zh_name": "弯刀",
+      "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Hand Tools > Machetes",
+      "level": "🟢 Green (Recommended)",
+      "price": 32.55,
+      "reviews": 455,
+      "weight_lbs": 1.36,
+      "return_rate": 2.54,
+      "brand_conc": 64.9,
+      "cn_ratio": 46.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Gardening & Lawn Care",
+        "Hand Tools",
+        "Machetes"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Indoor Air Quality Meters",
+      "zh_name": "室内空气质量测试仪",
+      "path": "Industrial & Scientific > Test, Measure & Inspect > Airflow & Air Quality > Indoor Air Quality Meters",
+      "level": "🟢 Green (Recommended)",
+      "price": 72.17,
+      "reviews": 303,
+      "weight_lbs": 0.53,
+      "return_rate": 7.8,
+      "brand_conc": 70.2,
+      "cn_ratio": 63.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Test, Measure & Inspect",
+        "Airflow & Air Quality",
+        "Indoor Air Quality Meters"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Grinding Discs",
+      "zh_name": "磨片",
+      "path": "Industrial & Scientific > Abrasive & Finishing Products > Abrasive Wheels & Discs > Grinding Discs",
+      "level": "🟢 Green (Recommended)",
+      "price": 23.53,
+      "reviews": 360,
+      "weight_lbs": 2.02,
+      "return_rate": 2.13,
+      "brand_conc": 46.8,
+      "cn_ratio": 81.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Abrasive & Finishing Products",
+        "Abrasive Wheels & Discs",
+        "Grinding Discs"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Network & Cable Testers",
+      "zh_name": "网络",
+      "path": "Industrial & Scientific > Test, Measure & Inspect > Network & Cable Testers",
+      "level": "🟢 Green (Recommended)",
+      "price": 117.9,
+      "reviews": 422,
+      "weight_lbs": 0.6,
+      "return_rate": 5.23,
+      "brand_conc": 63.0,
+      "cn_ratio": 68.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Test, Measure & Inspect",
+        "Network & Cable Testers"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "3D Printer Platforms",
+      "zh_name": "3D打印机平台",
+      "path": "Industrial & Scientific > Additive Manufacturing Products > 3D Printer Parts & Accessories > 3D Printer Platforms",
+      "level": "🟢 Green (Recommended)",
+      "price": 23.55,
+      "reviews": 216,
+      "weight_lbs": 2.0,
+      "return_rate": 4.56,
+      "brand_conc": 71.7,
+      "cn_ratio": 68.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Additive Manufacturing Products",
+        "3D Printer Parts & Accessories",
+        "3D Printer Platforms"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Angle Grinder Wheels",
+      "zh_name": "角磨机砂轮",
+      "path": "Industrial & Scientific > Abrasive & Finishing Products > Abrasive Wheels & Discs > Angle Grinder Wheels",
+      "level": "🟢 Green (Recommended)",
+      "price": 23.91,
+      "reviews": 159,
+      "weight_lbs": 1.54,
+      "return_rate": 2.41,
+      "brand_conc": 59.9,
+      "cn_ratio": 79.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Abrasive & Finishing Products",
+        "Abrasive Wheels & Discs",
+        "Angle Grinder Wheels"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Float Valves",
+      "zh_name": "浮阀",
+      "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Fittings > Valves > Float Valves",
+      "level": "🟢 Green (Recommended)",
+      "price": 20.45,
+      "reviews": 182,
+      "weight_lbs": 0.64,
+      "return_rate": 4.44,
+      "brand_conc": 42.7,
+      "cn_ratio": 67.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Hydraulics, Pneumatics & Plumbing",
+        "Fittings",
+        "Valves",
+        "Float Valves"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Leak Detection Tools",
+      "zh_name": "泄漏检测工具",
+      "path": "Industrial & Scientific > Test, Measure & Inspect > Inspection & Analysis > Leak Detection Tools",
+      "level": "🟢 Green (Recommended)",
+      "price": 76.34,
+      "reviews": 154,
+      "weight_lbs": 1.47,
+      "return_rate": 4.3,
+      "brand_conc": 55.1,
+      "cn_ratio": 48.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Test, Measure & Inspect",
+        "Inspection & Analysis",
+        "Leak Detection Tools"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Machine Tool Inspection Mirrors",
+      "zh_name": "机床检测镜",
+      "path": "Industrial & Scientific > Test, Measure & Inspect > Inspection & Analysis > Optical Inspection Apparatus > Machine Tool Inspection Mirrors",
+      "level": "🟢 Green (Recommended)",
+      "price": 21.53,
+      "reviews": 261,
+      "weight_lbs": 0.68,
+      "return_rate": 2.09,
+      "brand_conc": 69.2,
+      "cn_ratio": 78.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Test, Measure & Inspect",
+        "Inspection & Analysis",
+        "Optical Inspection Apparatus",
+        "Machine Tool Inspection Mirrors"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Lab Supply Dispensers",
+      "zh_name": "实验室用品分配器",
+      "path": "Industrial & Scientific > Lab & Scientific Products > Lab Furniture > Lab Supply Dispensers",
+      "level": "🟢 Green (Recommended)",
+      "price": 29.8,
+      "reviews": 171,
+      "weight_lbs": 2.19,
+      "return_rate": 4.45,
+      "brand_conc": 62.7,
+      "cn_ratio": 58.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Lab & Scientific Products",
+        "Lab Furniture",
+        "Lab Supply Dispensers"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Unmanned Aerial Vehicles)",
+      "zh_name": "UAVs",
+      "path": "Industrial & Scientific > Robotics > Unmanned Aerial Vehicles (UAVs)",
+      "level": "🟢 Green (Recommended)",
+      "price": 84.75,
+      "reviews": 145,
+      "weight_lbs": 0.62,
+      "return_rate": 7.1,
+      "brand_conc": 69.2,
+      "cn_ratio": 81.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Robotics",
+        "Unmanned Aerial Vehicles (UAVs)"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Hose Clamping Tools",
+      "zh_name": "软管夹紧工具",
+      "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Fittings > Fitting Clamps > Hose Fitting Clamps > Hose Clamping Tools",
+      "level": "🟢 Green (Recommended)",
+      "price": 21.11,
+      "reviews": 212,
+      "weight_lbs": 1.15,
+      "return_rate": 3.61,
+      "brand_conc": 69.6,
+      "cn_ratio": 79.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Hydraulics, Pneumatics & Plumbing",
+        "Fittings",
+        "Fitting Clamps",
+        "Hose Fitting Clamps",
+        "Hose Clamping Tools"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Tactile Switches",
+      "zh_name": "触摸式开关",
+      "path": "Industrial & Scientific > Industrial Electrical > Controls & Indicators > Industrial Switches > Tactile Switches",
+      "level": "🟢 Green (Recommended)",
+      "price": 26.62,
+      "reviews": 57,
+      "weight_lbs": 0.29,
+      "return_rate": 7.31,
+      "brand_conc": 72.2,
+      "cn_ratio": 95.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Industrial Electrical",
+        "Controls & Indicators",
+        "Industrial Switches",
+        "Tactile Switches"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Electrically Conductive Adhesives",
+      "zh_name": "导电性粘合剂",
+      "path": "Industrial & Scientific > Adhesives, Sealants & Lubricants > Industrial Adhesives > Electrically Conductive Adhesives",
+      "level": "🟢 Green (Recommended)",
+      "price": 25.39,
+      "reviews": 256,
+      "weight_lbs": 0.59,
+      "return_rate": 2.14,
+      "brand_conc": 69.8,
+      "cn_ratio": 52.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Adhesives, Sealants & Lubricants",
+        "Industrial Adhesives",
+        "Electrically Conductive Adhesives"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Pressure Regulators",
+      "zh_name": "压力调节器",
+      "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Fittings > Valves > Pressure Regulators",
+      "level": "🟢 Green (Recommended)",
+      "price": 91.76,
+      "reviews": 157,
+      "weight_lbs": 2.13,
+      "return_rate": 6.61,
+      "brand_conc": 66.4,
+      "cn_ratio": 43.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Hydraulics, Pneumatics & Plumbing",
+        "Fittings",
+        "Valves",
+        "Pressure Regulators"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "3D Printer Extruders",
+      "zh_name": "3D打印机挤出机",
+      "path": "Industrial & Scientific > Additive Manufacturing Products > 3D Printer Parts & Accessories > 3D Printer Extruders",
+      "level": "🟢 Green (Recommended)",
+      "price": 28.93,
+      "reviews": 160,
+      "weight_lbs": 0.18,
+      "return_rate": 4.99,
+      "brand_conc": 57.6,
+      "cn_ratio": 78.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Additive Manufacturing Products",
+        "3D Printer Parts & Accessories",
+        "3D Printer Extruders"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Angle",
+      "zh_name": "角规",
+      "path": "Industrial & Scientific > Test, Measure & Inspect > Dimensional Measurement > Gauges > Angle",
+      "level": "🟢 Green (Recommended)",
+      "price": 22.64,
+      "reviews": 392,
+      "weight_lbs": 0.53,
+      "return_rate": 2.9,
+      "brand_conc": 61.0,
+      "cn_ratio": 65.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Test, Measure & Inspect",
+        "Dimensional Measurement",
+        "Gauges",
+        "Angle"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Relief Valves",
+      "zh_name": "减压阀",
+      "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Fittings > Valves > Relief Valves",
+      "level": "🟢 Green (Recommended)",
+      "price": 46.38,
+      "reviews": 125,
+      "weight_lbs": 0.96,
+      "return_rate": 6.22,
+      "brand_conc": 56.6,
+      "cn_ratio": 49.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Hydraulics, Pneumatics & Plumbing",
+        "Fittings",
+        "Valves",
+        "Relief Valves"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Shim Stock",
+      "zh_name": "衬垫",
+      "path": "Industrial & Scientific > Raw Materials > Shims & Shim Stock > Shim Stock",
+      "level": "🟢 Green (Recommended)",
+      "price": 20.21,
+      "reviews": 129,
+      "weight_lbs": 1.74,
+      "return_rate": 3.03,
+      "brand_conc": 74.8,
+      "cn_ratio": 55.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Raw Materials",
+        "Shims & Shim Stock",
+        "Shim Stock"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Continuous & Piano",
+      "zh_name": "连续铰链和钢琴铰链",
+      "path": "Industrial & Scientific > Industrial Hardware > Hinges > Continuous & Piano",
+      "level": "🟢 Green (Recommended)",
+      "price": 25.21,
+      "reviews": 63,
+      "weight_lbs": 1.19,
+      "return_rate": 5.54,
+      "brand_conc": 69.2,
+      "cn_ratio": 69.1,
+      "product_path": [
+        "Industrial & Scientific",
+        "Industrial Hardware",
+        "Hinges",
+        "Continuous & Piano"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Outlet Boxes",
+      "zh_name": "插座盒",
+      "path": "Tools & Home Improvement > Electrical > Electrical Boxes, Conduits & Fittings > Outlet Boxes",
+      "level": "🟢 Green (Recommended)",
+      "price": 20.03,
+      "reviews": 526,
+      "weight_lbs": 1.12,
+      "return_rate": 5.94,
+      "brand_conc": 56.7,
+      "cn_ratio": 55.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Electrical",
+        "Electrical Boxes, Conduits & Fittings",
+        "Outlet Boxes"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Auger Drill Bits",
+      "zh_name": "螺旋钻钻头",
+      "path": "Tools & Home Improvement > Power & Hand Tools > Power Tool Parts & Accessories > Power Drill Parts & Accessories > Drill Bits > Auger Drill Bits",
+      "level": "🟢 Green (Recommended)",
+      "price": 24.58,
+      "reviews": 532,
+      "weight_lbs": 1.99,
+      "return_rate": 3.79,
+      "brand_conc": 67.7,
+      "cn_ratio": 69.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Power & Hand Tools",
+        "Power Tool Parts & Accessories",
+        "Power Drill Parts & Accessories",
+        "Drill Bits",
+        "Auger Drill Bits"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Drill Bits",
+      "zh_name": "钻头",
+      "path": "Tools & Home Improvement > Power & Hand Tools > Power Tool Parts & Accessories > Power Drill Parts & Accessories > Drill Bits",
+      "level": "🟢 Green (Recommended)",
+      "price": 26.49,
+      "reviews": 262,
+      "weight_lbs": 1.0,
+      "return_rate": 2.68,
+      "brand_conc": 52.1,
+      "cn_ratio": 77.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Power & Hand Tools",
+        "Power Tool Parts & Accessories",
+        "Power Drill Parts & Accessories",
+        "Drill Bits"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Countertop & Tile Paint",
+      "zh_name": "台面",
+      "path": "Tools & Home Improvement > Paint, Wall Treatments & Supplies > Paint & Primer > Specialty Paint > Countertop & Tile Paint",
+      "level": "🟢 Green (Recommended)",
+      "price": 40.48,
+      "reviews": 386,
+      "weight_lbs": 1.91,
+      "return_rate": 5.69,
+      "brand_conc": 72.8,
+      "cn_ratio": 62.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Paint, Wall Treatments & Supplies",
+        "Paint & Primer",
+        "Specialty Paint",
+        "Countertop & Tile Paint"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Pipe Wrenches",
+      "zh_name": "管钳",
+      "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Wrenches > Pipe Wrenches",
+      "level": "🟢 Green (Recommended)",
+      "price": 30.43,
+      "reviews": 347,
+      "weight_lbs": 2.4,
+      "return_rate": 5.27,
+      "brand_conc": 63.0,
+      "cn_ratio": 69.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Power & Hand Tools",
+        "Hand Tools",
+        "Wrenches",
+        "Pipe Wrenches"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Paint Roller Extension Poles",
+      "zh_name": "油漆滚筒加长杆",
+      "path": "Tools & Home Improvement > Paint, Wall Treatments & Supplies > Painting Supplies & Tools > Paint Application Tools > Paint Roller Extension Poles",
+      "level": "🟢 Green (Recommended)",
+      "price": 38.69,
+      "reviews": 352,
+      "weight_lbs": 2.03,
+      "return_rate": 4.55,
+      "brand_conc": 55.6,
+      "cn_ratio": 65.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Paint, Wall Treatments & Supplies",
+        "Painting Supplies & Tools",
+        "Paint Application Tools",
+        "Paint Roller Extension Poles"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Rods",
+      "zh_name": "杆",
+      "path": "Tools & Home Improvement > Welding & Soldering > Welding Equipment > Welding Equipment & Accessories > Arc Welding Equipment > Rods",
+      "level": "🟢 Green (Recommended)",
+      "price": 21.84,
+      "reviews": 197,
+      "weight_lbs": 2.17,
+      "return_rate": 1.94,
+      "brand_conc": 57.0,
+      "cn_ratio": 75.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Welding & Soldering",
+        "Welding Equipment",
+        "Welding Equipment & Accessories",
+        "Arc Welding Equipment",
+        "Rods"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Soffit Vents",
+      "zh_name": "檐口通风口",
+      "path": "Tools & Home Improvement > Building Supplies > Building Materials > Roofing > Vents > Soffit Vents",
+      "level": "🟢 Green (Recommended)",
+      "price": 21.53,
+      "reviews": 227,
+      "weight_lbs": 1.6,
+      "return_rate": 7.65,
+      "brand_conc": 72.5,
+      "cn_ratio": 58.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Building Supplies",
+        "Building Materials",
+        "Roofing",
+        "Vents",
+        "Soffit Vents"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Sensors",
+      "zh_name": "传感器",
+      "path": "Tools & Home Improvement > Building Supplies > Building Materials > Doors > Garage Doors, Openers & Parts > Hardware > Sensors",
+      "level": "🟢 Green (Recommended)",
+      "price": 26.26,
+      "reviews": 183,
+      "weight_lbs": 0.44,
+      "return_rate": 7.01,
+      "brand_conc": 64.1,
+      "cn_ratio": 73.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Building Supplies",
+        "Building Materials",
+        "Doors",
+        "Garage Doors, Openers & Parts",
+        "Hardware",
+        "Sensors"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Gutters",
+      "zh_name": "排水沟",
+      "path": "Tools & Home Improvement > Building Supplies > Building Materials > Roofing > Gutters & Accessories > Gutters",
+      "level": "🟢 Green (Recommended)",
+      "price": 23.86,
+      "reviews": 122,
+      "weight_lbs": 1.75,
+      "return_rate": 5.02,
+      "brand_conc": 56.7,
+      "cn_ratio": 70.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Building Supplies",
+        "Building Materials",
+        "Roofing",
+        "Gutters & Accessories",
+        "Gutters"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Mailbox Hardware",
+      "zh_name": "信箱硬件",
+      "path": "Tools & Home Improvement > Hardware > Mailboxes & Accessories > Mailbox Accessories & Hardware > Mailbox Hardware",
+      "level": "🟢 Green (Recommended)",
+      "price": 21.23,
+      "reviews": 212,
+      "weight_lbs": 1.04,
+      "return_rate": 7.65,
+      "brand_conc": 54.5,
+      "cn_ratio": 65.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Hardware",
+        "Mailboxes & Accessories",
+        "Mailbox Accessories & Hardware",
+        "Mailbox Hardware"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Nibblers",
+      "zh_name": "切片机",
+      "path": "Tools & Home Improvement > Power & Hand Tools > Power Tools > Shears & Nibblers > Nibblers",
+      "level": "🟢 Green (Recommended)",
+      "price": 65.19,
+      "reviews": 199,
+      "weight_lbs": 2.21,
+      "return_rate": 5.35,
+      "brand_conc": 70.0,
+      "cn_ratio": 69.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Power & Hand Tools",
+        "Power Tools",
+        "Shears & Nibblers",
+        "Nibblers"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Brazing Rods",
+      "zh_name": "钎杆",
+      "path": "Tools & Home Improvement > Welding & Soldering > Soldering & Brazing Equipment > Solder & Flux > Brazing Rods",
+      "level": "🟢 Green (Recommended)",
+      "price": 39.35,
+      "reviews": 136,
+      "weight_lbs": 0.65,
+      "return_rate": 2.03,
+      "brand_conc": 60.8,
+      "cn_ratio": 59.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Welding & Soldering",
+        "Soldering & Brazing Equipment",
+        "Solder & Flux",
+        "Brazing Rods"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Nail Pullers",
+      "zh_name": "羊角起钉钳",
+      "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Nail Pullers",
+      "level": "🟢 Green (Recommended)",
+      "price": 23.31,
+      "reviews": 346,
+      "weight_lbs": 1.15,
+      "return_rate": 2.27,
+      "brand_conc": 62.6,
+      "cn_ratio": 54.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Power & Hand Tools",
+        "Hand Tools",
+        "Nail Pullers"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Batteries & Battery Chargers",
+      "zh_name": "电池和电池",
+      "path": "Sports & Outdoors > Sports > Skates, Skateboards & Scooters > Scooters & Equipment > Components & Parts > Batteries & Battery Chargers",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 25.18,
+      "reviews": 470,
+      "weight_lbs": 0.95,
+      "return_rate": 9.83,
+      "brand_conc": 61.4,
+      "cn_ratio": 84.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Skates, Skateboards & Scooters",
+        "Scooters & Equipment",
+        "Components & Parts",
+        "Batteries & Battery Chargers"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Kayak Accessories",
+      "zh_name": "皮艇配件",
+      "path": "Sports & Outdoors > Sports > Water Sports > Kayaking > Kayak Accessories",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 24.8,
+      "reviews": 498,
+      "weight_lbs": 3.05,
+      "return_rate": 3.98,
+      "brand_conc": 38.9,
+      "cn_ratio": 74.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Water Sports",
+        "Kayaking",
+        "Kayak Accessories"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Fitness Circles",
+      "zh_name": "服务圈",
+      "path": "Sports & Outdoors > Exercise & Fitness > Pilates > Fitness Circles",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 28.72,
+      "reviews": 607,
+      "weight_lbs": 2.84,
+      "return_rate": 6.16,
+      "brand_conc": 68.5,
+      "cn_ratio": 68.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Exercise & Fitness",
+        "Pilates",
+        "Fitness Circles"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Headlights",
+      "zh_name": "车头灯",
+      "path": "Sports & Outdoors > Sports > Cycling > Accessories > Lights & Reflectors > Headlights",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 32.82,
+      "reviews": 567,
+      "weight_lbs": 0.46,
+      "return_rate": 5.21,
+      "brand_conc": 57.5,
+      "cn_ratio": 72.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Cycling",
+        "Accessories",
+        "Lights & Reflectors",
+        "Headlights"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Cooking Utensils",
+      "zh_name": "厨具",
+      "path": "Sports & Outdoors > Outdoor Recreation > Camping & Hiking > Camp Kitchen > Cooking Utensils",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 31.38,
+      "reviews": 627,
+      "weight_lbs": 1.72,
+      "return_rate": 3.17,
+      "brand_conc": 57.0,
+      "cn_ratio": 53.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Outdoor Recreation",
+        "Camping & Hiking",
+        "Camp Kitchen",
+        "Cooking Utensils"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Gaiters",
+      "zh_name": "护腿、护脚",
+      "path": "Sports & Outdoors > Outdoor Recreation > Camping & Hiking > Footwear & Accessories > Gaiters",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 32.44,
+      "reviews": 392,
+      "weight_lbs": 0.71,
+      "return_rate": 8.64,
+      "brand_conc": 52.2,
+      "cn_ratio": 67.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Outdoor Recreation",
+        "Camping & Hiking",
+        "Footwear & Accessories",
+        "Gaiters"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Replacement Wheels",
+      "zh_name": "备用轮",
+      "path": "Sports & Outdoors > Sports > Skates, Skateboards & Scooters > Scooters & Equipment > Components & Parts > Replacement Wheels",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 25.82,
+      "reviews": 299,
+      "weight_lbs": 2.2,
+      "return_rate": 8.59,
+      "brand_conc": 64.8,
+      "cn_ratio": 90.0,
+      "product_path": [
+        "Sports & Outdoors",
+        "Sports",
+        "Skates, Skateboards & Scooters",
+        "Scooters & Equipment",
+        "Components & Parts",
+        "Replacement Wheels"
+      ],
+      "departments": [
+        18
+      ]
+    },
+    {
+      "en_name": "Bread Proofing Baskets",
+      "zh_name": "面包发酵篮",
+      "path": "Home & Kitchen > Kitchen & Dining > Bakeware > Baking Tools & Accessories > Baking & Pastry Utensils > Bread Proofing Baskets",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 29.0,
+      "reviews": 570,
+      "weight_lbs": 2.03,
+      "return_rate": 4.09,
+      "brand_conc": 53.8,
+      "cn_ratio": 67.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Kitchen & Dining",
+        "Bakeware",
+        "Baking Tools & Accessories",
+        "Baking & Pastry Utensils",
+        "Bread Proofing Baskets"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Decorative Boxes",
+      "zh_name": "装饰盒",
+      "path": "Home & Kitchen > Home Décor Products > Home Décor Accents > Decorative Accessories > Decorative Boxes",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 23.78,
+      "reviews": 694,
+      "weight_lbs": 1.57,
+      "return_rate": 7.91,
+      "brand_conc": 54.4,
+      "cn_ratio": 67.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Home Décor Products",
+        "Home Décor Accents",
+        "Decorative Accessories",
+        "Decorative Boxes"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Toilet Paper Storage Containers",
+      "zh_name": "纸巾架纸巾盒",
+      "path": "Home & Kitchen > Bath > Bathroom Accessories > Holders & Dispensers > Toilet Paper Storage Containers",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 22.71,
+      "reviews": 700,
+      "weight_lbs": 1.9,
+      "return_rate": 5.95,
+      "brand_conc": 67.2,
+      "cn_ratio": 73.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Bath",
+        "Bathroom Accessories",
+        "Holders & Dispensers",
+        "Toilet Paper Storage Containers"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Honey Jars",
+      "zh_name": "蜂蜜罐子",
+      "path": "Home & Kitchen > Kitchen & Dining > Dining & Entertaining > Dinnerware & Serveware > Serveware > Honey Jars",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 21.65,
+      "reviews": 637,
+      "weight_lbs": 1.8,
+      "return_rate": 5.4,
+      "brand_conc": 71.5,
+      "cn_ratio": 71.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Dinnerware & Serveware",
+        "Serveware",
+        "Honey Jars"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Decorative Trays",
+      "zh_name": "装饰性托盘",
+      "path": "Home & Kitchen > Home Décor Products > Home Décor Accents > Decorative Accessories > Decorative Trays",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 22.23,
+      "reviews": 466,
+      "weight_lbs": 1.45,
+      "return_rate": 9.52,
+      "brand_conc": 42.1,
+      "cn_ratio": 78.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Home Décor Products",
+        "Home Décor Accents",
+        "Decorative Accessories",
+        "Decorative Trays"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Pillars",
+      "zh_name": "柱蜡",
+      "path": "Home & Kitchen > Home Décor Products > Candles & Holders > Candles > Pillars",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 31.07,
+      "reviews": 691,
+      "weight_lbs": 3.7,
+      "return_rate": 7.44,
+      "brand_conc": 59.2,
+      "cn_ratio": 67.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Home Décor Products",
+        "Candles & Holders",
+        "Candles",
+        "Pillars"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Floor Pillows & Cushions",
+      "zh_name": "地板枕头",
+      "path": "Home & Kitchen > Bedding > Decorative Pillows, Inserts & Covers > Floor Pillows & Cushions",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 38.14,
+      "reviews": 613,
+      "weight_lbs": 3.84,
+      "return_rate": 8.98,
+      "brand_conc": 63.8,
+      "cn_ratio": 72.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Bedding",
+        "Decorative Pillows, Inserts & Covers",
+        "Floor Pillows & Cushions"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Egg Baskets",
+      "zh_name": "蛋篮",
+      "path": "Home & Kitchen > Kitchen & Dining > Storage & Organization > Racks & Holders > Egg Baskets",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 26.31,
+      "reviews": 354,
+      "weight_lbs": 3.55,
+      "return_rate": 2.4,
+      "brand_conc": 60.5,
+      "cn_ratio": 75.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Kitchen & Dining",
+        "Storage & Organization",
+        "Racks & Holders",
+        "Egg Baskets"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Picture Frames",
+      "zh_name": "画框",
+      "path": "Home & Kitchen > Home Décor Products > Kids' Room Décor > Accents > Picture Frames",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 30.71,
+      "reviews": 302,
+      "weight_lbs": 3.18,
+      "return_rate": 5.68,
+      "brand_conc": 74.6,
+      "cn_ratio": 65.7,
+      "product_path": [
+        "Home & Kitchen",
+        "Home Décor Products",
+        "Kids' Room Décor",
+        "Accents",
+        "Picture Frames"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Tea Storage Chests",
+      "zh_name": "茶叶罐",
+      "path": "Home & Kitchen > Kitchen & Dining > Coffee, Tea & Espresso > Tea Accessories > Tea Storage Chests",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 24.18,
+      "reviews": 658,
+      "weight_lbs": 2.38,
+      "return_rate": 6.54,
+      "brand_conc": 46.3,
+      "cn_ratio": 72.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Kitchen & Dining",
+        "Coffee, Tea & Espresso",
+        "Tea Accessories",
+        "Tea Storage Chests"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Vertical Blinds",
+      "zh_name": "垂直百叶窗",
+      "path": "Home & Kitchen > Home Décor Products > Window Treatments > Blinds & Shades > Vertical Blinds",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 37.31,
+      "reviews": 498,
+      "weight_lbs": 2.67,
+      "return_rate": 5.62,
+      "brand_conc": 73.4,
+      "cn_ratio": 68.0,
+      "product_path": [
+        "Home & Kitchen",
+        "Home Décor Products",
+        "Window Treatments",
+        "Blinds & Shades",
+        "Vertical Blinds"
+      ],
+      "departments": [
+        21
+      ]
+    },
+    {
+      "en_name": "Drip Irrigation Kits",
+      "zh_name": "滴灌套件",
+      "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Watering Equipment > Automatic Irrigation Equipment > Drip Irrigation Kits",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 33.3,
+      "reviews": 618,
+      "weight_lbs": 2.58,
+      "return_rate": 3.37,
+      "brand_conc": 50.8,
+      "cn_ratio": 70.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Gardening & Lawn Care",
+        "Watering Equipment",
+        "Automatic Irrigation Equipment",
+        "Drip Irrigation Kits"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Pool & Deck Repair Products",
+      "zh_name": "油漆及密封产品",
+      "path": "Patio, Lawn & Garden > Pools, Hot Tubs & Supplies > Parts & Accessories > Pool & Deck Repair Products",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 31.79,
+      "reviews": 682,
+      "weight_lbs": 2.28,
+      "return_rate": 1.93,
+      "brand_conc": 57.6,
+      "cn_ratio": 48.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Pools, Hot Tubs & Supplies",
+        "Parts & Accessories",
+        "Pool & Deck Repair Products"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Poultry Fountains & Waterers",
+      "zh_name": "家禽自动喂水器和饮水器",
+      "path": "Patio, Lawn & Garden > Farm & Ranch > Poultry Care > Poultry Feeding & Watering Supplies > Poultry Fountains & Waterers",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 24.7,
+      "reviews": 623,
+      "weight_lbs": 1.88,
+      "return_rate": 2.74,
+      "brand_conc": 55.0,
+      "cn_ratio": 69.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Farm & Ranch",
+        "Poultry Care",
+        "Poultry Feeding & Watering Supplies",
+        "Poultry Fountains & Waterers"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Birdhouses",
+      "zh_name": "鸟屋",
+      "path": "Patio, Lawn & Garden > Backyard Birding & Wildlife > Birds > Birdhouses",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 27.97,
+      "reviews": 613,
+      "weight_lbs": 2.16,
+      "return_rate": 2.92,
+      "brand_conc": 52.7,
+      "cn_ratio": 73.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Backyard Birding & Wildlife",
+        "Birds",
+        "Birdhouses"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Beekeeping Supplies",
+      "zh_name": "养蜂用品",
+      "path": "Patio, Lawn & Garden > Farm & Ranch > Beekeeping Supplies",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 31.75,
+      "reviews": 377,
+      "weight_lbs": 3.74,
+      "return_rate": 2.6,
+      "brand_conc": 52.5,
+      "cn_ratio": 74.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Farm & Ranch",
+        "Beekeeping Supplies"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Plaques & Wall Art",
+      "zh_name": "装饰墙",
+      "path": "Patio, Lawn & Garden > Outdoor Décor > Plaques & Wall Art",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 20.05,
+      "reviews": 617,
+      "weight_lbs": 1.1,
+      "return_rate": 2.89,
+      "brand_conc": 46.8,
+      "cn_ratio": 89.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Outdoor Décor",
+        "Plaques & Wall Art"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Outdoor Clocks",
+      "zh_name": "户外钟表",
+      "path": "Patio, Lawn & Garden > Outdoor Décor > Outdoor Clocks",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 48.07,
+      "reviews": 385,
+      "weight_lbs": 3.17,
+      "return_rate": 6.65,
+      "brand_conc": 66.0,
+      "cn_ratio": 77.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Outdoor Décor",
+        "Outdoor Clocks"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Protective Gear",
+      "zh_name": "防护装备",
+      "path": "Patio, Lawn & Garden > Farm & Ranch > Beekeeping Supplies > Protective Gear",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 42.27,
+      "reviews": 269,
+      "weight_lbs": 3.09,
+      "return_rate": 3.95,
+      "brand_conc": 58.5,
+      "cn_ratio": 64.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Farm & Ranch",
+        "Beekeeping Supplies",
+        "Protective Gear"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Bulb Planters",
+      "zh_name": "球茎栽植器",
+      "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Hand Tools > Bulb Planters",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 26.18,
+      "reviews": 283,
+      "weight_lbs": 2.54,
+      "return_rate": 2.9,
+      "brand_conc": 50.2,
+      "cn_ratio": 74.0,
+      "product_path": [
+        "Patio, Lawn & Garden",
+        "Gardening & Lawn Care",
+        "Hand Tools",
+        "Bulb Planters"
+      ],
+      "departments": [
+        16
+      ]
+    },
+    {
+      "en_name": "Cup Carriers",
+      "zh_name": "外卖杯托盘",
+      "path": "Industrial & Scientific > Food Service Equipment & Supplies > Disposables > Take Out Containers > Cup Carriers",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 22.27,
+      "reviews": 440,
+      "weight_lbs": 2.62,
+      "return_rate": 4.6,
+      "brand_conc": 43.7,
+      "cn_ratio": 67.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Food Service Equipment & Supplies",
+        "Disposables",
+        "Take Out Containers",
+        "Cup Carriers"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Pipes",
+      "zh_name": "管道",
+      "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Tubes, Pipes & Hoses > Pipes",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 32.0,
+      "reviews": 153,
+      "weight_lbs": 3.61,
+      "return_rate": 5.33,
+      "brand_conc": 68.9,
+      "cn_ratio": 49.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Hydraulics, Pneumatics & Plumbing",
+        "Tubes, Pipes & Hoses",
+        "Pipes"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "EMF Meters",
+      "zh_name": "电磁波计",
+      "path": "Industrial & Scientific > Test, Measure & Inspect > Electrical Testing > EMF Meters",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 59.14,
+      "reviews": 340,
+      "weight_lbs": 0.79,
+      "return_rate": 9.7,
+      "brand_conc": 70.8,
+      "cn_ratio": 71.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Test, Measure & Inspect",
+        "Electrical Testing",
+        "EMF Meters"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Accessories",
+      "zh_name": "辅料",
+      "path": "Industrial & Scientific > Retail Store Fixtures & Equipment > Retail Shelving & Wall Displays > Pegboard & Fixtures > Accessories",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 21.04,
+      "reviews": 310,
+      "weight_lbs": 3.23,
+      "return_rate": 5.23,
+      "brand_conc": 64.6,
+      "cn_ratio": 64.0,
+      "product_path": [
+        "Industrial & Scientific",
+        "Retail Store Fixtures & Equipment",
+        "Retail Shelving & Wall Displays",
+        "Pegboard & Fixtures",
+        "Accessories"
+      ],
+      "departments": [
+        13
+      ]
+    },
+    {
+      "en_name": "Diamond Blades",
+      "zh_name": "钻石刀片",
+      "path": "Tools & Home Improvement > Power & Hand Tools > Power Tool Parts & Accessories > Saw Blades, Parts & Accessories > Blades > Diamond Blades",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 22.35,
+      "reviews": 568,
+      "weight_lbs": 0.84,
+      "return_rate": 2.39,
+      "brand_conc": 62.7,
+      "cn_ratio": 74.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Power & Hand Tools",
+        "Power Tool Parts & Accessories",
+        "Saw Blades, Parts & Accessories",
+        "Blades",
+        "Diamond Blades"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Angle Clamps",
+      "zh_name": "角夹钳",
+      "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Workholding Devices > Clamps > Angle Clamps",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 35.63,
+      "reviews": 697,
+      "weight_lbs": 3.19,
+      "return_rate": 4.55,
+      "brand_conc": 54.7,
+      "cn_ratio": 74.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Power & Hand Tools",
+        "Hand Tools",
+        "Workholding Devices",
+        "Clamps",
+        "Angle Clamps"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Tap & Die Sets",
+      "zh_name": "敲击",
+      "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Taps & Dies > Tap & Die Sets",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 43.33,
+      "reviews": 297,
+      "weight_lbs": 3.86,
+      "return_rate": 3.87,
+      "brand_conc": 45.6,
+      "cn_ratio": 67.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Power & Hand Tools",
+        "Hand Tools",
+        "Taps & Dies",
+        "Tap & Die Sets"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Bolt Cutters",
+      "zh_name": "螺栓切割器",
+      "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Cutters > Bolt Cutters",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 42.21,
+      "reviews": 455,
+      "weight_lbs": 2.89,
+      "return_rate": 5.4,
+      "brand_conc": 72.0,
+      "cn_ratio": 47.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Power & Hand Tools",
+        "Hand Tools",
+        "Cutters",
+        "Bolt Cutters"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Urinal Accessories",
+      "zh_name": "小便池配件",
+      "path": "Tools & Home Improvement > Kitchen & Bath Fixtures > Bathroom Fixtures > Urinals & Urinal Parts > Urinal Accessories",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 34.34,
+      "reviews": 81,
+      "weight_lbs": 2.71,
+      "return_rate": 1.87,
+      "brand_conc": 55.1,
+      "cn_ratio": 52.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Kitchen & Bath Fixtures",
+        "Bathroom Fixtures",
+        "Urinals & Urinal Parts",
+        "Urinal Accessories"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Kick Plates",
+      "zh_name": "踢脚板",
+      "path": "Tools & Home Improvement > Hardware > Door Hardware & Locks > Kick Plates",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 28.13,
+      "reviews": 127,
+      "weight_lbs": 1.59,
+      "return_rate": 8.07,
+      "brand_conc": 60.0,
+      "cn_ratio": 65.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Hardware",
+        "Door Hardware & Locks",
+        "Kick Plates"
+      ],
+      "departments": [
+        19
+      ]
+    },
+    {
+      "en_name": "Masonry Chisels",
+      "zh_name": "砌筑用凿子",
+      "path": "Tools & Home Improvement > Power & Hand Tools > Hand Tools > Chisels > Masonry Chisels",
+      "level": "🟡 Yellow (Cautious)",
+      "price": 27.19,
+      "reviews": 251,
+      "weight_lbs": 2.62,
+      "return_rate": 3.89,
+      "brand_conc": 50.4,
+      "cn_ratio": 55.0,
+      "product_path": [
+        "Tools & Home Improvement",
+        "Power & Hand Tools",
+        "Hand Tools",
+        "Chisels",
+        "Masonry Chisels"
+      ],
+      "departments": [
+        19
+      ]
+    }
+  ]
+}

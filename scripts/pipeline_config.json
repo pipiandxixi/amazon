@@ -3,8 +3,7 @@
   "pipeline": {
     "candidate_levels": {
       "value": [
-        "🟢 Green (Recommended)",
-        "🟡 Yellow (Cautious)"
+        "🟢 Green (Recommended)"
       ],
       "label": "进入后续阶段的市场评级"
     }
@@ -91,11 +90,14 @@
       },
       "scan_groups": {
         "value": [
-          [18, 13, 19, 3],
-          [21, 16, 17, 4, 2],
-          [12, 5, 15, 6, 7]
+          "Sports & Outdoors",
+          "Home & Kitchen",
+          "Patio, Lawn & Garden",
+          "Industrial & Scientific",
+          "Tools & Home Improvement",
+          "Clothing, Shoes & Jewelry"
         ],
-        "label": "按批次扫描的部门 ID 分组：每组发起一次搜索，SellerSprite 返回该批部门的混合结果。组1=运动/工业/工具/汽车，组2=家居/园艺/宠物/婴儿/工艺，组3=健康/美妆/办公/手机/饰品"
+        "label": "逐个扫描的大类目名称列表：每个名称发起一次独立搜索，通过 departmentKeyword 字段过滤，SellerSprite 返回该大类的 30 个子类目结果"
       }
     },
     "category_map": {

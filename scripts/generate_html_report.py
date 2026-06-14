@@ -38,6 +38,7 @@ nav a.green{background:#dcfce7;color:#166534}
 nav a.yellow{background:#fef9c3;color:#854d0e}
 nav a:hover{opacity:.75}
 main{max-width:1400px;margin:0 auto;padding:1.25rem 1.25rem 4rem}
+.last-updated{font-size:.72rem;color:var(--muted);margin-top:.4rem}
 .cat{background:var(--card);border:1px solid var(--border);border-radius:.75rem;margin-bottom:1.25rem;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}
 .cat-header{padding:1.1rem 1.5rem;border-bottom:1px solid var(--border)}
 .cat-title{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:.5rem}
@@ -151,12 +152,20 @@ def _keyword_table(keywords: list[dict], asins: list[str]) -> str:
     </div>"""
 
 
-def _category_section(cat: dict, products: list[dict], kw_entry: dict | None) -> str:
+def _category_section(cat: dict, products: list[dict] | None, kw_entry: dict | None) -> str:
     name = cat["en_name"]
     zh = cat.get("zh_name", "")
     level = cat.get("level", "")
     badge_cls = "green" if "Green" in level else "yellow"
     badge_text = "🟢 推荐" if "Green" in level else "🟡 谨慎"
+
+    last_updated = cat.get("last_updated")
+    if last_updated:
+        # Format ISO timestamp to readable: "2026-06-14T20:05:00" → "2026-06-14 20:05"
+        updated_display = last_updated.replace("T", " ")[:16]
+        updated_html = f'<div class="last-updated">最后更新: {_e(updated_display)}</div>'
+    else:
+        updated_html = '<div class="last-updated">尚未扫描产品数据</div>'
 
     metrics = f"""<div class="metrics">
       <span class="metric">均价 <strong>${_e(cat.get('price','-'))}</strong></span>
@@ -167,22 +176,26 @@ def _category_section(cat: dict, products: list[dict], kw_entry: dict | None) ->
       <span class="metric">中国卖家 <strong>{_e(cat.get('cn_ratio','-'))}%</strong></span>
     </div>"""
 
-    if products:
-        cards = "".join(_product_card(p) for p in products)
-        prods = f"""<details open>
+    if products is None:
+        prods = '<p class="no-data">产品数据待扫描。</p>'
+        kws = ""
+    else:
+        if products:
+            cards = "".join(_product_card(p) for p in products)
+            prods = f"""<details open>
     <summary>产品 ({len(products)})</summary>
     <div class="product-grid">{cards}</div>
   </details>"""
-    else:
-        prods = """<details>
+        else:
+            prods = """<details>
     <summary>产品 (0)</summary>
     <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
   </details>"""
 
-    keywords = kw_entry.get("keywords", []) if kw_entry else []
-    asins = kw_entry.get("asins", []) if kw_entry else []
-    kw_content = _keyword_table(keywords, asins)
-    kws = f"""<details open>
+        keywords = kw_entry.get("keywords", []) if kw_entry else []
+        asins = kw_entry.get("asins", []) if kw_entry else []
+        kw_content = _keyword_table(keywords, asins)
+        kws = f"""<details open>
     <summary>关键词 ({len(keywords)})</summary>
     {kw_content}
   </details>"""
@@ -193,6 +206,7 @@ def _category_section(cat: dict, products: list[dict], kw_entry: dict | None) ->
       <span class="badge {badge_cls}">{badge_text}</span>
       <h2>{_e(name)}<small>{_e(zh)}</small></h2>
     </div>
+    {updated_html}
     {metrics}
   </div>
   {prods}
@@ -201,58 +215,20 @@ def _category_section(cat: dict, products: list[dict], kw_entry: dict | None) ->
 
 
 def update_index(repo_root: Path) -> None:
-    """Regenerate the root index.html listing all dated HTML reports."""
-    results_dir = repo_root / "results"
-    entries: list[tuple[str, str]] = []
-    for d in sorted(results_dir.iterdir(), reverse=True):
-        if d.is_dir() and (d / "html" / "report.html").exists():
-            entries.append((d.name.replace("_", "-"), f"results/{d.name}/html/report.html"))
-
-    if not entries:
+    """Regenerate the root index.html pointing to the single results/html/report.html."""
+    report_path = repo_root / "results" / "html" / "report.html"
+    if not report_path.exists():
         return
 
-    rows = []
-    for i, (date_display, rel_path) in enumerate(entries):
-        cls = "report-link latest" if i == 0 else "report-link"
-        tag = '<span class="tag">最新</span>' if i == 0 else ""
-        rows.append(
-            f'    <a class="{cls}" href="{rel_path}">\n'
-            f'      <span class="date">{date_display}</span>\n'
-            f'      <span style="display:flex;align-items:center;gap:.5rem">{tag}<span class="arrow">→</span></span>\n'
-            f'    </a>'
-        )
-
-    html = f"""<!DOCTYPE html>
+    html = """<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="0; url=results/html/report.html">
 <title>Amazon 选品报告</title>
-<style>
-:root{{--border:#e5e7eb;--muted:#6b7280;--bg:#f3f4f6;--card:#fff}}
-*{{box-sizing:border-box;margin:0;padding:0}}
-body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:#111827;line-height:1.5;min-height:100vh;display:flex;align-items:center;justify-content:center}}
-.wrap{{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:2.5rem 3rem;box-shadow:0 4px 24px rgba(0,0,0,.07);max-width:480px;width:100%;text-align:center}}
-h1{{font-size:1.4rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.4rem}}
-.sub{{color:var(--muted);font-size:.88rem;margin-bottom:2rem}}
-.reports{{display:flex;flex-direction:column;gap:.65rem}}
-.report-link{{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1.1rem;border:1px solid var(--border);border-radius:.6rem;text-decoration:none;color:#111827;transition:background .12s,box-shadow .12s}}
-.report-link:hover{{background:#f8fafc;box-shadow:0 2px 8px rgba(0,0,0,.06)}}
-.report-link.latest{{border-color:#86efac;background:#f0fdf4}}
-.report-link.latest:hover{{background:#dcfce7}}
-.date{{font-weight:600;font-size:.95rem}}
-.tag{{font-size:.72rem;padding:.15rem .5rem;border-radius:9999px;background:#dcfce7;color:#166534;font-weight:700}}
-.arrow{{color:var(--muted);font-size:.85rem}}
-</style>
 </head>
 <body>
-<div class="wrap">
-  <h1>Amazon 选品报告</h1>
-  <p class="sub">点击查看每次运行的完整选品分析</p>
-  <div class="reports">
-{chr(10).join(rows)}
-  </div>
-</div>
+<p><a href="results/html/report.html">跳转到选品报告 →</a></p>
 </body>
 </html>"""
 
@@ -261,35 +237,23 @@ h1{{font-size:1.4rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.4rem}}
     print(f"[INDEX] {index_path}")
 
 
-def generate(root: Path, date_str: str) -> Path:
-    json_dir = root / "json"
-
-    s1 = json.loads((json_dir / f"stage1_handoff_{date_str}.json").read_text(encoding="utf-8"))
-    s2 = json.loads((json_dir / f"stage2_handoff_{date_str}.json").read_text(encoding="utf-8"))
-    s3_path = json_dir / f"stage3_handoff_{date_str}.json"
-    s3 = json.loads(s3_path.read_text(encoding="utf-8")) if s3_path.exists() else {"categories": {}}
-
-    candidates = s1["candidates"]
-    keywords_by_cat: dict = s3.get("categories", {})
-
-    products_by_cat: dict[str, list] = {}
-    for p in s2["products"]:
-        products_by_cat.setdefault(p["_category_name"], []).append(p)
-
-    n_green  = sum(1 for c in candidates if "Green"  in c.get("level", ""))
-    n_yellow = sum(1 for c in candidates if "Yellow" in c.get("level", ""))
-    n_prods  = len(products_by_cat)
+def generate_from_db(root: Path, db: dict, date_str: str) -> Path:
+    """Render the full HTML report from the categories DB dict (in-memory)."""
+    cats = list(db.values())
+    n_green   = sum(1 for c in cats if "Green"  in c.get("level", ""))
+    n_yellow  = sum(1 for c in cats if "Yellow" in c.get("level", ""))
+    n_scanned = sum(1 for c in cats if c.get("last_updated"))
     date_display = date_str.replace("_", "-")
 
     nav_links = "".join(
         f'<a href="#{_slug(c["en_name"])}" class="{"green" if "Green" in c.get("level","") else "yellow"}">'
         f'{_e(c["en_name"])}</a>'
-        for c in candidates
+        for c in cats
     )
 
     sections = "\n".join(
-        _category_section(c, products_by_cat.get(c["en_name"], []), keywords_by_cat.get(c["en_name"]))
-        for c in candidates
+        _category_section(c, c.get("products"), c.get("keywords"))
+        for c in cats
     )
 
     page = f"""<!DOCTYPE html>
@@ -303,7 +267,7 @@ def generate(root: Path, date_str: str) -> Path:
 <body>
 <header>
   <h1>Amazon 选品报告</h1>
-  <p>{date_display} &nbsp;·&nbsp; {n_green} 绿色推荐 &nbsp;·&nbsp; {n_yellow} 黄色候选 &nbsp;·&nbsp; {n_prods} 个类目有产品数据</p>
+  <p>{date_display} &nbsp;·&nbsp; {n_green} 绿色推荐 &nbsp;·&nbsp; {n_yellow} 黄色候选 &nbsp;·&nbsp; {n_scanned}/{len(cats)} 类目已扫描产品</p>
 </header>
 <nav>{nav_links}</nav>
 <main>
@@ -317,8 +281,17 @@ def generate(root: Path, date_str: str) -> Path:
     out = out_dir / "report.html"
     out.write_text(page, encoding="utf-8")
     print(f"[HTML REPORT] {out}")
-    update_index(root.parent.parent)
+    update_index(root.parent)
     return out
+
+
+def generate(root: Path, date_str: str) -> Path:
+    """Load categories.json from root and render HTML. Entry point for standalone use."""
+    db_path = root / "json" / "categories.json"
+    if not db_path.exists():
+        raise FileNotFoundError(f"categories.json not found: {db_path}")
+    db = json.loads(db_path.read_text(encoding="utf-8"))
+    return generate_from_db(root, db, date_str)
 
 
 def main() -> None:

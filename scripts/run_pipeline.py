@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Run the full Amazon sourcing pipeline with in-memory stage handoffs."""
+"""Amazon sourcing pipeline — per-category incremental processing.
+
+Stage 1: Market scan → merge results into results/json/categories.json
+Stage 2+3: Per-category loop (products + keywords) ordered by staleness;
+           categories.json and HTML are updated after each category.
+"""
 
 from __future__ import annotations
 
@@ -18,30 +23,46 @@ from scan_common import OpenCliError, check_browser_ready, dated_results_dir, ev
 
 GREEN = "🟢 Green (Recommended)"
 YELLOW = "🟡 Yellow (Cautious)"
+CATEGORIES_DB = "categories.json"
 
 
-def _stage_json_path(root: Path, stage: int, date_str: str) -> Path:
-    return root / "json" / f"stage{stage}_handoff_{date_str}.json"
+# ── DB helpers ───────────────────────────────────────────────────────────────
+
+def _db_path(root: Path) -> Path:
+    return root / "json" / CATEGORIES_DB
 
 
-def _write_stage_json(root: Path, stage: int, date_str: str, data: dict) -> None:
-    path = _stage_json_path(root, stage, date_str)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"[STAGE {stage} JSON] {path}")
+def load_db(root: Path) -> dict:
+    p = _db_path(root)
+    if p.exists():
+        return json.loads(p.read_text(encoding="utf-8"))
+    return {}
 
 
-def _read_stage_json(root: Path, stage: int, date_str: str) -> dict:
-    path = _stage_json_path(root, stage, date_str)
-    if not path.exists():
-        raise FileNotFoundError(
-            f"Stage {stage} handoff file not found: {path}\n"
-            f"Run from stage {stage - 1} or earlier to generate it first."
-        )
-    data = json.loads(path.read_text(encoding="utf-8"))
-    print(f"[STAGE {stage} JSON] Loaded: {path}")
-    return data
+def save_db(root: Path, db: dict) -> None:
+    p = _db_path(root)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(db, ensure_ascii=False, indent=2), encoding="utf-8")
 
+
+def merge_market_into_db(root: Path, candidates: list[dict]) -> dict:
+    """Upsert Stage 1 candidates into categories.json, preserving existing products/keywords."""
+    db = load_db(root)
+    for cat in candidates:
+        name = cat["en_name"]
+        existing = db.get(name, {})
+        db[name] = {
+            **cat,
+            "products": existing.get("products"),
+            "keywords": existing.get("keywords"),
+            "last_updated": existing.get("last_updated"),
+        }
+    save_db(root, db)
+    print(f"[DB] {len(candidates)} candidates merged → {len(db)} total in {CATEGORIES_DB}")
+    return db
+
+
+# ── Config helper ─────────────────────────────────────────────────────────────
 
 def values(section: dict) -> dict:
     return {
@@ -50,148 +71,12 @@ def values(section: dict) -> dict:
     }
 
 
-def run_products(
-    config: dict,
-    categories: list[dict],
-    date_str: str,
-) -> tuple[list[dict], list[str]]:
-    policy = values(config.get("scan_policy", {}))
-    filters = values(config["filters"])
-
-    open_browser("https://www.sellersprite.com/v3/product-research")
-    time.sleep(float(policy.get("page_wait_seconds", 5)))
-
-    all_products: list[dict] = []
-    product_sections: list[str] = []
-    seen_nodes: set[str] = set()
-    for entry in categories:
-        name = entry.get("en_name") or entry.get("zh_name") or "unknown"
-        path = entry.get("product_path") or product_scan._parse_path(entry.get("path", ""))
-        print(f"\n[PRODUCT CATEGORY] {name}")
-        try:
-            actual_node = product_scan.select_category(path, policy.get("only_leaf_category_rank", True))
-            if actual_node in seen_nodes:
-                print(f"  [SKIP] nav-fallback collision: '{actual_node}' already scanned, skipping")
-                open_browser("https://www.sellersprite.com/v3/product-research")
-                time.sleep(float(policy.get("page_wait_seconds", 5)))
-                continue
-            seen_nodes.add(actual_node)
-            product_scan.apply_filters(filters)
-            time.sleep(float(policy.get("wait_seconds", 5)))
-            if policy.get("hide_variants", True):
-                product_scan.hide_variants()
-                time.sleep(3)
-            state = product_scan.inspect_result_state()
-            products = product_scan.scrape_products(int(policy.get("max_products", 50)))
-            for item in products:
-                item["_category_name"] = name
-            all_products.extend(products)
-            product_sections.append(product_scan.format_report(
-                config, products, date_str, category_name=name, category_path=path,
-                batch_total=len(categories), include_principles=False,
-                market_entry=entry, result_state=state,
-            ))
-        except ValueError as exc:
-            print(f"  [ERROR] {name}: {exc}")
-        open_browser("https://www.sellersprite.com/v3/product-research")
-        time.sleep(float(policy.get("page_wait_seconds", 5)))
-    return all_products, product_sections
-
-
-def run_asin_keywords(config: dict, products: list[dict], date_str: str, root: Path) -> list[str]:
-    from collections import defaultdict
-    policy = values(config.get("scan_policy", {}))
-    limit = int(policy.get("max_keywords", 20))
-    max_asins = int(policy.get("max_asins", 5))
-    page_wait = float(policy.get("page_wait_seconds", 8))
-
-    def priority(product: dict) -> float:
-        def number(value) -> float:
-            match = re.search(r"[\d,.]+", str(value or ""))
-            return float(match.group(0).replace(",", "")) if match else 0.0
-        sales = number(product.get("monthly_sales"))
-        reviews = number(product.get("reviews"))
-        margin = number(product.get("profit_margin"))
-        return sales / (reviews + 10) + margin / 10
-
-    by_category: dict[str, list[dict]] = defaultdict(list)
-    for p in products:
-        by_category[p.get("_category_name", "unknown")].append(p)
-
-    keyword_sections: list[str] = []
-    keywords_data: dict[str, dict] = {}
-    for cat_name, cat_products in by_category.items():
-        seen: set[str] = set()
-        asins: list[str] = []
-        for p in sorted(cat_products, key=priority, reverse=True):
-            asin = p.get("asin", "")
-            if asin and asin not in seen:
-                seen.add(asin)
-                asins.append(asin)
-            if len(asins) >= max_asins:
-                break
-        if not asins:
-            continue
-        print(f"\n[CATEGORY KEYWORDS] {cat_name}: {asins}")
-        asin_scan.open_extend_page(asins)
-        time.sleep(page_wait)
-        print(f"  Query: {asin_scan.submit_extend_query()}")
-        time.sleep(page_wait)
-        print(f"  Expand: {asin_scan.click_expand_keywords()}")
-        time.sleep(page_wait)
-        filter_result = asin_scan.apply_extend_filters(values(config.get("filters", {})))
-        print(f"  Filters: {filter_result}")
-        time.sleep(page_wait)
-        state = asin_scan.inspect_result_state()
-        raw = extract_json_array(eval_browser(asin_scan.SCRAPE_JS))
-        items = asin_scan.rank_keywords(raw, values(config.get("score_weights", {})))[:limit]
-        keywords_data[cat_name] = {"asins": asins, "keywords": items}
-        keyword_sections.append(asin_scan.format_report(asins, cat_name, items, raw, config, date_str, state))
-        print(f"  {len(items)} of {len(raw)} keywords collected for {cat_name}")
-    if keywords_data:
-        _write_stage_json(root, 3, date_str, {"categories": keywords_data})
-    return keyword_sections
-
-
-def write_combined_report(
-    root: Path,
-    date_str: str,
-    market_content: str,
-    product_sections: list[str],
-    keyword_sections: list[str],
-) -> Path:
-    """Write the single pipeline report from in-memory stage content."""
-    output = root / f"pipeline_report_{date_str}.md"
-    sections = [
-        f"# 亚马逊选品完整流水线报告 ({date_str.replace('_', '-')})",
-        "",
-        "> 本文件汇总市场扫描、全部候选类目商品扫描和动态商品 ASIN 关键词反查结果。",
-        "",
-        "---",
-        "",
-        market_content.strip(),
-        "",
-    ]
-    for content in product_sections:
-        sections.extend(["---", "", content.strip(), ""])
-    for content in keyword_sections:
-        sections.extend(["---", "", content.strip(), ""])
-    output.write_text("\n".join(sections).rstrip() + "\n", encoding="utf-8")
-    total = 1 + len(product_sections) + len(keyword_sections)
-    print(f"\n[COMBINED REPORT] {total} sections -> {output}")
-    return output
-
+# ── Stage 1: Market Scan ──────────────────────────────────────────────────────
 
 def _scan_all_departments(market_config: dict) -> tuple[list[dict], dict]:
-    """Run market scan once per scan_group (batch of departments); aggregate results.
-
-    Each group selects multiple department checkboxes simultaneously so SellerSprite
-    returns a mixed 30-result page spanning those departments.  2-3 groups yield
-    ~60-90 diverse raw categories vs. the 30-result single-scan cap.
-    """
-    scan_groups: list[list[int]] = values(market_config.get("scan_policy", {})).get("scan_groups", [])
+    """Run one market scan per department in scan_groups; aggregate unique results."""
+    scan_groups: list[str] = values(market_config.get("scan_policy", {})).get("scan_groups", [])
     if not scan_groups:
-        # Fallback: single scan across all departments (original behaviour)
         print("[MARKET] No scan_groups configured, running single scan")
         return market_scan.scrape_market(market_config)
 
@@ -200,9 +85,9 @@ def _scan_all_departments(market_config: dict) -> tuple[list[dict], dict]:
     total_pages = 0
     any_truncation = False
 
-    for i, group in enumerate(scan_groups, 1):
-        print(f"\n[MARKET GROUP {i}/{len(scan_groups)}] departments={group}")
-        raw, meta = market_scan.scrape_market(market_config, department_numbers=group)
+    for i, dept_label in enumerate(scan_groups, 1):
+        print(f"\n[MARKET GROUP {i}/{len(scan_groups)}] department={dept_label!r}")
+        raw, meta = market_scan.scrape_market(market_config, department_label=dept_label)
         total_pages += meta.get("pages_scanned", 0)
         if meta.get("possible_truncation"):
             any_truncation = True
@@ -226,38 +111,174 @@ def _scan_all_departments(market_config: dict) -> tuple[list[dict], dict]:
     return all_raw, combined_meta
 
 
+# ── Stage 2+3: Per-category loop ─────────────────────────────────────────────
+
+def _priority(product: dict) -> float:
+    def num(value) -> float:
+        m = re.search(r"[\d,.]+", str(value or ""))
+        return float(m.group(0).replace(",", "")) if m else 0.0
+    return num(product.get("monthly_sales")) / (num(product.get("reviews")) + 10) + num(product.get("profit_margin")) / 10
+
+
+def process_categories_loop(
+    db: dict,
+    root: Path,
+    products_config: dict,
+    keywords_config: dict,
+    date_str: str,
+    max_categories: int | None = None,
+    skip_keywords: bool = False,
+) -> None:
+    """Process categories one at a time (products → keywords), saving DB + HTML after each.
+
+    Categories are ordered by staleness: never-scanned first, then oldest last_updated.
+    """
+    import generate_html_report as _html_gen
+
+    def sort_key(cat: dict) -> str:
+        lu = cat.get("last_updated")
+        return lu if lu else ""
+
+    to_process = sorted(db.values(), key=sort_key)
+    if max_categories:
+        to_process = to_process[:max_categories]
+
+    print(f"\n[LOOP] {len(to_process)} categories to process (ordered by staleness)")
+
+    prod_policy = values(products_config.get("scan_policy", {}))
+    prod_filters = values(products_config["filters"])
+    kw_policy = values(keywords_config.get("scan_policy", {}))
+    kw_filters = values(keywords_config.get("filters", {}))
+    kw_weights = values(keywords_config.get("score_weights", {}))
+    max_asins = int(kw_policy.get("max_asins", 20))
+    kw_limit = int(kw_policy.get("max_keywords", 20))
+    page_wait = float(kw_policy.get("page_wait_seconds", 8))
+    prod_page_wait = float(prod_policy.get("page_wait_seconds", 5))
+
+    open_browser("https://www.sellersprite.com/v3/product-research")
+    time.sleep(prod_page_wait)
+
+    seen_nodes: set[str] = set()
+    processed = 0
+
+    for i, cat in enumerate(to_process, 1):
+        name = cat["en_name"]
+        last = cat.get("last_updated", "从未")
+        print(f"\n[{i}/{len(to_process)}] {name}  (上次更新: {last})")
+
+        path = cat.get("product_path") or product_scan._parse_path(cat.get("path", ""))
+
+        # ── Products ──────────────────────────────────────────────────────────
+        products: list[dict] = []
+        try:
+            actual_node = product_scan.select_category(path, prod_policy.get("only_leaf_category_rank", True))
+            if actual_node in seen_nodes:
+                print(f"  [SKIP] nav-fallback collision: '{actual_node}' — marking as attempted")
+                # Still timestamp so this category isn't repeatedly re-selected as stale
+                db[name]["products"] = []
+                db[name]["keywords"] = None
+                db[name]["last_updated"] = datetime.datetime.now().isoformat(timespec="seconds")
+                save_db(root, db)
+                open_browser("https://www.sellersprite.com/v3/product-research")
+                time.sleep(prod_page_wait)
+                processed += 1
+                continue
+            seen_nodes.add(actual_node)
+            product_scan.apply_filters(prod_filters)
+            time.sleep(float(prod_policy.get("wait_seconds", 5)))
+            if prod_policy.get("hide_variants", True):
+                product_scan.hide_variants()
+                time.sleep(3)
+            products = product_scan.scrape_products(int(prod_policy.get("max_products", 50)))
+        except ValueError as exc:
+            print(f"  [PRODUCT ERROR] {exc}")
+
+        # ── Keywords ──────────────────────────────────────────────────────────
+        keywords: dict | None = None
+        if products and not skip_keywords:
+            asins: list[str] = []
+            seen_asins: set[str] = set()
+            for p in sorted(products, key=_priority, reverse=True):
+                a = p.get("asin", "")
+                if a and a not in seen_asins:
+                    seen_asins.add(a)
+                    asins.append(a)
+                if len(asins) >= max_asins:
+                    break
+
+            if asins:
+                preview = asins[:5]
+                print(f"  Keywords for: {preview}{'...' if len(asins) > 5 else ''}")
+                asin_scan.open_extend_page(asins)
+                time.sleep(page_wait)
+                print(f"  Query: {asin_scan.submit_extend_query()}")
+                time.sleep(page_wait)
+                print(f"  Expand: {asin_scan.click_expand_keywords()}")
+                time.sleep(page_wait)
+                print(f"  Filters: {asin_scan.apply_extend_filters(kw_filters)}")
+                time.sleep(page_wait)
+                raw = extract_json_array(eval_browser(asin_scan.SCRAPE_JS))
+                items = asin_scan.rank_keywords(raw, kw_weights)[:kw_limit]
+                keywords = {"asins": asins, "keywords": items}
+                print(f"  {len(items)} keywords collected")
+
+        # ── Persist ───────────────────────────────────────────────────────────
+        db[name]["products"] = products
+        db[name]["keywords"] = keywords
+        db[name]["last_updated"] = datetime.datetime.now().isoformat(timespec="seconds")
+        save_db(root, db)
+
+        # ── Update HTML ───────────────────────────────────────────────────────
+        _html_gen.generate_from_db(root, db, date_str)
+
+        processed += 1
+
+        # Navigate back for next category
+        open_browser("https://www.sellersprite.com/v3/product-research")
+        time.sleep(prod_page_wait)
+
+    print(f"\n[LOOP] Done — {processed} categories updated")
+
+
+# ── Entry point ───────────────────────────────────────────────────────────────
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", default="scripts/pipeline_config.json")
     parser.add_argument("--date", default="")
-    parser.add_argument("--skip-asin-keywords", action="store_true")
-    parser.add_argument("--dry-run", action="store_true", help="Validate and summarize config without opening SellerSprite")
+    parser.add_argument("--skip-keywords", action="store_true", help="Skip ASIN keyword lookup (Stage 3)")
+    parser.add_argument("--dry-run", action="store_true", help="Validate config without opening SellerSprite")
     parser.add_argument(
-        "--start-from", type=int, choices=[1, 2, 3], default=1, metavar="{1,2,3}",
-        help="Resume from this stage using the previous stage's handoff JSON (default: 1 = full run)",
+        "--start-from", type=int, choices=[1, 2], default=1, metavar="{1,2}",
+        help="1=full run (market scan + categories loop); 2=skip market scan, use existing categories.json",
+    )
+    parser.add_argument(
+        "--stop-after", type=int, choices=[1, 2], default=2, metavar="{1,2}",
+        help="1=stop after market scan (inspect DB before processing); 2=full run (default)",
+    )
+    parser.add_argument(
+        "--max-categories", type=int, default=None, metavar="N",
+        help="Process at most N categories per run (ordered by staleness). Omit for all.",
     )
     args = parser.parse_args()
-
-    if args.start_from == 3 and args.skip_asin_keywords:
-        raise SystemExit("Error: --start-from 3 and --skip-asin-keywords are mutually exclusive")
 
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
     date_str = args.date or datetime.date.today().strftime("%Y_%m_%d")
     root = dated_results_dir(date_str)
     levels = set(values(config.get("pipeline", {})).get("candidate_levels", [GREEN, YELLOW]))
+
     if "category" in config["products"]:
         raise ValueError("Unified config must not predefine a dynamic product category")
+
     if args.dry_run:
         print(f"Config: {args.config}")
         print(f"Candidate levels: {sorted(levels)}")
         print(f"Product price: ${values(config['products']['filters']).get('min_price')}+")
-        print(f"ASIN reverse limit: {values(config['asin_keywords']['scan_policy']).get('max_asins')}")
+        print(f"ASIN limit: {values(config['asin_keywords']['scan_policy']).get('max_asins')}")
         print("Dynamic fields validated: no product category or ASIN")
         return
 
-    # Browser is needed unless we skip all browser stages
-    if not (args.start_from == 3 and args.skip_asin_keywords):
-        check_browser_ready()
+    check_browser_ready()
 
     pipeline_start = time.time()
 
@@ -265,64 +286,49 @@ def main() -> None:
         s = int(time.time() - since)
         return f"{s // 60}m{s % 60:02d}s"
 
-    # ── Stage 1: Market Scan (per-department) ───────────────────────────────
+    # ── Stage 1: Market Scan ─────────────────────────────────────────────────
     t1 = time.time()
     if args.start_from <= 1:
         raw_categories, scan_meta = _scan_all_departments(config["market"])
-        market_content, candidates = market_scan.generate_report(
+        _, candidates = market_scan.generate_report(
             config["market"], raw_categories, date_str, output_dir=root,
             scan_meta=scan_meta, return_candidates=True, write_report_file=False,
         )
-        candidates = [item for item in candidates if item.get("level") in levels]
+        candidates = [c for c in candidates if c.get("level") in levels]
         if not candidates:
-            raise ValueError("Market scan produced no downstream candidate categories")
-        _write_stage_json(root, 1, date_str, {
-            "market_content": market_content,
-            "candidates": candidates,
-        })
-        print(f"\n[HANDOFF] market -> products: {len(candidates)} categories in memory")
+            raise ValueError("Market scan produced no candidate categories")
+        db = merge_market_into_db(root, candidates)
+        print(f"[HANDOFF] {len(candidates)} candidates merged into {CATEGORIES_DB}")
     else:
-        data = _read_stage_json(root, 1, date_str)
-        market_content = data["market_content"]
-        candidates = data["candidates"]
-        print(f"[RESUME] Stage 1: {len(candidates)} candidate categories loaded")
+        db = load_db(root)
+        if not db:
+            raise FileNotFoundError(f"{CATEGORIES_DB} not found — run from stage 1 first")
+        print(f"[RESUME] Loaded {len(db)} categories from {CATEGORIES_DB}")
     print(f"[TIMER] Stage 1 耗时: {_elapsed(t1)}  (累计 {_elapsed(pipeline_start)})")
 
-    # ── Stage 2: Product Scan ────────────────────────────────────────────────
+    if args.stop_after == 1:
+        scanned = sum(1 for c in db.values() if c.get("last_updated"))
+        never = len(db) - scanned
+        print(f"\n[PAUSE] Stage 1 完成 — {len(db)} 类目 ({never} 待扫描, {scanned} 已有数据)")
+        print("检查 results/json/categories.json 后运行 --start-from 2 继续。")
+        return
+
+    # ── Stage 2+3: Per-category loop ─────────────────────────────────────────
     t2 = time.time()
-    if args.start_from <= 2:
-        products, product_sections = run_products(config["products"], candidates, date_str)
-        if not products:
-            raise ValueError("All dynamic candidate categories returned zero qualified products")
-        _write_stage_json(root, 2, date_str, {
-            "products": products,
-            "product_sections": product_sections,
-        })
-        print(f"\n[HANDOFF] products -> ASIN reverse: {len(products)} products in memory")
-    else:
-        data = _read_stage_json(root, 2, date_str)
-        products = data["products"]
-        product_sections = data["product_sections"]
-        print(f"[RESUME] Stage 2: {len(products)} products loaded")
-    print(f"[TIMER] Stage 2 耗时: {_elapsed(t2)}  (累计 {_elapsed(pipeline_start)})")
-
-    # ── Stage 3: ASIN Keyword Lookup ─────────────────────────────────────────
-    t3 = time.time()
-    keyword_sections: list[str] = []
-    if not args.skip_asin_keywords:
-        keyword_sections = run_asin_keywords(config["asin_keywords"], products, date_str, root)
-    print(f"[TIMER] Stage 3 耗时: {_elapsed(t3)}  (累计 {_elapsed(pipeline_start)})")
-
-    write_combined_report(root, date_str, market_content, product_sections, keyword_sections)
-
-    # ── HTML Report ───────────────────────────────────────────────────────────
-    import generate_html_report as _html_gen
-    _html_gen.generate(root, date_str)
+    process_categories_loop(
+        db, root,
+        config["products"],
+        config["asin_keywords"],
+        date_str,
+        max_categories=args.max_categories,
+        skip_keywords=args.skip_keywords,
+    )
+    print(f"[TIMER] 类目循环耗时: {_elapsed(t2)}  (累计 {_elapsed(pipeline_start)})")
     print(f"\n[TIMER] Pipeline 总耗时: {_elapsed(pipeline_start)}")
 
 
 if __name__ == "__main__":
     try:
         main()
-    except (OpenCliError, ValueError, KeyError, json.JSONDecodeError) as exc:
+    except (OpenCliError, ValueError, KeyError, json.JSONDecodeError, FileNotFoundError) as exc:
         raise SystemExit(f"Pipeline failed: {exc}")

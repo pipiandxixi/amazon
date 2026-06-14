@@ -25,39 +25,27 @@ def extract_zh_name(niche_str):
     match = re.search(r'\((.*?)\)', niche_str)
     return match.group(1).strip() if match else ''
 
-def select_departments_market(department_numbers: list) -> None:
-    """Check the given department checkboxes on the market research page.
+def select_departments_market(department_label: str) -> None:
+    """Set the departmentKeyword input to filter results to one top-level department.
 
-    Uses the same input[name^="departments[N]"] DOM structure as the keyword
-    research page. Silently continues if no matching checkboxes are found
-    (page DOM may differ across SellerSprite versions).
+    The v2 market research page uses a text input (name=departmentKeyword) rather
+    than checkboxes. Setting this field before form submission restricts results to
+    sub-categories within that department.
     """
-    safe = [n for n in department_numbers if n != 1]
-    if not safe:
+    if not department_label:
         return
     js = f"""
     (() => {{
-      const enabled = new Set({json.dumps(safe)});
-      let checked = 0, unchecked = 0;
-      // Uncheck "全部类目" first so it doesn't override individual selections
-      const anyCb = document.querySelector('input[name="departments[1]"]');
-      if (anyCb && anyCb.checked) {{ anyCb.click(); unchecked++; }}
-      document.querySelectorAll('input[name^="departments["]').forEach(cb => {{
-        const m = cb.name.match(/departments\\[(\\d+)\\]/);
-        if (!m) return;
-        const n = parseInt(m[1]);
-        if (n === 1) return;
-        if (enabled.has(n) && !cb.checked) {{ cb.click(); checked++; }}
-        else if (!enabled.has(n) && cb.checked) {{ cb.click(); unchecked++; }}
-      }});
-      const active = Array.from(
-        document.querySelectorAll('input[name^="departments["]:checked')
-      ).map(cb => cb.name);
-      return JSON.stringify({{checked, unchecked, active}});
+      const input = document.querySelector('input[name="departmentKeyword"]');
+      if (!input) return JSON.stringify({{error: 'departmentKeyword input not found'}});
+      input.value = {json.dumps(department_label)};
+      input.dispatchEvent(new Event('input', {{ bubbles: true }}));
+      input.dispatchEvent(new Event('change', {{ bubbles: true }}));
+      return JSON.stringify({{set: input.value}});
     }})()
     """
     result = eval_browser(js)
-    print(f"  Market departments selected: {result}")
+    print(f"  Department filter: {result}")
 
 
 def _load_config(config_source):
@@ -67,12 +55,12 @@ def _load_config(config_source):
         return json.load(f)
 
 
-def scrape_market(config_source, department_numbers=None):
+def scrape_market(config_source, department_label=None):
     """Scrape the SellerSprite market research page and return raw category items.
 
-    department_numbers: optional list of SellerSprite department checkbox numbers
-    to pre-filter the page before submitting the search form. When None or empty,
-    all departments are included (default SellerSprite behaviour).
+    department_label: optional department name string (e.g. "Sports & Outdoors") to
+    pre-filter the page via the departmentKeyword input before form submission. When
+    None or empty, all departments are included (default SellerSprite behaviour).
     """
     print("Loading market configuration...")
     config = _load_config(config_source)
@@ -85,9 +73,9 @@ def scrape_market(config_source, department_numbers=None):
     time.sleep(4)
 
     # Pre-filter by department before submitting the search form
-    if department_numbers:
-        print(f"  Filtering by departments: {department_numbers}")
-        select_departments_market(department_numbers)
+    if department_label:
+        print(f"  Filtering by department: {department_label}")
+        select_departments_market(department_label)
         time.sleep(1)
     
     # Generate form fill JS
@@ -703,12 +691,8 @@ def generate_report(
     out.mkdir(parents=True, exist_ok=True)
     json_dir = out / "json"
     json_dir.mkdir(parents=True, exist_ok=True)
-    if output_dir:
-        report_file = out / "market_scan_report.md"
-        sidecar_file = json_dir / "market_scan_results.json"
-    else:
-        report_file = out / f"market_scan_report_{date_str}.md"
-        sidecar_file = json_dir / f"market_scan_results_{date_str}.json"
+    report_file = out / "market_scan_report.md"
+    sidecar_file = json_dir / "market_scan_results.json"
 
     market_content = "\n".join(md)
     if write_report_file:
@@ -783,8 +767,9 @@ def main():
         print(f"Departments: {args.departments} → numbers {dept_numbers}")
 
     check_browser_ready()
-    categories, scan_meta = scrape_market(args.config,
-                                          department_numbers=dept_numbers or None)
+    # standalone: join department names as a comma-separated string if multiple
+    dept_label = ", ".join(args.departments) if args.departments else None
+    categories, scan_meta = scrape_market(args.config, department_label=dept_label)
     generate_report(args.config, categories, date_str,
                     output_dir=args.output_dir or None, scan_meta=scan_meta)
 

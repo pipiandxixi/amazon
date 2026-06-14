@@ -1,0 +1,2299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amazon 选品报告 — 2026-06-14</title>
+<style>
+:root{--border:#e5e7eb;--text:#111827;--muted:#6b7280;--bg:#f3f4f6;--card:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+a{color:inherit;text-decoration:none}
+header{background:#1e293b;color:#f1f5f9;padding:1.5rem 2rem}
+header h1{font-size:1.5rem;font-weight:700;letter-spacing:-.02em}
+header p{color:#94a3b8;font-size:.85rem;margin-top:.3rem}
+nav{background:var(--card);padding:.65rem 2rem;border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;gap:.35rem;position:sticky;top:0;z-index:100;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+nav a{padding:.2rem .65rem;border-radius:9999px;font-size:.77rem;font-weight:500}
+nav a.green{background:#dcfce7;color:#166534}
+nav a.yellow{background:#fef9c3;color:#854d0e}
+nav a:hover{opacity:.75}
+main{max-width:1400px;margin:0 auto;padding:1.25rem 1.25rem 4rem}
+.last-updated{font-size:.72rem;color:var(--muted);margin-top:.4rem}
+.cat{background:var(--card);border:1px solid var(--border);border-radius:.75rem;margin-bottom:1.25rem;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.cat-header{padding:1.1rem 1.5rem;border-bottom:1px solid var(--border)}
+.cat-title{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:.5rem}
+.badge{display:inline-block;padding:.18rem .55rem;border-radius:.375rem;font-size:.73rem;font-weight:700}
+.badge.green{background:#dcfce7;color:#166534}
+.badge.yellow{background:#fef9c3;color:#854d0e}
+h2{font-size:1.05rem;font-weight:700}
+h2 small{color:var(--muted);font-weight:400;font-size:.85rem;margin-left:.35rem}
+.metrics{display:flex;flex-wrap:wrap;gap:.35rem 1.25rem}
+.metric{font-size:.8rem;color:var(--muted)}
+.metric strong{color:var(--text);font-weight:600}
+details{border-top:1px solid var(--border)}
+details>summary{padding:.7rem 1.5rem;cursor:pointer;font-size:.85rem;font-weight:600;color:#374151;list-style:none;display:flex;align-items:center;gap:.5rem;user-select:none}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:'▶';font-size:.55rem;color:var(--muted);transition:transform .15s;flex-shrink:0}
+details[open]>summary::before{transform:rotate(90deg)}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:.65rem;padding:.85rem 1.5rem 1.25rem}
+.pcard{border:1px solid var(--border);border-radius:.5rem;overflow:hidden;font-size:.77rem;transition:box-shadow .15s,transform .15s}
+.pcard:hover{box-shadow:0 4px 14px rgba(0,0,0,.09);transform:translateY(-1px)}
+.pcard img{width:100%;aspect-ratio:1;object-fit:contain;background:#f8fafc;padding:.2rem;display:block}
+.pcard .no-img{width:100%;aspect-ratio:1;background:#f1f5f9;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.7rem}
+.pcard .pinfo{padding:.45rem .55rem .55rem}
+.pasin{font-family:monospace;font-size:.67rem;color:var(--muted);margin-bottom:.15rem}
+.ptitle{font-size:.73rem;line-height:1.3;margin:.15rem 0 .4rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pstats{display:grid;grid-template-columns:1fr 1fr;gap:.2rem .4rem}
+.pstat{display:flex;flex-direction:column}
+.plabel{font-size:.62rem;color:var(--muted)}
+.pval{font-weight:600;font-size:.77rem}
+.kw-wrap{padding:0 1.5rem 1.1rem;overflow-x:auto}
+table.kwtable{width:100%;border-collapse:collapse;font-size:.8rem}
+.kwtable th{padding:.4rem .7rem;text-align:left;font-size:.68rem;color:var(--muted);text-transform:uppercase;background:#f9fafb;border-bottom:1px solid var(--border);white-space:nowrap}
+.kwtable td{padding:.45rem .7rem;border-bottom:1px solid var(--border);vertical-align:top}
+.kwtable tr:last-child td{border-bottom:none}
+.kwtable tr:hover td{background:#f9fafb}
+.kwtable td:first-child{color:var(--muted);font-size:.75rem;width:2rem}
+.kw-zh{color:var(--muted);font-size:.72rem;display:block;margin-top:.1rem}
+.no-data{padding:.9rem 1.5rem;color:var(--muted);font-size:.85rem;font-style:italic}
+.kw-link{color:#2563eb;text-decoration:underline;text-decoration-color:#93c5fd;text-underline-offset:2px;transition:color .12s}
+.kw-link:hover{color:#1d4ed8}
+.plinks{display:inline-flex;gap:.2rem;margin-left:.35rem}
+.plinks a{font-size:.58rem;padding:.05rem .28rem;border-radius:.25rem;font-weight:700;text-decoration:none;border:1px solid currentColor;line-height:1.4;opacity:.7;transition:opacity .12s}
+.plinks a:hover{opacity:1}
+.plinks a:first-child{color:#c45500}
+.plinks a:last-child{color:#1a6d38}
+</style>
+</head>
+<body>
+<header>
+  <h1>Amazon 选品报告</h1>
+  <p>2026-06-14 &nbsp;·&nbsp; 72 绿色推荐 &nbsp;·&nbsp; 38 黄色候选 &nbsp;·&nbsp; 22/110 类目已扫描产品</p>
+</header>
+<nav><a href="#swing-trainers" class="green">Swing Trainers</a><a href="#paddleboard-accessories" class="green">Paddleboard Accessories</a><a href="#camping-fans" class="green">Camping Fans</a><a href="#trophies" class="green">Trophies</a><a href="#tie-downs" class="green">Tie-Downs</a><a href="#wrist---forearm-strengtheners" class="green">Wrist &amp; Forearm Strengtheners</a><a href="#scoreboards---timers" class="green">Scoreboards &amp; Timers</a><a href="#equestrian-sports" class="green">Equestrian Sports</a><a href="#interior-lights" class="green">Interior Lights</a><a href="#flags" class="green">Flags</a><a href="#motor-flushers" class="green">Motor Flushers</a><a href="#trophy-mounts" class="green">Trophy Mounts</a><a href="#optics-accessories" class="green">Optics Accessories</a><a href="#fly-tying-equipment" class="green">Fly Tying Equipment</a><a href="#line-spooling-accessories" class="green">Line Spooling Accessories</a><a href="#team-practice-vests" class="green">Team Practice Vests</a><a href="#tools" class="green">Tools</a><a href="#reel-replacement-parts" class="green">Reel Replacement Parts</a><a href="#shafts" class="green">Shafts</a><a href="#training-putters" class="green">Training Putters</a><a href="#cups" class="green">Cups</a><a href="#cardboard-cutouts" class="green">Cardboard Cutouts</a><a href="#bar-tools---drinkware" class="green">Bar Tools &amp; Drinkware</a><a href="#steam-cleaner---steam-mop-replacement-parts" class="green">Steam Cleaner &amp; Steam Mop Replacement Parts</a><a href="#tortilla-servers" class="green">Tortilla Servers</a><a href="#devotional-candles" class="green">Devotional Candles</a><a href="#serveware" class="green">Serveware</a><a href="#lighting-products" class="green">Lighting Products</a><a href="#nozzles" class="green">Nozzles</a><a href="#wind-spinners" class="green">Wind Spinners</a><a href="#attachments" class="green">Attachments</a><a href="#hoes" class="green">Hoes</a><a href="#pond-lights" class="green">Pond Lights</a><a href="#feeders" class="green">Feeders</a><a href="#energy-controllers" class="green">Energy Controllers</a><a href="#diverters" class="green">Diverters</a><a href="#bats" class="green">Bats</a><a href="#gazing-balls" class="green">Gazing Balls</a><a href="#machetes" class="green">Machetes</a><a href="#indoor-air-quality-meters" class="green">Indoor Air Quality Meters</a><a href="#grinding-discs" class="green">Grinding Discs</a><a href="#network---cable-testers" class="green">Network &amp; Cable Testers</a><a href="#3d-printer-platforms" class="green">3D Printer Platforms</a><a href="#angle-grinder-wheels" class="green">Angle Grinder Wheels</a><a href="#float-valves" class="green">Float Valves</a><a href="#leak-detection-tools" class="green">Leak Detection Tools</a><a href="#machine-tool-inspection-mirrors" class="green">Machine Tool Inspection Mirrors</a><a href="#lab-supply-dispensers" class="green">Lab Supply Dispensers</a><a href="#unmanned-aerial-vehicles" class="green">Unmanned Aerial Vehicles)</a><a href="#hose-clamping-tools" class="green">Hose Clamping Tools</a><a href="#tactile-switches" class="green">Tactile Switches</a><a href="#electrically-conductive-adhesives" class="green">Electrically Conductive Adhesives</a><a href="#pressure-regulators" class="green">Pressure Regulators</a><a href="#3d-printer-extruders" class="green">3D Printer Extruders</a><a href="#angle" class="green">Angle</a><a href="#relief-valves" class="green">Relief Valves</a><a href="#shim-stock" class="green">Shim Stock</a><a href="#continuous---piano" class="green">Continuous &amp; Piano</a><a href="#outlet-boxes" class="green">Outlet Boxes</a><a href="#auger-drill-bits" class="green">Auger Drill Bits</a><a href="#drill-bits" class="green">Drill Bits</a><a href="#countertop---tile-paint" class="green">Countertop &amp; Tile Paint</a><a href="#pipe-wrenches" class="green">Pipe Wrenches</a><a href="#paint-roller-extension-poles" class="green">Paint Roller Extension Poles</a><a href="#rods" class="green">Rods</a><a href="#soffit-vents" class="green">Soffit Vents</a><a href="#sensors" class="green">Sensors</a><a href="#gutters" class="green">Gutters</a><a href="#mailbox-hardware" class="green">Mailbox Hardware</a><a href="#nibblers" class="green">Nibblers</a><a href="#brazing-rods" class="green">Brazing Rods</a><a href="#nail-pullers" class="green">Nail Pullers</a><a href="#batteries---battery-chargers" class="yellow">Batteries &amp; Battery Chargers</a><a href="#kayak-accessories" class="yellow">Kayak Accessories</a><a href="#fitness-circles" class="yellow">Fitness Circles</a><a href="#headlights" class="yellow">Headlights</a><a href="#cooking-utensils" class="yellow">Cooking Utensils</a><a href="#gaiters" class="yellow">Gaiters</a><a href="#replacement-wheels" class="yellow">Replacement Wheels</a><a href="#bread-proofing-baskets" class="yellow">Bread Proofing Baskets</a><a href="#decorative-boxes" class="yellow">Decorative Boxes</a><a href="#toilet-paper-storage-containers" class="yellow">Toilet Paper Storage Containers</a><a href="#honey-jars" class="yellow">Honey Jars</a><a href="#decorative-trays" class="yellow">Decorative Trays</a><a href="#pillars" class="yellow">Pillars</a><a href="#floor-pillows---cushions" class="yellow">Floor Pillows &amp; Cushions</a><a href="#egg-baskets" class="yellow">Egg Baskets</a><a href="#picture-frames" class="yellow">Picture Frames</a><a href="#tea-storage-chests" class="yellow">Tea Storage Chests</a><a href="#vertical-blinds" class="yellow">Vertical Blinds</a><a href="#drip-irrigation-kits" class="yellow">Drip Irrigation Kits</a><a href="#pool---deck-repair-products" class="yellow">Pool &amp; Deck Repair Products</a><a href="#poultry-fountains---waterers" class="yellow">Poultry Fountains &amp; Waterers</a><a href="#birdhouses" class="yellow">Birdhouses</a><a href="#beekeeping-supplies" class="yellow">Beekeeping Supplies</a><a href="#plaques---wall-art" class="yellow">Plaques &amp; Wall Art</a><a href="#outdoor-clocks" class="yellow">Outdoor Clocks</a><a href="#protective-gear" class="yellow">Protective Gear</a><a href="#bulb-planters" class="yellow">Bulb Planters</a><a href="#cup-carriers" class="yellow">Cup Carriers</a><a href="#pipes" class="yellow">Pipes</a><a href="#emf-meters" class="yellow">EMF Meters</a><a href="#accessories" class="yellow">Accessories</a><a href="#diamond-blades" class="yellow">Diamond Blades</a><a href="#angle-clamps" class="yellow">Angle Clamps</a><a href="#tap---die-sets" class="yellow">Tap &amp; Die Sets</a><a href="#bolt-cutters" class="yellow">Bolt Cutters</a><a href="#urinal-accessories" class="yellow">Urinal Accessories</a><a href="#kick-plates" class="yellow">Kick Plates</a><a href="#masonry-chisels" class="yellow">Masonry Chisels</a></nav>
+<main>
+<section class="cat" id="swing-trainers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Swing Trainers<small>室内练习器</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 21:52</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$37.01</strong></span>
+      <span class="metric">评论数 <strong>448</strong></span>
+      <span class="metric">重量 <strong>0.71 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.37%</strong></span>
+      <span class="metric">品牌集中度 <strong>57.1%</strong></span>
+      <span class="metric">中国卖家 <strong>68.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="paddleboard-accessories">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Paddleboard Accessories<small>冲浪板配件</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:16</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$53.08</strong></span>
+      <span class="metric">评论数 <strong>322</strong></span>
+      <span class="metric">重量 <strong>2.37 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.17%</strong></span>
+      <span class="metric">品牌集中度 <strong>42.7%</strong></span>
+      <span class="metric">中国卖家 <strong>72.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="camping-fans">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Camping Fans<small>露营爱好者</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 21:53</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$38.58</strong></span>
+      <span class="metric">评论数 <strong>260</strong></span>
+      <span class="metric">重量 <strong>2.17 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.56%</strong></span>
+      <span class="metric">品牌集中度 <strong>69.4%</strong></span>
+      <span class="metric">中国卖家 <strong>82.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="trophies">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Trophies<small>奖杯</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:17</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$25.63</strong></span>
+      <span class="metric">评论数 <strong>297</strong></span>
+      <span class="metric">重量 <strong>1.01 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.59%</strong></span>
+      <span class="metric">品牌集中度 <strong>49.0%</strong></span>
+      <span class="metric">中国卖家 <strong>49.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="tie-downs">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Tie-Downs<small>栓系器具</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:17</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$27.85</strong></span>
+      <span class="metric">评论数 <strong>546</strong></span>
+      <span class="metric">重量 <strong>1.62 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.74%</strong></span>
+      <span class="metric">品牌集中度 <strong>61.7%</strong></span>
+      <span class="metric">中国卖家 <strong>54.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="wrist---forearm-strengtheners">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Wrist &amp; Forearm Strengtheners<small>手腕和前臂加强器</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:17</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$27.41</strong></span>
+      <span class="metric">评论数 <strong>373</strong></span>
+      <span class="metric">重量 <strong>2.28 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.53%</strong></span>
+      <span class="metric">品牌集中度 <strong>69.1%</strong></span>
+      <span class="metric">中国卖家 <strong>79.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="scoreboards---timers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Scoreboards &amp; Timers<small>记分牌和计时器</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:18</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$53.46</strong></span>
+      <span class="metric">评论数 <strong>345</strong></span>
+      <span class="metric">重量 <strong>1.6 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.13%</strong></span>
+      <span class="metric">品牌集中度 <strong>54.1%</strong></span>
+      <span class="metric">中国卖家 <strong>72.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="equestrian-sports">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Equestrian Sports<small>马术运动</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:18</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$47.02</strong></span>
+      <span class="metric">评论数 <strong>193</strong></span>
+      <span class="metric">重量 <strong>1.67 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.03%</strong></span>
+      <span class="metric">品牌集中度 <strong>66.7%</strong></span>
+      <span class="metric">中国卖家 <strong>46.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="interior-lights">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Interior Lights<small>内部灯饰</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:18</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$36.53</strong></span>
+      <span class="metric">评论数 <strong>290</strong></span>
+      <span class="metric">重量 <strong>0.87 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.55%</strong></span>
+      <span class="metric">品牌集中度 <strong>69.6%</strong></span>
+      <span class="metric">中国卖家 <strong>76.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="flags">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Flags<small>标志</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:18</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$24.01</strong></span>
+      <span class="metric">评论数 <strong>223</strong></span>
+      <span class="metric">重量 <strong>0.57 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.61%</strong></span>
+      <span class="metric">品牌集中度 <strong>63.9%</strong></span>
+      <span class="metric">中国卖家 <strong>52.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="motor-flushers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Motor Flushers<small>马达冲洗装置</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:19</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$31.55</strong></span>
+      <span class="metric">评论数 <strong>284</strong></span>
+      <span class="metric">重量 <strong>1.23 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.62%</strong></span>
+      <span class="metric">品牌集中度 <strong>71.4%</strong></span>
+      <span class="metric">中国卖家 <strong>58.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="trophy-mounts">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Trophy Mounts<small>奖杯坐骑</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:19</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$25.66</strong></span>
+      <span class="metric">评论数 <strong>346</strong></span>
+      <span class="metric">重量 <strong>1.43 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.49%</strong></span>
+      <span class="metric">品牌集中度 <strong>71.2%</strong></span>
+      <span class="metric">中国卖家 <strong>44.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="optics-accessories">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Optics Accessories<small>光学配件</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:19</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$32.96</strong></span>
+      <span class="metric">评论数 <strong>357</strong></span>
+      <span class="metric">重量 <strong>0.2 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.63%</strong></span>
+      <span class="metric">品牌集中度 <strong>53.4%</strong></span>
+      <span class="metric">中国卖家 <strong>44.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="fly-tying-equipment">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Fly Tying Equipment<small>绑蝇设备</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:20</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$20.69</strong></span>
+      <span class="metric">评论数 <strong>487</strong></span>
+      <span class="metric">重量 <strong>0.3 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.84%</strong></span>
+      <span class="metric">品牌集中度 <strong>64.8%</strong></span>
+      <span class="metric">中国卖家 <strong>57.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="line-spooling-accessories">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Line Spooling Accessories<small>线路绕线配件</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:20</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$20.79</strong></span>
+      <span class="metric">评论数 <strong>364</strong></span>
+      <span class="metric">重量 <strong>1.98 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.66%</strong></span>
+      <span class="metric">品牌集中度 <strong>66.1%</strong></span>
+      <span class="metric">中国卖家 <strong>63.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="team-practice-vests">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Team Practice Vests<small>团队练习背心</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:20</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$33.17</strong></span>
+      <span class="metric">评论数 <strong>186</strong></span>
+      <span class="metric">重量 <strong>2.21 lbs</strong></span>
+      <span class="metric">退货率 <strong>6.66%</strong></span>
+      <span class="metric">品牌集中度 <strong>66.9%</strong></span>
+      <span class="metric">中国卖家 <strong>83.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="tools">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Tools<small>工具</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:21</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$34.67</strong></span>
+      <span class="metric">评论数 <strong>185</strong></span>
+      <span class="metric">重量 <strong>1.48 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.64%</strong></span>
+      <span class="metric">品牌集中度 <strong>45.8%</strong></span>
+      <span class="metric">中国卖家 <strong>66.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="reel-replacement-parts">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Reel Replacement Parts<small>卷盘更换部件</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:21</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$27.25</strong></span>
+      <span class="metric">评论数 <strong>108</strong></span>
+      <span class="metric">重量 <strong>1.38 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.58%</strong></span>
+      <span class="metric">品牌集中度 <strong>71.3%</strong></span>
+      <span class="metric">中国卖家 <strong>70.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="shafts">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Shafts<small>杆身</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:21</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$27.08</strong></span>
+      <span class="metric">评论数 <strong>95</strong></span>
+      <span class="metric">重量 <strong>0.15 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.27%</strong></span>
+      <span class="metric">品牌集中度 <strong>62.3%</strong></span>
+      <span class="metric">中国卖家 <strong>59.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="training-putters">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Training Putters<small>练习推杆</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:21</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$30.9</strong></span>
+      <span class="metric">评论数 <strong>196</strong></span>
+      <span class="metric">重量 <strong>1.38 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.05%</strong></span>
+      <span class="metric">品牌集中度 <strong>65.8%</strong></span>
+      <span class="metric">中国卖家 <strong>62.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="cups">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Cups<small>杯子</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:22</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$21.5</strong></span>
+      <span class="metric">评论数 <strong>467</strong></span>
+      <span class="metric">重量 <strong>1.32 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.95%</strong></span>
+      <span class="metric">品牌集中度 <strong>59.9%</strong></span>
+      <span class="metric">中国卖家 <strong>66.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="cardboard-cutouts">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Cardboard Cutouts<small>硬板纸模型</small></h2>
+    </div>
+    <div class="last-updated">最后更新: 2026-06-14 22:22</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$24.38</strong></span>
+      <span class="metric">评论数 <strong>295</strong></span>
+      <span class="metric">重量 <strong>1.31 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.59%</strong></span>
+      <span class="metric">品牌集中度 <strong>61.0%</strong></span>
+      <span class="metric">中国卖家 <strong>62.0%</strong></span>
+    </div>
+  </div>
+  <details>
+    <summary>产品 (0)</summary>
+    <p class="no-data">该类目在 SellerSprite 产品树导航失败（nav-fallback 碰撞已跳过）。</p>
+  </details>
+  <details open>
+    <summary>关键词 (0)</summary>
+    <p class="no-data">该类目无关键词数据。</p>
+  </details>
+</section>
+<section class="cat" id="bar-tools---drinkware">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Bar Tools &amp; Drinkware<small>酒吧工具</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$26.8</strong></span>
+      <span class="metric">评论数 <strong>376</strong></span>
+      <span class="metric">重量 <strong>1.51 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.44%</strong></span>
+      <span class="metric">品牌集中度 <strong>55.9%</strong></span>
+      <span class="metric">中国卖家 <strong>62.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="steam-cleaner---steam-mop-replacement-parts">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Steam Cleaner &amp; Steam Mop Replacement Parts<small>蒸汽清洗机</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$21.27</strong></span>
+      <span class="metric">评论数 <strong>363</strong></span>
+      <span class="metric">重量 <strong>0.82 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.59%</strong></span>
+      <span class="metric">品牌集中度 <strong>69.8%</strong></span>
+      <span class="metric">中国卖家 <strong>75.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="tortilla-servers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Tortilla Servers<small>玉米饼服务员</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$21.77</strong></span>
+      <span class="metric">评论数 <strong>439</strong></span>
+      <span class="metric">重量 <strong>1.74 lbs</strong></span>
+      <span class="metric">退货率 <strong>6.26%</strong></span>
+      <span class="metric">品牌集中度 <strong>58.8%</strong></span>
+      <span class="metric">中国卖家 <strong>43.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="devotional-candles">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Devotional Candles<small>祈祷蜡烛</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$26.05</strong></span>
+      <span class="metric">评论数 <strong>196</strong></span>
+      <span class="metric">重量 <strong>1.77 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.08%</strong></span>
+      <span class="metric">品牌集中度 <strong>62.4%</strong></span>
+      <span class="metric">中国卖家 <strong>55.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="serveware">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Serveware<small>碗碟</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$21.82</strong></span>
+      <span class="metric">评论数 <strong>416</strong></span>
+      <span class="metric">重量 <strong>1.47 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.33%</strong></span>
+      <span class="metric">品牌集中度 <strong>57.5%</strong></span>
+      <span class="metric">中国卖家 <strong>63.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="lighting-products">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Lighting Products<small>水底灯</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$47.85</strong></span>
+      <span class="metric">评论数 <strong>482</strong></span>
+      <span class="metric">重量 <strong>1.72 lbs</strong></span>
+      <span class="metric">退货率 <strong>6.75%</strong></span>
+      <span class="metric">品牌集中度 <strong>51.9%</strong></span>
+      <span class="metric">中国卖家 <strong>74.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="nozzles">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Nozzles<small>喷嘴</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$26.24</strong></span>
+      <span class="metric">评论数 <strong>490</strong></span>
+      <span class="metric">重量 <strong>0.44 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.63%</strong></span>
+      <span class="metric">品牌集中度 <strong>53.8%</strong></span>
+      <span class="metric">中国卖家 <strong>74.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="wind-spinners">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Wind Spinners<small>Wind Spinners</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$31.43</strong></span>
+      <span class="metric">评论数 <strong>472</strong></span>
+      <span class="metric">重量 <strong>2.36 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.09%</strong></span>
+      <span class="metric">品牌集中度 <strong>54.6%</strong></span>
+      <span class="metric">中国卖家 <strong>85.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="attachments">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Attachments<small>附件</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$39.59</strong></span>
+      <span class="metric">评论数 <strong>222</strong></span>
+      <span class="metric">重量 <strong>2.19 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.07%</strong></span>
+      <span class="metric">品牌集中度 <strong>72.2%</strong></span>
+      <span class="metric">中国卖家 <strong>78.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="hoes">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Hoes<small>园艺锄</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$27.68</strong></span>
+      <span class="metric">评论数 <strong>319</strong></span>
+      <span class="metric">重量 <strong>2.41 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.1%</strong></span>
+      <span class="metric">品牌集中度 <strong>51.9%</strong></span>
+      <span class="metric">中国卖家 <strong>72.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="pond-lights">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Pond Lights<small>池塘灯</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$46.62</strong></span>
+      <span class="metric">评论数 <strong>245</strong></span>
+      <span class="metric">重量 <strong>1.64 lbs</strong></span>
+      <span class="metric">退货率 <strong>6.15%</strong></span>
+      <span class="metric">品牌集中度 <strong>67.1%</strong></span>
+      <span class="metric">中国卖家 <strong>75.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="feeders">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Feeders<small>喂食器</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$25.06</strong></span>
+      <span class="metric">评论数 <strong>217</strong></span>
+      <span class="metric">重量 <strong>2.2 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.83%</strong></span>
+      <span class="metric">品牌集中度 <strong>67.6%</strong></span>
+      <span class="metric">中国卖家 <strong>70.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="energy-controllers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Energy Controllers<small>能源控制器</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$81.15</strong></span>
+      <span class="metric">评论数 <strong>388</strong></span>
+      <span class="metric">重量 <strong>2.11 lbs</strong></span>
+      <span class="metric">退货率 <strong>7.01%</strong></span>
+      <span class="metric">品牌集中度 <strong>70.3%</strong></span>
+      <span class="metric">中国卖家 <strong>66.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="diverters">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Diverters<small>分流器</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$26.61</strong></span>
+      <span class="metric">评论数 <strong>205</strong></span>
+      <span class="metric">重量 <strong>1.58 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.4%</strong></span>
+      <span class="metric">品牌集中度 <strong>70.8%</strong></span>
+      <span class="metric">中国卖家 <strong>79.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="bats">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Bats<small>蝙蝠</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$32.07</strong></span>
+      <span class="metric">评论数 <strong>342</strong></span>
+      <span class="metric">重量 <strong>2.1 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.61%</strong></span>
+      <span class="metric">品牌集中度 <strong>56.1%</strong></span>
+      <span class="metric">中国卖家 <strong>47.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="gazing-balls">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Gazing Balls<small>反射球</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$38.09</strong></span>
+      <span class="metric">评论数 <strong>292</strong></span>
+      <span class="metric">重量 <strong>2.26 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.79%</strong></span>
+      <span class="metric">品牌集中度 <strong>63.6%</strong></span>
+      <span class="metric">中国卖家 <strong>77.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="machetes">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Machetes<small>弯刀</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$32.55</strong></span>
+      <span class="metric">评论数 <strong>455</strong></span>
+      <span class="metric">重量 <strong>1.36 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.54%</strong></span>
+      <span class="metric">品牌集中度 <strong>64.9%</strong></span>
+      <span class="metric">中国卖家 <strong>46.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="indoor-air-quality-meters">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Indoor Air Quality Meters<small>室内空气质量测试仪</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$72.17</strong></span>
+      <span class="metric">评论数 <strong>303</strong></span>
+      <span class="metric">重量 <strong>0.53 lbs</strong></span>
+      <span class="metric">退货率 <strong>7.8%</strong></span>
+      <span class="metric">品牌集中度 <strong>70.2%</strong></span>
+      <span class="metric">中国卖家 <strong>63.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="grinding-discs">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Grinding Discs<small>磨片</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$23.53</strong></span>
+      <span class="metric">评论数 <strong>360</strong></span>
+      <span class="metric">重量 <strong>2.02 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.13%</strong></span>
+      <span class="metric">品牌集中度 <strong>46.8%</strong></span>
+      <span class="metric">中国卖家 <strong>81.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="network---cable-testers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Network &amp; Cable Testers<small>网络</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$117.9</strong></span>
+      <span class="metric">评论数 <strong>422</strong></span>
+      <span class="metric">重量 <strong>0.6 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.23%</strong></span>
+      <span class="metric">品牌集中度 <strong>63.0%</strong></span>
+      <span class="metric">中国卖家 <strong>68.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="3d-printer-platforms">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>3D Printer Platforms<small>3D打印机平台</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$23.55</strong></span>
+      <span class="metric">评论数 <strong>216</strong></span>
+      <span class="metric">重量 <strong>2.0 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.56%</strong></span>
+      <span class="metric">品牌集中度 <strong>71.7%</strong></span>
+      <span class="metric">中国卖家 <strong>68.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="angle-grinder-wheels">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Angle Grinder Wheels<small>角磨机砂轮</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$23.91</strong></span>
+      <span class="metric">评论数 <strong>159</strong></span>
+      <span class="metric">重量 <strong>1.54 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.41%</strong></span>
+      <span class="metric">品牌集中度 <strong>59.9%</strong></span>
+      <span class="metric">中国卖家 <strong>79.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="float-valves">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Float Valves<small>浮阀</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$20.45</strong></span>
+      <span class="metric">评论数 <strong>182</strong></span>
+      <span class="metric">重量 <strong>0.64 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.44%</strong></span>
+      <span class="metric">品牌集中度 <strong>42.7%</strong></span>
+      <span class="metric">中国卖家 <strong>67.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="leak-detection-tools">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Leak Detection Tools<small>泄漏检测工具</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$76.34</strong></span>
+      <span class="metric">评论数 <strong>154</strong></span>
+      <span class="metric">重量 <strong>1.47 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.3%</strong></span>
+      <span class="metric">品牌集中度 <strong>55.1%</strong></span>
+      <span class="metric">中国卖家 <strong>48.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="machine-tool-inspection-mirrors">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Machine Tool Inspection Mirrors<small>机床检测镜</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$21.53</strong></span>
+      <span class="metric">评论数 <strong>261</strong></span>
+      <span class="metric">重量 <strong>0.68 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.09%</strong></span>
+      <span class="metric">品牌集中度 <strong>69.2%</strong></span>
+      <span class="metric">中国卖家 <strong>78.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="lab-supply-dispensers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Lab Supply Dispensers<small>实验室用品分配器</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$29.8</strong></span>
+      <span class="metric">评论数 <strong>171</strong></span>
+      <span class="metric">重量 <strong>2.19 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.45%</strong></span>
+      <span class="metric">品牌集中度 <strong>62.7%</strong></span>
+      <span class="metric">中国卖家 <strong>58.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="unmanned-aerial-vehicles">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Unmanned Aerial Vehicles)<small>UAVs</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$84.75</strong></span>
+      <span class="metric">评论数 <strong>145</strong></span>
+      <span class="metric">重量 <strong>0.62 lbs</strong></span>
+      <span class="metric">退货率 <strong>7.1%</strong></span>
+      <span class="metric">品牌集中度 <strong>69.2%</strong></span>
+      <span class="metric">中国卖家 <strong>81.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="hose-clamping-tools">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Hose Clamping Tools<small>软管夹紧工具</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$21.11</strong></span>
+      <span class="metric">评论数 <strong>212</strong></span>
+      <span class="metric">重量 <strong>1.15 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.61%</strong></span>
+      <span class="metric">品牌集中度 <strong>69.6%</strong></span>
+      <span class="metric">中国卖家 <strong>79.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="tactile-switches">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Tactile Switches<small>触摸式开关</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$26.62</strong></span>
+      <span class="metric">评论数 <strong>57</strong></span>
+      <span class="metric">重量 <strong>0.29 lbs</strong></span>
+      <span class="metric">退货率 <strong>7.31%</strong></span>
+      <span class="metric">品牌集中度 <strong>72.2%</strong></span>
+      <span class="metric">中国卖家 <strong>95.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="electrically-conductive-adhesives">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Electrically Conductive Adhesives<small>导电性粘合剂</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$25.39</strong></span>
+      <span class="metric">评论数 <strong>256</strong></span>
+      <span class="metric">重量 <strong>0.59 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.14%</strong></span>
+      <span class="metric">品牌集中度 <strong>69.8%</strong></span>
+      <span class="metric">中国卖家 <strong>52.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="pressure-regulators">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Pressure Regulators<small>压力调节器</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$91.76</strong></span>
+      <span class="metric">评论数 <strong>157</strong></span>
+      <span class="metric">重量 <strong>2.13 lbs</strong></span>
+      <span class="metric">退货率 <strong>6.61%</strong></span>
+      <span class="metric">品牌集中度 <strong>66.4%</strong></span>
+      <span class="metric">中国卖家 <strong>43.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="3d-printer-extruders">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>3D Printer Extruders<small>3D打印机挤出机</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$28.93</strong></span>
+      <span class="metric">评论数 <strong>160</strong></span>
+      <span class="metric">重量 <strong>0.18 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.99%</strong></span>
+      <span class="metric">品牌集中度 <strong>57.6%</strong></span>
+      <span class="metric">中国卖家 <strong>78.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="angle">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Angle<small>角规</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$22.64</strong></span>
+      <span class="metric">评论数 <strong>392</strong></span>
+      <span class="metric">重量 <strong>0.53 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.9%</strong></span>
+      <span class="metric">品牌集中度 <strong>61.0%</strong></span>
+      <span class="metric">中国卖家 <strong>65.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="relief-valves">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Relief Valves<small>减压阀</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$46.38</strong></span>
+      <span class="metric">评论数 <strong>125</strong></span>
+      <span class="metric">重量 <strong>0.96 lbs</strong></span>
+      <span class="metric">退货率 <strong>6.22%</strong></span>
+      <span class="metric">品牌集中度 <strong>56.6%</strong></span>
+      <span class="metric">中国卖家 <strong>49.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="shim-stock">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Shim Stock<small>衬垫</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$20.21</strong></span>
+      <span class="metric">评论数 <strong>129</strong></span>
+      <span class="metric">重量 <strong>1.74 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.03%</strong></span>
+      <span class="metric">品牌集中度 <strong>74.8%</strong></span>
+      <span class="metric">中国卖家 <strong>55.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="continuous---piano">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Continuous &amp; Piano<small>连续铰链和钢琴铰链</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$25.21</strong></span>
+      <span class="metric">评论数 <strong>63</strong></span>
+      <span class="metric">重量 <strong>1.19 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.54%</strong></span>
+      <span class="metric">品牌集中度 <strong>69.2%</strong></span>
+      <span class="metric">中国卖家 <strong>69.1%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="outlet-boxes">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Outlet Boxes<small>插座盒</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$20.03</strong></span>
+      <span class="metric">评论数 <strong>526</strong></span>
+      <span class="metric">重量 <strong>1.12 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.94%</strong></span>
+      <span class="metric">品牌集中度 <strong>56.7%</strong></span>
+      <span class="metric">中国卖家 <strong>55.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="auger-drill-bits">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Auger Drill Bits<small>螺旋钻钻头</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$24.58</strong></span>
+      <span class="metric">评论数 <strong>532</strong></span>
+      <span class="metric">重量 <strong>1.99 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.79%</strong></span>
+      <span class="metric">品牌集中度 <strong>67.7%</strong></span>
+      <span class="metric">中国卖家 <strong>69.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="drill-bits">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Drill Bits<small>钻头</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$26.49</strong></span>
+      <span class="metric">评论数 <strong>262</strong></span>
+      <span class="metric">重量 <strong>1.0 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.68%</strong></span>
+      <span class="metric">品牌集中度 <strong>52.1%</strong></span>
+      <span class="metric">中国卖家 <strong>77.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="countertop---tile-paint">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Countertop &amp; Tile Paint<small>台面</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$40.48</strong></span>
+      <span class="metric">评论数 <strong>386</strong></span>
+      <span class="metric">重量 <strong>1.91 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.69%</strong></span>
+      <span class="metric">品牌集中度 <strong>72.8%</strong></span>
+      <span class="metric">中国卖家 <strong>62.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="pipe-wrenches">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Pipe Wrenches<small>管钳</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$30.43</strong></span>
+      <span class="metric">评论数 <strong>347</strong></span>
+      <span class="metric">重量 <strong>2.4 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.27%</strong></span>
+      <span class="metric">品牌集中度 <strong>63.0%</strong></span>
+      <span class="metric">中国卖家 <strong>69.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="paint-roller-extension-poles">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Paint Roller Extension Poles<small>油漆滚筒加长杆</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$38.69</strong></span>
+      <span class="metric">评论数 <strong>352</strong></span>
+      <span class="metric">重量 <strong>2.03 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.55%</strong></span>
+      <span class="metric">品牌集中度 <strong>55.6%</strong></span>
+      <span class="metric">中国卖家 <strong>65.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="rods">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Rods<small>杆</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$21.84</strong></span>
+      <span class="metric">评论数 <strong>197</strong></span>
+      <span class="metric">重量 <strong>2.17 lbs</strong></span>
+      <span class="metric">退货率 <strong>1.94%</strong></span>
+      <span class="metric">品牌集中度 <strong>57.0%</strong></span>
+      <span class="metric">中国卖家 <strong>75.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="soffit-vents">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Soffit Vents<small>檐口通风口</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$21.53</strong></span>
+      <span class="metric">评论数 <strong>227</strong></span>
+      <span class="metric">重量 <strong>1.6 lbs</strong></span>
+      <span class="metric">退货率 <strong>7.65%</strong></span>
+      <span class="metric">品牌集中度 <strong>72.5%</strong></span>
+      <span class="metric">中国卖家 <strong>58.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="sensors">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Sensors<small>传感器</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$26.26</strong></span>
+      <span class="metric">评论数 <strong>183</strong></span>
+      <span class="metric">重量 <strong>0.44 lbs</strong></span>
+      <span class="metric">退货率 <strong>7.01%</strong></span>
+      <span class="metric">品牌集中度 <strong>64.1%</strong></span>
+      <span class="metric">中国卖家 <strong>73.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="gutters">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Gutters<small>排水沟</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$23.86</strong></span>
+      <span class="metric">评论数 <strong>122</strong></span>
+      <span class="metric">重量 <strong>1.75 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.02%</strong></span>
+      <span class="metric">品牌集中度 <strong>56.7%</strong></span>
+      <span class="metric">中国卖家 <strong>70.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="mailbox-hardware">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Mailbox Hardware<small>信箱硬件</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$21.23</strong></span>
+      <span class="metric">评论数 <strong>212</strong></span>
+      <span class="metric">重量 <strong>1.04 lbs</strong></span>
+      <span class="metric">退货率 <strong>7.65%</strong></span>
+      <span class="metric">品牌集中度 <strong>54.5%</strong></span>
+      <span class="metric">中国卖家 <strong>65.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="nibblers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Nibblers<small>切片机</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$65.19</strong></span>
+      <span class="metric">评论数 <strong>199</strong></span>
+      <span class="metric">重量 <strong>2.21 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.35%</strong></span>
+      <span class="metric">品牌集中度 <strong>70.0%</strong></span>
+      <span class="metric">中国卖家 <strong>69.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="brazing-rods">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Brazing Rods<small>钎杆</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$39.35</strong></span>
+      <span class="metric">评论数 <strong>136</strong></span>
+      <span class="metric">重量 <strong>0.65 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.03%</strong></span>
+      <span class="metric">品牌集中度 <strong>60.8%</strong></span>
+      <span class="metric">中国卖家 <strong>59.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="nail-pullers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge green">🟢 推荐</span>
+      <h2>Nail Pullers<small>羊角起钉钳</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$23.31</strong></span>
+      <span class="metric">评论数 <strong>346</strong></span>
+      <span class="metric">重量 <strong>1.15 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.27%</strong></span>
+      <span class="metric">品牌集中度 <strong>62.6%</strong></span>
+      <span class="metric">中国卖家 <strong>54.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="batteries---battery-chargers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Batteries &amp; Battery Chargers<small>电池和电池</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$25.18</strong></span>
+      <span class="metric">评论数 <strong>470</strong></span>
+      <span class="metric">重量 <strong>0.95 lbs</strong></span>
+      <span class="metric">退货率 <strong>9.83%</strong></span>
+      <span class="metric">品牌集中度 <strong>61.4%</strong></span>
+      <span class="metric">中国卖家 <strong>84.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="kayak-accessories">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Kayak Accessories<small>皮艇配件</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$24.8</strong></span>
+      <span class="metric">评论数 <strong>498</strong></span>
+      <span class="metric">重量 <strong>3.05 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.98%</strong></span>
+      <span class="metric">品牌集中度 <strong>38.9%</strong></span>
+      <span class="metric">中国卖家 <strong>74.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="fitness-circles">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Fitness Circles<small>服务圈</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$28.72</strong></span>
+      <span class="metric">评论数 <strong>607</strong></span>
+      <span class="metric">重量 <strong>2.84 lbs</strong></span>
+      <span class="metric">退货率 <strong>6.16%</strong></span>
+      <span class="metric">品牌集中度 <strong>68.5%</strong></span>
+      <span class="metric">中国卖家 <strong>68.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="headlights">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Headlights<small>车头灯</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$32.82</strong></span>
+      <span class="metric">评论数 <strong>567</strong></span>
+      <span class="metric">重量 <strong>0.46 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.21%</strong></span>
+      <span class="metric">品牌集中度 <strong>57.5%</strong></span>
+      <span class="metric">中国卖家 <strong>72.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="cooking-utensils">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Cooking Utensils<small>厨具</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$31.38</strong></span>
+      <span class="metric">评论数 <strong>627</strong></span>
+      <span class="metric">重量 <strong>1.72 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.17%</strong></span>
+      <span class="metric">品牌集中度 <strong>57.0%</strong></span>
+      <span class="metric">中国卖家 <strong>53.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="gaiters">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Gaiters<small>护腿、护脚</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$32.44</strong></span>
+      <span class="metric">评论数 <strong>392</strong></span>
+      <span class="metric">重量 <strong>0.71 lbs</strong></span>
+      <span class="metric">退货率 <strong>8.64%</strong></span>
+      <span class="metric">品牌集中度 <strong>52.2%</strong></span>
+      <span class="metric">中国卖家 <strong>67.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="replacement-wheels">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Replacement Wheels<small>备用轮</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$25.82</strong></span>
+      <span class="metric">评论数 <strong>299</strong></span>
+      <span class="metric">重量 <strong>2.2 lbs</strong></span>
+      <span class="metric">退货率 <strong>8.59%</strong></span>
+      <span class="metric">品牌集中度 <strong>64.8%</strong></span>
+      <span class="metric">中国卖家 <strong>90.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="bread-proofing-baskets">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Bread Proofing Baskets<small>面包发酵篮</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$29.0</strong></span>
+      <span class="metric">评论数 <strong>570</strong></span>
+      <span class="metric">重量 <strong>2.03 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.09%</strong></span>
+      <span class="metric">品牌集中度 <strong>53.8%</strong></span>
+      <span class="metric">中国卖家 <strong>67.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="decorative-boxes">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Decorative Boxes<small>装饰盒</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$23.78</strong></span>
+      <span class="metric">评论数 <strong>694</strong></span>
+      <span class="metric">重量 <strong>1.57 lbs</strong></span>
+      <span class="metric">退货率 <strong>7.91%</strong></span>
+      <span class="metric">品牌集中度 <strong>54.4%</strong></span>
+      <span class="metric">中国卖家 <strong>67.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="toilet-paper-storage-containers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Toilet Paper Storage Containers<small>纸巾架纸巾盒</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$22.71</strong></span>
+      <span class="metric">评论数 <strong>700</strong></span>
+      <span class="metric">重量 <strong>1.9 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.95%</strong></span>
+      <span class="metric">品牌集中度 <strong>67.2%</strong></span>
+      <span class="metric">中国卖家 <strong>73.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="honey-jars">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Honey Jars<small>蜂蜜罐子</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$21.65</strong></span>
+      <span class="metric">评论数 <strong>637</strong></span>
+      <span class="metric">重量 <strong>1.8 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.4%</strong></span>
+      <span class="metric">品牌集中度 <strong>71.5%</strong></span>
+      <span class="metric">中国卖家 <strong>71.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="decorative-trays">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Decorative Trays<small>装饰性托盘</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$22.23</strong></span>
+      <span class="metric">评论数 <strong>466</strong></span>
+      <span class="metric">重量 <strong>1.45 lbs</strong></span>
+      <span class="metric">退货率 <strong>9.52%</strong></span>
+      <span class="metric">品牌集中度 <strong>42.1%</strong></span>
+      <span class="metric">中国卖家 <strong>78.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="pillars">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Pillars<small>柱蜡</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$31.07</strong></span>
+      <span class="metric">评论数 <strong>691</strong></span>
+      <span class="metric">重量 <strong>3.7 lbs</strong></span>
+      <span class="metric">退货率 <strong>7.44%</strong></span>
+      <span class="metric">品牌集中度 <strong>59.2%</strong></span>
+      <span class="metric">中国卖家 <strong>67.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="floor-pillows---cushions">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Floor Pillows &amp; Cushions<small>地板枕头</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$38.14</strong></span>
+      <span class="metric">评论数 <strong>613</strong></span>
+      <span class="metric">重量 <strong>3.84 lbs</strong></span>
+      <span class="metric">退货率 <strong>8.98%</strong></span>
+      <span class="metric">品牌集中度 <strong>63.8%</strong></span>
+      <span class="metric">中国卖家 <strong>72.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="egg-baskets">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Egg Baskets<small>蛋篮</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$26.31</strong></span>
+      <span class="metric">评论数 <strong>354</strong></span>
+      <span class="metric">重量 <strong>3.55 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.4%</strong></span>
+      <span class="metric">品牌集中度 <strong>60.5%</strong></span>
+      <span class="metric">中国卖家 <strong>75.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="picture-frames">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Picture Frames<small>画框</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$30.71</strong></span>
+      <span class="metric">评论数 <strong>302</strong></span>
+      <span class="metric">重量 <strong>3.18 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.68%</strong></span>
+      <span class="metric">品牌集中度 <strong>74.6%</strong></span>
+      <span class="metric">中国卖家 <strong>65.7%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="tea-storage-chests">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Tea Storage Chests<small>茶叶罐</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$24.18</strong></span>
+      <span class="metric">评论数 <strong>658</strong></span>
+      <span class="metric">重量 <strong>2.38 lbs</strong></span>
+      <span class="metric">退货率 <strong>6.54%</strong></span>
+      <span class="metric">品牌集中度 <strong>46.3%</strong></span>
+      <span class="metric">中国卖家 <strong>72.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="vertical-blinds">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Vertical Blinds<small>垂直百叶窗</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$37.31</strong></span>
+      <span class="metric">评论数 <strong>498</strong></span>
+      <span class="metric">重量 <strong>2.67 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.62%</strong></span>
+      <span class="metric">品牌集中度 <strong>73.4%</strong></span>
+      <span class="metric">中国卖家 <strong>68.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="drip-irrigation-kits">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Drip Irrigation Kits<small>滴灌套件</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$33.3</strong></span>
+      <span class="metric">评论数 <strong>618</strong></span>
+      <span class="metric">重量 <strong>2.58 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.37%</strong></span>
+      <span class="metric">品牌集中度 <strong>50.8%</strong></span>
+      <span class="metric">中国卖家 <strong>70.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="pool---deck-repair-products">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Pool &amp; Deck Repair Products<small>油漆及密封产品</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$31.79</strong></span>
+      <span class="metric">评论数 <strong>682</strong></span>
+      <span class="metric">重量 <strong>2.28 lbs</strong></span>
+      <span class="metric">退货率 <strong>1.93%</strong></span>
+      <span class="metric">品牌集中度 <strong>57.6%</strong></span>
+      <span class="metric">中国卖家 <strong>48.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="poultry-fountains---waterers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Poultry Fountains &amp; Waterers<small>家禽自动喂水器和饮水器</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$24.7</strong></span>
+      <span class="metric">评论数 <strong>623</strong></span>
+      <span class="metric">重量 <strong>1.88 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.74%</strong></span>
+      <span class="metric">品牌集中度 <strong>55.0%</strong></span>
+      <span class="metric">中国卖家 <strong>69.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="birdhouses">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Birdhouses<small>鸟屋</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$27.97</strong></span>
+      <span class="metric">评论数 <strong>613</strong></span>
+      <span class="metric">重量 <strong>2.16 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.92%</strong></span>
+      <span class="metric">品牌集中度 <strong>52.7%</strong></span>
+      <span class="metric">中国卖家 <strong>73.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="beekeeping-supplies">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Beekeeping Supplies<small>养蜂用品</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$31.75</strong></span>
+      <span class="metric">评论数 <strong>377</strong></span>
+      <span class="metric">重量 <strong>3.74 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.6%</strong></span>
+      <span class="metric">品牌集中度 <strong>52.5%</strong></span>
+      <span class="metric">中国卖家 <strong>74.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="plaques---wall-art">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Plaques &amp; Wall Art<small>装饰墙</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$20.05</strong></span>
+      <span class="metric">评论数 <strong>617</strong></span>
+      <span class="metric">重量 <strong>1.1 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.89%</strong></span>
+      <span class="metric">品牌集中度 <strong>46.8%</strong></span>
+      <span class="metric">中国卖家 <strong>89.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="outdoor-clocks">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Outdoor Clocks<small>户外钟表</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$48.07</strong></span>
+      <span class="metric">评论数 <strong>385</strong></span>
+      <span class="metric">重量 <strong>3.17 lbs</strong></span>
+      <span class="metric">退货率 <strong>6.65%</strong></span>
+      <span class="metric">品牌集中度 <strong>66.0%</strong></span>
+      <span class="metric">中国卖家 <strong>77.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="protective-gear">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Protective Gear<small>防护装备</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$42.27</strong></span>
+      <span class="metric">评论数 <strong>269</strong></span>
+      <span class="metric">重量 <strong>3.09 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.95%</strong></span>
+      <span class="metric">品牌集中度 <strong>58.5%</strong></span>
+      <span class="metric">中国卖家 <strong>64.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="bulb-planters">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Bulb Planters<small>球茎栽植器</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$26.18</strong></span>
+      <span class="metric">评论数 <strong>283</strong></span>
+      <span class="metric">重量 <strong>2.54 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.9%</strong></span>
+      <span class="metric">品牌集中度 <strong>50.2%</strong></span>
+      <span class="metric">中国卖家 <strong>74.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="cup-carriers">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Cup Carriers<small>外卖杯托盘</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$22.27</strong></span>
+      <span class="metric">评论数 <strong>440</strong></span>
+      <span class="metric">重量 <strong>2.62 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.6%</strong></span>
+      <span class="metric">品牌集中度 <strong>43.7%</strong></span>
+      <span class="metric">中国卖家 <strong>67.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="pipes">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Pipes<small>管道</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$32.0</strong></span>
+      <span class="metric">评论数 <strong>153</strong></span>
+      <span class="metric">重量 <strong>3.61 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.33%</strong></span>
+      <span class="metric">品牌集中度 <strong>68.9%</strong></span>
+      <span class="metric">中国卖家 <strong>49.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="emf-meters">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>EMF Meters<small>电磁波计</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$59.14</strong></span>
+      <span class="metric">评论数 <strong>340</strong></span>
+      <span class="metric">重量 <strong>0.79 lbs</strong></span>
+      <span class="metric">退货率 <strong>9.7%</strong></span>
+      <span class="metric">品牌集中度 <strong>70.8%</strong></span>
+      <span class="metric">中国卖家 <strong>71.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="accessories">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Accessories<small>辅料</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$21.04</strong></span>
+      <span class="metric">评论数 <strong>310</strong></span>
+      <span class="metric">重量 <strong>3.23 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.23%</strong></span>
+      <span class="metric">品牌集中度 <strong>64.6%</strong></span>
+      <span class="metric">中国卖家 <strong>64.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="diamond-blades">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Diamond Blades<small>钻石刀片</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$22.35</strong></span>
+      <span class="metric">评论数 <strong>568</strong></span>
+      <span class="metric">重量 <strong>0.84 lbs</strong></span>
+      <span class="metric">退货率 <strong>2.39%</strong></span>
+      <span class="metric">品牌集中度 <strong>62.7%</strong></span>
+      <span class="metric">中国卖家 <strong>74.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="angle-clamps">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Angle Clamps<small>角夹钳</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$35.63</strong></span>
+      <span class="metric">评论数 <strong>697</strong></span>
+      <span class="metric">重量 <strong>3.19 lbs</strong></span>
+      <span class="metric">退货率 <strong>4.55%</strong></span>
+      <span class="metric">品牌集中度 <strong>54.7%</strong></span>
+      <span class="metric">中国卖家 <strong>74.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="tap---die-sets">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Tap &amp; Die Sets<small>敲击</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$43.33</strong></span>
+      <span class="metric">评论数 <strong>297</strong></span>
+      <span class="metric">重量 <strong>3.86 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.87%</strong></span>
+      <span class="metric">品牌集中度 <strong>45.6%</strong></span>
+      <span class="metric">中国卖家 <strong>67.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="bolt-cutters">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Bolt Cutters<small>螺栓切割器</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$42.21</strong></span>
+      <span class="metric">评论数 <strong>455</strong></span>
+      <span class="metric">重量 <strong>2.89 lbs</strong></span>
+      <span class="metric">退货率 <strong>5.4%</strong></span>
+      <span class="metric">品牌集中度 <strong>72.0%</strong></span>
+      <span class="metric">中国卖家 <strong>47.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="urinal-accessories">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Urinal Accessories<small>小便池配件</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$34.34</strong></span>
+      <span class="metric">评论数 <strong>81</strong></span>
+      <span class="metric">重量 <strong>2.71 lbs</strong></span>
+      <span class="metric">退货率 <strong>1.87%</strong></span>
+      <span class="metric">品牌集中度 <strong>55.1%</strong></span>
+      <span class="metric">中国卖家 <strong>52.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="kick-plates">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Kick Plates<small>踢脚板</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$28.13</strong></span>
+      <span class="metric">评论数 <strong>127</strong></span>
+      <span class="metric">重量 <strong>1.59 lbs</strong></span>
+      <span class="metric">退货率 <strong>8.07%</strong></span>
+      <span class="metric">品牌集中度 <strong>60.0%</strong></span>
+      <span class="metric">中国卖家 <strong>65.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+<section class="cat" id="masonry-chisels">
+  <div class="cat-header">
+    <div class="cat-title">
+      <span class="badge yellow">🟡 谨慎</span>
+      <h2>Masonry Chisels<small>砌筑用凿子</small></h2>
+    </div>
+    <div class="last-updated">尚未扫描产品数据</div>
+    <div class="metrics">
+      <span class="metric">均价 <strong>$27.19</strong></span>
+      <span class="metric">评论数 <strong>251</strong></span>
+      <span class="metric">重量 <strong>2.62 lbs</strong></span>
+      <span class="metric">退货率 <strong>3.89%</strong></span>
+      <span class="metric">品牌集中度 <strong>50.4%</strong></span>
+      <span class="metric">中国卖家 <strong>55.0%</strong></span>
+    </div>
+  </div>
+  <p class="no-data">产品数据待扫描。</p>
+  
+</section>
+</main>
+</body>
+</html>
