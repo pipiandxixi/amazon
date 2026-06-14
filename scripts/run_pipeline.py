@@ -98,7 +98,7 @@ def run_products(
     return all_products, product_sections
 
 
-def run_asin_keywords(config: dict, products: list[dict], date_str: str) -> list[str]:
+def run_asin_keywords(config: dict, products: list[dict], date_str: str, root: Path) -> list[str]:
     from collections import defaultdict
     policy = values(config.get("scan_policy", {}))
     limit = int(policy.get("max_keywords", 20))
@@ -119,6 +119,7 @@ def run_asin_keywords(config: dict, products: list[dict], date_str: str) -> list
         by_category[p.get("_category_name", "unknown")].append(p)
 
     keyword_sections: list[str] = []
+    keywords_data: dict[str, dict] = {}
     for cat_name, cat_products in by_category.items():
         seen: set[str] = set()
         asins: list[str] = []
@@ -144,8 +145,11 @@ def run_asin_keywords(config: dict, products: list[dict], date_str: str) -> list
         state = asin_scan.inspect_result_state()
         raw = extract_json_array(eval_browser(asin_scan.SCRAPE_JS))
         items = asin_scan.rank_keywords(raw, values(config.get("score_weights", {})))[:limit]
+        keywords_data[cat_name] = {"asins": asins, "keywords": items}
         keyword_sections.append(asin_scan.format_report(asins, cat_name, items, raw, config, date_str, state))
         print(f"  {len(items)} of {len(raw)} keywords collected for {cat_name}")
+    if keywords_data:
+        _write_stage_json(root, 3, date_str, {"categories": keywords_data})
     return keyword_sections
 
 
@@ -251,9 +255,13 @@ def main() -> None:
     # ── Stage 3: ASIN Keyword Lookup ─────────────────────────────────────────
     keyword_sections: list[str] = []
     if not args.skip_asin_keywords:
-        keyword_sections = run_asin_keywords(config["asin_keywords"], products, date_str)
+        keyword_sections = run_asin_keywords(config["asin_keywords"], products, date_str, root)
 
     write_combined_report(root, date_str, market_content, product_sections, keyword_sections)
+
+    # ── HTML Report ───────────────────────────────────────────────────────────
+    import generate_html_report as _html_gen
+    _html_gen.generate(root, date_str)
 
 
 if __name__ == "__main__":
