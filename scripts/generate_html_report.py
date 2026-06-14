@@ -75,8 +75,8 @@ table.kwtable{width:100%;border-collapse:collapse;font-size:.8rem}
 .kwtable td:first-child{color:var(--muted);font-size:.75rem;width:2rem}
 .kw-zh{color:var(--muted);font-size:.72rem;display:block;margin-top:.1rem}
 .no-data{padding:.9rem 1.5rem;color:var(--muted);font-size:.85rem;font-style:italic}
-.kw-link{color:var(--text);text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:2px;transition:color .12s}
-.kw-link:hover{color:#1a6d38}
+.kw-link{color:#2563eb;text-decoration:underline;text-decoration-color:#93c5fd;text-underline-offset:2px;transition:color .12s}
+.kw-link:hover{color:#1d4ed8}
 .plinks{display:inline-flex;gap:.2rem;margin-left:.35rem}
 .plinks a{font-size:.58rem;padding:.05rem .28rem;border-radius:.25rem;font-weight:700;text-decoration:none;border:1px solid currentColor;line-height:1.4;opacity:.7;transition:opacity .12s}
 .plinks a:hover{opacity:1}
