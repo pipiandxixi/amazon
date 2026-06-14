@@ -7,16 +7,16 @@
 # 亚马逊选市场扫描与评估报告 (2026-06-14)
 
 > [!IMPORTANT]
-> 本报告基于 `unified pipeline config` 中设定的过滤与风控规则进行生成。今日共分析了 **30** 个符合基本条件的子类目，其中最终筛选出 **7** 个适合新手的 🟢 绿色推荐赛道。
-> **抓取完整性**：扫描 **1** 页；页面总数提示：**117**；停止原因：免费套餐仅展示 30 个，页面提示共有 117 个类目；免费套餐截断风险：**可能存在**。
-> **数量审计**：当前候选类目有 15 个，位于目标区间 8-15。
+> 本报告基于 `unified pipeline config` 中设定的过滤与风控规则进行生成。今日共分析了 **30** 个符合基本条件的子类目，其中最终筛选出 **3** 个适合新手的 🟢 绿色推荐赛道。
+> **抓取完整性**：扫描 **1** 页；页面总数提示：**365**；停止原因：免费套餐仅展示 30 个，页面提示共有 365 个类目；免费套餐截断风险：**可能存在**。
+> **数量审计**：当前候选类目有 10 个，位于目标区间 8-25。
 > 本报告仅输出真实抓取的指标数据，没有任何人工猜测或硬编码的推荐理由。您可以直接复制本报告的详细数据到大模型中，让其结合具体品类特性为您分析入选原因及每个指标的指导含义。
 
 ## 一、 风控分类结果概览
 
-- **绿色通道 (推荐) 🟢**：共 **7** 个。满足所有风控参数，建议重点关注。
-- **黄色通道 (谨慎) 🟡**：共 **8** 个。包含带电电子产品或物理退货率偏高的类目，建议深入调研。
-- **红色通道 (避坑) 🔴**：共 **15** 个。触发硬风控规则，已自动排除。
+- **绿色通道 (推荐) 🟢**：共 **3** 个。满足所有风控参数，建议重点关注。
+- **黄色通道 (谨慎) 🟡**：共 **7** 个。包含带电电子产品或物理退货率偏高的类目，建议深入调研。
+- **红色通道 (避坑) 🔴**：共 **20** 个。触发硬风控规则，已自动排除。
 
 ## 二、 推荐与候选子类目核心列表
 
@@ -26,44 +26,44 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | **Swing Trainers** | 室内练习器 | $37.01 | 448 | 0.71 lbs | 4.37% | 57.1% | 68.0% |
 | 2 | **Lighting Products** | 水底灯 | $47.85 | 482 | 1.72 lbs | 6.75% | 51.9% | 74.0% |
-| 3 | **Nozzles** | 喷嘴 | $26.24 | 490 | 0.44 lbs | 2.63% | 53.8% | 74.0% |
-| 4 | **Cardboard Cutouts** | 硬板纸模型 | $24.38 | 295 | 1.31 lbs | 4.59% | 61.0% | 62.0% |
-| 5 | **Electrical System Tools** | 电气系统工具 | $29.48 | 437 | 0.99 lbs | 2.38% | 43.9% | 82.0% |
-| 6 | **Brake System Bleeding Tools** | 刹车排气 | $27.00 | 465 | 1.55 lbs | 4.69% | 50.2% | 83.0% |
-| 7 | **Trophies** | 奖杯 | $25.63 | 297 | 1.01 lbs | 2.59% | 49.0% | 49.0% |
+| 3 | **Nicotine Patches** | 尼古丁药膏 | $22.22 | 468 | 0.13 lbs | 1.27% | 73.4% | 49.0% |
 
 ### 2. 🟡 黄色候选类目
 
 | 序号 | 子类目英文名 | 中文名 / 路径 | 平均价格 | 平均Reviews | 物理重量 | 退货率 | 触发警示规则 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | **Compressed Air Dusters** | 压缩除尘罐 | $35.92 | 349 | 0.86 lbs | 3.16% | 谨慎认证类目路径 |
-| 2 | **Wind Spinners** | Wind Spinners | $31.43 | 472 | 2.36 lbs | 3.09% | 重量偏重 (>2.0 lbs) |
-| 3 | **Paddleboard Accessories** | 冲浪板配件 | $53.08 | 322 | 2.37 lbs | 4.17% | 重量偏重 (>2.0 lbs) |
-| 4 | **Batteries & Battery Chargers** | 电池和电池 | $25.18 | 470 | 0.95 lbs | 9.83% | 退货率偏高 (>8.0%), 带电/合规资质敏感关键字 |
-| 5 | **Decorative Trays** | 装饰性托盘 | $22.23 | 466 | 1.45 lbs | 9.52% | 退货率偏高 (>8.0%) |
-| 6 | **Game Mats & Boards** | 游戏垫和游戏板 | $29.62 | 308 | 2.47 lbs | 7.5% | 重量偏重 (>2.0 lbs), 谨慎认证类目路径 |
-| 7 | **Boats** | 船 | $56.10 | 330 | 1.46 lbs | 6.03% | 谨慎认证类目路径 |
-| 8 | **Grinding Discs** | 磨片 | $23.53 | 360 | 2.02 lbs | 2.13% | 重量偏重 (>2.0 lbs) |
+| 1 | **Water Balloons** | 水气球 | $21.35 | 694 | 0.82 lbs | 1.83% | Reviews偏高 (>550), 谨慎认证类目路径 |
+| 2 | **Squirt Guns** | 水枪 | $25.91 | 619 | 1.24 lbs | 3.93% | Reviews偏高 (>550), 谨慎认证类目路径 |
+| 3 | **Drip Irrigation Kits** | 滴灌套件 | $33.30 | 618 | 2.58 lbs | 3.37% | 重量偏重 (>2.5 lbs), Reviews偏高 (>550) |
+| 4 | **Bread Proofing Baskets** | 面包发酵篮 | $29.00 | 570 | 2.03 lbs | 4.09% | Reviews偏高 (>550) |
+| 5 | **Ultrasonic Repellers** | Ultrasonic Repellers | $28.76 | 625 | 0.61 lbs | 3.27% | Reviews偏高 (>550) |
+| 6 | **Decorative Boxes** | 装饰盒 | $23.78 | 694 | 1.57 lbs | 7.91% | Reviews偏高 (>550) |
+| 7 | **Pool & Deck Repair Products** | 油漆及密封产品 | $31.79 | 682 | 2.28 lbs | 1.93% | Reviews偏高 (>550) |
 
 ### 3. 🔴 红色排除类目摘要
 
 | 序号 | 子类目英文名 | 中文名 / 路径 | 平均价格 | 排除原因 |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | **Rash Guard Sets** | Rash Guard Sets | $20.98 | 高风险类目路径过滤 |
-| 2 | **Sets** | 套 | $24.13 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
-| 3 | **Skirt Sets** | 裙装套装 | $35.46 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
-| 4 | **Rash Guard Sets** | 皮疹防护套装 | $22.34 | 高风险类目路径过滤 |
-| 5 | **Button-Down Shirts** | 扣角领衬衫 | $21.08 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
-| 6 | **Active Pants** | 运动裤 | $32.73 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
-| 7 | **Glasses** | 眼镜 | $54.83 | 退货率过高 (>10.0%) |
-| 8 | **Pant Sets** | 长裤套装 | $22.70 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
-| 9 | **Wall Molding & Trim** | 墙压条和镶边 | $21.67 | 退货率过高 (>10.0%) |
-| 10 | **Candlestick Holders** | 烛台座 | $24.18 | 退货率过高 (>10.0%) |
-| 11 | **Spotlights** | 聚光灯 | $28.32 | 退货率过高 (>10.0%) |
-| 12 | **Livestock Health Supplies** | 牲畜健康用品 | $31.76 | 排除类关键字过滤 |
-| 13 | **Cup Carriers** | 外卖杯托盘 | $22.27 | 重量超标 (>2.5 lbs) |
-| 14 | **Clutches** | 手拿包 | $32.88 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
-| 15 | **Oolong** | 乌龙 | $20.15 | 高风险类目路径过滤 |
+| 1 | **Short Sets** | 短盘比赛 | $28.49 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
+| 2 | **Pullovers** | 套头衫 | $22.12 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
+| 3 | **Dresses** | Dresses | $32.04 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |
+| 4 | **Workout Top & Bottom Sets** | 服装套装 | $28.82 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |
+| 5 | **Vests** | 针织背心 | $21.37 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
+| 6 | **Polos** | Polos | $20.98 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |
+| 7 | **Tankini Sets** | 坦基尼套装 | $22.41 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
+| 8 | **Rash Guard Sets** | Rash Guard Sets | $20.98 | 高风险类目路径过滤 |
+| 9 | **Sets** | 套 | $24.13 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
+| 10 | **Skirt Sets** | 裙装套装 | $35.46 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
+| 11 | **Trellises** | 格架 | $26.71 | 重量超标 (>4.0 lbs) |
+| 12 | **Pool Hoses** | 泳池软管 | $31.60 | Review护城河太深 (>700) |
+| 13 | **Clothing** | 服装 | $24.85 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
+| 14 | **Track & Active Jackets** | 风衣、夹克 | $29.81 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |
+| 15 | **Handheld Steamers** | 手持式蒸汽机 | $67.20 | 重量超标 (>4.0 lbs) |
+| 16 | **Rash Guard Sets** | 皮疹防护套装 | $22.34 | 高风险类目路径过滤 |
+| 17 | **Skirts** | 裙子 | $24.15 | 退货率过高 (>10.0%), 高风险类目路径过滤 |
+| 18 | **Light Therapy** | 光照疗法 | $70.55 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |
+| 19 | **Fountains** | 喷泉 | $36.81 | Review护城河太深 (>700) |
+| 20 | **Pants & Capris** | 长裤和紧身裤 | $22.90 | 退货率过高 (>10.0%), Review护城河太深 (>700), 高风险类目路径过滤 |
 
 ## 三、 候选类目详细数据指标画像 (供大模型分析使用)
 
@@ -127,377 +127,236 @@
 
 ---
 
-#### 🏆 🟢-3. Nozzles (喷嘴)
+#### 🏆 🟢-3. Nicotine Patches (尼古丁药膏)
 
-- **完整市场路径**：`Patio, Lawn & Garden › Outdoor Power Tools › Replacement Parts & Accessories › Pressure Washer Parts & Accessories › Nozzles  市场分析`
+- **完整市场路径**：`Health & Household › Health Care › Smoking Cessation › Nicotine Patches  市场分析`
 - **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$26.24`
-  *   **平均 Reviews (Avg Reviews)**：`490 个`
-  *   **物理重量 (Weight)**：`0.44 lbs`
-  *   **平均退货率 (Return Rate)**：`2.63%`
-  *   **平均毛利率 (Profit Margin)**：`63.66%`
-  *   **品牌集中度 (Brand Concentration)**：`53.8%`
-  *   **中国卖家比例 (Chinese Seller Ratio)**：`74.0%`
-- **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Patio, Lawn & Garden › Outdoor Power Tools › Replacement Parts & Accessories › Pressure Washer Parts & Accessories › Nozzles  市场分析`
-  *   **市场路径(中文)**：`庭院、草坪和园艺 › 电动工具 › 替换件和配件 › 高压清洗机配件 › 喷嘴`
-  *   **A+数量占比**：`71%`
-  *   **新品平均评分数**：`55`
-  *   **新品平均价格**：`$ 32.04`
-  *   **新品平均星级**：`2.6`
-  *   **新品月均销量**：`839`
-  *   **新品月均销售额**：`$23,205`
-  *   **平均重量**：`0.44 pounds (200 g)`
-  *   **平均体积**：`70.03 in³ (1,148 cm³)`
-  *   **平均毛利率**：`63.66%`
-  *   **卖家所属地**：`中国|74.0%`
-  *   **搜索购买比**：`13.5‰`
-
----
-
-#### 🏆 🟢-4. Cardboard Cutouts (硬板纸模型)
-
-- **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Cardboard Cutouts  市场分析`
-- **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$24.38`
-  *   **平均 Reviews (Avg Reviews)**：`295 个`
-  *   **物理重量 (Weight)**：`1.31 lbs`
-  *   **平均退货率 (Return Rate)**：`4.59%`
-  *   **平均毛利率 (Profit Margin)**：`60.41%`
-  *   **品牌集中度 (Brand Concentration)**：`61.0%`
-  *   **中国卖家比例 (Chinese Seller Ratio)**：`62.0%`
-- **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Cardboard Cutouts  市场分析`
-  *   **市场路径(中文)**：`家居用品 › 家居装饰 › 家居装饰品 › 硬板纸模型`
-  *   **A+数量占比**：`76%`
-  *   **新品平均评分数**：`27`
-  *   **新品平均价格**：`$ 22.88`
-  *   **新品平均星级**：`4.3`
-  *   **新品月均销量**：`482`
-  *   **新品月均销售额**：`$11,431`
-  *   **平均重量**：`1.31 pounds (594 g)`
-  *   **平均体积**：`337.59 in³ (5,532 cm³)`
-  *   **平均毛利率**：`60.41%`
-  *   **卖家所属地**：`中国|62.0%`
-  *   **搜索购买比**：`6.4‰`
-
----
-
-#### 🏆 🟢-5. Electrical System Tools (电气系统工具)
-
-- **完整市场路径**：`Automotive › Tools & Equipment › Electrical System Tools  市场分析`
-- **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$29.48`
-  *   **平均 Reviews (Avg Reviews)**：`437 个`
-  *   **物理重量 (Weight)**：`0.99 lbs`
-  *   **平均退货率 (Return Rate)**：`2.38%`
-  *   **平均毛利率 (Profit Margin)**：`55.8%`
-  *   **品牌集中度 (Brand Concentration)**：`43.9%`
-  *   **中国卖家比例 (Chinese Seller Ratio)**：`82.0%`
-- **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Automotive › Tools & Equipment › Electrical System Tools  市场分析`
-  *   **市场路径(中文)**：`汽车 › 工具 › 电气系统工具`
-  *   **A+数量占比**：`88%`
-  *   **新品平均评分数**：`47`
-  *   **新品平均价格**：`$ 18.35`
-  *   **新品平均星级**：`4.5`
-  *   **新品月均销量**：`418`
-  *   **新品月均销售额**：`$8,313`
-  *   **平均重量**：`0.99 pounds (449 g)`
-  *   **平均体积**：`316.05 in³ (5,179 cm³)`
-  *   **平均毛利率**：`55.8%`
-  *   **卖家所属地**：`中国|82.0%`
-  *   **搜索购买比**：`9.1‰`
-
----
-
-#### 🏆 🟢-6. Brake System Bleeding Tools (刹车排气)
-
-- **完整市场路径**：`Automotive › Tools & Equipment › Brake Tools › Brake System Bleeding Tools  市场分析`
-- **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$27.00`
-  *   **平均 Reviews (Avg Reviews)**：`465 个`
-  *   **物理重量 (Weight)**：`1.55 lbs`
-  *   **平均退货率 (Return Rate)**：`4.69%`
-  *   **平均毛利率 (Profit Margin)**：`55.45%`
-  *   **品牌集中度 (Brand Concentration)**：`50.2%`
-  *   **中国卖家比例 (Chinese Seller Ratio)**：`83.0%`
-- **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Automotive › Tools & Equipment › Brake Tools › Brake System Bleeding Tools  市场分析`
-  *   **市场路径(中文)**：`汽车 › 工具 › 制动工具 › 刹车排气`
-  *   **A+数量占比**：`89%`
-  *   **新品平均评分数**：`32`
-  *   **新品平均价格**：`$ 17.61`
-  *   **新品平均星级**：`4.3`
-  *   **新品月均销量**：`411`
-  *   **新品月均销售额**：`$8,002`
-  *   **平均重量**：`1.55 pounds (704 g)`
-  *   **平均体积**：`303.90 in³ (4,980 cm³)`
-  *   **平均毛利率**：`55.45%`
-  *   **卖家所属地**：`中国|83.0%`
-  *   **搜索购买比**：`8.9‰`
-
----
-
-#### 🏆 🟢-7. Trophies (奖杯)
-
-- **完整市场路径**：`Sports & Outdoors › Sports & Outdoor Recreation Accessories › Trophies, Medals & Awards › Trophies  市场分析`
-- **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$25.63`
-  *   **平均 Reviews (Avg Reviews)**：`297 个`
-  *   **物理重量 (Weight)**：`1.01 lbs`
-  *   **平均退货率 (Return Rate)**：`2.59%`
-  *   **平均毛利率 (Profit Margin)**：`62.86%`
-  *   **品牌集中度 (Brand Concentration)**：`49.0%`
+  *   **平均客单价 (Avg Price)**：`$22.22`
+  *   **平均 Reviews (Avg Reviews)**：`468 个`
+  *   **物理重量 (Weight)**：`0.13 lbs`
+  *   **平均退货率 (Return Rate)**：`1.27%`
+  *   **平均毛利率 (Profit Margin)**：`65.13%`
+  *   **品牌集中度 (Brand Concentration)**：`73.4%`
   *   **中国卖家比例 (Chinese Seller Ratio)**：`49.0%`
 - **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Sports & Outdoors › Sports & Outdoor Recreation Accessories › Trophies, Medals & Awards › Trophies  市场分析`
-  *   **市场路径(中文)**：`运动与户外 › 辅料 › 、奖牌 › 奖杯`
-  *   **A+数量占比**：`86%`
-  *   **新品平均评分数**：`34`
-  *   **新品平均价格**：`$ 30.54`
-  *   **新品平均星级**：`4.5`
-  *   **新品月均销量**：`544`
-  *   **新品月均销售额**：`$21,199`
-  *   **平均重量**：`1.01 pounds (458 g)`
-  *   **平均体积**：`179.64 in³ (2,944 cm³)`
-  *   **平均毛利率**：`62.86%`
+  *   **完整市场路径**：`Health & Household › Health Care › Smoking Cessation › Nicotine Patches  市场分析`
+  *   **市场路径(中文)**：`健康与家居 › 卫生保健 › 戒烟 › 尼古丁药膏`
+  *   **A+数量占比**：`80%`
+  *   **新品平均评分数**：`38`
+  *   **新品平均价格**：`$ 21.54`
+  *   **新品平均星级**：`3.7`
+  *   **新品月均销量**：`457`
+  *   **新品月均销售额**：`$8,331`
+  *   **平均重量**：`0.13 pounds (59 g)`
+  *   **平均体积**：`18.07 in³ (296 cm³)`
+  *   **平均毛利率**：`65.13%`
   *   **卖家所属地**：`中国|49.0%`
-  *   **搜索购买比**：`6.5‰`
+  *   **搜索购买比**：`24.3‰`
 
 ---
 
 ### 🟡 黄色类目详情列表
 
-#### 🏆 🟡-1. Compressed Air Dusters (压缩除尘罐)
+#### 🏆 🟡-1. Water Balloons (水气球)
 
-- **完整市场路径**：`Electronics › Computers & Accessories › Computer Accessories & Peripherals › Cleaning & Repair › Compressed Air Dusters  市场分析`
-- **触发警示项**：`谨慎认证类目路径`
+- **完整市场路径**：`Toys & Games › Sports & Outdoor Play › Pools & Water Toys › Water Balloons  市场分析`
+- **触发警示项**：`Reviews偏高 (>550), 谨慎认证类目路径`
 - **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$35.92`
-  *   **平均 Reviews (Avg Reviews)**：`349 个`
-  *   **物理重量 (Weight)**：`0.86 lbs`
-  *   **平均退货率 (Return Rate)**：`3.16%`
-  *   **平均毛利率 (Profit Margin)**：`74.31%`
-  *   **品牌集中度 (Brand Concentration)**：`60.0%`
-  *   **中国卖家比例 (Chinese Seller Ratio)**：`76.0%`
-- **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Electronics › Computers & Accessories › Computer Accessories & Peripherals › Cleaning & Repair › Compressed Air Dusters  市场分析`
-  *   **市场路径(中文)**：`电子产品 › 计算机 › 电脑配件 › 清洁 › 压缩除尘罐`
-  *   **A+数量占比**：`92%`
-  *   **新品平均评分数**：`118`
-  *   **新品平均价格**：`$ 34.21`
-  *   **新品平均星级**：`4.5`
-  *   **新品月均销量**：`542`
-  *   **新品月均销售额**：`$16,850`
-  *   **平均重量**：`0.86 pounds (392 g)`
-  *   **平均体积**：`42.95 in³ (704 cm³)`
-  *   **平均毛利率**：`74.31%`
-  *   **卖家所属地**：`中国|76.0%`
-  *   **搜索购买比**：`13.0‰`
-
----
-
-#### 🏆 🟡-2. Wind Spinners (Wind Spinners)
-
-- **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Garden Sculptures & Statues › Wind Sculptures & Spinners › Wind Spinners  市场分析`
-- **触发警示项**：`重量偏重 (>2.0 lbs)`
-- **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$31.43`
-  *   **平均 Reviews (Avg Reviews)**：`472 个`
-  *   **物理重量 (Weight)**：`2.36 lbs`
-  *   **平均退货率 (Return Rate)**：`3.09%`
-  *   **平均毛利率 (Profit Margin)**：`59.7%`
-  *   **品牌集中度 (Brand Concentration)**：`54.6%`
-  *   **中国卖家比例 (Chinese Seller Ratio)**：`85.0%`
-- **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Patio, Lawn & Garden › Outdoor Décor › Garden Sculptures & Statues › Wind Sculptures & Spinners › Wind Spinners  市场分析`
-  *   **市场路径(中文)**：`Patio, Lawn & Garden › Outdoor Décor › Garden Sculptures & Statues › Wind Sculptures & Spinners › Wind Spinners`
-  *   **A+数量占比**：`89%`
-  *   **新品平均评分数**：`51`
-  *   **新品平均价格**：`$ 21.94`
-  *   **新品平均星级**：`3.9`
-  *   **新品月均销量**：`749`
-  *   **新品月均销售额**：`$13,820`
-  *   **平均重量**：`2.36 pounds (1,070 g)`
-  *   **平均体积**：`269.46 in³ (4,416 cm³)`
-  *   **平均毛利率**：`59.7%`
-  *   **卖家所属地**：`中国|85.0%`
-  *   **搜索购买比**：`6.6‰`
-
----
-
-#### 🏆 🟡-3. Paddleboard Accessories (冲浪板配件)
-
-- **完整市场路径**：`Sports & Outdoors › Sports › Water Sports › Stand-Up Paddleboarding › Paddleboard Accessories  市场分析`
-- **触发警示项**：`重量偏重 (>2.0 lbs)`
-- **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$53.08`
-  *   **平均 Reviews (Avg Reviews)**：`322 个`
-  *   **物理重量 (Weight)**：`2.37 lbs`
-  *   **平均退货率 (Return Rate)**：`4.17%`
-  *   **平均毛利率 (Profit Margin)**：`64.36%`
-  *   **品牌集中度 (Brand Concentration)**：`42.7%`
-  *   **中国卖家比例 (Chinese Seller Ratio)**：`72.0%`
-- **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Sports & Outdoors › Sports › Water Sports › Stand-Up Paddleboarding › Paddleboard Accessories  市场分析`
-  *   **市场路径(中文)**：`运动与户外 › 运动的 › 划船和你 › 立式单肩肩背 › 冲浪板配件`
-  *   **A+数量占比**：`88%`
-  *   **新品平均评分数**：`35`
-  *   **新品平均价格**：`$ 76.83`
-  *   **新品平均星级**：`4.4`
-  *   **新品月均销量**：`651`
-  *   **新品月均销售额**：`$50,572`
-  *   **平均重量**：`2.37 pounds (1,077 g)`
-  *   **平均体积**：`425.27 in³ (6,969 cm³)`
-  *   **平均毛利率**：`64.36%`
-  *   **卖家所属地**：`中国|72.0%`
-  *   **搜索购买比**：`6.1‰`
-
----
-
-#### 🏆 🟡-4. Batteries & Battery Chargers (电池和电池)
-
-- **完整市场路径**：`Sports & Outdoors › Sports › Skates, Skateboards & Scooters › Scooters & Equipment › Components & Parts › Batteries & Battery Chargers  市场分析`
-- **触发警示项**：`退货率偏高 (>8.0%), 带电/合规资质敏感关键字`
-- **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$25.18`
-  *   **平均 Reviews (Avg Reviews)**：`470 个`
-  *   **物理重量 (Weight)**：`0.95 lbs`
-  *   **平均退货率 (Return Rate)**：`9.83%`
-  *   **平均毛利率 (Profit Margin)**：`62.58%`
-  *   **品牌集中度 (Brand Concentration)**：`61.4%`
-  *   **中国卖家比例 (Chinese Seller Ratio)**：`84.0%`
-- **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Sports & Outdoors › Sports › Skates, Skateboards & Scooters › Scooters & Equipment › Components & Parts › Batteries & Battery Chargers  市场分析`
-  *   **市场路径(中文)**：`运动与户外 › 运动的 › 溜冰鞋、滑板和滑板车 › 自行车车 › 自行车车配件 › 电池和电池`
-  *   **A+数量占比**：`81%`
-  *   **新品平均评分数**：`74`
-  *   **新品平均价格**：`$ 34.11`
-  *   **新品平均星级**：`4.4`
-  *   **新品月均销量**：`590`
-  *   **新品月均销售额**：`$17,597`
-  *   **平均重量**：`0.95 pounds (429 g)`
-  *   **平均体积**：`56.33 in³ (923 cm³)`
-  *   **平均毛利率**：`62.58%`
-  *   **卖家所属地**：`中国|84.0%`
-  *   **搜索购买比**：`9.9‰`
-
----
-
-#### 🏆 🟡-5. Decorative Trays (装饰性托盘)
-
-- **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Decorative Accessories › Decorative Trays  市场分析`
-- **触发警示项**：`退货率偏高 (>8.0%)`
-- **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$22.23`
-  *   **平均 Reviews (Avg Reviews)**：`466 个`
-  *   **物理重量 (Weight)**：`1.45 lbs`
-  *   **平均退货率 (Return Rate)**：`9.52%`
-  *   **平均毛利率 (Profit Margin)**：`56.79%`
-  *   **品牌集中度 (Brand Concentration)**：`42.1%`
+  *   **平均客单价 (Avg Price)**：`$21.35`
+  *   **平均 Reviews (Avg Reviews)**：`694 个`
+  *   **物理重量 (Weight)**：`0.82 lbs`
+  *   **平均退货率 (Return Rate)**：`1.83%`
+  *   **平均毛利率 (Profit Margin)**：`56.27%`
+  *   **品牌集中度 (Brand Concentration)**：`74.4%`
   *   **中国卖家比例 (Chinese Seller Ratio)**：`78.0%`
 - **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Decorative Accessories › Decorative Trays  市场分析`
-  *   **市场路径(中文)**：`家居用品 › 家居装饰 › 家居装饰品 › 装饰配件 › 装饰性托盘`
-  *   **A+数量占比**：`85%`
-  *   **新品平均评分数**：`125`
-  *   **新品平均价格**：`$ 22.18`
-  *   **新品平均星级**：`4.2`
-  *   **新品月均销量**：`669`
-  *   **新品月均销售额**：`$12,639`
-  *   **平均重量**：`1.45 pounds (658 g)`
-  *   **平均体积**：`226.34 in³ (3,709 cm³)`
-  *   **平均毛利率**：`56.79%`
+  *   **完整市场路径**：`Toys & Games › Sports & Outdoor Play › Pools & Water Toys › Water Balloons  市场分析`
+  *   **市场路径(中文)**：`玩具 › 体育 › 游泳池 › 水气球`
+  *   **A+数量占比**：`72%`
+  *   **新品平均评分数**：`39`
+  *   **新品平均价格**：`$ 21`
+  *   **新品平均星级**：`4.3`
+  *   **新品月均销量**：`694`
+  *   **新品月均销售额**：`$15,449`
+  *   **平均重量**：`0.82 pounds (372 g)`
+  *   **平均体积**：`482.64 in³ (7,909 cm³)`
+  *   **平均毛利率**：`56.27%`
   *   **卖家所属地**：`中国|78.0%`
-  *   **搜索购买比**：`4.2‰`
+  *   **搜索购买比**：`10.2‰`
 
 ---
 
-#### 🏆 🟡-6. Game Mats & Boards (游戏垫和游戏板)
+#### 🏆 🟡-2. Squirt Guns (水枪)
 
-- **完整市场路径**：`Toys & Games › Games & Accessories › Game Accessories › Game Mats & Boards  市场分析`
-- **触发警示项**：`重量偏重 (>2.0 lbs), 谨慎认证类目路径`
+- **完整市场路径**：`Toys & Games › Sports & Outdoor Play › Pools & Water Toys › Squirt Guns  市场分析`
+- **触发警示项**：`Reviews偏高 (>550), 谨慎认证类目路径`
 - **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$29.62`
-  *   **平均 Reviews (Avg Reviews)**：`308 个`
-  *   **物理重量 (Weight)**：`2.47 lbs`
-  *   **平均退货率 (Return Rate)**：`7.5%`
-  *   **平均毛利率 (Profit Margin)**：`58.18%`
-  *   **品牌集中度 (Brand Concentration)**：`40.3%`
-  *   **中国卖家比例 (Chinese Seller Ratio)**：`78.0%`
-- **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Toys & Games › Games & Accessories › Game Accessories › Game Mats & Boards  市场分析`
-  *   **市场路径(中文)**：`玩具与游戏 › 游戏和配件 › 游戏配件 › 游戏垫和游戏板`
-  *   **A+数量占比**：`74%`
-  *   **新品平均评分数**：`23`
-  *   **新品平均价格**：`$ 33.34`
-  *   **新品平均星级**：`4.4`
-  *   **新品月均销量**：`333`
-  *   **新品月均销售额**：`$10,879`
-  *   **平均重量**：`2.47 pounds (1,120 g)`
-  *   **平均体积**：`304.41 in³ (4,988 cm³)`
-  *   **平均毛利率**：`58.18%`
-  *   **卖家所属地**：`中国|78.0%`
-  *   **搜索购买比**：`3.8‰`
-
----
-
-#### 🏆 🟡-7. Boats (船)
-
-- **完整市场路径**：`Toys & Games › Remote & App Controlled Vehicles & Parts › Remote & App Controlled Vehicles › Boats  市场分析`
-- **触发警示项**：`谨慎认证类目路径`
-- **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$56.10`
-  *   **平均 Reviews (Avg Reviews)**：`330 个`
-  *   **物理重量 (Weight)**：`1.46 lbs`
-  *   **平均退货率 (Return Rate)**：`6.03%`
-  *   **平均毛利率 (Profit Margin)**：`69.1%`
-  *   **品牌集中度 (Brand Concentration)**：`62.0%`
+  *   **平均客单价 (Avg Price)**：`$25.91`
+  *   **平均 Reviews (Avg Reviews)**：`619 个`
+  *   **物理重量 (Weight)**：`1.24 lbs`
+  *   **平均退货率 (Return Rate)**：`3.93%`
+  *   **平均毛利率 (Profit Margin)**：`53.97%`
+  *   **品牌集中度 (Brand Concentration)**：`53.8%`
   *   **中国卖家比例 (Chinese Seller Ratio)**：`68.0%`
 - **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Toys & Games › Remote & App Controlled Vehicles & Parts › Remote & App Controlled Vehicles › Boats  市场分析`
-  *   **市场路径(中文)**：`玩具 › 遥控 › 遥控 › 船`
-  *   **A+数量占比**：`98%`
-  *   **新品平均评分数**：`39`
-  *   **新品平均价格**：`$ 54.62`
-  *   **新品平均星级**：`4.4`
-  *   **新品月均销量**：`319`
-  *   **新品月均销售额**：`$16,000`
-  *   **平均重量**：`1.46 pounds (661 g)`
-  *   **平均体积**：`317.55 in³ (5,204 cm³)`
-  *   **平均毛利率**：`69.1%`
+  *   **完整市场路径**：`Toys & Games › Sports & Outdoor Play › Pools & Water Toys › Squirt Guns  市场分析`
+  *   **市场路径(中文)**：`玩具 › 体育 › 游泳池 › 水枪`
+  *   **A+数量占比**：`87%`
+  *   **新品平均评分数**：`151`
+  *   **新品平均价格**：`$ 31.35`
+  *   **新品平均星级**：`4.2`
+  *   **新品月均销量**：`1,695`
+  *   **新品月均销售额**：`$51,047`
+  *   **平均重量**：`1.24 pounds (561 g)`
+  *   **平均体积**：`259.12 in³ (4,246 cm³)`
+  *   **平均毛利率**：`53.97%`
   *   **卖家所属地**：`中国|68.0%`
-  *   **搜索购买比**：`2.9‰`
+  *   **搜索购买比**：`5.7‰`
 
 ---
 
-#### 🏆 🟡-8. Grinding Discs (磨片)
+#### 🏆 🟡-3. Drip Irrigation Kits (滴灌套件)
 
-- **完整市场路径**：`Industrial & Scientific › Abrasive & Finishing Products › Abrasive Wheels & Discs › Grinding Discs  市场分析`
-- **触发警示项**：`重量偏重 (>2.0 lbs)`
+- **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Watering Equipment › Automatic Irrigation Equipment › Drip Irrigation Kits  市场分析`
+- **触发警示项**：`重量偏重 (>2.5 lbs), Reviews偏高 (>550)`
 - **核心数据特征**：
-  *   **平均客单价 (Avg Price)**：`$23.53`
-  *   **平均 Reviews (Avg Reviews)**：`360 个`
-  *   **物理重量 (Weight)**：`2.02 lbs`
-  *   **平均退货率 (Return Rate)**：`2.13%`
-  *   **平均毛利率 (Profit Margin)**：`60.83%`
-  *   **品牌集中度 (Brand Concentration)**：`46.8%`
-  *   **中国卖家比例 (Chinese Seller Ratio)**：`81.0%`
+  *   **平均客单价 (Avg Price)**：`$33.30`
+  *   **平均 Reviews (Avg Reviews)**：`618 个`
+  *   **物理重量 (Weight)**：`2.58 lbs`
+  *   **平均退货率 (Return Rate)**：`3.37%`
+  *   **平均毛利率 (Profit Margin)**：`61.61%`
+  *   **品牌集中度 (Brand Concentration)**：`50.8%`
+  *   **中国卖家比例 (Chinese Seller Ratio)**：`70.0%`
 - **Sellersprite 抓取原始细节 (Scraped Details)**：
-  *   **完整市场路径**：`Industrial & Scientific › Abrasive & Finishing Products › Abrasive Wheels & Discs › Grinding Discs  市场分析`
-  *   **市场路径(中文)**：`工业类 › 磨削加工 › 研磨砂轮 › 磨片`
-  *   **A+数量占比**：`82%`
-  *   **新品平均评分数**：`15`
-  *   **新品平均价格**：`$ 22.82`
-  *   **新品平均星级**：`4.2`
-  *   **新品月均销量**：`397`
-  *   **新品月均销售额**：`$7,480`
-  *   **平均重量**：`2.02 pounds (918 g)`
-  *   **平均体积**：`13.04 in³ (214 cm³)`
-  *   **平均毛利率**：`60.83%`
-  *   **卖家所属地**：`中国|81.0%`
-  *   **搜索购买比**：`15.0‰`
+  *   **完整市场路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Watering Equipment › Automatic Irrigation Equipment › Drip Irrigation Kits  市场分析`
+  *   **市场路径(中文)**：`庭院、草坪和园艺 › 园艺和微笑护理 › 浇灌工具 › 打药机 › 滴灌套件`
+  *   **A+数量占比**：`91%`
+  *   **新品平均评分数**：`125`
+  *   **新品平均价格**：`$ 34.63`
+  *   **新品平均星级**：`4.3`
+  *   **新品月均销量**：`1,127`
+  *   **新品月均销售额**：`$36,155`
+  *   **平均重量**：`2.58 pounds (1,170 g)`
+  *   **平均体积**：`341.29 in³ (5,593 cm³)`
+  *   **平均毛利率**：`61.61%`
+  *   **卖家所属地**：`中国|70.0%`
+  *   **搜索购买比**：`8.6‰`
+
+---
+
+#### 🏆 🟡-4. Bread Proofing Baskets (面包发酵篮)
+
+- **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Bakeware › Baking Tools & Accessories › Baking & Pastry Utensils › Bread Proofing Baskets  市场分析`
+- **触发警示项**：`Reviews偏高 (>550)`
+- **核心数据特征**：
+  *   **平均客单价 (Avg Price)**：`$29.00`
+  *   **平均 Reviews (Avg Reviews)**：`570 个`
+  *   **物理重量 (Weight)**：`2.03 lbs`
+  *   **平均退货率 (Return Rate)**：`4.09%`
+  *   **平均毛利率 (Profit Margin)**：`56.61%`
+  *   **品牌集中度 (Brand Concentration)**：`53.8%`
+  *   **中国卖家比例 (Chinese Seller Ratio)**：`67.0%`
+- **Sellersprite 抓取原始细节 (Scraped Details)**：
+  *   **完整市场路径**：`Home & Kitchen › Kitchen & Dining › Bakeware › Baking Tools & Accessories › Baking & Pastry Utensils › Bread Proofing Baskets  市场分析`
+  *   **市场路径(中文)**：`家居用品 › 厨房 › 烘焙用具 › 烘焙工具 › 烘焙 › 面包发酵篮`
+  *   **A+数量占比**：`88%`
+  *   **新品平均评分数**：`92`
+  *   **新品平均价格**：`$ 28.1`
+  *   **新品平均星级**：`4.5`
+  *   **新品月均销量**：`588`
+  *   **新品月均销售额**：`$16,379`
+  *   **平均重量**：`2.03 pounds (919 g)`
+  *   **平均体积**：`393.57 in³ (6,449 cm³)`
+  *   **平均毛利率**：`56.61%`
+  *   **卖家所属地**：`中国|67.0%`
+  *   **搜索购买比**：`9.6‰`
+
+---
+
+#### 🏆 🟡-5. Ultrasonic Repellers (Ultrasonic Repellers)
+
+- **完整市场路径**：`Health & Household › Household Supplies › Indoor Insect & Pest Control › Ultrasonic Repellers  市场分析`
+- **触发警示项**：`Reviews偏高 (>550)`
+- **核心数据特征**：
+  *   **平均客单价 (Avg Price)**：`$28.76`
+  *   **平均 Reviews (Avg Reviews)**：`625 个`
+  *   **物理重量 (Weight)**：`0.61 lbs`
+  *   **平均退货率 (Return Rate)**：`3.27%`
+  *   **平均毛利率 (Profit Margin)**：`66.96%`
+  *   **品牌集中度 (Brand Concentration)**：`70.0%`
+  *   **中国卖家比例 (Chinese Seller Ratio)**：`7.0%`
+- **Sellersprite 抓取原始细节 (Scraped Details)**：
+  *   **完整市场路径**：`Health & Household › Household Supplies › Indoor Insect & Pest Control › Ultrasonic Repellers  市场分析`
+  *   **市场路径(中文)**：`Health & Household › Household Supplies › Indoor Insect & Pest Control › Ultrasonic Repellers`
+  *   **A+数量占比**：`68%`
+  *   **新品平均评分数**：`103`
+  *   **新品平均价格**：`$ 26.2`
+  *   **新品平均星级**：`3.9`
+  *   **新品月均销量**：`934`
+  *   **新品月均销售额**：`$28,464`
+  *   **平均重量**：`0.61 pounds (276 g)`
+  *   **平均体积**：`56.83 in³ (931 cm³)`
+  *   **平均毛利率**：`66.96%`
+  *   **卖家所属地**：`美国|93.0%`
+  *   **搜索购买比**：`7.8‰`
+
+---
+
+#### 🏆 🟡-6. Decorative Boxes (装饰盒)
+
+- **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Decorative Accessories › Decorative Boxes  市场分析`
+- **触发警示项**：`Reviews偏高 (>550)`
+- **核心数据特征**：
+  *   **平均客单价 (Avg Price)**：`$23.78`
+  *   **平均 Reviews (Avg Reviews)**：`694 个`
+  *   **物理重量 (Weight)**：`1.57 lbs`
+  *   **平均退货率 (Return Rate)**：`7.91%`
+  *   **平均毛利率 (Profit Margin)**：`57.46%`
+  *   **品牌集中度 (Brand Concentration)**：`54.4%`
+  *   **中国卖家比例 (Chinese Seller Ratio)**：`67.0%`
+- **Sellersprite 抓取原始细节 (Scraped Details)**：
+  *   **完整市场路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Decorative Accessories › Decorative Boxes  市场分析`
+  *   **市场路径(中文)**：`家居用品 › 家居装饰 › 家居装饰品 › 装饰配件 › 装饰盒`
+  *   **A+数量占比**：`76%`
+  *   **新品平均评分数**：`66`
+  *   **新品平均价格**：`$ 21.72`
+  *   **新品平均星级**：`4.5`
+  *   **新品月均销量**：`890`
+  *   **新品月均销售额**：`$20,682`
+  *   **平均重量**：`1.57 pounds (710 g)`
+  *   **平均体积**：`325.95 in³ (5,341 cm³)`
+  *   **平均毛利率**：`57.46%`
+  *   **卖家所属地**：`中国|67.0%`
+  *   **搜索购买比**：`4.5‰`
+
+---
+
+#### 🏆 🟡-7. Pool & Deck Repair Products (油漆及密封产品)
+
+- **完整市场路径**：`Patio, Lawn & Garden › Pools, Hot Tubs & Supplies › Parts & Accessories › Pool & Deck Repair Products  市场分析`
+- **触发警示项**：`Reviews偏高 (>550)`
+- **核心数据特征**：
+  *   **平均客单价 (Avg Price)**：`$31.79`
+  *   **平均 Reviews (Avg Reviews)**：`682 个`
+  *   **物理重量 (Weight)**：`2.28 lbs`
+  *   **平均退货率 (Return Rate)**：`1.93%`
+  *   **平均毛利率 (Profit Margin)**：`58.44%`
+  *   **品牌集中度 (Brand Concentration)**：`57.6%`
+  *   **中国卖家比例 (Chinese Seller Ratio)**：`48.0%`
+- **Sellersprite 抓取原始细节 (Scraped Details)**：
+  *   **完整市场路径**：`Patio, Lawn & Garden › Pools, Hot Tubs & Supplies › Parts & Accessories › Pool & Deck Repair Products  市场分析`
+  *   **市场路径(中文)**：`庭院、草坪和园艺 › 泳池及配件 › 零配件 › 油漆及密封产品`
+  *   **A+数量占比**：`69%`
+  *   **新品平均评分数**：`62`
+  *   **新品平均价格**：`$ 19.47`
+  *   **新品平均星级**：`4.1`
+  *   **新品月均销量**：`688`
+  *   **新品月均销售额**：`$13,545`
+  *   **平均重量**：`2.28 pounds (1,032 g)`
+  *   **平均体积**：`643.59 in³ (10,547 cm³)`
+  *   **平均毛利率**：`58.44%`
+  *   **卖家所属地**：`美国|52.0%`
+  *   **搜索购买比**：`23.2‰`
 
 ---
 
@@ -521,21 +380,21 @@
 | 3 | [B0FGHZXNGV](https://www.amazon.com/dp/B0FGHZXNGV) |  | BougeRV Upgraded Telescopic Camping Light | 630 / 22.25% | $37,794 | $59.99 | $8.91 (15%) | 119 / 12 | 4.3 | $6.69 / 74% | 1 | 76 | 1 | 2.49 pounds | 2025-07-14 11个月 |
 | 4 | [B0GKMGJLL3](https://www.amazon.com/dp/B0GKMGJLL3) |  | Boat Stern Light Anchor Light | 856 / 29.64% | $36,799 | $42.99 | $6.66 (15%) | 30 / 13 | 4.9 | $10.11 / 61% | 3 | 14 | 1 | 1.25 pounds | 2026-03-31 2个月 |
 | 5 | [B0DX2F3V5Q](https://www.amazon.com/dp/B0DX2F3V5Q) |  | SILCA Ultimate Sealant Bottle | 752 / 7.13% | $33,832 | $44.99 | $6.57 (15%) | 140 / - | 4.5 | $6.48 / 71% | 4 | 19 | 1 | 2.51 pounds | 2025-02-16 1年 3个月 |
-| 6 | [B0DTP76XQP](https://www.amazon.com/dp/B0DTP76XQP) |  | Human Fish Hook Removal Tool. The Only Ambidextrous Ergonomically… | 789 / 11.11% | $31,552 | $39.99 | $5.91 (15%) | 110 / 13 | 4.7 | $4.09 / 75% | 4 | 18 | 1 | 0.26 pounds | 2025-01-25 1年 4个月 |
-| 7 | [B0DSRDB4YL](https://www.amazon.com/dp/B0DSRDB4YL) |  | Sea to Summit eVac Dry Bag | 574 / 93.82% | $28,671 | $49.95 | $7.40 (15%) | 8 / 4 | 4.8 | $4.09 / 77% | 1 | 390 | 1 | 0.4 pounds | 2025-01-13 1年 5个月 |
-| 8 | [B0CTQTYVGP](https://www.amazon.com/dp/B0CTQTYVGP) |  | Naturehike 4.5oz Ultralight Washable Sleeping Bag Liner | 890 / 34.88% | $28,471 | $31.99 | $4.87 (15%) | 118 / 4 | 4.5 | $4.09 / 72% | 3 | 7 | 1 | 0.29 pounds | 2024-02-06 2年 4个月 |
-| 9 | [B0DS2CBVFT](https://www.amazon.com/dp/B0DS2CBVFT) |  | 75FT Wakeboard Rope and Handle | 740 / 54.21% | $28,113 | $37.99 | $5.64 (15%) | 127 / 7 | 4.8 | $8.04 / 64% | 5 | 4 | 1 | 2.58 pounds | 2025-03-22 1年 2个月 |
-| 10 | [B0GL785GSP](https://www.amazon.com/dp/B0GL785GSP) |  | WATERFLY Small Crossbody Sling Bag: RFID Sling Backpack Chest Bag… | 733 / 54.82% | $26,381 | $35.99 | $5.25 (15%) | 125 / 37 | 4.6 | $5.91 / 69% | 3 | 64 | 1 | 0.82 pounds | 2026-02-20 3个月 |
-| 11 | [B0F6KRVBGR](https://www.amazon.com/dp/B0F6KRVBGR) |  | Detachable Clip in Bimini Top Mesh Sidewalls | **** / **** | **** | $59.99 | - | 57 / 6 | 4.6 | **** /  | 2 | 9 | 1 | 2.73 pounds | 2025-06-24 11个月 |
-| 12 | [B0F9ZZ17Z8](https://www.amazon.com/dp/B0F9ZZ17Z8) |  | Pool Paddle Water Aerobics Equipment | **** / **** | **** | $41.97 | - | 85 / 15 | 4.5 | **** /  | 1 | 22 | 1 | 1.3 pounds | 2025-09-30 8个月 |
-| 13 | [B0F62YLXK6](https://www.amazon.com/dp/B0F62YLXK6) |  | Air Horn 8.3oz for Boating | **** / **** | **** | $27.99 | - | 66 / - | 4.6 | **** /  | 1 | 8 | 1 | 0.93 pounds | 2025-05-21 1年 |
-| 14 | [B0GLQ8T4P3](https://www.amazon.com/dp/B0GLQ8T4P3) |  | Punvoe Trail Camera 64MP 4K HD Game Camera with 100ft Night Visio… | **** / **** | **** | $59.99 | - | 41 / 12 | 4.5 | **** /  | 1 | 15 | 2 | 1.54 pounds | 2026-02-08 4个月 |
-| 15 | [B0CT5MVCFD](https://www.amazon.com/dp/B0CT5MVCFD) |  | Wakesurf Rope and Handle | **** / **** | **** | $47.99 | - | 88 / 5 | 4.8 | **** /  | 4 | 1 | 1 | 2.16 pounds | 2024-03-14 2年 3个月 |
-| 16 | [B0FNNCDS7D](https://www.amazon.com/dp/B0FNNCDS7D) |  | Upgraded Rechargeable Bore Sight Laser with 32 Adapter Kit | **** / **** | **** | $34.95 | - | 67 / 20 | 4.8 | **** /  | 2 | 15 | 1 | 0.82 pounds | 2025-11-25 6个月 |
-| 17 | [B0G51VX3YD](https://www.amazon.com/dp/B0G51VX3YD) |  | SUNNYLiFE Swim Vest | **** / **** | **** | $49.00 | - | 5 / 2 | 4.5 | **** /  | 1 | 75 | 2 | 0.53 pounds | 2026-01-29 4个月 |
-| 18 | [B0DY2SW4CH](https://www.amazon.com/dp/B0DY2SW4CH) |  | Nitecore NU25 MCT UL 400 Lumen Ultralight USB-C Rechargeble Outdo… | **** / **** | **** | $36.95 | - | 111 / 3 | 4.8 | **** /  | 3 | 77 | 2 | 0.2 pounds | 2025-03-14 1年 3个月 |
-| 19 | [B0DNZX4MZF](https://www.amazon.com/dp/B0DNZX4MZF) |  | Grip Enhancer Tacky Towel | **** / **** | **** | $36.99 | - | 125 / - | 4.5 | **** /  | 2 | 34 | 2 | 0.29 pounds | 2024-12-17 1年 5个月 |
-| 20 | [B0FVLV78Y3](https://www.amazon.com/dp/B0FVLV78Y3) |  | Strdfeve Water Ball and Gloves Set,1PC Water Bouncing Ball&2PCS C… | **** / **** | **** | $39.99 | - | 9 / 3 | 4.2 | **** /  | 1 | 5 | 1 | 0.68 pounds | 2025-10-29 7个月 |
+| 6 | [B0DTP76XQP](https://www.amazon.com/dp/B0DTP76XQP) |  | Human Fish Hook Removal Tool. The Only Ambidextrous Ergonomically… | 805 / 11.11% | $32,192 | $39.99 | $5.91 (15%) | 110 / 12 | 4.7 | $4.09 / 75% | 4 | 18 | 1 | 0.26 pounds | 2025-01-25 1年 4个月 |
+| 7 | [B0D37GG2SJ](https://www.amazon.com/dp/B0D37GG2SJ) |  | Golf Netting | 678 / 6.91% | $30,476 | $44.95 | $6.83 (15%) | 137 / 10 | 4.4 | $7.55 / 68% | 3 | 6 | 1 | 2.25 pounds | 2024-06-08 2年 |
+| 8 | [B0DS2CBVFT](https://www.amazon.com/dp/B0DS2CBVFT) |  | 75FT Wakeboard Rope and Handle | 784 / 54.21% | $29,784 | $37.99 | $5.64 (15%) | 129 / 9 | 4.8 | $8.04 / 64% | 5 | 4 | 1 | 2.58 pounds | 2025-03-22 1年 2个月 |
+| 9 | [B0DSRDB4YL](https://www.amazon.com/dp/B0DSRDB4YL) |  | Sea to Summit eVac Dry Bag | 574 / 93.82% | $28,671 | $49.95 | $7.40 (15%) | 8 / 4 | 4.8 | $4.09 / 77% | 1 | 390 | 1 | 0.4 pounds | 2025-01-13 1年 5个月 |
+| 10 | [B0GKG8PKTX](https://www.amazon.com/dp/B0GKG8PKTX) |  | Ultralight Camping Chair Backpacking Chair | 813 / 22.35% | $27,634 | $33.99 | $4.95 (15%) | 90 / 8 | 4.6 | $7.63 / 63% | 5 | 134 | 2 | 4.17 pounds | 2026-02-12 4个月 |
+| 11 | [B0FZJSDVF8](https://www.amazon.com/dp/B0FZJSDVF8) |  | 4 Pack Granny Pants Yard Game,Family Party Outdoor Granny Pants G… | **** / **** | **** | $39.99 | - | 47 / 6 | 4.0 | **** /  | 3 | 22 | 1 | 3.35 pounds | 2025-12-02 6个月 |
+| 12 | [B0F98Y7S35](https://www.amazon.com/dp/B0F98Y7S35) |  | DURATECH 12V Cordless Electric Fillet Knife with 8" & 10" Razor-S… | **** / **** | **** | $59.99 | - | 115 / 12 | 4.5 | **** /  | 1 | 19 | 1 | 3.53 pounds | 2025-09-13 9个月 |
+| 13 | [B0F9ZZ17Z8](https://www.amazon.com/dp/B0F9ZZ17Z8) |  | Pool Paddle Water Aerobics Equipment | **** / **** | **** | $41.97 | - | 86 / 16 | 4.5 | **** /  | 1 | 23 | 1 | 1.3 pounds | 2025-09-30 8个月 |
+| 14 | [B0GL785GSP](https://www.amazon.com/dp/B0GL785GSP) |  | WATERFLY Small Crossbody Sling Bag: RFID Sling Backpack Chest Bag… | **** / **** | **** | $35.99 | - | 127 / 35 | 4.6 | **** /  | 3 | 61 | 1 | 0.82 pounds | 2026-02-20 3个月 |
+| 15 | [B0F6KRVBGR](https://www.amazon.com/dp/B0F6KRVBGR) |  | Detachable Clip in Bimini Top Mesh Sidewalls | **** / **** | **** | $59.99 | - | 57 / 6 | 4.6 | **** /  | 2 | 9 | 1 | 2.73 pounds | 2025-06-24 11个月 |
+| 16 | [B0F62YLXK6](https://www.amazon.com/dp/B0F62YLXK6) |  | Air Horn 8.3oz for Boating | **** / **** | **** | $27.99 | - | 66 / - | 4.6 | **** /  | 1 | 8 | 1 | 0.93 pounds | 2025-05-21 1年 |
+| 17 | [B0GLQ8T4P3](https://www.amazon.com/dp/B0GLQ8T4P3) |  | Punvoe Trail Camera 64MP 4K HD Game Camera with 100ft Night Visio… | **** / **** | **** | $59.99 | - | 41 / 12 | 4.5 | **** /  | 1 | 15 | 2 | 1.54 pounds | 2026-02-08 4个月 |
+| 18 | [B0CT5MVCFD](https://www.amazon.com/dp/B0CT5MVCFD) |  | Wakesurf Rope and Handle | **** / **** | **** | $47.99 | - | 88 / 5 | 4.8 | **** /  | 4 | 1 | 1 | 2.16 pounds | 2024-03-14 2年 3个月 |
+| 19 | [B0FNNCDS7D](https://www.amazon.com/dp/B0FNNCDS7D) |  | Upgraded Rechargeable Bore Sight Laser with 32 Adapter Kit | **** / **** | **** | $34.95 | - | 67 / 20 | 4.8 | **** /  | 2 | 15 | 1 | 0.82 pounds | 2025-11-25 6个月 |
+| 20 | [B0G51VX3YD](https://www.amazon.com/dp/B0G51VX3YD) |  | SUNNYLiFE Swim Vest | **** / **** | **** | $49.00 | - | 5 / 2 | 4.5 | **** /  | 1 | 75 | 2 | 0.53 pounds | 2026-01-29 4个月 |
 
 ## 二、完整商品标题
 
@@ -551,33 +410,33 @@
 
 **6. [B0DTP76XQP](https://www.amazon.com/dp/B0DTP76XQP)** Human Fish Hook Removal Tool. The Only Ambidextrous Ergonomically Designed Human Fish Hook Removal Tool.
 
-**7. [B0DSRDB4YL](https://www.amazon.com/dp/B0DSRDB4YL)** Sea to Summit eVac Dry Bag, Roll-Top Compression Sack, 35 Liter, Turkish Tile Blue
+**7. [B0D37GG2SJ](https://www.amazon.com/dp/B0D37GG2SJ)** Golf Netting, 10ft, 15ft, 20ft Sports Netting - Heavy Duty High Impact Multi-Sport Practice Net for Golf, Baseball, Soccer, Hockey, Lacrosse, Backyard Driving & Training Barrier
 
-**8. [B0CTQTYVGP](https://www.amazon.com/dp/B0CTQTYVGP)** Naturehike 4.5oz Ultralight Washable Sleeping Bag Liner, Lightweight Adult Sleep Sack & Travel Sheets for Backpacking, Hotel, Camping, Hostels, ZY20
+**8. [B0DS2CBVFT](https://www.amazon.com/dp/B0DS2CBVFT)** 75FT Wakeboard Rope and Handle, Floating Water Ski Rope for Watersports, 4 Sections Ski Ropes for Water Skiing, Kneeboarding, Wakeboarding
 
-**9. [B0DS2CBVFT](https://www.amazon.com/dp/B0DS2CBVFT)** 75FT Wakeboard Rope and Handle, Floating Water Ski Rope for Watersports, 4 Sections Ski Ropes for Water Skiing, Kneeboarding, Wakeboarding
+**9. [B0DSRDB4YL](https://www.amazon.com/dp/B0DSRDB4YL)** Sea to Summit eVac Dry Bag, Roll-Top Compression Sack, 35 Liter, Turkish Tile Blue
 
-**10. [B0GL785GSP](https://www.amazon.com/dp/B0GL785GSP)** WATERFLY Small Crossbody Sling Bag: RFID Sling Backpack Chest Bag Travel Shoulder Multiple Pockets Hiking Daypack for Man Woman
+**10. [B0GKG8PKTX](https://www.amazon.com/dp/B0GKG8PKTX)** Ultralight Camping Chair Backpacking Chair, Portable Camp Chair with Cup Holder & Storage Bag, Lightweight Compact Folding Chair for Hiking, Travel, Picnic Mountaineering（Deep Black）
 
-**11. [B0F6KRVBGR](https://www.amazon.com/dp/B0F6KRVBGR)** Detachable Clip in Bimini Top Mesh Sidewalls, Boat Sun Shade Universal Fit for 4 Bow Bimini Tops, with Straps Clips (Bimini Tops Not Included)
+**11. [B0FZJSDVF8](https://www.amazon.com/dp/B0FZJSDVF8)** 4 Pack Granny Pants Yard Game,Family Party Outdoor Granny Pants Game with 20pcs Bouncy Balls for The Family Gathering,The Family Reunion Ultimate Backyard Party Games
 
-**12. [B0F9ZZ17Z8](https://www.amazon.com/dp/B0F9ZZ17Z8)** Pool Paddle Water Aerobics Equipment | Adjustable Resistance Pool Exercise Equipment for Adults, Swim Paddles Water Weights Dumbbells for Aquatic Exercise, Aqua Weights for Men & Women Workout Gear
+**12. [B0F98Y7S35](https://www.amazon.com/dp/B0F98Y7S35)** DURATECH 12V Cordless Electric Fillet Knife with 8" & 10" Razor-Sharp Blades, Electric Fish Fillet Knife with 2.0Ah Built-in Battery, Type-C Charge, Non-Slip Handle, Storage Case for Fishing Filleting
 
-**13. [B0F62YLXK6](https://www.amazon.com/dp/B0F62YLXK6)** Air Horn 8.3oz for Boating, 120 dB Marine Boat Horn, Loud Airhorn for Sports Events, Outdoor & Marine Use
+**13. [B0F9ZZ17Z8](https://www.amazon.com/dp/B0F9ZZ17Z8)** Pool Paddle Water Aerobics Equipment | Adjustable Resistance Pool Exercise Equipment for Adults, Swim Paddles Water Weights Dumbbells for Aquatic Exercise, Aqua Weights for Men & Women Workout Gear
 
-**14. [B0GLQ8T4P3](https://www.amazon.com/dp/B0GLQ8T4P3)** Punvoe Trail Camera 64MP 4K HD Game Camera with 100ft Night Vision 0.1s Trigger Time Motion Activated 130° Wide Angle Ip67 Waterproof WiFi Hunting Camera with 64GB SD Card for Wildlife Monitoring
+**14. [B0GL785GSP](https://www.amazon.com/dp/B0GL785GSP)** WATERFLY Small Crossbody Sling Bag: RFID Sling Backpack Chest Bag Travel Shoulder Multiple Pockets Hiking Daypack for Man Woman
 
-**15. [B0CT5MVCFD](https://www.amazon.com/dp/B0CT5MVCFD)** Wakesurf Rope and Handle, 25ft Floating Wake Surf Ropes, Surf Tow Rope for Wakesurfing and Watersports
+**15. [B0F6KRVBGR](https://www.amazon.com/dp/B0F6KRVBGR)** Detachable Clip in Bimini Top Mesh Sidewalls, Boat Sun Shade Universal Fit for 4 Bow Bimini Tops, with Straps Clips (Bimini Tops Not Included)
 
-**16. [B0FNNCDS7D](https://www.amazon.com/dp/B0FNNCDS7D)** Upgraded Rechargeable Bore Sight Laser with 32 Adapter Kit, Professional Green/Red Laser Bore Sight Fits .17 to 12GA Calibers
+**16. [B0F62YLXK6](https://www.amazon.com/dp/B0F62YLXK6)** Air Horn 8.3oz for Boating, 120 dB Marine Boat Horn, Loud Airhorn for Sports Events, Outdoor & Marine Use
 
-**17. [B0G51VX3YD](https://www.amazon.com/dp/B0G51VX3YD)** SUNNYLiFE Swim Vest, 1-2 Years, Into The Garden Ditsy Floral, EPE/Natural Rubber/Polyester, 13.39x12.6x1.77 Inches, 1.27 lbs
+**17. [B0GLQ8T4P3](https://www.amazon.com/dp/B0GLQ8T4P3)** Punvoe Trail Camera 64MP 4K HD Game Camera with 100ft Night Vision 0.1s Trigger Time Motion Activated 130° Wide Angle Ip67 Waterproof WiFi Hunting Camera with 64GB SD Card for Wildlife Monitoring
 
-**18. [B0DY2SW4CH](https://www.amazon.com/dp/B0DY2SW4CH)** Nitecore NU25 MCT UL 400 Lumen Ultralight USB-C Rechargeble Outdoor Headlamp with Multiple Color Temperatures Warm Natural, Cold Lights and Red Light (Elastic Cord, Black)
+**18. [B0CT5MVCFD](https://www.amazon.com/dp/B0CT5MVCFD)** Wakesurf Rope and Handle, 25ft Floating Wake Surf Ropes, Surf Tow Rope for Wakesurfing and Watersports
 
-**19. [B0DNZX4MZF](https://www.amazon.com/dp/B0DNZX4MZF)** Grip Enhancer Tacky Towel - USA-Made Chalkless Competition-Approved Formula for Golf, Tennis, Softball and More - Versatile Multi-Sport Moisture Control for Sweaty Hands
+**19. [B0FNNCDS7D](https://www.amazon.com/dp/B0FNNCDS7D)** Upgraded Rechargeable Bore Sight Laser with 32 Adapter Kit, Professional Green/Red Laser Bore Sight Fits .17 to 12GA Calibers
 
-**20. [B0FVLV78Y3](https://www.amazon.com/dp/B0FVLV78Y3)** Strdfeve Water Ball and Gloves Set,1PC Water Bouncing Ball&2PCS Catch Mitts,Pool Baseball Catching Mitts for Beach Games,Play Catch Skip Ball&Gloves
+**20. [B0G51VX3YD](https://www.amazon.com/dp/B0G51VX3YD)** SUNNYLiFE Swim Vest, 1-2 Years, Into The Garden Ditsy Floral, EPE/Natural Rubber/Polyester, 13.39x12.6x1.77 Inches, 1.27 lbs
 
 ## 三、下一步建议
 
@@ -594,21 +453,21 @@
 - `B0FGHZXNGV`: 15,480 | 1,144 | 7% | 630 | 22.25% | $37,794 | 500+ | $29K+ | 1 | $59.99 | - | 119 | 12 | 4.3 | 1.9% | $6.69 | 74% | 2025-07-14 | 11个月 | FBA | -
 - `B0GKMGJLL3`: 10,790 | 2,203 | 17% | 856 | 29.64% | $36,799 | 600+ | $25K+ | 3 | $42.99 | - | 30 | 13 | 4.9 | 1.52% | $10.11 | 61% | 2026-03-31 | 2个月 | FBA | -
 - `B0DX2F3V5Q`: 11,637 | 0 | 0% | 752 | 7.13% | $33,832 | 300+ | $13K+ | 4 | $44.99 | - | 140 | - | 4.5 | - | $6.48 | 71% | 2025-02-16 | 1年 3个月 | FBA | -
-- `B0DTP76XQP`: 10,123 | 353 | 3% | 789 | 11.11% | $31,552 | 200+ | $7K+ | 4 | $39.99 | - | 110 | 13 | 4.7 | 1.65% | $4.09 | 75% | 2025-01-25 | 1年 4个月 | FBA | -
+- `B0DTP76XQP`: 10,123 | 218 | 2% | 805 | 11.11% | $32,192 | 200+ | $7K+ | 4 | $39.99 | - | 110 | 12 | 4.7 | 1.49% | $4.09 | 75% | 2025-01-25 | 1年 4个月 | FBA | -
+- `B0D37GG2SJ`: 11,819 | 2,260 | 16% | 678 | 6.91% | $30,476 | 200+ | $8K+ | 3 | $44.95 | - | 137 | 10 | 4.4 | 1.47% | $7.55 | 68% | 2024-06-08 | 2年 | FBA | -
+- `B0DS2CBVFT`: 7,728 | 1,832 | 19% | 784 | 54.21% | $29,784 | 300+ | $11K+ | 5 | $37.99 | - | 129 | 9 | 4.8 | 1.15% | $8.04 | 64% | 2025-03-22 | 1年 2个月 | FBA | -
 - `B0DSRDB4YL`: 210,040 | 7,666 | 35% | 574 | 93.82% | $28,671 | - | - | 1 | $49.95 | - | 8 | 4 | 4.8 | 0.7% | $4.09 | 77% | 2025-01-13 | 1年 5个月 | FBA | -
-- `B0CTQTYVGP`: 8,500 | 227 | 3% | 890 | 34.88% | $28,471 | 400+ | $12K+ | 3 | $31.99 | - | 118 | 4 | 4.5 | 0.45% | $4.09 | 72% | 2024-02-06 | 2年 4个月 | FBA | -
-- `B0DS2CBVFT`: 8,379 | 2,034 | 20% | 740 | 54.21% | $28,113 | 300+ | $11K+ | 5 | $37.99 | - | 127 | 7 | 4.8 | 0.95% | $8.04 | 64% | 2025-03-22 | 1年 2个月 | FBA | -
-- `B0GL785GSP`: 13,539 | 268 | 2% | 733 | 54.82% | $26,381 | 300+ | $10K+ | 3 | $35.99 | - | 125 | 37 | 4.6 | 5.05% | $5.91 | 69% | 2026-02-20 | 3个月 | FBA | -
+- `B0GKG8PKTX`: 9,431 | 511 | 5% | 813 | 22.35% | $27,634 | 300+ | $10K+ | 5 | $33.99 | - | 90 | 8 | 4.6 | 0.98% | $7.63 | 63% | 2026-02-12 | 4个月 | FBA | -
+- `B0FZJSDVF8`: 9,043 | 7,937 | 47% | **** | **** | **** | **** | 3 | $39.99 | - | 47 | 6 | 4.0 | 0.88% | **** | 2025-12-02 | 6个月 | FBA | -
+- `B0F98Y7S35`: 20,723 | 3,756 | 15% | **** | **** | **** | **** | 1 | $59.99 | - | 115 | 12 | 4.5 | 2.66% | **** | 2025-09-13 | 9个月 | FBA | -
+- `B0F9ZZ17Z8`: 13,826 | 38 | 0% | **** | **** | **** | **** | 1 | $41.97 | - | 86 | 16 | 4.5 | 2.52% | **** | 2025-09-30 | 8个月 | FBA | -
+- `B0GL785GSP`: 12,238 | 20 | 0% | **** | **** | **** | **** | 3 | $35.99 | - | 127 | 35 | 4.6 | 4.78% | **** | 2026-02-20 | 3个月 | FBA | -
 - `B0F6KRVBGR`: 17,233 | 2,507 | 13% | **** | **** | **** | **** | 2 | $59.99 | - | 57 | 6 | 4.6 | 1.37% | **** | 2025-06-24 | 11个月 | FBA | -
-- `B0F9ZZ17Z8`: 13,699 | 581 | 4% | **** | **** | **** | **** | 1 | $41.97 | - | 85 | 15 | 4.5 | 2.42% | **** | 2025-09-30 | 8个月 | FBA | -
 - `B0F62YLXK6`: 9,609 | 0 | 0% | **** | **** | **** | **** | 1 | $27.99 | - | 66 | - | 4.6 | - | **** | 2025-05-21 | 1年 | FBA | -
 - `B0GLQ8T4P3`: 12,940 | 10,879 | 46% | **** | **** | **** | **** | 1 | $59.99 | - | 41 | 12 | 4.5 | 2.84% | **** | 2026-02-08 | 4个月 | FBA | -
 - `B0CT5MVCFD`: 17,365 | 1,868 | 10% | **** | **** | **** | **** | 4 | $47.99 | - | 88 | 5 | 4.8 | 0.95% | **** | 2024-03-14 | 2年 3个月 | FBA | -
 - `B0FNNCDS7D`: 10,619 | 2,566 | 19% | **** | **** | **** | **** | 2 | $34.95 | - | 67 | 20 | 4.8 | 2.79% | **** | 2025-11-25 | 6个月 | FBA | -
 - `B0G51VX3YD`: 9,887 | 6,681 | 40% | **** | **** | **** | **** | 1 | $49.00 | - | 5 | 2 | 4.5 | 0.4% | **** | 2026-01-29 | 4个月 | FBA | -
-- `B0DY2SW4CH`: 12,072 | 4,962 | 29% | **** | **** | **** | **** | 3 | $36.95 | - | 111 | 3 | 4.8 | 0.46% | **** | 2025-03-14 | 1年 3个月 | FBA | -
-- `B0DNZX4MZF`: 13,386 | 0 | 0% | **** | **** | **** | **** | 2 | $36.99 | - | 125 | - | 4.5 | - | **** | 2024-12-17 | 1年 5个月 | FBA | -
-- `B0FVLV78Y3`: 11,661 | 1,403 | 11% | **** | **** | **** | **** | 1 | $39.99 | - | 9 | 3 | 4.2 | 0.5% | **** | 2025-10-29 | 7个月 | FBA | -
 
 ---
 
@@ -629,12 +488,12 @@
 | 2 | [B0GD7YRTDM](https://www.amazon.com/dp/B0GD7YRTDM) |  | APONUO Solar Pool Lights | 893 / 162.85% | $41,069 | $45.99 | $6.70 (15%) | 40 / 12 | 4.1 | $5.72 / 73% | 3 | 37 | 1 | 1.26 pounds | 2026-03-26 2个月 |
 | 3 | [B0GJCRX242](https://www.amazon.com/dp/B0GJCRX242) |  | Bsgifts Solar Floating Pool Lights | 854 / 137.86% | $28,173 | $32.99 | $5.02 (15%) | 58 / 25 | 4.0 | $5.87 / 67% | 1 | 40 | 1 | 1.32 pounds | 2026-03-19 2个月 |
 | 4 | [B0DZD1RC33](https://www.amazon.com/dp/B0DZD1RC33) |  | Solar Floating Pool Lights | 518 / 88.36% | $23,818 | $45.98 | $6.86 (15%) | 132 / 11 | 4.4 | $6.01 / 72% | 2 | 100 | 2 | 2.18 pounds | 2025-05-21 1年 |
-| 5 | [B0DSHT56KC](https://www.amazon.com/dp/B0DSHT56KC) |  | 500W R40 120V Pool Light Bulb for Inground Pool & Spa | 287 / 22.34% | $17,217 | $59.99 | $9.03 (15%) | 21 / - | 4.7 | $7.17 / 73% | 2 | 153 | 2 | 0.71 pounds | 2025-03-02 1年 3个月 |
-| 6 | [B0DXVSDMZF](https://www.amazon.com/dp/B0DXVSDMZF) |  | Bright Led Pool Light Bulb,120V 65W with 6000LM E27/E26 Base Pool… | 423 / 148.32% | $16,916 | $39.99 | $6.05 (15%) | 31 / 7 | 4.4 | $4.35 / 74% | 2 | 88 | 1 | 0.44 pounds | 2025-05-07 1年 1个月 |
-| 7 | [B0G6Z1QM2M](https://www.amazon.com/dp/B0G6Z1QM2M) |  | Floating Pool Lights Solar Powered | 446 / 50.41% | $13,376 | $29.99 | $4.59 (15%) | 55 / 18 | 4.6 | $5.61 / 66% | 2 | 102 | 1 | 1.37 pounds | 2026-02-07 4个月 |
+| 5 | [B0G6Z1QM2M](https://www.amazon.com/dp/B0G6Z1QM2M) |  | Floating Pool Lights Solar Powered | 448 / 50.41% | $17,405 | $38.85 | $5.66 (15%) | 56 / 19 | 4.6 | $5.61 / 71% | 2 | 98 | 1 | 1.37 pounds | 2026-02-07 4个月 |
+| 6 | [B0DSHT56KC](https://www.amazon.com/dp/B0DSHT56KC) |  | 500W R40 120V Pool Light Bulb for Inground Pool & Spa | 287 / 22.34% | $17,217 | $59.99 | $9.03 (15%) | 21 / - | 4.7 | $7.17 / 73% | 2 | 153 | 2 | 0.71 pounds | 2025-03-02 1年 3个月 |
+| 7 | [B0DXVSDMZF](https://www.amazon.com/dp/B0DXVSDMZF) |  | Bright Led Pool Light Bulb,120V 65W with 6000LM E27/E26 Base Pool… | 423 / 148.32% | $16,916 | $39.99 | $6.05 (15%) | 31 / 7 | 4.4 | $4.35 / 74% | 2 | 88 | 1 | 0.44 pounds | 2025-05-07 1年 1个月 |
 | 8 | [B0GPW9YT5H](https://www.amazon.com/dp/B0GPW9YT5H) |  | SIEDiNLAR Solar Floating Pool Lights with Remote | 358 / 145.11% | $12,884 | $35.99 | $5.29 (15%) | 36 / 11 | 4.0 | $5.87 / 69% | 2 | 135 | 1 | 1.57 pounds | 2026-04-05 2个月 |
-| 9 | [B0DWMMYNDB](https://www.amazon.com/dp/B0DWMMYNDB) |  | 55ft Solar Pool Lights for Above Ground Pools | 538 / 183.92% | $11,293 | $20.99 | $3.10 (15%) | 117 / 9 | 4.0 | $4.46 / 64% | 4 | 77 | 1 | 0.73 pounds | 2025-02-28 1年 3个月 |
-| 10 | [B0GRTPX9DC](https://www.amazon.com/dp/B0GRTPX9DC) |  | Floating Pool Lights | 359 / 146.4% | $10,759 | $29.97 | $4.43 (15%) | 30 / 12 | 4.9 | $5.76 / 66% | 2 | 94 | 1 | 1.53 pounds | 2026-04-21 1个月 |
+| 9 | [B0GRTPX9DC](https://www.amazon.com/dp/B0GRTPX9DC) |  | Floating Pool Lights | 379 / 146.4% | $11,359 | $29.97 | $4.43 (15%) | 30 / - | 4.9 | $5.76 / 66% | 2 | 99 | 1 | 1.53 pounds | 2026-04-21 1个月 |
+| 10 | [B0DWMMYNDB](https://www.amazon.com/dp/B0DWMMYNDB) |  | 55ft Solar Pool Lights for Above Ground Pools | 538 / 183.92% | $11,293 | $20.99 | $3.10 (15%) | 117 / 9 | 4.0 | $4.46 / 64% | 4 | 77 | 1 | 0.73 pounds | 2025-02-28 1年 3个月 |
 | 11 | [B0G6SLH595](https://www.amazon.com/dp/B0G6SLH595) |  | Floating Pool Lights w/Remote | **** / **** | **** | $49.99 | - | 39 / 1 | 4.7 | **** /  | 3 | 73 | 1 | 2.12 pounds | 2026-03-14 3个月 |
 | 12 | [B0DSD4NWXN](https://www.amazon.com/dp/B0DSD4NWXN) |  | Askyli Floating Pool Lights Solar with Remote | **** / **** | **** | $39.99 | - | 138 / 4 | 4.1 | **** /  | 2 | 97 | 1 | 2.62 pounds | 2025-04-27 1年 1个月 |
 | 13 | [B0FWJ6C4CY](https://www.amazon.com/dp/B0FWJ6C4CY) |  | Askyli Pool Lights for Above Ground Pools | **** / **** | **** | $25.16 | - | 36 / 9 | 4.2 | **** /  | 3 | 108 | 1 | 1.43 pounds | 2026-03-07 3个月 |
@@ -656,17 +515,17 @@
 
 **4. [B0DZD1RC33](https://www.amazon.com/dp/B0DZD1RC33)** Solar Floating Pool Lights, 14 Inch Flame Solar Pool Light Balls, Floating Glow Globe IP68 Waterproof, Inflatable Solar Lights up Balls for Swimming Pool Pond Outdoor Decor -4PCS
 
-**5. [B0DSHT56KC](https://www.amazon.com/dp/B0DSHT56KC)** 500W R40 120V Pool Light Bulb for Inground Pool & Spa – 3000K Warm White, E26 Base, High-Power, Compatible with Pentair & Hayward Fixtures, 3,000-Hour Lifespan (2 Pack)
+**5. [B0G6Z1QM2M](https://www.amazon.com/dp/B0G6Z1QM2M)** Floating Pool Lights Solar Powered, 16'' Inflatable Waterproof Clownfish Solar Pool Lights that Float, Auto On/Off LED Floating Lights for Pool Garden Backyard Outdoor Decoration - (2 Piece)
 
-**6. [B0DXVSDMZF](https://www.amazon.com/dp/B0DXVSDMZF)** Bright Led Pool Light Bulb,120V 65W with 6000LM E27/E26 Base Pool Light Bulb Daylight White 6000K Swimming Pool Replacement for Most Pentair Hayward Light Fixtures (120V 65W)
+**6. [B0DSHT56KC](https://www.amazon.com/dp/B0DSHT56KC)** 500W R40 120V Pool Light Bulb for Inground Pool & Spa – 3000K Warm White, E26 Base, High-Power, Compatible with Pentair & Hayward Fixtures, 3,000-Hour Lifespan (2 Pack)
 
-**7. [B0G6Z1QM2M](https://www.amazon.com/dp/B0G6Z1QM2M)** Floating Pool Lights Solar Powered, 16'' Inflatable Waterproof Clownfish Solar Pool Lights that Float, Auto On/Off LED Floating Lights for Pool Garden Backyard Outdoor Decoration - (2 Piece)
+**7. [B0DXVSDMZF](https://www.amazon.com/dp/B0DXVSDMZF)** Bright Led Pool Light Bulb,120V 65W with 6000LM E27/E26 Base Pool Light Bulb Daylight White 6000K Swimming Pool Replacement for Most Pentair Hayward Light Fixtures (120V 65W)
 
 **8. [B0GPW9YT5H](https://www.amazon.com/dp/B0GPW9YT5H)** SIEDiNLAR Solar Floating Pool Lights with Remote, 12 Modes RGB Color Changing Solar Powered Pool Lights, Waterproof Floating Lights for Swimming Pool, Pond, Fountain, Backyard & Party Decor (4 Pack)
 
-**9. [B0DWMMYNDB](https://www.amazon.com/dp/B0DWMMYNDB)** 55ft Solar Pool Lights for Above Ground Pools, 150 LEDs Remote IP65 Waterproof Rope Lights, 8 Color Modes, Swimming Frame Pool Decor Accessories for Outdoor Outside Trampoline Camping
+**9. [B0GRTPX9DC](https://www.amazon.com/dp/B0GRTPX9DC)** Floating Pool Lights, 15" Inflatable Solar Powered Pool Lights That Float, Color Changing LED Glow Balls, IP68 Waterproof Solar Floating Light Up Balls for Pool,Pond, Outdoor Party Decor - 2PCS
 
-**10. [B0GRTPX9DC](https://www.amazon.com/dp/B0GRTPX9DC)** Floating Pool Lights, 15" Inflatable Solar Powered Pool Lights That Float, Color Changing LED Glow Balls, IP68 Waterproof Solar Floating Light Up Balls for Pool,Pond, Outdoor Party Decor - 2PCS
+**10. [B0DWMMYNDB](https://www.amazon.com/dp/B0DWMMYNDB)** 55ft Solar Pool Lights for Above Ground Pools, 150 LEDs Remote IP65 Waterproof Rope Lights, 8 Color Modes, Swimming Frame Pool Decor Accessories for Outdoor Outside Trampoline Camping
 
 **11. [B0G6SLH595](https://www.amazon.com/dp/B0G6SLH595)** Floating Pool Lights w/Remote, 6.5" Top to Bottom Dynamic Color Changing Solar Pool Lights that Float, IP68 Waterproof Solar Floating Light for Inground Above Ground Pools Garden Decor(2)
 
@@ -702,12 +561,12 @@
 - `B0GD7YRTDM`: 7,610 | 1,178 | 13% | 893 | 162.85% | $41,069 | 500+ | $22K+ | 3 | $45.99 | - | 40 | 12 | 4.1 | 1.34% | $5.72 | 73% | 2026-03-26 | 2个月 | FBA | -
 - `B0GJCRX242`: 7,715 | 9,574 | 55% | 854 | 137.86% | $28,173 | 700+ | $25K+ | 1 | $32.99 | - | 58 | 25 | 4.0 | 2.93% | $5.87 | 67% | 2026-03-19 | 2个月 | FBA | -
 - `B0DZD1RC33`: 22,594 | 941 | 4% | 518 | 88.36% | $23,818 | 400+ | $18K+ | 2 | $45.98 | - | 132 | 11 | 4.4 | 2.12% | $6.01 | 72% | 2025-05-21 | 1年 | FBA | -
+- `B0G6Z1QM2M`: 20,833 | 845 | 4% | 448 | 50.41% | $17,405 | 300+ | $9K+ | 2 | $38.85 | - | 56 | 19 | 4.6 | 4.24% | $5.61 | 71% | 2026-02-07 | 4个月 | FBA | -
 - `B0DSHT56KC`: 33,045 | 7,232 | 18% | 287 | 22.34% | $17,217 | 200+ | $11K+ | 2 | $59.99 | - | 21 | - | 4.7 | - | $7.17 | 73% | 2025-03-02 | 1年 3个月 | FBA | -
 - `B0DXVSDMZF`: 21,990 | 2,628 | 11% | 423 | 148.32% | $16,916 | 200+ | $7K+ | 2 | $39.99 | - | 31 | 7 | 4.4 | 1.65% | $4.35 | 74% | 2025-05-07 | 1年 1个月 | FBA | -
-- `B0G6Z1QM2M`: 22,821 | 3,198 | 12% | 446 | 50.41% | $13,376 | 300+ | $9K+ | 2 | $29.99 | - | 55 | 18 | 4.6 | 4.04% | $5.61 | 66% | 2026-02-07 | 4个月 | FBA | -
 - `B0GPW9YT5H`: 28,375 | 1,218 | 4% | 358 | 145.11% | $12,884 | 200+ | $7K+ | 2 | $35.99 | - | 36 | 11 | 4.0 | 3.07% | $5.87 | 69% | 2026-04-05 | 2个月 | FBA | -
+- `B0GRTPX9DC`: 20,656 | 14,256 | 41% | 379 | 146.4% | $11,359 | 200+ | $5K+ | 2 | $29.97 | - | 30 | - | 4.9 | - | $5.76 | 66% | 2026-04-21 | 1个月 | FBA | -
 - `B0DWMMYNDB`: 18,386 | 2,081 | 10% | 538 | 183.92% | $11,293 | 200+ | $3K+ | 4 | $20.99 | - | 117 | 9 | 4.0 | 1.67% | $4.46 | 64% | 2025-02-28 | 1年 3个月 | FBA | -
-- `B0GRTPX9DC`: 22,372 | 10,423 | 30% | 359 | 146.4% | $10,759 | 200+ | $6K+ | 2 | $29.97 | - | 30 | 12 | 4.9 | 3.34% | $5.76 | 66% | 2026-04-21 | 1个月 | FBA | -
 - `B0G6SLH595`: 15,292 | 31,916 | 68% | **** | **** | **** | **** | 3 | $49.99 | - | 39 | 1 | 4.7 | 0.41% | **** | 2026-03-14 | 3个月 | FBA | -
 - `B0DSD4NWXN`: 22,465 | 12,329 | 35% | **** | **** | **** | **** | 2 | $39.99 | - | 138 | 4 | 4.1 | 1.31% | **** | 2025-04-27 | 1年 1个月 | FBA | -
 - `B0FWJ6C4CY`: 23,928 | 10,462 | 30% | **** | **** | **** | **** | 3 | $25.16 | - | 36 | 9 | 4.2 | 2.81% | **** | 2026-03-07 | 3个月 | FBA | -
@@ -721,149 +580,27 @@
 
 ---
 
-# Nozzles 合格产品扫描 (2026-06-14)
+# Nicotine Patches 合格产品扫描 (2026-06-14)
 
-> **所在品类路径**：`Patio, Lawn & Garden › Outdoor Power Tools › Replacement Parts & Accessories › Pressure Washer Parts & Accessories › Nozzles`
-> 共抓取 **0** 个通过全部筛选条件的候选商品。
-
-> **抓取完整性**：页面可见 **0** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
-
-> **市场评级**：🟢 Green (Recommended)　均价 $26.24　均Reviews 490（中等）　重量 0.44lbs（轻）　退货率 2.63%（低）　品牌集中度 53.8%（中等）　中国卖家 74.0%
-
-## 一、候选商品列表
-
-| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
-|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
-
-## 二、完整商品标题
-
-## 三、下一步建议
-
-1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，在卖家精灵「产品详情」页核查供应链来源、头程成本、竞品广告投放强度。
-
-2. **关键词验证**：统一流水线已对每个品类的头部商品批量反查拓展流量词，结果见同目录下 `category_keywords_*.md`，核对搜索量与购买率后再决定是否建 Listing。
-
-3. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。
-
-## 四、原始数值
-
----
-
-# Cardboard Cutouts 合格产品扫描 (2026-06-14)
-
-> **所在品类路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Cardboard Cutouts`
-> 共抓取 **5** 个通过全部筛选条件的候选商品。
-
-> **抓取完整性**：页面可见 **5** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
-
-> **市场评级**：🟢 Green (Recommended)　均价 $24.38　均Reviews 295（低竞争）　重量 1.31lbs（轻）　退货率 4.59%（低）　品牌集中度 61.0%（中等）　中国卖家 62.0%
-
-## 一、候选商品列表
-
-| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
-|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
-| 1 | [B09PKHLH7W](https://www.amazon.com/dp/B09PKHLH7W) |  | Cardboard People Princess Collage Life Size Cardboard Cutout Stan… | 449 / 7.42% | $21,534 | $47.96 | $7.22 (15%) | 87 / - | 4.5 | $16.76 / 50% | 1 | 63 | 2 | 2.45 pounds | 2022-01-11 4年 5个月 |
-| 2 | [B0GHSNNZPZ](https://www.amazon.com/dp/B0GHSNNZPZ) |  | 131PCS Classic Winnie Baby Shower Birthday Decorations Large Winn… | 428 / 37.36% | $11,552 | $26.99 | $4.13 (15%) | 13 / 2 | 4.6 | $6.13 / 62% | 1 | 19 | 1 | 1.92 pounds | 2026-03-08 3个月 |
-| 3 | [B0G7YT3F1H](https://www.amazon.com/dp/B0G7YT3F1H) |  | Giraffe Cardboard Cutout Life-Size Animal Cutout Realistic Safari… | 290 / 40.56% | $9,567 | $32.99 | $5.09 (15%) | 2 / - | 5.0 | $6.13 / 66% | 1 | 528 | 1 | 1.37 pounds | 2025-12-20 5个月 |
-| 4 | [B0GJL3W2D6](https://www.amazon.com/dp/B0GJL3W2D6) |  | 131PCS Pink Winnie Baby Shower Birthday Decorations for Girl Larg… | 281 / 159.57% | $7,584 | $26.99 | $4.17 (15%) | 11 / 2 | 4.4 | $6.90 / 59% | 1 | 72 | 1 | 1.74 pounds | 2026-03-25 2个月 |
-| 5 | [B0FWC8ZZ48](https://www.amazon.com/dp/B0FWC8ZZ48) |  | 4 Ft Happy Birthday Jesus Cardboard Cutout Stand Up Life Size Lar… | 226 / 103.49% | $6,778 | $29.99 | $4.48 (15%) | 14 / 2 | 4.8 | $6.02 / 65% | 4 | 80 | 1 | 1.41 pounds | 2025-10-16 7个月 |
-
-## 二、完整商品标题
-
-**1. [B09PKHLH7W](https://www.amazon.com/dp/B09PKHLH7W)** Cardboard People Princess Collage Life Size Cardboard Cutout Standup - Disney
-
-**2. [B0GHSNNZPZ](https://www.amazon.com/dp/B0GHSNNZPZ)** 131PCS Classic Winnie Baby Shower Birthday Decorations Large Winnie Coroplast Cutout with Stand, Neutral Balloons Arch& Bee Stickers for Gender Reveal, First Birthday, Photo Props & Pooh Party
-
-**3. [B0G7YT3F1H](https://www.amazon.com/dp/B0G7YT3F1H)** Giraffe Cardboard Cutout Life-Size Animal Cutout Realistic Safari Jungle Photo Booth Prop Decor for Parties, Zoo-Themed Events, Classrooms, Birthday Decoration Supplies 28.39 x 59.06 Inches
-
-**4. [B0GJL3W2D6](https://www.amazon.com/dp/B0GJL3W2D6)** 131PCS Pink Winnie Baby Shower Birthday Decorations for Girl Large Winnie Cutouts Stand Up, Pooh Balloons Arch & Bee Stickers for Gender Reveal, First Birthday, Photo Props & Newborn Party
-
-**5. [B0FWC8ZZ48](https://www.amazon.com/dp/B0FWC8ZZ48)** 4 Ft Happy Birthday Jesus Cardboard Cutout Stand Up Life Size Large Religious Christ Party Decoration Christian Photo Props Backdrop for Jesus Party Easter VBS Church Baptism Sunday School
-
-## 三、下一步建议
-
-1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，在卖家精灵「产品详情」页核查供应链来源、头程成本、竞品广告投放强度。
-
-2. **关键词验证**：统一流水线已对每个品类的头部商品批量反查拓展流量词，结果见同目录下 `category_keywords_*.md`，核对搜索量与购买率后再决定是否建 Listing。
-
-3. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。
-
-## 四、原始数值
-
-- `B09PKHLH7W`: 105,040 | 8,436 | 7% | 449 | 7.42% | $21,534 | 200+ | $9K+ | 1 | $47.96 | - | 87 | - | 4.5 | - | $16.76 | 50% | 2022-01-11 | 4年 5个月 | FBA | -
-- `B0GHSNNZPZ`: 59,891 | 16,592 | 22% | 428 | 37.36% | $11,552 | 400+ | $10K+ | 1 | $26.99 | - | 13 | 2 | 4.6 | 0.47% | $6.13 | 62% | 2026-03-08 | 3个月 | FBA | -
-- `B0G7YT3F1H`: 537,981 | 318,998 | 28% | 290 | 40.56% | $9,567 | - | - | 1 | $32.99 | - | 2 | - | 5.0 | - | $6.13 | 66% | 2025-12-20 | 5个月 | FBA | -
-- `B0GJL3W2D6`: 118,592 | 28,152 | 19% | 281 | 159.57% | $7,584 | 200+ | $5K+ | 1 | $26.99 | - | 11 | 2 | 4.4 | 0.71% | $6.90 | 59% | 2026-03-25 | 2个月 | FBA | -
-- `B0FWC8ZZ48`: 128,110 | 13,251 | 9% | 226 | 103.49% | $6,778 | 100+ | $3K+ | 4 | $29.99 | - | 14 | 2 | 4.8 | 0.88% | $6.02 | 65% | 2025-10-16 | 7个月 | FBA | -
-
----
-
-# Electrical System Tools 合格产品扫描 (2026-06-14)
-
-> **所在品类路径**：`Automotive › Tools & Equipment › Electrical System Tools`
-> 共抓取 **4** 个通过全部筛选条件的候选商品。
-
-> **抓取完整性**：页面可见 **4** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
-
-> **市场评级**：🟢 Green (Recommended)　均价 $29.48　均Reviews 437（中等）　重量 0.99lbs（轻）　退货率 2.38%（低）　品牌集中度 43.9%（中等）　中国卖家 82.0%
-
-## 一、候选商品列表
-
-| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
-|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
-| 1 | [B0C4PTWP8G](https://www.amazon.com/dp/B0C4PTWP8G) |  | JRready ST5262 2Pcs Molex Micro Fit Extractors Microfit Terminal… | 184 / 9.58% | $6,622 | $35.99 | $5.43 (15%) | 80 / 2 | 4.4 | $3.57 / 75% | 3 | 117 | 1 | 0.31 pounds | 2023-05-09 3年 1个月 |
-| 2 | [B0CR6F2HR1](https://www.amazon.com/dp/B0CR6F2HR1) |  | JRready ST5291 Deutsch Pin Removal Tool for Deutsch Size 12 16 20… | 204 / 11.6% | $6,118 | $29.99 | $4.42 (15%) | 91 / 1 | 4.2 | $4.28 / 71% | 1 | 69 | 1 | 0.57 pounds | 2024-01-08 2年 5个月 |
-| 3 | [B0GHDJM616](https://www.amazon.com/dp/B0GHDJM616) |  | 9 PCS Electrical Disconnect Pliers for Cars | 221 / 29.94% | $5,965 | $26.99 | $4.05 (15%) | 36 / 6 | 4.8 | $6.48 / 61% | 2 | 72 | 1 | 2.65 pounds | 2026-02-19 3个月 |
-| 4 | [B0FDVDL457](https://www.amazon.com/dp/B0FDVDL457) |  | Noid Light Test Kit | 232 / 42% | $5,102 | $21.99 | $3.36 (15%) | 64 / 2 | 4.4 | $5.22 / 61% | 1 | 63 | 1 | 1.12 pounds | 2025-10-17 7个月 |
-
-## 二、完整商品标题
-
-**1. [B0C4PTWP8G](https://www.amazon.com/dp/B0C4PTWP8G)** JRready ST5262 2Pcs Molex Micro Fit Extractors Microfit Terminal Release Tool Kit for Molex MX3.0 Male/Female Terminals Microfit 3.0 Extraction Tool for Micro-Fit Terminals Pin Removal Tool Kit
-
-**2. [B0CR6F2HR1](https://www.amazon.com/dp/B0CR6F2HR1)** JRready ST5291 Deutsch Pin Removal Tool for Deutsch Size 12 16 20 Solid Contacts Wire Gauge 12-22 AWG,Terminal Release Tool Kit for Deutsch DT, DTM, DTP, DTHD, and HD Series Connectors
-
-**3. [B0GHDJM616](https://www.amazon.com/dp/B0GHDJM616)** 9 PCS Electrical Disconnect Pliers for Cars, Electrical Connector Removal Tool and Connector Removal Tools, Relay Puller & Hose Removal Pliers,Panel Clip Remover & Filter Caliper
-
-**4. [B0FDVDL457](https://www.amazon.com/dp/B0FDVDL457)** Noid Light Test Kit, 11-Piece Fuel Injector Noid Light Test Kit with 8 Noids & IAC Tester, Fits Multiple Car Injection System Types
-
-## 三、下一步建议
-
-1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，在卖家精灵「产品详情」页核查供应链来源、头程成本、竞品广告投放强度。
-
-2. **关键词验证**：统一流水线已对每个品类的头部商品批量反查拓展流量词，结果见同目录下 `category_keywords_*.md`，核对搜索量与购买率后再决定是否建 Listing。
-
-3. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。
-
-## 四、原始数值
-
-- `B0C4PTWP8G`: 38,438 | 13,642 | 26% | 184 | 9.58% | $6,622 | 100+ | $3K+ | 3 | $35.99 | - | 80 | 2 | 4.4 | 1.09% | $3.57 | 75% | 2023-05-09 | 3年 1个月 | FBA | -
-- `B0CR6F2HR1`: 28,712 | 21,985 | 43% | 204 | 11.6% | $6,118 | 100+ | $2K+ | 1 | $29.99 | - | 91 | 1 | 4.2 | 0.49% | $4.28 | 71% | 2024-01-08 | 2年 5个月 | FBA | -
-- `B0GHDJM616`: 26,530 | 28,394 | 52% | 221 | 29.94% | $5,965 | 100+ | $2K+ | 2 | $26.99 | - | 36 | 6 | 4.8 | 2.71% | $6.48 | 61% | 2026-02-19 | 3个月 | FBA | -
-- `B0FDVDL457`: 23,854 | 7,645 | 24% | 232 | 42% | $5,102 | 100+ | $2K+ | 1 | $21.99 | - | 64 | 2 | 4.4 | 0.86% | $5.22 | 61% | 2025-10-17 | 7个月 | FBA | -
-
----
-
-# Brake System Bleeding Tools 合格产品扫描 (2026-06-14)
-
-> **所在品类路径**：`Automotive › Tools & Equipment › Brake Tools › Brake System Bleeding Tools`
+> **所在品类路径**：`Health & Household › Health Care › Smoking Cessation › Nicotine Patches`
 > 共抓取 **2** 个通过全部筛选条件的候选商品。
 
 > **抓取完整性**：页面可见 **2** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
 
-> **市场评级**：🟢 Green (Recommended)　均价 $27.00　均Reviews 465（中等）　重量 1.55lbs（偏重）　退货率 4.69%（低）　品牌集中度 50.2%（中等）　中国卖家 83.0%
+> **市场评级**：🟢 Green (Recommended)　均价 $22.22　均Reviews 468（中等）　重量 0.13lbs（轻）　退货率 1.27%（低）　品牌集中度 73.4%（垄断）　中国卖家 49.0%
 
 ## 一、候选商品列表
 
 | # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
 |---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
-| 1 | [B0GGQH744M](https://www.amazon.com/dp/B0GGQH744M) |  | Brake Bleeder Kit - One-Way Check Valve | 806 / 20.66% | $18,449 | $22.89 | $3.43 (15%) | 52 / 17 | 4.7 | $4.35 / 66% | 1 | 18 | 1 | 0.29 pounds | 2026-01-14 5个月 |
-| 2 | [B0F22SXPDT](https://www.amazon.com/dp/B0F22SXPDT) |  | BleedZone SRAM DB8 Brake Bleed Kit with Maxima Mineral Oil Includ… | 103 / 56.25% | $3,316 | $32.19 | $4.99 (15%) | 14 / 3 | 4.1 | $4.35 / 71% | 2 | 216 | 1 | 0.71 pounds | 2025-04-24 1年 1个月 |
+| 1 | [B0G839C2C2](https://www.amazon.com/dp/B0G839C2C2) |  | 120 Count | 476 / 8.75% | $10,943 | $22.99 | $3.46 (15%) | 30 / 11 | 4.7 | $3.44 / 70% | 1 | 32 | 1 | 0.09 pounds | 2026-01-07 5个月 |
+| 2 | [B0DKP86SX6](https://www.amazon.com/dp/B0DKP86SX6) |  | Recovery Patches 60 Pack | 278 / 14.29% | $6,113 | $21.99 | $3.28 (15%) | 35 / - | 4.2 | $3.54 / 69% | 1 | 72 | 1 | 0.19 pounds | 2024-11-17 1年 6个月 |
 
 ## 二、完整商品标题
 
-**1. [B0GGQH744M](https://www.amazon.com/dp/B0GGQH744M)** Brake Bleeder Kit - One-Way Check Valve, Magnet Mount, 16oz Catch Bottle, 16” Hose
+**1. [B0G839C2C2](https://www.amazon.com/dp/B0G839C2C2)** 120 Count - Nicotine Patches 3mg (Applicable to Step 1/Step 2/Step 3), Transdermal Stop Smoking Aid for Craving Relief, Flexible Dosing with Fast-Acting Nicotine Replacement Therapy
 
-**2. [B0F22SXPDT](https://www.amazon.com/dp/B0F22SXPDT)** BleedZone SRAM DB8 Brake Bleed Kit with Maxima Mineral Oil Included, 2x Pro PC Syringe & M4 Fittings, Hydraulic Bike Brake Bleeding Kit, MTB & Road Bicycle Service Tool for SRAM Mineral Oil Systems
+**2. [B0DKP86SX6](https://www.amazon.com/dp/B0DKP86SX6)** Recovery Patches 60 Pack - Wake Up Refreshed & Energized with Our 100% Natural Ingredients Recovery Stickers - Skin-Friendly & Waterproof - Apply Before Drinking - Enhanced Morning Formula
 
 ## 三、下一步建议
 
@@ -875,224 +612,41 @@
 
 ## 四、原始数值
 
-- `B0GGQH744M`: 8,583 | 145 | 2% | 806 | 20.66% | $18,449 | 700+ | $16K+ | 1 | $22.89 | - | 52 | 17 | 4.7 | 2.11% | $4.35 | 66% | 2026-01-14 | 5个月 | FBA | -
-- `B0F22SXPDT`: 92,590 | 57,898 | 38% | 103 | 56.25% | $3,316 | 50+ | $1K+ | 2 | $32.19 | - | 14 | 3 | 4.1 | 2.91% | $4.35 | 71% | 2025-04-24 | 1年 1个月 | FBA | -
+- `B0G839C2C2`: 42,499 | 5,570 | 12% | 476 | 8.75% | $10,943 | 400+ | $9K+ | 1 | $22.99 | - | 30 | 11 | 4.7 | 2.31% | $3.44 | 70% | 2026-01-07 | 5个月 | FBA | -
+- `B0DKP86SX6`: 71,157 | 0 | 0% | 278 | 14.29% | $6,113 | 100+ | $2K+ | 1 | $21.99 | - | 35 | - | 4.2 | - | $3.54 | 69% | 2024-11-17 | 1年 6个月 | FBA | -
 
 ---
 
-# Compressed Air Dusters 合格产品扫描 (2026-06-14)
+# Water Balloons 合格产品扫描 (2026-06-14)
 
-> **所在品类路径**：`Electronics › Computers & Accessories › Computer Accessories & Peripherals › Cleaning & Repair › Compressed Air Dusters`
-> 共抓取 **7** 个通过全部筛选条件的候选商品。
-
-> **抓取完整性**：页面可见 **7** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
-
-> **市场评级**：🟡 Yellow (Cautious)　均价 $35.92　均Reviews 349（中等）　重量 0.86lbs（轻）　退货率 3.16%（低）　品牌集中度 60.0%（中等）　中国卖家 76.0%
-
-## 一、候选商品列表
-
-| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
-|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
-| 1 | [B0FPRM62Z2](https://www.amazon.com/dp/B0FPRM62Z2) |  | Compressed Air Duster-230000RPM Super Power Electric Air Duster | 692 / 74.71% | $20,753 | $29.99 | $2.33 (8%) | 49 / 27 | 4.3 | $4.87 / 76% | 1 | 62 | 1 | 0.99 pounds | 2025-10-11 8个月 |
-| 2 | [B0FFGTDMMX](https://www.amazon.com/dp/B0FFGTDMMX) |  | fourq Compressed Air Duster,Mini Vacuum Cleaner 2-in-1,4000 mAh,1… | 449 / 132.63% | $12,792 | $28.49 | $2.41 (8%) | 26 / 11 | 4.2 | $6.42 / 69% | 1 | 61 | 1 | 1.57 pounds | 2025-06-26 11个月 |
-| 3 | [B0FSLLJ8SZ](https://www.amazon.com/dp/B0FSLLJ8SZ) |  | Mini Ultra-Slim Electric Compressed Air Duster 150,000RPM Super P… | 346 / 67.33% | $8,993 | $25.99 | $2.04 (8%) | 55 / - | 4.3 | $4.46 / 75% | 2 | 73 | 2 | 0.64 pounds | 2025-10-31 7个月 |
-| 4 | [B0GRH6MY39](https://www.amazon.com/dp/B0GRH6MY39) |  | Electric Air Duster 180000RPM | 190 / 50% | $7,598 | $39.99 | $3.08 (8%) | 48 / 3 | 4.5 | $5.72 / 78% | 1 | 188 | 1 | 1.34 pounds | 2026-03-09 3个月 |
-| 5 | [B0GGR1T98P](https://www.amazon.com/dp/B0GGR1T98P) |  | Compressed Air Duster-150000RPM Super Power Cordless Air Duster | 239 / 116.81% | $5,734 | $23.99 | $1.85 (8%) | 40 / 17 | 4.3 | $4.87 / 72% | 1 | 127 | 1 | 0.93 pounds | 2026-03-14 3个月 |
-| 6 | [B0FSKJNC19](https://www.amazon.com/dp/B0FSKJNC19) |  | Compressed Air Duster - Electric Air Duster Super Power 130000RPM | 161 / 16.38% | $3,701 | $22.99 | $1.80 (8%) | 127 / 70 | 4.0 | $4.87 / 71% | 2 | 80 | 1 | 0.77 pounds | 2025-11-05 7个月 |
-| 7 | [B0DB8J4T52](https://www.amazon.com/dp/B0DB8J4T52) |  | Compressed Air Duster,180000RPM Electric Duster Air Blower,Cordle… | 106 / 6.19% | $2,640 | $24.91 | $1.89 (8%) | 150 / 4 | 4.3 | $5.33 / 71% | 1 | 241 | 1 | 1.1 pounds | 2024-09-27 1年 8个月 |
-
-## 二、完整商品标题
-
-**1. [B0FPRM62Z2](https://www.amazon.com/dp/B0FPRM62Z2)** Compressed Air Duster-230000RPM Super Power Electric Air Duster, 4-Gear Adjustable Mini Blower with Type-C Fast Charging, Dust Blower for Computer, Keyboard, House, Outdoor and Car
-
-**2. [B0FFGTDMMX](https://www.amazon.com/dp/B0FFGTDMMX)** fourq Compressed Air Duster,Mini Vacuum Cleaner 2-in-1,4000 mAh,130,000 RPM Brushless Motor,8000Pa，120MPH/1.1LB Thrust Car Dryer Air Blower for Car Cleaning,Computer Cleaning
-
-**3. [B0FSLLJ8SZ](https://www.amazon.com/dp/B0FSLLJ8SZ)** Mini Ultra-Slim Electric Compressed Air Duster 150,000RPM Super Power, Rechargeable Cordless Air Duster, Powerful Airflow for Computer, Keyboard, Outdoor, House and Car
-
-**4. [B0GRH6MY39](https://www.amazon.com/dp/B0GRH6MY39)** Electric Air Duster 180000RPM, Powerful Cordless Compressed Air Duster with 3-Speed Mini Air Duster Blower, Rechargeable Dust Cleaner for Computer Keyboard, PC, Car, Outdoor & Home Cleaning
-
-**5. [B0GGR1T98P](https://www.amazon.com/dp/B0GGR1T98P)** Compressed Air Duster-150000RPM Super Power Cordless Air Duster, Rechargeable Brushless Motor Durable Power Blower with SOS LED Light,Adjustable Dust Blower for Computer, Pet,Outdoor, House and Car
-
-**6. [B0FSKJNC19](https://www.amazon.com/dp/B0FSKJNC19)** Compressed Air Duster - Electric Air Duster Super Power 130000RPM, 3-Gear Adjustable Mini Duster Blower with Fast Charging, Air Duster Rechargeable for Computer, Keyboard Cleaner, House, Outdoor, Car
-
-**7. [B0DB8J4T52](https://www.amazon.com/dp/B0DB8J4T52)** Compressed Air Duster,180000RPM Electric Duster Air Blower,Cordless Rechargeable Mini Dust Blower,3 Gear Jet Fan for PC Keyboard Computer Car Outdoor House Cleaning-Black
-
-## 三、下一步建议
-
-1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，在卖家精灵「产品详情」页核查供应链来源、头程成本、竞品广告投放强度。
-
-2. **关键词验证**：统一流水线已对每个品类的头部商品批量反查拓展流量词，结果见同目录下 `category_keywords_*.md`，核对搜索量与购买率后再决定是否建 Listing。
-
-3. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。
-
-## 四、原始数值
-
-- `B0FPRM62Z2`: 10,784 | 1,981 | 16% | 692 | 74.71% | $20,753 | 600+ | $18K+ | 1 | $29.99 | - | 49 | 27 | 4.3 | 3.9% | $4.87 | 76% | 2025-10-11 | 8个月 | FBA | -
-- `B0FFGTDMMX`: 11,601 | 8,576 | 43% | 449 | 132.63% | $12,792 | 400+ | $12K+ | 1 | $28.49 | - | 26 | 11 | 4.2 | 2.45% | $6.42 | 69% | 2025-06-26 | 11个月 | FBA | -
-- `B0FSLLJ8SZ`: 14,507 | 10,742 | 44% | 346 | 67.33% | $8,993 | 200+ | $6K+ | 2 | $25.99 | - | 55 | - | 4.3 | - | $4.46 | 75% | 2025-10-31 | 7个月 | FBA | -
-- `B0GRH6MY39`: 35,296 | 8,084 | 19% | 190 | 50% | $7,598 | 100+ | $3K+ | 1 | $39.99 | - | 48 | 3 | 4.5 | 1.58% | $5.72 | 78% | 2026-03-09 | 3个月 | FBA | -
-- `B0GGR1T98P`: 38,926 | 6,292 | 15% | 239 | 116.81% | $5,734 | 200+ | $5K+ | 1 | $23.99 | - | 40 | 17 | 4.3 | 7.11% | $4.87 | 72% | 2026-03-14 | 3个月 | FBA | -
-- `B0FSKJNC19`: 14,439 | 21,717 | 60% | 161 | 16.38% | $3,701 | 50+ | $1K+ | 2 | $22.99 | - | 127 | 70 | 4.0 | 43.48% | $4.87 | 71% | 2025-11-05 | 7个月 | FBA | -
-- `B0DB8J4T52`: 83,972 | 4,646 | 5% | 106 | 6.19% | $2,640 | - | - | 1 | $24.91 | - | 150 | 4 | 4.3 | 3.77% | $5.33 | 71% | 2024-09-27 | 1年 8个月 | FBA | -
-
----
-
-# Wind Spinners 合格产品扫描 (2026-06-14)
-
-> **所在品类路径**：`Patio, Lawn & Garden › Outdoor Décor › Garden Sculptures & Statues › Wind Sculptures & Spinners › Wind Spinners`
-> 共抓取 **4** 个通过全部筛选条件的候选商品。
-
-> **抓取完整性**：页面可见 **4** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
-
-> **市场评级**：🟡 Yellow (Cautious)　均价 $31.43　均Reviews 472（中等）　重量 2.36lbs（重）　退货率 3.09%（低）　品牌集中度 54.6%（中等）　中国卖家 85.0%
-
-## 一、候选商品列表
-
-| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
-|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
-| 1 | [B0GHQMHRWW](https://www.amazon.com/dp/B0GHQMHRWW) |  | Stainless Steel Bird Deterrents for Outside Patio | 382 / 13.6% | $9,546 | $24.99 | $3.71 (15%) | 24 / - | 4.6 | $3.54 / 71% | 1 | 78 | 1 | 0.2 pounds | 2026-03-25 2个月 |
-| 2 | [B0FQJVPZ4B](https://www.amazon.com/dp/B0FQJVPZ4B) |  | 10 Pack 8 Inch Sublimation Wind Spinner Blanks Aluminum Metal Win… | 253 / 22.68% | $6,575 | $25.99 | $3.86 (15%) | 67 / 10 | 4.6 | $6.02 / 62% | 2 | 104 | 1 | 1.79 pounds | 2025-10-22 7个月 |
-| 3 | [B0FJ5YYQZ4](https://www.amazon.com/dp/B0FJ5YYQZ4) |  | 360 Degree Double Blade Metal Wind Spinner for Patio | 154 / 11.64% | $5,542 | $35.99 | $5.34 (15%) | 77 / 8 | 4.0 | $6.18 / 68% | 5 | 92 | 1 | 2.29 pounds | 2025-09-03 9个月 |
-| 4 | [B0GGGPCFND](https://www.amazon.com/dp/B0GGGPCFND) |  | Hummingbird Mandala Wind Spinner for Mother's Day | 137 / 10.1% | $3,150 | $22.99 | $3.46 (15%) | 40 / 5 | 4.7 | $3.44 / 70% | 3 | 86 | 1 | 0.04 pounds | 2026-03-01 3个月 |
-
-## 二、完整商品标题
-
-**1. [B0GHQMHRWW](https://www.amazon.com/dp/B0GHQMHRWW)** Stainless Steel Bird Deterrents for Outside Patio, Reflective 3D Bird Scare Devices Wind Spinners Outdoor Decor, Woodpecker Deterrent Bird Reflectors to Keep Pigeon Crow Away House Yard Window, Round
-
-**2. [B0FQJVPZ4B](https://www.amazon.com/dp/B0FQJVPZ4B)** 10 Pack 8 Inch Sublimation Wind Spinner Blanks Aluminum Metal Wind Spinners Sublimation Blanks 8 Inch for Indoor and Outdoor Ornaments
-
-**3. [B0FJ5YYQZ4](https://www.amazon.com/dp/B0FJ5YYQZ4)** 360 Degree Double Blade Metal Wind Spinner for Patio, Lawn & Garden (Copper 53 * 12 inch)
-
-**4. [B0GGGPCFND](https://www.amazon.com/dp/B0GGGPCFND)** Hummingbird Mandala Wind Spinner for Mother's Day, IDEA SHOW 12In 3D Kinetic Metal Wind Spinners, Hummingbird Gift for Women, Mom, Garden Decor Outdoor/Indoor Decoration, Dynamic Art Hanging Sculpture
-
-## 三、下一步建议
-
-1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，在卖家精灵「产品详情」页核查供应链来源、头程成本、竞品广告投放强度。
-
-2. **关键词验证**：统一流水线已对每个品类的头部商品批量反查拓展流量词，结果见同目录下 `category_keywords_*.md`，核对搜索量与购买率后再决定是否建 Listing。
-
-3. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。
-
-## 四、原始数值
-
-- `B0GHQMHRWW`: 28,621 | 13,924 | 33% | 382 | 13.6% | $9,546 | 300+ | - | 1 | $24.99 | - | 24 | - | 4.6 | - | $3.54 | 71% | 2026-03-25 | 2个月 | FBA | -
-- `B0FQJVPZ4B`: 44,679 | 465 | 1% | 253 | 22.68% | $6,575 | 100+ | $2K+ | 2 | $25.99 | - | 67 | 10 | 4.6 | 3.95% | $6.02 | 62% | 2025-10-22 | 7个月 | FBA | -
-- `B0FJ5YYQZ4`: 42,525 | 11,084 | 21% | 154 | 11.64% | $5,542 | 50+ | $1K+ | 5 | $35.99 | - | 77 | 8 | 4.0 | 5.19% | $6.18 | 68% | 2025-09-03 | 9个月 | FBA | -
-- `B0GGGPCFND`: 40,308 | 29,898 | 43% | 137 | 10.1% | $3,150 | 50+ | $1K+ | 3 | $22.99 | - | 40 | 5 | 4.7 | 3.65% | $3.44 | 70% | 2026-03-01 | 3个月 | FBA | -
-
----
-
-# Decorative Trays 合格产品扫描 (2026-06-14)
-
-> **所在品类路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Decorative Accessories › Decorative Trays`
-> 共抓取 **13** 个通过全部筛选条件的候选商品。
-
-> **抓取完整性**：页面可见 **13** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
-
-> **市场评级**：🟡 Yellow (Cautious)　均价 $22.23　均Reviews 466（中等）　重量 1.45lbs（轻）　退货率 9.52%（高）　品牌集中度 42.1%（中等）　中国卖家 78.0%
-
-## 一、候选商品列表
-
-| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
-|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
-| 1 | [B0D8TJDXRY](https://www.amazon.com/dp/B0D8TJDXRY) |  | PEMAR Mother of Pearl Decorative Tray | 253 / 15.42% | $11,625 | $45.95 | $6.86 (15%) | 102 / 3 | 4.7 | $7.38 / 69% | 3 | 79 | 1 | 2.89 pounds | 2024-07-22 1年 10个月 |
-| 2 | [B0BMDLHHYT](https://www.amazon.com/dp/B0BMDLHHYT) |  | Round Clawfoot Dish | 247 / 16.81% | $10,621 | $43.00 | $6.66 (15%) | 109 / 3 | 4.3 | $4.09 / 75% | 2 | 76 | 1 | 0.46 pounds | 2022-11-16 3年 6个月 |
-| 3 | [B0FL2236YS](https://www.amazon.com/dp/B0FL2236YS) |  | PU Leather Valet Tray Organizer | 443 / 6.5% | $9,742 | $21.99 | $3.41 (15%) | 54 / 8 | 4.9 | $5.61 / 59% | 4 | 16 | 1 | 1.09 pounds | 2025-09-17 8个月 |
-| 4 | [B0F9JBZVJG](https://www.amazon.com/dp/B0F9JBZVJG) |  | Key Tray Key Bowl | 268 / 30.39% | $9,377 | $34.99 | $5.16 (15%) | 34 / 6 | 4.8 | $7.79 / 63% | 2 | 46 | 1 | 2.16 pounds | 2025-08-26 9个月 |
-| 5 | [B0B24B6TPX](https://www.amazon.com/dp/B0B24B6TPX) |  | Handwoven Multipurpose Rectangle Rattan Tray, 20” x 12” | 170 / 137.04% | $6,798 | $39.99 | $6.15 (15%) | 138 / 2 | 4.2 | $12.25 / 54% | 1 | 100 | 1 | 2.15 pounds | 2022-09-12 3年 9个月 |
-| 6 | [B0DYP3TRL2](https://www.amazon.com/dp/B0DYP3TRL2) |  | FoldTier 11 Pcs 4th of July Decoration Patriotic Tiered Tray Deco… | 267 / 7.81% | $6,672 | $24.99 | $3.65 (15%) | 64 / 3 | 4.3 | $4.35 / 68% | 3 | 160 | 1 | 0.68 pounds | 2025-03-01 1年 3个月 |
-| 7 | [B0DRYD63RT](https://www.amazon.com/dp/B0DRYD63RT) |  | 12 Inch Golden Round Platter Tray | 252 / 74.64% | $5,289 | $20.99 | $3.12 (15%) | 36 / 10 | 4.5 | $5.91 / 57% | 2 | 98 | 2 | 1.81 pounds | 2025-03-12 1年 3个月 |
-| 8 | [B0G3TS1YFT](https://www.amazon.com/dp/B0G3TS1YFT) |  | Vintage Brass Decorative Tray | 176 / 21.05% | $5,278 | $29.99 | $4.56 (15%) | 23 / 12 | 4.1 | $8.04 / 58% | 5 | 148 | 1 | 2.07 pounds | 2026-01-16 4个月 |
-| 9 | [B0D8MW6VS1](https://www.amazon.com/dp/B0D8MW6VS1) |  | Flamingo Zen Garden Kit for Desk | 123 / 189.47% | $5,162 | $41.97 | $6.70 (16%) | 30 / 1 | 4.7 | $6.31 / 69% | 1 | 228 | 1 | 2.31 pounds | 2024-07-03 1年 11个月 |
-| 10 | [B0CCVNCZWZ](https://www.amazon.com/dp/B0CCVNCZWZ) |  | INNObeta Son Gifts Valet Tray from Dad Mom | 180 / 90.38% | $3,935 | $21.86 | $3.39 (15%) | 69 / 2 | 4.7 | $3.61 / 68% | 1 | 51 | 1 | 0.49 pounds | 2023-09-25 2年 8个月 |
-| 11 | [B0FK99K3D4](https://www.amazon.com/dp/B0FK99K3D4) |  | Lounsweer Acacia Wood Decorative Tray for Home Decor | **** / **** | **** | $31.99 | - | 10 / 3 | 4.9 | **** /  | 2 | 263 | 1 | 2.67 pounds | 2025-08-03 10个月 |
-| 12 | [B0D5H5TRRD](https://www.amazon.com/dp/B0D5H5TRRD) |  | Round Burnt Wood Serving Tray with Beads | **** / **** | **** | $27.59 | - | 121 / 2 | 4.6 | **** /  | 4 | 293 | 2 | 1.5 pounds | 2024-08-06 1年 10个月 |
-| 13 | [B0F2HXLN8V](https://www.amazon.com/dp/B0F2HXLN8V) |  | Scalloped Acrylic Tray with Magnetic Mat | **** / **** | **** | $22.09 | - | 36 / - | 4.9 | **** /  | 4 | 223 | 1 | 1.32 pounds | 2025-04-01 1年 2个月 |
-
-## 二、完整商品标题
-
-**1. [B0D8TJDXRY](https://www.amazon.com/dp/B0D8TJDXRY)** PEMAR Mother of Pearl Decorative Tray, 13"" Round with Gold Metal Handles, Vanity/Perfume/Trinket Tray, Catchall for Dresser, Bathroom, Vanity Table (Teal Sunlight)
-
-**2. [B0BMDLHHYT](https://www.amazon.com/dp/B0BMDLHHYT)** Round Clawfoot Dish — by Alice Lane Home Collection — Gold — for Home Decor, Candles, Jewelry, Perfume, Cosmetics, and Coffee Table — Size Small
-
-**3. [B0FL2236YS](https://www.amazon.com/dp/B0FL2236YS)** PU Leather Valet Tray Organizer, Modern Nightstand Organizer Bedside Desktop Storage for Womens and Men, Decorative Perfume Trinket Catchall Vanity Tray for Key Watch Wallet (Beige)
-
-**4. [B0F9JBZVJG](https://www.amazon.com/dp/B0F9JBZVJG)** Key Tray Key Bowl, Apartment Decor, House Warming Gifts, Key Dish, Bookshelf Decoration, Entryway Decor Ideas & Bedside Table Decor (Matte Black)
-
-**5. [B0B24B6TPX](https://www.amazon.com/dp/B0B24B6TPX)** Handwoven Multipurpose Rectangle Rattan Tray, 20” x 12” – Durable Wicker Tray with Leather Handles for Home Decor Display
-
-**6. [B0DYP3TRL2](https://www.amazon.com/dp/B0DYP3TRL2)** FoldTier 11 Pcs 4th of July Decoration Patriotic Tiered Tray Decor Independence Day Table Sign Wooden Faux Book Stack Firework Sign 250th Anniversary Tabletop Centerpieces for Home Office Memorial Day
-
-**7. [B0DRYD63RT](https://www.amazon.com/dp/B0DRYD63RT)** 12 Inch Golden Round Platter Tray, Trays for Domestic Purposes, Stainless Steel Serving, Circle Decorative Tray, Vanity Tray for Centerpiece Home Decor
-
-**8. [B0G3TS1YFT](https://www.amazon.com/dp/B0G3TS1YFT)** Vintage Brass Decorative Tray, 11.8-Inch Round Serving Tray with Claw Feet, Decorative Coffee Table Tray for Dining Room, Entryway, Living Room
-
-**9. [B0D8MW6VS1](https://www.amazon.com/dp/B0D8MW6VS1)** Flamingo Zen Garden Kit for Desk, Cute Japanese Flamingos Gifts for Women, Mini Zen Garden Sand Tray, Pink Room Decor Aesthetic, Home Office Desk Decorations, Sand Therapy Kit
-
-**10. [B0CCVNCZWZ](https://www.amazon.com/dp/B0CCVNCZWZ)** INNObeta Son Gifts Valet Tray from Dad Mom, Desktop Storage Organizer PU Leather Bedside Tray Key Coin Holder, Perfect for Birthday, Christmas - to My Son
-
-**11. [B0FK99K3D4](https://www.amazon.com/dp/B0FK99K3D4)** Lounsweer Acacia Wood Decorative Tray for Home Decor, 14'' x 10'' Wooden Serving Tray for Coffee Table Centerpiece Dining Kitchen Island Decoration Bathroom Counter Display
-
-**12. [B0D5H5TRRD](https://www.amazon.com/dp/B0D5H5TRRD)** Round Burnt Wood Serving Tray with Beads, Wooden Decorative Tray for Entertaining, Decoration, and Gifting,
-
-**13. [B0F2HXLN8V](https://www.amazon.com/dp/B0F2HXLN8V)** Scalloped Acrylic Tray with Magnetic Mat - 8x8in Customizable Display for Photos, Art & Notes | Non-Slip Base | Elegant Décor & Organizer for Jewelry/Cosmetics for Women/Mom/Weddings
-
-## 三、下一步建议
-
-1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，在卖家精灵「产品详情」页核查供应链来源、头程成本、竞品广告投放强度。
-
-2. **关键词验证**：统一流水线已对每个品类的头部商品批量反查拓展流量词，结果见同目录下 `category_keywords_*.md`，核对搜索量与购买率后再决定是否建 Listing。
-
-3. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。
-
-## 四、原始数值
-
-- `B0D8TJDXRY`: 138,174 | 870 | 1% | 253 | 15.42% | $11,625 | 50+ | $2K+ | 3 | $45.95 | - | 102 | 3 | 4.7 | 1.19% | $7.38 | 69% | 2024-07-22 | 1年 10个月 | FBA | -
-- `B0BMDLHHYT`: 148,672 | 1,143 | 1% | 247 | 16.81% | $10,621 | 100+ | $4K+ | 2 | $43.00 | - | 109 | 3 | 4.3 | 1.21% | $4.09 | 75% | 2022-11-16 | 3年 6个月 | FBA | -
-- `B0FL2236YS`: 65,760 | 32,778 | 33% | 443 | 6.5% | $9,742 | 100+ | $2K+ | 4 | $21.99 | - | 54 | 8 | 4.9 | 1.81% | $5.61 | 59% | 2025-09-17 | 8个月 | FBA | -
-- `B0F9JBZVJG`: 101,512 | 9,166 | 8% | 268 | 30.39% | $9,377 | 100+ | $3K+ | 2 | $34.99 | - | 34 | 6 | 4.8 | 2.24% | $7.79 | 63% | 2025-08-26 | 9个月 | FBA | -
-- `B0B24B6TPX`: 146,077 | 9,007 | 6% | 170 | 137.04% | $6,798 | 100+ | $3K+ | 1 | $39.99 | - | 138 | 2 | 4.2 | 1.18% | $12.25 | 54% | 2022-09-12 | 3年 9个月 | FBA | -
-- `B0DYP3TRL2`: 92,454 | 44,406 | 32% | 267 | 7.81% | $6,672 | 100+ | $2K+ | 3 | $24.99 | - | 64 | 3 | 4.3 | 1.12% | $4.35 | 68% | 2025-03-01 | 1年 3个月 | FBA | -
-- `B0DRYD63RT`: 171,599 | 30,826 | 15% | 252 | 74.64% | $5,289 | 200+ | $4K+ | 2 | $20.99 | - | 36 | 10 | 4.5 | 3.97% | $5.91 | 57% | 2025-03-12 | 1年 3个月 | FBA | -
-- `B0G3TS1YFT`: 150,603 | 65,486 | 31% | 176 | 21.05% | $5,278 | 100+ | $3K+ | 5 | $29.99 | - | 23 | 12 | 4.1 | 6.82% | $8.04 | 58% | 2026-01-16 | 4个月 | FBA | -
-- `B0D8MW6VS1`: 364,473 | 1,341 | 0% | 123 | 189.47% | $5,162 | 50+ | $1K+ | 1 | $41.97 | - | 30 | 1 | 4.7 | 0.81% | $6.31 | 69% | 2024-07-03 | 1年 11个月 | FBA | -
-- `B0CCVNCZWZ`: 118,854 | 43,764 | 27% | 180 | 90.38% | $3,935 | 100+ | $2K+ | 1 | $21.86 | - | 69 | 2 | 4.7 | 1.11% | $3.61 | 68% | 2023-09-25 | 2年 8个月 | FBA | -
-- `B0FK99K3D4`: 313,838 | 46,599 | 15% | **** | **** | **** | **** | 2 | $31.99 | - | 10 | 3 | 4.9 | 2.91% | **** | 2025-08-03 | 10个月 | FBA | -
-- `B0D5H5TRRD`: 340,664 | 14,603 | 5% | **** | **** | **** | **** | 4 | $27.59 | - | 121 | 2 | 4.6 | 1.68% | **** | 2024-08-06 | 1年 10个月 | FBA | -
-- `B0F2HXLN8V`: 278,009 | 95,045 | 32% | **** | **** | **** | **** | 4 | $22.09 | - | 36 | - | 4.9 | - | **** | 2025-04-01 | 1年 2个月 | FBA | -
-
----
-
-# Game Mats & Boards 合格产品扫描 (2026-06-14)
-
-> **所在品类路径**：`Toys & Games › Games & Accessories › Game Accessories › Game Mats & Boards`
+> **所在品类路径**：`Toys & Games › Sports & Outdoor Play › Pools & Water Toys › Water Balloons`
 > 共抓取 **5** 个通过全部筛选条件的候选商品。
 
 > **抓取完整性**：页面可见 **5** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
 
-> **市场评级**：🟡 Yellow (Cautious)　均价 $29.62　均Reviews 308（中等）　重量 2.47lbs（重）　退货率 7.5%（中）　品牌集中度 40.3%（中等）　中国卖家 78.0%
+> **市场评级**：🟡 Yellow (Cautious)　均价 $21.35　均Reviews 694（中等）　重量 0.82lbs（轻）　退货率 1.83%（低）　品牌集中度 74.4%（垄断）　中国卖家 78.0%
 
 ## 一、候选商品列表
 
 | # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
 |---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
-| 1 | [B0FQ5KW2WN](https://www.amazon.com/dp/B0FQ5KW2WN) |  | Crease-Free Mahjong Mat for Table | 335 / 69.3% | $10,013 | $29.89 | $4.54 (15%) | 42 / 10 | 4.9 | $10.11 / 51% | 2 | 28 | 1 | 2.7 pounds | 2025-11-09 7个月 |
-| 2 | [B0FMXW89J5](https://www.amazon.com/dp/B0FMXW89J5) |  | Chinoiserie Mahjong Mat with 1 Carrying Bag Rubber Anti Slip and… | 183 / 8.56% | $5,488 | $29.99 | $3.69 (12%) | 6 / 2 | 4.1 | $10.11 / 54% | 1 | 473 | 1 | 1.95 pounds | 2025-10-11 8个月 |
-| 3 | [B0DD6X3QTH](https://www.amazon.com/dp/B0DD6X3QTH) |  | DND Map 32 Terrain 24” x 36",17” x 17",13” x 17" Double Sidedv Gr… | 124 / 45.07% | $4,959 | $39.99 | $5.90 (15%) | 71 / 5 | 4.5 | $10.50 / 59% | 1 | 115 | 1 | 3.1 pounds | 2024-09-17 1年 8个月 |
-| 4 | [B0GHHG1W42](https://www.amazon.com/dp/B0GHHG1W42) |  | 24" Playmat for Trading Card Games with Damage Counters | 194 / 56.36% | $4,072 | $20.99 | $3.21 (15%) | 10 / 3 | 4.9 | $5.61 / 58% | 5 | 85 | 1 | 1.39 pounds | 2026-03-26 2个月 |
-| 5 | [B0GQMQCCNH](https://www.amazon.com/dp/B0GQMQCCNH) |  | Mahjong Mat with Black Carrying Bag | 128 / 21.3% | $3,967 | $30.99 | $4.52 (15%) | 11 / 7 | 4.3 | $6.02 / 66% | 5 | 105 | 1 | 2.82 pounds | 2026-04-21 1个月 |
+| 1 | [B0GKFSMPTP](https://www.amazon.com/dp/B0GKFSMPTP) |  | 25Pcs Reusable Water Balloons with 2pcs Bow and Arrow for Kids | 713 / 106.72% | $20,527 | $28.79 | $4.29 (15%) | 43 / 18 | 4.0 | $7.23 / 60% | 3 | 32 | 1 | 1.41 pounds | 2026-03-10 3个月 |
+| 2 | [B0DZML5ZPH](https://www.amazon.com/dp/B0DZML5ZPH) |  | 24PCS Reusable Water Balloons | 722 / 142.97% | $20,209 | $27.99 | $4.28 (15%) | 133 / 6 | 4.3 | $5.52 / 65% | 2 | 29 | 1 | 1.46 pounds | 2025-05-12 1年 1个月 |
+| 3 | [B0GD11KHJB](https://www.amazon.com/dp/B0GD11KHJB) |  | 133 PCS Granny Pants Yard Game 2 Pack with 16 Balls Field Day Out… | 465 / 34.16% | $13,480 | $28.99 | $4.25 (15%) | 37 / 6 | 4.4 | $6.48 / 63% | 2 | 76 | 1 | 2.71 pounds | 2026-03-02 3个月 |
+| 4 | [B0GC43CR19](https://www.amazon.com/dp/B0GC43CR19) |  | 15Pcs Reusable Water Balloons for Kids & Family Outdoor Play | 191 / 35.29% | $6,683 | $34.99 | $5.24 (15%) | 3 / - | 5.0 | $5.61 / 69% | 2 | 44 | 1 | 1.39 pounds | 2026-02-02 4个月 |
+| 5 | [B0DZFGJQ5N](https://www.amazon.com/dp/B0DZFGJQ5N) |  | Zuru 16 ft Water Slide Wipeout and 100 Balloons Set | 108 / 118.18% | $3,563 | $32.99 | $4.99 (15%) | 3 / - | 5.0 | $7.55 / 62% | 1 | 179 | 1 | 3.97 pounds | 2025-03-07 1年 3个月 |
 
 ## 二、完整商品标题
 
-**1. [B0FQ5KW2WN](https://www.amazon.com/dp/B0FQ5KW2WN)** Crease-Free Mahjong Mat for Table, American Mahjong Mat with Charleston Rules, 31.5 x 31.5 inch Non-Slip Rubber Backing Noise-Reducing Mah Jongg Learning Mat with Carrying Bag (Blue)
+**1. [B0GKFSMPTP](https://www.amazon.com/dp/B0GKFSMPTP)** 25Pcs Reusable Water Balloons with 2pcs Bow and Arrow for Kids, Pool Beach Water Fight Equipment for Boys and Girls, Outdoor Summer Toys for Kids Ages 3-12
 
-**2. [B0FMXW89J5](https://www.amazon.com/dp/B0FMXW89J5)** Chinoiserie Mahjong Mat with 1 Carrying Bag Rubber Anti Slip and Noise Reduction Multi Purpose Game Table Cover for Mahjong, Card, Board Tile Games-874
+**2. [B0DZML5ZPH](https://www.amazon.com/dp/B0DZML5ZPH)** 24PCS Reusable Water Balloons, Self-Sealing Silicone Water Bomb, Refillable Water Balls for Boys and Girls, Outdoor Summer Water Toys Pool Beach Park Yard
 
-**3. [B0DD6X3QTH](https://www.amazon.com/dp/B0DD6X3QTH)** DND Map 32 Terrain 24” x 36",17” x 17",13” x 17" Double Sidedv Grids Dry Erase Battle Mats for Dungeons & Dragons Game with Dice Set,Clips,Eraser,Markers
+**3. [B0GD11KHJB](https://www.amazon.com/dp/B0GD11KHJB)** 133 PCS Granny Pants Yard Game 2 Pack with 16 Balls Field Day Outdoor Giant Pants Games for Adults Kids Family Large Outside Lawn Backyard Carnival Picnic Camping Birthday Party Big Pants Tossing Game
 
-**4. [B0GHHG1W42](https://www.amazon.com/dp/B0GHHG1W42)** 24" Playmat for Trading Card Games with Damage Counters, 2 Player Gaming Mat Board Stadium with Playmat Bag, Red-White, 2mm Thick
+**4. [B0GC43CR19](https://www.amazon.com/dp/B0GC43CR19)** 15Pcs Reusable Water Balloons for Kids & Family Outdoor Play – Quick Fill, Soft Silicone, Easy to Collect, No Magnets, Perfect for Yard, Pool Beach Games, Summer Water Toys
 
-**5. [B0GQMQCCNH](https://www.amazon.com/dp/B0GQMQCCNH)** Mahjong Mat with Black Carrying Bag, 31.5"x31.5" Waterproof Mahjong Table Mat, with Natural Rubber Non-Slip Backing, Includes 3 Dice & Travel Bag (Purple Lotus)
+**5. [B0DZFGJQ5N](https://www.amazon.com/dp/B0DZFGJQ5N)** Zuru 16 ft Water Slide Wipeout and 100 Balloons Set - Bundle with 2 Lane Water Slide Wipeout Plus 5 Bunches of Rapid-Filling Self-Sealing Water Balloons for Kids, Boys, Girls | Summer Outdoor Playset
 
 ## 三、下一步建议
 
@@ -1104,41 +658,62 @@
 
 ## 四、原始数值
 
-- `B0FQ5KW2WN`: 20,800 | 14,276 | 41% | 335 | 69.3% | $10,013 | 200+ | $5K+ | 2 | $29.89 | - | 42 | 10 | 4.9 | 2.99% | $10.11 | 51% | 2025-11-09 | 7个月 | FBA | -
-- `B0FMXW89J5`: 191,914 | 8,494 | 17% | 183 | 8.56% | $5,488 | - | - | 1 | $29.99 | - | 6 | 2 | 4.1 | 1.09% | $10.11 | 54% | 2025-10-11 | 8个月 | FBA | -
-- `B0DD6X3QTH`: 55,693 | 42,912 | 44% | 124 | 45.07% | $4,959 | 100+ | $3K+ | 1 | $39.99 | - | 71 | 5 | 4.5 | 4.03% | $10.50 | 59% | 2024-09-17 | 1年 8个月 | FBA | -
-- `B0GHHG1W42`: 41,419 | 1,500 | 3% | 194 | 56.36% | $4,072 | 100+ | $2K+ | 5 | $20.99 | - | 10 | 3 | 4.9 | 1.55% | $5.61 | 58% | 2026-03-26 | 2个月 | FBA | -
-- `B0GQMQCCNH`: 52,467 | 36,206 | 41% | 128 | 21.3% | $3,967 | 50+ | $1K+ | 5 | $30.99 | - | 11 | 7 | 4.3 | 5.47% | $6.02 | 66% | 2026-04-21 | 1个月 | FBA | -
+- `B0GKFSMPTP`: 6,375 | 3,584 | 39% | 713 | 106.72% | $20,527 | 300+ | $9K+ | 3 | $28.79 | - | 43 | 18 | 4.0 | 2.52% | $7.23 | 60% | 2026-03-10 | 3个月 | FBA | -
+- `B0DZML5ZPH`: 5,326 | 635 | 11% | 722 | 142.97% | $20,209 | 700+ | $18K+ | 2 | $27.99 | - | 133 | 6 | 4.3 | 0.83% | $5.52 | 65% | 2025-05-12 | 1年 1个月 | FBA | -
+- `B0GD11KHJB`: 22,675 | 1,209 | 7% | 465 | 34.16% | $13,480 | 200+ | $5K+ | 2 | $28.99 | - | 37 | 6 | 4.4 | 1.29% | $6.48 | 63% | 2026-03-02 | 3个月 | FBA | -
+- `B0GC43CR19`: 9,479 | 72,160 | 88% | 191 | 35.29% | $6,683 | 100+ | $3K+ | 2 | $34.99 | - | 3 | - | 5.0 | - | $5.61 | 69% | 2026-02-02 | 4个月 | FBA | -
+- `B0DZFGJQ5N`: 106,855 | 0 | 0% | 108 | 118.18% | $3,563 | 100+ | $2K+ | 1 | $32.99 | - | 3 | - | 5.0 | - | $7.55 | 62% | 2025-03-07 | 1年 3个月 | FBA | -
 
 ---
 
-# Boats 合格产品扫描 (2026-06-14)
+# Squirt Guns 合格产品扫描 (2026-06-14)
 
-> **所在品类路径**：`Toys & Games › Remote & App Controlled Vehicles & Parts › Remote & App Controlled Vehicles › Boats`
-> 共抓取 **4** 个通过全部筛选条件的候选商品。
+> **所在品类路径**：`Toys & Games › Sports & Outdoor Play › Pools & Water Toys › Squirt Guns`
+> 共抓取 **11** 个通过全部筛选条件的候选商品。
 
-> **抓取完整性**：页面可见 **4** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
+> **抓取完整性**：页面可见 **11** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
 
-> **市场评级**：🟡 Yellow (Cautious)　均价 $56.10　均Reviews 330（中等）　重量 1.46lbs（轻）　退货率 6.03%（中）　品牌集中度 62.0%（中等）　中国卖家 68.0%
+> **市场评级**：🟡 Yellow (Cautious)　均价 $25.91　均Reviews 619（中等）　重量 1.24lbs（轻）　退货率 3.93%（低）　品牌集中度 53.8%（中等）　中国卖家 68.0%
 
 ## 一、候选商品列表
 
 | # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
 |---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
-| 1 | [B0DM8ZC4CC](https://www.amazon.com/dp/B0DM8ZC4CC) |  | BEZGAR Pool Toys for Kids | 261 / 62.28% | $10,437 | $39.99 | $5.87 (15%) | 101 / - | 4.2 | $6.13 / 70% | 2 | 43 | 1 | 1.54 pounds | 2024-12-30 1年 5个月 |
-| 2 | [B0CWXVCT2G](https://www.amazon.com/dp/B0CWXVCT2G) |  | Losbenco RC Boat | 154 / 52.43% | $6,158 | $39.99 | $6.19 (15%) | 83 / 5 | 4.2 | $7.41 / 66% | 2 | 74 | 1 | 1.48 pounds | 2024-04-18 2年 1个月 |
-| 3 | [B0CQFY22N9](https://www.amazon.com/dp/B0CQFY22N9) |  | Losbenco RC Boat | 154 / 52.43% | $6,158 | $39.99 | $6.19 (15%) | 83 / 5 | 4.2 | $7.41 / 66% | 2 | 74 | 1 | 1.5 pounds | 2024-03-02 2年 3个月 |
-| 4 | [B0D8TB7V29](https://www.amazon.com/dp/B0D8TB7V29) |  | GearRoot Remote Control Dolphin Toys for Kids | 116 / 29.69% | $3,131 | $26.99 | $4.12 (15%) | 12 / - | 4.1 | $5.87 / 63% | 1 | 122 | 1 | 0.86 pounds | 2024-11-03 1年 7个月 |
+| 1 | [B0GQ2BQQDS](https://www.amazon.com/dp/B0GQ2BQQDS) |  | 2 Pack Electric Water Gun for Adults Kids USB-C Charging Port | 952 / 182.54% | $47,590 | $49.99 | $7.43 (15%) | 33 / 1 | 4.2 | $7.57 / 70% | 1 | 260 | 1 | 3.17 pounds | 2026-04-21 1个月 |
+| 2 | [B0GH71NJPF](https://www.amazon.com/dp/B0GH71NJPF) |  | 2 Pack Large Electric Water Guns for Adults & Kids | 741 / 9.64% | $40,007 | $53.99 | $8.15 (15%) | 31 / 17 | 4.4 | $8.59 / 69% | 1 | 85 | 1 | 3.26 pounds | 2026-02-28 3个月 |
+| 3 | [B0BKVHW3CZ](https://www.amazon.com/dp/B0BKVHW3CZ) |  | Quanquer 8 Pack 600cc Water Guns for Kids & Adults | 998 / 45.99% | $39,910 | $39.99 | $5.93 (15%) | 107 / 16 | 4.6 | $8.87 / 63% | 2 | 91 | 1 | 3.79 pounds | 2025-12-04 6个月 |
+| 4 | [B0H13XKQ27](https://www.amazon.com/dp/B0H13XKQ27) |  | Electric Water Gun for Adults & Kids | 643 / 100% | $32,144 | $49.99 | $7.49 (15%) | 20 / 14 | 4.6 | $7.01 / 71% | 2 | 52 | 1 | 1.41 pounds | 2026-05-12 1个月 |
+| 5 | [B0BPH8P5D9](https://www.amazon.com/dp/B0BPH8P5D9) |  | Threan 100 Pack Water Gun for Kids Mini Water Gun Toy Colors Plas… | 572 / 131.58% | $21,158 | $36.99 | $5.48 (15%) | 53 / 2 | 4.1 | $8.21 / 63% | 2 | 121 | 1 | 2.95 pounds | 2023-01-28 3年 4个月 |
+| 6 | [B0GJSTS72K](https://www.amazon.com/dp/B0GJSTS72K) |  | Electric Water Gun for Adults Kids | 723 / 44.73% | $16,911 | $23.39 | $3.46 (15%) | 44 / 12 | 4.1 | $6.13 / 59% | 2 | 55 | 1 | 1.21 pounds | 2026-03-14 3个月 |
+| 7 | [B0DRVGDYGK](https://www.amazon.com/dp/B0DRVGDYGK) |  | Water Gun for Kids | 429 / 7.38% | $12,008 | $27.99 | $4.16 (15%) | 43 / 7 | 4.7 | $7.32 / 59% | 2 | 136 | 1 | 2.45 pounds | 2025-09-24 8个月 |
+| 8 | [B0GDG4T6L8](https://www.amazon.com/dp/B0GDG4T6L8) |  | Electric Water Gun | 414 / 102.2% | $10,222 | $24.69 | $3.75 (15%) | 45 / 17 | 4.4 | $6.13 / 60% | 3 | 204 | 1 | 0.9 pounds | 2026-01-29 4个月 |
+| 9 | [B0DRY4N6MG](https://www.amazon.com/dp/B0DRY4N6MG) |  | Electric Gel Ball Blaster | 181 / 77.05% | $7,238 | $39.99 | $6.19 (15%) | 117 / 2 | 4.1 | $7.41 / 66% | 1 | 369 | 1 | 3.2 pounds | 2025-01-07 1年 5个月 |
+| 10 | [B0F3NVTP3J](https://www.amazon.com/dp/B0F3NVTP3J) |  | 9 Pack Water Guns Pool Toys Summer Lake Pool Deals Game Blaster O… | 159 / 140% | $4,132 | $25.99 | $3.81 (15%) | 17 / 1 | 5.0 | $7.63 / 56% | 1 | 292 | 1 | 1.61 pounds | 2025-05-21 1年 |
+| 11 | [B09TZVCD7R](https://www.amazon.com/dp/B09TZVCD7R) |  | 24 Packs 4 Inch Fire Extinguisher Toys Fire Extinguisher Mini Wat… | **** / **** | **** | $26.99 | - | 139 / - | 4.3 | **** /  | 1 | 376 | 1 | 1.27 pounds | 2022-03-20 4年 2个月 |
 
 ## 二、完整商品标题
 
-**1. [B0DM8ZC4CC](https://www.amazon.com/dp/B0DM8ZC4CC)** BEZGAR Pool Toys for Kids, Amphibious Remote Control Car Toys for Ages 6-8, RC Stunt Car with Water Gun for Boys and Girls 8-12, Remote Control Boat with Light(Blue)
+**1. [B0GQ2BQQDS](https://www.amazon.com/dp/B0GQ2BQQDS)** 2 Pack Electric Water Gun for Adults Kids USB-C Charging Port, Automatic High Powered Squirt Gun,Powerful Shooting Long Range Auto Water Blaster, Outdoor Water Toy Pool Game (Blue+Red)
 
-**2. [B0CWXVCT2G](https://www.amazon.com/dp/B0CWXVCT2G)** Losbenco RC Boat, 1/72 RC Tugboat for Pools and Lakes, High-Speed Remote Control Boat with 40 Mins Play Time and Low Battery Reminder for Kids and Adults - RTR Version
+**2. [B0GH71NJPF](https://www.amazon.com/dp/B0GH71NJPF)** 2 Pack Large Electric Water Guns for Adults & Kids, Automatic Squirt Guns with LED Light, 730CC High Capacity Water Gun with 26-33FT Long Range & Battery Powered for Summer Outdoor Beach Pool Toy Gift
 
-**3. [B0CQFY22N9](https://www.amazon.com/dp/B0CQFY22N9)** Losbenco RC Boat, 1/72 RC Tugboat for Pools and Lakes, High-Speed Remote Control Boat with 40 Mins Play Time and Low Battery Reminder for Kids and Adults - RTR Version
+**3. [B0BKVHW3CZ](https://www.amazon.com/dp/B0BKVHW3CZ)** Quanquer 8 Pack 600cc Water Guns for Kids & Adults, Large Capacity Pump Action Super Squirt Blasters Soaker with Long Range up to 32 FT, Summer Outdoor Pool Beach Water Toys for Boys Girls
 
-**4. [B0D8TB7V29](https://www.amazon.com/dp/B0D8TB7V29)** GearRoot Remote Control Dolphin Toys for Kids, 2.4G High Simulation Oceanic RC Dolphins Fish Toys for Swimming Pool Bathroom, 2x600mAh RC Boat Water Toys Great for 6+ Year olds Boys Girls Kids, Gray
+**4. [B0H13XKQ27](https://www.amazon.com/dp/B0H13XKQ27)** Electric Water Gun for Adults & Kids, Voice Control Automatic Water Guns, 26-30 FT Long Range Gatling Watergun with LED Lights, Squirt Water Guns Summer Outdoor Pool Toys for Boys Girls Ages 8-12+
+
+**5. [B0BPH8P5D9](https://www.amazon.com/dp/B0BPH8P5D9)** Threan 100 Pack Water Gun for Kids Mini Water Gun Toy Colors Plastic Squirt Pistol Small Fun for Adults Teens Summer Pool Beach Party Favor Outdoor Game Bath Birthday(Cool)
+
+**6. [B0GJSTS72K](https://www.amazon.com/dp/B0GJSTS72K)** Electric Water Gun for Adults Kids, High-Capacity Automatic Squirt Gun with LED Lights, 32FT Long Range Transparent Water Blaster, Summer Outdoor Pool & Beach Party Toys for Boys Girls(Blue)
+
+**7. [B0DRVGDYGK](https://www.amazon.com/dp/B0DRVGDYGK)** Water Gun for Kids, 18Pcs Super Water Blaster, Long Range Squirt Guns for Pool Beach Summer Outdoor Party, Easy Pump Action Water Toys for Boys Girls Adults
+
+**8. [B0GDG4T6L8](https://www.amazon.com/dp/B0GDG4T6L8)** Electric Water Gun, Squirt Blaster Automatic Toy for Kids & Adults, 350cc Large Capacity, 25-32ft Long Range, Rechargeable Battery, Auto-Sync LED Lights, Summer Outdoor Toy for Pool, Beach & Backyard
+
+**9. [B0DRY4N6MG](https://www.amazon.com/dp/B0DRY4N6MG)** Electric Gel Ball Blaster, High Speed Automatic Splatter Ball Blaster with 80000+ and Goggles, Rechargeable Splatter Ball Toys for Outdoor Activities Shooting Game Party Favors-2 Pcs
+
+**10. [B0F3NVTP3J](https://www.amazon.com/dp/B0F3NVTP3J)** 9 Pack Water Guns Pool Toys Summer Lake Pool Deals Game Blaster Outdoor Water Shooters Swimming Play Activities for Kids Teens Adults (9 Dinosaurs)
+
+**11. [B09TZVCD7R](https://www.amazon.com/dp/B09TZVCD7R)** 24 Packs 4 Inch Fire Extinguisher Toys Fire Extinguisher Mini Water Firemen Squirter for Party Favors
 
 ## 三、下一步建议
 
@@ -1150,31 +725,74 @@
 
 ## 四、原始数值
 
-- `B0DM8ZC4CC`: 29,850 | 731 | 2% | 261 | 62.28% | $10,437 | 200+ | $6K+ | 2 | $39.99 | - | 101 | - | 4.2 | - | $6.13 | 70% | 2024-12-30 | 1年 5个月 | FBA | -
-- `B0CWXVCT2G`: 48,617 | 24,954 | 34% | 154 | 52.43% | $6,158 | 50+ | $1K+ | 2 | $39.99 | - | 83 | 5 | 4.2 | 3.25% | $7.41 | 66% | 2024-04-18 | 2年 1个月 | FBA | -
-- `B0CQFY22N9`: 47,915 | 13,752 | 22% | 154 | 52.43% | $6,158 | 50+ | $1K+ | 2 | $39.99 | - | 83 | 5 | 4.2 | 3.25% | $7.41 | 66% | 2024-03-02 | 2年 3个月 | FBA | -
-- `B0D8TB7V29`: 51,139 | 19,365 | 27% | 116 | 29.69% | $3,131 | 50+ | $1K+ | 1 | $26.99 | - | 12 | - | 4.1 | - | $5.87 | 63% | 2024-11-03 | 1年 7个月 | FBA | -
+- `B0GQ2BQQDS`: 29,511 | 2,551 | 8% | 952 | 182.54% | $47,590 | 300+ | $15K+ | 1 | $49.99 | - | 33 | 1 | 4.2 | 0.11% | $7.57 | 70% | 2026-04-21 | 1个月 | FBA | -
+- `B0GH71NJPF`: 6,760 | 3,870 | 36% | 741 | 9.64% | $40,007 | 700+ | $45K+ | 1 | $53.99 | - | 31 | 17 | 4.4 | 2.29% | $8.59 | 69% | 2026-02-28 | 3个月 | FBA | -
+- `B0BKVHW3CZ`: 7,783 | 581 | 7% | 998 | 45.99% | $39,910 | 900+ | $37K+ | 2 | $39.99 | - | 107 | 16 | 4.6 | 1.6% | $8.87 | 63% | 2025-12-04 | 6个月 | FBA | -
+- `B0H13XKQ27`: 5,249 | 4,182 | 44% | 643 | 100% | $32,144 | 400+ | $16K+ | 2 | $49.99 | - | 20 | 14 | 4.6 | 2.18% | $7.01 | 71% | 2026-05-12 | 1个月 | FBA | -
+- `B0BPH8P5D9`: 10,559 | 1,296 | 11% | 572 | 131.58% | $21,158 | 400+ | $14K+ | 2 | $36.99 | - | 53 | 2 | 4.1 | 0.35% | $8.21 | 63% | 2023-01-28 | 3年 4个月 | FBA | -
+- `B0GJSTS72K`: 4,446 | 108 | 2% | 723 | 44.73% | $16,911 | 500+ | $12K+ | 2 | $23.39 | - | 44 | 12 | 4.1 | 1.66% | $6.13 | 59% | 2026-03-14 | 3个月 | FBA | -
+- `B0DRVGDYGK`: 12,442 | 6,137 | 33% | 429 | 7.38% | $12,008 | 400+ | $10K+ | 2 | $27.99 | - | 43 | 7 | 4.7 | 1.63% | $7.32 | 59% | 2025-09-24 | 8个月 | FBA | -
+- `B0GDG4T6L8`: 22,452 | 1,245 | 5% | 414 | 102.2% | $10,222 | 200+ | $5K+ | 3 | $24.69 | - | 45 | 17 | 4.4 | 4.11% | $6.13 | 60% | 2026-01-29 | 4个月 | FBA | -
+- `B0DRY4N6MG`: 55,921 | 24,444 | 30% | 181 | 77.05% | $7,238 | 100+ | $3K+ | 1 | $39.99 | - | 117 | 2 | 4.1 | 1.1% | $7.41 | 66% | 2025-01-07 | 1年 5个月 | FBA | -
+- `B0F3NVTP3J`: 39,782 | 11,911 | 23% | 159 | 140% | $4,132 | 100+ | $2K+ | 1 | $25.99 | - | 17 | 1 | 5.0 | 0.63% | $7.63 | 56% | 2025-05-21 | 1年 | FBA | -
+- `B09TZVCD7R`: 69,105 | 2,500 | 3% | **** | **** | **** | **** | 1 | $26.99 | - | 139 | - | 4.3 | - | **** | 2022-03-20 | 4年 2个月 | FBA | -
 
 ---
 
-# Grinding Discs 合格产品扫描 (2026-06-14)
+# Drip Irrigation Kits 合格产品扫描 (2026-06-14)
 
-> **所在品类路径**：`Industrial & Scientific › Abrasive & Finishing Products › Abrasive Wheels & Discs › Grinding Discs`
-> 共抓取 **1** 个通过全部筛选条件的候选商品。
+> **所在品类路径**：`Patio, Lawn & Garden › Gardening & Lawn Care › Watering Equipment › Automatic Irrigation Equipment › Drip Irrigation Kits`
+> 共抓取 **13** 个通过全部筛选条件的候选商品。
 
-> **抓取完整性**：页面可见 **1** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
+> **抓取完整性**：页面可见 **13** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
 
-> **市场评级**：🟡 Yellow (Cautious)　均价 $23.53　均Reviews 360（中等）　重量 2.02lbs（重）　退货率 2.13%（低）　品牌集中度 46.8%（中等）　中国卖家 81.0%
+> **市场评级**：🟡 Yellow (Cautious)　均价 $33.30　均Reviews 618（中等）　重量 2.58lbs（重）　退货率 3.37%（低）　品牌集中度 50.8%（中等）　中国卖家 70.0%
 
 ## 一、候选商品列表
 
 | # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
 |---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
-| 1 | [B0CBS4VWYB](https://www.amazon.com/dp/B0CBS4VWYB) |  | 4 in.x 5/8-11 in. Smooth Grinding Resin Filled Diamond Cup Wheel… | 101 / 134.78% | $5,655 | $55.99 | $6.83 (12%) | 28 / 2 | 4.0 | $5.49 / 78% | 3 | 135 | 1 | 1.1 pounds | 2023-08-28 2年 9个月 |
+| 1 | [B0GJZXWSK6](https://www.amazon.com/dp/B0GJZXWSK6) |  | Drip Irrigation System,106FT Automatic Garden Watering System wit… | 559 / 43.01% | $13,969 | $24.99 | $3.77 (15%) | 24 / - | 4.6 | $7.23 / 56% | 2 | 83 | 1 | 3.22 pounds | 2026-03-26 2个月 |
+| 2 | [B0G1473Y3J](https://www.amazon.com/dp/B0G1473Y3J) |  | HIRALIY 50FT Quick-Connect Drip Irrigation Kit | 598 / 21.02% | $12,672 | $21.19 | $3.19 (15%) | 44 / 8 | 4.0 | $6.13 / 56% | 2 | 61 | 1 | 1.42 pounds | 2026-02-10 4个月 |
+| 3 | [B0DY7X7M4V](https://www.amazon.com/dp/B0DY7X7M4V) |  | Drip Irrigation Kit Automatic Watering System with Water Timer 64… | 267 / 97.52% | $7,473 | $27.99 | $4.18 (15%) | 117 / 8 | 4.0 | $7.30 / 59% | 5 | 196 | 1 | 3.06 pounds | 2025-04-12 1年 2个月 |
+| 4 | [B0G64FH1N1](https://www.amazon.com/dp/B0G64FH1N1) |  | [All-New 2027] Automatic Plant Waterer for Indoor | 209 / 146.38% | $7,313 | $34.99 | $5.24 (15%) | 21 / 7 | 4.5 | $5.61 / 69% | 1 | 131 | 1 | 1.36 pounds | 2026-02-12 4个月 |
+| 5 | [B0FMXHDBHK](https://www.amazon.com/dp/B0FMXHDBHK) |  | RAINPOINT WiFi Smart Programmable Solar Drip Irrigation System fo… | 121 / 48.98% | $6,838 | $56.51 | $8.29 (15%) | 23 / 4 | 4.5 | $6.40 / 74% | 3 | 198 | 1 | 1.9 pounds | 2025-09-30 8个月 |
+| 6 | [B0F1T5QBP8](https://www.amazon.com/dp/B0F1T5QBP8) |  | 118FT Drip Irrigation System | 228 / 62.38% | $5,698 | $24.99 | $3.85 (15%) | 64 / 7 | 4.2 | $6.90 / 57% | 1 | 132 | 1 | 2.2 pounds | 2025-03-18 1年 2个月 |
+| 7 | [B0C7MGZCJK](https://www.amazon.com/dp/B0C7MGZCJK) |  | RISINGUP 49FT Solar Drip Irrigation System | 155 / 36.55% | $5,423 | $34.99 | $5.42 (15%) | 87 / 5 | 4.2 | $6.13 / 67% | 2 | 192 | 1 | 1.79 pounds | 2023-08-29 2年 9个月 |
+| 8 | [B0CYG23NZR](https://www.amazon.com/dp/B0CYG23NZR) |  | SteadySpring® Smart Watering Garden Mat for Raised Garden Beds 30… | 114 / 20.45% | $4,217 | $36.99 | $5.49 (15%) | 19 / - | 4.0 | $5.61 / 70% | 1 | 270 | 2 | 0.64 pounds | 2024-03-26 2年 2个月 |
+| 9 | [B0GF7SNVMD](https://www.amazon.com/dp/B0GF7SNVMD) |  | 100FT Drip Irrigation Kit System for Garden 360° Adjustable Garde… | 143 / 172.92% | $4,003 | $27.99 | $4.34 (15%) | 25 / 1 | 4.7 | $6.02 / 63% | 3 | 249 | 1 | 1.96 pounds | 2026-03-02 3个月 |
+| 10 | [B0GHQXCCZ2](https://www.amazon.com/dp/B0GHQXCCZ2) |  | Solar Drip Irrigation System Timed Watering | 153 / 57.95% | $3,976 | $25.99 | $4.01 (15%) | 14 / 5 | 4.4 | $5.87 / 62% | 2 | 147 | 1 | 1.68 pounds | 2026-02-08 4个月 |
+| 11 | [B0D2J1KMC9](https://www.amazon.com/dp/B0D2J1KMC9) |  | LCD Display Solar Drip Irrigation System Kit | **** / **** | **** | $29.99 | - | 91 / 1 | 4.0 | **** /  | 1 | 195 | 1 | 1.58 pounds | 2024-06-03 2年 |
+| 12 | [B0GH6XXK1F](https://www.amazon.com/dp/B0GH6XXK1F) |  | 6.5L Plant Self Watering Bag | **** / **** | **** | $25.00 | - | 11 / 4 | 4.5 | **** /  | 1 | 211 | 1 | 1.3 pounds | 2026-03-06 3个月 |
+| 13 | [B0BNS5VR78](https://www.amazon.com/dp/B0BNS5VR78) |  | Al-Magor-Professional Drip Irrigation Hole Punch Tool for 1/4 Inc… | **** / **** | **** | $21.99 | - | 127 / 1 | 4.4 | **** /  | 1 | 271 | 1 | 0.24 pounds | 2022-12-02 3年 6个月 |
 
 ## 二、完整商品标题
 
-**1. [B0CBS4VWYB](https://www.amazon.com/dp/B0CBS4VWYB)** 4 in.x 5/8-11 in. Smooth Grinding Resin Filled Diamond Cup Wheel for Angle Grinder, Resin Filled Diamond Grinding Wheel for Granite Marble Engineered Stone
+**1. [B0GJZXWSK6](https://www.amazon.com/dp/B0GJZXWSK6)** Drip Irrigation System,106FT Automatic Garden Watering System with 1/2" & 1/4" Fast-Lock Tubing Adjustable Nozzles & Sprinklers,Quick-Connect Drip Irrigation System Kit for Garden,Lawn,Potted Plants
+
+**2. [B0G1473Y3J](https://www.amazon.com/dp/B0G1473Y3J)** HIRALIY 50FT Quick-Connect Drip Irrigation Kit, Garden Watering System with 40FT 1/4" Tubing, 10FT Main Hose & 12 Adjustable Drippers for Patio Pots, Raised Beds & Small Vegetable Gardens
+
+**3. [B0DY7X7M4V](https://www.amazon.com/dp/B0DY7X7M4V)** Drip Irrigation Kit Automatic Watering System with Water Timer 64FT 1/4 Tubing and 12 Rain Spray Watering Nozzles in 4 Directions for Potted Plants Yard Lawn Juvenile Plants Greenhouse Mist
+
+**4. [B0G64FH1N1](https://www.amazon.com/dp/B0G64FH1N1)** [All-New 2027] Automatic Plant Waterer for Indoor, Unistyle Plant Watering Devices for Potted Plants, Drip Irrigation System with Programmable
+
+**5. [B0FMXHDBHK](https://www.amazon.com/dp/B0FMXHDBHK)** RAINPOINT WiFi Smart Programmable Solar Drip Irrigation System for Indoor Houseplant Water Up to 15 Pots, Compact Vacation Auto Plant Waterer Self Watering Device While Away Low Water Auto Shut-Off
+
+**6. [B0F1T5QBP8](https://www.amazon.com/dp/B0F1T5QBP8)** 118FT Drip Irrigation System, Garden Watering System, Quick-Connect Drip Irrigation Kit for Lawn Raised Bed Greenhouse, Plant Watering System with 1/4'' Drip IrrigationTubing, Drip Emitters,Connectors
+
+**7. [B0C7MGZCJK](https://www.amazon.com/dp/B0C7MGZCJK)** RISINGUP 49FT Solar Drip Irrigation System, Auto Plant Watering Kit with Anti-Siphoning Device 750ml/min Flow with 2200mAh Battery, for 15 Potted Plants Outdoor Garden, Patio, Balcony, Greenhouse
+
+**8. [B0CYG23NZR](https://www.amazon.com/dp/B0CYG23NZR)** SteadySpring® Smart Watering Garden Mat for Raised Garden Beds 30-Day Irrigation Auto Refills with Rain for Gardens, Tomato Plants, Flowers (2-Pack)
+
+**9. [B0GF7SNVMD](https://www.amazon.com/dp/B0GF7SNVMD)** 100FT Drip Irrigation Kit System for Garden 360° Adjustable Garden Sprinklers for Yard Watering System with 18 Nozzles Raised Bed Greenhouse Plant Watering Devices Misting System
+
+**10. [B0GHQXCCZ2](https://www.amazon.com/dp/B0GHQXCCZ2)** Solar Drip Irrigation System Timed Watering, Programmable Solar Water Drip for 15 Plants, Drip Irrigation Kit with 33FT 1/4'' Tube, 15x Tee Fitting, 15x Flow Valve, 15x Drip Stake(Solar Powered)
+
+**11. [B0D2J1KMC9](https://www.amazon.com/dp/B0D2J1KMC9)** LCD Display Solar Drip Irrigation System Kit, 30 Working Modes & 10 Watering Interval Solar Powered Drip Irrigation Kit Supports 15 Potted Plants, 2200mAh Automatic Watering System for Garden
+
+**12. [B0GH6XXK1F](https://www.amazon.com/dp/B0GH6XXK1F)** 6.5L Plant Self Watering Bag, Automatic Drip Irrigation System with 4 Adjustable Outlets & Precision Flow Control Valves, Waterer for Indoor Outdoor Potted Plants & Flowers, Vacation Care（3PCS）
+
+**13. [B0BNS5VR78](https://www.amazon.com/dp/B0BNS5VR78)** Al-Magor-Professional Drip Irrigation Hole Punch Tool for 1/4 Inch Fitting & Emitter Insertion Tubes Pipes 16/20mm The Original Drip Irrigation Punch Tool with Adapter for Inserting Drippers
 
 ## 三、下一步建议
 
@@ -1186,13 +804,241 @@
 
 ## 四、原始数值
 
-- `B0CBS4VWYB`: 58,429 | 25,781 | 31% | 101 | 134.78% | $5,655 | - | - | 3 | $55.99 | 4 | 28 | 2 | 4.0 | 1.98% | $5.49 | 78% | 2023-08-28 | 2年 9个月 | FBA | -
+- `B0GJZXWSK6`: 20,133 | 0 | 0% | 559 | 43.01% | $13,969 | 100+ | $2K+ | 2 | $24.99 | - | 24 | - | 4.6 | - | $7.23 | 56% | 2026-03-26 | 2个月 | FBA | -
+- `B0G1473Y3J`: 17,035 | 3,241 | 16% | 598 | 21.02% | $12,672 | 300+ | $6K+ | 2 | $21.19 | - | 44 | 8 | 4.0 | 1.34% | $6.13 | 56% | 2026-02-10 | 4个月 | FBA | -
+- `B0DY7X7M4V`: 38,579 | 1,406 | 4% | 267 | 97.52% | $7,473 | - | - | 5 | $27.99 | - | 117 | 8 | 4.0 | 3% | $7.30 | 59% | 2025-04-12 | 1年 2个月 | FBA | -
+- `B0G64FH1N1`: 34,380 | 10,354 | 23% | 209 | 146.38% | $7,313 | 100+ | $3K+ | 1 | $34.99 | - | 21 | 7 | 4.5 | 3.35% | $5.61 | 69% | 2026-02-12 | 4个月 | FBA | -
+- `B0FMXHDBHK`: 41,281 | 37,409 | 49% | 121 | 48.98% | $6,838 | 50+ | $2K+ | 3 | $56.51 | - | 23 | 4 | 4.5 | 3.31% | $6.40 | 74% | 2025-09-30 | 8个月 | FBA | -
+- `B0F1T5QBP8`: 35,692 | 7,485 | 17% | 228 | 62.38% | $5,698 | 200+ | $3K+ | 1 | $24.99 | - | 64 | 7 | 4.2 | 3.07% | $6.90 | 57% | 2025-03-18 | 1年 2个月 | FBA | -
+- `B0C7MGZCJK`: 104,047 | 10,659 | 9% | 155 | 36.55% | $5,423 | 100+ | $3K+ | 2 | $34.99 | 3 | 87 | 5 | 4.2 | 3.23% | $6.13 | 67% | 2023-08-29 | 2年 9个月 | FBA | -
+- `B0CYG23NZR`: 72,011 | 23,826 | 25% | 114 | 20.45% | $4,217 | 50+ | $1K+ | 1 | $36.99 | - | 19 | - | 4.0 | - | $5.61 | 70% | 2024-03-26 | 2年 2个月 | FBA | -
+- `B0GF7SNVMD`: 18,090 | 85,782 | 83% | 143 | 172.92% | $4,003 | 50+ | $1K+ | 3 | $27.99 | - | 25 | 1 | 4.7 | 0.7% | $6.02 | 63% | 2026-03-02 | 3个月 | FBA | -
+- `B0GHQXCCZ2`: 39,563 | 56,796 | 59% | 153 | 57.95% | $3,976 | 100+ | $2K+ | 2 | $25.99 | - | 14 | 5 | 4.4 | 3.27% | $5.87 | 62% | 2026-02-08 | 4个月 | FBA | -
+- `B0D2J1KMC9`: 49,593 | 36,846 | 43% | **** | **** | **** | **** | 1 | $29.99 | - | 91 | 1 | 4.0 | 0.93% | **** | 2024-06-03 | 2年 | FBA | -
+- `B0GH6XXK1F`: 59,849 | 7,282 | 11% | **** | **** | **** | **** | 1 | $25.00 | - | 11 | 4 | 4.5 | 3.25% | **** | 2026-03-06 | 3个月 | FBA | -
+- `B0BNS5VR78`: 76,884 | 44,054 | 37% | **** | **** | **** | **** | 1 | $21.99 | 8 | 127 | 1 | 4.4 | 0.85% | **** | 2022-12-02 | 3年 6个月 | FBA | -
+
+---
+
+# Bread Proofing Baskets 合格产品扫描 (2026-06-14)
+
+> **所在品类路径**：`Home & Kitchen › Kitchen & Dining › Bakeware › Baking Tools & Accessories › Baking & Pastry Utensils › Bread Proofing Baskets`
+> 共抓取 **2** 个通过全部筛选条件的候选商品。
+
+> **抓取完整性**：页面可见 **2** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
+
+> **市场评级**：🟡 Yellow (Cautious)　均价 $29.00　均Reviews 570（中等）　重量 2.03lbs（重）　退货率 4.09%（低）　品牌集中度 53.8%（中等）　中国卖家 67.0%
+
+## 一、候选商品列表
+
+| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
+|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
+| 1 | [B0G94RRF26](https://www.amazon.com/dp/B0G94RRF26) |  | 5 Inch Mini Banneton Bread Proofing Basket Set of 4 | 230 / 11.79% | $5,170 | $22.48 | $3.46 (15%) | 33 / 3 | 4.7 | $5.76 / 59% | 2 | 78 | 1 | 1.15 pounds | 2026-02-04 4个月 |
+| 2 | [B0F6CJX4BW](https://www.amazon.com/dp/B0F6CJX4BW) |  | 12-Pack Mini Banneton Baskets (5 Inch) | 120 / 27.66% | $3,479 | $28.99 | $4.24 (15%) | 96 / 2 | 4.7 | $7.07 / 61% | 1 | 148 | 1 | 1.79 pounds | 2025-06-22 11个月 |
+
+## 二、完整商品标题
+
+**1. [B0G94RRF26](https://www.amazon.com/dp/B0G94RRF26)** 5 Inch Mini Banneton Bread Proofing Basket Set of 4, Easy-Clean Round Sourdough Proofing Basket, Small Banneton for Sourdough Bread Baking Supplies with Liners
+
+**2. [B0F6CJX4BW](https://www.amazon.com/dp/B0F6CJX4BW)** 12-Pack Mini Banneton Baskets (5 Inch), Round Sourdough Proofing Basket Set with Linen Liners for Small Loaves & Home Bakery Supplies
+
+## 三、下一步建议
+
+1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，在卖家精灵「产品详情」页核查供应链来源、头程成本、竞品广告投放强度。
+
+2. **关键词验证**：统一流水线已对每个品类的头部商品批量反查拓展流量词，结果见同目录下 `category_keywords_*.md`，核对搜索量与购买率后再决定是否建 Listing。
+
+3. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。
+
+## 四、原始数值
+
+- `B0G94RRF26`: 29,531 | 7,491 | 19% | 230 | 11.79% | $5,170 | 200+ | $4K+ | 2 | $22.48 | - | 33 | 3 | 4.7 | 1.3% | $5.76 | 59% | 2026-02-04 | 4个月 | FBA | -
+- `B0F6CJX4BW`: 60,584 | 10,844 | 15% | 120 | 27.66% | $3,479 | 100+ | $2K+ | 1 | $28.99 | - | 96 | 2 | 4.7 | 1.67% | $7.07 | 61% | 2025-06-22 | 11个月 | FBA | -
+
+---
+
+# Ultrasonic Repellers 合格产品扫描 (2026-06-14)
+
+> **所在品类路径**：`Health & Household › Household Supplies › Indoor Insect & Pest Control › Ultrasonic Repellers`
+> 共抓取 **2** 个通过全部筛选条件的候选商品。
+
+> **抓取完整性**：页面可见 **2** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
+
+> **市场评级**：🟡 Yellow (Cautious)　均价 $28.76　均Reviews 625（中等）　重量 0.61lbs（轻）　退货率 3.27%（低）　品牌集中度 70.0%（垄断）　中国卖家 7.0%
+
+## 一、候选商品列表
+
+| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
+|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
+| 1 | [B0GXK8D82J](https://www.amazon.com/dp/B0GXK8D82J) |  | Ultrasonic Mouse Repellent Plug-in | 236 / 103.38% | $7,078 | $29.99 | $4.35 (14%) | 18 / 3 | 4.8 | $4.35 / 71% | 2 | 101 | 1 | 0.6 pounds | 2026-04-27 1个月 |
+| 2 | [B0FV3R9L2R](https://www.amazon.com/dp/B0FV3R9L2R) |  | 2-Pack Ultrasonic Rodent Repellent for Car Engine | 170 / 17.82% | $5,098 | $29.99 | $4.54 (15%) | 39 / 10 | 4.4 | $4.76 / 69% | 1 | 67 | 1 | 0.9 pounds | 2025-12-02 6个月 |
+
+## 二、完整商品标题
+
+**1. [B0GXK8D82J](https://www.amazon.com/dp/B0GXK8D82J)** Ultrasonic Mouse Repellent Plug-in – Indoor Rodent Deterrent with 3 Modes & LED Strobe Lights, Mice Rat Squirrel Control for Attic, Garage, Basement (Green)
+
+**2. [B0FV3R9L2R](https://www.amazon.com/dp/B0FV3R9L2R)** 2-Pack Ultrasonic Rodent Repellent for Car Engine, Battery Powered Under Hood Mouse Repellent with LED Strobe Lights, Keeps Rats and Mice Away from RVs, Garage, Shed, Attic, Indoors
+
+## 三、下一步建议
+
+1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，在卖家精灵「产品详情」页核查供应链来源、头程成本、竞品广告投放强度。
+
+2. **关键词验证**：统一流水线已对每个品类的头部商品批量反查拓展流量词，结果见同目录下 `category_keywords_*.md`，核对搜索量与购买率后再决定是否建 Listing。
+
+3. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。
+
+## 四、原始数值
+
+- `B0GXK8D82J`: 89,283 | 44,315 | 33% | 236 | 103.38% | $7,078 | 100+ | $2K+ | 2 | $29.99 | - | 18 | 3 | 4.8 | 1.27% | $4.35 | 71% | 2026-04-27 | 1个月 | FBA | -
+- `B0FV3R9L2R`: 66,479 | 34,408 | 34% | 170 | 17.82% | $5,098 | 100+ | $3K+ | 1 | $29.99 | - | 39 | 10 | 4.4 | 5.88% | $4.76 | 69% | 2025-12-02 | 6个月 | FBA | -
+
+---
+
+# Decorative Boxes 合格产品扫描 (2026-06-14)
+
+> **所在品类路径**：`Home & Kitchen › Home Décor Products › Home Décor Accents › Decorative Accessories › Decorative Boxes`
+> 共抓取 **18** 个通过全部筛选条件的候选商品。
+
+> **抓取完整性**：页面可见 **18** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
+
+> **市场评级**：🟡 Yellow (Cautious)　均价 $23.78　均Reviews 694（中等）　重量 1.57lbs（偏重）　退货率 7.91%（中）　品牌集中度 54.4%（中等）　中国卖家 67.0%
+
+## 一、候选商品列表
+
+| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
+|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
+| 1 | [B0GKXY24FG](https://www.amazon.com/dp/B0GKXY24FG) |  | Vintage Faux Book Box Set of 3 Brown Linen Decorative Books for S… | 867 / 13.24% | $19,499 | $22.49 | $3.43 (15%) | 58 / 23 | 4.8 | $6.02 / 58% | 4 | 9 | 1 | 1.94 pounds | 2026-04-06 2个月 |
+| 2 | [B0GRC76TKN](https://www.amazon.com/dp/B0GRC76TKN) |  | One Hitter Box & 2pcs Metal Tubes | 578 / 146.7% | $12,132 | $20.99 | $3.18 (15%) | 16 / 9 | 4.3 | $3.54 / 68% | 1 | 50 | 2 | 0.13 pounds | 2026-03-22 2个月 |
+| 3 | [B0CJ1XRT2Z](https://www.amazon.com/dp/B0CJ1XRT2Z) |  | Navigators Compass Design Wooden Keepsake Box | 195 / 51.47% | $9,748 | $49.99 | $7.61 (15%) | 118 / 6 | 4.4 | $8.89 / 67% | 4 | 272 | 1 | 4.3 pounds | 2023-09-16 2年 8个月 |
+| 4 | [B0G6391R1J](https://www.amazon.com/dp/B0G6391R1J) |  | Set of 3 Decorative Books for Home Decor | 328 / 101.31% | $7,869 | $23.99 | $3.69 (15%) | 47 / 5 | 4.8 | $5.91 / 60% | 3 | 98 | 1 | 1.92 pounds | 2025-12-15 5个月 |
+| 5 | [B0CGHZ1DDM](https://www.amazon.com/dp/B0CGHZ1DDM) |  | S'Mores Station | 211 / 10.92% | $6,328 | $29.99 | $4.40 (15%) | 106 / 3 | 4.5 | $7.30 / 61% | 2 | 232 | 1 | 1.63 pounds | 2023-11-18 2年 6个月 |
+| 6 | [B0FH4CGRG6](https://www.amazon.com/dp/B0FH4CGRG6) |  | Reallnaive 35 Pcs S'mores Station Box Farmhouse Smores Bar Holder… | 179 / 79.44% | $6,084 | $33.99 | $5.25 (15%) | 21 / 4 | 4.2 | $6.31 / 66% | 3 | 231 | 1 | 1.85 pounds | 2025-07-13 11个月 |
+| 7 | [B0FLW9HLWH](https://www.amazon.com/dp/B0FLW9HLWH) |  | cherish & dwell Beautiful Cozy Corduroy Decorative Storage Boxes… | 162 / 95.74% | $4,858 | $29.99 | $4.45 (15%) | 35 / - | 4.9 | $7.55 / 60% | 1 | 401 | 1 | 3.33 pounds | 2025-12-15 5个月 |
+| 8 | [B0DG2J8D21](https://www.amazon.com/dp/B0DG2J8D21) |  | Vintage Treasure Chest | 176 / 10.11% | $4,574 | $25.99 | $3.86 (15%) | 82 / 4 | 4.7 | $7.32 / 57% | 3 | 421 | 1 | 1.79 pounds | 2024-10-29 1年 7个月 |
+| 9 | [B0DX841J37](https://www.amazon.com/dp/B0DX841J37) |  | Large Wooden Memory Box for Keepsakes | 130 / 11.32% | $4,549 | $34.99 | $5.16 (15%) | 56 / 3 | 4.8 | $7.79 / 63% | 1 | 266 | 1 | 3 pounds | 2025-04-10 1年 2个月 |
+| 10 | [B0FN46S75Q](https://www.amazon.com/dp/B0FN46S75Q) |  | SwallowLiving Vintage Wooden Treasure Chest Box with Lock | 125 / 32.26% | $4,374 | $34.99 | $5.41 (15%) | 12 / 4 | 4.9 | $7.89 / 62% | 2 | 722 | 2 | 2.31 pounds | 2025-10-28 7个月 |
+| 11 | [B0FQJ8JPFM](https://www.amazon.com/dp/B0FQJ8JPFM) |  | Bamboo Phone Box | **** / **** | **** | $34.99 | - | 10 / 3 | 4.6 | **** /  | 2 | 564 | 1 | 2.43 pounds | 2025-11-12 7个月 |
+| 12 | [B0F4D1JVBP](https://www.amazon.com/dp/B0F4D1JVBP) |  | Decorative Book Storage Box Set of 2 | **** / **** | **** | $24.99 | - | 96 / 8 | 4.6 | **** /  | 5 | 302 | 1 | 1.34 pounds | 2025-05-26 1年 |
+| 13 | [B0G31WNCCS](https://www.amazon.com/dp/B0G31WNCCS) |  | Decorative Books for Home Decor | **** / **** | **** | $20.99 | - | 17 / 3 | 4.7 | **** /  | 2 | 408 | 1 | 1.59 pounds | 2026-01-09 5个月 |
+| 14 | [B0DMN38XJM](https://www.amazon.com/dp/B0DMN38XJM) |  | TwoDays Motivational Office Decor | **** / **** | **** | $25.99 | - | 67 / 6 | 4.7 | **** /  | 1 | 396 | 1 | 1.76 pounds | 2025-01-28 1年 4个月 |
+| 15 | [B0FQ84PMTP](https://www.amazon.com/dp/B0FQ84PMTP) |  | Decorative Fake Books for Home Decor | **** / **** | **** | $24.99 | - | 12 / 1 | 4.3 | **** /  | 1 | 304 | 1 | 1.3 pounds | 2025-12-19 5个月 |
+| 16 | [B0DX23QLV3](https://www.amazon.com/dp/B0DX23QLV3) |  | Unfinished Wood Box with Hinged Lid 1 Pack | **** / **** | **** | $22.99 | - | 50 / 3 | 4.3 | **** /  | 1 | 506 | 1 | 1.39 pounds | 2025-08-15 9个月 |
+| 17 | [B0GT8CF7MB](https://www.amazon.com/dp/B0GT8CF7MB) |  | CNARIO Decorative Books for Home Decor | **** / **** | **** | $24.99 | - | 28 / 4 | 4.9 | **** /  | 1 | 449 | 1 | 1.83 pounds | 2026-04-10 2个月 |
+| 18 | [B0C8HDZCTS](https://www.amazon.com/dp/B0C8HDZCTS) |  | Hipiwe Glass Display Case for Collectibles Vintage Gold Display B… | **** / **** | **** | $20.99 | - | 66 / 1 | 4.5 | **** /  | 3 | 440 | 1 | 1.12 pounds | 2023-07-03 2年 11个月 |
+
+## 二、完整商品标题
+
+**1. [B0GKXY24FG](https://www.amazon.com/dp/B0GKXY24FG)** Vintage Faux Book Box Set of 3 Brown Linen Decorative Books for Shelves, Fake Books for Decoration with Secret Compartment, Rustic Farmhouse Coffee Table Decor (Brown-Beige-White)
+
+**2. [B0GRC76TKN](https://www.amazon.com/dp/B0GRC76TKN)** One Hitter Box & 2pcs Metal Tubes, Handmade Walnut Storage Box, Portable Storage Box, Lid 360°Rotation DIY Handmade Art Decorations Gifts for Men, Gifts for Father's Day
+
+**3. [B0CJ1XRT2Z](https://www.amazon.com/dp/B0CJ1XRT2Z)** Navigators Compass Design Wooden Keepsake Box, Large Memory Box for Keepsakes, Decorative Storage Box for Memories, Jewelry, & Photos, Memorial Boxes for Men & Women
+
+**4. [B0G6391R1J](https://www.amazon.com/dp/B0G6391R1J)** Set of 3 Decorative Books for Home Decor, Linen Faux Books for Coffee Table, Bookshelf or Mantel, Aesthetic Fake Book Storage Boxes with Magnetic Snap for Photo Organization & Keepsakes Box
+
+**5. [B0CGHZ1DDM](https://www.amazon.com/dp/B0CGHZ1DDM)** S'Mores Station, Farmhouse Smores Caddy with Handles, Smores Kit for Fire Pit Smores Maker Box, Smores Bar Station with 5Pcs Extendable Marshmallow Roasting Sticks, Camping Essentials Gear Accessories
+
+**6. [B0FH4CGRG6](https://www.amazon.com/dp/B0FH4CGRG6)** Reallnaive 35 Pcs S'mores Station Box Farmhouse Smores Bar Holder with Handles 8 Extendable Marshmallow Roasting Sticks 1 Storage Bucket 24 Label Cards Storage Smores Accessories Organizer(Brown)
+
+**7. [B0FLW9HLWH](https://www.amazon.com/dp/B0FLW9HLWH)** cherish & dwell Beautiful Cozy Corduroy Decorative Storage Boxes with Lids – Set of 2 Keepsake Boxes for Photos, Documents and Home Decor Accents - Giftable Memory Boxes for Mom
+
+**8. [B0DG2J8D21](https://www.amazon.com/dp/B0DG2J8D21)** Vintage Treasure Chest, Pirate Keepsakes Box for Gifts, Wooden Storage, Green Decorative Container for Jewelry, Pearl Trinkets, Tarot Cards - Large
+
+**9. [B0DX841J37](https://www.amazon.com/dp/B0DX841J37)** Large Wooden Memory Box for Keepsakes, Wooden Keepsake Box for Memories, Weddings, Engraved Memory Keepsake Box, Decorative Storage Box
+
+**10. [B0FN46S75Q](https://www.amazon.com/dp/B0FN46S75Q)** SwallowLiving Vintage Wooden Treasure Chest Box with Lock – 12.2"x7.1"x7.1" Decorative Storage Box for Keepsakes, Jewelry, Gifts, Pirate Chest Style with Combination Padlock,Brown
+
+**11. [B0FQJ8JPFM](https://www.amazon.com/dp/B0FQJ8JPFM)** Bamboo Phone Box, Premium Cell Phone Box for Family Time, Cell Phone Jail with Charging Holes,Phone Lock Box Holds 6 Phones (Walnut)
+
+**12. [B0F4D1JVBP](https://www.amazon.com/dp/B0F4D1JVBP)** Decorative Book Storage Box Set of 2, Stylish Decorative Books, Linen Faux Book Storage Box for Bookshelf, Coffee Tables, Home Decor, GrassGreen
+
+**13. [B0G31WNCCS](https://www.amazon.com/dp/B0G31WNCCS)** Decorative Books for Home Decor, Coffee Table Books Decor, 2 Linen Faux/Fake Books with Beads for Farmhouse Decor, Bookself, Mordern Room Decor Aesthetic
+
+**14. [B0DMN38XJM](https://www.amazon.com/dp/B0DMN38XJM)** TwoDays Motivational Office Decor - Modern Decorative Books (Set of 3), 6.7 x 9.8 x 1.4 inches
+
+**15. [B0FQ84PMTP](https://www.amazon.com/dp/B0FQ84PMTP)** Decorative Fake Books for Home Decor – Set of 2 Linen Faux Book Storage Boxes with Hidden Storage to Reduce Visible Clutter, Coffee Table & Bookshelf Decor for Living Room Styling
+
+**16. [B0DX23QLV3](https://www.amazon.com/dp/B0DX23QLV3)** Unfinished Wood Box with Hinged Lid 1 Pack - 10.6" x 7.6" x 4.3" Smooth Unpainted Wooden Storage Box for Crafts, Jewelry, DIY Painting, Gift Packaging - Lightweight & Warp-Resistant
+
+**17. [B0GT8CF7MB](https://www.amazon.com/dp/B0GT8CF7MB)** CNARIO Decorative Books for Home Decor, Set of 3 Linen Faux Books, Coffee Table Decor, Hidden Storage Book Box for Bookshelf, Mantel & Entryway, Photo & Keepsake Organization
+
+**18. [B0C8HDZCTS](https://www.amazon.com/dp/B0C8HDZCTS)** Hipiwe Glass Display Case for Collectibles Vintage Gold Display Box with Black Wood Base for Plants Action Figurine Models Clear Keepsake Box, Square, 3.3x3.3x3.6 Inch
+
+## 三、下一步建议
+
+1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，在卖家精灵「产品详情」页核查供应链来源、头程成本、竞品广告投放强度。
+
+2. **关键词验证**：统一流水线已对每个品类的头部商品批量反查拓展流量词，结果见同目录下 `category_keywords_*.md`，核对搜索量与购买率后再决定是否建 Listing。
+
+3. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。
+
+## 四、原始数值
+
+- `B0GKXY24FG`: 19,925 | 20,720 | 51% | 867 | 13.24% | $19,499 | 500+ | $12K+ | 4 | $22.49 | - | 58 | 23 | 4.8 | 2.65% | $6.02 | 58% | 2026-04-06 | 2个月 | FBA | -
+- `B0GRC76TKN`: 53,955 | 14,468 | 21% | 578 | 146.7% | $12,132 | 500+ | $11K+ | 1 | $20.99 | - | 16 | 9 | 4.3 | 1.56% | $3.54 | 68% | 2026-03-22 | 2个月 | FBA | -
+- `B0CJ1XRT2Z`: 151,038 | 15,076 | 9% | 195 | 51.47% | $9,748 | 100+ | $5K+ | 4 | $49.99 | - | 118 | 6 | 4.4 | 3.08% | $8.89 | 67% | 2023-09-16 | 2年 8个月 | FBA | -
+- `B0G6391R1J`: 95,305 | 10,426 | 10% | 328 | 101.31% | $7,869 | 200+ | $4K+ | 3 | $23.99 | - | 47 | 5 | 4.8 | 1.52% | $5.91 | 60% | 2025-12-15 | 5个月 | FBA | -
+- `B0CGHZ1DDM`: 163,909 | 29,375 | 15% | 211 | 10.92% | $6,328 | 100+ | $2K+ | 2 | $29.99 | - | 106 | 3 | 4.5 | 1.42% | $7.30 | 61% | 2023-11-18 | 2年 6个月 | FBA | -
+- `B0FH4CGRG6`: 159,924 | 38,971 | 20% | 179 | 79.44% | $6,084 | 50+ | $1K+ | 3 | $33.99 | - | 21 | 4 | 4.2 | 2.23% | $6.31 | 66% | 2025-07-13 | 11个月 | FBA | -
+- `B0FLW9HLWH`: 200,907 | 0 | 0% | 162 | 95.74% | $4,858 | 100+ | $2K+ | 1 | $29.99 | - | 35 | - | 4.9 | - | $7.55 | 60% | 2025-12-15 | 5个月 | FBA | -
+- `B0DG2J8D21`: 218,934 | 5,428 | 2% | 176 | 10.11% | $4,574 | 50+ | $1K+ | 3 | $25.99 | - | 82 | 4 | 4.7 | 2.27% | $7.32 | 57% | 2024-10-29 | 1年 7个月 | FBA | -
+- `B0DX841J37`: 183,605 | 59,487 | 24% | 130 | 11.32% | $4,549 | 100+ | $3K+ | 1 | $34.99 | - | 56 | 3 | 4.8 | 2.31% | $7.79 | 63% | 2025-04-10 | 1年 2个月 | FBA | -
+- `B0FN46S75Q`: 209,815 | 14,882 | 7% | 125 | 32.26% | $4,374 | 50+ | $1K+ | 2 | $34.99 | - | 12 | 4 | 4.9 | 3.2% | $7.89 | 62% | 2025-10-28 | 7个月 | FBA | -
+- `B0FQJ8JPFM`: 314,638 | 58,692 | 20% | **** | **** | **** | **** | 2 | $34.99 | - | 10 | 3 | 4.6 | 2.44% | **** | 2025-11-12 | 7个月 | FBA | -
+- `B0F4D1JVBP`: 196,228 | 84,330 | 35% | **** | **** | **** | **** | 5 | $24.99 | - | 96 | 8 | 4.6 | 5.23% | **** | 2025-05-26 | 1年 | FBA | -
+- `B0G31WNCCS`: 198,505 | 18,165 | 8% | **** | **** | **** | **** | 2 | $20.99 | - | 17 | 3 | 4.7 | 1.71% | **** | 2026-01-09 | 5个月 | FBA | -
+- `B0DMN38XJM`: 208,177 | 3,577 | 2% | **** | **** | **** | **** | 1 | $25.99 | - | 67 | 6 | 4.7 | 4.26% | **** | 2025-01-28 | 1年 4个月 | FBA | -
+- `B0FQ84PMTP`: 257,831 | 43,344 | 14% | **** | **** | **** | **** | 1 | $24.99 | - | 12 | 1 | 4.3 | 0.8% | **** | 2025-12-19 | 5个月 | FBA | -
+- `B0DX23QLV3`: 223,864 | 18,495 | 8% | **** | **** | **** | **** | 1 | $22.99 | - | 50 | 3 | 4.3 | 2.34% | **** | 2025-08-15 | 9个月 | FBA | -
+- `B0GT8CF7MB`: 222,875 | 113,370 | 34% | **** | **** | **** | **** | 1 | $24.99 | - | 28 | 4 | 4.9 | 3.6% | **** | 2026-04-10 | 2个月 | FBA | -
+- `B0C8HDZCTS`: 233,779 | 11,423 | 5% | **** | **** | **** | **** | 3 | $20.99 | - | 66 | 1 | 4.5 | 0.8% | **** | 2023-07-03 | 2年 11个月 | FBA | -
+
+---
+
+# Pool & Deck Repair Products 合格产品扫描 (2026-06-14)
+
+> **所在品类路径**：`Patio, Lawn & Garden › Pools, Hot Tubs & Supplies › Parts & Accessories › Pool & Deck Repair Products`
+> 共抓取 **3** 个通过全部筛选条件的候选商品。
+
+> **抓取完整性**：页面可见 **3** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
+
+> **市场评级**：🟡 Yellow (Cautious)　均价 $31.79　均Reviews 682（中等）　重量 2.28lbs（重）　退货率 1.93%（低）　品牌集中度 57.6%（中等）　中国卖家 48.0%
+
+## 一、候选商品列表
+
+| # | ASIN | 中文名称 | 核心名称 | 月销量 / 增长率 | 月销售额 | 价格 | 估算成本 / 占比 | Reviews / 月新增 | 评分 | FBA / 毛利率 | 变体 | 小类排名 | 卖家数 | 包装重量 | 上架时间 |
+|---:|---|---|---|---|---:|---:|---:|---|---:|---|---:|---:|---:|---|---|
+| 1 | [B00Q2L3S1O](https://www.amazon.com/dp/B00Q2L3S1O) |  | Pool Patch Pool Deck Repair Kit | 200 / 120.22% | $9,398 | $46.99 | $7.11 (15%) | 107 / 3 | 4.1 | $7.46 / 69% | 1 | 98 | 2 | 3.53 pounds | 2015-03-26 11年 2个月 |
+| 2 | [B00Q2L3QCU](https://www.amazon.com/dp/B00Q2L3QCU) |  | Pool Patch Gray Pool Tile Adhesive Thinset Repair Kit 3 lb | 171 / 40.21% | $6,838 | $39.99 | $5.90 (15%) | 57 / - | 4.2 | $7.30 / 67% | 1 | 92 | 2 | 3.17 pounds | 2015-02-25 11年 3个月 |
+| 3 | [B0D5DMD84K](https://www.amazon.com/dp/B0D5DMD84K) |  | Pool Anchor Socket Cover Shields for Ladder and Handrails，Pool La… | 150 / 46.46% | $4,499 | $29.99 | $4.49 (15%) | 52 / 2 | 4.2 | $6.31 / 64% | 1 | 115 | 1 | 0.86 pounds | 2024-07-02 1年 11个月 |
+
+## 二、完整商品标题
+
+**1. [B00Q2L3S1O](https://www.amazon.com/dp/B00Q2L3S1O)** Pool Patch Pool Deck Repair Kit - Sand Buff 3lb Cool Deck Patch DIY Patio Repair
+
+**2. [B00Q2L3QCU](https://www.amazon.com/dp/B00Q2L3QCU)** Pool Patch Gray Pool Tile Adhesive Thinset Repair Kit 3 lb - Easy to Mix and Apply Setting Formula - Perfect to Glue Pool Tile - Quick-Drying, Extra Strong Bond - (coverage: approx. 6 sq. ft)
+
+**3. [B0D5DMD84K](https://www.amazon.com/dp/B0D5DMD84K)** Pool Anchor Socket Cover Shields for Ladder and Handrails，Pool Ladder Hole Covers and Railing Bases Accessories -White Set of 2
+
+## 三、下一步建议
+
+1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，在卖家精灵「产品详情」页核查供应链来源、头程成本、竞品广告投放强度。
+
+2. **关键词验证**：统一流水线已对每个品类的头部商品批量反查拓展流量词，结果见同目录下 `category_keywords_*.md`，核对搜索量与购买率后再决定是否建 Listing。
+
+3. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。
+
+## 四、原始数值
+
+- `B00Q2L3S1O`: 57,371 | 7,125 | 11% | 200 | 120.22% | $9,398 | 100+ | $4K+ | 1 | $46.99 | - | 107 | 3 | 4.1 | 1.5% | $7.46 | 69% | 2015-03-26 | 11年 2个月 | FBA | -
+- `B00Q2L3QCU`: 34,290 | 8,753 | 21% | 171 | 40.21% | $6,838 | 100+ | $3K+ | 1 | $39.99 | - | 57 | - | 4.2 | - | $7.30 | 67% | 2015-02-25 | 11年 3个月 | FBA | -
+- `B0D5DMD84K`: 64,808 | 25,254 | 28% | 150 | 46.46% | $4,499 | 100+ | $2K+ | 1 | $29.99 | - | 52 | 2 | 4.2 | 1.33% | $6.31 | 64% | 2024-07-02 | 1年 11个月 | FBA | -
 
 ---
 
 # Swing Trainers 拓展流量词候选 (2026-06-14)
 
-> 查询 ASIN：`B0DSRDB4YL`, `B0GKMGJLL3`, `B0G1MSTY15`, `B0F5BD54RT`, `B0CTQTYVGP`, `B0DTP76XQP`, `B0GL785GSP`, `B0FGHZXNGV`, `B0DX2F3V5Q`, `B0DS2CBVFT`, `B0F6KRVBGR`, `B0F9ZZ17Z8`, `B0F62YLXK6`, `B0GLQ8T4P3`, `B0CT5MVCFD`, `B0FNNCDS7D`, `B0G51VX3YD`, `B0DY2SW4CH`, `B0DNZX4MZF`, `B0FVLV78Y3`
+> 查询 ASIN：`B0DSRDB4YL`, `B0GKMGJLL3`, `B0G1MSTY15`, `B0F5BD54RT`, `B0GKG8PKTX`, `B0DTP76XQP`, `B0FGHZXNGV`, `B0DX2F3V5Q`, `B0DS2CBVFT`, `B0D37GG2SJ`, `B0FZJSDVF8`, `B0F98Y7S35`, `B0F9ZZ17Z8`, `B0GL785GSP`, `B0F6KRVBGR`, `B0F62YLXK6`, `B0GLQ8T4P3`, `B0CT5MVCFD`, `B0FNNCDS7D`, `B0G51VX3YD`
 > 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
 > 用于生成广告测试候选，不代表应直接使用高竞价投放。
 > 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
@@ -1202,28 +1048,28 @@
 
 | # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
 |---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
-| 1 | **catfishing equipment **<br>鲶鱼设备 | 2.91% |  |  | 28,440 | 264 | 6 | 2 | 3,197 | $0.41 | 32.91 |
-| 2 | **tackle box backpack **<br>钓具箱背囊 | 2.82% |  |  | 23,031 | 264 | 7 | 4 | 1,907 | $0.60 | 32.82 |
-| 3 | **baby life jacket 12-18 months **<br>12-18个月的婴儿救生衣 | 2.61% |  |  | 19,008 | 239 | 6 | 0 | 859 | $0.32 | 32.61 |
-| 4 | **fishing tackle backpack **<br>钓具背包 | 2.45% |  |  | 20,610 | 237 | 6 | 15 | 2,767 | $0.56 | 32.45 |
-| 5 | **infant life vest 0-30 lbs **<br>婴儿救生衣 0-30 磅 | 2.36% |  |  | 23,098 | 607 | 14 | 0 | 648 | $0.32 | 32.36 |
-| 6 | **infant life vest **<br>婴儿救生衣 | 2.31% |  |  | 19,313 | 312 | 8 | 1 | 871 | $0.63 | 32.31 |
-| 7 | **kids fishing gear **<br>儿童渔具 | 2.28% |  |  | 19,153 | 329 | 8 | 4 | 8,791 | $0.72 | 32.28 |
-| 8 | **backpack tackle box **<br>背负式钓箱 | 2.07% |  |  | 18,222 | 229 | 6 | 1 | 1,950 | $0.59 | 32.07 |
-| 9 | **tactical sling bag **<br>战术吊袋 | 2.19% |  |  | 20,155 | 197 | 5 | 14 | 4,745 | $0.32 | 32.04 |
-| 10 | **bimini top hardware **<br>比米尼顶的硬件 | 1.95% |  |  | 15,753 | 603 | 14 | 14 | 2,640 | $0.59 | 31.95 |
-| 11 | **catchers mitt **<br>捕手手套 | 1.89% |  |  | 56,467 | 677 | 16 | 3 | 3,458 | $0.32 | 31.89 |
-| 12 | **life jacket for 1 year old **<br>1岁的救生衣 | 2.36% |  |  | 16,523 | 190 | 5 | 0 | 664 | $0.33 | 31.86 |
-| 13 | **fishing kits for adults **<br>成人钓鱼工具包 | 1.61% |  |  | 14,223 | 433 | 10 | 0 | 10,903 | $0.67 | 31.61 |
-| 14 | **tacklebox **<br>钓具箱 | 1.49% |  |  | 13,899 | 283 | 7 | 1 | 1,015 | $0.41 | 31.49 |
-| 15 | **fishing accessories for men **<br>男士钓鱼配件 | 2.61% |  |  | 17,466 | 151 | 4 | 2 | 809 | $0.44 | 30.16 |
-| 16 | **baby life vest **<br>婴儿救生衣 | 1.47% |  |  | 11,918 | 162 | 4 | 3 | 1,099 | $0.37 | 29.57 |
-| 17 | **trout fishing gear **<br>鳟鱼渔具 | 1.84% |  |  | 20,224 | 153 | 4 | 2 | 11,454 | $0.66 | 29.49 |
-| 18 | **bimini tops for boats **<br>船用比米尼顶篷 | 1.43% |  |  | 52,194 | 120 | 3 | 4 | 2,305 | $0.80 | 27.43 |
-| 19 | **water aerobics weights **<br>水中有氧运动重量 | 1.55% |  |  | 6,763 | 256 | 6 | 0 | 1,729 | $0.67 | 25.08 |
-| 20 | **fishing bag backpack **<br>钓鱼袋背包 | 1.43% |  |  | 9,748 | 74 | 2 | 0 | 11,736 | $0.64 | 24.63 |
+| 1 | **catfishing equipment **<br>鲶鱼设备 | 3.09% |  |  | 28,440 | 264 | 6 | 2 | 3,197 | $0.41 | 33.09 |
+| 2 | **tackle box backpack **<br>钓具箱背囊 | 2.96% |  |  | 23,031 | 264 | 7 | 4 | 1,907 | $0.60 | 32.96 |
+| 3 | **baby life jacket 12-18 months **<br>12-18个月的婴儿救生衣 | 2.73% |  |  | 19,008 | 239 | 6 | 0 | 859 | $0.32 | 32.73 |
+| 4 | **fishing tackle backpack **<br>钓具背包 | 2.57% |  |  | 20,610 | 237 | 6 | 15 | 2,767 | $0.56 | 32.57 |
+| 5 | **infant life vest **<br>婴儿救生衣 | 2.39% |  |  | 19,313 | 312 | 8 | 1 | 871 | $0.63 | 32.39 |
+| 6 | **kids fishing gear **<br>儿童渔具 | 2.39% |  |  | 19,153 | 329 | 8 | 4 | 8,791 | $0.72 | 32.39 |
+| 7 | **backpack tackle box **<br>背负式钓箱 | 2.17% |  |  | 18,222 | 229 | 6 | 1 | 1,950 | $0.59 | 32.17 |
+| 8 | **tactical sling bag **<br>战术吊袋 | 2.30% |  |  | 20,155 | 197 | 5 | 14 | 4,745 | $0.32 | 32.15 |
+| 9 | **life jacket for 1 year old **<br>1岁的救生衣 | 2.51% |  |  | 16,523 | 190 | 5 | 0 | 664 | $0.33 | 32.01 |
+| 10 | **fishing kits for adults **<br>成人钓鱼工具包 | 1.69% |  |  | 14,223 | 433 | 10 | 0 | 10,903 | $0.67 | 31.69 |
+| 11 | **tacklebox **<br>钓具箱 | 1.57% |  |  | 13,899 | 283 | 7 | 1 | 1,015 | $0.41 | 31.57 |
+| 12 | **fishing accessories for men **<br>男士钓鱼配件 | 2.73% |  |  | 17,466 | 151 | 4 | 2 | 809 | $0.44 | 30.28 |
+| 13 | **boat shade **<br>船影 | 1.34% |  |  | 9,882 | 178 | 5 | 11 | 5,678 | $0.49 | 30.0 |
+| 14 | **baby life vest **<br>婴儿救生衣 | 1.54% |  |  | 11,918 | 162 | 4 | 3 | 1,099 | $0.37 | 29.64 |
+| 15 | **trout fishing gear **<br>鳟鱼渔具 | 1.93% |  |  | 20,224 | 153 | 4 | 2 | 11,454 | $0.66 | 29.58 |
+| 16 | **saltwater fishing gear **<br>咸水渔具 | 1.39% |  |  | 24,475 | 144 | 4 | 2 | 14,318 | $0.60 | 28.59 |
+| 17 | **bimini tops for boats **<br>船用比米尼顶篷 | 1.75% |  |  | 52,194 | 120 | 3 | 4 | 2,305 | $0.80 | 27.75 |
+| 18 | **kayak lights **<br>皮划艇灯 | 1.36% |  |  | 9,782 | 123 | 3 | 9 | 8,160 | $0.41 | 27.07 |
+| 19 | **water aerobics weights **<br>水中有氧运动重量 | 1.62% |  |  | 6,763 | 256 | 6 | 0 | 1,729 | $0.67 | 25.15 |
+| 20 | **fishing bag backpack **<br>钓鱼袋背包 | 1.50% |  |  | 9,748 | 74 | 2 | 0 | 11,736 | $0.64 | 24.7 |
 
-## 免费套餐当前可见原始关键词（查询 ASIN: B0DSRDB4YL, B0GKMGJLL3, B0G1MSTY15, B0F5BD54RT, B0CTQTYVGP, B0DTP76XQP, B0GL785GSP, B0FGHZXNGV, B0DX2F3V5Q, B0DS2CBVFT, B0F6KRVBGR, B0F9ZZ17Z8, B0F62YLXK6, B0GLQ8T4P3, B0CT5MVCFD, B0FNNCDS7D, B0G51VX3YD, B0DY2SW4CH, B0DNZX4MZF, B0FVLV78Y3）
+## 免费套餐当前可见原始关键词（查询 ASIN: B0DSRDB4YL, B0GKMGJLL3, B0G1MSTY15, B0F5BD54RT, B0GKG8PKTX, B0DTP76XQP, B0FGHZXNGV, B0DX2F3V5Q, B0DS2CBVFT, B0D37GG2SJ, B0FZJSDVF8, B0F98Y7S35, B0F9ZZ17Z8, B0GL785GSP, B0F6KRVBGR, B0F62YLXK6, B0GLQ8T4P3, B0CT5MVCFD, B0FNNCDS7D, B0G51VX3YD）
 
 1. **catfishing equipment ** — 鲶鱼设备
 2. **tackle box backpack ** — 钓具箱背囊
@@ -1231,20 +1077,20 @@
 4. **fishing accessories for men ** — 男士钓鱼配件
 5. **fishing tackle backpack ** — 钓具背包
 6. **life jacket for 1 year old ** — 1岁的救生衣
-7. **infant life vest 0-30 lbs ** — 婴儿救生衣 0-30 磅
-8. **infant life vest ** — 婴儿救生衣
-9. **kids fishing gear ** — 儿童渔具
-10. **tactical sling bag ** — 战术吊袋
-11. **backpack tackle box ** — 背负式钓箱
-12. **bimini top hardware ** — 比米尼顶的硬件
-13. **catchers mitt ** — 捕手手套
-14. **trout fishing gear ** — 鳟鱼渔具
-15. **fishing kits for adults ** — 成人钓鱼工具包
-16. **water aerobics weights ** — 水中有氧运动重量
-17. **tacklebox ** — 钓具箱
-18. **baby life vest ** — 婴儿救生衣
-19. **fishing bag backpack ** — 钓鱼袋背包
-20. **bimini tops for boats ** — 船用比米尼顶篷
+7. **infant life vest ** — 婴儿救生衣
+8. **kids fishing gear ** — 儿童渔具
+9. **tactical sling bag ** — 战术吊袋
+10. **backpack tackle box ** — 背负式钓箱
+11. **trout fishing gear ** — 鳟鱼渔具
+12. **bimini tops for boats ** — 船用比米尼顶篷
+13. **fishing kits for adults ** — 成人钓鱼工具包
+14. **water aerobics weights ** — 水中有氧运动重量
+15. **tacklebox ** — 钓具箱
+16. **baby life vest ** — 婴儿救生衣
+17. **fishing bag backpack ** — 钓鱼袋背包
+18. **saltwater fishing gear ** — 咸水渔具
+19. **kayak lights ** — 皮划艇灯
+20. **boat shade ** — 船影
 
 ---
 
@@ -1260,26 +1106,26 @@
 
 | # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
 |---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
-| 1 | **pool lights that float **<br>漂浮的泳池灯 | 31.41% |  |  | 5,589 | 134 | 4 | 7 | 1,061 | $0.49 | 47.88 |
-| 2 | **magnetic pool lights **<br>磁池灯 | 23.99% |  |  | 6,394 | 52 | 2 | 1 | 662 | $0.59 | 39.38 |
-| 3 | **solar sun rings **<br>太阳太阳环 | 10.51% |  |  | 7,800 | 269 | 7 | 9 | 230 | $0.41 | 36.11 |
-| 4 | **pool balls for swimming pool **<br>游泳池球 | 0.88% |  |  | 13,458 | 767 | 18 | 2 | 6,175 | $0.67 | 30.88 |
-| 5 | **outdoor pool decor **<br>室外游泳池装饰 | 8.21% |  |  | 9,318 | 70 | 2 | 3 | 498 | $0.32 | 30.35 |
-| 6 | **floating solar fountain **<br>漂浮的太阳能喷泉 | 1.01% |  |  | 12,757 | 96 | 3 | 3 | 1,299 | $0.64 | 25.81 |
-| 7 | **solar fountain with lights **<br>带灯的太阳能喷泉 | 3.16% |  |  | 13,539 | 51 | 2 | 0 | 2,540 | $0.59 | 25.71 |
-| 8 | **floating lights for pool **<br>泳池漂浮灯 | 13.10% |  |  | 4,089 | 83 | 2 | 1 | 6,389 | $0.73 | 25.43 |
-| 9 | **solar fountain for pool **<br>游泳池太阳能喷泉 | 0.50% |  |  | 20,160 | 86 | 2 | 0 | 1,395 | $0.58 | 24.8 |
+| 1 | **pool lights that float **<br>漂浮的泳池灯 | 30.97% |  |  | 5,589 | 134 | 4 | 7 | 1,061 | $0.49 | 47.88 |
+| 2 | **magnetic pool lights **<br>磁池灯 | 23.65% |  |  | 6,394 | 52 | 2 | 1 | 662 | $0.59 | 39.04 |
+| 3 | **solar sun rings **<br>太阳太阳环 | 10.29% |  |  | 7,800 | 269 | 7 | 9 | 230 | $0.41 | 35.89 |
+| 4 | **pool balls for swimming pool **<br>游泳池球 | 0.87% |  |  | 13,458 | 767 | 18 | 2 | 6,175 | $0.67 | 30.87 |
+| 5 | **outdoor pool decor **<br>室外游泳池装饰 | 8.09% |  |  | 9,318 | 70 | 2 | 3 | 498 | $0.32 | 30.23 |
+| 6 | **solar fountain for pool **<br>游泳池太阳能喷泉 | 1.97% |  |  | 20,160 | 86 | 2 | 0 | 1,395 | $0.58 | 26.27 |
+| 7 | **floating solar fountain **<br>漂浮的太阳能喷泉 | 1.00% |  |  | 12,757 | 96 | 3 | 3 | 1,299 | $0.64 | 25.8 |
+| 8 | **solar fountain with lights **<br>带灯的太阳能喷泉 | 3.11% |  |  | 13,539 | 51 | 2 | 0 | 2,540 | $0.59 | 25.66 |
+| 9 | **floating lights for pool **<br>泳池漂浮灯 | 12.92% |  |  | 4,089 | 83 | 2 | 1 | 6,389 | $0.73 | 25.25 |
 | 10 | **solar flame lights **<br>太阳能火焰灯 | 0.04% |  |  | 7,810 | 152 | 4 | 3 | 2,457 | $0.63 | 23.26 |
-| 11 | **hot tub lights **<br>热水浴缸灯 | 0.92% |  |  | 4,277 | 143 | 4 | 4 | 5,566 | $0.81 | 16.62 |
+| 11 | **hot tub lights **<br>热水浴缸灯 | 0.91% |  |  | 4,277 | 143 | 4 | 4 | 5,566 | $0.81 | 16.61 |
 | 12 | **floating flowers for pool **<br>游泳池的漂浮花 | 0.04% |  |  | 2,439 | 239 | 6 | 2 | 1,061 | $0.38 | 14.92 |
 | 13 | **waterproof led lights **<br>防水LED灯 | 0.10% |  |  | 5,189 | 62 | 2 | 1 | 361 | $0.45 | 13.58 |
 | 14 | **velas flotantes para agua **<br>贝拉斯浮台－巴拉阿瓜 | 0.12% |  |  | 3,964 | 107 | 3 | 0 | 241 | $0.44 | 13.4 |
-| 15 | **pool fountains **<br>泳池喷泉 | 0.41% |  |  | 3,859 | 52 | 2 | 10 | 6,666 | $0.62 | 10.73 |
-| 16 | **pool light gasket **<br>泳池灯垫圈 | 2.03% |  |  | 2,498 | 62 | 2 | 7 | 10,558 | $0.69 | 10.13 |
+| 15 | **pool fountains **<br>泳池喷泉 | 0.40% |  |  | 3,859 | 52 | 2 | 10 | 6,666 | $0.62 | 10.72 |
+| 16 | **pool light gasket **<br>泳池灯垫圈 | 2.00% |  |  | 2,498 | 62 | 2 | 7 | 10,558 | $0.69 | 10.1 |
 | 17 | **flame solar lights **<br>火焰太阳能灯 | 0.01% |  |  | 2,959 | 80 | 2 | 0 | 3,922 | $0.63 | 9.93 |
 | 18 | **waterproof lights **<br>防水灯 | - |  |  | 1,926 | 100 | 3 | 0 | 287 | $0.47 | 8.85 |
-| 19 | **light up beach balls for pool **<br>为泳池点亮沙滩球 | 2.33% |  |  | 1,525 | 53 | 2 | 2 | 817 | $0.57 | 8.03 |
-| 20 | **hot tub light **<br>热水浴缸灯 | 1.22% |  |  | 1,458 | 59 | 2 | 4 | 5,394 | $0.77 | 7.09 |
+| 19 | **light up beach balls for pool **<br>为泳池点亮沙滩球 | 2.30% |  |  | 1,525 | 53 | 2 | 2 | 817 | $0.57 | 8.0 |
+| 20 | **hot tub light **<br>热水浴缸灯 | 1.20% |  |  | 1,458 | 59 | 2 | 4 | 5,394 | $0.77 | 7.07 |
 
 ## 免费套餐当前可见原始关键词（查询 ASIN: B0G6L569ZB, B0GD7YRTDM, B0GJCRX242, B0DXVSDMZF, B0DSHT56KC, B0GRTPX9DC, B0GPW9YT5H, B0G6Z1QM2M, B0DZD1RC33, B0DWMMYNDB, B0G6SLH595, B0DSD4NWXN, B0FWJ6C4CY, B0CX9162PJ, B0G8X6721P, B0FWC5JQL9, B0D93J8T91, B0G6TLWN2W, B0DN6FBDDQ, B0GCZ27BY1）
 
@@ -1291,11 +1137,11 @@
 6. **solar fountain with lights ** — 带灯的太阳能喷泉
 7. **light up beach balls for pool ** — 为泳池点亮沙滩球
 8. **pool light gasket ** — 泳池灯垫圈
-9. **hot tub light ** — 热水浴缸灯
-10. **floating solar fountain ** — 漂浮的太阳能喷泉
-11. **hot tub lights ** — 热水浴缸灯
-12. **pool balls for swimming pool ** — 游泳池球
-13. **solar fountain for pool ** — 游泳池太阳能喷泉
+9. **solar fountain for pool ** — 游泳池太阳能喷泉
+10. **hot tub light ** — 热水浴缸灯
+11. **floating solar fountain ** — 漂浮的太阳能喷泉
+12. **hot tub lights ** — 热水浴缸灯
+13. **pool balls for swimming pool ** — 游泳池球
 14. **pool fountains ** — 泳池喷泉
 15. **velas flotantes para agua ** — 贝拉斯浮台－巴拉阿瓜
 16. **waterproof led lights ** — 防水LED灯
@@ -1306,245 +1152,229 @@
 
 ---
 
-# Cardboard Cutouts 拓展流量词候选 (2026-06-14)
+# Nicotine Patches 拓展流量词候选 (2026-06-14)
 
-> 查询 ASIN：`B0G7YT3F1H`, `B0GHSNNZPZ`, `B0GJL3W2D6`, `B0FWC8ZZ48`, `B09PKHLH7W`
+> 查询 ASIN：`B0G839C2C2`, `B0DKP86SX6`
 > 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
 > 用于生成广告测试候选，不代表应直接使用高竞价投放。
 > 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
-> 原始关键词 **20** 个，过滤后保留 **20** 个。
-> 抓取完整性：页面可见 **0** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**可能存在**。
-> 指标可用性：**不可用**。若指标不可用，过滤后 0 条不能解释为没有关键词机会。
-
-| # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
-|---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
-| 1 | **winnie the pooh stickers **<br>小熊维尼贴纸 | 16.92% |  |  | 16,529 | 684 | 16 | 1 | 990 | $0.32 | 46.92 |
-| 2 | **winnie the pooh baby shower **<br>小熊维尼婴儿送礼会 | 15.00% |  |  | 24,582 | 226 | 6 | 3 | 6,881 | $0.32 | 45.0 |
-| 3 | **winnie the pooh nursery decor **<br>小熊维尼托儿所装饰 | 13.86% |  |  | 21,167 | 137 | 4 | 1 | 996 | $0.47 | 40.71 |
-| 4 | **winnie the pooh balloons **<br>小熊维尼气球 | 10.99% |  |  | 9,553 | 251 | 6 | 0 | 769 | $0.41 | 40.1 |
-| 5 | **gender reveal box **<br>性别揭示盒 | 6.59% |  |  | 12,691 | 171 | 4 | 6 | 4,960 | $0.32 | 35.14 |
-| 6 | **winnie the pooh decorations **<br>小熊维尼装饰品 | 11.36% |  |  | 9,307 | 91 | 3 | 0 | 896 | $0.36 | 34.52 |
-| 7 | **little people princess **<br>小人儿公主 | 3.04% |  |  | 14,178 | 450 | 11 | 0 | 1,111 | $0.32 | 33.04 |
-| 8 | **winnie the pooh cake topper **<br>小熊维尼蛋糕装饰 | 0.16% |  |  | 11,464 | 311 | 8 | 0 | 244 | $0.32 | 30.16 |
-| 9 | **winnie the pooh backdrop **<br>小熊维尼背景 | 1.79% |  |  | 9,284 | 121 | 3 | 0 | 513 | $0.32 | 26.41 |
-| 10 | **little people disney **<br>小人物迪斯尼 | 4.54% |  |  | 7,507 | 131 | 3 | 0 | 4,633 | $0.47 | 26.1 |
-| 11 | **digital circus merch **<br>数字马戏团商品 | 0.32% |  |  | 9,399 | 97 | 3 | 1 | 104 | $0.32 | 23.97 |
-| 12 | **winnie the pooh balloon arch **<br>小熊维尼气球拱门 | 5.00% |  |  | 3,956 | 291 | 7 | 0 | 896 | $0.42 | 22.91 |
-| 13 | **pierrot the freak circus **<br>怪诞小丑马戏团 | 0.06% |  |  | 8,787 | 100 | 3 | 3 | 65 | $0.32 | 22.63 |
-| 14 | **princess backdrop **<br>公主背景 | 3.38% |  |  | 5,436 | 107 | 3 | 1 | 6,207 | $0.32 | 19.6 |
-| 15 | **disney decorations **<br>迪士尼装饰品 | 0.72% |  |  | 5,248 | 132 | 3 | 0 | 905 | $0.32 | 17.82 |
-| 16 | **safari backdrop **<br>野生动物园背景 | 0.06% |  |  | 3,557 | 263 | 6 | 2 | 3,553 | $0.32 | 17.17 |
-| 17 | **disney party decorations **<br>迪士尼派对装饰品 | 2.38% |  |  | 5,215 | 51 | 2 | 0 | 4,601 | $0.55 | 15.36 |
-| 18 | **disney princess backdrop **<br>迪士尼公主背景 | 2.18% |  |  | 3,128 | 70 | 2 | 0 | 590 | $0.32 | 11.94 |
-| 19 | **neutral balloon arch kit **<br>中性气球拱形套件 | 1.26% |  |  | 2,648 | 75 | 2 | 6 | 1,125 | $0.33 | 10.31 |
-| 20 | **disney princess party **<br>迪士尼公主派对 | 0.15% |  |  | 2,950 | 58 | 2 | 2 | 6,137 | $0.32 | 8.95 |
-
-## 免费套餐当前可见原始关键词（查询 ASIN: B0G7YT3F1H, B0GHSNNZPZ, B0GJL3W2D6, B0FWC8ZZ48, B09PKHLH7W）
-
-1. **winnie the pooh stickers ** — 小熊维尼贴纸
-2. **winnie the pooh baby shower ** — 小熊维尼婴儿送礼会
-3. **winnie the pooh nursery decor ** — 小熊维尼托儿所装饰
-4. **winnie the pooh decorations ** — 小熊维尼装饰品
-5. **winnie the pooh balloons ** — 小熊维尼气球
-6. **gender reveal box ** — 性别揭示盒
-7. **winnie the pooh balloon arch ** — 小熊维尼气球拱门
-8. **little people disney ** — 小人物迪斯尼
-9. **princess backdrop ** — 公主背景
-10. **little people princess ** — 小人儿公主
-11. **disney party decorations ** — 迪士尼派对装饰品
-12. **disney princess backdrop ** — 迪士尼公主背景
-13. **winnie the pooh backdrop ** — 小熊维尼背景
-14. **neutral balloon arch kit ** — 中性气球拱形套件
-15. **disney decorations ** — 迪士尼装饰品
-16. **digital circus merch ** — 数字马戏团商品
-17. **winnie the pooh cake topper ** — 小熊维尼蛋糕装饰
-18. **disney princess party ** — 迪士尼公主派对
-19. **safari backdrop ** — 野生动物园背景
-20. **pierrot the freak circus ** — 怪诞小丑马戏团
-
----
-
-# Electrical System Tools 拓展流量词候选 (2026-06-14)
-
-> 查询 ASIN：`B0GHDJM616`, `B0C4PTWP8G`, `B0FDVDL457`, `B0CR6F2HR1`
-> 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
-> 用于生成广告测试候选，不代表应直接使用高竞价投放。
-> 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
-> 原始关键词 **14** 个，过滤后保留 **14** 个。
+> 原始关键词 **9** 个，过滤后保留 **9** 个。
 > 抓取完整性：页面可见 **0** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
 > 指标可用性：**不可用**。若指标不可用，过滤后 0 条不能解释为没有关键词机会。
 
 | # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
 |---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
-| 1 | **compression tester automotive **<br>汽车压缩测试仪 | 25.54% |  |  | 12,395 | 739 | 17 | 5 | 1,577 | $0.69 | 55.54 |
-| 2 | **hose removal pliers **<br>软管拆卸钳 | 45.07% |  |  | 3,557 | 170 | 4 | 15 | 2,193 | $0.32 | 45.61 |
-| 3 | **electrical pin removal tool **<br>电针拆卸工具 | 21.24% |  |  | 2,449 | 94 | 3 | 12 | 4,619 | $0.78 | 30.84 |
-| 4 | **molex connector kit **<br>molex 连接器套件 | 5.01% |  |  | 7,474 | 163 | 4 | 4 | 937 | $0.44 | 28.11 |
-| 5 | **rv compartment door latch **<br>房车隔间门锁 | - |  |  | 2,193 | 184 | 5 | 3 | 4,055 | $0.60 | 13.59 |
-| 6 | **compression test kit **<br>压缩测试套件 | - |  |  | 3,057 | 144 | 4 | 4 | 630 | $0.60 | 13.31 |
-| 7 | **new tools **<br>新工具 | - |  |  | 1,611 | 260 | 6 | 0 | 353 | $0.47 | 13.22 |
-| 8 | **roll pin removal tool **<br>滚销拆卸工具 | - |  |  | 1,386 | 179 | 5 | 3 | 1,730 | $0.48 | 11.72 |
-| 9 | **molex connector **<br>摩尔克斯连接器 | 1.72% |  |  | 1,832 | 58 | 2 | 1 | 1,758 | $0.33 | 8.28 |
-| 10 | **trailer latch **<br>拖车闩锁 | - |  |  | 2,067 | 76 | 2 | 6 | 9,607 | $0.63 | 7.93 |
-| 11 | **deutsch crimper **<br>德式卷边机 | - |  |  | 1,186 | 111 | 3 | 6 | 651 | $0.45 | 7.92 |
-| 12 | **hose clamp removal tool **<br>软管夹拆卸工具 | 1.42% |  |  | 1,347 | 69 | 2 | 9 | 4,779 | $0.38 | 7.56 |
-| 13 | **small screw extractor **<br>小螺丝取出器 | - |  |  | 1,385 | 83 | 2 | 1 | 4,363 | $0.62 | 6.92 |
-| 14 | **micro screw extractor **<br>微型螺丝取出器 | - |  |  | 1,235 | 61 | 2 | 1 | 357 | $0.67 | 5.52 |
+| 1 | **x39 patches lifewave stem cell **<br>x39 贴片 Lifewave 干细胞 | 40.45% |  |  | 6,620 | 300 | 7 | 0 | 74 | $0.73 | 53.24 |
+| 2 | **hangover kits **<br>宿醉套装 | 33.59% |  |  | 4,702 | 127 | 3 | 6 | 400 | $0.32 | 45.75 |
+| 3 | **nad patches **<br>nad 补丁 | - |  |  | 19,812 | 215 | 5 | 14 | 221 | $0.58 | 30.0 |
+| 4 | **girls trip gifts favors **<br>女孩旅行礼物恩惠 | - |  |  | 18,789 | 659 | 15 | 9 | 5,649 | $0.32 | 30.0 |
+| 5 | **nicoderm cq **<br>尼古德姆cq | 13.20% |  |  | 1,480 | 253 | 6 | 4 | 47 | $0.32 | 26.16 |
+| 6 | **nicoderm patches **<br>尼古丁贴剂 | 12.48% |  |  | 1,448 | 200 | 5 | 0 | 150 | $0.32 | 25.38 |
+| 7 | **lifewave patches **<br>生命波补丁 | - |  |  | 4,123 | 140 | 4 | 2 | 242 | $0.52 | 15.25 |
+| 8 | **hangover recovery kit **<br>宿醉恢复套件 | 0.27% |  |  | 3,404 | 74 | 2 | 4 | 338 | $0.32 | 10.78 |
+| 9 | **no nicotine cigarettes **<br>没有尼古丁香烟 | - |  |  | 1,794 | 54 | 2 | 0 | 671 | $0.32 | 6.29 |
 
-## 免费套餐当前可见原始关键词（查询 ASIN: B0GHDJM616, B0C4PTWP8G, B0FDVDL457, B0CR6F2HR1）
+## 免费套餐当前可见原始关键词（查询 ASIN: B0G839C2C2, B0DKP86SX6）
 
-1. **hose removal pliers ** — 软管拆卸钳
-2. **compression tester automotive ** — 汽车压缩测试仪
-3. **electrical pin removal tool ** — 电针拆卸工具
-4. **molex connector kit ** — molex 连接器套件
-5. **molex connector ** — 摩尔克斯连接器
-6. **hose clamp removal tool ** — 软管夹拆卸工具
-7. **trailer latch ** — 拖车闩锁
-8. **small screw extractor ** — 小螺丝取出器
-9. **rv compartment door latch ** — 房车隔间门锁
-10. **roll pin removal tool ** — 滚销拆卸工具
-11. **new tools ** — 新工具
-12. **micro screw extractor ** — 微型螺丝取出器
-13. **deutsch crimper ** — 德式卷边机
-14. **compression test kit ** — 压缩测试套件
+1. **x39 patches lifewave stem cell ** — x39 贴片 Lifewave 干细胞
+2. **hangover kits ** — 宿醉套装
+3. **nicoderm cq ** — 尼古德姆cq
+4. **nicoderm patches ** — 尼古丁贴剂
+5. **hangover recovery kit ** — 宿醉恢复套件
+6. **no nicotine cigarettes ** — 没有尼古丁香烟
+7. **nad patches ** — nad 补丁
+8. **lifewave patches ** — 生命波补丁
+9. **girls trip gifts favors ** — 女孩旅行礼物恩惠
 
 ---
 
-# Brake System Bleeding Tools 拓展流量词候选 (2026-06-14)
+# Water Balloons 拓展流量词候选 (2026-06-14)
 
-> 查询 ASIN：`B0GGQH744M`, `B0F22SXPDT`
+> 查询 ASIN：`B0GC43CR19`, `B0GKFSMPTP`, `B0GD11KHJB`, `B0DZFGJQ5N`, `B0DZML5ZPH`
 > 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
 > 用于生成广告测试候选，不代表应直接使用高竞价投放。
 > 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
-> 原始关键词 **5** 个，过滤后保留 **5** 个。
+> 原始关键词 **20** 个，过滤后保留 **20** 个。
+> 抓取完整性：页面可见 **0** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**可能存在**。
+> 指标可用性：**不可用**。若指标不可用，过滤后 0 条不能解释为没有关键词机会。
+
+| # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
+|---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
+| 1 | **zuru bunch o balloons **<br>zuru 束 o 气球 | 26.91% |  |  | 4,549 | 129 | 3 | 12 | 231 | $0.46 | 42.46 |
+| 2 | **32 panel hacky sack **<br>32面袋球 | 9.62% |  |  | 47,661 | 490 | 12 | 0 | 98 | $0.37 | 39.62 |
+| 3 | **backyard water fun **<br>后院玩水 | 13.63% |  |  | 16,585 | 63 | 2 | 0 | 12,259 | $0.47 | 36.78 |
+| 4 | **little tikes outdoor toys **<br>little tikes 户外玩具 | 3.14% |  |  | 69,974 | 209 | 5 | 0 | 728 | $0.41 | 33.14 |
+| 5 | **basketball hoop for kids 1-3 **<br>1-3岁儿童篮球架 | 2.66% |  |  | 11,218 | 355 | 9 | 5 | 1,564 | $0.68 | 32.66 |
+| 6 | **little tikes water table **<br>little tikes 地下水位 | 1.24% |  |  | 27,980 | 304 | 8 | 0 | 682 | $0.32 | 31.24 |
+| 7 | **2 year old boy toys **<br>2岁男孩的玩具 | 0.67% |  |  | 32,911 | 865 | 20 | 0 | 8,306 | $0.62 | 30.67 |
+| 8 | **baby water table **<br>婴儿饮水台 | 0.81% |  |  | 17,694 | 129 | 3 | 0 | 13,784 | $0.46 | 27.26 |
+| 9 | **juguetes para niños 1 a 2 años **<br>juguetes para niños 1 a 2 años | 0.57% |  |  | 25,104 | 85 | 2 | 0 | 830 | $0.52 | 24.82 |
+| 10 | **water slide for kids **<br>儿童水滑梯 | 0.73% |  |  | 18,711 | 80 | 2 | 7 | 12,137 | $0.32 | 24.73 |
+| 11 | **toddler outdoor playset **<br>幼儿户外玩具套装 | 0.53% |  |  | 30,314 | 81 | 2 | 3 | 3,851 | $0.39 | 24.58 |
+| 12 | **water fun for kids outdoor **<br>孩子们在户外玩水 | 6.25% |  |  | 7,754 | 52 | 2 | 0 | 1,832 | $0.32 | 24.36 |
+| 13 | **toddler basketball hoop set **<br>幼儿篮球架套装 | 0.55% |  |  | 12,749 | 76 | 2 | 2 | 1,610 | $0.67 | 24.35 |
+| 14 | **yard games for family **<br>适合家庭的院子游戏 | 0.58% |  |  | 5,384 | 476 | 11 | 1 | 519 | $0.54 | 21.35 |
+| 15 | **giant tower stack game **<br>巨型塔堆叠游戏 | 6.58% |  |  | 5,557 | 60 | 2 | 0 | 978 | $0.69 | 20.69 |
+| 16 | **slingshot for kids **<br>儿童弹弓 | 1.09% |  |  | 4,486 | 802 | 19 | 7 | 1,140 | $0.55 | 20.06 |
+| 17 | **burger mania game **<br>汉堡狂热游戏 | 6.80% |  |  | 1,509 | 335 | 8 | 0 | 137 | $0.32 | 19.82 |
+| 18 | **adult yard games **<br>成人院子游戏 | 1.22% |  |  | 3,974 | 257 | 6 | 0 | 9,914 | $0.48 | 19.17 |
+| 19 | **giant water balloon **<br>巨大的水气球 | 5.14% |  |  | 2,210 | 147 | 4 | 0 | 7,323 | $0.43 | 16.91 |
+| 20 | **ants in the pants game **<br>裤子里的蚂蚁游戏 | 2.09% |  |  | 3,140 | 159 | 4 | 0 | 250 | $0.35 | 16.32 |
+
+## 免费套餐当前可见原始关键词（查询 ASIN: B0GC43CR19, B0GKFSMPTP, B0GD11KHJB, B0DZFGJQ5N, B0DZML5ZPH）
+
+1. **zuru bunch o balloons ** — zuru 束 o 气球
+2. **backyard water fun ** — 后院玩水
+3. **32 panel hacky sack ** — 32面袋球
+4. **burger mania game ** — 汉堡狂热游戏
+5. **giant tower stack game ** — 巨型塔堆叠游戏
+6. **water fun for kids outdoor ** — 孩子们在户外玩水
+7. **giant water balloon ** — 巨大的水气球
+8. **little tikes outdoor toys ** — little tikes 户外玩具
+9. **basketball hoop for kids 1-3 ** — 1-3岁儿童篮球架
+10. **ants in the pants game ** — 裤子里的蚂蚁游戏
+11. **little tikes water table ** — little tikes 地下水位
+12. **adult yard games ** — 成人院子游戏
+13. **slingshot for kids ** — 儿童弹弓
+14. **baby water table ** — 婴儿饮水台
+15. **water slide for kids ** — 儿童水滑梯
+16. **2 year old boy toys ** — 2岁男孩的玩具
+17. **yard games for family ** — 适合家庭的院子游戏
+18. **juguetes para niños 1 a 2 años ** — juguetes para niños 1 a 2 años
+19. **toddler basketball hoop set ** — 幼儿篮球架套装
+20. **toddler outdoor playset ** — 幼儿户外玩具套装
+
+---
+
+# Squirt Guns 拓展流量词候选 (2026-06-14)
+
+> 查询 ASIN：`B0GQ2BQQDS`, `B0H13XKQ27`, `B0GH71NJPF`, `B0GJSTS72K`, `B0BPH8P5D9`, `B0BKVHW3CZ`, `B0DRVGDYGK`, `B0GDG4T6L8`, `B0F3NVTP3J`, `B0DRY4N6MG`, `B09TZVCD7R`
+> 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
+> 用于生成广告测试候选，不代表应直接使用高竞价投放。
+> 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
+> 原始关键词 **20** 个，过滤后保留 **20** 个。
+> 抓取完整性：页面可见 **0** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**可能存在**。
+> 指标可用性：**不可用**。若指标不可用，过滤后 0 条不能解释为没有关键词机会。
+
+| # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
+|---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
+| 1 | **orbeez gel gun **<br>orbeez 凝胶枪 | 10.79% |  |  | 59,008 | 861 | 20 | 0 | 109 | $0.48 | 40.79 |
+| 2 | **orby gun **<br>奥比枪 | 6.69% |  |  | 35,039 | 413 | 10 | 8 | 93 | $0.42 | 36.69 |
+| 3 | **splat gun **<br>喷枪 | 5.83% |  |  | 43,110 | 844 | 20 | 0 | 156 | $0.33 | 35.83 |
+| 4 | **spyra 4 **<br>Spyra 4 | 10.59% |  |  | 10,692 | 104 | 3 | 3 | 51 | $0.55 | 35.79 |
+| 5 | **gel blaster gun **<br>凝胶爆破枪 | 3.09% |  |  | 42,896 | 626 | 15 | 0 | 461 | $0.44 | 33.09 |
+| 6 | **water squirter for kids **<br>儿童喷水器 | 2.59% |  |  | 16,251 | 659 | 15 | 3 | 605 | $0.71 | 32.59 |
+| 7 | **nerf water gun **<br>nerf水枪 | 3.15% |  |  | 9,375 | 246 | 6 | 0 | 331 | $0.70 | 31.9 |
+| 8 | **toy guns **<br>玩具枪 | 1.79% |  |  | 27,764 | 211 | 5 | 3 | 11,772 | $0.46 | 31.79 |
+| 9 | **orbeez gun **<br>orbeez枪 | 1.69% |  |  | 20,859 | 273 | 7 | 0 | 160 | $0.58 | 31.69 |
+| 10 | **gel blaster pistol **<br>凝胶爆破手枪 | 1.50% |  |  | 20,656 | 212 | 5 | 0 | 3,358 | $0.32 | 31.5 |
+| 11 | **splat ball gun **<br>泼球枪 | 1.44% |  |  | 11,595 | 485 | 12 | 1 | 112 | $0.35 | 31.44 |
+| 12 | **water pistol **<br>水枪 | 1.80% |  |  | 8,976 | 376 | 9 | 14 | 5,548 | $0.45 | 29.75 |
+| 13 | **water shooters **<br>水射手 | 4.05% |  |  | 7,454 | 298 | 7 | 2 | 545 | $0.54 | 28.96 |
+| 14 | **orbeez gel gun ammo **<br>Orbeez胶枪弹药 | 1.84% |  |  | 8,067 | 339 | 8 | 0 | 46 | $0.37 | 27.97 |
+| 15 | **semi automatic slingshot **<br>半自动弹弓 | 1.84% |  |  | 11,518 | 87 | 3 | 0 | 177 | $0.37 | 26.19 |
+| 16 | **x shot water gun **<br>x 水枪 | 2.99% |  |  | 11,992 | 61 | 2 | 0 | 269 | $0.73 | 26.04 |
+| 17 | **water blasters **<br>喷水器 | 1.90% |  |  | 8,700 | 94 | 3 | 5 | 5,059 | $0.72 | 24.0 |
+| 18 | **orbeez gunz **<br>奥比兹枪 | 1.55% |  |  | 8,313 | 90 | 3 | 0 | 110 | $0.39 | 22.68 |
+| 19 | **orbeez for gel blasters **<br>用于凝胶喷射器的 ORBEEZ | 1.39% |  |  | 5,463 | 211 | 5 | 0 | 88 | $0.47 | 22.32 |
+| 20 | **￼orby gun **<br>奥比枪 | 2.05% |  |  | 5,529 | 54 | 2 | 0 | 143 | $0.42 | 15.81 |
+
+## 免费套餐当前可见原始关键词（查询 ASIN: B0GQ2BQQDS, B0H13XKQ27, B0GH71NJPF, B0GJSTS72K, B0BPH8P5D9, B0BKVHW3CZ, B0DRVGDYGK, B0GDG4T6L8, B0F3NVTP3J, B0DRY4N6MG, B09TZVCD7R）
+
+1. **orbeez gel gun ** — orbeez 凝胶枪
+2. **spyra 4 ** — Spyra 4
+3. **orby gun ** — 奥比枪
+4. **splat gun ** — 喷枪
+5. **water shooters ** — 水射手
+6. **nerf water gun ** — nerf水枪
+7. **gel blaster gun ** — 凝胶爆破枪
+8. **x shot water gun ** — x 水枪
+9. **water squirter for kids ** — 儿童喷水器
+10. **￼orby gun ** — 奥比枪
+11. **water blasters ** — 喷水器
+12. **semi automatic slingshot ** — 半自动弹弓
+13. **orbeez gel gun ammo ** — Orbeez胶枪弹药
+14. **water pistol ** — 水枪
+15. **toy guns ** — 玩具枪
+16. **orbeez gun ** — orbeez枪
+17. **orbeez gunz ** — 奥比兹枪
+18. **gel blaster pistol ** — 凝胶爆破手枪
+19. **splat ball gun ** — 泼球枪
+20. **orbeez for gel blasters ** — 用于凝胶喷射器的 ORBEEZ
+
+---
+
+# Drip Irrigation Kits 拓展流量词候选 (2026-06-14)
+
+> 查询 ASIN：`B0GJZXWSK6`, `B0G1473Y3J`, `B0G64FH1N1`, `B0GHQXCCZ2`, `B0FMXHDBHK`, `B0CYG23NZR`, `B0GF7SNVMD`, `B0F1T5QBP8`, `B0C7MGZCJK`, `B0DY7X7M4V`, `B0D2J1KMC9`, `B0GH6XXK1F`, `B0BNS5VR78`
+> 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
+> 用于生成广告测试候选，不代表应直接使用高竞价投放。
+> 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
+> 原始关键词 **13** 个，过滤后保留 **13** 个。
 > 抓取完整性：页面可见 **0** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
 > 指标可用性：**不可用**。若指标不可用，过滤后 0 条不能解释为没有关键词机会。
 
 | # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
 |---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
-| 1 | **sram brake bleed kit **<br>sram 刹车放气套件 | 32.32% |  |  | 6,586 | 545 | 13 | 4 | 520 | $0.52 | 53.17 |
-| 2 | **one man brake bleeder kit AC**<br>一个人的刹车放气器套件 | 25.95% |  |  | 4,075 | 181 | 5 | 4 | 896 | $0.59 | 43.15 |
-| 3 | **brake bleeder valve **<br>制动放气阀 | 23.17% |  |  | 3,528 | 297 | 7 | 13 | 2,187 | $0.54 | 40.23 |
-| 4 | **sram bleed kit **<br>sram 放气套件 | 18.56% |  |  | 2,359 | 394 | 9 | 0 | 242 | $0.65 | 33.28 |
-| 5 | **tektro bleed kit **<br>tektro 放血套件 | - |  |  | 1,161 | 348 | 8 | 0 | 165 | $0.57 | 12.32 |
+| 1 | **solar irrigation system **<br>太阳能灌溉系统 | 78.59% |  |  | 4,876 | 137 | 4 | 6 | 461 | $0.63 | 46.6 |
+| 2 | **plant waterer **<br>植物浇灌器 | 4.10% |  |  | 11,938 | 337 | 8 | 7 | 2,290 | $0.42 | 34.1 |
+| 3 | **irrigation drippers **<br>灌溉滴头 | - |  |  | 13,018 | 553 | 13 | 9 | 2,954 | $0.72 | 30.0 |
+| 4 | **blumat watering system **<br>布鲁马特浇水系统 | 4.66% |  |  | 6,234 | 256 | 6 | 2 | 209 | $0.55 | 27.13 |
+| 5 | **sprinkler for garden **<br>花园洒水器 | - |  |  | 13,026 | 141 | 4 | 0 | 14,896 | $0.74 | 27.05 |
+| 6 | **flower sprinkler **<br>花洒 | - |  |  | 13,196 | 106 | 3 | 8 | 3,442 | $0.46 | 25.3 |
+| 7 | **pollinator watering station **<br>授粉者饮水站 | 0.14% |  |  | 6,314 | 179 | 5 | 10 | 208 | $0.65 | 21.72 |
+| 8 | **drip acclimation kit **<br>滴灌适应套件 | - |  |  | 4,535 | 255 | 6 | 10 | 100 | $0.32 | 19.07 |
+| 9 | **vegetable garden supplies **<br>菜园用品 | 0.23% |  |  | 6,867 | 94 | 3 | 0 | 553 | $0.53 | 18.66 |
+| 10 | **hanging plant waterer **<br>悬挂式植物浇水器 | 4.18% |  |  | 1,958 | 161 | 4 | 5 | 1,029 | $0.62 | 16.15 |
+| 11 | **waterer for potted plants **<br>盆栽浇水器 | 3.73% |  |  | 1,683 | 138 | 4 | 0 | 1,521 | $0.47 | 14.0 |
+| 12 | **drippers for drip irrigation **<br>滴灌用滴头 | - |  |  | 3,759 | 110 | 3 | 2 | 2,126 | $0.72 | 13.02 |
+| 13 | **tree diaper **<br>树尿布 | 4.36% |  |  | 1,743 | 81 | 2 | 0 | 199 | $0.37 | 11.9 |
 
-## 免费套餐当前可见原始关键词（查询 ASIN: B0GGQH744M, B0F22SXPDT）
+## 免费套餐当前可见原始关键词（查询 ASIN: B0GJZXWSK6, B0G1473Y3J, B0G64FH1N1, B0GHQXCCZ2, B0FMXHDBHK, B0CYG23NZR, B0GF7SNVMD, B0F1T5QBP8, B0C7MGZCJK, B0DY7X7M4V, B0D2J1KMC9, B0GH6XXK1F, B0BNS5VR78）
 
-1. **sram brake bleed kit ** — sram 刹车放气套件
-2. **one man brake bleeder kit AC** — 一个人的刹车放气器套件
-3. **brake bleeder valve ** — 制动放气阀
-4. **sram bleed kit ** — sram 放气套件
-5. **tektro bleed kit ** — tektro 放血套件
-
----
-
-# Compressed Air Dusters 拓展流量词候选 (2026-06-14)
-
-> 查询 ASIN：`B0FFGTDMMX`, `B0FPRM62Z2`, `B0FSLLJ8SZ`, `B0GGR1T98P`, `B0GRH6MY39`, `B0FSKJNC19`, `B0DB8J4T52`
-> 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
-> 用于生成广告测试候选，不代表应直接使用高竞价投放。
-> 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
-> 原始关键词 **20** 个，过滤后保留 **20** 个。
-> 抓取完整性：页面可见 **0** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**可能存在**。
-> 指标可用性：**不可用**。若指标不可用，过滤后 0 条不能解释为没有关键词机会。
-
-| # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
-|---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
-| 1 | **computer cleaning kit **<br>电脑清洁套装 | 27.06% |  |  | 10,463 | 562 | 13 | 1 | 4,466 | $0.73 | 57.06 |
-| 2 | **mini duster **<br>迷你掸子 | 31.83% |  |  | 2,709 | 487 | 12 | 10 | 14,811 | $0.34 | 45.42 |
-| 3 | **ryobi blower **<br>Ryobi blower | 9.04% |  |  | 26,188 | 267 | 7 | 0 | 3,243 | $0.67 | 39.04 |
-| 4 | **gaiatop fan **<br>盖亚顶风扇 | 4.91% |  |  | 21,350 | 275 | 7 | 0 | 168 | $0.32 | 34.91 |
-| 5 | **air popper **<br>气爆器 | 1.94% |  |  | 20,462 | 802 | 19 | 4 | 497 | $0.49 | 31.94 |
-| 6 | **tech gadgets **<br>科技小玩意 | 1.87% |  |  | 24,315 | 851 | 20 | 3 | 12,929 | $0.67 | 31.87 |
-| 7 | **computer cleaner **<br>电脑清洁剂 | 1.28% |  |  | 13,947 | 750 | 18 | 0 | 7,501 | $0.76 | 31.28 |
-| 8 | **macbook cleaning kit **<br>macbook 清洁套装 | 1.01% |  |  | 11,191 | 668 | 16 | 0 | 365 | $0.68 | 31.01 |
-| 9 | **tornador mini **<br>迷你龙卷风 | 1.74% |  |  | 8,051 | 229 | 6 | 2 | 243 | $0.32 | 27.84 |
-| 10 | **car blower for drying **<br>车用鼓风机烘干 | 2.14% |  |  | 9,161 | 120 | 3 | 0 | 1,173 | $0.59 | 26.46 |
-| 11 | **computer keyboard cleaner **<br>电脑键盘清洁剂 | 7.94% |  |  | 2,450 | 186 | 5 | 0 | 2,681 | $0.86 | 22.14 |
-| 12 | **crc electronic cleaner **<br>crc电子清洁剂 | 0.73% |  |  | 5,265 | 529 | 12 | 0 | 225 | $0.44 | 21.26 |
-| 13 | **desktop vacuum **<br>台式真空吸尘器 | 0.51% |  |  | 6,302 | 157 | 4 | 10 | 855 | $0.42 | 20.96 |
-| 14 | **macbook cleaner **<br>笔记本电脑清洁剂 | 0.89% |  |  | 4,894 | 303 | 7 | 0 | 300 | $0.47 | 20.68 |
-| 15 | **powder duster for pest control **<br>虫害防治的粉末除尘器 | 1.40% |  |  | 4,158 | 313 | 8 | 4 | 264 | $0.45 | 19.72 |
-| 16 | **keyboard spray dust cleaner **<br>键盘喷尘清洁剂 | 1.44% |  |  | 3,514 | 461 | 11 | 0 | 381 | $0.71 | 18.47 |
-| 17 | **blower for car detailing **<br>用于汽车细节的鼓风机 | 2.04% |  |  | 4,698 | 59 | 2 | 2 | 3,377 | $0.54 | 14.39 |
-| 18 | **keyboard cleaner kit **<br>键盘清洁器套件 | 0.61% |  |  | 2,250 | 157 | 4 | 2 | 1,538 | $0.75 | 12.96 |
-| 19 | **desktop vacuum cleaner **<br>桌面吸尘器 | 0.60% |  |  | 2,448 | 69 | 2 | 14 | 790 | $0.41 | 8.95 |
-| 20 | **keyboard spray **<br>键盘喷雾 | 0.37% |  |  | 1,257 | 61 | 2 | 0 | 389 | $0.62 | 5.93 |
-
-## 免费套餐当前可见原始关键词（查询 ASIN: B0FFGTDMMX, B0FPRM62Z2, B0FSLLJ8SZ, B0GGR1T98P, B0GRH6MY39, B0FSKJNC19, B0DB8J4T52）
-
-1. **mini duster ** — 迷你掸子
-2. **computer cleaning kit ** — 电脑清洁套装
-3. **ryobi blower ** — Ryobi blower
-4. **computer keyboard cleaner ** — 电脑键盘清洁剂
-5. **gaiatop fan ** — 盖亚顶风扇
-6. **car blower for drying ** — 车用鼓风机烘干
-7. **blower for car detailing ** — 用于汽车细节的鼓风机
-8. **air popper ** — 气爆器
-9. **tech gadgets ** — 科技小玩意
-10. **tornador mini ** — 迷你龙卷风
-11. **keyboard spray dust cleaner ** — 键盘喷尘清洁剂
-12. **powder duster for pest control ** — 虫害防治的粉末除尘器
-13. **computer cleaner ** — 电脑清洁剂
-14. **macbook cleaning kit ** — macbook 清洁套装
-15. **macbook cleaner ** — 笔记本电脑清洁剂
-16. **crc electronic cleaner ** — crc电子清洁剂
-17. **keyboard cleaner kit ** — 键盘清洁器套件
-18. **desktop vacuum cleaner ** — 桌面吸尘器
-19. **desktop vacuum ** — 台式真空吸尘器
-20. **keyboard spray ** — 键盘喷雾
+1. **solar irrigation system ** — 太阳能灌溉系统
+2. **blumat watering system ** — 布鲁马特浇水系统
+3. **tree diaper ** — 树尿布
+4. **hanging plant waterer ** — 悬挂式植物浇水器
+5. **plant waterer ** — 植物浇灌器
+6. **waterer for potted plants ** — 盆栽浇水器
+7. **vegetable garden supplies ** — 菜园用品
+8. **pollinator watering station ** — 授粉者饮水站
+9. **sprinkler for garden ** — 花园洒水器
+10. **irrigation drippers ** — 灌溉滴头
+11. **flower sprinkler ** — 花洒
+12. **drippers for drip irrigation ** — 滴灌用滴头
+13. **drip acclimation kit ** — 滴灌适应套件
 
 ---
 
-# Wind Spinners 拓展流量词候选 (2026-06-14)
+# Bread Proofing Baskets 拓展流量词候选 (2026-06-14)
 
-> 查询 ASIN：`B0GHQMHRWW`, `B0GGGPCFND`, `B0FQJVPZ4B`, `B0FJ5YYQZ4`
+> 查询 ASIN：`B0G94RRF26`, `B0F6CJX4BW`
 > 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
 > 用于生成广告测试候选，不代表应直接使用高竞价投放。
 > 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
-> 原始关键词 **14** 个，过滤后保留 **14** 个。
+> 原始关键词 **3** 个，过滤后保留 **3** 个。
 > 抓取完整性：页面可见 **0** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
 > 指标可用性：**不可用**。若指标不可用，过滤后 0 条不能解释为没有关键词机会。
 
 | # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
 |---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
-| 1 | **garden wind spinners **<br>花园风车 | 46.02% |  |  | 14,035 | 176 | 5 | 5 | 6,363 | $0.65 | 58.8 |
-| 2 | **garden spinners **<br>花园旋转器 | 19.10% |  |  | 14,941 | 176 | 4 | 1 | 6,495 | $0.71 | 47.9 |
-| 3 | **windmill for yard **<br>院子里的风车 | 8.56% |  |  | 25,212 | 274 | 7 | 6 | 2,611 | $0.32 | 38.56 |
-| 4 | **spinners for yard and garden **<br>院子和花园的旋转器 | 2.68% |  |  | 12,752 | 780 | 18 | 5 | 742 | $0.76 | 32.68 |
-| 5 | **garden pinwheels **<br>花园风车 | 0.42% |  |  | 7,960 | 272 | 7 | 3 | 1,426 | $0.85 | 26.34 |
-| 6 | **kinetic wind spinner **<br>动感风车 | 10.78% |  |  | 2,683 | 136 | 4 | 8 | 2,615 | $0.58 | 22.95 |
-| 7 | **garden spinners outdoor **<br>户外花园旋转器 | - |  |  | 6,778 | 154 | 4 | 0 | 1,466 | $0.54 | 21.26 |
-| 8 | **outdoor spinners **<br>户外旋转器 | 8.83% |  |  | 1,851 | 122 | 3 | 0 | 528 | $0.57 | 18.63 |
-| 9 | **wind spinners outdoor hanging **<br>风旋转器户外悬挂 | - |  |  | 6,811 | 78 | 2 | 1 | 1,457 | $0.32 | 17.52 |
-| 10 | **hanging wind spinners outdoor **<br>户外悬挂风旋转器 | 0.61% |  |  | 6,073 | 79 | 2 | 2 | 2,818 | $0.71 | 16.71 |
-| 11 | **outdoor wind spinner **<br>户外风力旋转器 | - |  |  | 5,414 | 74 | 2 | 1 | 6,297 | $0.73 | 14.53 |
-| 12 | **metal wind spinners **<br>金属风车 | 2.63% |  |  | 2,275 | 109 | 3 | 9 | 3,961 | $0.72 | 12.63 |
-| 13 | **windmills for the yard **<br>院子里的风车 | 0.37% |  |  | 2,590 | 107 | 3 | 3 | 596 | $0.32 | 10.9 |
-| 14 | **yard windmill **<br>院子里的风车 | - |  |  | 2,446 | 77 | 2 | 4 | 2,338 | $0.32 | 8.74 |
+| 1 | **banetons **<br>宴席 | 95.60% |  |  | 2,733 | 158 | 4 | 0 | 865 | $0.79 | 43.37 |
+| 2 | **proofing bowl **<br>打样碗 | 4.40% |  |  | 2,275 | 217 | 5 | 14 | 2,300 | $0.69 | 18.95 |
+| 3 | **mini sourdough banneton basket **<br>迷你酸面包篮 | - |  |  | 1,331 | 76 | 2 | 0 | 420 | $0.74 | 6.46 |
 
-## 免费套餐当前可见原始关键词（查询 ASIN: B0GHQMHRWW, B0GGGPCFND, B0FQJVPZ4B, B0FJ5YYQZ4）
+## 免费套餐当前可见原始关键词（查询 ASIN: B0G94RRF26, B0F6CJX4BW）
 
-1. **garden wind spinners ** — 花园风车
-2. **garden spinners ** — 花园旋转器
-3. **kinetic wind spinner ** — 动感风车
-4. **outdoor spinners ** — 户外旋转器
-5. **windmill for yard ** — 院子里的风车
-6. **spinners for yard and garden ** — 院子和花园的旋转器
-7. **metal wind spinners ** — 金属风车
-8. **hanging wind spinners outdoor ** — 户外悬挂风旋转器
-9. **garden pinwheels ** — 花园风车
-10. **windmills for the yard ** — 院子里的风车
-11. **yard windmill ** — 院子里的风车
-12. **wind spinners outdoor hanging ** — 风旋转器户外悬挂
-13. **outdoor wind spinner ** — 户外风力旋转器
-14. **garden spinners outdoor ** — 户外花园旋转器
+1. **banetons ** — 宴席
+2. **proofing bowl ** — 打样碗
+3. **mini sourdough banneton basket ** — 迷你酸面包篮
 
 ---
 
-# Decorative Trays 拓展流量词候选 (2026-06-14)
+# Ultrasonic Repellers 拓展流量词候选 (2026-06-14)
 
-> 查询 ASIN：`B0FL2236YS`, `B0F9JBZVJG`, `B0DRYD63RT`, `B0G3TS1YFT`, `B0DYP3TRL2`, `B0D8MW6VS1`, `B0BMDLHHYT`, `B0D8TJDXRY`, `B0CCVNCZWZ`, `B0B24B6TPX`, `B0FK99K3D4`, `B0D5H5TRRD`, `B0F2HXLN8V`
+> 查询 ASIN：`B0GXK8D82J`, `B0FV3R9L2R`
 > 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
 > 用于生成广告测试候选，不代表应直接使用高竞价投放。
 > 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
@@ -1554,55 +1384,55 @@
 
 | # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
 |---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
-| 1 | **wicker tray **<br>柳条托盘 | 8.06% |  |  | 15,838 | 224 | 6 | 7 | 4,133 | $0.36 | 38.06 |
-| 2 | **nancy meyers home decor **<br>南希-迈尔斯家居装饰 | 8.91% |  |  | 15,318 | 140 | 4 | 0 | 289 | $0.32 | 35.91 |
-| 3 | **round wood tray **<br>圆木托盘 | 2.49% |  |  | 11,970 | 205 | 5 | 9 | 12,645 | $0.32 | 32.49 |
-| 4 | **perfume tray **<br>香水托盘 | 2.40% |  |  | 48,602 | 602 | 14 | 5 | 8,646 | $0.68 | 32.4 |
-| 5 | **bedside organizer **<br>床头收纳盒 | 2.39% |  |  | 11,055 | 151 | 4 | 4 | 10,600 | $0.32 | 29.94 |
-| 6 | **trinket tray **<br>饰物托盘 | 2.77% |  |  | 13,921 | 105 | 3 | 13 | 10,650 | $0.32 | 28.02 |
-| 7 | **key bowl for entryway table **<br>玄关桌钥匙碗 | 4.44% |  |  | 8,166 | 102 | 3 | 11 | 2,935 | $0.35 | 25.87 |
-| 8 | **round trays home decor **<br>圆形托盘家居装饰 | 5.69% |  |  | 7,595 | 99 | 3 | 1 | 565 | $0.32 | 25.83 |
-| 9 | **gold serving tray **<br>金色餐盘 | 3.51% |  |  | 7,203 | 157 | 4 | 5 | 6,123 | $0.32 | 25.77 |
-| 10 | **gifts for son **<br>给儿子的礼物 | 4.53% |  |  | 5,297 | 461 | 11 | 9 | 1,111 | $0.62 | 25.12 |
-| 11 | **night stand organizer **<br>床头柜组织者 | 5.05% |  |  | 6,553 | 93 | 3 | 0 | 7,374 | $0.39 | 22.81 |
-| 12 | **woven tray **<br>编织托盘 | 4.44% |  |  | 6,808 | 78 | 2 | 5 | 4,528 | $0.75 | 21.96 |
-| 13 | **key holder bowl **<br>钥匙架碗 | 4.05% |  |  | 6,395 | 76 | 2 | 8 | 4,415 | $0.32 | 20.64 |
-| 14 | **leather tray **<br>皮托盘 | 4.08% |  |  | 6,424 | 72 | 2 | 9 | 8,562 | $0.73 | 20.53 |
-| 15 | **candle dish **<br>蜡烛盘 | 2.32% |  |  | 4,823 | 120 | 3 | 12 | 6,578 | $0.32 | 17.97 |
-| 16 | **round decorative tray **<br>圆形装饰托盘 | 2.89% |  |  | 5,165 | 61 | 2 | 8 | 1,547 | $0.32 | 16.27 |
-| 17 | **scalloped tray **<br>扇形托盘 | 2.93% |  |  | 5,322 | 52 | 2 | 11 | 2,047 | $0.64 | 16.17 |
-| 18 | **gold trays for decor **<br>装饰用的金盘子 | 3.21% |  |  | 4,489 | 78 | 2 | 2 | 1,799 | $0.33 | 16.09 |
-| 19 | **key dish **<br>关键菜 | 3.21% |  |  | 4,719 | 67 | 2 | 3 | 10,736 | $0.32 | 16.0 |
-| 20 | **bowl for keys **<br>钥匙碗 | 3.01% |  |  | 3,970 | 94 | 3 | 2 | 838 | $0.32 | 15.65 |
+| 1 | **rodent repellent **<br>驱鼠剂 | 71.97% |  |  | 130,126 | 6,857 | 156 | 35 | 7,696 | $1.56 | 60.0 |
+| 2 | **rodent repellent for car engines **<br>汽车发动机驱鼠剂 | 7.79% |  |  | 38,783 | 3,319 | 76 | 11 | 1,048 | -- | 37.79 |
+| 3 | **sofyre mouse repellent pouches **<br>sofyre 鼠类驱赶袋 | 1.38% |  |  | 43,651 | 331 | 8 | 0 | 196 | $1.37 | 31.38 |
+| 4 | **squirrel repellent **<br>驱赶松鼠 | 0.65% |  |  | 139,618 | 7,818 | 178 | 23 | 2,433 | $2.22 | 30.65 |
+| 5 | **mouse repellent ultrasonic plug in **<br>驱鼠超声波插件 | 0.93% |  |  | 9,284 | 863 | 20 | 1 | 548 | -- | 29.5 |
+| 6 | **ultrasonic rodent repeller **<br>超声波驱鼠器 | 1.68% |  |  | 6,001 | 436 | 10 | 2 | 1,713 | $1.78 | 23.68 |
+| 7 | **rodent repellent plug in **<br>灭鼠插件 | 1.56% |  |  | 4,910 | 1,199 | 28 | 0 | 623 | $2.07 | 21.38 |
+| 8 | **rodent repellent for cars **<br>汽车驱鼠剂 | 1.40% |  |  | 4,182 | 620 | 15 | 2 | 607 | $0.84 | 19.76 |
+| 9 | **electronic rodent repellent devices **<br>电子驱鼠器 | 0.84% |  |  | 3,070 | 292 | 7 | 0 | 959 | -- | 16.98 |
+| 10 | **rat repellent for car **<br>车用驱鼠剂 | 0.94% |  |  | 2,931 | 237 | 6 | 3 | 527 | $0.79 | 16.8 |
+| 11 | **mouse repellent for cars **<br>汽车驱鼠剂 | 0.67% |  |  | 2,879 | 438 | 10 | 1 | 678 | $1.55 | 16.43 |
+| 12 | **mice repellent for cars **<br>汽车驱鼠剂 | 0.64% |  |  | 2,396 | 492 | 12 | 0 | 895 | $1.44 | 15.43 |
+| 13 | **ultrasonic rodent repellent **<br>超声波驱鼠剂 | 0.66% |  |  | 2,302 | 204 | 5 | 5 | 1,674 | $1.99 | 15.26 |
+| 14 | **rodent deterrent for cars **<br>汽车灭鼠剂 | 0.86% |  |  | 2,482 | 179 | 5 | 0 | 612 | $0.87 | 14.77 |
+| 15 | **mice repellent ultrasonic **<br>超声波驱鼠器 | 0.56% |  |  | 2,063 | 354 | 9 | 0 | 929 | $2.25 | 14.69 |
+| 16 | **mouse deterrent ultrasonic **<br>老鼠威慑超声波 | 0.51% |  |  | 1,373 | 202 | 5 | 1 | 879 | $2.28 | 13.26 |
+| 17 | **osmo repelmax mouse repel **<br>Osmo 鼠类驱避剂 | 0.65% |  |  | 2,918 | 33 | 1 | 0 | 192 | -- | 8.14 |
+| 18 | **osmo repelmax mouse repellent **<br>Osmo RepelMax 鼠类驱避剂 | 3.13% |  |  | 1,773 | 15 | 1 | 0 | 316 | -- | 7.43 |
+| 19 | **plug in rodent repeller ultrasonic indoor **<br>插入式室内超声波驱鼠器 | 0.51% |  |  | 1,847 | 11 | 1 | 0 | 594 | -- | 4.75 |
+| 20 | **ardito **<br>ardito | 0.61% |  |  | 140 | 1 | 1 | 10 | 37 | $2.80 | 0.94 |
 
-## 免费套餐当前可见原始关键词（查询 ASIN: B0FL2236YS, B0F9JBZVJG, B0DRYD63RT, B0G3TS1YFT, B0DYP3TRL2, B0D8MW6VS1, B0BMDLHHYT, B0D8TJDXRY, B0CCVNCZWZ, B0B24B6TPX, B0FK99K3D4, B0D5H5TRRD, B0F2HXLN8V）
+## 免费套餐当前可见原始关键词（查询 ASIN: B0GXK8D82J, B0FV3R9L2R）
 
-1. **nancy meyers home decor ** — 南希-迈尔斯家居装饰
-2. **wicker tray ** — 柳条托盘
-3. **round trays home decor ** — 圆形托盘家居装饰
-4. **night stand organizer ** — 床头柜组织者
-5. **gifts for son ** — 给儿子的礼物
-6. **woven tray ** — 编织托盘
-7. **key bowl for entryway table ** — 玄关桌钥匙碗
-8. **leather tray ** — 皮托盘
-9. **key holder bowl ** — 钥匙架碗
-10. **gold serving tray ** — 金色餐盘
-11. **key dish ** — 关键菜
-12. **gold trays for decor ** — 装饰用的金盘子
-13. **bowl for keys ** — 钥匙碗
-14. **scalloped tray ** — 扇形托盘
-15. **round decorative tray ** — 圆形装饰托盘
-16. **trinket tray ** — 饰物托盘
-17. **round wood tray ** — 圆木托盘
-18. **perfume tray ** — 香水托盘
-19. **bedside organizer ** — 床头收纳盒
-20. **candle dish ** — 蜡烛盘
+1. **rodent repellent ** — 驱鼠剂
+2. **rodent repellent for car engines ** — 汽车发动机驱鼠剂
+3. **osmo repelmax mouse repellent ** — Osmo RepelMax 鼠类驱避剂
+4. **ultrasonic rodent repeller ** — 超声波驱鼠器
+5. **rodent repellent plug in ** — 灭鼠插件
+6. **rodent repellent for cars ** — 汽车驱鼠剂
+7. **sofyre mouse repellent pouches ** — sofyre 鼠类驱赶袋
+8. **rat repellent for car ** — 车用驱鼠剂
+9. **mouse repellent ultrasonic plug in ** — 驱鼠超声波插件
+10. **rodent deterrent for cars ** — 汽车灭鼠剂
+11. **electronic rodent repellent devices ** — 电子驱鼠器
+12. **mouse repellent for cars ** — 汽车驱鼠剂
+13. **ultrasonic rodent repellent ** — 超声波驱鼠剂
+14. **osmo repelmax mouse repel ** — Osmo 鼠类驱避剂
+15. **squirrel repellent ** — 驱赶松鼠
+16. **mice repellent for cars ** — 汽车驱鼠剂
+17. **ardito ** — ardito
+18. **mice repellent ultrasonic ** — 超声波驱鼠器
+19. **plug in rodent repeller ultrasonic indoor ** — 插入式室内超声波驱鼠器
+20. **mouse deterrent ultrasonic ** — 老鼠威慑超声波
 
 ---
 
-# Game Mats & Boards 拓展流量词候选 (2026-06-14)
+# Decorative Boxes 拓展流量词候选 (2026-06-14)
 
-> 查询 ASIN：`B0FMXW89J5`, `B0GHHG1W42`, `B0GQMQCCNH`, `B0FQ5KW2WN`, `B0DD6X3QTH`
+> 查询 ASIN：`B0GRC76TKN`, `B0GKXY24FG`, `B0FH4CGRG6`, `B0FN46S75Q`, `B0G6391R1J`, `B0FLW9HLWH`, `B0DX841J37`, `B0CJ1XRT2Z`, `B0CGHZ1DDM`, `B0DG2J8D21`, `B0FQJ8JPFM`, `B0F4D1JVBP`, `B0G31WNCCS`, `B0DMN38XJM`, `B0FQ84PMTP`, `B0DX23QLV3`, `B0GT8CF7MB`, `B0C8HDZCTS`
 > 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
 > 用于生成广告测试候选，不代表应直接使用高竞价投放。
 > 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
@@ -1612,126 +1442,82 @@
 
 | # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
 |---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
-| 1 | **mahjong mat with rules AC**<br>带规则的麻将垫 | 25.59% |  |  | 19,847 | 565 | 13 | 13 | 1,635 | $0.32 | 55.59 |
-| 2 | **pokemon playmat **<br>小精灵游戏垫 | 16.37% |  |  | 17,923 | 225 | 6 | 0 | 662 | $0.44 | 46.37 |
-| 3 | **mah jongg mat **<br>麻将垫 | 12.53% |  |  | 12,803 | 487 | 12 | 4 | 1,765 | $0.52 | 42.53 |
-| 4 | **mahjong co. **<br>麻将公司 | 1.39% |  |  | 26,144 | 284 | 7 | 0 | 1,688 | $0.32 | 31.39 |
-| 5 | **tcg playmat **<br>tcg 游戏垫 | 3.11% |  |  | 9,529 | 109 | 3 | 15 | 1,988 | $0.37 | 27.62 |
-| 6 | **mahjong mat bag **<br>麻将垫袋 | 3.78% |  |  | 12,204 | 73 | 2 | 15 | 1,259 | $0.32 | 27.43 |
-| 7 | **dnd starter set **<br>dnd 入门套装 | 0.31% |  |  | 8,239 | 234 | 6 | 4 | 500 | $0.74 | 26.79 |
-| 8 | **mahjong atelier **<br>麻将工作室 | 3.06% |  |  | 9,948 | 70 | 2 | 0 | 213 | $0.32 | 26.46 |
-| 9 | **lorcana playmat **<br>罗卡娜游戏垫 | 0.58% |  |  | 8,131 | 169 | 4 | 8 | 233 | $0.65 | 25.29 |
-| 10 | **pokemon board game **<br>小精灵棋盘游戏 | 0.97% |  |  | 6,777 | 208 | 5 | 1 | 801 | $0.59 | 24.52 |
-| 11 | **pokemon mat **<br>小精灵垫子 | 5.16% |  |  | 5,946 | 130 | 3 | 1 | 261 | $0.62 | 23.55 |
-| 12 | **yugioh playmat **<br>瑜珈垫 | 0.22% |  |  | 8,820 | 105 | 3 | 7 | 3,184 | $0.32 | 23.11 |
-| 13 | **mah jong mat **<br>麻将垫 | 5.04% |  |  | 5,187 | 151 | 4 | 2 | 2,151 | $0.49 | 22.96 |
-| 14 | **mahjong table mat **<br>麻将桌垫 | 5.38% |  |  | 4,674 | 120 | 3 | 12 | 1,742 | $0.52 | 20.73 |
-| 15 | **battle board **<br>战斗板 | 3.84% |  |  | 5,109 | 111 | 3 | 8 | 4,931 | $0.56 | 19.61 |
-| 16 | **dnd battle map **<br>dnd战斗地图 | 2.87% |  |  | 2,764 | 98 | 3 | 5 | 434 | $0.52 | 13.3 |
-| 17 | **dnd maps **<br>地图 | 2.93% |  |  | 2,705 | 96 | 3 | 2 | 556 | $0.68 | 13.14 |
-| 18 | **pokemon damage counters **<br>宝可梦伤害计数器 | 2.98% |  |  | 2,754 | 75 | 2 | 0 | 331 | $0.73 | 12.24 |
-| 19 | **dnd mat **<br>防静电垫 | 1.87% |  |  | 1,504 | 65 | 2 | 2 | 432 | $0.54 | 8.13 |
-| 20 | **mah jongg mat for table **<br>桌上麻将垫 | 1.90% |  |  | 1,714 | 50 | 2 | 1 | 1,358 | $0.52 | 7.83 |
+| 1 | **fake books **<br>假书 | 17.70% |  |  | 30,026 | 438 | 10 | 15 | 5,119 | $0.32 | 47.7 |
+| 2 | **libros decorativos para sala **<br>客厅的装饰性书籍 | 14.91% |  |  | 24,379 | 234 | 6 | 0 | 387 | $0.44 | 44.91 |
+| 3 | **faux books for decoration **<br>装饰用假书 | 8.38% |  |  | 13,842 | 181 | 5 | 6 | 3,036 | $0.48 | 37.43 |
+| 4 | **smores station AC**<br>斯莫尔斯站 | 9.05% |  |  | 8,988 | 299 | 7 | 9 | 238 | $0.44 | 37.03 |
+| 5 | **treasure chest box **<br>宝箱 | 3.24% |  |  | 7,901 | 379 | 9 | 12 | 4,513 | $0.32 | 29.04 |
+| 6 | **smore kit **<br>烟熏套件 | 5.60% |  |  | 6,119 | 229 | 6 | 1 | 300 | $0.64 | 27.84 |
+| 7 | **decorative boxes with lids **<br>带盖子的装饰盒 | 1.42% |  |  | 12,545 | 71 | 2 | 2 | 800 | $0.32 | 24.97 |
+| 8 | **small treasure chest **<br>小宝箱 | 2.11% |  |  | 5,182 | 370 | 9 | 2 | 8,631 | $0.35 | 22.47 |
+| 9 | **smores box **<br>烟盒 | 5.54% |  |  | 4,402 | 125 | 3 | 4 | 451 | $0.48 | 20.59 |
+| 10 | **wooden box with hinged lid **<br>带铰链盖的木箱 | 2.51% |  |  | 6,029 | 102 | 3 | 12 | 4,528 | $0.37 | 19.67 |
+| 11 | **s'mores kit **<br>s&#39;mores 套装 | 3.57% |  |  | 2,401 | 336 | 8 | 8 | 238 | $0.47 | 18.37 |
+| 12 | **faux book storage box **<br>仿书收纳盒 | 1.66% |  |  | 2,985 | 185 | 5 | 7 | 2,879 | $0.47 | 16.88 |
+| 13 | **large treasure chest **<br>大宝箱 | 2.02% |  |  | 3,580 | 135 | 4 | 2 | 8,188 | $0.32 | 15.93 |
+| 14 | **smore maker **<br>烟雾机 | 2.07% |  |  | 4,049 | 110 | 3 | 2 | 226 | $0.72 | 15.67 |
+| 15 | **brown decor **<br>棕色装饰 | 1.67% |  |  | 3,969 | 104 | 3 | 0 | 348 | $0.32 | 14.81 |
+| 16 | **smores kits **<br>烟熏套装 | 2.93% |  |  | 2,817 | 92 | 3 | 2 | 351 | $0.60 | 13.16 |
+| 17 | **smores kit for fire pit AC**<br>火坑烟熏套件 | 3.55% |  |  | 2,849 | 78 | 2 | 6 | 346 | $0.36 | 13.15 |
+| 18 | **designer books decor set **<br>设计师书籍装饰套装 | 1.82% |  |  | 4,139 | 56 | 2 | 5 | 1,005 | $0.32 | 12.9 |
+| 19 | **book boxes decorative **<br>书盒装饰 | 2.35% |  |  | 2,728 | 74 | 2 | 0 | 281 | $0.48 | 11.51 |
+| 20 | **wooden box with lid **<br>带盖木盒 | 1.27% |  |  | 2,736 | 70 | 2 | 1 | 12,467 | $0.33 | 10.24 |
 
-## 免费套餐当前可见原始关键词（查询 ASIN: B0FMXW89J5, B0GHHG1W42, B0GQMQCCNH, B0FQ5KW2WN, B0DD6X3QTH）
+## 免费套餐当前可见原始关键词（查询 ASIN: B0GRC76TKN, B0GKXY24FG, B0FH4CGRG6, B0FN46S75Q, B0G6391R1J, B0FLW9HLWH, B0DX841J37, B0CJ1XRT2Z, B0CGHZ1DDM, B0DG2J8D21, B0FQJ8JPFM, B0F4D1JVBP, B0G31WNCCS, B0DMN38XJM, B0FQ84PMTP, B0DX23QLV3, B0GT8CF7MB, B0C8HDZCTS）
 
-1. **mahjong mat with rules AC** — 带规则的麻将垫
-2. **pokemon playmat ** — 小精灵游戏垫
-3. **mah jongg mat ** — 麻将垫
-4. **mahjong table mat ** — 麻将桌垫
-5. **pokemon mat ** — 小精灵垫子
-6. **mah jong mat ** — 麻将垫
-7. **battle board ** — 战斗板
-8. **mahjong mat bag ** — 麻将垫袋
-9. **tcg playmat ** — tcg 游戏垫
-10. **mahjong atelier ** — 麻将工作室
-11. **pokemon damage counters ** — 宝可梦伤害计数器
-12. **dnd maps ** — 地图
-13. **dnd battle map ** — dnd战斗地图
-14. **mah jongg mat for table ** — 桌上麻将垫
-15. **dnd mat ** — 防静电垫
-16. **mahjong co. ** — 麻将公司
-17. **pokemon board game ** — 小精灵棋盘游戏
-18. **lorcana playmat ** — 罗卡娜游戏垫
-19. **dnd starter set ** — dnd 入门套装
-20. **yugioh playmat ** — 瑜珈垫
-
----
-
-# Boats 拓展流量词候选 (2026-06-14)
-
-> 查询 ASIN：`B0D8TB7V29`, `B0DM8ZC4CC`, `B0CWXVCT2G`, `B0CQFY22N9`
-> 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
-> 用于生成广告测试候选，不代表应直接使用高竞价投放。
-> 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
-> 原始关键词 **20** 个，过滤后保留 **20** 个。
-> 抓取完整性：页面可见 **0** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**可能存在**。
-> 指标可用性：**不可用**。若指标不可用，过滤后 0 条不能解释为没有关键词机会。
-
-| # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
-|---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
-| 1 | **x shot water gun **<br>x 水枪 | 29.70% |  |  | 11,992 | 61 | 2 | 0 | 269 | $0.73 | 52.75 |
-| 2 | **transformer toys for boys 4-6 **<br>4-6岁男孩的变形金刚玩具 | 12.03% |  |  | 27,946 | 857 | 20 | 0 | 1,062 | $0.48 | 42.03 |
-| 3 | **lego boat **<br>乐高船 | 9.47% |  |  | 19,592 | 407 | 10 | 1 | 640 | $0.58 | 39.47 |
-| 4 | **nerf guns 5-7 year old **<br>nerf 枪 5-7 岁 | 5.32% |  |  | 22,513 | 799 | 19 | 0 | 425 | $0.62 | 35.32 |
-| 5 | **venom toys **<br>毒液玩具 | - |  |  | 11,777 | 281 | 7 | 0 | 813 | $0.32 | 30.0 |
-| 6 | **toy boat **<br>玩具船 | 2.23% |  |  | 8,610 | 296 | 7 | 11 | 14,393 | $0.32 | 29.45 |
-| 7 | **orbeez gunz **<br>奥比兹枪 | 7.10% |  |  | 8,313 | 90 | 3 | 0 | 110 | $0.39 | 28.23 |
-| 8 | **toys for ages 8-13 **<br>适合8-13岁的玩具 | 3.04% |  |  | 10,565 | 91 | 3 | 2 | 9,647 | $0.47 | 27.59 |
-| 9 | **jet boat for adults **<br>成人喷气船 | 2.98% |  |  | 9,757 | 66 | 2 | 2 | 3,536 | $0.81 | 25.79 |
-| 10 | **aviones de juguete para niños **<br>儿童玩具飞机 | 3.76% |  |  | 7,285 | 67 | 2 | 0 | 226 | $0.44 | 21.68 |
-| 11 | **toy boats **<br>玩具船 | 3.19% |  |  | 4,740 | 129 | 3 | 3 | 14,456 | $0.67 | 19.12 |
-| 12 | **remote control fire truck **<br>遥控消防车 | 2.94% |  |  | 2,140 | 184 | 5 | 9 | 507 | $0.37 | 16.42 |
-| 13 | **rc tugboat **<br>遥控拖船 | 9.55% |  |  | 1,588 | 73 | 2 | 15 | 244 | $0.44 | 16.38 |
-| 14 | **x shot nerf guns **<br>x 射击神经枪 | - |  |  | 5,973 | 51 | 2 | 0 | 359 | $0.37 | 14.5 |
-| 15 | **remote control submarine **<br>遥控潜水艇 | 1.14% |  |  | 3,397 | 112 | 3 | 5 | 313 | $0.32 | 13.53 |
-| 16 | **boat toy **<br>船玩具 | 1.97% |  |  | 3,829 | 75 | 2 | 8 | 14,564 | $0.32 | 13.38 |
-| 17 | **shark pool toys **<br>鲨鱼池玩具 | 1.02% |  |  | 1,584 | 171 | 4 | 2 | 1,265 | $0.42 | 12.74 |
-| 18 | **unicorn monster truck **<br>独角兽怪物卡车 | - |  |  | 2,476 | 124 | 3 | 6 | 561 | $0.74 | 11.15 |
-| 19 | **rc ship **<br>rc船 | 3.19% |  |  | 1,775 | 77 | 2 | 1 | 4,261 | $0.32 | 10.59 |
-| 20 | **remote control bulldozer **<br>遥控推土机 | 1.36% |  |  | 2,233 | 70 | 2 | 14 | 694 | $0.40 | 9.33 |
-
-## 免费套餐当前可见原始关键词（查询 ASIN: B0D8TB7V29, B0DM8ZC4CC, B0CWXVCT2G, B0CQFY22N9）
-
-1. **x shot water gun ** — x 水枪
-2. **transformer toys for boys 4-6 ** — 4-6岁男孩的变形金刚玩具
-3. **rc tugboat ** — 遥控拖船
-4. **lego boat ** — 乐高船
-5. **orbeez gunz ** — 奥比兹枪
-6. **nerf guns 5-7 year old ** — nerf 枪 5-7 岁
-7. **aviones de juguete para niños ** — 儿童玩具飞机
-8. **rc ship ** — rc船
-9. **toy boats ** — 玩具船
-10. **toys for ages 8-13 ** — 适合8-13岁的玩具
-11. **jet boat for adults ** — 成人喷气船
-12. **remote control fire truck ** — 遥控消防车
-13. **toy boat ** — 玩具船
-14. **boat toy ** — 船玩具
-15. **remote control bulldozer ** — 遥控推土机
-16. **remote control submarine ** — 遥控潜水艇
-17. **shark pool toys ** — 鲨鱼池玩具
-18. **x shot nerf guns ** — x 射击神经枪
-19. **venom toys ** — 毒液玩具
-20. **unicorn monster truck ** — 独角兽怪物卡车
+1. **fake books ** — 假书
+2. **libros decorativos para sala ** — 客厅的装饰性书籍
+3. **smores station AC** — 斯莫尔斯站
+4. **faux books for decoration ** — 装饰用假书
+5. **smore kit ** — 烟熏套件
+6. **smores box ** — 烟盒
+7. **s'mores kit ** — s&#39;mores 套装
+8. **smores kit for fire pit AC** — 火坑烟熏套件
+9. **treasure chest box ** — 宝箱
+10. **smores kits ** — 烟熏套装
+11. **wooden box with hinged lid ** — 带铰链盖的木箱
+12. **book boxes decorative ** — 书盒装饰
+13. **small treasure chest ** — 小宝箱
+14. **smore maker ** — 烟雾机
+15. **large treasure chest ** — 大宝箱
+16. **designer books decor set ** — 设计师书籍装饰套装
+17. **brown decor ** — 棕色装饰
+18. **faux book storage box ** — 仿书收纳盒
+19. **decorative boxes with lids ** — 带盖子的装饰盒
+20. **wooden box with lid ** — 带盖木盒
 
 ---
 
-# Grinding Discs 拓展流量词候选 (2026-06-14)
+# Pool & Deck Repair Products 拓展流量词候选 (2026-06-14)
 
-> 查询 ASIN：`B0CBS4VWYB`
+> 查询 ASIN：`B00Q2L3QCU`, `B0D5DMD84K`, `B00Q2L3S1O`
 > 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，
 > 用于生成广告测试候选，不代表应直接使用高竞价投放。
 > 筛选参数：`{"min_searches": 1000, "min_purchases": 50, "max_organic_rank": 100, "max_spr": 20, "max_title_density": 15, "max_products": 15000, "max_ppc_bid": 1.0, "allowed_traffic_types": ["自然搜索词", "广告流量词"], "excluded_keywords": ["hudson", "jobe", "industries", "nr3xldu"], "require_numeric_searches": true}`
-> 原始关键词 **2** 个，过滤后保留 **2** 个。
+> 原始关键词 **9** 个，过滤后保留 **9** 个。
 > 抓取完整性：页面可见 **0** 个；页面总数提示 **未识别**；下一页 **不可用或未识别**；免费套餐截断风险：**未检测到**。
 > 指标可用性：**不可用**。若指标不可用，过滤后 0 条不能解释为没有关键词机会。
 
 | # | 关键词 | 流量占比 | 类型 | 自然排名 | 月搜索量 | 月购买量 | SPR | 标题密度 | 需供比 / 商品数 | PPC 竞价 | 分数 |
 |---:|---|---:|---|---|---:|---:|---:|---:|---|---|---:|
-| 1 | **diamond grinding wheel **<br>金刚砂轮 | 100.00% |  |  | 2,333 | 154 | 4 | 8 | 5,858 | $0.41 | 42.37 |
-| 2 | **grinding stone **<br>磨石 | - |  |  | 1,551 | 67 | 2 | 11 | 12,150 | $0.56 | 6.45 |
+| 1 | **pool patches **<br>池补丁 | 29.15% |  |  | 7,117 | 286 | 7 | 3 | 4,531 | $0.35 | 53.38 |
+| 2 | **pool tile adhesive **<br>泳池瓷砖粘合剂 | 31.47% |  |  | 4,568 | 584 | 14 | 4 | 697 | $0.32 | 49.14 |
+| 3 | **pool patch kit **<br>泳池补丁套件 | 19.52% |  |  | 4,881 | 318 | 8 | 0 | 1,201 | $0.44 | 39.28 |
+| 4 | **pool liner patch kit **<br>泳池衬垫贴片套件 | - |  |  | 14,198 | 844 | 20 | 2 | 1,373 | $0.42 | 30.0 |
+| 5 | **pool repair kit **<br>泳池修理包 | 6.59% |  |  | 6,181 | 296 | 7 | 0 | 8,359 | $0.35 | 28.95 |
+| 6 | **thinset mortar for tile **<br>薄型瓷砖砂浆 | 13.28% |  |  | 2,050 | 60 | 2 | 0 | 480 | $0.54 | 20.38 |
+| 7 | **pool cover patch **<br>游泳池盖补丁 | - |  |  | 1,341 | 291 | 7 | 11 | 793 | $0.62 | 12.68 |
+| 8 | **muscle bound tile adhesive **<br>肌肉结合瓷砖粘合剂 | - |  |  | 1,426 | 172 | 4 | 0 | 138 | $0.56 | 11.45 |
+| 9 | **tile adhesive glue **<br>瓷砖胶 | - |  |  | 1,137 | 77 | 2 | 0 | 10,677 | $0.61 | 6.12 |
 
-## 免费套餐当前可见原始关键词（查询 ASIN: B0CBS4VWYB）
+## 免费套餐当前可见原始关键词（查询 ASIN: B00Q2L3QCU, B0D5DMD84K, B00Q2L3S1O）
 
-1. **diamond grinding wheel ** — 金刚砂轮
-2. **grinding stone ** — 磨石
+1. **pool tile adhesive ** — 泳池瓷砖粘合剂
+2. **pool patches ** — 池补丁
+3. **pool patch kit ** — 泳池补丁套件
+4. **thinset mortar for tile ** — 薄型瓷砖砂浆
+5. **pool repair kit ** — 泳池修理包
+6. **tile adhesive glue ** — 瓷砖胶
+7. **pool liner patch kit ** — 泳池衬垫贴片套件
+8. **pool cover patch ** — 游泳池盖补丁
+9. **muscle bound tile adhesive ** — 肌肉结合瓷砖粘合剂

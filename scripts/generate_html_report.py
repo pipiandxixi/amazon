@@ -266,7 +266,7 @@ def generate(root: Path, date_str: str) -> Path:
 
     s1 = json.loads((json_dir / f"stage1_handoff_{date_str}.json").read_text(encoding="utf-8"))
     s2 = json.loads((json_dir / f"stage2_handoff_{date_str}.json").read_text(encoding="utf-8"))
-    s3_path = json_dir / f"stage3_keywords_{date_str}.json"
+    s3_path = json_dir / f"stage3_handoff_{date_str}.json"
     s3 = json.loads(s3_path.read_text(encoding="utf-8")) if s3_path.exists() else {"categories": {}}
 
     candidates = s1["candidates"]
