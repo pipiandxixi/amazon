@@ -696,12 +696,14 @@ def generate_report(
     # write below results/YYYY_MM_DD/ instead of the results root.
     out = Path(output_dir) if output_dir else dated_results_dir(date_str)
     out.mkdir(parents=True, exist_ok=True)
+    json_dir = out / "json"
+    json_dir.mkdir(parents=True, exist_ok=True)
     if output_dir:
         report_file = out / "market_scan_report.md"
-        sidecar_file = out / "market_scan_results.json"
+        sidecar_file = json_dir / "market_scan_results.json"
     else:
         report_file = out / f"market_scan_report_{date_str}.md"
-        sidecar_file = out / f"market_scan_results_{date_str}.json"
+        sidecar_file = json_dir / f"market_scan_results_{date_str}.json"
 
     market_content = "\n".join(md)
     if write_report_file:

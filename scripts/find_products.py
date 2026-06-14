@@ -843,7 +843,8 @@ def main() -> None:
 
         # Save accumulated image URLs for use by generate_grid_image.py
         if output_dir and asin_images:
-            img_map_path = output_dir / "asin_images.json"
+            img_map_path = output_dir / "json" / "asin_images.json"
+            img_map_path.parent.mkdir(parents=True, exist_ok=True)
             img_map_path.write_text(json.dumps(asin_images, ensure_ascii=False, indent=2))
             print(f"  [images] Saved {len(asin_images)} image URLs → {img_map_path}")
 

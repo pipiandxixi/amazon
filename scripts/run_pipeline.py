@@ -20,6 +20,29 @@ GREEN = "🟢 Green (Recommended)"
 YELLOW = "🟡 Yellow (Cautious)"
 
 
+def _stage_json_path(root: Path, stage: int, date_str: str) -> Path:
+    return root / "json" / f"stage{stage}_handoff_{date_str}.json"
+
+
+def _write_stage_json(root: Path, stage: int, date_str: str, data: dict) -> None:
+    path = _stage_json_path(root, stage, date_str)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"[STAGE {stage} JSON] {path}")
+
+
+def _read_stage_json(root: Path, stage: int, date_str: str) -> dict:
+    path = _stage_json_path(root, stage, date_str)
+    if not path.exists():
+        raise FileNotFoundError(
+            f"Stage {stage} handoff file not found: {path}\n"
+            f"Run from stage {stage - 1} or earlier to generate it first."
+        )
+    data = json.loads(path.read_text(encoding="utf-8"))
+    print(f"[STAGE {stage} JSON] Loaded: {path}")
+    return data
+
+
 def values(section: dict) -> dict:
     return {
         key: item.get("value") if isinstance(item, dict) and "value" in item else item
@@ -154,7 +177,14 @@ def main() -> None:
     parser.add_argument("--date", default="")
     parser.add_argument("--skip-asin-keywords", action="store_true")
     parser.add_argument("--dry-run", action="store_true", help="Validate and summarize config without opening SellerSprite")
+    parser.add_argument(
+        "--start-from", type=int, choices=[1, 2, 3], default=1, metavar="{1,2,3}",
+        help="Resume from this stage using the previous stage's handoff JSON (default: 1 = full run)",
+    )
     args = parser.parse_args()
+
+    if args.start_from == 3 and args.skip_asin_keywords:
+        raise SystemExit("Error: --start-from 3 and --skip-asin-keywords are mutually exclusive")
 
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
     date_str = args.date or datetime.date.today().strftime("%Y_%m_%d")
@@ -170,23 +200,52 @@ def main() -> None:
         print("Dynamic fields validated: no product category or ASIN")
         return
 
-    check_browser_ready()
-    raw_categories, scan_meta = market_scan.scrape_market(config["market"])
-    market_content, candidates = market_scan.generate_report(
-        config["market"], raw_categories, date_str, output_dir=root,
-        scan_meta=scan_meta, return_candidates=True, write_report_file=False,
-    )
-    candidates = [item for item in candidates if item.get("level") in levels]
-    if not candidates:
-        raise ValueError("Market scan produced no downstream candidate categories")
-    print(f"\n[HANDOFF] market -> products: {len(candidates)} categories in memory")
-    products, product_sections = run_products(config["products"], candidates, date_str)
-    print(f"\n[HANDOFF] products -> ASIN reverse: {len(products)} products in memory")
-    if not products:
-        raise ValueError("All dynamic candidate categories returned zero qualified products")
+    # Browser is needed unless we skip all browser stages
+    if not (args.start_from == 3 and args.skip_asin_keywords):
+        check_browser_ready()
+
+    # ── Stage 1: Market Scan ─────────────────────────────────────────────────
+    if args.start_from <= 1:
+        raw_categories, scan_meta = market_scan.scrape_market(config["market"])
+        market_content, candidates = market_scan.generate_report(
+            config["market"], raw_categories, date_str, output_dir=root,
+            scan_meta=scan_meta, return_candidates=True, write_report_file=False,
+        )
+        candidates = [item for item in candidates if item.get("level") in levels]
+        if not candidates:
+            raise ValueError("Market scan produced no downstream candidate categories")
+        _write_stage_json(root, 1, date_str, {
+            "market_content": market_content,
+            "candidates": candidates,
+        })
+        print(f"\n[HANDOFF] market -> products: {len(candidates)} categories in memory")
+    else:
+        data = _read_stage_json(root, 1, date_str)
+        market_content = data["market_content"]
+        candidates = data["candidates"]
+        print(f"[RESUME] Stage 1: {len(candidates)} candidate categories loaded")
+
+    # ── Stage 2: Product Scan ────────────────────────────────────────────────
+    if args.start_from <= 2:
+        products, product_sections = run_products(config["products"], candidates, date_str)
+        if not products:
+            raise ValueError("All dynamic candidate categories returned zero qualified products")
+        _write_stage_json(root, 2, date_str, {
+            "products": products,
+            "product_sections": product_sections,
+        })
+        print(f"\n[HANDOFF] products -> ASIN reverse: {len(products)} products in memory")
+    else:
+        data = _read_stage_json(root, 2, date_str)
+        products = data["products"]
+        product_sections = data["product_sections"]
+        print(f"[RESUME] Stage 2: {len(products)} products loaded")
+
+    # ── Stage 3: ASIN Keyword Lookup ─────────────────────────────────────────
     keyword_sections: list[str] = []
     if not args.skip_asin_keywords:
         keyword_sections = run_asin_keywords(config["asin_keywords"], products, date_str)
+
     write_combined_report(root, date_str, market_content, product_sections, keyword_sections)
 
 

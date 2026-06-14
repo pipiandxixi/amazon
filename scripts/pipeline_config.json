@@ -338,11 +338,11 @@
   "asin_keywords": {
     "filters": {
       "min_searches": {
-        "value": 300,
+        "value": 1000,
         "label": "月搜索量最小值"
       },
       "min_purchases": {
-        "value": 10,
+        "value": 50,
         "label": "月购买量最小值"
       },
       "max_organic_rank": {
@@ -362,7 +362,7 @@
         "label": "相关商品数最大值"
       },
       "max_ppc_bid": {
-        "value": 2.0,
+        "value": 1.0,
         "label": "PPC 精准建议竞价最大值（美元）"
       },
       "allowed_traffic_types": {
