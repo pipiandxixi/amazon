@@ -15,42 +15,40 @@ from scan_common import OpenCliError, dated_results_dir, eval_browser, extract_j
 
 SCRAPE_JS = """
 (() => {
+  // traffic/extend/asin page: single unified table, 17 columns
+  // Col layout: 0=checkbox, 1=#, 2=keyword+translation, 3=流量占比,
+  //   4=相关ASIN, 5=月搜索趋势(chart), 6=ABA周排名, 7=月搜索量,
+  //   8=月购买量+购买率, 9=展示量+点击量, 10=SPR, 11=标题密度,
+  //   12=需供比+商品数, 13=广告竞品数, 14=ABA集中度, 15=PPC竞价, 16=操作
   const tables = Array.from(document.querySelectorAll('table'));
-  const keywordTable = tables.find(t => {
+  const dataTable = tables.find(t => {
     const row = t.querySelector('tbody tr');
-    const cells = row ? Array.from(row.querySelectorAll('td')) : [];
-    return cells.length >= 2 && /[a-zA-Z]/.test(cells[1]?.innerText || '');
+    return row && row.querySelectorAll('td').length >= 10;
   });
-  const metricTable = tables.find(t => {
-    const row = t.querySelector('tbody tr');
-    return row && row.querySelectorAll('td').length >= 18 && row.innerText.includes('%');
-  });
-  if (!keywordTable || !metricTable) return JSON.stringify([]);
-  const keywordRows = Array.from(keywordTable.querySelectorAll('tbody tr'));
-  const metricRows = Array.from(metricTable.querySelectorAll('tbody tr'));
-  return JSON.stringify(keywordRows.map((row, index) => {
-    const keywordCells = Array.from(row.querySelectorAll('td')).map(x => x.innerText.trim());
-    const metricCells = Array.from(metricRows[index]?.querySelectorAll('td') || []).map(
-      x => x.innerText.trim()
-    );
-    const keywordLines = (keywordCells[1] || '').split('\\n').filter(Boolean);
+  if (!dataTable) return JSON.stringify([]);
+  const rows = Array.from(dataTable.querySelectorAll('tbody tr'));
+  return JSON.stringify(rows.map(row => {
+    const c = Array.from(row.querySelectorAll('td')).map(td => td.innerText.trim());
+    const kwLines = (c[2] || '').split('\\n').filter(Boolean);
+    const searchLines = (c[7] || '').split('\\n').filter(Boolean);
+    const purchaseLines = (c[8] || '').split('\\n').filter(Boolean);
+    const supplyLines = (c[12] || '').split('\\n').filter(Boolean);
+    const ppcLines = (c[15] || '').split('\\n').filter(Boolean);
     return {
-      keyword: keywordLines[0] || '',
-      translation: keywordLines.slice(1).join(' / '),
-      traffic_share: metricCells[2] || '',
-      traffic_type: metricCells[3] || '',
-      organic_rank: metricCells[5] || '',
-      ad_rank: metricCells[6] || '',
-      aba_rank: metricCells[8] || '',
-      searches: metricCells[9] || '',
-      spr: metricCells[10] || '',
-      title_density: metricCells[11] || '',
-      purchases: metricCells[12] || '',
-      impressions_clicks: metricCells[13] || '',
-      supply_products: metricCells[14] || '',
-      ad_competitors: metricCells[15] || '',
-      concentration: metricCells[16] || '',
-      ppc_bid: metricCells[17] || ''
+      keyword: kwLines[0] || '',
+      translation: kwLines.slice(1).join(' / '),
+      traffic_share: (c[3] || '').split('\\n')[0],
+      aba_rank: c[6] || '',
+      searches: searchLines[0] || '',
+      purchases: purchaseLines[0] || '',
+      purchase_rate: purchaseLines[1] || '',
+      spr: c[10] || '',
+      title_density: c[11] || '',
+      supply_products: supplyLines[1] || supplyLines[0] || '',
+      ad_competitors: c[13] || '',
+      ppc_bid: ppcLines[0] || '',
+      organic_rank: '',
+      traffic_type: '',
     };
   }).filter(x => x.keyword));
 })()
@@ -64,27 +62,93 @@ def values(section: dict) -> dict:
     }
 
 
-def query_asin(asin: str) -> None:
-    output = eval_browser(
-        f"""
-        (() => {{
-          const input = document.querySelector('input[placeholder*="请输入单个ASIN"]');
-          if (!input) return 'ASIN input not found';
-          const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
-          setter.call(input, {json.dumps(asin)});
-          input.dispatchEvent(new Event('input', {{ bubbles: true }}));
-          input.dispatchEvent(new Event('change', {{ bubbles: true }}));
-          const button = Array.from(document.querySelectorAll('button')).find(
-            x => x.innerText.includes('立即查询')
+def open_extend_page(asins: list[str]) -> None:
+    """Navigate to the traffic-extend batch page with the given ASINs pre-loaded."""
+    q = ",".join(asins)
+    open_browser(f"https://www.sellersprite.com/v3/traffic/extend/asin?q={q}&marketId=1&date=")
+
+
+def submit_extend_query() -> str:
+    """Click 立即查询 on the traffic-extend page to trigger the search."""
+    return eval_browser(
+        """
+        (() => {
+          const btn = Array.from(document.querySelectorAll('button')).find(
+            x => x.innerText.includes('立即查询') && !x.disabled
           );
-          if (!button) return 'query button not found';
-          button.click();
+          if (!btn) return 'button not found';
+          btn.click();
           return 'submitted';
-        }})()
+        })()
         """
     )
-    if "submitted" not in output:
-        raise ValueError(output)
+
+
+def click_expand_keywords() -> str:
+    """Click 用畅销变体拓词 to load the keyword results table.
+
+    After 立即查询, the extend page shows variant-selection buttons before loading
+    any keyword table. This step is required to trigger the actual keyword fetch.
+    """
+    return eval_browser(
+        """
+        (() => {
+          const btn = Array.from(document.querySelectorAll('button')).find(
+            x => x.innerText.includes('用畅销变体拓词') && x.offsetParent !== null
+          );
+          if (!btn) return 'button not found';
+          btn.click();
+          return 'clicked: ' + btn.innerText.trim();
+        })()
+        """
+    )
+
+
+def apply_extend_filters(filters: dict) -> str:
+    """Fill the traffic-extend filter form using positional input indices and click 开始筛选.
+
+    Visible input order (after clicking 用畅销变体拓词):
+      [0]=marketplace, [1]=date, [2]=ASIN, [3]=checkbox,
+      [4–5]=流量占比 min/max, [6–7]=ABA周排名, [8–9]=月搜索量,
+      [10–11]=月购买量, [12–13]=购买率, [14–15]=展示量, [16–17]=点击量,
+      [18–19]=SPR, [20–21]=标题密度, [22–23]=商品数, [24–25]=需供比,
+      [26–27]=广告竞品数, [28–29]=点击总占比, [30–31]=转化总占比,
+      [32–33]=PPC竞价, [34–35]=单词个数, [36–37]=相关ASIN数,
+      [38]=Amazon Choice checkbox, [39]=排除关键词, [40]=包含关键词
+    """
+    js_filters = {
+        "min_searches":      str(filters.get("min_searches", "")),
+        "min_purchases":     str(filters.get("min_purchases", "")),
+        "max_spr":           str(filters.get("max_spr", "")),
+        "max_title_density": str(filters.get("max_title_density", "")),
+        "max_products":      str(filters.get("max_products", "")),
+        "max_ppc_bid":       str(filters.get("max_ppc_bid", "")),
+        "excluded_keywords": ",".join(str(k) for k in filters.get("excluded_keywords", [])),
+    }
+    return eval_browser(f"""
+    (() => {{
+      const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
+      function fill(input, value) {{
+        if (!input) return;
+        setter.call(input, String(value));
+        input.dispatchEvent(new Event('input', {{ bubbles: true }}));
+        input.dispatchEvent(new Event('change', {{ bubbles: true }}));
+      }}
+      const inputs = Array.from(document.querySelectorAll('input')).filter(i => i.offsetParent !== null);
+      const f = {json.dumps(js_filters, ensure_ascii=False)};
+      const applied = {{}};
+      if (f.min_searches)      {{ fill(inputs[8],  f.min_searches);      applied['月搜索量_min']  = f.min_searches; }}
+      if (f.min_purchases)     {{ fill(inputs[10], f.min_purchases);     applied['月购买量_min']  = f.min_purchases; }}
+      if (f.max_spr)           {{ fill(inputs[19], f.max_spr);           applied['SPR_max']       = f.max_spr; }}
+      if (f.max_title_density) {{ fill(inputs[21], f.max_title_density); applied['标题密度_max']  = f.max_title_density; }}
+      if (f.max_products)      {{ fill(inputs[23], f.max_products);      applied['商品数_max']    = f.max_products; }}
+      if (f.max_ppc_bid)       {{ fill(inputs[33], f.max_ppc_bid);       applied['PPC竞价_max']   = f.max_ppc_bid; }}
+      if (f.excluded_keywords) {{ fill(inputs[39], f.excluded_keywords); applied['排除关键词']    = f.excluded_keywords; }}
+      const btn = Array.from(document.querySelectorAll('button')).find(x => x.innerText.includes('开始筛选'));
+      if (btn) {{ btn.click(); applied['开始筛选'] = true; }}
+      return JSON.stringify(applied);
+    }})()
+    """)
 
 
 def inspect_result_state() -> dict:
@@ -167,7 +231,7 @@ def filter_keywords(
             continue
         if ppc_bid > float(filters.get("max_ppc_bid", float("inf"))):
             continue
-        if allowed_types and item["traffic_type"] not in allowed_types:
+        if allowed_types and item["traffic_type"] and item["traffic_type"] not in allowed_types:
             continue
         filtered.append(item)
     return filtered
@@ -203,10 +267,12 @@ def rank_keywords(
 
 
 def write_report(
-    asin: str, items: list[dict[str, str]], raw_items: list[dict[str, str]], config: dict,
+    asins: list[str], category_name: str,
+    items: list[dict[str, str]], raw_items: list[dict[str, str]], config: dict,
     date_str: str, result_state: dict,
 ) -> Path:
-    path = dated_results_dir(date_str) / f"asin_keywords_{asin}_{date_str}.md"
+    slug = re.sub(r"[^a-z0-9]+", "_", category_name.lower()).strip("_")
+    path = dated_results_dir(date_str) / f"category_keywords_{slug}_{date_str}.md"
     raw_count = len(raw_items)
     reported_total = result_state.get("reported_total")
     possible_truncation = (
@@ -214,10 +280,12 @@ def write_report(
         or (reported_total is not None and reported_total > raw_count)
         or result_state.get("free_limit_message", False)
     )
+    asins_str = ", ".join(f"`{a}`" for a in asins)
     md = [
-        f"# ASIN `{asin}` 推广关键词候选 ({date_str.replace('_', '-')})",
+        f"# {category_name} 拓展流量词候选 ({date_str.replace('_', '-')})",
         "",
-        "> 来源：卖家精灵关键词反查。排序分数综合流量占比、搜索量、购买量和自然排名，",
+        f"> 查询 ASIN：{asins_str}",
+        "> 来源：卖家精灵拓展流量词（批量多 ASIN 查询）。排序分数综合流量占比、搜索量、购买量和自然排名，",
         "> 用于生成广告测试候选，不代表应直接使用高竞价投放。",
         f"> 筛选参数：`{json.dumps(values(config['filters']), ensure_ascii=False)}`",
         f"> 原始关键词 **{raw_count}** 个，过滤后保留 **{len(items)}** 个。",
@@ -240,7 +308,7 @@ def write_report(
             f"{clean['title_density']} | {clean['supply_products']} | {clean['ppc_bid']} | "
             f"{clean['ad_score']} |"
         )
-    md.extend(["", "## 免费套餐当前可见原始关键词", ""])
+    md.extend(["", f"## 免费套餐当前可见原始关键词（查询 ASIN: {', '.join(asins)}）", ""])
     for index, item in enumerate(raw_items, 1):
         translation = item.get("translation", "").replace("\n", " / ")
         md.append(f"{index}. **{item['keyword']}**" + (f" — {translation}" if translation else ""))
@@ -250,34 +318,42 @@ def write_report(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("asin", help="Amazon ASIN, for example B0FS72284D")
+    parser.add_argument("asins", nargs="+", help="One or more Amazon ASINs (up to 20)")
+    parser.add_argument("--category", default="", help="Category name for the output filename")
     parser.add_argument("--config", default="scripts/asin_keyword_config.json")
     parser.add_argument("--date", default="")
     parser.add_argument("--limit", type=int)
     parser.add_argument("--wait-seconds", type=float)
     args = parser.parse_args()
-    asin = args.asin.strip().upper()
-    if not re.fullmatch(r"[A-Z0-9]{10}", asin):
-        raise SystemExit("ASIN must contain exactly 10 letters/numbers")
+    asins = [a.strip().upper() for a in args.asins]
+    for a in asins:
+        if not re.fullmatch(r"[A-Z0-9]{10}", a):
+            raise SystemExit(f"Invalid ASIN: {a} (must be 10 letters/numbers)")
+    if len(asins) > 20:
+        raise SystemExit("Maximum 20 ASINs per query")
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
     policy = values(config.get("scan_policy", {}))
     limit = args.limit or int(policy.get("max_keywords", 20))
-    query_wait = (
+    page_wait = (
         args.wait_seconds
         if args.wait_seconds is not None
-        else float(policy.get("query_wait_seconds", 8))
+        else float(policy.get("page_wait_seconds", 8))
     )
+    category_name = args.category or "_".join(asins)
     date_str = args.date or datetime.date.today().strftime("%Y_%m_%d")
 
-    open_browser("https://www.sellersprite.com/v3/keyword-reverse")
-    time.sleep(float(policy.get("page_wait_seconds", 5)))
-    query_asin(asin)
-    time.sleep(query_wait)
+    open_extend_page(asins)
+    time.sleep(page_wait)
+    print(f"Query: {submit_extend_query()}")
+    time.sleep(page_wait)
+    print(f"Expand: {click_expand_keywords()}")
+    time.sleep(page_wait)
+    print(f"Filters: {apply_extend_filters(values(config.get('filters', {})))}")
+    time.sleep(page_wait)
     result_state = inspect_result_state()
     raw_items = extract_json_array(eval_browser(SCRAPE_JS))
-    items = filter_keywords(raw_items, values(config.get("filters", {})))
-    items = rank_keywords(items, values(config.get("score_weights", {})))[:limit]
-    report = write_report(asin, items, raw_items, config, date_str, result_state)
+    items = rank_keywords(raw_items, values(config.get("score_weights", {})))[:limit]
+    report = write_report(asins, category_name, items, raw_items, config, date_str, result_state)
     print(f"Wrote {len(items)} of {len(raw_items)} keywords to {report}")
 
 

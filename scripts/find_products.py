@@ -572,7 +572,6 @@ def write_report(
     date_str: str,
     category_name: str | None = None,
     category_path: list[str] | None = None,
-    uncovered_categories: list[dict] | None = None,
     batch_total: int = 0,
     output_dir: Path | None = None,
     include_principles: bool = True,
@@ -659,48 +658,18 @@ def write_report(
         md.append(f"**{index}. {asin_link}** {product['title']}")
         md.append("")
 
-    # --- 未分析类目 ---
-    if uncovered_categories:
-        md.append(f"## {next(sec)}、尚未分析的候选类目（共 {len(uncovered_categories)} 个）\n")
-        md.append(
-            "以下类目在市场扫描中被标记为绿色或黄色推荐，但本次产品扫描**未覆盖**。"
-            "统一流水线会继续扫描剩余动态候选类目；如单独调试阶段脚本，"
-            "可使用 `find_products.py --categories-file` 批量扫描。\n"
-        )
-        md.append("| 序号 | 英文名称 | 中文名称 | 完整路径 |")
-        md.append("| ---: | --- | --- | --- |")
-        for i, cat in enumerate(uncovered_categories, 1):
-            en = cat.get("en_name", "")
-            zh = cat.get("zh_name", "")
-            p = cat.get("path", "")
-            md.append(f"| {i} | {en} | {zh} | `{p}` |")
-        md.append("")
-
     # --- 下一步建议 ---
     md.append(f"## {next(sec)}、下一步建议\n")
     md.append(
         "1. **深度调研候选商品**：对表格中评价数 ≤ 50、月销量 ≥ 200 的商品，"
         "在卖家精灵「产品详情」页核查供应链来源、头程成本、竞品广告投放强度。\n"
     )
-    if batch_total > 1:
-        coverage_msg = (
-            f"本次批量扫描共处理 {batch_total} 个品类。"
-            + (f"市场扫描还有 {len(uncovered_categories)} 个候选类目未覆盖，" if uncovered_categories else "")
-            + "统一流水线会继续处理所有动态候选类目。"
-        )
-    else:
-        coverage_msg = (
-            "本次只扫描了 1 个品类。"
-            + (f"市场扫描共识别出 {len(uncovered_categories)} 个未分析的候选类目，" if uncovered_categories else "")
-            + "建议按市场扫描报告中的绿色类目逐一更新 `product_config.json` → `category.path` 后重跑。"
-        )
-    md.append(f"2. **扩大类目覆盖**：{coverage_msg}\n")
     md.append(
-        "3. **关键词验证**：将本报告候选商品的核心关键词输入卖家精灵「关键词研究」，"
-        "确认搜索量、购买率与 pipeline 关键词扫描结果吻合，再决定是否建 Listing。\n"
+        "2. **关键词验证**：统一流水线已对每个品类的头部商品批量反查拓展流量词，"
+        "结果见同目录下 `category_keywords_*.md`，核对搜索量与购买率后再决定是否建 Listing。\n"
     )
     md.append(
-        "4. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，"
+        "3. **供应商询价**：以平均售价的 20%-30% 为目标采购成本，"
         "在 1688 / Alibaba 搜索对应品类，索取 MOQ 和含税价，核算实际利润率。\n"
     )
 
@@ -796,7 +765,6 @@ def main() -> None:
         print(f"  Principles: {principles_path}")
 
         results_summary: list[str] = []
-        scanned_names: set[str] = set()
         batch_total = len(cats_data)
         completed_count = 0
         asin_images: dict[str, str] = {}  # accumulated ASIN → image_url across all categories
@@ -838,11 +806,6 @@ def main() -> None:
                 for p in products:
                     if p.get("image_url"):
                         asin_images[p["asin"]] = p["image_url"]
-                scanned_names.add(cat_name.lower())
-                uncovered = [
-                    c for c in market_candidates
-                    if c.get("en_name", "").lower() not in scanned_names
-                ] if market_candidates else None
                 mkt = next(
                     (c for c in market_candidates if c.get("en_name", "").lower() == cat_name.lower()),
                     None,
@@ -850,7 +813,7 @@ def main() -> None:
                 report = write_report(
                     config, products, date_str,
                     category_name=cat_name, category_path=cat_path,
-                    uncovered_categories=uncovered, batch_total=batch_total,
+                    batch_total=batch_total,
                     output_dir=output_dir, include_principles=False,
                     market_entry=mkt,
                     result_state=result_state,
@@ -899,15 +862,8 @@ def main() -> None:
             time.sleep(3)
         result_state = inspect_result_state()
         products = scrape_products(int(policy.get("max_products", 20)))
-        # Uncovered = all market candidates except the one being scanned now
-        scanned_name = config["category"]["name"].lower()
-        uncovered = [
-            c for c in market_candidates
-            if c.get("en_name", "").lower() != scanned_name
-        ] if market_candidates else None
         report = write_report(config, products, date_str,
-                              uncovered_categories=uncovered, output_dir=output_dir,
-                              result_state=result_state)
+                              output_dir=output_dir, result_state=result_state)
         print(f"Wrote {len(products)} products to {report}")
 
 

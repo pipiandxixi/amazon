@@ -42,7 +42,6 @@ def run_products(
     time.sleep(float(policy.get("page_wait_seconds", 5)))
 
     all_products: list[dict] = []
-    scanned_names: set[str] = set()
     for entry in categories:
         name = entry.get("en_name") or entry.get("zh_name") or "unknown"
         path = entry.get("product_path") or product_scan._parse_path(entry.get("path", ""))
@@ -59,11 +58,9 @@ def run_products(
             for item in products:
                 item["_category_name"] = name
             all_products.extend(products)
-            scanned_names.add(name.lower())
-            uncovered = [c for c in categories if c.get("en_name", "").lower() not in scanned_names]
             product_scan.write_report(
                 config, products, date_str, category_name=name, category_path=path,
-                uncovered_categories=uncovered, batch_total=len(categories),
+                batch_total=len(categories),
                 output_dir=output_dir, include_principles=False,
                 market_entry=entry, result_state=state,
             )
@@ -75,41 +72,51 @@ def run_products(
 
 
 def run_asin_keywords(config: dict, products: list[dict], date_str: str) -> None:
+    from collections import defaultdict
     policy = values(config.get("scan_policy", {}))
     limit = int(policy.get("max_keywords", 20))
-    max_asins = int(policy.get("max_asins", 3))
+    max_asins = int(policy.get("max_asins", 5))
+    page_wait = float(policy.get("page_wait_seconds", 8))
+
     def priority(product: dict) -> float:
         def number(value) -> float:
             match = re.search(r"[\d,.]+", str(value or ""))
             return float(match.group(0).replace(",", "")) if match else 0.0
-
         sales = number(product.get("monthly_sales"))
         reviews = number(product.get("reviews"))
         margin = number(product.get("profit_margin"))
         return sales / (reviews + 10) + margin / 10
 
-    ranked_products = sorted(products, key=priority, reverse=True)
-    seen: set[str] = set()
-    asins = []
-    for product in ranked_products:
-        asin = product.get("asin", "")
-        if asin and asin not in seen:
-            seen.add(asin)
-            asins.append(asin)
-        if len(asins) >= max_asins:
-            break
+    by_category: dict[str, list[dict]] = defaultdict(list)
+    for p in products:
+        by_category[p.get("_category_name", "unknown")].append(p)
 
-    for asin in asins:
-        print(f"\n[ASIN KEYWORDS] {asin}")
-        open_browser("https://www.sellersprite.com/v3/keyword-reverse")
-        time.sleep(float(policy.get("page_wait_seconds", 5)))
-        asin_scan.query_asin(asin)
-        time.sleep(float(policy.get("query_wait_seconds", 8)))
+    for cat_name, cat_products in by_category.items():
+        seen: set[str] = set()
+        asins: list[str] = []
+        for p in sorted(cat_products, key=priority, reverse=True):
+            asin = p.get("asin", "")
+            if asin and asin not in seen:
+                seen.add(asin)
+                asins.append(asin)
+            if len(asins) >= max_asins:
+                break
+        if not asins:
+            continue
+        print(f"\n[CATEGORY KEYWORDS] {cat_name}: {asins}")
+        asin_scan.open_extend_page(asins)
+        time.sleep(page_wait)
+        print(f"  Query: {asin_scan.submit_extend_query()}")
+        time.sleep(page_wait)
+        print(f"  Expand: {asin_scan.click_expand_keywords()}")
+        time.sleep(page_wait)
+        filter_result = asin_scan.apply_extend_filters(values(config.get("filters", {})))
+        print(f"  Filters: {filter_result}")
+        time.sleep(page_wait)
         state = asin_scan.inspect_result_state()
         raw = extract_json_array(eval_browser(asin_scan.SCRAPE_JS))
-        items = asin_scan.filter_keywords(raw, values(config.get("filters", {})))
-        items = asin_scan.rank_keywords(items, values(config.get("score_weights", {})))[:limit]
-        report = asin_scan.write_report(asin, items, raw, config, date_str, state)
+        items = asin_scan.rank_keywords(raw, values(config.get("score_weights", {})))[:limit]
+        report = asin_scan.write_report(asins, cat_name, items, raw, config, date_str, state)
         print(f"  Wrote {len(items)} of {len(raw)} keywords to {report}")
 
 
@@ -118,7 +125,7 @@ def write_combined_report(root: Path, date_str: str) -> Path:
     output = root / f"pipeline_report_{date_str}.md"
     market_reports = sorted(root.glob("market_scan_report*.md"))
     product_reports = sorted((root / "products").glob("*.md"))
-    asin_reports = sorted(root.glob("asin_keywords_*.md"))
+    asin_reports = sorted(root.glob("category_keywords_*.md"))
     sources = market_reports + product_reports + asin_reports
 
     sections = [

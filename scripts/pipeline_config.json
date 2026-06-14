@@ -422,16 +422,12 @@
         "label": "最多输出关键词数"
       },
       "page_wait_seconds": {
-        "value": 5,
-        "label": "页面打开后等待秒数"
-      },
-      "query_wait_seconds": {
         "value": 8,
-        "label": "提交 ASIN 后等待秒数"
+        "label": "打开拓展流量词页面后等待秒数（URL 直接携带 ASIN 参数，无需额外提交）"
       },
       "max_asins": {
-        "value": 3,
-        "label": "最多反查的动态候选商品 ASIN 数"
+        "value": 20,
+        "label": "每个候选类目最多提交的 ASIN 数（拓展流量词批量查询，SellerSprite 上限 20 个）"
       }
     }
   }
