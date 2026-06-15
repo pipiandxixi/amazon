@@ -2633,15 +2633,20 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T15:56:35",
+    "last_scan_attempt": "2026-06-15T15:56:35",
+    "last_scan_status": "scan_error",
+    "product_node_id_path": "16310091:256225011:19619894011:401542011",
+    "last_scan_evidence": "unconfirmed_page_state",
+    "last_scan_visible_products": 0,
+    "last_scan_target_products": 0,
+    "last_scan_error": "product result state not confirmed: {'visible_items': 0, 'reported_total': None, 'next_available': False, 'empty_message': False, 'access_error': False, 'result_surface': True, 'free_limit_message': False}"
   },
   "Pressure Regulators": {
     "en_name": "Pressure Regulators",
     "zh_name": "压力调节器",
     "path": "Industrial & Scientific > Hydraulics, Pneumatics & Plumbing > Fittings > Valves > Pressure Regulators",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 91.31,
     "reviews": 157,
     "weight_lbs": 2.13,
@@ -2660,9 +2665,16 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T15:57:19",
+    "last_scan_attempt": "2026-06-15T15:57:19",
+    "last_scan_status": "no_valid_products",
+    "product_node_id_path": "15684181:15719731:15727321:15727631:15727931:15727951",
+    "last_scan_evidence": "confirmed_product_results",
+    "last_scan_visible_products": 1,
+    "last_scan_target_products": 0,
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "3D Printer Extruders": {
     "en_name": "3D Printer Extruders",
@@ -2684,11 +2696,72 @@
     "departments": [
       13
     ],
-    "products": [],
-    "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "products": [
+      {
+        "asin": "B0GHRXZC8C",
+        "parent_asin": "B0GVMVDW61",
+        "title": "3PCS P1P/P1S Hotend Upgraded Integrated 0.4mm Ceramic Assembled Extruder Printhead Kit (No Leakage)- 3D Printer Hot End Replacement with Hardened Steel Nozzle, Thermistor, Heater Cartridge Heat Block",
+        "brand": "HysiPrui",
+        "monthly_sales": "313",
+        "sales_growth": "89.06%",
+        "monthly_revenue": "$12,392",
+        "variants": "2",
+        "price": "$39.59",
+        "reviews": "50",
+        "monthly_new_reviews": "4",
+        "rating": "4.4",
+        "review_rate": "1.28%",
+        "fba_fee": "$3.86",
+        "profit_margin": "78%",
+        "listing_date": "2026-02-06",
+        "listing_age": "4个月",
+        "leaf_rank": "8",
+        "leaf_category": "3D Printer Extruders",
+        "sellers": "1",
+        "package_weight": "0.15 pounds",
+        "raw_metrics": "18,144 | 2,855 | 14% | 313 | 89.06% | $12,392 | 200+ | $7K+ | 2 | $39.59 | - | 50 | 4 | 4.4 | 1.28% | $3.86 | 78% | 2026-02-06 | 4个月 | FBA | -",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61s7aBXDHgL._AC_US600_.jpg"
+      },
+      {
+        "asin": "B0FVX8XG5C",
+        "parent_asin": "B0GXTQSGY2",
+        "title": "Upgrade 3PK 0.4MM AD5X Hotend for Falshforge AD5X Nozzle High Flow 32mm³/s High Speed Hardened Steel Quick Detachable Nozzle High Speed Print Head Replacement with Extra 3PK Silcone Sock",
+        "brand": "RugooSpink",
+        "monthly_sales": "129",
+        "sales_growth": "17.98%",
+        "monthly_revenue": "$2,903",
+        "variants": "3",
+        "price": "$22.50",
+        "reviews": "27",
+        "monthly_new_reviews": "5",
+        "rating": "4.4",
+        "review_rate": "3.88%",
+        "fba_fee": "$3.44",
+        "profit_margin": "73%",
+        "listing_date": "2025-10-27",
+        "listing_age": "7个月",
+        "leaf_rank": "69",
+        "leaf_category": "3D Printer Extruders",
+        "sellers": "1",
+        "package_weight": "0.09 pounds",
+        "raw_metrics": "25,277 | 20,477 | 45% | 129 | 17.98% | $2,903 | 50+ | $1K+ | 3 | $22.50 | - | 27 | 5 | 4.4 | 3.88% | $3.44 | 73% | 2025-10-27 | 7个月 | FBA | -",
+        "image_url": "https://m.media-amazon.com/images/I/41dVE8oMvfL._AC_US600_.jpg"
+      }
+    ],
+    "keywords": {
+      "asins": [
+        "B0GHRXZC8C",
+        "B0FVX8XG5C"
+      ],
+      "keywords": []
+    },
+    "last_updated": "2026-06-15T15:58:38",
+    "last_scan_attempt": "2026-06-15T15:58:38",
+    "last_scan_status": "success",
+    "product_node_id_path": "16310091:6066126011:6066132011:8481415011",
+    "last_scan_evidence": "confirmed_product_results",
+    "last_scan_visible_products": 2,
+    "last_scan_target_products": 2
   },
   "Relief Valves": {
     "en_name": "Relief Valves",
@@ -2713,9 +2786,14 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T15:59:21",
+    "last_scan_attempt": "2026-06-15T15:59:21",
+    "last_scan_status": "scan_error",
+    "product_node_id_path": "16310091:3021479011:3021480011:383615011:4650349011",
+    "last_scan_evidence": "unconfirmed_page_state",
+    "last_scan_visible_products": 0,
+    "last_scan_target_products": 0,
+    "last_scan_error": "product result state not confirmed: {'visible_items': 0, 'reported_total': None, 'next_available': False, 'empty_message': False, 'access_error': False, 'result_surface': True, 'free_limit_message': False}"
   },
   "Shim Stock": {
     "en_name": "Shim Stock",
@@ -2739,7 +2817,14 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null
+    "last_updated": "2026-06-15T16:00:04",
+    "product_node_id_path": "16310091:16310191:16413251:16413291",
+    "last_scan_evidence": "unconfirmed_page_state",
+    "last_scan_visible_products": 0,
+    "last_scan_target_products": 0,
+    "last_scan_error": "product result state not confirmed: {'visible_items': 0, 'reported_total': None, 'next_available': False, 'empty_message': False, 'access_error': False, 'result_surface': True, 'free_limit_message': False}",
+    "last_scan_attempt": "2026-06-15T16:00:04",
+    "last_scan_status": "scan_error"
   },
   "Continuous & Piano": {
     "en_name": "Continuous & Piano",
