@@ -5669,9 +5669,40 @@
     "departments": [
       13
     ],
-    "products": null,
-    "keywords": null,
-    "last_updated": null
+    "products": [
+      {
+        "asin": "B0FMRPJ5BR",
+        "parent_asin": "B0FMRPJ5BR",
+        "title": "WISEUP 3PCS Hose Pinch Off Pliers- 8in, 10in, 12in Ratchet Hose Pliers for Automotive Radiator, Radiator, Fuel & Coolant Lines with Storage Bag",
+        "brand": "WISEUP",
+        "monthly_sales": "191",
+        "sales_growth": "13.22%",
+        "monthly_revenue": "$4,964",
+        "variants": "1",
+        "price": "$25.99",
+        "reviews": "70",
+        "monthly_new_reviews": "-",
+        "rating": "4.8",
+        "review_rate": "-",
+        "fba_fee": "$6.76",
+        "profit_margin": "62%",
+        "listing_date": "2025-09-24",
+        "listing_age": "8个月",
+        "leaf_rank": "22",
+        "leaf_category": "Hose Clamping Tools",
+        "sellers": "1",
+        "package_weight": "2.93 pounds",
+        "raw_metrics": "28,922 | 0 | 0% | 191 | 13.22% | $4,964 | 100+ | $2K+ | 1 | $25.99 | - | 70 | - | 4.8 | - | $6.76 | 62% | 2025-09-24 | 8个月 | FBA | -",
+        "image_url": "https://m.media-amazon.com/images/I/41x5K95IbFL._AC_US600_.jpg"
+      }
+    ],
+    "keywords": {
+      "asins": [
+        "B0FMRPJ5BR"
+      ],
+      "keywords": []
+    },
+    "last_updated": "2026-06-15T09:04:17"
   },
   "Tactile Switches": {
     "en_name": "Tactile Switches",
@@ -5694,9 +5725,9 @@
     "departments": [
       13
     ],
-    "products": null,
+    "products": [],
     "keywords": null,
-    "last_updated": null
+    "last_updated": "2026-06-15T09:04:47"
   },
   "Electrically Conductive Adhesives": {
     "en_name": "Electrically Conductive Adhesives",
@@ -5718,9 +5749,9 @@
     "departments": [
       13
     ],
-    "products": null,
+    "products": [],
     "keywords": null,
-    "last_updated": null
+    "last_updated": "2026-06-15T09:05:18"
   },
   "Pressure Regulators": {
     "en_name": "Pressure Regulators",
@@ -5743,9 +5774,9 @@
     "departments": [
       13
     ],
-    "products": null,
+    "products": [],
     "keywords": null,
-    "last_updated": null
+    "last_updated": "2026-06-15T09:05:47"
   },
   "3D Printer Extruders": {
     "en_name": "3D Printer Extruders",
@@ -5767,9 +5798,66 @@
     "departments": [
       13
     ],
-    "products": null,
-    "keywords": null,
-    "last_updated": null
+    "products": [
+      {
+        "asin": "B0GHRXZC8C",
+        "parent_asin": "B0GVMVDW61",
+        "title": "3PCS P1P/P1S Hotend Upgraded Integrated 0.4mm Ceramic Assembled Extruder Printhead Kit (No Leakage)- 3D Printer Hot End Replacement with Hardened Steel Nozzle, Thermistor, Heater Cartridge Heat Block",
+        "brand": "HysiPrui",
+        "monthly_sales": "296",
+        "sales_growth": "89.06%",
+        "monthly_revenue": "$9,727",
+        "variants": "2",
+        "price": "$32.86",
+        "reviews": "50",
+        "monthly_new_reviews": "47",
+        "rating": "4.4",
+        "review_rate": "15.88%",
+        "fba_fee": "$3.86",
+        "profit_margin": "76%",
+        "listing_date": "2026-02-06",
+        "listing_age": "4个月",
+        "leaf_rank": "6",
+        "leaf_category": "3D Printer Extruders",
+        "sellers": "1",
+        "package_weight": "0.15 pounds",
+        "raw_metrics": "14,189 | 8,152 | 36% | 296 | 89.06% | $9,727 | 200+ | $7K+ | 2 | $32.86 | - | 50 | 47 | 4.4 | 15.88% | $3.86 | 76% | 2026-02-06 | 4个月 | FBA | -",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61s7aBXDHgL._AC_US600_.jpg"
+      },
+      {
+        "asin": "B0FVX8XG5C",
+        "parent_asin": "B0GXTQSGY2",
+        "title": "Upgrade 3PK 0.4MM AD5X Hotend for Falshforge AD5X Nozzle High Flow 32mm³/s High Speed Hardened Steel Quick Detachable Nozzle High Speed Print Head Replacement with Extra 3PK Silcone Sock",
+        "brand": "RugooSpink",
+        "monthly_sales": "129",
+        "sales_growth": "17.98%",
+        "monthly_revenue": "$2,903",
+        "variants": "3",
+        "price": "$22.50",
+        "reviews": "27",
+        "monthly_new_reviews": "5",
+        "rating": "4.4",
+        "review_rate": "3.88%",
+        "fba_fee": "$3.44",
+        "profit_margin": "73%",
+        "listing_date": "2025-10-27",
+        "listing_age": "7个月",
+        "leaf_rank": "69",
+        "leaf_category": "3D Printer Extruders",
+        "sellers": "1",
+        "package_weight": "0.09 pounds",
+        "raw_metrics": "25,277 | 20,477 | 45% | 129 | 17.98% | $2,903 | 50+ | $1K+ | 3 | $22.50 | - | 27 | 5 | 4.4 | 3.88% | $3.44 | 73% | 2025-10-27 | 7个月 | FBA | -",
+        "image_url": "https://m.media-amazon.com/images/I/41dVE8oMvfL._AC_US600_.jpg"
+      }
+    ],
+    "keywords": {
+      "asins": [
+        "B0GHRXZC8C",
+        "B0FVX8XG5C"
+      ],
+      "keywords": []
+    },
+    "last_updated": "2026-06-15T09:06:54"
   },
   "Angle": {
     "en_name": "Angle",
@@ -5792,9 +5880,9 @@
     "departments": [
       13
     ],
-    "products": null,
+    "products": [],
     "keywords": null,
-    "last_updated": null
+    "last_updated": "2026-06-15T09:07:23"
   },
   "Relief Valves": {
     "en_name": "Relief Valves",
@@ -5817,9 +5905,9 @@
     "departments": [
       13
     ],
-    "products": null,
+    "products": [],
     "keywords": null,
-    "last_updated": null
+    "last_updated": "2026-06-15T09:07:51"
   },
   "Shim Stock": {
     "en_name": "Shim Stock",
@@ -5841,9 +5929,9 @@
     "departments": [
       13
     ],
-    "products": null,
+    "products": [],
     "keywords": null,
-    "last_updated": null
+    "last_updated": "2026-06-15T09:08:21"
   },
   "Continuous & Piano": {
     "en_name": "Continuous & Piano",
@@ -5865,9 +5953,9 @@
     "departments": [
       13
     ],
-    "products": null,
+    "products": [],
     "keywords": null,
-    "last_updated": null
+    "last_updated": "2026-06-15T09:08:50"
   },
   "Outlet Boxes": {
     "en_name": "Outlet Boxes",
