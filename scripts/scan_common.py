@@ -31,12 +31,82 @@ def run_opencli_cmd(args, timeout=45):
     return result.stdout.strip()
 
 
+def clear_popups(timeout=10) -> int:
+    """统一清除页面弹窗（如 Element UI 对话框、Modal 遮罩、通知栏等）"""
+    js = (
+        "(() => {\n"
+        "  const selectors = [\n"
+        "    '.el-dialog__wrapper',\n"
+        "    '.v-modal',\n"
+        "    '.el-message-box__wrapper',\n"
+        "    '.el-notification',\n"
+        "    '.el-message',\n"
+        "    '.sellersprite-dialog',\n"
+        "    '.guide-popup',\n"
+        "    '.modal-backdrop',\n"
+        "    '.modal',\n"
+        "    '[class*=\"dialog-wrapper\"]',\n"
+        "    '[id*=\"dialog\"]',\n"
+        "    '[class*=\"Dialog\"]',\n"
+        "    '[class*=\"Modal\"]',\n"
+        "    '[id*=\"modal\"]',\n"
+        "    '[id*=\"Popup\"]',\n"
+        "    '[class*=\"popup\"]',\n"
+        "    '[class*=\"Guide\"]',\n"
+        "    '[class*=\"guide\"]',\n"
+        "    '[class*=\"Popover\"]',\n"
+        "    '[class*=\"popover\"]'\n"
+        "  ];\n"
+        "  let count = 0;\n"
+        "  selectors.forEach(sel => {\n"
+        "    try {\n"
+        "      const elements = document.querySelectorAll(sel);\n"
+        "      elements.forEach(el => {\n"
+        "        const tagName = el.tagName.toLowerCase();\n"
+        "        const safeTags = ['html', 'body', 'main', 'section', 'header', 'footer', 'app', '#app', 'div#app', 'div#layout'];\n"
+        "        if (!safeTags.includes(tagName) && !el.querySelector('main') && !el.querySelector('#app')) {\n"
+        "          el.remove();\n"
+        "          count++;\n"
+        "        }\n"
+        "      });\n"
+        "    } catch (e) {}\n"
+        "  });\n"
+        "  try {\n"
+        "    document.body.style.overflow = 'auto';\n"
+        "    document.documentElement.style.overflow = 'auto';\n"
+        "  } catch (e) {}\n"
+        "  return count;\n"
+        "})()"
+    )
+    try:
+        out = run_opencli_cmd(["opencli", "browser", "ss", "eval", js], timeout=timeout)
+        if out:
+            match = re.search(r'\d+', out)
+            if match:
+                val = int(match.group())
+                if val > 0:
+                    print(f"  [POPUP] Cleared {val} blocking element(s) from page.")
+                    return val
+    except Exception:
+        pass
+    return 0
+
+
 def eval_browser(js, timeout=45):
-    return run_opencli_cmd(["opencli", "browser", "ss", "eval", js], timeout=timeout)
+    try:
+        return run_opencli_cmd(["opencli", "browser", "ss", "eval", js], timeout=timeout)
+    except OpenCliError as exc:
+        print(f"  [EVAL WARNING] Command failed: {exc}. Attempting to clear popups and retry...")
+        clear_popups()
+        time.sleep(1.5)
+        return run_opencli_cmd(["opencli", "browser", "ss", "eval", js], timeout=timeout)
 
 
 def open_browser(url):
-    return run_opencli_cmd(["opencli", "browser", "ss", "open", url])
+    res = run_opencli_cmd(["opencli", "browser", "ss", "open", url])
+    time.sleep(2)
+    clear_popups()
+    return res
 
 
 def check_browser_ready() -> None:
