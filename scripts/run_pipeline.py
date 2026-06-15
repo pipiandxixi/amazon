@@ -172,6 +172,20 @@ def process_categories_loop(
         products: list[dict] = []
         try:
             actual_node = product_scan.select_category(path, prod_policy.get("only_leaf_category_rank", True))
+            expected_node = "/".join(path)
+            if actual_node != expected_node:
+                print(
+                    f"  [SKIP] nav-fallback reached '{actual_node}' instead of "
+                    f"target leaf '{expected_node}' — marking as attempted"
+                )
+                db[name]["products"] = []
+                db[name]["keywords"] = None
+                db[name]["last_updated"] = datetime.datetime.now().isoformat(timespec="seconds")
+                save_db(root, db)
+                open_browser("https://www.sellersprite.com/v3/product-research")
+                time.sleep(prod_page_wait)
+                processed += 1
+                continue
             if actual_node in seen_nodes:
                 print(f"  [SKIP] nav-fallback collision: '{actual_node}' — marking as attempted")
                 # Still timestamp so this category isn't repeatedly re-selected as stale
