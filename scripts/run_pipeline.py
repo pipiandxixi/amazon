@@ -147,6 +147,23 @@ def _priority(product: dict) -> float:
     return num(product.get("monthly_sales")) / (num(product.get("reviews")) + 10) + num(product.get("profit_margin")) / 10
 
 
+def filter_products_for_category(products: list[dict], category_name: str) -> list[dict]:
+    """Keep only products whose reported leaf category matches the target category."""
+    target = re.sub(r"[^a-z0-9]+", " ", category_name.lower()).strip()
+    matched = [
+        product
+        for product in products
+        if re.sub(r"[^a-z0-9]+", " ", str(product.get("leaf_category", "")).lower()).strip() == target
+    ]
+    discarded = len(products) - len(matched)
+    if discarded:
+        print(
+            f"  [LEAF FILTER] kept {len(matched)}/{len(products)} products for "
+            f"'{category_name}'; discarded {discarded} products from other leaf categories"
+        )
+    return matched
+
+
 def process_categories_loop(
     db: dict,
     root: Path,
@@ -226,6 +243,7 @@ def process_categories_loop(
                 product_scan.hide_variants()
                 time.sleep(3)
             products = product_scan.scrape_products(int(prod_policy.get("max_products", 50)))
+            products = filter_products_for_category(products, name)
         except ValueError as exc:
             print(f"  [PRODUCT ERROR] {exc}")
 
