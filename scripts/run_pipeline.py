@@ -68,6 +68,25 @@ def downgrade_empty_categories(db: dict) -> list[str]:
     return changed
 
 
+def restore_unverified_empty_categories(db: dict) -> list[str]:
+    """Restore old empty scans that lack persisted evidence of a valid result page."""
+    changed = []
+    for name, entry in db.items():
+        if (
+            entry.get("attention_priority") != "low"
+            or entry.get("last_scan_status") != "no_valid_products"
+            or entry.get("last_scan_evidence") == "confirmed_product_results"
+        ):
+            continue
+        entry["level"] = entry.get("market_level") or GREEN
+        entry["attention_priority"] = None
+        entry["attention_reason"] = "历史空结果缺少页面成功证据，等待重新验证"
+        entry["last_scan_status"] = "needs_rescan_unverified"
+        entry["last_scan_attempt"] = None
+        changed.append(name)
+    return changed
+
+
 def persist_empty_scan_attempt(root: Path, db: dict, name: str, reason: str) -> bool:
     """Record an empty/failed scan without replacing an existing valid result.
 
@@ -254,6 +273,9 @@ def process_categories_loop(
 
         # ── Products ──────────────────────────────────────────────────────────
         products: list[dict] = []
+        scan_error = ""
+        result_state: dict = {}
+        raw_product_count = 0
         try:
             only_leaf_rank = prod_policy.get("only_leaf_category_rank", True)
             cached_node = cat.get("product_node_id_path")
@@ -279,13 +301,35 @@ def process_categories_loop(
             if prod_policy.get("hide_variants", True):
                 product_scan.hide_variants()
                 time.sleep(3)
+            result_state = product_scan.inspect_result_state()
+            if result_state.get("access_error"):
+                raise ValueError(f"product page access error: {result_state}")
+            if (
+                not result_state.get("visible_items")
+                and not result_state.get("empty_message")
+            ):
+                raise ValueError(f"product result state not confirmed: {result_state}")
             products = product_scan.scrape_products(int(prod_policy.get("max_products", 50)))
+            raw_product_count = len(products)
             products = filter_products_for_category(products, name)
         except ValueError as exc:
             print(f"  [PRODUCT ERROR] {exc}")
+            scan_error = str(exc)
 
         if not products:
-            persist_empty_scan_attempt(root, db, name, "no_valid_products")
+            reason = "scan_error" if scan_error else "no_valid_products"
+            db[name]["last_scan_evidence"] = (
+                "unconfirmed_page_state" if scan_error else "confirmed_product_results"
+            )
+            db[name]["last_scan_visible_products"] = int(
+                result_state.get("visible_items") or raw_product_count
+            )
+            db[name]["last_scan_target_products"] = 0
+            if scan_error:
+                db[name]["last_scan_error"] = scan_error
+            else:
+                db[name].pop("last_scan_error", None)
+            persist_empty_scan_attempt(root, db, name, reason)
             _html_gen.generate_from_db(root, db, date_str)
             processed += 1
             open_browser("https://www.sellersprite.com/v3/product-research")
@@ -327,6 +371,12 @@ def process_categories_loop(
         db[name]["last_updated"] = now
         db[name]["last_scan_attempt"] = now
         db[name]["last_scan_status"] = "success"
+        db[name]["last_scan_evidence"] = "confirmed_product_results"
+        db[name]["last_scan_visible_products"] = int(
+            result_state.get("visible_items") or raw_product_count
+        )
+        db[name]["last_scan_target_products"] = len(products)
+        db[name].pop("last_scan_error", None)
         save_db(root, db)
 
         # ── Update HTML ───────────────────────────────────────────────────────
@@ -409,6 +459,10 @@ def main() -> None:
     if downgraded:
         save_db(root, db)
         print(f"[ATTENTION] Downgraded {len(downgraded)} empty categories to yellow")
+    restored = restore_unverified_empty_categories(db)
+    if restored:
+        save_db(root, db)
+        print(f"[AUDIT] Restored {len(restored)} unverified empty categories for rescanning")
     print(f"[TIMER] Stage 1 耗时: {_elapsed(t1)}  (累计 {_elapsed(pipeline_start)})")
 
     if args.stop_after == 1:

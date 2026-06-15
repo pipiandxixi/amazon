@@ -53,6 +53,9 @@ truncated visible results.
 Categories that have been scanned but return no qualifying products are
 automatically marked Yellow with low attention priority. Normal incremental
 batches scan Green categories first and skip these low-attention categories.
+An empty result is downgraded only after the product-results page is confirmed
+to have loaded. Access failures and unconfirmed page states are recorded as
+`scan_error` and remain Green for retry.
 
 ### Stage 3 — Category Keyword Batch Lookup (`find_asin_keywords.py`)
 

@@ -368,6 +368,17 @@ def inspect_result_state() -> dict:
           const visibleItems = cards.length || rows.filter(row => row.innerText.includes('ASIN:')).length;
           const text = document.body.innerText;
           const totalMatch = text.match(/(?:共|总计|总共)\\s*([\\d,]+)\\s*(?:条|个|件)/);
+          const emptyMessage = [
+            '没有找到', '暂无数据', '暂无符合', '未找到符合', '无符合条件'
+          ].some(message => text.includes(message));
+          const accessError = !!document.querySelector(
+            '.login-form, form[action*="login"], input[type="password"]'
+          ) || [
+            '访问受限', '请求失败', '系统繁忙', '网络错误'
+          ].some(message => text.includes(message));
+          const resultSurface = !!document.querySelector(
+            'div.relation-card, table, .el-pagination, .pagination, [class*="empty"]'
+          );
           const nextBtn = document.querySelector('button.btn-next, .pagination .next a, .el-pagination .btn-next');
           const parent = nextBtn?.closest('li, button');
           const nextAvailable = !!nextBtn && !nextBtn.disabled
@@ -377,6 +388,9 @@ def inspect_result_state() -> dict:
             visible_items: visibleItems,
             reported_total: totalMatch ? Number(totalMatch[1].replaceAll(',', '')) : null,
             next_available: nextAvailable,
+            empty_message: emptyMessage,
+            access_error: accessError,
+            result_surface: resultSurface,
             free_limit_message: text.includes('当前的会员版本无法查看全部结果')
               || text.includes('升级套餐后可查看全部')
           });
