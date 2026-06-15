@@ -41,11 +41,18 @@ Output: `results/YYYY_MM_DD/market_scan_report.md`
 For every candidate category, opens the SellerSprite product research page,
 applies all filters (monthly sales, price, reviews, profit margin, FBA fee,
 weight, sellers, etc.), and scrapes up to `max_products` qualifying listings.
+Resolved SellerSprite category Node IDs are saved in `categories.json`; later
+runs reuse them and open a fully filtered product-research URL directly, without
+reopening the category picker.
 
 Output: `results/YYYY_MM_DD/products/{category_slug}.md` (one file per category)
 
 Market, product, and keyword reports record whether the free plan may have
 truncated visible results.
+
+Categories that have been scanned but return no qualifying products are
+automatically marked Yellow with low attention priority. Normal incremental
+batches scan Green categories first and skip these low-attention categories.
 
 ### Stage 3 — Category Keyword Batch Lookup (`find_asin_keywords.py`)
 
@@ -94,3 +101,16 @@ python3 scripts/find_asin_keywords.py B0FS72284D B0EXAMPLE2 --category "Trophies
 ```
 
 These are not the recommended end-to-end workflow.
+
+## Browser Interaction Strategy
+
+- Product research: direct GET URL for category Node ID and all filters. The
+  category picker is used only once when a category has no cached Node ID.
+- Keyword research: direct GET URL for departments and all filter fields.
+- Market research: SellerSprite exposes this page as a POST form, so it cannot
+  be represented by URL alone; the script fills named fields and submits the
+  form directly without clicking the page button.
+- ASIN traffic extension: ASINs are loaded by URL, but SellerSprite still
+  requires server-side query/variant actions before the keyword table exists.
+  Keyword filters are applied locally after scraping, avoiding the page's
+  position-dependent filter inputs and its additional submit click.

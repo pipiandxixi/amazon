@@ -104,53 +104,6 @@ def click_expand_keywords() -> str:
     )
 
 
-def apply_extend_filters(filters: dict) -> str:
-    """Fill the traffic-extend filter form using positional input indices and click 开始筛选.
-
-    Visible input order (after clicking 用畅销变体拓词):
-      [0]=marketplace, [1]=date, [2]=ASIN, [3]=checkbox,
-      [4–5]=流量占比 min/max, [6–7]=ABA周排名, [8–9]=月搜索量,
-      [10–11]=月购买量, [12–13]=购买率, [14–15]=展示量, [16–17]=点击量,
-      [18–19]=SPR, [20–21]=标题密度, [22–23]=商品数, [24–25]=需供比,
-      [26–27]=广告竞品数, [28–29]=点击总占比, [30–31]=转化总占比,
-      [32–33]=PPC竞价, [34–35]=单词个数, [36–37]=相关ASIN数,
-      [38]=Amazon Choice checkbox, [39]=排除关键词, [40]=包含关键词
-    """
-    js_filters = {
-        "min_searches":      str(filters.get("min_searches", "")),
-        "min_purchases":     str(filters.get("min_purchases", "")),
-        "max_spr":           str(filters.get("max_spr", "")),
-        "max_title_density": str(filters.get("max_title_density", "")),
-        "max_products":      str(filters.get("max_products", "")),
-        "max_ppc_bid":       str(filters.get("max_ppc_bid", "")),
-        "excluded_keywords": ",".join(str(k) for k in filters.get("excluded_keywords", [])),
-    }
-    return eval_browser(f"""
-    (() => {{
-      const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
-      function fill(input, value) {{
-        if (!input) return;
-        setter.call(input, String(value));
-        input.dispatchEvent(new Event('input', {{ bubbles: true }}));
-        input.dispatchEvent(new Event('change', {{ bubbles: true }}));
-      }}
-      const inputs = Array.from(document.querySelectorAll('input')).filter(i => i.offsetParent !== null);
-      const f = {json.dumps(js_filters, ensure_ascii=False)};
-      const applied = {{}};
-      if (f.min_searches)      {{ fill(inputs[8],  f.min_searches);      applied['月搜索量_min']  = f.min_searches; }}
-      if (f.min_purchases)     {{ fill(inputs[10], f.min_purchases);     applied['月购买量_min']  = f.min_purchases; }}
-      if (f.max_spr)           {{ fill(inputs[19], f.max_spr);           applied['SPR_max']       = f.max_spr; }}
-      if (f.max_title_density) {{ fill(inputs[21], f.max_title_density); applied['标题密度_max']  = f.max_title_density; }}
-      if (f.max_products)      {{ fill(inputs[23], f.max_products);      applied['商品数_max']    = f.max_products; }}
-      if (f.max_ppc_bid)       {{ fill(inputs[33], f.max_ppc_bid);       applied['PPC竞价_max']   = f.max_ppc_bid; }}
-      if (f.excluded_keywords) {{ fill(inputs[39], f.excluded_keywords); applied['排除关键词']    = f.excluded_keywords; }}
-      const btn = Array.from(document.querySelectorAll('button')).find(x => x.innerText.includes('开始筛选'));
-      if (btn) {{ btn.click(); applied['开始筛选'] = true; }}
-      return JSON.stringify(applied);
-    }})()
-    """)
-
-
 def inspect_result_state() -> dict:
     output = eval_browser(
         """
@@ -357,11 +310,10 @@ def main() -> None:
     time.sleep(page_wait)
     print(f"Expand: {click_expand_keywords()}")
     time.sleep(page_wait)
-    print(f"Filters: {apply_extend_filters(values(config.get('filters', {})))}")
-    time.sleep(page_wait)
     result_state = inspect_result_state()
     raw_items = extract_json_array(eval_browser(SCRAPE_JS))
-    items = rank_keywords(raw_items, values(config.get("score_weights", {})))[:limit]
+    filtered_items = filter_keywords(raw_items, values(config.get("filters", {})))
+    items = rank_keywords(filtered_items, values(config.get("score_weights", {})))[:limit]
     report = write_report(asins, category_name, items, raw_items, config, date_str, result_state)
     print(f"Wrote {len(items)} of {len(raw_items)} keywords to {report}")
 

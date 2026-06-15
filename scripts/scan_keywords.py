@@ -8,6 +8,7 @@ import datetime
 import json
 import re
 import time
+import urllib.parse
 from pathlib import Path
 
 from scan_common import OpenCliError, check_browser_ready, dated_results_dir, eval_browser, open_browser, extract_json_object
@@ -43,130 +44,58 @@ def values(section: dict) -> dict:
 # Page interaction
 # ---------------------------------------------------------------------------
 
-def open_keyword_page(station: str, month: str) -> None:
-    """Open the keyword research page and optionally select station/month."""
-    open_browser("https://www.sellersprite.com/v2/keyword-research")
-    time.sleep(5)
+DEPARTMENT_VALUES = {
+    2: "arts-crafts", 3: "automotive", 4: "baby-products", 5: "beauty",
+    6: "mobile", 7: "fashion", 8: "computers", 9: "electronics",
+    10: "grocery", 11: "handmade", 12: "hpc", 13: "industrial", 14: "mi",
+    15: "office-products", 16: "lawngarden", 17: "pets", 18: "sporting",
+    19: "tools", 20: "toys-and-games", 21: "kitchen", 22: "photo",
+    23: "wireless",
+}
 
-    if station and station != "美国":
-        station_js = f"""
-        (() => {{
-          const target = {json.dumps(station)};
-          const el = Array.from(document.querySelectorAll('a, li, span, label'))
-            .find(x => x.offsetParent !== null && x.innerText.trim() === target);
-          if (el) {{ el.click(); return 'clicked: ' + target; }}
-          return 'station not found: ' + target;
-        }})()
-        """
-        result = eval_browser(station_js)
-        print(f"  Station selection: {result}")
-        time.sleep(2)
+STATION_VALUES = {
+    "美国": ("US", "1"),
+    "US": ("US", "1"),
+}
 
+
+def build_keyword_url(
+    station: str, month: str, departments: list[int], filter_params: dict
+) -> str:
+    """Build the GET URL used by SellerSprite's keyword-research form."""
+    station_code, market_id = STATION_VALUES.get(station, (station or "US", "1"))
+    params: list[tuple[str, str]] = [
+        ("station", station_code),
+        ("marketId", market_id),
+        ("order.field", "searches"),
+        ("order.desc", "true"),
+        ("supplement", "N"),
+        ("usestatic", "R"),
+    ]
     if month:
-        month_js = f"""
-        (() => {{
-          const target = {json.dumps(month)};
-          const opts = Array.from(document.querySelectorAll(
-            '.el-select-dropdown__item, option, li, span'
-          )).filter(x => x.offsetParent !== null && x.innerText.trim() === target);
-          if (opts.length) {{ opts[0].click(); return 'selected: ' + target; }}
-          return 'month option not found: ' + target;
-        }})()
-        """
-        # Try to open the month dropdown first
-        eval_browser("""
-        (() => {
-          const el = Array.from(document.querySelectorAll('*'))
-            .find(x => x.offsetParent !== null && x.innerText.trim().startsWith('选择月份'));
-          if (el) el.click();
-        })()
-        """)
-        time.sleep(1)
-        result = eval_browser(month_js)
-        print(f"  Month selection: {result}")
-        time.sleep(2)
+        params.append(("month", month))
+    for number in departments:
+        if number == 1:
+            continue
+        value = DEPARTMENT_VALUES.get(number)
+        if not value:
+            raise ValueError(f"Unknown SellerSprite department number: {number}")
+        params.append((f"departments[{number}]", value))
+    params.extend(
+        (key, str(value))
+        for key, value in filter_params.items()
+        if value != "" and value is not None
+    )
+    return "https://www.sellersprite.com/v2/keyword-research?" + urllib.parse.urlencode(params)
 
 
-def select_departments(department_numbers: list[int]) -> None:
-    """
-    Check the given department checkboxes and uncheck all others.
-    departments[1] is '全部类目' (any) — always uncheck it first so it
-    doesn't override individual selections.
-    """
-    # Validate: refuse to include 1 (全部类目) — it overrides all others
-    safe = [n for n in department_numbers if n != 1]
-    if not safe:
-        raise ValueError("departments list must contain at least one specific category (not 1=全部类目)")
-    js = f"""
-    (() => {{
-      const enabled = new Set({json.dumps(safe)});
-      let checked = 0, unchecked = 0, errors = [];
-      // Always uncheck the "any" checkbox first (departments[1])
-      const anyCb = document.querySelector('input[name="departments[1]"]');
-      if (anyCb && anyCb.checked) {{ anyCb.click(); unchecked++; }}
-      document.querySelectorAll('input[name^="departments["]').forEach(cb => {{
-        const m = cb.name.match(/departments\[(\d+)\]/);
-        if (!m) return;
-        const n = parseInt(m[1]);
-        if (n === 1) return;  // already handled above
-        if (enabled.has(n) && !cb.checked) {{ cb.click(); checked++; }}
-        else if (!enabled.has(n) && cb.checked) {{ cb.click(); unchecked++; }}
-      }});
-      const actualChecked = Array.from(
-        document.querySelectorAll('input[name^="departments["]:checked')
-      ).map(cb => cb.name);
-      return JSON.stringify({{checked, unchecked, active: actualChecked}});
-    }})()
-    """
-    result = eval_browser(js)
-    print(f"  Departments: {result}")
-    # Verify at least one specific category is selected
-    try:
-        data = json.loads(result[result.find('{'):result.rfind('}')+1])
-        if not data.get("active"):
-            raise OpenCliError("No department was successfully selected — check department numbers in config")
-    except (ValueError, json.JSONDecodeError):
-        pass  # JS returned non-JSON; evaluation already printed above
-
-
-def fill_and_submit(filter_params: dict) -> str:
-    """Fill named filter inputs and click 开始筛选. Returns submission status."""
-    params_json = json.dumps({k: str(v) for k, v in filter_params.items() if v != ""})
-    js = f"""
-    (() => {{
-      const params = {params_json};
-      const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
-      let filled = 0;
-      Array.from(document.querySelectorAll('input[name]')).forEach(input => {{
-        if (params[input.name] !== undefined) {{
-          setter.call(input, String(params[input.name]));
-          input.dispatchEvent(new Event('input', {{ bubbles: true }}));
-          input.dispatchEvent(new Event('change', {{ bubbles: true }}));
-          filled++;
-        }}
-      }});
-      const btn = Array.from(document.querySelectorAll('button'))
-        .find(b => b.innerText.includes('开始筛选') && b.offsetParent !== null);
-      if (btn) {{ btn.click(); return 'submitted (filled ' + filled + ' inputs)'; }}
-      return 'submit button not found';
-    }})()
-    """
-    return eval_browser(js)
-
-
-def reset_filters() -> None:
-    """Click 重置条件 to clear filter state between modes."""
-    js = """
-    (() => {
-      const btn = Array.from(document.querySelectorAll('button'))
-        .find(b => b.innerText.includes('重置') && b.offsetParent !== null);
-      if (btn) { btn.click(); return 'reset'; }
-      return 'reset button not found';
-    })()
-    """
-    result = eval_browser(js)
-    print(f"  Reset: {result}")
-    time.sleep(2)
+def open_keyword_search(
+    station: str, month: str, departments: list[int], filter_params: dict
+) -> str:
+    """Navigate directly to one fully filtered keyword-research result URL."""
+    url = build_keyword_url(station, month, departments, filter_params)
+    open_browser(url)
+    return url
 
 
 # ---------------------------------------------------------------------------
@@ -634,7 +563,7 @@ def main() -> None:
 
     station = config.get("station", "美国")
     month = config.get("month", "")
-    # Dept 1 = "全部类目" — always excluded by select_departments(); safe fallback uses all specific depts 2-23
+    # Dept 1 = "全部类目"; direct URLs use all specific departments 2-23 by default.
     departments: list[int] = config.get("departments", list(range(2, 24)))
 
     if args.categories_file:
@@ -656,9 +585,6 @@ def main() -> None:
     modes: list[dict] = config.get("modes", [])
 
     check_browser_ready()
-    print(f"Opening keyword research page (station={station}, month={month or 'default'})...")
-    open_keyword_page(station, month)
-
     all_mode_results: list[list[dict]] = []
     mode_summaries: list[dict] = []
 
@@ -674,20 +600,7 @@ def main() -> None:
         print(f"\n[MODE] {mode_name}")
         filter_params = values(mode.get("filter_params", {}))
 
-        print("  Resetting filters...")
-        reset_filters()
-
-        print("  Selecting departments...")
-        select_departments(departments)
-        time.sleep(1)
-
-        print(f"  Filling params: {filter_params}")
-        submit_result = fill_and_submit(filter_params)
-        print(f"  Submit: {submit_result}")
-
-        if "not found" in submit_result.lower():
-            mode_summaries.append({"name": mode_name, "enabled": True, "success": False, "count": 0, "note": "提交按钮未找到"})
-            continue
+        print(f"  Opening filtered URL: {open_keyword_search(station, month, departments, filter_params)[:160]}...")
 
         headers, raw_rows = scrape_mode(mode_name, max_pages, wait_seconds)
 

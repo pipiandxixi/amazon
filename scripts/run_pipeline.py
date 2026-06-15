@@ -45,6 +45,29 @@ def save_db(root: Path, db: dict) -> None:
     p.write_text(json.dumps(db, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def downgrade_empty_categories(db: dict) -> list[str]:
+    """Lower attention for scanned categories that produced no usable products."""
+    changed = []
+    for name, entry in db.items():
+        if entry.get("last_scan_status") != "no_valid_products" or entry.get("products"):
+            continue
+        entry_changed = False
+        if entry.get("level") != YELLOW:
+            entry["market_level"] = entry.get("market_level") or entry.get("level")
+            entry["level"] = YELLOW
+            entry_changed = True
+        if entry.get("attention_priority") != "low":
+            entry["attention_priority"] = "low"
+            entry_changed = True
+        reason = "已扫描但没有足够目标产品满足当前筛选条件"
+        if entry.get("attention_reason") != reason:
+            entry["attention_reason"] = reason
+            entry_changed = True
+        if entry_changed:
+            changed.append(name)
+    return changed
+
+
 def persist_empty_scan_attempt(root: Path, db: dict, name: str, reason: str) -> bool:
     """Record an empty/failed scan without replacing an existing valid result.
 
@@ -66,6 +89,8 @@ def persist_empty_scan_attempt(root: Path, db: dict, name: str, reason: str) -> 
     entry["products"] = []
     entry["keywords"] = None
     entry["last_updated"] = now
+    if reason == "no_valid_products":
+        downgrade_empty_categories(db)
     save_db(root, db)
     return False
 
@@ -76,13 +101,24 @@ def merge_market_into_db(root: Path, candidates: list[dict]) -> dict:
     for cat in candidates:
         name = cat["en_name"]
         existing = db.get(name, {})
+        market_level = cat.get("level")
+        current_level = (
+            YELLOW
+            if existing.get("attention_priority") == "low"
+            else market_level
+        )
         db[name] = {
             **cat,
+            "market_level": existing.get("market_level") or market_level,
+            "level": current_level,
             "products": existing.get("products"),
             "keywords": existing.get("keywords"),
+            "product_node_id_path": existing.get("product_node_id_path"),
             "last_updated": existing.get("last_updated"),
             "last_scan_attempt": existing.get("last_scan_attempt"),
             "last_scan_status": existing.get("last_scan_status"),
+            "attention_priority": existing.get("attention_priority"),
+            "attention_reason": existing.get("attention_reason"),
         }
     save_db(root, db)
     print(f"[DB] {len(candidates)} candidates merged → {len(db)} total in {CATEGORIES_DB}")
@@ -175,7 +211,8 @@ def process_categories_loop(
 ) -> None:
     """Process categories one at a time (products → keywords), saving DB + HTML after each.
 
-    Categories are ordered by staleness: never-attempted first, then oldest scan attempt.
+    Green categories are ordered by staleness: never-attempted first, then oldest
+    scan attempt. Yellow/low-attention categories are skipped by the normal loop.
     """
     import generate_html_report as _html_gen
 
@@ -183,11 +220,14 @@ def process_categories_loop(
         attempted = cat.get("last_scan_attempt") or cat.get("last_updated")
         return attempted if attempted else ""
 
-    to_process = sorted(db.values(), key=sort_key)
+    to_process = sorted(
+        (cat for cat in db.values() if cat.get("level") == GREEN),
+        key=sort_key,
+    )
     if max_categories:
         to_process = to_process[:max_categories]
 
-    print(f"\n[LOOP] {len(to_process)} categories to process (ordered by staleness)")
+    print(f"\n[LOOP] {len(to_process)} green categories to process (ordered by staleness)")
 
     prod_policy = values(products_config.get("scan_policy", {}))
     prod_filters = values(products_config["filters"])
@@ -215,21 +255,18 @@ def process_categories_loop(
         # ── Products ──────────────────────────────────────────────────────────
         products: list[dict] = []
         try:
-            actual_node = product_scan.select_category(path, prod_policy.get("only_leaf_category_rank", True))
-            expected_node = "/".join(path)
-            if actual_node != expected_node:
-                print(
-                    f"  [SKIP] nav-fallback reached '{actual_node}' instead of "
-                    f"target leaf '{expected_node}' — marking as attempted"
-                )
-                persist_empty_scan_attempt(root, db, name, "nav_fallback")
-                _html_gen.generate_from_db(root, db, date_str)
-                open_browser("https://www.sellersprite.com/v3/product-research")
-                time.sleep(prod_page_wait)
-                processed += 1
-                continue
+            only_leaf_rank = prod_policy.get("only_leaf_category_rank", True)
+            cached_node = cat.get("product_node_id_path")
+            if cached_node:
+                actual_node = product_scan.use_category_node(cached_node, only_leaf_rank)
+                print(f"  [nav-cache] Using saved category node ID: {actual_node}")
+            else:
+                actual_node = product_scan.select_category(path, only_leaf_rank)
+                db[name]["product_node_id_path"] = actual_node
+                save_db(root, db)
+                print(f"  [nav-cache] Saved category node ID: {actual_node}")
             if actual_node in seen_nodes:
-                print(f"  [SKIP] nav-fallback collision: '{actual_node}' — marking as attempted")
+                print(f"  [SKIP] category node collision: '{actual_node}' — marking as attempted")
                 persist_empty_scan_attempt(root, db, name, "nav_collision")
                 _html_gen.generate_from_db(root, db, date_str)
                 open_browser("https://www.sellersprite.com/v3/product-research")
@@ -277,12 +314,11 @@ def process_categories_loop(
                 time.sleep(page_wait)
                 print(f"  Expand: {asin_scan.click_expand_keywords()}")
                 time.sleep(page_wait)
-                print(f"  Filters: {asin_scan.apply_extend_filters(kw_filters)}")
-                time.sleep(page_wait)
                 raw = extract_json_array(eval_browser(asin_scan.SCRAPE_JS))
-                items = asin_scan.rank_keywords(raw, kw_weights)[:kw_limit]
+                filtered = asin_scan.filter_keywords(raw, kw_filters)
+                items = asin_scan.rank_keywords(filtered, kw_weights)[:kw_limit]
                 keywords = {"asins": asins, "keywords": items}
-                print(f"  {len(items)} keywords collected")
+                print(f"  {len(items)} of {len(raw)} visible keywords passed local filters")
 
         # ── Persist ───────────────────────────────────────────────────────────
         now = datetime.datetime.now().isoformat(timespec="seconds")
@@ -369,6 +405,10 @@ def main() -> None:
         if not db:
             raise FileNotFoundError(f"{CATEGORIES_DB} not found — run from stage 1 first")
         print(f"[RESUME] Loaded {len(db)} categories from {CATEGORIES_DB}")
+    downgraded = downgrade_empty_categories(db)
+    if downgraded:
+        save_db(root, db)
+        print(f"[ATTENTION] Downgraded {len(downgraded)} empty categories to yellow")
     print(f"[TIMER] Stage 1 耗时: {_elapsed(t1)}  (累计 {_elapsed(pipeline_start)})")
 
     if args.stop_after == 1:

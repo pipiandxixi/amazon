@@ -57,337 +57,249 @@ def values(section: dict) -> dict:
     }
 
 
-# ── Category-tree navigation JS templates ───────────────────────────────────
-# Kept together so the fallback strategy is easy to read and update in one place.
-
-_NAV_NODE_JS = """
-(() => {{
-  const target = {target_json};
-  const nodes = Array.from(
-    document.querySelectorAll('.category-tree .custom-tree-node .label')
-  ).filter(x => {{
-    const label = x.textContent.trim();
-    const englishPath = label.split(' (')[0];
-    const leafName = englishPath.split(':').at(-1).trim();
-    return (label === target || leafName === target) && x.offsetParent !== null;
-  }});
-  if (!nodes.length) return 'not found: ' + target;
-  const content = nodes[0].closest('.el-tree-node__content');
-  if (!content) return 'row not found: ' + target;
-  if ({as_leaf}) {{
-    const cb = content.querySelector('input[type=checkbox]');
-    if (!cb) return 'checkbox not found: ' + target;
-    if (!cb.checked) cb.click();
-  }} else {{
-    const expand = content.querySelector('.el-tree-node__expand-icon');
-    if (!expand) return 'expand not found: ' + target;
-    if (!expand.classList.contains('expanded')) expand.click();
-  }}
-  return 'clicked: ' + nodes[0].textContent.trim();
-}})()
-"""
-
-_SCROLL_TREE_TOP_JS = """
-(() => {
-  const tree = document.querySelector('.category-tree');
-  if (tree) tree.scrollTop = 0;
-  return 'scrolled';
-})()
-"""
+_CURRENT_NODE_ID_PATH = None
+_ONLY_LEAF_RANK = True
 
 
-def _nav_node(category: str, as_leaf: bool) -> str:
-    """Click one node in the SellerSprite category tree. Returns 'clicked: …' on success."""
-    return eval_browser(_NAV_NODE_JS.format(
-        target_json=json.dumps(category),
-        as_leaf="true" if as_leaf else "false",
-    ))
+def use_category_node(node_id_path: str, only_leaf_rank: bool) -> str:
+    """Use a previously resolved SellerSprite node ID path without opening the modal."""
+    global _CURRENT_NODE_ID_PATH, _ONLY_LEAF_RANK
+    if not node_id_path:
+        raise ValueError("Category node ID path is empty.")
+    _CURRENT_NODE_ID_PATH = node_id_path
+    _ONLY_LEAF_RANK = only_leaf_rank
+    return node_id_path
 
 
 def select_category(path: list[str], only_leaf_rank: bool) -> str:
-    deepest_found: int = -1
-    time.sleep(1.0)  # Settle delay to let any previous dialog close transition finish
+    """Resolve the category path to a SellerSprite node ID path using the search modal.
 
-    # ── Trigger Dialog Open ──────────────────────────────────────────────────
-    output = eval_browser(
-        """
-        (() => {
-          const dialog = document.querySelector('.el-dialog__wrapper') || document.querySelector('.el-dialog');
-          const isVisible = dialog && dialog.offsetParent !== null && dialog.offsetWidth > 0;
-          if (isVisible) {
-            return 'already_opened';
-          }
-          
-          const trigger = Array.from(document.querySelectorAll('*')).find(
-            x => x.children.length === 0 && x.textContent.trim() === '选择一个或多个类目和子类目'
-          );
-          if (!trigger) return 'category trigger not found';
-          trigger.click();
-          return 'opened';
-        })()
-        """
-    )
+    Returns the resolved node ID path (e.g. '3375251:10971181011:...').
+    """
+    global _CURRENT_NODE_ID_PATH, _ONLY_LEAF_RANK
+    _ONLY_LEAF_RANK = only_leaf_rank
+
+    leaf_category = path[-1]
+    print("  [nav-search] Resolving category '" + leaf_category + "' via search modal...")
+    time.sleep(1.0)  # Settle delay to let any previous page load/dialog transition finish
+
+    # 1. Trigger Dialog Open
+    trigger_js = """
+    (() => {
+      const dialogs = Array.from(document.querySelectorAll('.el-dialog__wrapper, .el-dialog'));
+      const isVisible = dialogs.some(d => d.offsetParent !== null && d.offsetWidth > 0);
+      if (isVisible) {
+        return 'already_opened';
+      }
+
+      const trigger = Array.from(document.querySelectorAll('*')).find(
+        x => x.children.length === 0 && x.textContent.trim() === '选择一个或多个类目和子类目'
+      );
+      if (!trigger) return 'category trigger not found';
+      trigger.click();
+      return 'opened';
+    })()
+    """
+    output = eval_browser(trigger_js)
     if "opened" not in output and "already_opened" not in output:
-        raise ValueError(output)
-
-    print("  [DEBUG] select_category trigger click output: " + str(output))
+        raise ValueError("Failed to open category dialog: " + str(output))
 
     time.sleep(1.5)  # Wait for category modal dialog DOM to render
 
-    # ── Clear pre-selected category tags inside the dialog ──────────────────
-    clear_status = eval_browser(
-        """
-        (() => {
-          const buttons = Array.from(document.querySelectorAll('.el-dialog__wrapper button, .el-dialog button'));
-          const clearBtn = buttons.find(b => b.textContent.includes('清空') && b.offsetParent !== null);
-          if (clearBtn) {
-            clearBtn.click();
-            return 'cleared_via_button';
+    # 2. Trigger Search in Dialog
+    search_js = """
+    (() => {
+      const wrapper = Array.from(document.querySelectorAll('.el-dialog__wrapper, .el-dialog')).find(x => x.offsetParent !== null);
+      if (!wrapper) return 'no_visible_dialog';
+
+      // Clear any pre-selected items to start fresh
+      const buttons = Array.from(wrapper.querySelectorAll('button'));
+      const clearBtn = buttons.find(b => b.textContent.includes('清空'));
+      if (clearBtn) clearBtn.click();
+
+      const input = wrapper.querySelector('input[placeholder*="Node ID"]') ||
+                    wrapper.querySelector('input[placeholder*="类目"]');
+      if (!input) return 'search input not found';
+
+      const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
+      setter.call(input, '');
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      setter.call(input, """ + json.dumps(leaf_category) + """);
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+
+      const searchIcon = input.parentElement.querySelector('.el-icon-search');
+      if (searchIcon) {
+        searchIcon.click();
+      }
+      return 'search_triggered';
+    })()
+    """
+    res_input = eval_browser(search_js)
+    if "error" in res_input or "no_visible_dialog" in res_input:
+        raise ValueError("Failed to input category search: " + str(res_input))
+
+    time.sleep(2.0)  # Wait for search results tree to populate
+
+    # 3. Retrieve Node ID Path and Close Dialog
+    retrieve_js = """
+    (() => {
+      const targetLeaf = """ + json.dumps(leaf_category) + """;
+      const wrapper = Array.from(document.querySelectorAll('.el-dialog__wrapper, .el-dialog')).find(x => x.offsetParent !== null);
+      if (!wrapper) return 'error:no_visible_dialog';
+
+      const treeNodes = Array.from(wrapper.querySelectorAll('.el-tree-node'));
+      const matchedNodes = treeNodes.filter(node => {
+        if (node.offsetParent === null) return false;
+        const textNode = node.querySelector('.label') || node.querySelector('.el-tree-node__label') || node;
+        const text = textNode.textContent.trim();
+        const cleanText = text.split(' (')[0];
+        const leafName = cleanText.split('>').at(-1).trim().split(':').at(-1).trim();
+        return leafName.toLowerCase() === targetLeaf.toLowerCase();
+      });
+
+      let nodeEl = null;
+      if (matchedNodes.length > 0) {
+        nodeEl = matchedNodes[0];
+      } else {
+        // Try fallback label matching
+        const allLabels = Array.from(wrapper.querySelectorAll('.el-checkbox, label, span')).filter(el => {
+          if (el.offsetParent === null) return false;
+          const cleanText = el.textContent.split(' (')[0];
+          return cleanText.toLowerCase().includes(targetLeaf.toLowerCase());
+        });
+        if (allLabels.length > 0) {
+          nodeEl = allLabels[0].closest('.el-tree-node') || allLabels[0];
+        }
+      }
+
+      if (!nodeEl) return 'error:category not found in search results';
+
+      let nodeId = null;
+      if (nodeEl.__vue__) {
+        const vue = nodeEl.__vue__;
+        nodeId = (vue.node && vue.node.data) ? vue.node.data.id : null;
+      }
+
+      if (!nodeId) {
+        // Try searching vue instances of all tree nodes
+        for (let i = 0; i < treeNodes.length; i++) {
+          const tn = treeNodes[i];
+          if (tn.__vue__ && tn.__vue__.node && tn.__vue__.node.data) {
+            const data = tn.__vue__.node.data;
+            const cleanLabel = (data.label || '').split(':').at(-1).split('(')[0].trim();
+            if (cleanLabel.toLowerCase() === targetLeaf.toLowerCase()) {
+              nodeId = data.id;
+              break;
+            }
           }
-          const closeBtns = Array.from(document.querySelectorAll('.choose-node-list .el-icon-error, .choose-node-list [class*="error"]')).filter(x => x.offsetParent !== null);
-          if (closeBtns.length > 0) {
-            closeBtns.forEach(btn => btn.click());
-            return 'cleared_via_close_buttons';
-          }
-          return 'none';
-        })()
-        """
-    )
-    print("  [nav-clear] Category clear status inside dialog: " + str(clear_status))
-    time.sleep(1.0)
+        }
+      }
 
-    # ── DOM Debug Dumper ──────────────────────────────────────────────────────
-    try:
-        debug_js = (
-            "(() => {\n"
-            "  const wrapper = document.querySelector('.el-dialog__wrapper') || document.querySelector('.el-dialog') || document.body;\n"
-            "  const visibleWrapper = Array.from(document.querySelectorAll('.el-dialog__wrapper, .el-dialog, [class*=\"dialog\"]')).filter(x => x.offsetParent !== null);\n"
-            "  const inputs = Array.from(document.querySelectorAll('input')).map(x => ({\n"
-            "    placeholder: x.placeholder,\n"
-            "    visible: x.offsetParent !== null,\n"
-            "    value: x.value\n"
-            "  }));\n"
-            "  return JSON.stringify({\n"
-            "    wrapperExists: !!wrapper,\n"
-            "    wrapperText: wrapper ? wrapper.innerText.substring(0, 300) : 'none',\n"
-            "    visibleWrappersCount: visibleWrapper.length,\n"
-            "    visibleWrapperText: visibleWrapper.length > 0 ? visibleWrapper[0].innerText.substring(0, 300) : 'none',\n"
-            "    inputs: inputs,\n"
-            "    categoryTreeExists: !!document.querySelector('.category-tree'),\n"
-            "    treeLabels: Array.from(document.querySelectorAll('.category-tree .label, .custom-tree-node')).map(x => x.textContent.trim()).slice(0, 10)\n"
-            "  });\n"
-            "})()"
-        )
-        print("  [DEBUG DOM STATE]: " + str(eval_browser(debug_js)))
-    except Exception as e:
-        print("  [DEBUG DOM STATE ERROR]: " + str(e))
+      if (!nodeId) return 'error:node id not found in Vue component';
 
-    # ── Try Direct Search First (New Robust Strategy) ─────────────────────────
-    leaf_category = path[-1]
-    search_success = False
-    try:
-        # 1. Fill search input
-        fill_search_js = (
-            "(() => {\n"
-            "  const input = document.querySelector('input[placeholder*=\"Node ID\"]') || \n"
-            "                document.querySelector('.el-dialog input[placeholder*=\"类目\"]') || \n"
-            "                document.querySelector('.el-dialog__wrapper input[placeholder*=\"类目\"]');\n"
-            "  if (!input) return 'search input not found';\n"
-            "  const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;\n"
-            "  setter.call(input, '');\n"
-            "  input.dispatchEvent(new Event('input', { bubbles: true }));\n"
-            "  setter.call(input, " + json.dumps(leaf_category) + ");\n"
-            "  input.dispatchEvent(new Event('input', { bubbles: true }));\n"
-            "  input.dispatchEvent(new Event('change', { bubbles: true }));\n"
-            "  input.dispatchEvent(new KeyboardEvent('keydown', { bubbles: true, cancelable: true, key: 'Enter', code: 'Enter', keyCode: 13, which: 13 }));\n"
-            "  input.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true, cancelable: true, key: 'Enter', code: 'Enter', keyCode: 13, which: 13 }));\n"
-            "  const searchIcon = input.parentElement.querySelector('.el-icon-search');\n"
-            "  if (searchIcon) {\n"
-            "    searchIcon.click();\n"
-            "  }\n"
-            "  return 'input_done';\n"
-            "})()"
-        )
-        res_input = eval_browser(fill_search_js)
-        if res_input == "input_done":
-            time.sleep(1.5)  # Wait for filtering results to populate
-            
-            # 2. Match and check the leaf category
-            check_leaf_js = (
-                "(() => {\n"
-                "  const targetLeaf = " + json.dumps(leaf_category) + ";\n"
-                "  const treeNodes = Array.from(document.querySelectorAll('.el-tree-node'));\n"
-                "  \n"
-                "  const matchedNodes = treeNodes.filter(node => {\n"
-                "    if (node.offsetParent === null) return false;\n"
-                "    const textNode = node.querySelector('.label') || node.querySelector('.el-tree-node__label') || node;\n"
-                "    const text = textNode.textContent.trim();\n"
-                "    const cleanText = text.split(' (')[0];\n"
-                "    const leafName = cleanText.split('>').at(-1).trim().split(':').at(-1).trim();\n"
-                "    return leafName.toLowerCase() === targetLeaf.toLowerCase();\n"
-                "  });\n"
-                "  \n"
-                "  if (!matchedNodes.length) {\n"
-                "    const allLabels = Array.from(document.querySelectorAll('.el-checkbox, label, span')).filter(el => {\n"
-                "      if (el.offsetParent === null) return false;\n"
-                "      const cleanText = el.textContent.split(' (')[0];\n"
-                "      return cleanText.toLowerCase().includes(targetLeaf.toLowerCase());\n"
-                "    });\n"
-                "    if (!allLabels.length) return 'not found after search: ' + targetLeaf;\n"
-                "    const cb = allLabels[0].querySelector('.el-checkbox__inner') || allLabels[0].querySelector('.el-checkbox__input') || allLabels[0].querySelector('input[type=checkbox]') || allLabels[0];\n"
-                "    cb.click();\n"
-                "    return 'clicked fallback label: ' + allLabels[0].textContent.trim();\n"
-                "  }\n"
-                "  \n"
-                "  const contentNode = matchedNodes[0].querySelector('.el-tree-node__content') || matchedNodes[0];\n"
-                "  const checkbox = contentNode.querySelector('.el-checkbox__inner') || contentNode.querySelector('.el-checkbox__input') || contentNode.querySelector('.el-checkbox') || contentNode.querySelector('input[type=checkbox]');\n"
-                "  if (!checkbox) return 'checkbox not found';\n"
-                "  \n"
-                "  const isChecked = contentNode.querySelector('.is-checked') !== null || (contentNode.querySelector('input[type=checkbox]') && contentNode.querySelector('input[type=checkbox]').checked);\n"
-                "  if (!isChecked) {\n"
-                "    checkbox.click();\n"
-                "  }\n"
-                "  return 'clicked: ' + matchedNodes[0].textContent.trim();\n"
-                "})()"
-            )
-            res_check = eval_browser(check_leaf_js)
-            if "clicked" in res_check:
-                print("  [nav-search] Successfully located and checked leaf '" + leaf_category + "' via search: " + res_check)
-                search_success = True
-                deepest_found = len(path) - 1
-    except Exception as exc:
-        print("  [nav-search-warning] Direct search failed: " + str(exc) + ", fallback to tree navigation...")
+      // Close the dialog
+      const closeBtn = wrapper.querySelector('.el-dialog__close') || wrapper.querySelector('button[aria-label="Close"]') || wrapper.querySelector('.el-icon-close');
+      if (closeBtn) closeBtn.click();
 
-    # ── Path navigation with two-stage fallback (Fallback if Direct Search fails) ──
-    if not search_success:
-        print("  [nav-tree] Direct search fallback. Initiating manual tree navigation for path: " + str(path))
-        deepest_found = -1  # index of the last successfully navigated segment
-    
-        for index, category in enumerate(path):
-            time.sleep(1)
-            is_leaf = (index == len(path) - 1)
-    
-            result = _nav_node(category, is_leaf)
-            if "clicked:" in result:
-                deepest_found = index
-                continue
-    
-            # Stage 1 — scroll to top and retry (fixes off-screen root-level nodes)
-            eval_browser(_SCROLL_TREE_TOP_JS)
-            time.sleep(0.3)
-            result = _nav_node(category, is_leaf)
-            if "clicked:" in result:
-                deepest_found = index
-                continue
-    
-            # Node not found at this level — skip and try the next segment.
-            # SellerSprite's product tree collapses levels vs Amazon taxonomy
-            # (e.g. "Golf" is a direct child of "Sports & Outdoors", not of "Sports").
-            # Skipping missing intermediate nodes lets us reach the deepest match.
-            if deepest_found < 0:
-                raise ValueError(
-                    "Could not find root category '" + path[0] + "' in SellerSprite product tree."
-                )
-            print("  [nav-skip] '" + category + "' not in tree, trying next level...")
-            continue
-    
-        # After the loop: if we never reached the leaf, re-select the deepest found
-        # node as a leaf (checking the checkbox instead of just expanding).
-        if deepest_found < len(path) - 1:
-            eval_browser(_SCROLL_TREE_TOP_JS)
-            time.sleep(0.3)
-            ancestor = path[deepest_found]
-            fallback_result = _nav_node(ancestor, as_leaf=True)
-            print(
-                "  [nav-fallback] deepest match '" + ancestor + "' selected as leaf "
-                + "(skipped: " + str(path[deepest_found + 1:]) + ")"
-            )
-            if "clicked:" not in fallback_result:
-                raise ValueError(
-                    "Could not select fallback ancestor '" + ancestor + "' as leaf."
-                )
+      return 'node_id:' + nodeId;
+    })()
+    """
+    res_retrieve = eval_browser(retrieve_js)
+    print("  [DEBUG] res_retrieve: " + str(res_retrieve))
 
-    # ─────────────────────────────────────────────────────────────────────────
+    if not res_retrieve.startswith("node_id:"):
+        raise ValueError("Could not resolve category node ID: " + str(res_retrieve))
 
-    output = eval_browser(
-        """
-        (() => {
-          const confirm = Array.from(document.querySelectorAll('button')).find(
-            x => x.innerText.includes('确认选择') && x.offsetParent !== null
-          );
-          if (!confirm) return 'confirm not found';
-          confirm.click();
-          return 'confirmed';
-        })()
-        """
-    )
-    if "confirmed" not in output:
-        raise ValueError(output)
-    time.sleep(2)
+    resolved_id = res_retrieve.split(":", 1)[1].strip()
+    print("  [nav-search] Successfully resolved '" + leaf_category + "' to node ID: " + resolved_id)
 
-    if only_leaf_rank:
-        eval_browser(
-            """
-            (() => {
-              const x = document.querySelector('input[value="只看该子类目排名"]');
-              if (x && !x.checked) x.click();
-              return x ? x.checked : false;
-            })()
-            """
-        )
+    return use_category_node(resolved_id, only_leaf_rank)
 
-    selected_depth = deepest_found if deepest_found >= 0 else 0
-    return "/".join(path[:selected_depth + 1])
+
+def build_search_url(node_id_path: str, filters: dict, only_leaf_rank: bool) -> str:
+    import urllib.parse
+
+    # Default query parameters matching SellerSprite's URL structure
+    query_params = {
+        "market": "US",
+        "page": "1",
+        "size": "60",
+        "symbolFlag": "false",
+        "monthName": "bsr_sales_nearly",
+        "selectType": "2",
+        "filterSub": "true" if only_leaf_rank else "false",
+        "weightUnit": "g",
+        "order[field]": "total_amount",
+        "order[desc]": "true",
+        "productTags": "[]",
+        "nodeIdPaths": json.dumps([node_id_path]),
+        "sellerTypes": "[]",
+        "eligibility": "[]",
+        "pkgDimensionTypeList": "[]",
+        "sellerNationList": "[]",
+        "lowPrice": "N",
+        "video": ""
+    }
+
+    # Map pipeline config filter keys to SellerSprite URL parameters
+    key_mapping = {
+        "min_monthly_sales": "minSales",
+        "max_monthly_sales": "maxSales",
+        "min_sales_growth": "minTotalUnitsGrowth",
+        "max_sales_growth": "maxTotalUnitsGrowth",
+        "max_leaf_bsr": "maxSubBsrRank",
+        "min_bsr_growth_count": "minRankingCv",
+        "max_bsr_growth_count": "maxRankingCv",
+        "min_bsr_growth_rate": "minRankingCr",
+        "max_bsr_growth_rate": "maxRankingCr",
+        "min_variants": "minVariations",
+        "max_variants": "maxVariations",
+        "min_price": "minPrice",
+        "max_price": "maxPrice",
+        "max_reviews": "maxReviews",
+        "min_monthly_new_reviews": "minReviewsGrouth",
+        "max_monthly_new_reviews": "maxReviewsGrouth",
+        "min_rating": "minReviewRating",
+        "max_rating": "maxReviewRating",
+        "min_profit_margin": "minProfit",
+        "max_fba_fee": "maxFba",
+        "max_package_weight_g": "maxWeights",
+        "min_sellers": "minSellers",
+        "max_sellers": "maxSellers",
+    }
+
+    for config_key, url_key in key_mapping.items():
+        val = filters.get(config_key)
+        if val is not None and val != "":
+            query_params[url_key] = str(val)
+
+    # Map fulfillment filter (FBA/FBM/AMZ)
+    fulfillment = filters.get("fulfillment")
+    if fulfillment == "FBA":
+        query_params["sellerTypes"] = json.dumps(["FBA"])
+    elif fulfillment == "FBM":
+        query_params["sellerTypes"] = json.dumps(["FBM"])
+    elif fulfillment == "AMZ":
+        query_params["sellerTypes"] = json.dumps(["AMZ"])
+
+    # Construct the query string and final URL
+    query_string = urllib.parse.urlencode(query_params)
+    return "https://www.sellersprite.com/v3/product-research?" + query_string
 
 
 def apply_filters(filters: dict[str, str]) -> None:
-    indexed = {
-        str(INPUT_INDEXES[key]): value
-        for key, value in filters.items()
-        if key in INPUT_INDEXES and value != ""
-    }
-    # Named inputs (e.g. includeKeywords) are filled by input[name=...] selector
-    named = {
-        key: value
-        for key, value in filters.items()
-        if key not in INPUT_INDEXES and key != "fulfillment" and value != ""
-    }
-    fba = filters.get("fulfillment") == "FBA"
-    output = eval_browser(
-        f"""
-        (() => {{
-          const indexed = {json.dumps(indexed)};
-          const named = {json.dumps(named)};
-          const inputs = Array.from(document.querySelectorAll('input'));
-          const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
-          for (const [index, value] of Object.entries(indexed)) {{
-            const input = inputs[Number(index)];
-            if (!input) return 'missing input index ' + index;
-            setter.call(input, String(value));
-            input.dispatchEvent(new Event('input', {{ bubbles: true }}));
-            input.dispatchEvent(new Event('change', {{ bubbles: true }}));
-          }}
-          for (const [name, value] of Object.entries(named)) {{
-            const input = document.querySelector('input[name="' + name + '"]');
-            if (input) {{
-              setter.call(input, String(value));
-              input.dispatchEvent(new Event('input', {{ bubbles: true }}));
-              input.dispatchEvent(new Event('change', {{ bubbles: true }}));
-            }}
-          }}
-          const fba = inputs.find(x => x.value === 'FBA');
-          if (fba && fba.checked !== {str(fba).lower()}) fba.click();
-          const submit = Array.from(document.querySelectorAll('button')).find(
-            x => x.innerText.includes('开始筛选')
-          );
-          if (!submit) return 'submit not found';
-          submit.click();
-          return 'submitted';
-        }})()
-        """
-    )
-    if "submitted" not in output:
-        raise ValueError(output)
+    """Constructs the search URL and navigates directly, bypassing manual input form-filling."""
+    global _CURRENT_NODE_ID_PATH, _ONLY_LEAF_RANK
+    if not _CURRENT_NODE_ID_PATH:
+        raise ValueError("No category has been resolved yet. Please run select_category first.")
+
+    target_url = build_search_url(_CURRENT_NODE_ID_PATH, filters, _ONLY_LEAF_RANK)
+    print("  [nav-search] Navigating directly to filtered URL: " + target_url[:120] + "...")
+
+    open_browser(target_url)
+    # Wait for the search results to populate
+    time.sleep(5)
 
 
 def hide_variants() -> None:

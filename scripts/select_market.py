@@ -81,13 +81,7 @@ def scrape_market(config_source, department_label=None):
     # Generate form fill JS
     fill_form_js = """
     (() => {
-      // 1. Expand advanced options
-      const toggle = document.querySelector('a[name=switchVisible]');
-      if (toggle && toggle.innerText.includes('展开')) {
-        toggle.click();
-      }
-      
-      // 2. Fill parameters
+      // 1. Fill named fields, including advanced fields that are currently hidden.
       const params = """ + json.dumps(params) + """
       Array.from(document.querySelectorAll('input[name]')).forEach(input => {
         if (params[input.name] !== undefined) {
@@ -97,13 +91,15 @@ def scrape_market(config_source, department_label=None):
         }
       });
       
-      // 3. Click submit
-      const btn = document.querySelector('button[type=submit]');
-      if (btn) {
-        btn.click();
-        return "submitted";
-      }
-      return "submit button not found";
+      // 2. Submit the POST form directly, avoiding button overlays/popups.
+      const form = Array.from(document.forms).find(
+        f => f.method.toLowerCase() === 'post'
+          && f.querySelector('input[name="departmentKeyword"]')
+          && f.querySelector('input[name="minAvgSales"]')
+      );
+      if (!form) return "market form not found";
+      form.requestSubmit();
+      return "submitted";
     })()
     """
     

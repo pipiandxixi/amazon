@@ -271,7 +271,7 @@
     "en_name": "Wrist & Forearm Strengtheners",
     "zh_name": "手腕和前臂加强器",
     "path": "Sports & Outdoors > Exercise & Fitness > Strength Training Equipment > Strength Training Devices > Wrist & Forearm Strengtheners",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 27.52,
     "reviews": 361,
     "weight_lbs": 2.2,
@@ -292,13 +292,16 @@
     "keywords": null,
     "last_updated": "2026-06-15T10:38:18",
     "last_scan_attempt": "2026-06-15T10:38:18",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Scoreboards & Timers": {
     "en_name": "Scoreboards & Timers",
     "zh_name": "记分牌和计时器",
     "path": "Sports & Outdoors > Sports & Outdoor Recreation Accessories > Coach & Referee Gear > Scoreboards & Timers",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 53.62,
     "reviews": 347,
     "weight_lbs": 1.61,
@@ -318,13 +321,16 @@
     "keywords": null,
     "last_updated": "2026-06-15T13:02:17",
     "last_scan_attempt": "2026-06-15T13:02:17",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Equestrian Sports": {
     "en_name": "Equestrian Sports",
     "zh_name": "马术运动",
     "path": "Sports & Outdoors > Sports > Other Sports > Equestrian Sports",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 50.71,
     "reviews": 176,
     "weight_lbs": 1.78,
@@ -344,13 +350,16 @@
     "keywords": null,
     "last_updated": "2026-06-15T13:02:31",
     "last_scan_attempt": "2026-06-15T13:02:31",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Flags": {
     "en_name": "Flags",
     "zh_name": "标志",
     "path": "Sports & Outdoors > Sports > Boating & Sailing > Boating > Boat Cabin Products > Flags",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 24.0,
     "reviews": 223,
     "weight_lbs": 0.57,
@@ -372,7 +381,10 @@
     "keywords": null,
     "last_updated": "2026-06-15T13:02:45",
     "last_scan_attempt": "2026-06-15T13:02:45",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Motor Flushers": {
     "en_name": "Motor Flushers",
@@ -406,7 +418,7 @@
     "en_name": "Trophy Mounts",
     "zh_name": "奖杯坐骑",
     "path": "Sports & Outdoors > Hunting & Fishing > Hunting > Game Handling > Trophy Mounts",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 25.65,
     "reviews": 344,
     "weight_lbs": 1.44,
@@ -427,13 +439,16 @@
     "keywords": null,
     "last_updated": "2026-06-15T14:37:00",
     "last_scan_attempt": "2026-06-15T14:37:00",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Optics Accessories": {
     "en_name": "Optics Accessories",
     "zh_name": "光学配件",
     "path": "Sports & Outdoors > Hunting & Fishing > Shooting > Optics > Optics Accessories",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 33.0,
     "reviews": 357,
     "weight_lbs": 0.2,
@@ -454,13 +469,16 @@
     "keywords": null,
     "last_updated": "2026-06-15T14:37:28",
     "last_scan_attempt": "2026-06-15T14:37:28",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Fly Tying Equipment": {
     "en_name": "Fly Tying Equipment",
     "zh_name": "绑蝇设备",
     "path": "Sports & Outdoors > Hunting & Fishing > Fishing > Fly Fishing > Accessories > Fly Tying Equipment",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 20.15,
     "reviews": 487,
     "weight_lbs": 0.27,
@@ -482,13 +500,16 @@
     "keywords": null,
     "last_updated": "2026-06-15T14:37:55",
     "last_scan_attempt": "2026-06-15T14:37:55",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Line Spooling Accessories": {
     "en_name": "Line Spooling Accessories",
     "zh_name": "线路绕线配件",
     "path": "Sports & Outdoors > Hunting & Fishing > Fishing > Accessories > Line Spooling Accessories",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 21.28,
     "reviews": 365,
     "weight_lbs": 2.0,
@@ -509,7 +530,10 @@
     "keywords": null,
     "last_updated": "2026-06-15T14:38:17",
     "last_scan_attempt": "2026-06-15T14:38:17",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Team Practice Vests": {
     "en_name": "Team Practice Vests",
@@ -541,7 +565,7 @@
     "en_name": "Reel Replacement Parts",
     "zh_name": "卷盘更换部件",
     "path": "Sports & Outdoors > Hunting & Fishing > Fishing > Reels & Accessories > Reel Replacement Parts",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 27.32,
     "reviews": 112,
     "weight_lbs": 1.38,
@@ -562,13 +586,16 @@
     "keywords": null,
     "last_updated": "2026-06-15T14:39:09",
     "last_scan_attempt": "2026-06-15T14:39:09",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Shafts": {
     "en_name": "Shafts",
     "zh_name": "杆身",
     "path": "Sports & Outdoors > Sports > Golf > Golf Club Parts > Shafts",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 27.08,
     "reviews": 95,
     "weight_lbs": 0.15,
@@ -589,13 +616,16 @@
     "keywords": null,
     "last_updated": "2026-06-15T14:39:37",
     "last_scan_attempt": "2026-06-15T14:39:37",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Training Putters": {
     "en_name": "Training Putters",
     "zh_name": "练习推杆",
     "path": "Sports & Outdoors > Sports > Golf > Training Equipment > Training Putters",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 30.63,
     "reviews": 171,
     "weight_lbs": 1.38,
@@ -616,7 +646,10 @@
     "keywords": null,
     "last_updated": "2026-06-15T14:40:04",
     "last_scan_attempt": "2026-06-15T14:40:04",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Cardboard Cutouts": {
     "en_name": "Cardboard Cutouts",
@@ -1073,7 +1106,7 @@
     "en_name": "Bar Tools & Drinkware",
     "zh_name": "酒吧工具",
     "path": "Home & Kitchen > Kitchen & Dining > Dining & Entertaining > Bar Tools & Drinkware",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 26.92,
     "reviews": 380,
     "weight_lbs": 1.52,
@@ -1094,7 +1127,10 @@
     "last_updated": "2026-06-15T15:14:02",
     "last_scan_attempt": "2026-06-15T15:14:02",
     "last_scan_status": "no_valid_products",
-    "product_node_id_path": "1055398:284507:13162311:289728"
+    "product_node_id_path": "1055398:284507:13162311:289728",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Steam Cleaner & Steam Mop Replacement Parts": {
     "en_name": "Steam Cleaner & Steam Mop Replacement Parts",
@@ -1278,7 +1314,7 @@
     "en_name": "Tortilla Servers",
     "zh_name": "玉米饼服务员",
     "path": "Home & Kitchen > Kitchen & Dining > Dining & Entertaining > Dinnerware & Serveware > Serveware > Tortilla Servers",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 21.8,
     "reviews": 442,
     "weight_lbs": 1.74,
@@ -1301,13 +1337,16 @@
     "last_updated": "2026-06-15T15:15:59",
     "last_scan_attempt": "2026-06-15T15:15:59",
     "last_scan_status": "no_valid_products",
-    "product_node_id_path": "1055398:284507:13162311:367165011:23593202011:18581173011"
+    "product_node_id_path": "1055398:284507:13162311:367165011:23593202011:18581173011",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Devotional Candles": {
     "en_name": "Devotional Candles",
     "zh_name": "祈祷蜡烛",
     "path": "Home & Kitchen > Home Décor Products > Candles & Holders > Candles > Specialty Candles > Devotional Candles",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 26.05,
     "reviews": 196,
     "weight_lbs": 1.77,
@@ -1330,13 +1369,16 @@
     "last_updated": "2026-06-15T15:16:41",
     "product_node_id_path": "1055398:1063278:1063282:3734391:3734531:3734561",
     "last_scan_attempt": "2026-06-15T15:16:41",
-    "last_scan_status": "no_valid_products"
+    "last_scan_status": "no_valid_products",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Serveware": {
     "en_name": "Serveware",
     "zh_name": "碗碟",
     "path": "Home & Kitchen > Kitchen & Dining > Dining & Entertaining > Novelty > Serveware",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 21.76,
     "reviews": 413,
     "weight_lbs": 1.48,
@@ -1355,15 +1397,19 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T15:22:46",
+    "last_scan_attempt": "2026-06-15T15:22:46",
+    "last_scan_status": "no_valid_products",
+    "product_node_id_path": "1055398:284507:13162311:367165011:23593202011",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Nozzles": {
     "en_name": "Nozzles",
     "zh_name": "喷嘴",
     "path": "Patio, Lawn & Garden > Outdoor Power Tools > Replacement Parts & Accessories > Pressure Washer Parts & Accessories > Nozzles",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 26.06,
     "reviews": 495,
     "weight_lbs": 0.41,
@@ -1382,15 +1428,19 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T15:23:29",
+    "last_scan_attempt": "2026-06-15T15:23:29",
+    "last_scan_status": "no_valid_products",
+    "product_node_id_path": "2972638011:3610851:553958:553972",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Wind Spinners": {
     "en_name": "Wind Spinners",
     "zh_name": "Wind Spinners",
     "path": "Patio, Lawn & Garden > Outdoor Décor > Garden Sculptures & Statues > Wind Sculptures & Spinners > Wind Spinners",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 31.4,
     "reviews": 468,
     "weight_lbs": 2.33,
@@ -1409,15 +1459,19 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T15:24:13",
+    "last_scan_attempt": "2026-06-15T15:24:13",
+    "last_scan_status": "no_valid_products",
+    "product_node_id_path": "2972638011:553788:553802:13881851:23608663011",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Attachments": {
     "en_name": "Attachments",
     "zh_name": "附件",
     "path": "Patio, Lawn & Garden > Outdoor Power Tools > Replacement Parts & Accessories > String Trimmer Parts & Accessories > Attachments",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 39.24,
     "reviews": 223,
     "weight_lbs": 2.2,
@@ -1436,15 +1490,19 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T15:24:58",
+    "last_scan_attempt": "2026-06-15T15:24:58",
+    "last_scan_status": "no_valid_products",
+    "product_node_id_path": "1055398:510106:510128:11333716011:3743741",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Hoes": {
     "en_name": "Hoes",
     "zh_name": "园艺锄",
     "path": "Patio, Lawn & Garden > Gardening & Lawn Care > Hand Tools > Hoes",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 27.88,
     "reviews": 319,
     "weight_lbs": 2.39,
@@ -1462,9 +1520,13 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T15:25:41",
+    "last_scan_attempt": "2026-06-15T15:25:41",
+    "last_scan_status": "no_valid_products",
+    "product_node_id_path": "2972638011:3610851:128061011:3753681",
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Pond Lights": {
     "en_name": "Pond Lights",
