@@ -534,6 +534,8 @@ def generate_report(
             red_reasons.append(f"重量超标 (>{red_rules['max_weight_lbs']} lbs)")
         if reviews_val > red_rules['max_reviews']:
             red_reasons.append(f"Review护城河太深 (>{red_rules['max_reviews']})")
+        if en_name in red_rules.get('excluded_categories', []):
+            red_reasons.append("精确类目名称过滤")
         if any(x in en_name for x in red_rules['excluded_keywords']):
             red_reasons.append("排除类关键字过滤")
         allowed_path_kw = red_rules.get('allowed_path_keywords', [])

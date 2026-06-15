@@ -164,6 +164,25 @@
           "value": 700,
           "label": "平均评分数上限（filter 800 的兜底，超出此值直接排除）"
         },
+        "excluded_categories": {
+          "value": [
+            "Headlights",
+            "Lighting Products",
+            "Sensors",
+            "Interior Lights",
+            "Grinding Discs",
+            "Angle Grinder Wheels",
+            "Diamond Blades",
+            "Gazing Balls",
+            "Cups",
+            "Unmanned Aerial Vehicles)",
+            "Tools",
+            "Rods",
+            "Angle",
+            "Accessories"
+          ],
+          "label": "精确排除的高风险或过宽泛类目名称"
+        },
         "excluded_keywords": {
           "value": [
             "Insects",

@@ -45,6 +45,7 @@
       "max_return_rate": {"value": 10.0, "label": "平均退货率上限（百分比）"},
       "max_weight_lbs": {"value": 2.5, "label": "平均重量上限（lbs）"},
       "max_reviews": {"value": 550, "label": "平均评分数上限（filter 500 的兜底上限，防止 SellerSprite 分页边界漏出）"},
+      "excluded_categories": {"value": ["Headlights", "Lighting Products", "Sensors", "Interior Lights", "Grinding Discs", "Angle Grinder Wheels", "Diamond Blades", "Gazing Balls", "Cups", "Unmanned Aerial Vehicles)", "Tools", "Rods", "Angle", "Accessories"], "label": "精确排除的高风险或过宽泛类目名称"},
       "excluded_keywords": {"value": ["Insects", "Livestock", "Wormers", "Supplement", "Softgel", "Capsule", "Vitamin", "Probiotic", "Inhaler", "Injector", "Catheter", "Syringe"], "label": "排除的类目名称关键词"},
       "excluded_paths": {"value": ["Clothing", "Shoes", "Hoodies", "Vitamins, Minerals & Supplements", "Diabetes Care", "Incontinence & Ostomy", "Medical Supplies & Equipment", "Tattoo", "Grocery & Gourmet Food", "Alternative Medicine"], "label": "排除的市场路径关键词"}
     },
