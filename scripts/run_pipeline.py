@@ -45,6 +45,31 @@ def save_db(root: Path, db: dict) -> None:
     p.write_text(json.dumps(db, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def persist_empty_scan_attempt(root: Path, db: dict, name: str, reason: str) -> bool:
+    """Record an empty/failed scan without replacing an existing valid result.
+
+    Returns True when existing products were preserved.
+    """
+    now = datetime.datetime.now().isoformat(timespec="seconds")
+    entry = db[name]
+    entry["last_scan_attempt"] = now
+    entry["last_scan_status"] = reason
+
+    if entry.get("products"):
+        print(
+            f"  [PRESERVE] scan returned no valid products ({reason}); "
+            f"keeping {len(entry['products'])} existing products and prior keywords"
+        )
+        save_db(root, db)
+        return True
+
+    entry["products"] = []
+    entry["keywords"] = None
+    entry["last_updated"] = now
+    save_db(root, db)
+    return False
+
+
 def merge_market_into_db(root: Path, candidates: list[dict]) -> dict:
     """Upsert Stage 1 candidates into categories.json, preserving existing products/keywords."""
     db = load_db(root)
@@ -56,6 +81,8 @@ def merge_market_into_db(root: Path, candidates: list[dict]) -> dict:
             "products": existing.get("products"),
             "keywords": existing.get("keywords"),
             "last_updated": existing.get("last_updated"),
+            "last_scan_attempt": existing.get("last_scan_attempt"),
+            "last_scan_status": existing.get("last_scan_status"),
         }
     save_db(root, db)
     print(f"[DB] {len(candidates)} candidates merged → {len(db)} total in {CATEGORIES_DB}")
@@ -131,13 +158,13 @@ def process_categories_loop(
 ) -> None:
     """Process categories one at a time (products → keywords), saving DB + HTML after each.
 
-    Categories are ordered by staleness: never-scanned first, then oldest last_updated.
+    Categories are ordered by staleness: never-attempted first, then oldest scan attempt.
     """
     import generate_html_report as _html_gen
 
     def sort_key(cat: dict) -> str:
-        lu = cat.get("last_updated")
-        return lu if lu else ""
+        attempted = cat.get("last_scan_attempt") or cat.get("last_updated")
+        return attempted if attempted else ""
 
     to_process = sorted(db.values(), key=sort_key)
     if max_categories:
@@ -178,21 +205,16 @@ def process_categories_loop(
                     f"  [SKIP] nav-fallback reached '{actual_node}' instead of "
                     f"target leaf '{expected_node}' — marking as attempted"
                 )
-                db[name]["products"] = []
-                db[name]["keywords"] = None
-                db[name]["last_updated"] = datetime.datetime.now().isoformat(timespec="seconds")
-                save_db(root, db)
+                persist_empty_scan_attempt(root, db, name, "nav_fallback")
+                _html_gen.generate_from_db(root, db, date_str)
                 open_browser("https://www.sellersprite.com/v3/product-research")
                 time.sleep(prod_page_wait)
                 processed += 1
                 continue
             if actual_node in seen_nodes:
                 print(f"  [SKIP] nav-fallback collision: '{actual_node}' — marking as attempted")
-                # Still timestamp so this category isn't repeatedly re-selected as stale
-                db[name]["products"] = []
-                db[name]["keywords"] = None
-                db[name]["last_updated"] = datetime.datetime.now().isoformat(timespec="seconds")
-                save_db(root, db)
+                persist_empty_scan_attempt(root, db, name, "nav_collision")
+                _html_gen.generate_from_db(root, db, date_str)
                 open_browser("https://www.sellersprite.com/v3/product-research")
                 time.sleep(prod_page_wait)
                 processed += 1
@@ -206,6 +228,14 @@ def process_categories_loop(
             products = product_scan.scrape_products(int(prod_policy.get("max_products", 50)))
         except ValueError as exc:
             print(f"  [PRODUCT ERROR] {exc}")
+
+        if not products:
+            persist_empty_scan_attempt(root, db, name, "no_valid_products")
+            _html_gen.generate_from_db(root, db, date_str)
+            processed += 1
+            open_browser("https://www.sellersprite.com/v3/product-research")
+            time.sleep(prod_page_wait)
+            continue
 
         # ── Keywords ──────────────────────────────────────────────────────────
         keywords: dict | None = None
@@ -237,9 +267,12 @@ def process_categories_loop(
                 print(f"  {len(items)} keywords collected")
 
         # ── Persist ───────────────────────────────────────────────────────────
+        now = datetime.datetime.now().isoformat(timespec="seconds")
         db[name]["products"] = products
         db[name]["keywords"] = keywords
-        db[name]["last_updated"] = datetime.datetime.now().isoformat(timespec="seconds")
+        db[name]["last_updated"] = now
+        db[name]["last_scan_attempt"] = now
+        db[name]["last_scan_status"] = "success"
         save_db(root, db)
 
         # ── Update HTML ───────────────────────────────────────────────────────
