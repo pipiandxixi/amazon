@@ -41,6 +41,29 @@ python3 scripts/run_pipeline.py --start-from 3          # skip Stages 1&2, re-ru
 python3 scripts/find_asin_keywords.py B0FS72284D B0EXAMPLE2 --category "Trophies"
 ```
 
+## Required Product And Keyword Scan Batch Workflow
+
+When resuming product scans and keyword selection from the existing persistent
+category database, run at most five categories per batch:
+
+```bash
+python3 scripts/run_pipeline.py --start-from 2 --max-categories 5
+```
+
+After every batch:
+
+1. Read `results/json/categories.json` and identify the five categories updated
+   in the batch from their `last_updated` values.
+2. Verify `results/json/categories.json` and `results/html/report.html`.
+3. Commit the batch outputs and push `main` so the public report is updated.
+4. Commit only files related to the current batch. Do not include unrelated or
+   legacy result changes.
+5. In the final response, list every updated category with its product count
+   and keyword count, plus the commit hash and push result.
+
+Do not start the next batch until the current five-category batch has been
+committed, pushed, and reported.
+
 Output lands in `results/YYYY_MM_DD/pipeline_report_YYYY_MM_DD.md`.
 
 Each full run also writes two handoff files in the same directory:
