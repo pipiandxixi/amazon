@@ -2274,9 +2274,14 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T15:46:51",
+    "last_scan_attempt": "2026-06-15T15:46:51",
+    "last_scan_status": "scan_error",
+    "product_node_id_path": "16310091:256409011:4989315011:4989317011",
+    "last_scan_evidence": "unconfirmed_page_state",
+    "last_scan_visible_products": 0,
+    "last_scan_target_products": 0,
+    "last_scan_error": "product result state not confirmed: {'visible_items': 0, 'reported_total': None, 'next_available': False, 'empty_message': False, 'access_error': False, 'result_surface': True, 'free_limit_message': False}"
   },
   "Machine Tool Inspection Mirrors": {
     "en_name": "Machine Tool Inspection Mirrors",
@@ -2299,17 +2304,70 @@
     "departments": [
       13
     ],
-    "products": [],
-    "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "products": [
+      {
+        "asin": "B0DGG73L94",
+        "parent_asin": "B0FVWK9LDF",
+        "title": "Under Vehicle Inspection Security Mirror – Large Under Car Search Mirror Couple to 3/4-in Extendable Threaded Poles for Check on Checkpoints, Airports, Hotels, Clubs, Police Sheriff and Milita Base",
+        "brand": "Global Care Market",
+        "monthly_sales": "138",
+        "sales_growth": "79.37%",
+        "monthly_revenue": "$6,899",
+        "variants": "2",
+        "price": "$49.99",
+        "reviews": "26",
+        "monthly_new_reviews": "2",
+        "rating": "4.9",
+        "review_rate": "1.45%",
+        "fba_fee": "$7.46",
+        "profit_margin": "73%",
+        "listing_date": "2024-10-15",
+        "listing_age": "1年 8个月",
+        "leaf_rank": "26",
+        "leaf_category": "Machine Tool Inspection Mirrors",
+        "sellers": "2",
+        "package_weight": "2.12 pounds",
+        "raw_metrics": "36,341 | 2,489 | 6% | 138 | 79.37% | $6,899 | 100+ | $5K+ | 2 | $49.99 | - | 26 | 2 | 4.9 | 1.45% | $7.46 | 73% | 2024-10-15 | 1年 8个月 | FBA | -",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/714HV4atmGL._AC_US600_.jpg"
+      }
+    ],
+    "keywords": {
+      "asins": [
+        "B0DGG73L94"
+      ],
+      "keywords": [
+        {
+          "keyword": "telescoping inspection mirror AC",
+          "translation": "伸缩检查镜",
+          "traffic_share": "-",
+          "aba_rank": "1,241,262",
+          "searches": "1,208",
+          "purchases": "88",
+          "purchase_rate": "7.32%",
+          "spr": "2",
+          "title_density": "11",
+          "supply_products": "2,174",
+          "ad_competitors": "31",
+          "ppc_bid": "$0.50",
+          "organic_rank": "",
+          "traffic_type": "",
+          "ad_score": 6.82
+        }
+      ]
+    },
+    "last_updated": "2026-06-15T15:48:10",
+    "last_scan_attempt": "2026-06-15T15:48:10",
+    "last_scan_status": "success",
+    "product_node_id_path": "16310091:256409011:4989315011:401591011:1265137011",
+    "last_scan_evidence": "confirmed_product_results",
+    "last_scan_visible_products": 1,
+    "last_scan_target_products": 1
   },
   "Lab Supply Dispensers": {
     "en_name": "Lab Supply Dispensers",
     "zh_name": "实验室用品分配器",
     "path": "Industrial & Scientific > Lab & Scientific Products > Lab Furniture > Lab Supply Dispensers",
-    "level": "🟢 Green (Recommended)",
+    "level": "🟡 Yellow (Cautious)",
     "price": 29.81,
     "reviews": 172,
     "weight_lbs": 2.19,
@@ -2327,9 +2385,16 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T15:48:53",
+    "last_scan_attempt": "2026-06-15T15:48:53",
+    "last_scan_status": "no_valid_products",
+    "product_node_id_path": "16310091:317970011:318031011:318078011",
+    "last_scan_evidence": "confirmed_product_results",
+    "last_scan_visible_products": 2,
+    "last_scan_target_products": 0,
+    "market_level": "🟢 Green (Recommended)",
+    "attention_priority": "low",
+    "attention_reason": "已扫描但没有足够目标产品满足当前筛选条件"
   },
   "Hose Clamping Tools": {
     "en_name": "Hose Clamping Tools",
@@ -2353,9 +2418,166 @@
     "departments": [
       13
     ],
-    "products": [],
-    "keywords": null,
-    "last_updated": null
+    "products": [
+      {
+        "asin": "B0FMRPJ5BR",
+        "parent_asin": "B0FMRPJ5BR",
+        "title": "WISEUP 3PCS Hose Pinch Off Pliers- 8in, 10in, 12in Ratchet Hose Pliers for Automotive Radiator, Radiator, Fuel & Coolant Lines with Storage Bag",
+        "brand": "WISEUP",
+        "monthly_sales": "191",
+        "sales_growth": "13.22%",
+        "monthly_revenue": "$4,964",
+        "variants": "1",
+        "price": "$25.99",
+        "reviews": "70",
+        "monthly_new_reviews": "-",
+        "rating": "4.8",
+        "review_rate": "-",
+        "fba_fee": "$6.76",
+        "profit_margin": "62%",
+        "listing_date": "2025-09-24",
+        "listing_age": "8个月",
+        "leaf_rank": "22",
+        "leaf_category": "Hose Clamping Tools",
+        "sellers": "1",
+        "package_weight": "2.93 pounds",
+        "raw_metrics": "28,922 | 0 | 0% | 191 | 13.22% | $4,964 | 100+ | $2K+ | 1 | $25.99 | - | 70 | - | 4.8 | - | $6.76 | 62% | 2025-09-24 | 8个月 | FBA | -",
+        "image_url": "https://m.media-amazon.com/images/I/41x5K95IbFL._AC_US600_.jpg"
+      }
+    ],
+    "keywords": {
+      "asins": [
+        "B0FMRPJ5BR"
+      ],
+      "keywords": [
+        {
+          "keyword": "hose pliers ",
+          "translation": "软管钳",
+          "traffic_share": "9.86%",
+          "aba_rank": "177,491",
+          "searches": "7,408",
+          "purchases": "279",
+          "purchase_rate": "3.77%",
+          "spr": "7",
+          "title_density": "4",
+          "supply_products": "4,805",
+          "ad_competitors": "58",
+          "ppc_bid": "$0.83",
+          "organic_rank": "",
+          "traffic_type": "",
+          "ad_score": 34.68
+        },
+        {
+          "keyword": "hose pinch pliers ",
+          "translation": "软管夹钳",
+          "traffic_share": "8.78%",
+          "aba_rank": "584,812",
+          "searches": "2,717",
+          "purchases": "140",
+          "purchase_rate": "5.16%",
+          "spr": "4",
+          "title_density": "13",
+          "supply_products": "1,306",
+          "ad_competitors": "14",
+          "ppc_bid": "$0.96",
+          "organic_rank": "",
+          "traffic_type": "",
+          "ad_score": 21.21
+        },
+        {
+          "keyword": "fuel line pliers ",
+          "translation": "燃油管钳",
+          "traffic_share": "9.13%",
+          "aba_rank": "515,517",
+          "searches": "2,379",
+          "purchases": "146",
+          "purchase_rate": "6.17%",
+          "spr": "4",
+          "title_density": "12",
+          "supply_products": "1,764",
+          "ad_competitors": "40",
+          "ppc_bid": "$0.33",
+          "organic_rank": "",
+          "traffic_type": "",
+          "ad_score": 21.19
+        },
+        {
+          "keyword": "spark plug pliers ",
+          "translation": "火花塞钳",
+          "traffic_share": "6.14%",
+          "aba_rank": "811,128",
+          "searches": "1,867",
+          "purchases": "111",
+          "purchase_rate": "5.97%",
+          "spr": "3",
+          "title_density": "4",
+          "supply_products": "161",
+          "ad_competitors": "21",
+          "ppc_bid": "$0.71",
+          "organic_rank": "",
+          "traffic_type": "",
+          "ad_score": 15.42
+        },
+        {
+          "keyword": "hose pliers automotive ",
+          "translation": "汽车软管钳",
+          "traffic_share": "6.67%",
+          "aba_rank": "755,498",
+          "searches": "1,765",
+          "purchases": "79",
+          "purchase_rate": "4.52%",
+          "spr": "2",
+          "title_density": "0",
+          "supply_products": "3,346",
+          "ad_competitors": "35",
+          "ppc_bid": "$0.73",
+          "organic_rank": "",
+          "traffic_type": "",
+          "ad_score": 14.15
+        },
+        {
+          "keyword": "radiator hose clamp pliers ",
+          "translation": "散热器软管夹钳",
+          "traffic_share": "0.84%",
+          "aba_rank": "612,018",
+          "searches": "2,609",
+          "purchases": "151",
+          "purchase_rate": "5.79%",
+          "spr": "4",
+          "title_density": "2",
+          "supply_products": "1,074",
+          "ad_competitors": "40",
+          "ppc_bid": "$0.78",
+          "organic_rank": "",
+          "traffic_type": "",
+          "ad_score": 13.61
+        },
+        {
+          "keyword": "hose clamp removal tool ",
+          "translation": "软管夹拆卸工具",
+          "traffic_share": "-",
+          "aba_rank": "807,616",
+          "searches": "1,347",
+          "purchases": "69",
+          "purchase_rate": "5.16%",
+          "spr": "2",
+          "title_density": "9",
+          "supply_products": "4,779",
+          "ad_competitors": "111",
+          "ppc_bid": "$0.38",
+          "organic_rank": "",
+          "traffic_type": "",
+          "ad_score": 6.14
+        }
+      ]
+    },
+    "last_updated": "2026-06-15T15:50:08",
+    "product_node_id_path": "16310091:3021479011:3021480011:34616357011:256338011:6001526011",
+    "last_scan_attempt": "2026-06-15T15:50:08",
+    "last_scan_status": "success",
+    "last_scan_evidence": "confirmed_product_results",
+    "last_scan_visible_products": 1,
+    "last_scan_target_products": 1
   },
   "Tactile Switches": {
     "en_name": "Tactile Switches",
@@ -2380,9 +2602,14 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T15:50:49",
+    "last_scan_attempt": "2026-06-15T15:50:49",
+    "last_scan_status": "scan_error",
+    "product_node_id_path": "16310091:306506011:306528011:306588011:6355947011",
+    "last_scan_evidence": "unconfirmed_page_state",
+    "last_scan_visible_products": 0,
+    "last_scan_target_products": 0,
+    "last_scan_error": "product result state not confirmed: {'visible_items': 0, 'reported_total': None, 'next_available': False, 'empty_message': False, 'access_error': False, 'result_surface': True, 'free_limit_message': False}"
   },
   "Electrically Conductive Adhesives": {
     "en_name": "Electrically Conductive Adhesives",
