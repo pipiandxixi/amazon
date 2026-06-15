@@ -23,8 +23,8 @@
     "products": [],
     "keywords": null,
     "last_updated": "2026-06-15T10:24:57",
-    "last_scan_attempt": "2026-06-15T10:24:57",
-    "last_scan_status": "nav_fallback"
+    "last_scan_attempt": null,
+    "last_scan_status": null
   },
   "Paddleboard Accessories": {
     "en_name": "Paddleboard Accessories",
@@ -50,8 +50,8 @@
     "products": [],
     "keywords": null,
     "last_updated": "2026-06-15T10:25:16",
-    "last_scan_attempt": "2026-06-15T10:25:16",
-    "last_scan_status": "nav_fallback"
+    "last_scan_attempt": null,
+    "last_scan_status": null
   },
   "Camping Fans": {
     "en_name": "Camping Fans",
@@ -236,8 +236,8 @@
     "products": [],
     "keywords": null,
     "last_updated": "2026-06-15T10:26:40",
-    "last_scan_attempt": "2026-06-15T10:26:40",
-    "last_scan_status": "nav_fallback"
+    "last_scan_attempt": null,
+    "last_scan_status": null
   },
   "Tie-Downs": {
     "en_name": "Tie-Downs",
@@ -264,8 +264,8 @@
     "products": [],
     "keywords": null,
     "last_updated": "2026-06-15T10:27:01",
-    "last_scan_attempt": "2026-06-15T10:27:01",
-    "last_scan_status": "nav_fallback"
+    "last_scan_attempt": null,
+    "last_scan_status": null
   },
   "Wrist & Forearm Strengtheners": {
     "en_name": "Wrist & Forearm Strengtheners",
@@ -316,9 +316,9 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": "2026-06-15T10:38:40",
-    "last_scan_attempt": "2026-06-15T10:38:40",
-    "last_scan_status": "nav_fallback"
+    "last_updated": "2026-06-15T13:02:17",
+    "last_scan_attempt": "2026-06-15T13:02:17",
+    "last_scan_status": "no_valid_products"
   },
   "Equestrian Sports": {
     "en_name": "Equestrian Sports",
@@ -342,9 +342,9 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": "2026-06-15T10:39:00",
-    "last_scan_attempt": "2026-06-15T10:39:00",
-    "last_scan_status": "nav_fallback"
+    "last_updated": "2026-06-15T13:02:31",
+    "last_scan_attempt": "2026-06-15T13:02:31",
+    "last_scan_status": "no_valid_products"
   },
   "Flags": {
     "en_name": "Flags",
@@ -370,9 +370,9 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": "2026-06-15T10:39:24",
-    "last_scan_attempt": "2026-06-15T10:39:24",
-    "last_scan_status": "nav_fallback"
+    "last_updated": "2026-06-15T13:02:45",
+    "last_scan_attempt": "2026-06-15T13:02:45",
+    "last_scan_status": "no_valid_products"
   },
   "Motor Flushers": {
     "en_name": "Motor Flushers",
@@ -398,9 +398,9 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": "2026-06-15T10:39:48",
-    "last_scan_attempt": "2026-06-15T10:39:48",
-    "last_scan_status": "nav_fallback"
+    "last_updated": "2026-06-15T13:02:59",
+    "last_scan_attempt": "2026-06-15T13:02:59",
+    "last_scan_status": "no_valid_products"
   },
   "Trophy Mounts": {
     "en_name": "Trophy Mounts",
@@ -425,9 +425,9 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T14:37:00",
+    "last_scan_attempt": "2026-06-15T14:37:00",
+    "last_scan_status": "no_valid_products"
   },
   "Optics Accessories": {
     "en_name": "Optics Accessories",
@@ -452,9 +452,9 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T14:37:28",
+    "last_scan_attempt": "2026-06-15T14:37:28",
+    "last_scan_status": "no_valid_products"
   },
   "Fly Tying Equipment": {
     "en_name": "Fly Tying Equipment",
@@ -480,9 +480,9 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T14:37:55",
+    "last_scan_attempt": "2026-06-15T14:37:55",
+    "last_scan_status": "no_valid_products"
   },
   "Line Spooling Accessories": {
     "en_name": "Line Spooling Accessories",
@@ -507,9 +507,9 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T14:38:17",
+    "last_scan_attempt": "2026-06-15T14:38:17",
+    "last_scan_status": "no_valid_products"
   },
   "Team Practice Vests": {
     "en_name": "Team Practice Vests",
@@ -533,7 +533,7 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
+    "last_updated": "2026-06-15T14:38:44",
     "last_scan_attempt": null,
     "last_scan_status": null
   },
@@ -560,9 +560,9 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T14:39:09",
+    "last_scan_attempt": "2026-06-15T14:39:09",
+    "last_scan_status": "no_valid_products"
   },
   "Shafts": {
     "en_name": "Shafts",
@@ -587,7 +587,9 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null
+    "last_updated": "2026-06-15T14:39:37",
+    "last_scan_attempt": "2026-06-15T14:39:37",
+    "last_scan_status": "no_valid_products"
   },
   "Training Putters": {
     "en_name": "Training Putters",
@@ -612,9 +614,9 @@
     ],
     "products": [],
     "keywords": null,
-    "last_updated": null,
-    "last_scan_attempt": null,
-    "last_scan_status": null
+    "last_updated": "2026-06-15T14:40:04",
+    "last_scan_attempt": "2026-06-15T14:40:04",
+    "last_scan_status": "no_valid_products"
   },
   "Cardboard Cutouts": {
     "en_name": "Cardboard Cutouts",

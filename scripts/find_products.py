@@ -105,9 +105,19 @@ def _nav_node(category: str, as_leaf: bool) -> str:
 
 
 def select_category(path: list[str], only_leaf_rank: bool) -> str:
+    deepest_found: int = -1
+    time.sleep(1.0)  # Settle delay to let any previous dialog close transition finish
+
+    # ── Trigger Dialog Open ──────────────────────────────────────────────────
     output = eval_browser(
         """
         (() => {
+          const dialog = document.querySelector('.el-dialog__wrapper') || document.querySelector('.el-dialog');
+          const isVisible = dialog && dialog.offsetParent !== null && dialog.offsetWidth > 0;
+          if (isVisible) {
+            return 'already_opened';
+          }
+          
           const trigger = Array.from(document.querySelectorAll('*')).find(
             x => x.children.length === 0 && x.textContent.trim() === '选择一个或多个类目和子类目'
           );
@@ -117,70 +127,185 @@ def select_category(path: list[str], only_leaf_rank: bool) -> str:
         })()
         """
     )
-    if "opened" not in output:
+    if "opened" not in output and "already_opened" not in output:
         raise ValueError(output)
 
-    # ── Path navigation with two-stage fallback ──────────────────────────────
-    #
-    # SellerSprite has two separate category trees:
-    #   • Market Research (/v2): Amazon's browse-node hierarchy
-    #   • Product Research (/v3): SellerSprite's own flattened tree
-    # Paths saved from market scan use Amazon taxonomy, which diverges from the
-    # product-research tree in two ways:
-    #   A) A node exists but at the wrong depth (e.g. "Power & Hand Tools" is a
-    #      root node in /v3, not a child of "Tools & Home Improvement").
-    #      Fix: scroll tree to top so off-screen root nodes become visible, retry.
-    #   B) A node simply doesn't exist in the /v3 tree (e.g. "Fishing").
-    #      Fix: select the deepest ancestor that was found as the leaf instead.
-    #
-    # All fallback logic lives here so it can be maintained in one place.
-    # ─────────────────────────────────────────────────────────────────────────
+    print("  [DEBUG] select_category trigger click output: " + str(output))
 
-    deepest_found: int = -1  # index of the last successfully navigated segment
+    time.sleep(1.5)  # Wait for category modal dialog DOM to render
 
-    for index, category in enumerate(path):
-        time.sleep(1)
-        is_leaf = (index == len(path) - 1)
+    # ── Clear pre-selected category tags inside the dialog ──────────────────
+    clear_status = eval_browser(
+        """
+        (() => {
+          const buttons = Array.from(document.querySelectorAll('.el-dialog__wrapper button, .el-dialog button'));
+          const clearBtn = buttons.find(b => b.textContent.includes('清空') && b.offsetParent !== null);
+          if (clearBtn) {
+            clearBtn.click();
+            return 'cleared_via_button';
+          }
+          const closeBtns = Array.from(document.querySelectorAll('.choose-node-list .el-icon-error, .choose-node-list [class*="error"]')).filter(x => x.offsetParent !== null);
+          if (closeBtns.length > 0) {
+            closeBtns.forEach(btn => btn.click());
+            return 'cleared_via_close_buttons';
+          }
+          return 'none';
+        })()
+        """
+    )
+    print("  [nav-clear] Category clear status inside dialog: " + str(clear_status))
+    time.sleep(1.0)
 
-        result = _nav_node(category, is_leaf)
-        if "clicked:" in result:
-            deepest_found = index
-            continue
-
-        # Stage 1 — scroll to top and retry (fixes off-screen root-level nodes)
-        eval_browser(_SCROLL_TREE_TOP_JS)
-        time.sleep(0.3)
-        result = _nav_node(category, is_leaf)
-        if "clicked:" in result:
-            deepest_found = index
-            continue
-
-        # Node not found at this level — skip and try the next segment.
-        # SellerSprite's product tree collapses levels vs Amazon taxonomy
-        # (e.g. "Golf" is a direct child of "Sports & Outdoors", not of "Sports").
-        # Skipping missing intermediate nodes lets us reach the deepest match.
-        if deepest_found < 0:
-            raise ValueError(
-                f"Could not find root category '{path[0]}' in SellerSprite product tree."
-            )
-        print(f"  [nav-skip] '{category}' not in tree, trying next level...")
-        continue
-
-    # After the loop: if we never reached the leaf, re-select the deepest found
-    # node as a leaf (checking the checkbox instead of just expanding).
-    if deepest_found < len(path) - 1:
-        eval_browser(_SCROLL_TREE_TOP_JS)
-        time.sleep(0.3)
-        ancestor = path[deepest_found]
-        fallback_result = _nav_node(ancestor, as_leaf=True)
-        print(
-            f"  [nav-fallback] deepest match '{ancestor}' selected as leaf "
-            f"(skipped: {path[deepest_found + 1:]})"
+    # ── DOM Debug Dumper ──────────────────────────────────────────────────────
+    try:
+        debug_js = (
+            "(() => {\n"
+            "  const wrapper = document.querySelector('.el-dialog__wrapper') || document.querySelector('.el-dialog') || document.body;\n"
+            "  const visibleWrapper = Array.from(document.querySelectorAll('.el-dialog__wrapper, .el-dialog, [class*=\"dialog\"]')).filter(x => x.offsetParent !== null);\n"
+            "  const inputs = Array.from(document.querySelectorAll('input')).map(x => ({\n"
+            "    placeholder: x.placeholder,\n"
+            "    visible: x.offsetParent !== null,\n"
+            "    value: x.value\n"
+            "  }));\n"
+            "  return JSON.stringify({\n"
+            "    wrapperExists: !!wrapper,\n"
+            "    wrapperText: wrapper ? wrapper.innerText.substring(0, 300) : 'none',\n"
+            "    visibleWrappersCount: visibleWrapper.length,\n"
+            "    visibleWrapperText: visibleWrapper.length > 0 ? visibleWrapper[0].innerText.substring(0, 300) : 'none',\n"
+            "    inputs: inputs,\n"
+            "    categoryTreeExists: !!document.querySelector('.category-tree'),\n"
+            "    treeLabels: Array.from(document.querySelectorAll('.category-tree .label, .custom-tree-node')).map(x => x.textContent.trim()).slice(0, 10)\n"
+            "  });\n"
+            "})()"
         )
-        if "clicked:" not in fallback_result:
-            raise ValueError(
-                f"Could not select fallback ancestor '{ancestor}' as leaf."
+        print("  [DEBUG DOM STATE]: " + str(eval_browser(debug_js)))
+    except Exception as e:
+        print("  [DEBUG DOM STATE ERROR]: " + str(e))
+
+    # ── Try Direct Search First (New Robust Strategy) ─────────────────────────
+    leaf_category = path[-1]
+    search_success = False
+    try:
+        # 1. Fill search input
+        fill_search_js = (
+            "(() => {\n"
+            "  const input = document.querySelector('input[placeholder*=\"Node ID\"]') || \n"
+            "                document.querySelector('.el-dialog input[placeholder*=\"类目\"]') || \n"
+            "                document.querySelector('.el-dialog__wrapper input[placeholder*=\"类目\"]');\n"
+            "  if (!input) return 'search input not found';\n"
+            "  const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;\n"
+            "  setter.call(input, '');\n"
+            "  input.dispatchEvent(new Event('input', { bubbles: true }));\n"
+            "  setter.call(input, " + json.dumps(leaf_category) + ");\n"
+            "  input.dispatchEvent(new Event('input', { bubbles: true }));\n"
+            "  input.dispatchEvent(new Event('change', { bubbles: true }));\n"
+            "  input.dispatchEvent(new KeyboardEvent('keydown', { bubbles: true, cancelable: true, key: 'Enter', code: 'Enter', keyCode: 13, which: 13 }));\n"
+            "  input.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true, cancelable: true, key: 'Enter', code: 'Enter', keyCode: 13, which: 13 }));\n"
+            "  const searchIcon = input.parentElement.querySelector('.el-icon-search');\n"
+            "  if (searchIcon) {\n"
+            "    searchIcon.click();\n"
+            "  }\n"
+            "  return 'input_done';\n"
+            "})()"
+        )
+        res_input = eval_browser(fill_search_js)
+        if res_input == "input_done":
+            time.sleep(1.5)  # Wait for filtering results to populate
+            
+            # 2. Match and check the leaf category
+            check_leaf_js = (
+                "(() => {\n"
+                "  const targetLeaf = " + json.dumps(leaf_category) + ";\n"
+                "  const treeNodes = Array.from(document.querySelectorAll('.el-tree-node'));\n"
+                "  \n"
+                "  const matchedNodes = treeNodes.filter(node => {\n"
+                "    if (node.offsetParent === null) return false;\n"
+                "    const textNode = node.querySelector('.label') || node.querySelector('.el-tree-node__label') || node;\n"
+                "    const text = textNode.textContent.trim();\n"
+                "    const cleanText = text.split(' (')[0];\n"
+                "    const leafName = cleanText.split('>').at(-1).trim().split(':').at(-1).trim();\n"
+                "    return leafName.toLowerCase() === targetLeaf.toLowerCase();\n"
+                "  });\n"
+                "  \n"
+                "  if (!matchedNodes.length) {\n"
+                "    const allLabels = Array.from(document.querySelectorAll('.el-checkbox, label, span')).filter(el => {\n"
+                "      if (el.offsetParent === null) return false;\n"
+                "      const cleanText = el.textContent.split(' (')[0];\n"
+                "      return cleanText.toLowerCase().includes(targetLeaf.toLowerCase());\n"
+                "    });\n"
+                "    if (!allLabels.length) return 'not found after search: ' + targetLeaf;\n"
+                "    const cb = allLabels[0].querySelector('.el-checkbox__inner') || allLabels[0].querySelector('.el-checkbox__input') || allLabels[0].querySelector('input[type=checkbox]') || allLabels[0];\n"
+                "    cb.click();\n"
+                "    return 'clicked fallback label: ' + allLabels[0].textContent.trim();\n"
+                "  }\n"
+                "  \n"
+                "  const contentNode = matchedNodes[0].querySelector('.el-tree-node__content') || matchedNodes[0];\n"
+                "  const checkbox = contentNode.querySelector('.el-checkbox__inner') || contentNode.querySelector('.el-checkbox__input') || contentNode.querySelector('.el-checkbox') || contentNode.querySelector('input[type=checkbox]');\n"
+                "  if (!checkbox) return 'checkbox not found';\n"
+                "  \n"
+                "  const isChecked = contentNode.querySelector('.is-checked') !== null || (contentNode.querySelector('input[type=checkbox]') && contentNode.querySelector('input[type=checkbox]').checked);\n"
+                "  if (!isChecked) {\n"
+                "    checkbox.click();\n"
+                "  }\n"
+                "  return 'clicked: ' + matchedNodes[0].textContent.trim();\n"
+                "})()"
             )
+            res_check = eval_browser(check_leaf_js)
+            if "clicked" in res_check:
+                print("  [nav-search] Successfully located and checked leaf '" + leaf_category + "' via search: " + res_check)
+                search_success = True
+                deepest_found = len(path) - 1
+    except Exception as exc:
+        print("  [nav-search-warning] Direct search failed: " + str(exc) + ", fallback to tree navigation...")
+
+    # ── Path navigation with two-stage fallback (Fallback if Direct Search fails) ──
+    if not search_success:
+        print("  [nav-tree] Direct search fallback. Initiating manual tree navigation for path: " + str(path))
+        deepest_found = -1  # index of the last successfully navigated segment
+    
+        for index, category in enumerate(path):
+            time.sleep(1)
+            is_leaf = (index == len(path) - 1)
+    
+            result = _nav_node(category, is_leaf)
+            if "clicked:" in result:
+                deepest_found = index
+                continue
+    
+            # Stage 1 — scroll to top and retry (fixes off-screen root-level nodes)
+            eval_browser(_SCROLL_TREE_TOP_JS)
+            time.sleep(0.3)
+            result = _nav_node(category, is_leaf)
+            if "clicked:" in result:
+                deepest_found = index
+                continue
+    
+            # Node not found at this level — skip and try the next segment.
+            # SellerSprite's product tree collapses levels vs Amazon taxonomy
+            # (e.g. "Golf" is a direct child of "Sports & Outdoors", not of "Sports").
+            # Skipping missing intermediate nodes lets us reach the deepest match.
+            if deepest_found < 0:
+                raise ValueError(
+                    "Could not find root category '" + path[0] + "' in SellerSprite product tree."
+                )
+            print("  [nav-skip] '" + category + "' not in tree, trying next level...")
+            continue
+    
+        # After the loop: if we never reached the leaf, re-select the deepest found
+        # node as a leaf (checking the checkbox instead of just expanding).
+        if deepest_found < len(path) - 1:
+            eval_browser(_SCROLL_TREE_TOP_JS)
+            time.sleep(0.3)
+            ancestor = path[deepest_found]
+            fallback_result = _nav_node(ancestor, as_leaf=True)
+            print(
+                "  [nav-fallback] deepest match '" + ancestor + "' selected as leaf "
+                + "(skipped: " + str(path[deepest_found + 1:]) + ")"
+            )
+            if "clicked:" not in fallback_result:
+                raise ValueError(
+                    "Could not select fallback ancestor '" + ancestor + "' as leaf."
+                )
 
     # ─────────────────────────────────────────────────────────────────────────
 
