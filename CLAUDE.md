@@ -4,20 +4,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this project does
 
-Amazon FBA product sourcing pipeline. It automates three sequential research stages against a live SellerSprite browser session via `opencli`, then merges all output into a single Markdown report.
+Amazon FBA product sourcing pipeline. It runs three research stages against a live SellerSprite browser session via `opencli`, with results persisted to a category database after each category.
 
 ```
 Stage 1: Market Scan (select_market.py)
   → scores sub-categories 🟢/🟡/🔴 by risk rules
+  → upserts candidates into results/json/categories.json
 
-Stage 2: Product Scan (find_products.py)
-  → applies product filters per candidate category, scrapes listings
-
-Stage 3: ASIN Keyword Lookup (find_asin_keywords.py)
-  → batch traffic-extend query for top ASINs per category
+Stage 2+3: Per-Category Loop (run_pipeline.py)
+  → for each Green category (ordered by staleness):
+      find_products.py  — scrapes product listings
+      find_asin_keywords.py — batch traffic-extend keyword lookup
+  → updates categories.json and regenerates report.html after each category
 ```
 
-All stage results pass **in memory** between stages — no JSON file is read back to drive the next stage. `pipeline_config.json` contains only static filters and thresholds.
+`results/json/categories.json` is the single persistent store — all progress survives interruptions. `pipeline_config.json` contains only static filters and thresholds.
 
 ## Running the pipeline
 
@@ -25,20 +26,24 @@ All stage results pass **in memory** between stages — no JSON file is read bac
 # Activate venv first
 source .venv/bin/activate
 
-# Full pipeline (all three stages)
+# Full pipeline (market scan + all categories)
 python3 scripts/run_pipeline.py
 
 # Common flags
 python3 scripts/run_pipeline.py --dry-run               # validate config, no browser
-python3 scripts/run_pipeline.py --skip-asin-keywords    # skip Stage 3
-python3 scripts/run_pipeline.py --date 2026_06_01       # override output date
+python3 scripts/run_pipeline.py --skip-keywords         # skip keyword lookup (products only)
+python3 scripts/run_pipeline.py --date 2026_06_01       # override date label in reports
 
-# Resume from a specific stage (reads the previous stage's handoff JSON)
-python3 scripts/run_pipeline.py --start-from 2          # skip Stage 1, re-run Stage 2+3
-python3 scripts/run_pipeline.py --start-from 3          # skip Stages 1&2, re-run Stage 3 only
+# Resume / partial runs
+python3 scripts/run_pipeline.py --skip-market-scan                   # skip market scan, use existing categories.json
+python3 scripts/run_pipeline.py --market-scan-only                   # run market scan only, stop before product loop
+python3 scripts/run_pipeline.py --skip-market-scan --max-categories 5  # batch: process 5 categories
 
 # Standalone ASIN keyword lookup (debugging only)
 python3 scripts/find_asin_keywords.py B0FS72284D B0EXAMPLE2 --category "Trophies"
+
+# Regenerate HTML report from existing categories.json
+python3 scripts/generate_html_report.py
 ```
 
 ## Required Product And Keyword Scan Batch Workflow
@@ -47,7 +52,7 @@ When resuming product scans and keyword selection from the existing persistent
 category database, run at most five categories per batch:
 
 ```bash
-python3 scripts/run_pipeline.py --start-from 2 --max-categories 5
+python3 scripts/run_pipeline.py --skip-market-scan --max-categories 5
 ```
 
 After every batch:
@@ -64,21 +69,11 @@ After every batch:
 Do not start the next batch until the current five-category batch has been
 committed, pushed, and reported.
 
-Output lands in `results/YYYY_MM_DD/pipeline_report_YYYY_MM_DD.md`.
-
-Each full run also writes two handoff files in the same directory:
-- `stage1_handoff_YYYY_MM_DD.json` — candidate categories + market markdown (Stage 1 → 2)
-- `stage2_handoff_YYYY_MM_DD.json` — products list + product markdowns (Stage 2 → 3)
-
-These enable `--start-from` to resume without re-running earlier stages. On a full run they are refreshed before each downstream stage reads them, so results are always consistent.
-
 ## Pre-run requirement
 
 The pipeline requires a live SellerSprite browser session:
 1. Open Chrome and navigate to sellersprite.com (must be logged in)
 2. Run `opencli browser ss bind` to attach to that tab
-
-`scan_common.check_browser_ready()` is called at startup and will exit with a Chinese-language error message if the session is not bound or not logged in.
 
 ## Config
 
@@ -89,25 +84,18 @@ The config is divided into three top-level sections matching the three stages:
 - `products` — filter params (price, sales, reviews, weight, margin, etc.) and scan policy
 - `asin_keywords` — filters, score weights, scan policy
 
-`pipeline.candidate_levels` controls which market ratings flow into Stage 2 (default: Green + Yellow).
+`pipeline.candidate_levels` controls which market ratings flow into the product loop (default: Green only). Yellow categories are only created by `downgrade_empty_categories()` after failed product scans and are not re-processed by the loop.
 
 **Do not add a `category` key under `products`** — the pipeline validates that this field is absent and will raise `ValueError` if present.
 
 ## Architecture details
 
-- `scan_common.py` — shared browser automation primitives (`eval_browser`, `open_browser`, `extract_json_array`, `check_browser_ready`). All browser interaction goes through `opencli browser ss eval/open`.
-- `run_pipeline.py` imports the three stage modules directly (`import find_asin_keywords as asin_scan`, etc.) and calls their functions with in-memory data. Each stage module is also runnable standalone.
-- Stage scripts run from `scripts/` but `scan_common.py` computes `PROJECT_ROOT` as the parent of `scripts/`, so results always land at repo root `/results/`.
+- `scan_common.py` — shared browser automation primitives. All browser interaction goes through `opencli browser ss eval/open`. `dated_results_dir()` ignores the `date_str` argument and always returns `results/` flat.
+- `run_pipeline.py` — main entry point. Imports stage modules directly and calls their functions with in-memory data.
+- `generate_html_report.py` — generates `results/html/report.html` from `categories.json`. Called after each category by `run_pipeline.py`; also runnable standalone.
 - `values()` helper (duplicated in each script) unwraps `{"value": x}` dicts from config.
 - ASIN priority scoring formula: `monthly_sales / (reviews + 10) + profit_margin / 10`
 - Keyword scoring uses configurable weights from `asin_keywords.score_weights` in the config.
+- `allowed_traffic_types` and `max_organic_rank` filters in `asin_keywords` have no effect — the `/v3/traffic/extend/asin` page does not expose those columns; `traffic_type` and `organic_rank` are always empty in scraped output.
 
-## Use the `/amazon-sourcing` skill
-
-For end-to-end runs with LLM analysis of results, use:
-
-```
-/amazon-sourcing
-```
-
-This skill handles the full workflow: checks for existing results, runs the pipeline if needed, reads the report, and produces a prioritized sourcing recommendation.
+For end-to-end runs with LLM analysis of results, use `/amazon-sourcing`.

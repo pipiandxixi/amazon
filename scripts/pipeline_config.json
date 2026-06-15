@@ -378,10 +378,6 @@
         "value": 50,
         "label": "月购买量最小值"
       },
-      "max_organic_rank": {
-        "value": 100,
-        "label": "自然排名最大值"
-      },
       "max_spr": {
         "value": 20,
         "label": "SPR 最大值"
@@ -397,13 +393,6 @@
       "max_ppc_bid": {
         "value": 1.0,
         "label": "PPC 精准建议竞价最大值（美元）"
-      },
-      "allowed_traffic_types": {
-        "value": [
-          "自然搜索词",
-          "广告流量词"
-        ],
-        "label": "允许的流量词类型"
       },
       "excluded_keywords": {
         "value": [
@@ -443,10 +432,6 @@
       "max_purchase_score": {
         "value": 10.0,
         "label": "月购买量最高得分"
-      },
-      "top_50_organic_bonus": {
-        "value": 10.0,
-        "label": "自然排名前 50 的奖励分"
       }
     },
     "scan_policy": {
@@ -456,7 +441,7 @@
       },
       "page_wait_seconds": {
         "value": 8,
-        "label": "打开拓展流量词页面后等待秒数（URL 直接携带 ASIN 参数，无需额外提交）"
+        "label": "每步操作后等待秒数（共三步：打开页面 → 点击立即查询 → 点击用畅销变体拓词，每步等待一次）"
       },
       "max_asins": {
         "value": 20,

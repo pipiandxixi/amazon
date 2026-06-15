@@ -397,16 +397,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", default="scripts/pipeline_config.json")
     parser.add_argument("--date", default="")
-    parser.add_argument("--skip-keywords", action="store_true", help="Skip ASIN keyword lookup (Stage 3)")
+    parser.add_argument("--skip-keywords", action="store_true", help="Skip ASIN keyword lookup")
     parser.add_argument("--dry-run", action="store_true", help="Validate config without opening SellerSprite")
-    parser.add_argument(
-        "--start-from", type=int, choices=[1, 2], default=1, metavar="{1,2}",
-        help="1=full run (market scan + categories loop); 2=skip market scan, use existing categories.json",
-    )
-    parser.add_argument(
-        "--stop-after", type=int, choices=[1, 2], default=2, metavar="{1,2}",
-        help="1=stop after market scan (inspect DB before processing); 2=full run (default)",
-    )
+    parser.add_argument("--skip-market-scan", action="store_true", help="Skip market scan; use existing categories.json")
+    parser.add_argument("--market-scan-only", action="store_true", help="Run market scan only, stop before product loop")
     parser.add_argument(
         "--max-categories", type=int, default=None, metavar="N",
         help="Process at most N categories per run (ordered by staleness). Omit for all.",
@@ -439,7 +433,7 @@ def main() -> None:
 
     # ── Stage 1: Market Scan ─────────────────────────────────────────────────
     t1 = time.time()
-    if args.start_from <= 1:
+    if not args.skip_market_scan:
         raw_categories, scan_meta = _scan_all_departments(config["market"])
         _, candidates = market_scan.generate_report(
             config["market"], raw_categories, date_str, output_dir=root,
@@ -453,7 +447,7 @@ def main() -> None:
     else:
         db = load_db(root)
         if not db:
-            raise FileNotFoundError(f"{CATEGORIES_DB} not found — run from stage 1 first")
+            raise FileNotFoundError(f"{CATEGORIES_DB} not found — run without --skip-market-scan first")
         print(f"[RESUME] Loaded {len(db)} categories from {CATEGORIES_DB}")
     downgraded = downgrade_empty_categories(db)
     if downgraded:
@@ -465,11 +459,11 @@ def main() -> None:
         print(f"[AUDIT] Restored {len(restored)} unverified empty categories for rescanning")
     print(f"[TIMER] Stage 1 耗时: {_elapsed(t1)}  (累计 {_elapsed(pipeline_start)})")
 
-    if args.stop_after == 1:
+    if args.market_scan_only:
         scanned = sum(1 for c in db.values() if c.get("last_updated"))
         never = len(db) - scanned
-        print(f"\n[PAUSE] Stage 1 完成 — {len(db)} 类目 ({never} 待扫描, {scanned} 已有数据)")
-        print("检查 results/json/categories.json 后运行 --start-from 2 继续。")
+        print(f"\n[PAUSE] 市场扫描完成 — {len(db)} 类目 ({never} 待扫描, {scanned} 已有数据)")
+        print("检查 results/json/categories.json 后运行 --skip-market-scan 继续。")
         return
 
     # ── Stage 2+3: Per-category loop ─────────────────────────────────────────

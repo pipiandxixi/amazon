@@ -1,6 +1,6 @@
 ---
 name: amazon-sourcing
-description: Run the Amazon sourcing pipeline and provide LLM analysis of results. Outputs a single pipeline_report_*.md and report.html per run.
+description: Run the Amazon sourcing pipeline and provide LLM analysis of results. Outputs a persistent categories.json DB and report.html per run.
 ---
 
 You are an Amazon product sourcing analyst. Run the unified pipeline, then reason about the results and produce a prioritized recommendation.
@@ -8,10 +8,11 @@ You are an Amazon product sourcing analyst. Run the unified pipeline, then reaso
 ## Step 0 — Orient
 
 ```bash
-ls results/ | sort | tail -10
+ls -la results/html/report.html 2>/dev/null && echo "exists" || echo "no report yet"
+ls -la results/json/categories.json 2>/dev/null && echo "DB exists" || echo "no DB yet"
 ```
 
-Check if today's results already exist (`results/YYYY_MM_DD/pipeline_report_*.md`). If they do, ask whether to reuse them or run fresh.
+If `categories.json` exists, check how stale it is and ask whether to resume batch processing or run a fresh market scan.
 
 **新手前置检查清单**（如为首次开店，在继续前确认以下各项）：
 - [ ] 预算 ≥ $3,000（首单备货 + FBA 头程 + PPC 启动费）
@@ -21,46 +22,73 @@ Check if today's results already exist (`results/YYYY_MM_DD/pipeline_report_*.md
 
 ---
 
-## Step 1 — Run the unified pipeline
+## Step 1 — Run the pipeline
 
-The single entry point runs all three stages (market scan → product scan → keyword lookup) and writes one report:
+All output lands flat under `results/` — there are no date subdirectories.
+
+### Full run (all three stages)
 
 ```bash
-cd /path/to/amazon
 python3 scripts/run_pipeline.py
 ```
 
-Output per run (all under `results/YYYY_MM_DD/`):
-- `pipeline_report_YYYY_MM_DD.md` — merged human-readable report
-- `html/report.html` — visual HTML report with product thumbnails and keyword tables
-- `json/market_scan_results.json` — market scan sidecar
-- `json/stage1_handoff_YYYY_MM_DD.json` — candidate categories (Stage 1 → 2 handoff)
-- `json/stage2_handoff_YYYY_MM_DD.json` — products with image URLs (Stage 2 → 3 handoff)
-- `json/stage3_keywords_YYYY_MM_DD.json` — structured keyword data per category
+### Resume batch (skip market scan, continue products + keywords)
 
-Optional flags:
-- `--skip-asin-keywords` — skip Stage 3 (faster, products only)
-- `--dry-run` — validate config without opening SellerSprite
-- `--date YYYY_MM_DD` — write results under a specific date directory
-- `--start-from 2` — skip Stage 1, resume from saved stage1 handoff JSON
-- `--start-from 3` — skip Stages 1 & 2, re-run keyword lookup only (useful when tuning keyword filters)
+```bash
+python3 scripts/run_pipeline.py --skip-market-scan --max-categories 5
+```
 
-The pipeline config (`scripts/pipeline_config.json`) controls all three stages in one file.
+Use this when `categories.json` already exists and you're iterating through categories in batches of 5.
+
+### Market scan only (inspect before processing)
+
+```bash
+python3 scripts/run_pipeline.py --market-scan-only
+```
+
+### Common flags
+
+| Flag | Effect |
+|------|--------|
+| `--skip-market-scan` | Skip market scan; use existing `categories.json` |
+| `--market-scan-only` | Run market scan only, stop before product loop |
+| `--max-categories N` | Process at most N categories (ordered by staleness) |
+| `--skip-keywords` | Skip keyword lookup, products only |
+
+### Output files (all flat under `results/`)
+
+| File | Contents |
+|------|----------|
+| `results/json/categories.json` | **Persistent DB** — single source of truth; updated after every category |
+| `results/json/market_scan_results.json` | Market scan sidecar (Stage 1 candidates with metrics) |
+| `results/html/report.html` | Visual HTML report with thumbnails and clickable keyword links |
+| `index.html` | Auto-updated redirect to `results/html/report.html` |
 
 ---
 
-## Step 2 — Read and analyze the pipeline report
+## Step 2 — Read and analyze results
+
+The primary data source is `results/json/categories.json`. Each entry contains:
+- `level` — 🟢/🟡/🔴 from market scan
+- `products` — list of qualifying ASINs with price, sales, margin, reviews
+- `keywords` — ranked keyword objects with volume, SPR, title density
+- `last_updated` — ISO timestamp of last product+keyword scan
 
 ```bash
-cat results/YYYY_MM_DD/pipeline_report_YYYY_MM_DD.md
+python3 -c "
+import json; db = json.load(open('results/json/categories.json'))
+scanned = [(k, v) for k, v in db.items() if v.get('last_updated')]
+print(f'{len(scanned)}/{len(db)} categories scanned')
+for k, v in sorted(scanned, key=lambda x: x[1]['last_updated'], reverse=True)[:10]:
+    prods = len(v.get('products') or [])
+    kws = len((v.get('keywords') or {}).get('keywords') or [])
+    print(f'  {k}: {prods} products, {kws} keywords, updated {v[\"last_updated\"][:10]}')
+"
 ```
 
-The report contains three sections in order:
-1. **市场扫描** — categories scored Green/Yellow/Red with metrics
-2. **产品扫描** — per-category qualified products with price, sales, margin, reviews
-3. **关键词反查** — per-category keyword tables (batch traffic-extend lookup)
+Then open `results/html/report.html` in a browser for the visual view.
 
-Read the full report, then write a 3–5 bullet market summary covering:
+Write a 3–5 bullet market summary covering:
 - Best opportunity clusters (categories with ≥2 strong ASINs, low reviews, light weight)
 - Keyword signal strength (high-volume keywords with low SPR and low title density)
 - Red flags (high CN ratio, categories skipped due to nav-fallback collision)
@@ -69,7 +97,7 @@ Read the full report, then write a 3–5 bullet market summary covering:
 
 ## Step 3 — Prioritize top candidates
 
-From the product sections, extract and rank the top 15–20 ASINs across all categories. Scoring logic:
+Load directly from `categories.json`:
 
 ```python
 import json, re
@@ -78,35 +106,28 @@ def number(v):
     m = re.search(r"[\d,.]+", str(v or ""))
     return float(m.group(0).replace(",", "")) if m else 0.0
 
-s2 = json.loads(open("results/YYYY_MM_DD/json/stage2_handoff_YYYY_MM_DD.json").read())
-products = s2["products"]
-# Sort by: monthly_sales / (reviews + 10) + profit_margin / 10
+db = json.load(open("results/json/categories.json"))
+candidates = []
+for cat_name, cat in db.items():
+    for p in (cat.get("products") or []):
+        score = number(p.get("monthly_sales")) / (number(p.get("reviews")) + 10) \
+              + number(p.get("profit_margin")) / 10
+        candidates.append({**p, "category": cat_name, "score": score})
+
+top = sorted(candidates, key=lambda x: x["score"], reverse=True)[:20]
 ```
 
-For each candidate ASIN, state:
+For each top ASIN, state:
 - **机会点**: low reviews + high sales + keyword has volume/low SPR
 - **风险点**: high CN ratio, certification flags
 - **建议下一步**: 1688 search term, MOQ target, whether to build listing now
 
 ---
 
-## Step 4 — Re-run keyword lookup only (if needed)
-
-If you only want to tune keyword filters without re-scraping market/products:
+## Step 4 — Regenerate HTML standalone (if needed)
 
 ```bash
-python3 scripts/run_pipeline.py --start-from 3
+python3 scripts/generate_html_report.py
 ```
 
-This reads `json/stage2_handoff_YYYY_MM_DD.json`, re-runs Stage 3 with current config, and regenerates the pipeline report and HTML.
-
----
-
-## Step 5 — Generate HTML report standalone (if needed)
-
-```bash
-python3 scripts/generate_html_report.py --date YYYY_MM_DD
-```
-
-Reads the three stage JSON files and writes `results/YYYY_MM_DD/html/report.html`.
-Requires stage1, stage2, and optionally stage3 JSON files to exist.
+Reads `results/json/categories.json` and rewrites `results/html/report.html`. No flags required.
