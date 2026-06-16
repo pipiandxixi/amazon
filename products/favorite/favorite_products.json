@@ -1,6 +1,6 @@
 {
   "description": "Manually selected favorite products from the ASIN watchlist",
-  "count": 5,
+  "count": 6,
   "products": [
     {
       "asin": "B08DM4NFNC",
@@ -164,6 +164,39 @@
         "评分 4.3",
         "Reviews 1243",
         "价格 $33.08"
+      ],
+      "_cautions": []
+    },
+    {
+      "asin": "B07HNWHV25",
+      "parent_asin": "B0H1YCN56D",
+      "title": "Woodstock Wind Chimes Amazing Grace Chime Medium (24'') Bronze Wind Chime Inspirational and Memorial Gifts Wind Chimes for Outside Patio Home or Garden Decor",
+      "brand": "Woodstock Chimes",
+      "monthly_sales": "2,362",
+      "sales_growth": "60.32%",
+      "monthly_revenue": "$118,076",
+      "variants": "6",
+      "price": "$49.99",
+      "reviews": "9,787",
+      "monthly_new_reviews": "9,373",
+      "rating": "4.8",
+      "review_rate": "-",
+      "fba_fee": "-",
+      "profit_margin": "-",
+      "listing_date": "2018-10-04",
+      "listing_age": "7年 8个月",
+      "leaf_rank": "13",
+      "leaf_category": "Wind Chimes",
+      "sellers": "1",
+      "package_weight": "1.54 pounds",
+      "raw_metrics": "4,713 | -445 | -10% | 2,362 | 60.32% | $118,076 | 1K+ | $49K+ | 6 | $49.99 | 8 | 9,787 | 9,373 | 4.8 | - | $5.76 | 73% | 2018-10-04 | 7年 8个月 | FBA | -",
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/61Vh7ugBMvL._AC_US600_.jpg",
+      "_score": 99,
+      "_reasons": [
+        "月销 2362",
+        "评分 4.8",
+        "Reviews 9787",
+        "价格 $49.99"
       ],
       "_cautions": []
     }
