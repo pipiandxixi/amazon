@@ -37,6 +37,35 @@ main { max-width: 1440px; margin: 0 auto; padding: 24px 28px 48px; }
 h2 { margin: 0; font-size: 20px; letter-spacing: 0; }
 .section-head p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
 .back-top { color: var(--muted); text-decoration: none; font-size: 12px; }
+
+/* Category Metrics Dashboard */
+.cat-metrics-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 10px 0 16px;
+}
+.cat-metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.cat-metric-item span {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.cat-metric-item b {
+  font-size: 13px;
+  color: var(--text);
+}
+
 .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); gap: 12px; padding-top: 14px; }
 .product-card { display: grid; grid-template-columns: 132px 1fr; gap: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-height: 190px; }
 .thumb { display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 6px; background: #f9fafb; aspect-ratio: 1 / 1; overflow: hidden; }
@@ -63,6 +92,7 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
   .title-row { flex-direction: column; }
   .summary { min-width: 0; width: 100%; grid-template-columns: repeat(2, 1fr); }
   .product-grid { grid-template-columns: 1fr; }
+  .cat-metrics-panel { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px) {
   .header-inner, main { padding-left: 14px; padding-right: 14px; }
@@ -100,6 +130,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>292,321 / 2,923</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$111,636 / $41.52</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>2,581 / 4.4⭐ (3,331 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>42.5% / 59.1% / 58.5%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>75.0% / 3.22%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>28.0% / 15.02</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0FPWLHGQS" target="_blank" rel="noreferrer">
@@ -985,6 +1043,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>356,291 / 3,562</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$124,885 / $28.43</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>6,941 / 4.6⭐ (6,082 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>30.7% / 53.4% / 58.5%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>62.0% / 3.29%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>29.0% / 7.61</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0CTCDPXFY" target="_blank" rel="noreferrer">
@@ -1660,6 +1746,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>301,065 / 3,010</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$95,069 / $33.12</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>1,229 / 4.4⭐ (1,832 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>38.3% / 56.0% / 55.9%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>61.0% / 2.25%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>36.0% / 14.36</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0GSTKJV9M" target="_blank" rel="noreferrer">
@@ -2230,6 +2344,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>191,548 / 1,915</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$65,975 / $41.06</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>1,030 / 4.4⭐ (2,285 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>47.6% / 61.6% / 60.3%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>67.0% / 4.94%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>30.0% / 7.61</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0FP5629MM" target="_blank" rel="noreferrer">
@@ -2730,6 +2872,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>194,257 / 1,942</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$79,795 / $48.73</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>1,504 / 4.4⭐ (2,821 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>45.8% / 57.2% / 57.2%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>66.0% / 4.95%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>25.0% / 6.22</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B09JFW2ZXC" target="_blank" rel="noreferrer">
@@ -3055,6 +3225,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>181,089 / 1,810</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$49,992 / $28.51</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>2,469 / 4.5⭐ (1,453 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>26.1% / 40.1% / 38.1%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>60.0% / 3.59%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>30.0% / 5.23</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0BTY14F3P" target="_blank" rel="noreferrer">
@@ -3345,6 +3543,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>223,740 / 2,237</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$55,309 / $26.64</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>1,084 / 4.3⭐ (625 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>31.0% / 53.6% / 52.9%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>54.0% / 3.93%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>56.0% / 5.73</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0GQ3C27S6" target="_blank" rel="noreferrer">
@@ -3635,6 +3861,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>112,332 / 1,123</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$38,363 / $32.48</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>1,123 / 4.6⭐ (923 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>36.9% / 49.7% / 48.1%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>63.0% / 2.75%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>32.0% / 4.04</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0DQ8J7CXN" target="_blank" rel="noreferrer">
@@ -3890,6 +4144,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>126,307 / 1,263</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$55,294 / $46.18</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>2,146 / 4.5⭐ (982 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>32.8% / 63.2% / 61.4%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>65.0% / 7.01%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>32.0% / 6.36</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B09N6YZD33" target="_blank" rel="noreferrer">
@@ -4110,6 +4392,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>123,151 / 1,231</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$63,399 / $48.98</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>1,238 / 4.2⭐ (482 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>29.1% / 50.8% / 53.3%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>67.0% / 6.75%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>58.0% / 5.45</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0GLYW4WTX" target="_blank" rel="noreferrer">
@@ -4330,6 +4640,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>110,772 / 1,107</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$27,994 / $28.12</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>10,238 / 4.5⭐ (694 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>28.3% / 54.1% / 46.8%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>63.0% / 4.08%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>23.0% / 10.90</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0F38G7SDT" target="_blank" rel="noreferrer">
@@ -4515,6 +4853,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>136,584 / 1,365</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$44,242 / $33.33</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>1,639 / 4.3⭐ (606 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>30.5% / 50.8% / 44.5%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>62.0% / 3.37%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>42.0% / 8.58</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B08CRSYCQS" target="_blank" rel="noreferrer">
@@ -4700,6 +5066,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>204,132 / 2,041</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$55,984 / $27.60</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>1,255 / 4.7⭐ (2,152 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>30.0% / 50.7% / 46.8%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>61.0% / 3.55%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>24.0% / 6.93</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0DPZY5X12" target="_blank" rel="noreferrer">
@@ -4885,6 +5279,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>140,590 / 1,405</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$40,472 / $32.18</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>610 / 4.4⭐ (935 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>42.5% / 58.7% / 60.4%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>60.0% / 10.46%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>30.0% / 10.74</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B09V7FZLCS" target="_blank" rel="noreferrer">
@@ -5035,6 +5457,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>127,178 / 1,271</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$34,712 / $28.85</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>1,023 / 4.6⭐ (637 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>44.8% / 54.9% / 51.7%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>57.0% / 4.09%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>38.0% / 9.56</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0FTMVFHZ3" target="_blank" rel="noreferrer">
@@ -5150,6 +5600,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>111,229 / 1,112</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$32,962 / $29.34</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>3,131 / 4.6⭐ (1,479 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>31.7% / 55.7% / 56.8%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>61.0% / 4.03%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>12.0% / 8.53</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0D7PZ6YRY" target="_blank" rel="noreferrer">
@@ -5265,6 +5743,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>195,246 / 1,952</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$68,452 / $37.46</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>5,776 / 4.7⭐ (926 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>36.7% / 59.5% / 58.2%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>58.0% / 4.22%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>22.0% / 11.43</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0F48B5M9Q" target="_blank" rel="noreferrer">
@@ -5380,6 +5886,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>110,385 / 1,103</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$38,678 / $36.94</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>634 / 4.4⭐ (999 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>41.7% / 52.7% / 53.2%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>63.0% / 4.78%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>52.0% / 10.24</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0D5DS439M" target="_blank" rel="noreferrer">
@@ -5460,6 +5994,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>181,046 / 1,810</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$50,299 / $30.03</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>2,946 / 4.6⭐ (2,655 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>31.0% / 48.9% / 61.3%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>60.0% / 5.74%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>48.0% / 5.58</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0999C77MJ" target="_blank" rel="noreferrer">
@@ -5540,6 +6102,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>102,064 / 1,020</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$45,512 / $46.40</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>8,884 / 4.4⭐ (620 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>33.3% / 42.6% / 40.3%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>66.0% / 14.48%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>36.0% / 3.23</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0G4PV5W8D" target="_blank" rel="noreferrer">
@@ -5620,6 +6210,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>158,387 / 1,583</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$36,034 / $26.48</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>5,354 / 4.7⭐ (2,381 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>40.0% / 51.7% / 48.5%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>60.0% / 1.98%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>14.0% / 7.31</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B07HNWHV25" target="_blank" rel="noreferrer">
@@ -5700,6 +6318,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>301,065 / 3,010</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$95,069 / $33.12</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>1,229 / 4.4⭐ (1,832 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>38.3% / 56.0% / 55.9%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>61.0% / 2.25%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>36.0% / 14.36</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0GYSCN81D" target="_blank" rel="noreferrer">
@@ -5745,6 +6391,34 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
         </div>
         <a href="#top" class="back-top">Back to top</a>
       </div>
+
+      <div class="cat-metrics-panel">
+        <div class="cat-metric-item">
+          <span>月销量 / 均销量</span>
+          <b>123,617 / 1,236</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>平均销售额 / 均价</span>
+          <b>$32,582 / $25.64</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>商品总数 / 均评分 (评论数)</span>
+          <b>1,481 / 4.4⭐ (956 Revs)</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>行业集中度 (产品/品牌/卖家)</span>
+          <b>46.0% / 52.9% / 51.8%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>毛利率 / 退货率</span>
+          <b>57.0% / 2.34%</b>
+        </div>
+        <div class="cat-metric-item">
+          <span>新品占比 / 搜索购买比</span>
+          <b>35.0% / 4.85</b>
+        </div>
+      </div>
+
       <div class="product-grid">
         <article class="product-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0F4J7RMM3" target="_blank" rel="noreferrer">
