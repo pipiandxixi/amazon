@@ -3,9 +3,9 @@
   "verified_record_count": 200,
   "actual_records_len": 200,
   "unique_market_path_count": 200,
-  "target_pool_count": 50,
+  "target_pool_count": 35,
   "watch_count": 62,
-  "excluded_count": 88,
+  "excluded_count": 103,
   "selection_logic": {
     "goal": "cross-border China-to-US FBA category opportunity pool before product-level validation",
     "primary_factors": [
@@ -19,7 +19,8 @@
       "regulated/high-credential categories such as medicine, supplements, baby safety, skin care, pest control",
       "profit margin < 45%",
       "new product ratio < 10%",
-      "high demand with multiple concentration metrics >= 70%"
+      "high demand with multiple concentration metrics >= 70%",
+      "apparel/shoes/hats removed for cross-border beginner selection"
     ]
   },
   "target_pool": [
@@ -598,160 +599,6 @@
       "fatal_reasons": []
     },
     {
-      "name": "Casual",
-      "name_zh": "休闲类",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Shorts:Casual",
-      "score": 113,
-      "metrics": {
-        "monthly_sales": 627836.0,
-        "avg_sales": 6278.0,
-        "avg_revenue": 162062.0,
-        "price": 26.77,
-        "reviews": 1126.0,
-        "rating": 4.2,
-        "bsr": 32020.0,
-        "avg_sellers": 1.7,
-        "product_conc": 37.6,
-        "brand_conc": 59.0,
-        "seller_conc": 63.4,
-        "total_products": 7374.0,
-        "weight": 0.5,
-        "volume": 102.637,
-        "profit": 59.0,
-        "head_avg_sales": 23631.0,
-        "head_monopoly": 3.0,
-        "head_avg_revenue": 536261.0,
-        "new_count": 46.0,
-        "new_ratio": 46.0,
-        "new_avg_sales": 5878.0,
-        "new_avg_revenue": 166873.0,
-        "new_price": 27.47,
-        "new_reviews": 147.0,
-        "new_rating": 4.2,
-        "return_rate": null,
-        "search_purchase_ratio": null
-      },
-      "reasons": [
-        "毛利率 59.0% 充足",
-        "新品占比 46.0% 很高",
-        "月总销量 627,836，需求明确",
-        "集中度未显示明显红海垄断",
-        "商品总数 7,374，竞争宽度可接受",
-        "新品平均评分数 147，新品可进入"
-      ],
-      "cautions": [
-        "平均评分数 1,126 中等偏高",
-        "退货率 N/A",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
-      "fatal_reasons": []
-    },
-    {
-      "name": "Workout Top & Bottom Sets",
-      "name_zh": "服装套装",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Active:Sets:Workout Top & Bottom Sets",
-      "score": 113,
-      "metrics": {
-        "monthly_sales": 452665.0,
-        "avg_sales": 4526.0,
-        "avg_revenue": 131724.0,
-        "price": 28.57,
-        "reviews": 793.0,
-        "rating": 4.3,
-        "bsr": 30414.0,
-        "avg_sellers": 1.1,
-        "product_conc": 30.8,
-        "brand_conc": 56.699999999999996,
-        "seller_conc": 54.7,
-        "total_products": 3038.0,
-        "weight": 0.5658,
-        "volume": 138.9065,
-        "profit": 56.99999999999999,
-        "head_avg_sales": 13965.0,
-        "head_monopoly": 3.0,
-        "head_avg_revenue": 433774.0,
-        "new_count": 53.0,
-        "new_ratio": 53.0,
-        "new_avg_sales": 3671.0,
-        "new_avg_revenue": 100149.0,
-        "new_price": 27.66,
-        "new_reviews": 167.0,
-        "new_rating": 4.3,
-        "return_rate": 17.9375,
-        "search_purchase_ratio": 4.01962
-      },
-      "reasons": [
-        "毛利率 57.0% 充足",
-        "新品占比 53.0% 很高",
-        "月总销量 452,665，需求明确",
-        "集中度未显示明显红海垄断",
-        "商品总数 3,038，竞争宽度可接受",
-        "平均评分数 793，评价壁垒较低"
-      ],
-      "cautions": [
-        "退货率 17.9% 高",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
-      "fatal_reasons": []
-    },
-    {
-      "name": "Skirt Sets",
-      "name_zh": "裙装套装",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Clothing Sets:Skirt Sets",
-      "score": 113,
-      "metrics": {
-        "monthly_sales": 175391.0,
-        "avg_sales": 1753.0,
-        "avg_revenue": 61674.0,
-        "price": 35.71,
-        "reviews": 244.0,
-        "rating": 4.1,
-        "bsr": 53648.0,
-        "avg_sellers": 1.3,
-        "product_conc": 35.699999999999996,
-        "brand_conc": 56.00000000000001,
-        "seller_conc": 55.400000000000006,
-        "total_products": 3810.0,
-        "weight": 0.6453,
-        "volume": 117.295,
-        "profit": 62.0,
-        "head_avg_sales": 6258.0,
-        "head_monopoly": 3.0,
-        "head_avg_revenue": 216072.0,
-        "new_count": 69.0,
-        "new_ratio": 69.0,
-        "new_avg_sales": 1486.0,
-        "new_avg_revenue": 52959.0,
-        "new_price": 35.64,
-        "new_reviews": 49.0,
-        "new_rating": 4.0,
-        "return_rate": 30.4688,
-        "search_purchase_ratio": 3.2316
-      },
-      "reasons": [
-        "毛利率 62.0% 很充足",
-        "新品占比 69.0% 很高",
-        "月总销量 175,391，需求足够",
-        "集中度未显示明显红海垄断",
-        "商品总数 3,810，竞争宽度可接受",
-        "平均评分数 244，评价壁垒较低"
-      ],
-      "cautions": [
-        "退货率 30.5% 高",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
-      "fatal_reasons": []
-    },
-    {
       "name": "Electrical Wire",
       "name_zh": "电线",
       "path": "Tools & Home Improvement:Electrical:Electrical Wire",
@@ -996,109 +843,6 @@
       "fatal_reasons": []
     },
     {
-      "name": "Wear to Work",
-      "name_zh": "工装",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Skirts:Wear to Work",
-      "score": 109,
-      "metrics": {
-        "monthly_sales": 115568.0,
-        "avg_sales": 1155.0,
-        "avg_revenue": 28903.0,
-        "price": 27.15,
-        "reviews": 1230.0,
-        "rating": 4.3,
-        "bsr": 116175.0,
-        "avg_sellers": 1.2,
-        "product_conc": 50.3,
-        "brand_conc": 54.1,
-        "seller_conc": 54.50000000000001,
-        "total_products": 2854.0,
-        "weight": 0.599,
-        "volume": 86.2516,
-        "profit": 56.99999999999999,
-        "head_avg_sales": 5810.0,
-        "head_monopoly": 5.0,
-        "head_avg_revenue": 134747.0,
-        "new_count": 56.0,
-        "new_ratio": 56.00000000000001,
-        "new_avg_sales": 939.0,
-        "new_avg_revenue": 24383.0,
-        "new_price": 27.02,
-        "new_reviews": 135.0,
-        "new_rating": 4.3,
-        "return_rate": null,
-        "search_purchase_ratio": null
-      },
-      "reasons": [
-        "毛利率 57.0% 充足",
-        "新品占比 56.0% 很高",
-        "月总销量 115,568，需求足够",
-        "集中度未显示明显红海垄断",
-        "商品总数 2,854，竞争宽度可接受",
-        "新品平均评分数 135，新品可进入"
-      ],
-      "cautions": [
-        "平均评分数 1,230 中等偏高",
-        "退货率 N/A",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
-      "fatal_reasons": []
-    },
-    {
-      "name": "Knee-High",
-      "name_zh": "及膝靴",
-      "path": "Clothing, Shoes & Jewelry:Women:Shoes:Boots:Knee-High",
-      "score": 109,
-      "metrics": {
-        "monthly_sales": 107804.0,
-        "avg_sales": 1078.0,
-        "avg_revenue": 55630.0,
-        "price": 52.32,
-        "reviews": 813.0,
-        "rating": 4.4,
-        "bsr": 96786.0,
-        "avg_sellers": 1.5,
-        "product_conc": 31.5,
-        "brand_conc": 55.800000000000004,
-        "seller_conc": 56.2,
-        "total_products": 4837.0,
-        "weight": 2.8021,
-        "volume": 578.5087,
-        "profit": 64.0,
-        "head_avg_sales": 3394.0,
-        "head_monopoly": 3.0,
-        "head_avg_revenue": 174943.0,
-        "new_count": 35.0,
-        "new_ratio": 35.0,
-        "new_avg_sales": 742.0,
-        "new_avg_revenue": 36117.0,
-        "new_price": 51.31,
-        "new_reviews": 198.0,
-        "new_rating": 4.4,
-        "return_rate": 31.8084,
-        "search_purchase_ratio": 2.1788
-      },
-      "reasons": [
-        "毛利率 64.0% 很充足",
-        "新品占比 35.0% 高",
-        "月总销量 107,804，需求足够",
-        "集中度未显示明显红海垄断",
-        "商品总数 4,837，竞争宽度可接受",
-        "平均评分数 813，评价壁垒较低"
-      ],
-      "cautions": [
-        "退货率 31.8% 高",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
-      "fatal_reasons": []
-    },
-    {
       "name": "Wall Lamps & Sconces",
       "name_zh": "壁灯",
       "path": "Tools & Home Improvement:Lighting & Ceiling Fans:Wall Lights:Wall Lamps & Sconces",
@@ -1146,58 +890,6 @@
       ],
       "risk_flags": [
         "electronics_cert"
-      ],
-      "fatal_reasons": []
-    },
-    {
-      "name": "Rompers",
-      "name_zh": "短袖连衫裤",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Jumpsuits, Rompers & Overalls:Rompers",
-      "score": 108,
-      "metrics": {
-        "monthly_sales": 372209.0,
-        "avg_sales": 3722.0,
-        "avg_revenue": 99710.0,
-        "price": 28.48,
-        "reviews": 1519.0,
-        "rating": 4.2,
-        "bsr": 20242.0,
-        "avg_sellers": 1.2,
-        "product_conc": 39.900000000000006,
-        "brand_conc": 59.699999999999996,
-        "seller_conc": 56.10000000000001,
-        "total_products": 2666.0,
-        "weight": 0.4949,
-        "volume": 99.4644,
-        "profit": 60.0,
-        "head_avg_sales": 14834.0,
-        "head_monopoly": 3.0,
-        "head_avg_revenue": 347795.0,
-        "new_count": 32.0,
-        "new_ratio": 32.0,
-        "new_avg_sales": 3027.0,
-        "new_avg_revenue": 75643.0,
-        "new_price": 23.04,
-        "new_reviews": 116.0,
-        "new_rating": 4.3,
-        "return_rate": 24.7381,
-        "search_purchase_ratio": 4.08931
-      },
-      "reasons": [
-        "毛利率 60.0% 很充足",
-        "新品占比 32.0% 高",
-        "月总销量 372,209，需求明确",
-        "集中度未显示明显红海垄断",
-        "商品总数 2,666，竞争宽度可接受",
-        "新品平均评分数 116，新品可进入"
-      ],
-      "cautions": [
-        "平均评分数 1,519 中等偏高",
-        "退货率 24.7% 高",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
       ],
       "fatal_reasons": []
     },
@@ -1300,58 +992,6 @@
         "平均评分数 2,205 中等偏高"
       ],
       "risk_flags": [],
-      "fatal_reasons": []
-    },
-    {
-      "name": "Casual",
-      "name_zh": "休闲类",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Skirts:Casual",
-      "score": 106,
-      "metrics": {
-        "monthly_sales": 261998.0,
-        "avg_sales": 2619.0,
-        "avg_revenue": 73207.0,
-        "price": 29.47,
-        "reviews": 2625.0,
-        "rating": 4.3,
-        "bsr": 70365.0,
-        "avg_sellers": 1.2,
-        "product_conc": 35.699999999999996,
-        "brand_conc": 45.6,
-        "seller_conc": 45.300000000000004,
-        "total_products": 5636.0,
-        "weight": 0.6613,
-        "volume": 276.324,
-        "profit": 59.0,
-        "head_avg_sales": 9355.0,
-        "head_monopoly": 3.0,
-        "head_avg_revenue": 230099.0,
-        "new_count": 43.0,
-        "new_ratio": 43.0,
-        "new_avg_sales": 2623.0,
-        "new_avg_revenue": 68565.0,
-        "new_price": 27.31,
-        "new_reviews": 96.0,
-        "new_rating": 4.3,
-        "return_rate": null,
-        "search_purchase_ratio": null
-      },
-      "reasons": [
-        "毛利率 59.0% 充足",
-        "新品占比 43.0% 很高",
-        "月总销量 261,998，需求足够",
-        "集中度未显示明显红海垄断",
-        "商品总数 5,636，竞争宽度可接受",
-        "新品平均评分数 96，新品可进入"
-      ],
-      "cautions": [
-        "平均评分数 2,625 高",
-        "退货率 N/A",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
       "fatal_reasons": []
     },
     {
@@ -1596,59 +1236,6 @@
       "fatal_reasons": []
     },
     {
-      "name": "Club & Night Out",
-      "name_zh": "俱乐部装",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Dresses:Club & Night Out",
-      "score": 104,
-      "metrics": {
-        "monthly_sales": 506906.0,
-        "avg_sales": 5069.0,
-        "avg_revenue": 172483.0,
-        "price": 35.01,
-        "reviews": 2021.0,
-        "rating": 4.3,
-        "bsr": 12960.0,
-        "avg_sellers": 1.2,
-        "product_conc": 26.400000000000002,
-        "brand_conc": 47.699999999999996,
-        "seller_conc": 47.0,
-        "total_products": 22815.0,
-        "weight": 0.5786,
-        "volume": 100.4878,
-        "profit": 62.0,
-        "head_avg_sales": 13410.0,
-        "head_monopoly": 2.0,
-        "head_avg_revenue": 413143.0,
-        "new_count": 22.0,
-        "new_ratio": 22.0,
-        "new_avg_sales": 4059.0,
-        "new_avg_revenue": 151462.0,
-        "new_price": 37.67,
-        "new_reviews": 208.0,
-        "new_rating": 4.2,
-        "return_rate": null,
-        "search_purchase_ratio": null
-      },
-      "reasons": [
-        "毛利率 62.0% 很充足",
-        "新品占比 22.0% 尚可",
-        "月总销量 506,906，需求明确",
-        "集中度未显示明显红海垄断",
-        "新品平均评分数 208，新品可进入",
-        "均价 $35.01 有测算空间"
-      ],
-      "cautions": [
-        "商品总数 22,815 偏多",
-        "平均评分数 2,021 中等偏高",
-        "退货率 N/A",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
-      "fatal_reasons": []
-    },
-    {
       "name": "Step Lights",
       "name_zh": "台阶灯",
       "path": "Tools & Home Improvement:Lighting & Ceiling Fans:Outdoor Lighting:Landscape Lighting:Step Lights",
@@ -1700,58 +1287,6 @@
       "fatal_reasons": []
     },
     {
-      "name": "Fashion Sweatshirts",
-      "name_zh": "时尚运动衫",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Fashion Hoodies & Sweatshirts:Fashion Sweatshirts",
-      "score": 104,
-      "metrics": {
-        "monthly_sales": 140834.0,
-        "avg_sales": 1408.0,
-        "avg_revenue": 36289.0,
-        "price": 26.43,
-        "reviews": 1372.0,
-        "rating": 4.3,
-        "bsr": 58970.0,
-        "avg_sellers": 1.1,
-        "product_conc": 37.8,
-        "brand_conc": 56.699999999999996,
-        "seller_conc": 54.400000000000006,
-        "total_products": 10933.0,
-        "weight": 0.7382,
-        "volume": 175.8936,
-        "profit": 55.00000000000001,
-        "head_avg_sales": 5326.0,
-        "head_monopoly": 3.0,
-        "head_avg_revenue": 127285.0,
-        "new_count": 43.0,
-        "new_ratio": 43.0,
-        "new_avg_sales": 1072.0,
-        "new_avg_revenue": 22180.0,
-        "new_price": 24.49,
-        "new_reviews": 488.0,
-        "new_rating": 4.3,
-        "return_rate": 23.7434,
-        "search_purchase_ratio": 4.14892
-      },
-      "reasons": [
-        "毛利率 55.0% 充足",
-        "新品占比 43.0% 很高",
-        "月总销量 140,834，需求足够",
-        "集中度未显示明显红海垄断",
-        "商品总数 10,933，竞争宽度可接受",
-        "新品平均评分数 488，新品可进入"
-      ],
-      "cautions": [
-        "平均评分数 1,372 中等偏高",
-        "退货率 23.7% 高",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
-      "fatal_reasons": []
-    },
-    {
       "name": "Pool & Deck Repair Products",
       "name_zh": "油漆及密封产品",
       "path": "Patio, Lawn & Garden:Pools, Hot Tubs & Supplies:Parts & Accessories:Pool & Deck Repair Products",
@@ -1797,110 +1332,6 @@
         "商品总数 591 偏多"
       ],
       "risk_flags": [],
-      "fatal_reasons": []
-    },
-    {
-      "name": "Short Sets",
-      "name_zh": "短盘比赛",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Clothing Sets:Short Sets",
-      "score": 103,
-      "metrics": {
-        "monthly_sales": 750305.0,
-        "avg_sales": 7503.0,
-        "avg_revenue": 217020.0,
-        "price": 28.91,
-        "reviews": 592.0,
-        "rating": 4.2,
-        "bsr": 29131.0,
-        "avg_sellers": 1.2,
-        "product_conc": 37.5,
-        "brand_conc": 63.1,
-        "seller_conc": 61.3,
-        "total_products": 5053.0,
-        "weight": 0.6548,
-        "volume": 123.7604,
-        "profit": 59.0,
-        "head_avg_sales": 28130.0,
-        "head_monopoly": 3.0,
-        "head_avg_revenue": 828044.0,
-        "new_count": 60.0,
-        "new_ratio": 60.0,
-        "new_avg_sales": 6387.0,
-        "new_avg_revenue": 166986.0,
-        "new_price": 27.74,
-        "new_reviews": 194.0,
-        "new_rating": 4.1,
-        "return_rate": 18.997401,
-        "search_purchase_ratio": 5.15576
-      },
-      "reasons": [
-        "毛利率 59.0% 充足",
-        "新品占比 60.0% 很高",
-        "月总销量 750,305，需求明确",
-        "集中度未显示明显红海垄断",
-        "商品总数 5,053，竞争宽度可接受",
-        "平均评分数 592，评价壁垒较低"
-      ],
-      "cautions": [
-        "退货率 19.0% 高",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
-      "fatal_reasons": []
-    },
-    {
-      "name": "Casual",
-      "name_zh": "休闲类",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Pants:Casual",
-      "score": 102,
-      "metrics": {
-        "monthly_sales": 1661701.0,
-        "avg_sales": 16617.0,
-        "avg_revenue": 453342.0,
-        "price": 27.39,
-        "reviews": 3492.0,
-        "rating": 4.2,
-        "bsr": 16247.0,
-        "avg_sellers": 1.5,
-        "product_conc": 27.900000000000002,
-        "brand_conc": 53.800000000000004,
-        "seller_conc": 52.400000000000006,
-        "total_products": 18142.0,
-        "weight": 0.7009,
-        "volume": 112.0658,
-        "profit": 57.99999999999999,
-        "head_avg_sales": 46446.0,
-        "head_monopoly": 2.0,
-        "head_avg_revenue": 1180558.0,
-        "new_count": 30.0,
-        "new_ratio": 30.0,
-        "new_avg_sales": 16640.0,
-        "new_avg_revenue": 421061.0,
-        "new_price": 27.25,
-        "new_reviews": 478.0,
-        "new_rating": 4.2,
-        "return_rate": null,
-        "search_purchase_ratio": null
-      },
-      "reasons": [
-        "毛利率 58.0% 充足",
-        "新品占比 30.0% 高",
-        "月总销量 1,661,701，需求大",
-        "集中度未显示明显红海垄断",
-        "新品平均评分数 478，新品可进入",
-        "均价 $27.39 有测算空间"
-      ],
-      "cautions": [
-        "商品总数 18,142 偏多",
-        "平均评分数 3,492 高",
-        "退货率 N/A",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
       "fatal_reasons": []
     },
     {
@@ -2103,214 +1534,6 @@
         "平均评分数 1,479 中等偏高"
       ],
       "risk_flags": [],
-      "fatal_reasons": []
-    },
-    {
-      "name": "Skirts",
-      "name_zh": "半身裙",
-      "path": "Clothing, Shoes & Jewelry:Novelty & More:Clothing:Novelty:Women:Skirts",
-      "score": 100,
-      "metrics": {
-        "monthly_sales": 386704.0,
-        "avg_sales": 3867.0,
-        "avg_revenue": 103412.0,
-        "price": 26.77,
-        "reviews": 1331.0,
-        "rating": 4.3,
-        "bsr": 14975.0,
-        "avg_sellers": 1.2,
-        "product_conc": 31.2,
-        "brand_conc": 38.1,
-        "seller_conc": 38.0,
-        "total_products": 8873.0,
-        "weight": 0.5139,
-        "volume": 110.3187,
-        "profit": 60.0,
-        "head_avg_sales": 12071.0,
-        "head_monopoly": 3.0,
-        "head_avg_revenue": 346314.0,
-        "new_count": 24.0,
-        "new_ratio": 24.0,
-        "new_avg_sales": 3281.0,
-        "new_avg_revenue": 86802.0,
-        "new_price": 26.25,
-        "new_reviews": 148.0,
-        "new_rating": 4.3,
-        "return_rate": 26.5964,
-        "search_purchase_ratio": 3.59676
-      },
-      "reasons": [
-        "毛利率 60.0% 很充足",
-        "新品占比 24.0% 尚可",
-        "月总销量 386,704，需求明确",
-        "集中度未显示明显红海垄断",
-        "商品总数 8,873，竞争宽度可接受",
-        "新品平均评分数 148，新品可进入"
-      ],
-      "cautions": [
-        "平均评分数 1,331 中等偏高",
-        "退货率 26.6% 高",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
-      "fatal_reasons": []
-    },
-    {
-      "name": "Shoulder Bags",
-      "name_zh": "单肩包、斜挎包",
-      "path": "Clothing, Shoes & Jewelry:Women:Handbags & Wallets:Shoulder Bags",
-      "score": 100,
-      "metrics": {
-        "monthly_sales": 179037.0,
-        "avg_sales": 1790.0,
-        "avg_revenue": 56923.0,
-        "price": 41.83,
-        "reviews": 2041.0,
-        "rating": 4.5,
-        "bsr": 41319.0,
-        "avg_sellers": 1.2,
-        "product_conc": 34.8,
-        "brand_conc": 48.6,
-        "seller_conc": 47.0,
-        "total_products": 12093.0,
-        "weight": 0.8315,
-        "volume": 362.5469,
-        "profit": 55.00000000000001,
-        "head_avg_sales": 6226.0,
-        "head_monopoly": 3.0,
-        "head_avg_revenue": 143225.0,
-        "new_count": 33.0,
-        "new_ratio": 33.0,
-        "new_avg_sales": 1401.0,
-        "new_avg_revenue": 57444.0,
-        "new_price": 56.83,
-        "new_reviews": 114.0,
-        "new_rating": 4.5,
-        "return_rate": 13.989799999999999,
-        "search_purchase_ratio": 2.22998
-      },
-      "reasons": [
-        "毛利率 55.0% 充足",
-        "新品占比 33.0% 高",
-        "月总销量 179,037，需求足够",
-        "集中度未显示明显红海垄断",
-        "商品总数 12,093，竞争宽度可接受",
-        "新品平均评分数 114，新品可进入"
-      ],
-      "cautions": [
-        "平均评分数 2,041 中等偏高",
-        "退货率 14.0% 高",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
-      "fatal_reasons": []
-    },
-    {
-      "name": "Dresses",
-      "name_zh": "Dresses",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Active:Dresses",
-      "score": 98,
-      "metrics": {
-        "monthly_sales": 539765.0,
-        "avg_sales": 5397.0,
-        "avg_revenue": 157329.0,
-        "price": 31.71,
-        "reviews": 767.0,
-        "rating": 4.2,
-        "bsr": 76888.0,
-        "avg_sellers": 1.4,
-        "product_conc": 49.4,
-        "brand_conc": 64.8,
-        "seller_conc": 64.4,
-        "total_products": 2621.0,
-        "weight": 0.6316,
-        "volume": 136.1067,
-        "profit": 61.0,
-        "head_avg_sales": 26669.0,
-        "head_monopoly": 4.0,
-        "head_avg_revenue": 701668.0,
-        "new_count": 33.0,
-        "new_ratio": 33.0,
-        "new_avg_sales": 3261.0,
-        "new_avg_revenue": 95320.0,
-        "new_price": 31.39,
-        "new_reviews": 212.0,
-        "new_rating": 4.1,
-        "return_rate": 23.155099,
-        "search_purchase_ratio": 5.0477
-      },
-      "reasons": [
-        "毛利率 61.0% 很充足",
-        "新品占比 33.0% 高",
-        "月总销量 539,765，需求明确",
-        "集中度未显示明显红海垄断",
-        "商品总数 2,621，竞争宽度可接受",
-        "平均评分数 767，评价壁垒较低"
-      ],
-      "cautions": [
-        "退货率 23.2% 高",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
-      "fatal_reasons": []
-    },
-    {
-      "name": "Cocktail",
-      "name_zh": "鸡尾酒装",
-      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Dresses:Cocktail",
-      "score": 98,
-      "metrics": {
-        "monthly_sales": 457238.0,
-        "avg_sales": 4572.0,
-        "avg_revenue": 205661.0,
-        "price": 45.53,
-        "reviews": 2524.0,
-        "rating": 4.2,
-        "bsr": 61653.0,
-        "avg_sellers": 1.2,
-        "product_conc": 32.0,
-        "brand_conc": 63.2,
-        "seller_conc": 61.9,
-        "total_products": 15141.0,
-        "weight": 0.6538,
-        "volume": 149.2293,
-        "profit": 66.0,
-        "head_avg_sales": 14646.0,
-        "head_monopoly": 3.0,
-        "head_avg_revenue": 652795.0,
-        "new_count": 44.0,
-        "new_ratio": 44.0,
-        "new_avg_sales": 4624.0,
-        "new_avg_revenue": 232583.0,
-        "new_price": 49.64,
-        "new_reviews": 276.0,
-        "new_rating": 4.2,
-        "return_rate": null,
-        "search_purchase_ratio": null
-      },
-      "reasons": [
-        "毛利率 66.0% 很充足",
-        "新品占比 44.0% 很高",
-        "月总销量 457,238，需求明确",
-        "集中度未显示明显红海垄断",
-        "新品平均评分数 276，新品可进入",
-        "均价 $45.53 有测算空间"
-      ],
-      "cautions": [
-        "商品总数 15,141 偏多",
-        "平均评分数 2,524 高",
-        "退货率 N/A",
-        "风险标签: apparel_fit_return"
-      ],
-      "risk_flags": [
-        "apparel_fit_return"
-      ],
       "fatal_reasons": []
     },
     {
@@ -10434,6 +9657,799 @@
         "重量或体积过大，海运/FBA仓储/配送成本不适合新手",
         "毛利率低于45%"
       ]
+    },
+    {
+      "name": "Casual",
+      "name_zh": "休闲类",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Shorts:Casual",
+      "score": 113,
+      "metrics": {
+        "monthly_sales": 627836.0,
+        "avg_sales": 6278.0,
+        "avg_revenue": 162062.0,
+        "price": 26.77,
+        "reviews": 1126.0,
+        "rating": 4.2,
+        "bsr": 32020.0,
+        "avg_sellers": 1.7,
+        "product_conc": 37.6,
+        "brand_conc": 59.0,
+        "seller_conc": 63.4,
+        "total_products": 7374.0,
+        "weight": 0.5,
+        "volume": 102.637,
+        "profit": 59.0,
+        "head_avg_sales": 23631.0,
+        "head_monopoly": 3.0,
+        "head_avg_revenue": 536261.0,
+        "new_count": 46.0,
+        "new_ratio": 46.0,
+        "new_avg_sales": 5878.0,
+        "new_avg_revenue": 166873.0,
+        "new_price": 27.47,
+        "new_reviews": 147.0,
+        "new_rating": 4.2,
+        "return_rate": null,
+        "search_purchase_ratio": null
+      },
+      "reasons": [
+        "毛利率 59.0% 充足",
+        "新品占比 46.0% 很高",
+        "月总销量 627,836，需求明确",
+        "集中度未显示明显红海垄断",
+        "商品总数 7,374，竞争宽度可接受",
+        "新品平均评分数 147，新品可进入"
+      ],
+      "cautions": [
+        "平均评分数 1,126 中等偏高",
+        "退货率 N/A",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Workout Top & Bottom Sets",
+      "name_zh": "服装套装",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Active:Sets:Workout Top & Bottom Sets",
+      "score": 113,
+      "metrics": {
+        "monthly_sales": 452665.0,
+        "avg_sales": 4526.0,
+        "avg_revenue": 131724.0,
+        "price": 28.57,
+        "reviews": 793.0,
+        "rating": 4.3,
+        "bsr": 30414.0,
+        "avg_sellers": 1.1,
+        "product_conc": 30.8,
+        "brand_conc": 56.699999999999996,
+        "seller_conc": 54.7,
+        "total_products": 3038.0,
+        "weight": 0.5658,
+        "volume": 138.9065,
+        "profit": 56.99999999999999,
+        "head_avg_sales": 13965.0,
+        "head_monopoly": 3.0,
+        "head_avg_revenue": 433774.0,
+        "new_count": 53.0,
+        "new_ratio": 53.0,
+        "new_avg_sales": 3671.0,
+        "new_avg_revenue": 100149.0,
+        "new_price": 27.66,
+        "new_reviews": 167.0,
+        "new_rating": 4.3,
+        "return_rate": 17.9375,
+        "search_purchase_ratio": 4.01962
+      },
+      "reasons": [
+        "毛利率 57.0% 充足",
+        "新品占比 53.0% 很高",
+        "月总销量 452,665，需求明确",
+        "集中度未显示明显红海垄断",
+        "商品总数 3,038，竞争宽度可接受",
+        "平均评分数 793，评价壁垒较低"
+      ],
+      "cautions": [
+        "退货率 17.9% 高",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Skirt Sets",
+      "name_zh": "裙装套装",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Clothing Sets:Skirt Sets",
+      "score": 113,
+      "metrics": {
+        "monthly_sales": 175391.0,
+        "avg_sales": 1753.0,
+        "avg_revenue": 61674.0,
+        "price": 35.71,
+        "reviews": 244.0,
+        "rating": 4.1,
+        "bsr": 53648.0,
+        "avg_sellers": 1.3,
+        "product_conc": 35.699999999999996,
+        "brand_conc": 56.00000000000001,
+        "seller_conc": 55.400000000000006,
+        "total_products": 3810.0,
+        "weight": 0.6453,
+        "volume": 117.295,
+        "profit": 62.0,
+        "head_avg_sales": 6258.0,
+        "head_monopoly": 3.0,
+        "head_avg_revenue": 216072.0,
+        "new_count": 69.0,
+        "new_ratio": 69.0,
+        "new_avg_sales": 1486.0,
+        "new_avg_revenue": 52959.0,
+        "new_price": 35.64,
+        "new_reviews": 49.0,
+        "new_rating": 4.0,
+        "return_rate": 30.4688,
+        "search_purchase_ratio": 3.2316
+      },
+      "reasons": [
+        "毛利率 62.0% 很充足",
+        "新品占比 69.0% 很高",
+        "月总销量 175,391，需求足够",
+        "集中度未显示明显红海垄断",
+        "商品总数 3,810，竞争宽度可接受",
+        "平均评分数 244，评价壁垒较低"
+      ],
+      "cautions": [
+        "退货率 30.5% 高",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Wear to Work",
+      "name_zh": "工装",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Skirts:Wear to Work",
+      "score": 109,
+      "metrics": {
+        "monthly_sales": 115568.0,
+        "avg_sales": 1155.0,
+        "avg_revenue": 28903.0,
+        "price": 27.15,
+        "reviews": 1230.0,
+        "rating": 4.3,
+        "bsr": 116175.0,
+        "avg_sellers": 1.2,
+        "product_conc": 50.3,
+        "brand_conc": 54.1,
+        "seller_conc": 54.50000000000001,
+        "total_products": 2854.0,
+        "weight": 0.599,
+        "volume": 86.2516,
+        "profit": 56.99999999999999,
+        "head_avg_sales": 5810.0,
+        "head_monopoly": 5.0,
+        "head_avg_revenue": 134747.0,
+        "new_count": 56.0,
+        "new_ratio": 56.00000000000001,
+        "new_avg_sales": 939.0,
+        "new_avg_revenue": 24383.0,
+        "new_price": 27.02,
+        "new_reviews": 135.0,
+        "new_rating": 4.3,
+        "return_rate": null,
+        "search_purchase_ratio": null
+      },
+      "reasons": [
+        "毛利率 57.0% 充足",
+        "新品占比 56.0% 很高",
+        "月总销量 115,568，需求足够",
+        "集中度未显示明显红海垄断",
+        "商品总数 2,854，竞争宽度可接受",
+        "新品平均评分数 135，新品可进入"
+      ],
+      "cautions": [
+        "平均评分数 1,230 中等偏高",
+        "退货率 N/A",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Knee-High",
+      "name_zh": "及膝靴",
+      "path": "Clothing, Shoes & Jewelry:Women:Shoes:Boots:Knee-High",
+      "score": 109,
+      "metrics": {
+        "monthly_sales": 107804.0,
+        "avg_sales": 1078.0,
+        "avg_revenue": 55630.0,
+        "price": 52.32,
+        "reviews": 813.0,
+        "rating": 4.4,
+        "bsr": 96786.0,
+        "avg_sellers": 1.5,
+        "product_conc": 31.5,
+        "brand_conc": 55.800000000000004,
+        "seller_conc": 56.2,
+        "total_products": 4837.0,
+        "weight": 2.8021,
+        "volume": 578.5087,
+        "profit": 64.0,
+        "head_avg_sales": 3394.0,
+        "head_monopoly": 3.0,
+        "head_avg_revenue": 174943.0,
+        "new_count": 35.0,
+        "new_ratio": 35.0,
+        "new_avg_sales": 742.0,
+        "new_avg_revenue": 36117.0,
+        "new_price": 51.31,
+        "new_reviews": 198.0,
+        "new_rating": 4.4,
+        "return_rate": 31.8084,
+        "search_purchase_ratio": 2.1788
+      },
+      "reasons": [
+        "毛利率 64.0% 很充足",
+        "新品占比 35.0% 高",
+        "月总销量 107,804，需求足够",
+        "集中度未显示明显红海垄断",
+        "商品总数 4,837，竞争宽度可接受",
+        "平均评分数 813，评价壁垒较低"
+      ],
+      "cautions": [
+        "退货率 31.8% 高",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Rompers",
+      "name_zh": "短袖连衫裤",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Jumpsuits, Rompers & Overalls:Rompers",
+      "score": 108,
+      "metrics": {
+        "monthly_sales": 372209.0,
+        "avg_sales": 3722.0,
+        "avg_revenue": 99710.0,
+        "price": 28.48,
+        "reviews": 1519.0,
+        "rating": 4.2,
+        "bsr": 20242.0,
+        "avg_sellers": 1.2,
+        "product_conc": 39.900000000000006,
+        "brand_conc": 59.699999999999996,
+        "seller_conc": 56.10000000000001,
+        "total_products": 2666.0,
+        "weight": 0.4949,
+        "volume": 99.4644,
+        "profit": 60.0,
+        "head_avg_sales": 14834.0,
+        "head_monopoly": 3.0,
+        "head_avg_revenue": 347795.0,
+        "new_count": 32.0,
+        "new_ratio": 32.0,
+        "new_avg_sales": 3027.0,
+        "new_avg_revenue": 75643.0,
+        "new_price": 23.04,
+        "new_reviews": 116.0,
+        "new_rating": 4.3,
+        "return_rate": 24.7381,
+        "search_purchase_ratio": 4.08931
+      },
+      "reasons": [
+        "毛利率 60.0% 很充足",
+        "新品占比 32.0% 高",
+        "月总销量 372,209，需求明确",
+        "集中度未显示明显红海垄断",
+        "商品总数 2,666，竞争宽度可接受",
+        "新品平均评分数 116，新品可进入"
+      ],
+      "cautions": [
+        "平均评分数 1,519 中等偏高",
+        "退货率 24.7% 高",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Casual",
+      "name_zh": "休闲类",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Skirts:Casual",
+      "score": 106,
+      "metrics": {
+        "monthly_sales": 261998.0,
+        "avg_sales": 2619.0,
+        "avg_revenue": 73207.0,
+        "price": 29.47,
+        "reviews": 2625.0,
+        "rating": 4.3,
+        "bsr": 70365.0,
+        "avg_sellers": 1.2,
+        "product_conc": 35.699999999999996,
+        "brand_conc": 45.6,
+        "seller_conc": 45.300000000000004,
+        "total_products": 5636.0,
+        "weight": 0.6613,
+        "volume": 276.324,
+        "profit": 59.0,
+        "head_avg_sales": 9355.0,
+        "head_monopoly": 3.0,
+        "head_avg_revenue": 230099.0,
+        "new_count": 43.0,
+        "new_ratio": 43.0,
+        "new_avg_sales": 2623.0,
+        "new_avg_revenue": 68565.0,
+        "new_price": 27.31,
+        "new_reviews": 96.0,
+        "new_rating": 4.3,
+        "return_rate": null,
+        "search_purchase_ratio": null
+      },
+      "reasons": [
+        "毛利率 59.0% 充足",
+        "新品占比 43.0% 很高",
+        "月总销量 261,998，需求足够",
+        "集中度未显示明显红海垄断",
+        "商品总数 5,636，竞争宽度可接受",
+        "新品平均评分数 96，新品可进入"
+      ],
+      "cautions": [
+        "平均评分数 2,625 高",
+        "退货率 N/A",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Club & Night Out",
+      "name_zh": "俱乐部装",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Dresses:Club & Night Out",
+      "score": 104,
+      "metrics": {
+        "monthly_sales": 506906.0,
+        "avg_sales": 5069.0,
+        "avg_revenue": 172483.0,
+        "price": 35.01,
+        "reviews": 2021.0,
+        "rating": 4.3,
+        "bsr": 12960.0,
+        "avg_sellers": 1.2,
+        "product_conc": 26.400000000000002,
+        "brand_conc": 47.699999999999996,
+        "seller_conc": 47.0,
+        "total_products": 22815.0,
+        "weight": 0.5786,
+        "volume": 100.4878,
+        "profit": 62.0,
+        "head_avg_sales": 13410.0,
+        "head_monopoly": 2.0,
+        "head_avg_revenue": 413143.0,
+        "new_count": 22.0,
+        "new_ratio": 22.0,
+        "new_avg_sales": 4059.0,
+        "new_avg_revenue": 151462.0,
+        "new_price": 37.67,
+        "new_reviews": 208.0,
+        "new_rating": 4.2,
+        "return_rate": null,
+        "search_purchase_ratio": null
+      },
+      "reasons": [
+        "毛利率 62.0% 很充足",
+        "新品占比 22.0% 尚可",
+        "月总销量 506,906，需求明确",
+        "集中度未显示明显红海垄断",
+        "新品平均评分数 208，新品可进入",
+        "均价 $35.01 有测算空间"
+      ],
+      "cautions": [
+        "商品总数 22,815 偏多",
+        "平均评分数 2,021 中等偏高",
+        "退货率 N/A",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Fashion Sweatshirts",
+      "name_zh": "时尚运动衫",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Fashion Hoodies & Sweatshirts:Fashion Sweatshirts",
+      "score": 104,
+      "metrics": {
+        "monthly_sales": 140834.0,
+        "avg_sales": 1408.0,
+        "avg_revenue": 36289.0,
+        "price": 26.43,
+        "reviews": 1372.0,
+        "rating": 4.3,
+        "bsr": 58970.0,
+        "avg_sellers": 1.1,
+        "product_conc": 37.8,
+        "brand_conc": 56.699999999999996,
+        "seller_conc": 54.400000000000006,
+        "total_products": 10933.0,
+        "weight": 0.7382,
+        "volume": 175.8936,
+        "profit": 55.00000000000001,
+        "head_avg_sales": 5326.0,
+        "head_monopoly": 3.0,
+        "head_avg_revenue": 127285.0,
+        "new_count": 43.0,
+        "new_ratio": 43.0,
+        "new_avg_sales": 1072.0,
+        "new_avg_revenue": 22180.0,
+        "new_price": 24.49,
+        "new_reviews": 488.0,
+        "new_rating": 4.3,
+        "return_rate": 23.7434,
+        "search_purchase_ratio": 4.14892
+      },
+      "reasons": [
+        "毛利率 55.0% 充足",
+        "新品占比 43.0% 很高",
+        "月总销量 140,834，需求足够",
+        "集中度未显示明显红海垄断",
+        "商品总数 10,933，竞争宽度可接受",
+        "新品平均评分数 488，新品可进入"
+      ],
+      "cautions": [
+        "平均评分数 1,372 中等偏高",
+        "退货率 23.7% 高",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Short Sets",
+      "name_zh": "短盘比赛",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Clothing Sets:Short Sets",
+      "score": 103,
+      "metrics": {
+        "monthly_sales": 750305.0,
+        "avg_sales": 7503.0,
+        "avg_revenue": 217020.0,
+        "price": 28.91,
+        "reviews": 592.0,
+        "rating": 4.2,
+        "bsr": 29131.0,
+        "avg_sellers": 1.2,
+        "product_conc": 37.5,
+        "brand_conc": 63.1,
+        "seller_conc": 61.3,
+        "total_products": 5053.0,
+        "weight": 0.6548,
+        "volume": 123.7604,
+        "profit": 59.0,
+        "head_avg_sales": 28130.0,
+        "head_monopoly": 3.0,
+        "head_avg_revenue": 828044.0,
+        "new_count": 60.0,
+        "new_ratio": 60.0,
+        "new_avg_sales": 6387.0,
+        "new_avg_revenue": 166986.0,
+        "new_price": 27.74,
+        "new_reviews": 194.0,
+        "new_rating": 4.1,
+        "return_rate": 18.997401,
+        "search_purchase_ratio": 5.15576
+      },
+      "reasons": [
+        "毛利率 59.0% 充足",
+        "新品占比 60.0% 很高",
+        "月总销量 750,305，需求明确",
+        "集中度未显示明显红海垄断",
+        "商品总数 5,053，竞争宽度可接受",
+        "平均评分数 592，评价壁垒较低"
+      ],
+      "cautions": [
+        "退货率 19.0% 高",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Casual",
+      "name_zh": "休闲类",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Pants:Casual",
+      "score": 102,
+      "metrics": {
+        "monthly_sales": 1661701.0,
+        "avg_sales": 16617.0,
+        "avg_revenue": 453342.0,
+        "price": 27.39,
+        "reviews": 3492.0,
+        "rating": 4.2,
+        "bsr": 16247.0,
+        "avg_sellers": 1.5,
+        "product_conc": 27.900000000000002,
+        "brand_conc": 53.800000000000004,
+        "seller_conc": 52.400000000000006,
+        "total_products": 18142.0,
+        "weight": 0.7009,
+        "volume": 112.0658,
+        "profit": 57.99999999999999,
+        "head_avg_sales": 46446.0,
+        "head_monopoly": 2.0,
+        "head_avg_revenue": 1180558.0,
+        "new_count": 30.0,
+        "new_ratio": 30.0,
+        "new_avg_sales": 16640.0,
+        "new_avg_revenue": 421061.0,
+        "new_price": 27.25,
+        "new_reviews": 478.0,
+        "new_rating": 4.2,
+        "return_rate": null,
+        "search_purchase_ratio": null
+      },
+      "reasons": [
+        "毛利率 58.0% 充足",
+        "新品占比 30.0% 高",
+        "月总销量 1,661,701，需求大",
+        "集中度未显示明显红海垄断",
+        "新品平均评分数 478，新品可进入",
+        "均价 $27.39 有测算空间"
+      ],
+      "cautions": [
+        "商品总数 18,142 偏多",
+        "平均评分数 3,492 高",
+        "退货率 N/A",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Skirts",
+      "name_zh": "半身裙",
+      "path": "Clothing, Shoes & Jewelry:Novelty & More:Clothing:Novelty:Women:Skirts",
+      "score": 100,
+      "metrics": {
+        "monthly_sales": 386704.0,
+        "avg_sales": 3867.0,
+        "avg_revenue": 103412.0,
+        "price": 26.77,
+        "reviews": 1331.0,
+        "rating": 4.3,
+        "bsr": 14975.0,
+        "avg_sellers": 1.2,
+        "product_conc": 31.2,
+        "brand_conc": 38.1,
+        "seller_conc": 38.0,
+        "total_products": 8873.0,
+        "weight": 0.5139,
+        "volume": 110.3187,
+        "profit": 60.0,
+        "head_avg_sales": 12071.0,
+        "head_monopoly": 3.0,
+        "head_avg_revenue": 346314.0,
+        "new_count": 24.0,
+        "new_ratio": 24.0,
+        "new_avg_sales": 3281.0,
+        "new_avg_revenue": 86802.0,
+        "new_price": 26.25,
+        "new_reviews": 148.0,
+        "new_rating": 4.3,
+        "return_rate": 26.5964,
+        "search_purchase_ratio": 3.59676
+      },
+      "reasons": [
+        "毛利率 60.0% 很充足",
+        "新品占比 24.0% 尚可",
+        "月总销量 386,704，需求明确",
+        "集中度未显示明显红海垄断",
+        "商品总数 8,873，竞争宽度可接受",
+        "新品平均评分数 148，新品可进入"
+      ],
+      "cautions": [
+        "平均评分数 1,331 中等偏高",
+        "退货率 26.6% 高",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Shoulder Bags",
+      "name_zh": "单肩包、斜挎包",
+      "path": "Clothing, Shoes & Jewelry:Women:Handbags & Wallets:Shoulder Bags",
+      "score": 100,
+      "metrics": {
+        "monthly_sales": 179037.0,
+        "avg_sales": 1790.0,
+        "avg_revenue": 56923.0,
+        "price": 41.83,
+        "reviews": 2041.0,
+        "rating": 4.5,
+        "bsr": 41319.0,
+        "avg_sellers": 1.2,
+        "product_conc": 34.8,
+        "brand_conc": 48.6,
+        "seller_conc": 47.0,
+        "total_products": 12093.0,
+        "weight": 0.8315,
+        "volume": 362.5469,
+        "profit": 55.00000000000001,
+        "head_avg_sales": 6226.0,
+        "head_monopoly": 3.0,
+        "head_avg_revenue": 143225.0,
+        "new_count": 33.0,
+        "new_ratio": 33.0,
+        "new_avg_sales": 1401.0,
+        "new_avg_revenue": 57444.0,
+        "new_price": 56.83,
+        "new_reviews": 114.0,
+        "new_rating": 4.5,
+        "return_rate": 13.989799999999999,
+        "search_purchase_ratio": 2.22998
+      },
+      "reasons": [
+        "毛利率 55.0% 充足",
+        "新品占比 33.0% 高",
+        "月总销量 179,037，需求足够",
+        "集中度未显示明显红海垄断",
+        "商品总数 12,093，竞争宽度可接受",
+        "新品平均评分数 114，新品可进入"
+      ],
+      "cautions": [
+        "平均评分数 2,041 中等偏高",
+        "退货率 14.0% 高",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Dresses",
+      "name_zh": "Dresses",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Active:Dresses",
+      "score": 98,
+      "metrics": {
+        "monthly_sales": 539765.0,
+        "avg_sales": 5397.0,
+        "avg_revenue": 157329.0,
+        "price": 31.71,
+        "reviews": 767.0,
+        "rating": 4.2,
+        "bsr": 76888.0,
+        "avg_sellers": 1.4,
+        "product_conc": 49.4,
+        "brand_conc": 64.8,
+        "seller_conc": 64.4,
+        "total_products": 2621.0,
+        "weight": 0.6316,
+        "volume": 136.1067,
+        "profit": 61.0,
+        "head_avg_sales": 26669.0,
+        "head_monopoly": 4.0,
+        "head_avg_revenue": 701668.0,
+        "new_count": 33.0,
+        "new_ratio": 33.0,
+        "new_avg_sales": 3261.0,
+        "new_avg_revenue": 95320.0,
+        "new_price": 31.39,
+        "new_reviews": 212.0,
+        "new_rating": 4.1,
+        "return_rate": 23.155099,
+        "search_purchase_ratio": 5.0477
+      },
+      "reasons": [
+        "毛利率 61.0% 很充足",
+        "新品占比 33.0% 高",
+        "月总销量 539,765，需求明确",
+        "集中度未显示明显红海垄断",
+        "商品总数 2,621，竞争宽度可接受",
+        "平均评分数 767，评价壁垒较低"
+      ],
+      "cautions": [
+        "退货率 23.2% 高",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
+    },
+    {
+      "name": "Cocktail",
+      "name_zh": "鸡尾酒装",
+      "path": "Clothing, Shoes & Jewelry:Women:Clothing:Dresses:Cocktail",
+      "score": 98,
+      "metrics": {
+        "monthly_sales": 457238.0,
+        "avg_sales": 4572.0,
+        "avg_revenue": 205661.0,
+        "price": 45.53,
+        "reviews": 2524.0,
+        "rating": 4.2,
+        "bsr": 61653.0,
+        "avg_sellers": 1.2,
+        "product_conc": 32.0,
+        "brand_conc": 63.2,
+        "seller_conc": 61.9,
+        "total_products": 15141.0,
+        "weight": 0.6538,
+        "volume": 149.2293,
+        "profit": 66.0,
+        "head_avg_sales": 14646.0,
+        "head_monopoly": 3.0,
+        "head_avg_revenue": 652795.0,
+        "new_count": 44.0,
+        "new_ratio": 44.0,
+        "new_avg_sales": 4624.0,
+        "new_avg_revenue": 232583.0,
+        "new_price": 49.64,
+        "new_reviews": 276.0,
+        "new_rating": 4.2,
+        "return_rate": null,
+        "search_purchase_ratio": null
+      },
+      "reasons": [
+        "毛利率 66.0% 很充足",
+        "新品占比 44.0% 很高",
+        "月总销量 457,238，需求明确",
+        "集中度未显示明显红海垄断",
+        "新品平均评分数 276，新品可进入",
+        "均价 $45.53 有测算空间"
+      ],
+      "cautions": [
+        "商品总数 15,141 偏多",
+        "平均评分数 2,524 高",
+        "退货率 N/A",
+        "风险标签: apparel_fit_return"
+      ],
+      "risk_flags": [
+        "apparel_fit_return"
+      ],
+      "fatal_reasons": [],
+      "removed_reason": "apparel/shoes/hats removed before rescan"
     }
   ],
   "all_analyzed": [
@@ -20845,5 +20861,9 @@
         "重量或体积过大，海运/FBA仓储/配送成本不适合新手"
       ]
     }
-  ]
+  ],
+  "rebuild_notes": {
+    "removed_apparel_categories": 0,
+    "remaining_target_categories": 35
+  }
 }
