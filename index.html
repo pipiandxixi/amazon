@@ -2,10 +2,2802 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=results/html/report.html">
-<title>Amazon 选品报告</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon 产品候选清单</title>
+<style>
+:root {
+  --bg: #f6f7f9;
+  --panel: #ffffff;
+  --text: #18202a;
+  --muted: #667085;
+  --line: #d9dee7;
+  --accent: #0f766e;
+  --accent-2: #b45309;
+  --good: #166534;
+  --warn: #9a3412;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+a { color: inherit; }
+.header { background: #ffffff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
+.header-inner { max-width: 1440px; margin: 0 auto; padding: 18px 28px 14px; }
+.title-row { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
+h1 { margin: 0; font-size: 24px; line-height: 1.2; letter-spacing: 0; }
+.subtitle { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+.summary { display: grid; grid-template-columns: repeat(4, minmax(120px, 1fr)); gap: 10px; min-width: 520px; }
+.summary div { border: 1px solid var(--line); background: #fbfcfe; padding: 10px 12px; border-radius: 6px; }
+.summary b { display: block; font-size: 20px; }
+.summary small { color: var(--muted); font-size: 12px; }
+.nav { display: flex; gap: 8px; overflow-x: auto; padding-top: 14px; }
+.nav a { flex: 0 0 auto; text-decoration: none; border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; font-size: 12px; color: #344054; background: #fff; }
+.nav span { color: var(--accent); font-weight: 700; }
+main { max-width: 1440px; margin: 0 auto; padding: 24px 28px 48px; }
+.category-section { margin-bottom: 30px; }
+.section-head { display: flex; justify-content: space-between; gap: 16px; align-items: flex-end; padding: 0 0 10px; border-bottom: 1px solid var(--line); }
+h2 { margin: 0; font-size: 20px; letter-spacing: 0; }
+.section-head p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+.back-top { color: var(--muted); text-decoration: none; font-size: 12px; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); gap: 12px; padding-top: 14px; }
+.product-card { display: grid; grid-template-columns: 132px 1fr; gap: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-height: 190px; }
+.thumb { display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 6px; background: #f9fafb; aspect-ratio: 1 / 1; overflow: hidden; }
+.thumb img { width: 100%; height: 100%; object-fit: contain; }
+.no-img { color: var(--muted); font-size: 12px; }
+.product-topline { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin-bottom: 5px; }
+.asin { color: var(--accent); font-weight: 700; text-decoration: none; font-size: 13px; }
+.score { color: var(--accent-2); background: #fff7ed; border: 1px solid #fed7aa; border-radius: 6px; padding: 3px 7px; font-size: 12px; font-weight: 700; }
+h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
+.brand { color: var(--muted); font-size: 12px; margin: 4px 0 8px; }
+.metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.metrics span { background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 6px; padding: 6px 7px; min-width: 0; }
+.metrics b { display: block; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.metrics small { color: var(--muted); font-size: 11px; }
+.submetrics { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; color: #475467; font-size: 12px; }
+.submetrics span { border: 1px solid #e5e7eb; border-radius: 6px; padding: 3px 6px; background: #fff; }
+.reasons { margin: 9px 0 0; padding-left: 18px; color: var(--good); font-size: 12px; line-height: 1.45; }
+.cautions { margin-top: 8px; color: var(--warn); font-size: 12px; }
+@media (max-width: 900px) {
+  .title-row { flex-direction: column; }
+  .summary { min-width: 0; width: 100%; grid-template-columns: repeat(2, 1fr); }
+  .product-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .header-inner, main { padding-left: 14px; padding-right: 14px; }
+  .product-card { grid-template-columns: 1fr; }
+  .thumb { max-width: 180px; }
+  .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+</style>
 </head>
 <body>
-<p><a href="results/html/report.html">跳转到选品报告 →</a></p>
+<header class="header" id="top">
+  <div class="header-inner">
+    <div class="title-row">
+      <div>
+        <h1>Amazon 产品候选清单</h1>
+        <p class="subtitle">按 Leaf Category 分组展示；暂不包含 keyword 内容。数据来自 products/top_product_candidates.json。</p>
+      </div>
+      <div class="summary">
+        <div><b>80</b><small>优先候选产品</small></div>
+        <div><b>272</b><small>可评分商品</small></div>
+        <div><b>300</b><small>Combined 抓取商品</small></div>
+        <div><b>23</b><small>Leaf Categories</small></div>
+      </div>
+    </div>
+    <nav class="nav"><a href="#cat-1">Pressure Washer Nozzles <span>16</span></a><a href="#cat-2">Women&#x27;s Casual Pants &amp; Capris <span>12</span></a><a href="#cat-3">Pool Lighting Products <span>8</span></a><a href="#cat-4">Pressure Washers <span>5</span></a><a href="#cat-5">Women&#x27;s Short Sets <span>5</span></a><a href="#cat-6">Pressure Washer Lances &amp; Wands <span>4</span></a><a href="#cat-7">Domino &amp; Tile Games <span>3</span></a><a href="#cat-8">Golf Swing Trainers <span>3</span></a><a href="#cat-9">Grill Brushes <span>3</span></a><a href="#cat-10">Women&#x27;s Fashion Overalls <span>3</span></a><a href="#cat-11">3D Printer Accessories <span>2</span></a><a href="#cat-12">Beach Towels <span>2</span></a><a href="#cat-13">Wind Chimes <span>2</span></a><a href="#cat-14">Women&#x27;s Cocktail Dresses <span>2</span></a><a href="#cat-15">Women&#x27;s Novelty Skirts <span>2</span></a><a href="#cat-16">Automatic Drip Irrigation Kits <span>1</span></a><a href="#cat-17">Outdoor Lanterns <span>1</span></a><a href="#cat-18">Squirt Guns <span>1</span></a><a href="#cat-19">Women&#x27;s Casual Shorts <span>1</span></a><a href="#cat-20">Women&#x27;s Club &amp; Night Out Dresses <span>1</span></a><a href="#cat-21">Women&#x27;s Formal Dresses <span>1</span></a><a href="#cat-22">Women&#x27;s Rompers <span>1</span></a><a href="#cat-23">Women&#x27;s Skirt Sets <span>1</span></a></nav>
+  </div>
+</header>
+<main>
+
+    <section class="category-section" id="cat-1">
+      <div class="section-head">
+        <div>
+          <h2>Pressure Washer Nozzles</h2>
+          <p>16 products · avg score 99.4 · combined monthly sales 8,413</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GXYLKHQN" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/31JdxBOW1mL._AC_US600_.jpg" alt="Aquoxis Pressure Washer,Three Spray Modes, Universal and Easy to Install, Effortless Dirt &amp; Stain Removal (A)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GXYLKHQN" target="_blank" rel="noreferrer">B0GXYLKHQN</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>Aquoxis Pressure Washer,Three Spray Modes, Universal and Easy to Install, Effortless Dirt &amp; Stain Removal (A)</h3>
+            <div class="brand">FUHUBB</div>
+            <div class="metrics">
+              <span><b>671</b><small>月销量</small></span>
+              <span><b>$30,832</b><small>月销售额</small></span>
+              <span><b>$45.95</b><small>价格</small></span>
+              <span><b>50</b><small>Reviews</small></span>
+              <span><b>1.6</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>76%</b><small>毛利</small></span>
+              <span><b>0.33 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #158</span>
+              <span>上架 2026-04-22 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 671</li><li>价格 $45.95</li><li>毛利 76%</li><li>Reviews 50</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0FGPDXTK8" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71WPBejg9ZL._AC_US600_.jpg" alt="Jet Nozzle for Garden Hose 2-in-1 Jet Nozzle High Pressure Hose Nozzle with 2 Different Nozzles and Hose Quick Connectors for Car Pet Garden Cleaning" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0FGPDXTK8" target="_blank" rel="noreferrer">B0FGPDXTK8</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>Jet Nozzle for Garden Hose 2-in-1 Jet Nozzle High Pressure Hose Nozzle with 2 Different Nozzles and Hose Quick Connectors for Car Pet Garden Cleaning</h3>
+            <div class="brand">MIBIITTY</div>
+            <div class="metrics">
+              <span><b>224</b><small>月销量</small></span>
+              <span><b>$7,838</b><small>月销售额</small></span>
+              <span><b>$34.99</b><small>价格</small></span>
+              <span><b>6</b><small>Reviews</small></span>
+              <span><b>2.1</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>73%</b><small>毛利</small></span>
+              <span><b>0.64 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 2</span>
+              <span>小类排名 #441</span>
+              <span>上架 2026-05-04 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 224</li><li>价格 $34.99</li><li>毛利 73%</li><li>Reviews 6</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GS6ZCCMK" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71SF7Ou8EZL._AC_US600_.jpg" alt="Jet Nozzle for Garden Hose 2-in-1 Jet Nozzle High Pressure Hose Nozzle with 2 Different Nozzles and Hose Quick Connectors for Car Pet Garden Cleaning at Home" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GS6ZCCMK" target="_blank" rel="noreferrer">B0GS6ZCCMK</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>Jet Nozzle for Garden Hose 2-in-1 Jet Nozzle High Pressure Hose Nozzle with 2 Different Nozzles and Hose Quick Connectors for Car Pet Garden Cleaning…</h3>
+            <div class="brand">MIBIITTY</div>
+            <div class="metrics">
+              <span><b>212</b><small>月销量</small></span>
+              <span><b>$7,418</b><small>月销售额</small></span>
+              <span><b>$34.99</b><small>价格</small></span>
+              <span><b>27</b><small>Reviews</small></span>
+              <span><b>3.5</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>73%</b><small>毛利</small></span>
+              <span><b>0.66 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #57</span>
+              <span>上架 2026-05-16 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 212</li><li>价格 $34.99</li><li>毛利 73%</li><li>Reviews 27</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GS3VV3LP" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71fw7MDDchL._AC_US600_.jpg" alt="Jet Nozzle for Garden Hose 2-in-1 Jet Nozzle High Pressure Hose Nozzle with 2 Different Nozzles and Hose Quick Connectors for Car Pet Garden Cleaning" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GS3VV3LP" target="_blank" rel="noreferrer">B0GS3VV3LP</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>Jet Nozzle for Garden Hose 2-in-1 Jet Nozzle High Pressure Hose Nozzle with 2 Different Nozzles and Hose Quick Connectors for Car Pet Garden Cleaning</h3>
+            <div class="brand">MIBIITTY</div>
+            <div class="metrics">
+              <span><b>151</b><small>月销量</small></span>
+              <span><b>$4,379</b><small>月销售额</small></span>
+              <span><b>$29.00</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>2.2</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>70%</b><small>毛利</small></span>
+              <span><b>0.71 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #347</span>
+              <span>上架 2026-04-10 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 151</li><li>价格 $29</li><li>毛利 70%</li><li>Reviews 13</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GXYT1QM6" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/31JdxBOW1mL._AC_US600_.jpg" alt="Aquoxis Pressure Washer,Three Spray Modes, Universal and Easy to Install, Effortless Dirt &amp; Stain Removal (A)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GXYT1QM6" target="_blank" rel="noreferrer">B0GXYT1QM6</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Aquoxis Pressure Washer,Three Spray Modes, Universal and Easy to Install, Effortless Dirt &amp; Stain Removal (A)</h3>
+            <div class="brand">FUHUBB</div>
+            <div class="metrics">
+              <span><b>867</b><small>月销量</small></span>
+              <span><b>$39,839</b><small>月销售额</small></span>
+              <span><b>$45.95</b><small>价格</small></span>
+              <span><b>22</b><small>Reviews</small></span>
+              <span><b>1.6</b><small>评分</small></span>
+              <span><b>$4.62</b><small>FBA</small></span>
+              <span><b>75%</b><small>毛利</small></span>
+              <span><b>0.33 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #23</span>
+              <span>上架 2026-04-22 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 867</li><li>价格 $45.95</li><li>毛利 75%</li><li>Reviews 22</li></ul>
+            <div class="cautions">FBA $4.62</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GXZ2LCCS" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/31D+YgEODqL._AC_US600_.jpg" alt="Aquoxis Pressure Washer,Three Spray Modes, Universal and Easy to Install, Effortless Dirt &amp; Stain Removal (C)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GXZ2LCCS" target="_blank" rel="noreferrer">B0GXZ2LCCS</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Aquoxis Pressure Washer,Three Spray Modes, Universal and Easy to Install, Effortless Dirt &amp; Stain Removal (C)</h3>
+            <div class="brand">FUHUBB</div>
+            <div class="metrics">
+              <span><b>475</b><small>月销量</small></span>
+              <span><b>$21,826</b><small>月销售额</small></span>
+              <span><b>$45.95</b><small>价格</small></span>
+              <span><b>42</b><small>Reviews</small></span>
+              <span><b>1.6</b><small>评分</small></span>
+              <span><b>$4.62</b><small>FBA</small></span>
+              <span><b>75%</b><small>毛利</small></span>
+              <span><b>0.33 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #170</span>
+              <span>上架 2026-04-22 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 475</li><li>价格 $45.95</li><li>毛利 75%</li><li>Reviews 42</li></ul>
+            <div class="cautions">FBA $4.62</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GT8SFTCG" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61qOzs1J7aL._AC_US600_.jpg" alt="New Pressure Washer, Aquoxis Spray Nozzle, Durable Stainless Steel,Easy Installation,Universal Compatibility, 360° Rotating for Three Spray Modes with Foam Pot (with Foam Pot + Metal 3 Connector)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GT8SFTCG" target="_blank" rel="noreferrer">B0GT8SFTCG</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>New Pressure Washer, Aquoxis Spray Nozzle, Durable Stainless Steel,Easy Installation,Universal Compatibility, 360° Rotating for Three Spray Modes wit…</h3>
+            <div class="brand">CREPE</div>
+            <div class="metrics">
+              <span><b>373</b><small>月销量</small></span>
+              <span><b>$13,010</b><small>月销售额</small></span>
+              <span><b>$34.88</b><small>价格</small></span>
+              <span><b>33</b><small>Reviews</small></span>
+              <span><b>1.3</b><small>评分</small></span>
+              <span><b>$4.76</b><small>FBA</small></span>
+              <span><b>71%</b><small>毛利</small></span>
+              <span><b>0.85 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #218</span>
+              <span>上架 2026-03-23 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 373</li><li>价格 $34.88</li><li>毛利 71%</li><li>Reviews 33</li></ul>
+            <div class="cautions">FBA $4.76</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GLFD58GK" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41BSay+PwwL._AC_US600_.jpg" alt="Jet Nozzle High Pressure Hose Nozzle, 7-1 high pressure power washer wand, versatile cleaning tool for gutter, Patio, Car Wash,Gardening, Built to Last for homeowners &amp; garden (7-in-1)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GLFD58GK" target="_blank" rel="noreferrer">B0GLFD58GK</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Jet Nozzle High Pressure Hose Nozzle, 7-1 high pressure power washer wand, versatile cleaning tool for gutter, Patio, Car Wash,Gardening, Built to La…</h3>
+            <div class="brand">Yeesingsen</div>
+            <div class="metrics">
+              <span><b>327</b><small>月销量</small></span>
+              <span><b>$10,788</b><small>月销售额</small></span>
+              <span><b>$32.99</b><small>价格</small></span>
+              <span><b>5</b><small>Reviews</small></span>
+              <span><b>2.0</b><small>评分</small></span>
+              <span><b>$4.76</b><small>FBA</small></span>
+              <span><b>71%</b><small>毛利</small></span>
+              <span><b>0.97 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 2</span>
+              <span>小类排名 #199</span>
+              <span>上架 2026-04-03 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 327</li><li>价格 $32.99</li><li>毛利 71%</li><li>Reviews 5</li></ul>
+            <div class="cautions">FBA $4.76</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GTM55DQZ" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41yD7Um0p2L._AC_US600_.jpg" alt="Triple Turbo Nozzle Pressure Washer, Triple Pressure Washer Nozzle, 360° Rotating 4000 PSI Turbo Nozzle with 1/4&quot; Quick Connector 2.0 Orifice, 304 Stainless Steel for Driveway/Deck Clean(Blue)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GTM55DQZ" target="_blank" rel="noreferrer">B0GTM55DQZ</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Triple Turbo Nozzle Pressure Washer, Triple Pressure Washer Nozzle, 360° Rotating 4000 PSI Turbo Nozzle with 1/4&quot; Quick Connector 2.0 Orifice, 304 St…</h3>
+            <div class="brand">KPAPD</div>
+            <div class="metrics">
+              <span><b>200</b><small>月销量</small></span>
+              <span><b>$7,198</b><small>月销售额</small></span>
+              <span><b>$35.99</b><small>价格</small></span>
+              <span><b>23</b><small>Reviews</small></span>
+              <span><b>2.8</b><small>评分</small></span>
+              <span><b>$5.61</b><small>FBA</small></span>
+              <span><b>69%</b><small>毛利</small></span>
+              <span><b>1.43 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 5</span>
+              <span>卖家 2</span>
+              <span>小类排名 #212</span>
+              <span>上架 2026-04-22 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 200</li><li>价格 $35.99</li><li>毛利 69%</li><li>Reviews 23</li></ul>
+            <div class="cautions">FBA $5.61</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GTLX7P5Z" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41yD7Um0p2L._AC_US600_.jpg" alt="Triple Turbo Nozzle Pressure Washer, Triple Pressure Washer Nozzle, 360° Rotating 4000 PSI Turbo Nozzle with 1/4&quot; Quick Connector 2.0 Orifice, 304 Stainless Steel for Driveway/Deck Clean(Blue)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GTLX7P5Z" target="_blank" rel="noreferrer">B0GTLX7P5Z</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Triple Turbo Nozzle Pressure Washer, Triple Pressure Washer Nozzle, 360° Rotating 4000 PSI Turbo Nozzle with 1/4&quot; Quick Connector 2.0 Orifice, 304 St…</h3>
+            <div class="brand">KPAPD</div>
+            <div class="metrics">
+              <span><b>200</b><small>月销量</small></span>
+              <span><b>$7,198</b><small>月销售额</small></span>
+              <span><b>$35.99</b><small>价格</small></span>
+              <span><b>23</b><small>Reviews</small></span>
+              <span><b>2.8</b><small>评分</small></span>
+              <span><b>$5.61</b><small>FBA</small></span>
+              <span><b>69%</b><small>毛利</small></span>
+              <span><b>1.43 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 5</span>
+              <span>卖家 1</span>
+              <span>小类排名 #212</span>
+              <span>上架 2026-03-31 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 200</li><li>价格 $35.99</li><li>毛利 69%</li><li>Reviews 23</li></ul>
+            <div class="cautions">FBA $5.61</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0G2RDVKPB" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41WvO+C08eL._AC_US600_.jpg" alt="Triple Turbo Nozzle Pressure Washer, Triple Pressure Washer Nozzle, 360° Rotating 4000 PSI Turbo Nozzle with 1/4&quot; Quick Connector 2.0 Orifice, 304 Stainless Steel for Driveway/Deck Clean(Black)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0G2RDVKPB" target="_blank" rel="noreferrer">B0G2RDVKPB</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Triple Turbo Nozzle Pressure Washer, Triple Pressure Washer Nozzle, 360° Rotating 4000 PSI Turbo Nozzle with 1/4&quot; Quick Connector 2.0 Orifice, 304 St…</h3>
+            <div class="brand">KPAPD</div>
+            <div class="metrics">
+              <span><b>200</b><small>月销量</small></span>
+              <span><b>$7,198</b><small>月销售额</small></span>
+              <span><b>$35.99</b><small>价格</small></span>
+              <span><b>23</b><small>Reviews</small></span>
+              <span><b>2.8</b><small>评分</small></span>
+              <span><b>$5.61</b><small>FBA</small></span>
+              <span><b>69%</b><small>毛利</small></span>
+              <span><b>1.37 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 5</span>
+              <span>卖家 2</span>
+              <span>小类排名 #212</span>
+              <span>上架 2026-01-22 4个月</span>
+            </div>
+            <ul class="reasons"><li>月销 200</li><li>价格 $35.99</li><li>毛利 69%</li><li>Reviews 23</li></ul>
+            <div class="cautions">FBA $5.61</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0G2QT2T46" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/7150Ro2f9BL._AC_US600_.jpg" alt="Triple Turbo Nozzle Pressure Washer, Triple Pressure Washer Nozzle, 360° Rotating 4000 PSI Turbo Nozzle with 1/4&quot; Quick Connector 2.0 Orifice, 304 Stainless Steel for Driveway/Deck Clean(Blue)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0G2QT2T46" target="_blank" rel="noreferrer">B0G2QT2T46</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Triple Turbo Nozzle Pressure Washer, Triple Pressure Washer Nozzle, 360° Rotating 4000 PSI Turbo Nozzle with 1/4&quot; Quick Connector 2.0 Orifice, 304 St…</h3>
+            <div class="brand">KPAPD</div>
+            <div class="metrics">
+              <span><b>182</b><small>月销量</small></span>
+              <span><b>$6,099</b><small>月销售额</small></span>
+              <span><b>$33.51</b><small>价格</small></span>
+              <span><b>23</b><small>Reviews</small></span>
+              <span><b>2.8</b><small>评分</small></span>
+              <span><b>$5.61</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>1.39 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #212</span>
+              <span>上架 2025-12-22 5个月</span>
+            </div>
+            <ul class="reasons"><li>月销 182</li><li>价格 $33.51</li><li>毛利 68%</li><li>Reviews 23</li></ul>
+            <div class="cautions">FBA $5.61</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GZJM3ZK8" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/31Tf62Azp3L._AC_US600_.jpg" alt="Hose Hawk Pressure Washer,Three Spray Modes, Universal and Easy To Install, Effortless Dirt &amp; Stain Removal (A)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GZJM3ZK8" target="_blank" rel="noreferrer">B0GZJM3ZK8</a>
+              <span class="score">Score 98</span>
+            </div>
+            <h3>Hose Hawk Pressure Washer,Three Spray Modes, Universal and Easy To Install, Effortless Dirt &amp; Stain Removal (A)</h3>
+            <div class="brand">FUHUBB</div>
+            <div class="metrics">
+              <span><b>2,236</b><small>月销量</small></span>
+              <span><b>$111,688</b><small>月销售额</small></span>
+              <span><b>$49.95</b><small>价格</small></span>
+              <span><b>113</b><small>Reviews</small></span>
+              <span><b>1.3</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>76%</b><small>毛利</small></span>
+              <span><b>0.33 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #76</span>
+              <span>上架 2026-05-06 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 2236</li><li>价格 $49.95</li><li>毛利 76%</li><li>Reviews 113</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GYMS3T4H" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61kdjtwyG-L._AC_US600_.jpg" alt="Home High Pressure Hose Nozzle with Booster Spray Gun and Hose, High Pressure Water Gun for Car Washing, Watering Plants and Vegetables, Garden and Auto Cleaning Tool (2 Pack)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GYMS3T4H" target="_blank" rel="noreferrer">B0GYMS3T4H</a>
+              <span class="score">Score 96</span>
+            </div>
+            <h3>Home High Pressure Hose Nozzle with Booster Spray Gun and Hose, High Pressure Water Gun for Car Washing, Watering Plants and Vegetables, Garden and A…</h3>
+            <div class="brand">Generic</div>
+            <div class="metrics">
+              <span><b>317</b><small>月销量</small></span>
+              <span><b>$6,971</b><small>月销售额</small></span>
+              <span><b>$21.99</b><small>价格</small></span>
+              <span><b>6</b><small>Reviews</small></span>
+              <span><b>1.5</b><small>评分</small></span>
+              <span><b>$4.09</b><small>FBA</small></span>
+              <span><b>66%</b><small>毛利</small></span>
+              <span><b>0.2 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #110</span>
+              <span>上架 2026-05-11 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 317</li><li>毛利 66%</li><li>Reviews 6</li><li>评分 1.5，竞品体验有改善空间</li></ul>
+            <div class="cautions">价格 $21.99 边界</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GX7FV129" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61mLQ1QptgL._AC_US600_.jpg" alt="Hydro Jet High Pressure Power Washer Wand for Car Washing, Power Nozzle" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GX7FV129" target="_blank" rel="noreferrer">B0GX7FV129</a>
+              <span class="score">Score 96</span>
+            </div>
+            <h3>Hydro Jet High Pressure Power Washer Wand for Car Washing, Power Nozzle</h3>
+            <div class="brand">DBR Tech</div>
+            <div class="metrics">
+              <span><b>205</b><small>月销量</small></span>
+              <span><b>$5,078</b><small>月销售额</small></span>
+              <span><b>$24.77</b><small>价格</small></span>
+              <span><b>6</b><small>Reviews</small></span>
+              <span><b>1.9</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>67%</b><small>毛利</small></span>
+              <span><b>0.75 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #239</span>
+              <span>上架 2026-05-02 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 205</li><li>毛利 67%</li><li>Reviews 6</li><li>评分 1.9，竞品体验有改善空间</li></ul>
+            <div class="cautions">价格 $24.77 边界</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0H1V5TJXH" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61oOq8819TL._AC_US600_.jpg" alt="Jet Nozzle Power Washer for Garden Hose, 2026 New 4 Mode Pressure Washer Wand with Soap Dispenser and Quick Connectors for Car Washing Patio Driveway Outdoor Cleaning" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0H1V5TJXH" target="_blank" rel="noreferrer">B0H1V5TJXH</a>
+              <span class="score">Score 93</span>
+            </div>
+            <h3>Jet Nozzle Power Washer for Garden Hose, 2026 New 4 Mode Pressure Washer Wand with Soap Dispenser and Quick Connectors for Car Washing Patio Driveway…</h3>
+            <div class="brand">Eosraffa</div>
+            <div class="metrics">
+              <span><b>1,573</b><small>月销量</small></span>
+              <span><b>$36,163</b><small>月销售额</small></span>
+              <span><b>$37.98</b><small>价格</small></span>
+              <span><b>31</b><small>Reviews</small></span>
+              <span><b>1.6</b><small>评分</small></span>
+              <span><b>$4.76</b><small>FBA</small></span>
+              <span><b>64%</b><small>毛利</small></span>
+              <span><b>0.77 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #43</span>
+              <span>上架 2026-05-16 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 1573</li><li>价格 $37.98</li><li>毛利 64%</li><li>Reviews 31</li></ul>
+            <div class="cautions">FBA $4.76</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-2">
+      <div class="section-head">
+        <div>
+          <h2>Women&#x27;s Casual Pants &amp; Capris</h2>
+          <p>12 products · avg score 92.0 · combined monthly sales 6,672</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKRGBQ7X" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81sRUDJ23QL._AC_US600_.jpg" alt="CRAZY GRID 2026 Spring Ladies Palazzo Lounge Pants Stretchy Wide Leg Casual Pants Comfy High Waist Flowy Beach Bottoms DesignRed Small" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKRGBQ7X" target="_blank" rel="noreferrer">B0GKRGBQ7X</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID 2026 Spring Ladies Palazzo Lounge Pants Stretchy Wide Leg Casual Pants Comfy High Waist Flowy Beach Bottoms DesignRed Small</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>632</b><small>月销量</small></span>
+              <span><b>$18,954</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$3.75</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #771</span>
+              <span>上架 2026-05-03 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 632</li><li>价格 $29.99</li><li>毛利 68%</li><li>Reviews 13</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKRD58ZM" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81Ing73lUIL._AC_US600_.jpg" alt="CRAZY GRID Womens Floral Print Wide-Leg Pants Cute Summer Vacation Beach Palazzo Pants High Waist Trousers Business Casual Outfits DesignCyan X-Small" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKRD58ZM" target="_blank" rel="noreferrer">B0GKRD58ZM</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID Womens Floral Print Wide-Leg Pants Cute Summer Vacation Beach Palazzo Pants High Waist Trousers Business Casual Outfits DesignCyan X-Small</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>627</b><small>月销量</small></span>
+              <span><b>$18,804</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$3.82</b><small>FBA</small></span>
+              <span><b>67%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #771</span>
+              <span>上架 2026-05-02 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 627</li><li>价格 $29.99</li><li>毛利 67%</li><li>Reviews 13</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKRCXDB3" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61Wq9pU80sL._AC_US600_.jpg" alt="CRAZY GRID Women&#x27;s Summer Vacay Pants Patterned Wide-Leg Beach Trousers with Tie-Waist Lightweight Casual Travel Bottoms CarvingBlue Medium" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKRCXDB3" target="_blank" rel="noreferrer">B0GKRCXDB3</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID Women&#x27;s Summer Vacay Pants Patterned Wide-Leg Beach Trousers with Tie-Waist Lightweight Casual Travel Bottoms CarvingBlue Medium</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>624</b><small>月销量</small></span>
+              <span><b>$18,714</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$3.75</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #771</span>
+              <span>上架 2026-05-02 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 624</li><li>价格 $29.99</li><li>毛利 68%</li><li>Reviews 13</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKR5DX53" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61gld8xvbmL._AC_US600_.jpg" alt="CRAZY GRID Womens Spring Summer Flowy Pants Loose Fit Beach Pants Drawstring Waist Wide Legs with Pockets" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKR5DX53" target="_blank" rel="noreferrer">B0GKR5DX53</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID Womens Spring Summer Flowy Pants Loose Fit Beach Pants Drawstring Waist Wide Legs with Pockets</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>608</b><small>月销量</small></span>
+              <span><b>$18,234</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$3.82</b><small>FBA</small></span>
+              <span><b>67%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #771</span>
+              <span>上架 2026-05-03 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 608</li><li>价格 $29.99</li><li>毛利 67%</li><li>Reviews 13</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKR77NGN" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81sRUDJ23QL._AC_US600_.jpg" alt="CRAZY GRID Women Floral Pants Casual High Waist Boho Wide Leg Long Palazzo Beach Pants Summer Outfits Trendy Drawstring-Waisted Spring Bottoms DesignRed X-Large" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKR77NGN" target="_blank" rel="noreferrer">B0GKR77NGN</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID Women Floral Pants Casual High Waist Boho Wide Leg Long Palazzo Beach Pants Summer Outfits Trendy Drawstring-Waisted Spring Bottoms Design…</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>584</b><small>月销量</small></span>
+              <span><b>$17,514</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>24</b><small>Reviews</small></span>
+              <span><b>3.7</b><small>评分</small></span>
+              <span><b>$3.75</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #771</span>
+              <span>上架 2026-04-27 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 584</li><li>价格 $29.99</li><li>毛利 68%</li><li>Reviews 24</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKRPM4S5" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81DBRGRpaRL._AC_US600_.jpg" alt="CRAZY GRID Womens Wide Leg Pants Cute Summer Vacation Beach Palazzo Pants High Waist Trousers Fashion Drawstring Waist Bottom with Pockets DesignBrown X-Large" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKRPM4S5" target="_blank" rel="noreferrer">B0GKRPM4S5</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID Womens Wide Leg Pants Cute Summer Vacation Beach Palazzo Pants High Waist Trousers Fashion Drawstring Waist Bottom with Pockets DesignBrow…</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>581</b><small>月销量</small></span>
+              <span><b>$17,424</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$3.82</b><small>FBA</small></span>
+              <span><b>67%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #771</span>
+              <span>上架 2026-05-02 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 581</li><li>价格 $29.99</li><li>毛利 67%</li><li>Reviews 13</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKR8NY4D" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81Ing73lUIL._AC_US600_.jpg" alt="CRAZY GRID Womens Spring Summer Flowy Pants Loose Fit Beach Pants Drawstring Waist Wide Legs with Pockets" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKR8NY4D" target="_blank" rel="noreferrer">B0GKR8NY4D</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID Womens Spring Summer Flowy Pants Loose Fit Beach Pants Drawstring Waist Wide Legs with Pockets</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>569</b><small>月销量</small></span>
+              <span><b>$17,064</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$3.75</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #771</span>
+              <span>上架 2026-04-27 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 569</li><li>价格 $29.99</li><li>毛利 68%</li><li>Reviews 13</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKRCLGR3" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61wLbe3ZieL._AC_US600_.jpg" alt="CRAZY GRID Women&#x27;s Casual High-Waist Wide Leg Pants with Pockets Summer Palazzo Outwear Pants Flowy Lounge Beach Trousers Plain Color Olive Large" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKRCLGR3" target="_blank" rel="noreferrer">B0GKRCLGR3</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID Women&#x27;s Casual High-Waist Wide Leg Pants with Pockets Summer Palazzo Outwear Pants Flowy Lounge Beach Trousers Plain Color Olive Large</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>525</b><small>月销量</small></span>
+              <span><b>$15,745</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$3.75</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #771</span>
+              <span>上架 2026-05-02 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 525</li><li>价格 $29.99</li><li>毛利 68%</li><li>Reviews 13</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKQYMZWS" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71KNNfZUTsL._AC_US600_.jpg" alt="CRAZY GRID 2026 Spring Womens Pants Dressy Wide Leg Casual Palazzo Trousers with Pockets Loose High Waisted Travel Bottoms Floral Print ShapeDBlue X-Large" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKQYMZWS" target="_blank" rel="noreferrer">B0GKQYMZWS</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID 2026 Spring Womens Pants Dressy Wide Leg Casual Palazzo Trousers with Pockets Loose High Waisted Travel Bottoms Floral Print ShapeDBlue X-…</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>509</b><small>月销量</small></span>
+              <span><b>$15,265</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$3.75</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #765</span>
+              <span>上架 2026-05-02 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 509</li><li>价格 $29.99</li><li>毛利 68%</li><li>Reviews 13</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKR7Q5VG" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81DBRGRpaRL._AC_US600_.jpg" alt="CRAZY GRID Womens Wide Leg Linen Pants Casual Beach Vacation Palazzo Pants with Drawstring Waist Summer BottomsTravel Comfy Trousers DesignBrown Medium" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKR7Q5VG" target="_blank" rel="noreferrer">B0GKR7Q5VG</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID Womens Wide Leg Linen Pants Casual Beach Vacation Palazzo Pants with Drawstring Waist Summer BottomsTravel Comfy Trousers DesignBrown Medi…</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>483</b><small>月销量</small></span>
+              <span><b>$14,485</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$3.75</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #771</span>
+              <span>上架 2026-05-02 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 483</li><li>价格 $29.99</li><li>毛利 68%</li><li>Reviews 13</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKR2YNWZ" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81sRUDJ23QL._AC_US600_.jpg" alt="CRAZY GRID Womens Spring Summer Flowy Pants Loose Fit Beach Pants Drawstring Waist Wide Legs with Pockets" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKR2YNWZ" target="_blank" rel="noreferrer">B0GKR2YNWZ</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID Womens Spring Summer Flowy Pants Loose Fit Beach Pants Drawstring Waist Wide Legs with Pockets</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>469</b><small>月销量</small></span>
+              <span><b>$14,065</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>25</b><small>Reviews</small></span>
+              <span><b>3.6</b><small>评分</small></span>
+              <span><b>$3.75</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #771</span>
+              <span>上架 2026-05-03 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 469</li><li>价格 $29.99</li><li>毛利 68%</li><li>Reviews 25</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GKRDMKFP" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61417phCynL._AC_US600_.jpg" alt="CRAZY GRID Beige Pants High Waist Wide Leg Linen Palazzo Trousers 2026 Women&#x27;s Beach Pants with Pockets Spring Summer Lightweight Casual Wear Beige Large" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GKRDMKFP" target="_blank" rel="noreferrer">B0GKRDMKFP</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>CRAZY GRID Beige Pants High Waist Wide Leg Linen Palazzo Trousers 2026 Women&#x27;s Beach Pants with Pockets Spring Summer Lightweight Casual Wear Beige L…</h3>
+            <div class="brand">CRAZY GRID</div>
+            <div class="metrics">
+              <span><b>461</b><small>月销量</small></span>
+              <span><b>$13,825</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$3.75</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.47 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #771</span>
+              <span>上架 2026-05-03 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 461</li><li>价格 $29.99</li><li>毛利 68%</li><li>Reviews 13</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-3">
+      <div class="section-head">
+        <div>
+          <h2>Pool Lighting Products</h2>
+          <p>8 products · avg score 98.8 · combined monthly sales 5,792</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GDD47DPC" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81yJQJiI+8L._AC_US600_.jpg" alt="2 Pack Solar Power Float Pool Lights with Control 3 Strobe Modes Waterproof Color Change LED Disco Party Decorative Ambient Lighting Auto-on for Outdoor Above Ground Pool, Front Yard Ponds, Hot Tub" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GDD47DPC" target="_blank" rel="noreferrer">B0GDD47DPC</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>2 Pack Solar Power Float Pool Lights with Control 3 Strobe Modes Waterproof Color Change LED Disco Party Decorative Ambient Lighting Auto-on for Outd…</h3>
+            <div class="brand">GVSHINE</div>
+            <div class="metrics">
+              <span><b>577</b><small>月销量</small></span>
+              <span><b>$15,573</b><small>月销售额</small></span>
+              <span><b>$26.99</b><small>价格</small></span>
+              <span><b>17</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$4.46</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.75 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 3</span>
+              <span>卖家 1</span>
+              <span>小类排名 #80</span>
+              <span>上架 2026-03-16 3个月</span>
+            </div>
+            <ul class="reasons"><li>月销 577</li><li>价格 $26.99</li><li>毛利 68%</li><li>Reviews 17</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GL854QSS" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/514RYw+66DL._AC_US600_.jpg" alt="Goallim Pool Return Light, 2026 Upgrade Water Powered Pool Jet Light, LED Color Changing Jet Pool Lights for Above Ground/Inground Pools, Hydro-Powered Return Jets Lights(No Battery Req’d) White, 1PC" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GL854QSS" target="_blank" rel="noreferrer">B0GL854QSS</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>Goallim Pool Return Light, 2026 Upgrade Water Powered Pool Jet Light, LED Color Changing Jet Pool Lights for Above Ground/Inground Pools, Hydro-Power…</h3>
+            <div class="brand">Goallim</div>
+            <div class="metrics">
+              <span><b>279</b><small>月销量</small></span>
+              <span><b>$8,088</b><small>月销售额</small></span>
+              <span><b>$28.99</b><small>价格</small></span>
+              <span><b>12</b><small>Reviews</small></span>
+              <span><b>2.6</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>70%</b><small>毛利</small></span>
+              <span><b>0.62 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 5</span>
+              <span>卖家 1</span>
+              <span>小类排名 #170</span>
+              <span>上架 2026-02-07 4个月</span>
+            </div>
+            <ul class="reasons"><li>月销 279</li><li>价格 $28.99</li><li>毛利 70%</li><li>Reviews 12</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GDCQQDR1" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/51Hpy5BVCLL._AC_SR600,600_.jpg" alt="4 Pack Solar Floating RGB Pool Lights with Remote Waterproof for Underwater Vibrant Patterns Lighting, Auto-on Disco Glow in Pool for Party, Works in Outside In-ground Pools, Hot Tubs, Garden Ponds" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GDCQQDR1" target="_blank" rel="noreferrer">B0GDCQQDR1</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>4 Pack Solar Floating RGB Pool Lights with Remote Waterproof for Underwater Vibrant Patterns Lighting, Auto-on Disco Glow in Pool for Party, Works in…</h3>
+            <div class="brand">GVSHINE</div>
+            <div class="metrics">
+              <span><b>577</b><small>月销量</small></span>
+              <span><b>$28,844</b><small>月销售额</small></span>
+              <span><b>$49.99</b><small>价格</small></span>
+              <span><b>17</b><small>Reviews</small></span>
+              <span><b>3.4</b><small>评分</small></span>
+              <span><b>$5.99</b><small>FBA</small></span>
+              <span><b>73%</b><small>毛利</small></span>
+              <span><b>1.48 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 3</span>
+              <span>卖家 1</span>
+              <span>小类排名 #80</span>
+              <span>上架 2026-01-28 4个月</span>
+            </div>
+            <ul class="reasons"><li>月销 577</li><li>价格 $49.99</li><li>毛利 73%</li><li>Reviews 17</li></ul>
+            <div class="cautions">FBA $5.99</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GL7Y45V5" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/515I8J5ygpL._AC_US600_.jpg" alt="Pool Return Light, 2026 Upgrade Water Powered Pool Jet Light, LED Color Changing Jet Pool Lights for Above Ground/Inground Pools, Hydro-Powered Return Jets Lights(No Battery Req’d) Grey, 2 PK" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GL7Y45V5" target="_blank" rel="noreferrer">B0GL7Y45V5</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Pool Return Light, 2026 Upgrade Water Powered Pool Jet Light, LED Color Changing Jet Pool Lights for Above Ground/Inground Pools, Hydro-Powered Retur…</h3>
+            <div class="brand">Goallim</div>
+            <div class="metrics">
+              <span><b>279</b><small>月销量</small></span>
+              <span><b>$11,157</b><small>月销售额</small></span>
+              <span><b>$39.99</b><small>价格</small></span>
+              <span><b>12</b><small>Reviews</small></span>
+              <span><b>2.6</b><small>评分</small></span>
+              <span><b>$5.22</b><small>FBA</small></span>
+              <span><b>75%</b><small>毛利</small></span>
+              <span><b>0.62 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 5</span>
+              <span>卖家 1</span>
+              <span>小类排名 #170</span>
+              <span>上架 2026-04-20 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 279</li><li>价格 $39.99</li><li>毛利 75%</li><li>Reviews 12</li></ul>
+            <div class="cautions">FBA $5.22</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GR4XBQKD" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/51uQ14gZkpL._AC_US600_.jpg" alt="Arrowbash 2 Pack 4th of July Inflatable Swan Floating Pool Lights 19 x 16 Inch Led Patriotic Inflatable Floating Pool Lights Red White and Blue Glow in The Dark Pond Decoration for Memorial Day Party" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GR4XBQKD" target="_blank" rel="noreferrer">B0GR4XBQKD</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Arrowbash 2 Pack 4th of July Inflatable Swan Floating Pool Lights 19 x 16 Inch Led Patriotic Inflatable Floating Pool Lights Red White and Blue Glow …</h3>
+            <div class="brand">Arrowbash</div>
+            <div class="metrics">
+              <span><b>191</b><small>月销量</small></span>
+              <span><b>$4,964</b><small>月销售额</small></span>
+              <span><b>$25.99</b><small>价格</small></span>
+              <span><b>6</b><small>Reviews</small></span>
+              <span><b>2.4</b><small>评分</small></span>
+              <span><b>$5.22</b><small>FBA</small></span>
+              <span><b>65%</b><small>毛利</small></span>
+              <span><b>1.17 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #186</span>
+              <span>上架 2026-03-05 3个月</span>
+            </div>
+            <ul class="reasons"><li>月销 191</li><li>价格 $25.99</li><li>毛利 65%</li><li>Reviews 6</li></ul>
+            <div class="cautions">FBA $5.22</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GG9CGV39" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41g7Fhw27HL._AC_US600_.jpg" alt="SANSI LED Submersible Lights Pro 2 Packs with Remote, 20 RGB Color Changing Pool Lights for Above Ground Pools, with Magnets &amp; Suction Cups, Battery Operated for Indoor, Outdoor, Vase, Pond, Hot Tub" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GG9CGV39" target="_blank" rel="noreferrer">B0GG9CGV39</a>
+              <span class="score">Score 98</span>
+            </div>
+            <h3>SANSI LED Submersible Lights Pro 2 Packs with Remote, 20 RGB Color Changing Pool Lights for Above Ground Pools, with Magnets &amp; Suction Cups, Battery …</h3>
+            <div class="brand">SANSI</div>
+            <div class="metrics">
+              <span><b>1,859</b><small>月销量</small></span>
+              <span><b>$50,174</b><small>月销售额</small></span>
+              <span><b>$26.99</b><small>价格</small></span>
+              <span><b>61</b><small>Reviews</small></span>
+              <span><b>3.7</b><small>评分</small></span>
+              <span><b>$4.46</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.66 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 2</span>
+              <span>卖家 1</span>
+              <span>小类排名 #19</span>
+              <span>上架 2026-01-22 4个月</span>
+            </div>
+            <ul class="reasons"><li>月销 1859</li><li>价格 $26.99</li><li>毛利 68%</li><li>Reviews 61</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GGYPBFR7" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/51hTfWD-CTL._AC_SR600,600_.jpg" alt="Brizled Solar Pool Lights, 6.4in IP67 Waterproof Floating Pool Lights with Top &amp; Bottom Glow, Color Changing LED Floating Lights with Remote for Inground/Above Ground Swimming Pool, Bathtub, 2 Pack" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GGYPBFR7" target="_blank" rel="noreferrer">B0GGYPBFR7</a>
+              <span class="score">Score 94</span>
+            </div>
+            <h3>Brizled Solar Pool Lights, 6.4in IP67 Waterproof Floating Pool Lights with Top &amp; Bottom Glow, Color Changing LED Floating Lights with Remote for Ingr…</h3>
+            <div class="brand">Brizled</div>
+            <div class="metrics">
+              <span><b>171</b><small>月销量</small></span>
+              <span><b>$6,838</b><small>月销售额</small></span>
+              <span><b>$39.99</b><small>价格</small></span>
+              <span><b>30</b><small>Reviews</small></span>
+              <span><b>3.5</b><small>评分</small></span>
+              <span><b>$5.87</b><small>FBA</small></span>
+              <span><b>70%</b><small>毛利</small></span>
+              <span><b>1.76 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 2</span>
+              <span>卖家 1</span>
+              <span>小类排名 #306</span>
+              <span>上架 2026-03-16 3个月</span>
+            </div>
+            <ul class="reasons"><li>月销 171</li><li>价格 $39.99</li><li>毛利 70%</li><li>Reviews 30</li></ul>
+            <div class="cautions">FBA $5.87；重量 1.76 lb</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GG9WKVHS" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71tNS8ORwDL._AC_US600_.jpg" alt="SANSI LED Submersible Lights Pro 4 Packs with Remote, 20 RGB Color Changing Pool Lights for Above Ground Pools, with Magnets &amp; Suction Cups, Battery Operated for Indoor, Outdoor, Vase, Pond, Hot Tub" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GG9WKVHS" target="_blank" rel="noreferrer">B0GG9WKVHS</a>
+              <span class="score">Score 93</span>
+            </div>
+            <h3>SANSI LED Submersible Lights Pro 4 Packs with Remote, 20 RGB Color Changing Pool Lights for Above Ground Pools, with Magnets &amp; Suction Cups, Battery …</h3>
+            <div class="brand">SANSI</div>
+            <div class="metrics">
+              <span><b>1,859</b><small>月销量</small></span>
+              <span><b>$83,636</b><small>月销售额</small></span>
+              <span><b>$44.99</b><small>价格</small></span>
+              <span><b>61</b><small>Reviews</small></span>
+              <span><b>3.7</b><small>评分</small></span>
+              <span><b>$5.22</b><small>FBA</small></span>
+              <span><b>73%</b><small>毛利</small></span>
+              <span><b>1.21 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 2</span>
+              <span>卖家 1</span>
+              <span>小类排名 #19</span>
+              <span>上架 2026-01-22 4个月</span>
+            </div>
+            <ul class="reasons"><li>月销 1859</li><li>价格 $44.99</li><li>毛利 73%</li><li>Reviews 61</li></ul>
+            <div class="cautions">FBA $5.22</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-4">
+      <div class="section-head">
+        <div>
+          <h2>Pressure Washers</h2>
+          <p>5 products · avg score 101.0 · combined monthly sales 3,936</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GZJRY3Q9" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/31zIhpLR0tL._AC_US600_.jpg" alt="Jetterix Pressure Washer,Three Spray Modes, Universal and Easy to Install, Effortless Dirt &amp; Stain Removal (A)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GZJRY3Q9" target="_blank" rel="noreferrer">B0GZJRY3Q9</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>Jetterix Pressure Washer,Three Spray Modes, Universal and Easy to Install, Effortless Dirt &amp; Stain Removal (A)</h3>
+            <div class="brand">FUHUBB</div>
+            <div class="metrics">
+              <span><b>1,180</b><small>月销量</small></span>
+              <span><b>$58,988</b><small>月销售额</small></span>
+              <span><b>$49.99</b><small>价格</small></span>
+              <span><b>33</b><small>Reviews</small></span>
+              <span><b>1.6</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>76%</b><small>毛利</small></span>
+              <span><b>0.33 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #259</span>
+              <span>上架 2026-05-08 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 1180</li><li>价格 $49.99</li><li>毛利 76%</li><li>Reviews 33</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GZYPGNV8" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61y5DtPtchL._AC_US600_.jpg" alt="2026 Upgraded Jet Nozzle Power Washer for Garden Hose, Includes 2 High-Pressure Nozzles and Quick Connectors | Hydro Jet High Pressure Washer Tools" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GZYPGNV8" target="_blank" rel="noreferrer">B0GZYPGNV8</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>2026 Upgraded Jet Nozzle Power Washer for Garden Hose, Includes 2 High-Pressure Nozzles and Quick Connectors | Hydro Jet High Pressure Washer Tools</h3>
+            <div class="brand">Belkid</div>
+            <div class="metrics">
+              <span><b>612</b><small>月销量</small></span>
+              <span><b>$20,184</b><small>月销售额</small></span>
+              <span><b>$32.98</b><small>价格</small></span>
+              <span><b>2</b><small>Reviews</small></span>
+              <span><b>1.5</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>72%</b><small>毛利</small></span>
+              <span><b>0.75 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #82</span>
+              <span>上架 2026-05-09 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 612</li><li>价格 $32.98</li><li>毛利 72%</li><li>Reviews 2</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GZJZ26RP" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/31LKY+85Q1L._AC_US600_.jpg" alt="Jetterix Pressure Washer,Three Spray Modes, Universal and Easy to Install, Effortless Dirt &amp; Stain Removal (B)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GZJZ26RP" target="_blank" rel="noreferrer">B0GZJZ26RP</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Jetterix Pressure Washer,Three Spray Modes, Universal and Easy to Install, Effortless Dirt &amp; Stain Removal (B)</h3>
+            <div class="brand">FUHUBB</div>
+            <div class="metrics">
+              <span><b>1,180</b><small>月销量</small></span>
+              <span><b>$70,741</b><small>月销售额</small></span>
+              <span><b>$59.95</b><small>价格</small></span>
+              <span><b>33</b><small>Reviews</small></span>
+              <span><b>1.6</b><small>评分</small></span>
+              <span><b>$4.62</b><small>FBA</small></span>
+              <span><b>77%</b><small>毛利</small></span>
+              <span><b>0.33 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 3</span>
+              <span>卖家 1</span>
+              <span>小类排名 #314</span>
+              <span>上架 2026-05-07 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 1180</li><li>价格 $59.95</li><li>毛利 77%</li><li>Reviews 33</li></ul>
+            <div class="cautions">FBA $4.62</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GZK25S14" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71u7vuuUuOL._AC_US600_.jpg" alt="Aquoxis Pressure Washer Gun, Cordless Power Washer, Durable Stainless Steel, 360° Rotating for Three Spray Modes, Universal Compatibility" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GZK25S14" target="_blank" rel="noreferrer">B0GZK25S14</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Aquoxis Pressure Washer Gun, Cordless Power Washer, Durable Stainless Steel, 360° Rotating for Three Spray Modes, Universal Compatibility</h3>
+            <div class="brand">Generic</div>
+            <div class="metrics">
+              <span><b>665</b><small>月销量</small></span>
+              <span><b>$26,593</b><small>月销售额</small></span>
+              <span><b>$39.99</b><small>价格</small></span>
+              <span><b>3</b><small>Reviews</small></span>
+              <span><b>2.0</b><small>评分</small></span>
+              <span><b>$4.76</b><small>FBA</small></span>
+              <span><b>73%</b><small>毛利</small></span>
+              <span><b>0.9 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 2</span>
+              <span>小类排名 #74</span>
+              <span>上架 2026-05-08 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 665</li><li>价格 $39.99</li><li>毛利 73%</li><li>Reviews 3</li></ul>
+            <div class="cautions">FBA $4.76</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GV97F93Q" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71UQ4Jd31zL._AC_US600_.jpg" alt="Multi Aquoxis Pressure Washer Gun, 2026 New Garden Shower High-Pressure Gun for Three Spray Modes, Durable Stainless Steel, Easy Installation, Universal Compatibility, Ideal for Patios and Driveways" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GV97F93Q" target="_blank" rel="noreferrer">B0GV97F93Q</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Multi Aquoxis Pressure Washer Gun, 2026 New Garden Shower High-Pressure Gun for Three Spray Modes, Durable Stainless Steel, Easy Installation, Univer…</h3>
+            <div class="brand">Generic</div>
+            <div class="metrics">
+              <span><b>299</b><small>月销量</small></span>
+              <span><b>$8,070</b><small>月销售额</small></span>
+              <span><b>$26.99</b><small>价格</small></span>
+              <span><b>16</b><small>Reviews</small></span>
+              <span><b>2.0</b><small>评分</small></span>
+              <span><b>$5.22</b><small>FBA</small></span>
+              <span><b>66%</b><small>毛利</small></span>
+              <span><b>0.84 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #230</span>
+              <span>上架 2026-04-30 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 299</li><li>价格 $26.99</li><li>毛利 66%</li><li>Reviews 16</li></ul>
+            <div class="cautions">FBA $5.22</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-5">
+      <div class="section-head">
+        <div>
+          <h2>Women&#x27;s Short Sets</h2>
+          <p>5 products · avg score 92.0 · combined monthly sales 4,662</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GQB9K28F" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41PuxL7reBL._AC_SR600,600_.jpg" alt="Women 2 Piece Matching Sets Striped Tube Tops Shorts Set Summer Vacation Outfits Y2K Going Out Top Purple" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GQB9K28F" target="_blank" rel="noreferrer">B0GQB9K28F</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Women 2 Piece Matching Sets Striped Tube Tops Shorts Set Summer Vacation Outfits Y2K Going Out Top Purple</h3>
+            <div class="brand">JEIBKOUY</div>
+            <div class="metrics">
+              <span><b>1,442</b><small>月销量</small></span>
+              <span><b>$50,456</b><small>月销售额</small></span>
+              <span><b>$34.99</b><small>价格</small></span>
+              <span><b>1</b><small>Reviews</small></span>
+              <span><b>1.0</b><small>评分</small></span>
+              <span><b>$3.63</b><small>FBA</small></span>
+              <span><b>70%</b><small>毛利</small></span>
+              <span><b>0.1 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #1,455</span>
+              <span>上架 2026-03-06 3个月</span>
+            </div>
+            <ul class="reasons"><li>月销 1442</li><li>价格 $34.99</li><li>毛利 70%</li><li>Reviews 1</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GQBCDTQM" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/414pnFQHmwL._AC_SR600,600_.jpg" alt="Women 2 Piece Matching Sets Striped Tube Tops Shorts Set Summer Vacation Outfits Y2K Going Out Top Red" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GQBCDTQM" target="_blank" rel="noreferrer">B0GQBCDTQM</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Women 2 Piece Matching Sets Striped Tube Tops Shorts Set Summer Vacation Outfits Y2K Going Out Top Red</h3>
+            <div class="brand">JEIBKOUY</div>
+            <div class="metrics">
+              <span><b>1,172</b><small>月销量</small></span>
+              <span><b>$41,008</b><small>月销售额</small></span>
+              <span><b>$34.99</b><small>价格</small></span>
+              <span><b>1</b><small>Reviews</small></span>
+              <span><b>1.0</b><small>评分</small></span>
+              <span><b>$3.63</b><small>FBA</small></span>
+              <span><b>70%</b><small>毛利</small></span>
+              <span><b>0.1 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 2</span>
+              <span>小类排名 #1,511</span>
+              <span>上架 2026-03-13 3个月</span>
+            </div>
+            <ul class="reasons"><li>月销 1172</li><li>价格 $34.99</li><li>毛利 70%</li><li>Reviews 1</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GQBJ1HZ6" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/713vEpz8Z6L._AC_US600_.jpg" alt="Women 2 Piece Matching Sets Striped Tube Tops Shorts Set Summer Vacation Outfits Y2K Going Out Top Purple" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GQBJ1HZ6" target="_blank" rel="noreferrer">B0GQBJ1HZ6</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Women 2 Piece Matching Sets Striped Tube Tops Shorts Set Summer Vacation Outfits Y2K Going Out Top Purple</h3>
+            <div class="brand">JEIBKOUY</div>
+            <div class="metrics">
+              <span><b>937</b><small>月销量</small></span>
+              <span><b>$32,786</b><small>月销售额</small></span>
+              <span><b>$34.99</b><small>价格</small></span>
+              <span><b>5</b><small>Reviews</small></span>
+              <span><b>3.3</b><small>评分</small></span>
+              <span><b>$3.63</b><small>FBA</small></span>
+              <span><b>70%</b><small>毛利</small></span>
+              <span><b>0.1 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 2</span>
+              <span>小类排名 #2,407</span>
+              <span>上架 2026-03-13 3个月</span>
+            </div>
+            <ul class="reasons"><li>月销 937</li><li>价格 $34.99</li><li>毛利 70%</li><li>Reviews 5</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GX17YB5L" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71Z2an1jpiL._AC_US600_.jpg" alt="Women 2 Piece Matching Sets Striped Tube Tops Shorts Set Summer Vacation Outfits Y2K Going Out Top Pink" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GX17YB5L" target="_blank" rel="noreferrer">B0GX17YB5L</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Women 2 Piece Matching Sets Striped Tube Tops Shorts Set Summer Vacation Outfits Y2K Going Out Top Pink</h3>
+            <div class="brand">JEIBKOUY</div>
+            <div class="metrics">
+              <span><b>642</b><small>月销量</small></span>
+              <span><b>$22,464</b><small>月销售额</small></span>
+              <span><b>$34.99</b><small>价格</small></span>
+              <span><b>1</b><small>Reviews</small></span>
+              <span><b>3.0</b><small>评分</small></span>
+              <span><b>$3.63</b><small>FBA</small></span>
+              <span><b>70%</b><small>毛利</small></span>
+              <span><b>0.1 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #3,395</span>
+              <span>上架 2026-04-15 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 642</li><li>价格 $34.99</li><li>毛利 70%</li><li>Reviews 1</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0FVM1Q9T1" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/617YYx3ozSL._AC_US600_.jpg" alt="Rapbin Lounge Sets for Women Summer 2 Piece Outfits Casual Vacation Travel Matching Fashion Clothing (Sage Green, L)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0FVM1Q9T1" target="_blank" rel="noreferrer">B0FVM1Q9T1</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Rapbin Lounge Sets for Women Summer 2 Piece Outfits Casual Vacation Travel Matching Fashion Clothing (Sage Green, L)</h3>
+            <div class="brand">Rapbin</div>
+            <div class="metrics">
+              <span><b>469</b><small>月销量</small></span>
+              <span><b>$14,065</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>5</b><small>Reviews</small></span>
+              <span><b>3.1</b><small>评分</small></span>
+              <span><b>$4.33</b><small>FBA</small></span>
+              <span><b>66%</b><small>毛利</small></span>
+              <span><b>0.97 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #1,552</span>
+              <span>上架 2026-01-07 5个月</span>
+            </div>
+            <ul class="reasons"><li>月销 469</li><li>价格 $29.99</li><li>毛利 66%</li><li>Reviews 5</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-6">
+      <div class="section-head">
+        <div>
+          <h2>Pressure Washer Lances &amp; Wands</h2>
+          <p>4 products · avg score 99.5 · combined monthly sales 884</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GYXRDM86" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/31LyPOhsv7L._AC_US600_.jpg" alt="Jet Nozzle Power Sprayer for Garden Hose, 3 Nozzle Wand, Pocket Hose Arrow Pressure Washer Attachment for Car Washing, Patio and Outdoor Cleaning (Grey)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GYXRDM86" target="_blank" rel="noreferrer">B0GYXRDM86</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>Jet Nozzle Power Sprayer for Garden Hose, 3 Nozzle Wand, Pocket Hose Arrow Pressure Washer Attachment for Car Washing, Patio and Outdoor Cleaning (Gr…</h3>
+            <div class="brand">Generic</div>
+            <div class="metrics">
+              <span><b>207</b><small>月销量</small></span>
+              <span><b>$7,450</b><small>月销售额</small></span>
+              <span><b>$35.99</b><small>价格</small></span>
+              <span><b>5</b><small>Reviews</small></span>
+              <span><b>2.2</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>73%</b><small>毛利</small></span>
+              <span><b>0.53 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #35</span>
+              <span>上架 2026-05-13 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 207</li><li>价格 $35.99</li><li>毛利 73%</li><li>Reviews 5</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GV3MX5XW" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41Uqy3bfDdL._AC_US600_.jpg" alt="Pressure Washer,2026 New Pressure Washer Spray Nozzle,High Pressure Garden Hose Nozzle,with 360° Rotating for Three Spray Modes - Fit with U.S. 3/4In Threaded Hoses" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GV3MX5XW" target="_blank" rel="noreferrer">B0GV3MX5XW</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Pressure Washer,2026 New Pressure Washer Spray Nozzle,High Pressure Garden Hose Nozzle,with 360° Rotating for Three Spray Modes - Fit with U.S. 3/4In…</h3>
+            <div class="brand">Generic</div>
+            <div class="metrics">
+              <span><b>286</b><small>月销量</small></span>
+              <span><b>$8,574</b><small>月销售额</small></span>
+              <span><b>$29.98</b><small>价格</small></span>
+              <span><b>14</b><small>Reviews</small></span>
+              <span><b>1.6</b><small>评分</small></span>
+              <span><b>$5.61</b><small>FBA</small></span>
+              <span><b>66%</b><small>毛利</small></span>
+              <span><b>0.55 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #67</span>
+              <span>上架 2026-05-02 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 286</li><li>价格 $29.98</li><li>毛利 66%</li><li>Reviews 14</li></ul>
+            <div class="cautions">FBA $5.61</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GZJHFP6Q" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71exkkEXSsL._AC_US600_.jpg" alt="2026 New Pressure Washer Wand for Garden Hose with 3 Adjustable Jet Nozzles, 360° Rotating Design for Car Washing, Patio, Outdoor Cleaning (1 Set)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GZJHFP6Q" target="_blank" rel="noreferrer">B0GZJHFP6Q</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>2026 New Pressure Washer Wand for Garden Hose with 3 Adjustable Jet Nozzles, 360° Rotating Design for Car Washing, Patio, Outdoor Cleaning (1 Set)</h3>
+            <div class="brand">Gtrsiow</div>
+            <div class="metrics">
+              <span><b>225</b><small>月销量</small></span>
+              <span><b>$6,748</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>6</b><small>Reviews</small></span>
+              <span><b>1.4</b><small>评分</small></span>
+              <span><b>$4.76</b><small>FBA</small></span>
+              <span><b>69%</b><small>毛利</small></span>
+              <span><b>0.6 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #17</span>
+              <span>上架 2026-05-16 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 225</li><li>价格 $29.99</li><li>毛利 69%</li><li>Reviews 6</li></ul>
+            <div class="cautions">FBA $4.76</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0H1B5DJVF" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61q5lPui0eL._AC_US600_.jpg" alt="Pressure Washer Hose Attachment, 2026 High Pressure Water Hose Nozzle, Turn Garden Hose into Pressure Washer Wand, for Car, Patio, Gutter, Pet, Window Cleaning with 3 Adjustable Jet Nozzle(Black1)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0H1B5DJVF" target="_blank" rel="noreferrer">B0H1B5DJVF</a>
+              <span class="score">Score 96</span>
+            </div>
+            <h3>Pressure Washer Hose Attachment, 2026 High Pressure Water Hose Nozzle, Turn Garden Hose into Pressure Washer Wand, for Car, Patio, Gutter, Pet, Windo…</h3>
+            <div class="brand">Generic</div>
+            <div class="metrics">
+              <span><b>166</b><small>月销量</small></span>
+              <span><b>$3,664</b><small>月销售额</small></span>
+              <span><b>$22.07</b><small>价格</small></span>
+              <span><b>2</b><small>Reviews</small></span>
+              <span><b>1.0</b><small>评分</small></span>
+              <span><b>$3.91</b><small>FBA</small></span>
+              <span><b>67%</b><small>毛利</small></span>
+              <span><b>0.66 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 2</span>
+              <span>卖家 1</span>
+              <span>小类排名 #47</span>
+              <span>上架 2026-05-12 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 166</li><li>毛利 67%</li><li>Reviews 2</li><li>评分 1，竞品体验有改善空间</li></ul>
+            <div class="cautions">价格 $22.07 边界</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-7">
+      <div class="section-head">
+        <div>
+          <h2>Domino &amp; Tile Games</h2>
+          <p>3 products · avg score 97.3 · combined monthly sales 2,082</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0G26QQ6SB" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71HTZh6EzuL._AC_US600_.jpg" alt="Mahjong Cards 2026，Mah Jong Cards 2026 Official Revision American - Large Print, 4-Pack (4pcs)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0G26QQ6SB" target="_blank" rel="noreferrer">B0G26QQ6SB</a>
+              <span class="score">Score 98</span>
+            </div>
+            <h3>Mahjong Cards 2026，Mah Jong Cards 2026 Official Revision American - Large Print, 4-Pack (4pcs)</h3>
+            <div class="brand">AZSYYQC</div>
+            <div class="metrics">
+              <span><b>1,175</b><small>月销量</small></span>
+              <span><b>$29,681</b><small>月销售额</small></span>
+              <span><b>$25.26</b><small>价格</small></span>
+              <span><b>67</b><small>Reviews</small></span>
+              <span><b>3.6</b><small>评分</small></span>
+              <span><b>$3.54</b><small>FBA</small></span>
+              <span><b>71%</b><small>毛利</small></span>
+              <span><b>0.13 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #29</span>
+              <span>上架 2025-12-03 6个月</span>
+            </div>
+            <ul class="reasons"><li>月销 1175</li><li>价格 $25.26</li><li>毛利 71%</li><li>Reviews 67</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GR53JR8R" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61bR8K7XPeL._AC_US600_.jpg" alt="2024 Card" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GR53JR8R" target="_blank" rel="noreferrer">B0GR53JR8R</a>
+              <span class="score">Score 98</span>
+            </div>
+            <h3>2024 Card</h3>
+            <div class="brand">PFFM</div>
+            <div class="metrics">
+              <span><b>269</b><small>月销量</small></span>
+              <span><b>$8,067</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>111</b><small>Reviews</small></span>
+              <span><b>3.2</b><small>评分</small></span>
+              <span><b>$3.54</b><small>FBA</small></span>
+              <span><b>73%</b><small>毛利</small></span>
+              <span><b>0.13 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #689</span>
+              <span>上架 2026-04-10 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 269</li><li>价格 $29.99</li><li>毛利 73%</li><li>Reviews 111</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0FJKRLG2K" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51yNZingz8L._AC_US600_.jpg" alt="Mahjong Cards 2025 with Sleeves, 4pcs Official Revision 2025 Mah Jongg Card with Holders- Large Print, Easy-to-Read - American Mah Jongg Rule Card Set (Not 2026)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0FJKRLG2K" target="_blank" rel="noreferrer">B0FJKRLG2K</a>
+              <span class="score">Score 96</span>
+            </div>
+            <h3>Mahjong Cards 2025 with Sleeves, 4pcs Official Revision 2025 Mah Jongg Card with Holders- Large Print, Easy-to-Read - American Mah Jongg Rule Card Se…</h3>
+            <div class="brand">LPPROTECTOR</div>
+            <div class="metrics">
+              <span><b>638</b><small>月销量</small></span>
+              <span><b>$14,030</b><small>月销售额</small></span>
+              <span><b>$21.99</b><small>价格</small></span>
+              <span><b>1</b><small>Reviews</small></span>
+              <span><b>1.0</b><small>评分</small></span>
+              <span><b>$3.57</b><small>FBA</small></span>
+              <span><b>69%</b><small>毛利</small></span>
+              <span><b>0.37 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #2,339</span>
+              <span>上架 2026-04-13 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 638</li><li>毛利 69%</li><li>Reviews 1</li><li>评分 1，竞品体验有改善空间</li></ul>
+            <div class="cautions">价格 $21.99 边界</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-8">
+      <div class="section-head">
+        <div>
+          <h2>Golf Swing Trainers</h2>
+          <p>3 products · avg score 101.3 · combined monthly sales 868</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GVS6F24Q" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41B6PEP+a5L._AC_US600_.jpg" alt="BoomBa Golf Swing Training Aid Strap, Adjustable Trail Arm Connection Trainer, Instant Feedback Golf Arm Band to Help Reduce Chicken Wing" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GVS6F24Q" target="_blank" rel="noreferrer">B0GVS6F24Q</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>BoomBa Golf Swing Training Aid Strap, Adjustable Trail Arm Connection Trainer, Instant Feedback Golf Arm Band to Help Reduce Chicken Wing</h3>
+            <div class="brand">BoomBa</div>
+            <div class="metrics">
+              <span><b>175</b><small>月销量</small></span>
+              <span><b>$8,748</b><small>月销售额</small></span>
+              <span><b>$49.99</b><small>价格</small></span>
+              <span><b>2</b><small>Reviews</small></span>
+              <span><b>3.0</b><small>评分</small></span>
+              <span><b>$4.09</b><small>FBA</small></span>
+              <span><b>77%</b><small>毛利</small></span>
+              <span><b>0.37 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 2</span>
+              <span>卖家 1</span>
+              <span>小类排名 #147</span>
+              <span>上架 2026-04-27 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 175</li><li>价格 $49.99</li><li>毛利 77%</li><li>Reviews 2</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GVSCC5JQ" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61BXMoZgU8L._AC_US600_.jpg" alt="BoomBa Golf Swing Training Aid Strap, Adjustable Trail Arm Connection Trainer, Instant Feedback Golf Arm Band to Help Reduce Chicken Wing" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GVSCC5JQ" target="_blank" rel="noreferrer">B0GVSCC5JQ</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>BoomBa Golf Swing Training Aid Strap, Adjustable Trail Arm Connection Trainer, Instant Feedback Golf Arm Band to Help Reduce Chicken Wing</h3>
+            <div class="brand">BoomBa</div>
+            <div class="metrics">
+              <span><b>175</b><small>月销量</small></span>
+              <span><b>$8,748</b><small>月销售额</small></span>
+              <span><b>$49.99</b><small>价格</small></span>
+              <span><b>2</b><small>Reviews</small></span>
+              <span><b>3.0</b><small>评分</small></span>
+              <span><b>$4.09</b><small>FBA</small></span>
+              <span><b>77%</b><small>毛利</small></span>
+              <span><b>0.51 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 2</span>
+              <span>卖家 1</span>
+              <span>小类排名 #147</span>
+              <span>上架 2026-04-25 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 175</li><li>价格 $49.99</li><li>毛利 77%</li><li>Reviews 2</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GWWMHGD5" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/31NhzAQgzmL._AC_US600_.jpg" alt="HRUIYL Retractable Golf Swing Trainer, Golf Grip Trainer, Golf Training Aid for Warm-Up, Golf Swing Training Aid, Grip Trainer Golf Club, Strength &amp; Tempo Training for Chipping Hitting" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GWWMHGD5" target="_blank" rel="noreferrer">B0GWWMHGD5</a>
+              <span class="score">Score 96</span>
+            </div>
+            <h3>HRUIYL Retractable Golf Swing Trainer, Golf Grip Trainer, Golf Training Aid for Warm-Up, Golf Swing Training Aid, Grip Trainer Golf Club, Strength &amp; …</h3>
+            <div class="brand">HRUIYL</div>
+            <div class="metrics">
+              <span><b>518</b><small>月销量</small></span>
+              <span><b>$12,934</b><small>月销售额</small></span>
+              <span><b>$24.97</b><small>价格</small></span>
+              <span><b>4</b><small>Reviews</small></span>
+              <span><b>3.0</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.64 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #379</span>
+              <span>上架 2026-04-15 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 518</li><li>毛利 68%</li><li>Reviews 4</li><li>评分 3，竞品体验有改善空间</li></ul>
+            <div class="cautions">价格 $24.97 边界</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-9">
+      <div class="section-head">
+        <div>
+          <h2>Grill Brushes</h2>
+          <p>3 products · avg score 95.7 · combined monthly sales 1,590</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GS9FWLF3" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81MjGA0qPQL._AC_US600_.jpg" alt="Electric BBQ Grill Brush Rechargeable with Anti-Lock Motor, 2000mAh for 2-Hour Run Time, Dishwasher Safe Head, Saves 80% Cleaning Time &amp; Reduces Wrist Strain, Cleans Hard Corners" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GS9FWLF3" target="_blank" rel="noreferrer">B0GS9FWLF3</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Electric BBQ Grill Brush Rechargeable with Anti-Lock Motor, 2000mAh for 2-Hour Run Time, Dishwasher Safe Head, Saves 80% Cleaning Time &amp; Reduces Wris…</h3>
+            <div class="brand">Pexucalm</div>
+            <div class="metrics">
+              <span><b>422</b><small>月销量</small></span>
+              <span><b>$12,656</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>33</b><small>Reviews</small></span>
+              <span><b>3.3</b><small>评分</small></span>
+              <span><b>$5.87</b><small>FBA</small></span>
+              <span><b>65%</b><small>毛利</small></span>
+              <span><b>1.5 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #439</span>
+              <span>上架 2026-05-06 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 422</li><li>价格 $29.99</li><li>毛利 65%</li><li>Reviews 33</li></ul>
+            <div class="cautions">FBA $5.87</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GTYW7MQB" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71fwP8wWuQL._AC_US600_.jpg" alt="Electric Grill Brush, Rechargeable Electric Grill Cleaner 1500 RPM, 100-Min Runtime, Includes Replacement Brush, Safe for All Grills, BBQ Gift for Men" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GTYW7MQB" target="_blank" rel="noreferrer">B0GTYW7MQB</a>
+              <span class="score">Score 94</span>
+            </div>
+            <h3>Electric Grill Brush, Rechargeable Electric Grill Cleaner 1500 RPM, 100-Min Runtime, Includes Replacement Brush, Safe for All Grills, BBQ Gift for Men</h3>
+            <div class="brand">UTUKO</div>
+            <div class="metrics">
+              <span><b>716</b><small>月销量</small></span>
+              <span><b>$26,485</b><small>月销售额</small></span>
+              <span><b>$36.99</b><small>价格</small></span>
+              <span><b>6</b><small>Reviews</small></span>
+              <span><b>2.4</b><small>评分</small></span>
+              <span><b>$5.87</b><small>FBA</small></span>
+              <span><b>69%</b><small>毛利</small></span>
+              <span><b>1.54 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #146</span>
+              <span>上架 2026-04-08 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 716</li><li>价格 $36.99</li><li>毛利 69%</li><li>Reviews 6</li></ul>
+            <div class="cautions">FBA $5.87；重量 1.54 lb</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GTYTMBXC" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71RbbBTqYzL._AC_US600_.jpg" alt="Grill Brush, Rechargeable Electric Grill Cleaner" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GTYTMBXC" target="_blank" rel="noreferrer">B0GTYTMBXC</a>
+              <span class="score">Score 94</span>
+            </div>
+            <h3>Grill Brush, Rechargeable Electric Grill Cleaner</h3>
+            <div class="brand">UTUKO</div>
+            <div class="metrics">
+              <span><b>452</b><small>月销量</small></span>
+              <span><b>$22,139</b><small>月销售额</small></span>
+              <span><b>$48.98</b><small>价格</small></span>
+              <span><b>6</b><small>Reviews</small></span>
+              <span><b>3.0</b><small>评分</small></span>
+              <span><b>$5.87</b><small>FBA</small></span>
+              <span><b>73%</b><small>毛利</small></span>
+              <span><b>1.59 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #261</span>
+              <span>上架 2026-04-27 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 452</li><li>价格 $48.98</li><li>毛利 73%</li><li>Reviews 6</li></ul>
+            <div class="cautions">FBA $5.87；重量 1.59 lb</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-10">
+      <div class="section-head">
+        <div>
+          <h2>Women&#x27;s Fashion Overalls</h2>
+          <p>3 products · avg score 92.0 · combined monthly sales 1,937</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GD5WLN8Y" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/31-f2igAiML._AC_SR600,600_.jpg" alt="Yeokou Women Cotton Linen Romper Sleeveless V Neck Button Down Wide Leg Short Overalls Casual One Piece with Pockets(Teal-L)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GD5WLN8Y" target="_blank" rel="noreferrer">B0GD5WLN8Y</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Yeokou Women Cotton Linen Romper Sleeveless V Neck Button Down Wide Leg Short Overalls Casual One Piece with Pockets(Teal-L)</h3>
+            <div class="brand">Yeokou</div>
+            <div class="metrics">
+              <span><b>709</b><small>月销量</small></span>
+              <span><b>$21,263</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>3</b><small>Reviews</small></span>
+              <span><b>3.2</b><small>评分</small></span>
+              <span><b>$4.05</b><small>FBA</small></span>
+              <span><b>67%</b><small>毛利</small></span>
+              <span><b>0.52 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 2</span>
+              <span>小类排名 #635</span>
+              <span>上架 2026-01-13 5个月</span>
+            </div>
+            <ul class="reasons"><li>月销 709</li><li>价格 $29.99</li><li>毛利 67%</li><li>Reviews 3</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GS5RWNYG" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/312gDqW+weL._AC_SR600,600_.jpg" alt="Yeokou Women Cotton Linen Romper Sleeveless V Neck Button Down Wide Leg Short Overalls Casual One Piece with Pockets(LightKhaki-M)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GS5RWNYG" target="_blank" rel="noreferrer">B0GS5RWNYG</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Yeokou Women Cotton Linen Romper Sleeveless V Neck Button Down Wide Leg Short Overalls Casual One Piece with Pockets(LightKhaki-M)</h3>
+            <div class="brand">Yeokou</div>
+            <div class="metrics">
+              <span><b>700</b><small>月销量</small></span>
+              <span><b>$20,993</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>2</b><small>Reviews</small></span>
+              <span><b>3.5</b><small>评分</small></span>
+              <span><b>$4.05</b><small>FBA</small></span>
+              <span><b>67%</b><small>毛利</small></span>
+              <span><b>0.52 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 2</span>
+              <span>小类排名 #683</span>
+              <span>上架 2026-03-17 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 700</li><li>价格 $29.99</li><li>毛利 67%</li><li>Reviews 2</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GYMVJCCJ" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61rhpwl32ZL._AC_US600_.jpg" alt="Yeokou Womens Overall Button Down Jumpsuits Cotton Linen Sleeveless Casual Wide Legs Romper Short One Piece with Pockets (Navy-L)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GYMVJCCJ" target="_blank" rel="noreferrer">B0GYMVJCCJ</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Yeokou Womens Overall Button Down Jumpsuits Cotton Linen Sleeveless Casual Wide Legs Romper Short One Piece with Pockets (Navy-L)</h3>
+            <div class="brand">Yeokou</div>
+            <div class="metrics">
+              <span><b>528</b><small>月销量</small></span>
+              <span><b>$15,835</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>2</b><small>Reviews</small></span>
+              <span><b>3.0</b><small>评分</small></span>
+              <span><b>$4.05</b><small>FBA</small></span>
+              <span><b>67%</b><small>毛利</small></span>
+              <span><b>0.52 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 2</span>
+              <span>小类排名 #1,376</span>
+              <span>上架 2026-04-29 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 528</li><li>价格 $29.99</li><li>毛利 67%</li><li>Reviews 2</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-11">
+      <div class="section-head">
+        <div>
+          <h2>3D Printer Accessories</h2>
+          <p>2 products · avg score 101.5 · combined monthly sales 413</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GVZQCT8L" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41Hi0AdyXkL._SX600_SY600_CR,0,0,600,600_.jpg" alt="Creality Official DXC2 Extruder, K2/K2 Pro/K2 Plus Extruder Upgrade with Magnetic Snap-On 1s Tool-Free Access, DLC Filament Cutter &amp; Dual-Gear Precision Drive for Creality K2 Series 3D Printer" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GVZQCT8L" target="_blank" rel="noreferrer">B0GVZQCT8L</a>
+              <span class="score">Score 104</span>
+            </div>
+            <h3>Creality Official DXC2 Extruder, K2/K2 Pro/K2 Plus Extruder Upgrade with Magnetic Snap-On 1s Tool-Free Access, DLC Filament Cutter &amp; Dual-Gear Precis…</h3>
+            <div class="brand">Creality</div>
+            <div class="metrics">
+              <span><b>191</b><small>月销量</small></span>
+              <span><b>$11,458</b><small>月销售额</small></span>
+              <span><b>$59.99</b><small>价格</small></span>
+              <span><b>2</b><small>Reviews</small></span>
+              <span><b>2.5</b><small>评分</small></span>
+              <span><b>$4.36</b><small>FBA</small></span>
+              <span><b>81%</b><small>毛利</small></span>
+              <span><b>0.35 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 5</span>
+              <span>卖家 1</span>
+              <span>小类排名 #688</span>
+              <span>上架 2026-05-16 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 191</li><li>价格 $59.99</li><li>毛利 81%</li><li>Reviews 2</li></ul>
+
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0FPF1K9PS" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41Eiu01A2+L._SX600_SY600_CR,0,0,600,600_.jpg" alt="BIQU Panda Jet Pack V2.0 Black Shell with RGB Light Upgrade Print Head for Bambu-Lab P1P/P1S/X1C/X1E 3D Printer" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0FPF1K9PS" target="_blank" rel="noreferrer">B0FPF1K9PS</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>BIQU Panda Jet Pack V2.0 Black Shell with RGB Light Upgrade Print Head for Bambu-Lab P1P/P1S/X1C/X1E 3D Printer</h3>
+            <div class="brand">BIQU</div>
+            <div class="metrics">
+              <span><b>222</b><small>月销量</small></span>
+              <span><b>$8,878</b><small>月销售额</small></span>
+              <span><b>$39.99</b><small>价格</small></span>
+              <span><b>7</b><small>Reviews</small></span>
+              <span><b>3.2</b><small>评分</small></span>
+              <span><b>$5.22</b><small>FBA</small></span>
+              <span><b>75%</b><small>毛利</small></span>
+              <span><b>0.35 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 4</span>
+              <span>卖家 1</span>
+              <span>小类排名 #504</span>
+              <span>上架 2025-09-10 9个月</span>
+            </div>
+            <ul class="reasons"><li>月销 222</li><li>价格 $39.99</li><li>毛利 75%</li><li>Reviews 7</li></ul>
+            <div class="cautions">FBA $5.22</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-12">
+      <div class="section-head">
+        <div>
+          <h2>Beach Towels</h2>
+          <p>2 products · avg score 97.5 · combined monthly sales 683</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GJ68KWRR" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51nfEUTfOXL._AC_US600_.jpg" alt="Frienda 1 Pcs 35.5&quot;x74.8&quot; Large Towel Cover for Tanning Chair with Face Hole Oversized Beach Pool Lounge Seat Cover Towel with Pocket Patio Furniture for Summer Pool Outdoor Chair Not Included" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GJ68KWRR" target="_blank" rel="noreferrer">B0GJ68KWRR</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Frienda 1 Pcs 35.5&quot;x74.8&quot; Large Towel Cover for Tanning Chair with Face Hole Oversized Beach Pool Lounge Seat Cover Towel with Pocket Patio Furniture…</h3>
+            <div class="brand">Frienda</div>
+            <div class="metrics">
+              <span><b>525</b><small>月销量</small></span>
+              <span><b>$18,895</b><small>月销售额</small></span>
+              <span><b>$35.99</b><small>价格</small></span>
+              <span><b>20</b><small>Reviews</small></span>
+              <span><b>3.2</b><small>评分</small></span>
+              <span><b>$5.66</b><small>FBA</small></span>
+              <span><b>69%</b><small>毛利</small></span>
+              <span><b>1.28 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 5</span>
+              <span>卖家 1</span>
+              <span>小类排名 #150</span>
+              <span>上架 2026-01-24 4个月</span>
+            </div>
+            <ul class="reasons"><li>月销 525</li><li>价格 $35.99</li><li>毛利 69%</li><li>Reviews 20</li></ul>
+            <div class="cautions">FBA $5.66</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GV3L9FBF" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61y7kRMQT8L._AC_US600_.jpg" alt="LEKAI Super Mario Beach Towels Soft &amp; Absorbent for Kids Fans Pool Or Beach Super Mario Gift &amp; Quick Dry Large Beach Towel for Adults Women Men" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GV3L9FBF" target="_blank" rel="noreferrer">B0GV3L9FBF</a>
+              <span class="score">Score 96</span>
+            </div>
+            <h3>LEKAI Super Mario Beach Towels Soft &amp; Absorbent for Kids Fans Pool Or Beach Super Mario Gift &amp; Quick Dry Large Beach Towel for Adults Women Men</h3>
+            <div class="brand">LEKAI</div>
+            <div class="metrics">
+              <span><b>158</b><small>月销量</small></span>
+              <span><b>$3,598</b><small>月销售额</small></span>
+              <span><b>$22.77</b><small>价格</small></span>
+              <span><b>4</b><small>Reviews</small></span>
+              <span><b>3.0</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>66%</b><small>毛利</small></span>
+              <span><b>0.63 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 2</span>
+              <span>卖家 1</span>
+              <span>小类排名 #421</span>
+              <span>上架 2026-04-30 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 158</li><li>毛利 66%</li><li>Reviews 4</li><li>评分 3，竞品体验有改善空间</li></ul>
+            <div class="cautions">价格 $22.77 边界</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-13">
+      <div class="section-head">
+        <div>
+          <h2>Wind Chimes</h2>
+          <p>2 products · avg score 96.0 · combined monthly sales 400</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GQRQ2TYL" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41+KyNuluYL._AC_US600_.jpg" alt="Fumete 2 Pack Solar Wind Chimes for Outside Star LED Color Changing Light Outdoor Mobile Wind Chime for Garden Patio Yard Porch Home Decor" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GQRQ2TYL" target="_blank" rel="noreferrer">B0GQRQ2TYL</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Fumete 2 Pack Solar Wind Chimes for Outside Star LED Color Changing Light Outdoor Mobile Wind Chime for Garden Patio Yard Porch Home Decor</h3>
+            <div class="brand">Fumete</div>
+            <div class="metrics">
+              <span><b>209</b><small>月销量</small></span>
+              <span><b>$6,477</b><small>月销售额</small></span>
+              <span><b>$30.99</b><small>价格</small></span>
+              <span><b>6</b><small>Reviews</small></span>
+              <span><b>3.2</b><small>评分</small></span>
+              <span><b>$5.22</b><small>FBA</small></span>
+              <span><b>66%</b><small>毛利</small></span>
+              <span><b>0.44 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 2</span>
+              <span>卖家 1</span>
+              <span>小类排名 #512</span>
+              <span>上架 2026-03-04 3个月</span>
+            </div>
+            <ul class="reasons"><li>月销 209</li><li>价格 $30.99</li><li>毛利 66%</li><li>Reviews 6</li></ul>
+            <div class="cautions">FBA $5.22</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GJS8PD16" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/41tBSuyMbuL._AC_US600_.jpg" alt="Fumete Solar Wind Chimes for Outside LED Color Changing Light Outdoor Mobile Wind Chime for Garden Patio Yard Porch Home Decor (Star)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GJS8PD16" target="_blank" rel="noreferrer">B0GJS8PD16</a>
+              <span class="score">Score 93</span>
+            </div>
+            <h3>Fumete Solar Wind Chimes for Outside LED Color Changing Light Outdoor Mobile Wind Chime for Garden Patio Yard Porch Home Decor (Star)</h3>
+            <div class="brand">Fumete</div>
+            <div class="metrics">
+              <span><b>191</b><small>月销量</small></span>
+              <span><b>$5,919</b><small>月销售额</small></span>
+              <span><b>$30.99</b><small>价格</small></span>
+              <span><b>11</b><small>Reviews</small></span>
+              <span><b>3.5</b><small>评分</small></span>
+              <span><b>$5.22</b><small>FBA</small></span>
+              <span><b>59%</b><small>毛利</small></span>
+              <span><b>0.44 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #759</span>
+              <span>上架 2026-01-28 4个月</span>
+            </div>
+            <ul class="reasons"><li>月销 191</li><li>价格 $30.99</li><li>毛利 59%</li><li>Reviews 11</li></ul>
+            <div class="cautions">FBA $5.22</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-14">
+      <div class="section-head">
+        <div>
+          <h2>Women&#x27;s Cocktail Dresses</h2>
+          <p>2 products · avg score 92.0 · combined monthly sales 1,679</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GMQYCJRN" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61DiKEuG1SL._AC_US600_.jpg" alt="Womens Sexy Elegant Satin Sleeveless Square Neck Adjustable Straps Lace Up Corset Mini Dresses for Party Cocktail Birthday Wedding Guest Navy Blue Large" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GMQYCJRN" target="_blank" rel="noreferrer">B0GMQYCJRN</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Womens Sexy Elegant Satin Sleeveless Square Neck Adjustable Straps Lace Up Corset Mini Dresses for Party Cocktail Birthday Wedding Guest Navy Blue La…</h3>
+            <div class="brand">Vidiva</div>
+            <div class="metrics">
+              <span><b>1,048</b><small>月销量</small></span>
+              <span><b>$34,574</b><small>月销售额</small></span>
+              <span><b>$32.99</b><small>价格</small></span>
+              <span><b>12</b><small>Reviews</small></span>
+              <span><b>3.7</b><small>评分</small></span>
+              <span><b>$3.82</b><small>FBA</small></span>
+              <span><b>68%</b><small>毛利</small></span>
+              <span><b>0.51 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #109</span>
+              <span>上架 2026-03-20 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 1048</li><li>价格 $32.99</li><li>毛利 68%</li><li>Reviews 12</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GMQT5RWK" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61e4GrrfxEL._AC_US600_.jpg" alt="Womens Sexy Satin Sleeveless Square Neck Adjustable Strap Lace Up Corset Mini Dresses for Party Cocktail Wedding Guest" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GMQT5RWK" target="_blank" rel="noreferrer">B0GMQT5RWK</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Womens Sexy Satin Sleeveless Square Neck Adjustable Strap Lace Up Corset Mini Dresses for Party Cocktail Wedding Guest</h3>
+            <div class="brand">Vidiva</div>
+            <div class="metrics">
+              <span><b>631</b><small>月销量</small></span>
+              <span><b>$22,079</b><small>月销售额</small></span>
+              <span><b>$34.99</b><small>价格</small></span>
+              <span><b>1</b><small>Reviews</small></span>
+              <span><b>3.0</b><small>评分</small></span>
+              <span><b>$3.82</b><small>FBA</small></span>
+              <span><b>69%</b><small>毛利</small></span>
+              <span><b>0.44 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #161</span>
+              <span>上架 2026-03-20 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 631</li><li>价格 $34.99</li><li>毛利 69%</li><li>Reviews 1</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-15">
+      <div class="section-head">
+        <div>
+          <h2>Women&#x27;s Novelty Skirts</h2>
+          <p>2 products · avg score 92.0 · combined monthly sales 1,608</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0FWY3R34M" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81M0tN3615L._AC_US600_.jpg" alt="ANRABESS Women&#x27;s Maxi Skirts, Soft Flowy Boho Floral, Long Casual Side Slit Skirt, Perfect for Beach, Vacation &amp; Summer Green White Point Medium" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0FWY3R34M" target="_blank" rel="noreferrer">B0FWY3R34M</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>ANRABESS Women&#x27;s Maxi Skirts, Soft Flowy Boho Floral, Long Casual Side Slit Skirt, Perfect for Beach, Vacation &amp; Summer Green White Point Medium</h3>
+            <div class="brand">ANRABESS</div>
+            <div class="metrics">
+              <span><b>1,014</b><small>月销量</small></span>
+              <span><b>$32,438</b><small>月销售额</small></span>
+              <span><b>$31.99</b><small>价格</small></span>
+              <span><b>1</b><small>Reviews</small></span>
+              <span><b>1.0</b><small>评分</small></span>
+              <span><b>$4.35</b><small>FBA</small></span>
+              <span><b>66%</b><small>毛利</small></span>
+              <span><b>0.8 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #3,513</span>
+              <span>上架 2025-12-15 6个月</span>
+            </div>
+            <ul class="reasons"><li>月销 1014</li><li>价格 $31.99</li><li>毛利 66%</li><li>Reviews 1</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GPXX7T6P" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71iVahbgaeL._AC_US600_.jpg" alt="Panadila Womens Striped Midi Skirt Summer Beach Long Flowy Skirts Elastic High Waisted A Line Skirts with Pockets(Blue Brown Combo,L)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GPXX7T6P" target="_blank" rel="noreferrer">B0GPXX7T6P</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Panadila Womens Striped Midi Skirt Summer Beach Long Flowy Skirts Elastic High Waisted A Line Skirts with Pockets(Blue Brown Combo,L)</h3>
+            <div class="brand">Panadila</div>
+            <div class="metrics">
+              <span><b>594</b><small>月销量</small></span>
+              <span><b>$21,378</b><small>月销售额</small></span>
+              <span><b>$35.99</b><small>价格</small></span>
+              <span><b>3</b><small>Reviews</small></span>
+              <span><b>3.7</b><small>评分</small></span>
+              <span><b>$4.05</b><small>FBA</small></span>
+              <span><b>69%</b><small>毛利</small></span>
+              <span><b>0.62 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 2</span>
+              <span>小类排名 #371</span>
+              <span>上架 2026-03-06 3个月</span>
+            </div>
+            <ul class="reasons"><li>月销 594</li><li>价格 $35.99</li><li>毛利 69%</li><li>Reviews 3</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-16">
+      <div class="section-head">
+        <div>
+          <h2>Automatic Drip Irrigation Kits</h2>
+          <p>1 products · avg score 99.0 · combined monthly sales 205</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GCDP8614" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71NCN4jMEfL._AC_US600_.jpg" alt="Solar Automatic Drip Irrigation System, 15 Pot Self Watering System with 2200mAh, IPX5 Waterproof, USB-C &amp; Solar Charging, Timer Modes for Indoor/Outdoor Garden, Balcony &amp; Patio" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GCDP8614" target="_blank" rel="noreferrer">B0GCDP8614</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Solar Automatic Drip Irrigation System, 15 Pot Self Watering System with 2200mAh, IPX5 Waterproof, USB-C &amp; Solar Charging, Timer Modes for Indoor/Out…</h3>
+            <div class="brand">MQJIAZHI</div>
+            <div class="metrics">
+              <span><b>205</b><small>月销量</small></span>
+              <span><b>$6,425</b><small>月销售额</small></span>
+              <span><b>$31.34</b><small>价格</small></span>
+              <span><b>13</b><small>Reviews</small></span>
+              <span><b>3.7</b><small>评分</small></span>
+              <span><b>$5.72</b><small>FBA</small></span>
+              <span><b>67%</b><small>毛利</small></span>
+              <span><b>1.5 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #440</span>
+              <span>上架 2026-01-28 4个月</span>
+            </div>
+            <ul class="reasons"><li>月销 205</li><li>价格 $31.34</li><li>毛利 67%</li><li>Reviews 13</li></ul>
+            <div class="cautions">FBA $5.72</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-17">
+      <div class="section-head">
+        <div>
+          <h2>Outdoor Lanterns</h2>
+          <p>1 products · avg score 93.0 · combined monthly sales 286</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GHS3GQMV" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/51MpYZJYk9L._AC_SR600,600_.jpg" alt="KOOPER Hanging Solar Lanterns Outdoor Waterproof, 4 Pack Flickering Solar Powered Tea Lights, Rust Iron Ball Candle Holder Hanging Solar Lights for Backyard Garden Patio Yard Fence Tree Decoration" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GHS3GQMV" target="_blank" rel="noreferrer">B0GHS3GQMV</a>
+              <span class="score">Score 93</span>
+            </div>
+            <h3>KOOPER Hanging Solar Lanterns Outdoor Waterproof, 4 Pack Flickering Solar Powered Tea Lights, Rust Iron Ball Candle Holder Hanging Solar Lights for B…</h3>
+            <div class="brand">KOOPER</div>
+            <div class="metrics">
+              <span><b>286</b><small>月销量</small></span>
+              <span><b>$8,577</b><small>月销售额</small></span>
+              <span><b>$29.99</b><small>价格</small></span>
+              <span><b>87</b><small>Reviews</small></span>
+              <span><b>3.6</b><small>评分</small></span>
+              <span><b>$4.76</b><small>FBA</small></span>
+              <span><b>69%</b><small>毛利</small></span>
+              <span><b>0.84 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #761</span>
+              <span>上架 2026-04-18 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 286</li><li>价格 $29.99</li><li>毛利 69%</li><li>Reviews 87</li></ul>
+            <div class="cautions">FBA $4.76</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-18">
+      <div class="section-head">
+        <div>
+          <h2>Squirt Guns</h2>
+          <p>1 products · avg score 99.0 · combined monthly sales 168</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0GW4LXQX6" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71w5x+64-IL._AC_US600_.jpg" alt="Electric Water Gun for Office Home" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0GW4LXQX6" target="_blank" rel="noreferrer">B0GW4LXQX6</a>
+              <span class="score">Score 99</span>
+            </div>
+            <h3>Electric Water Gun for Office Home</h3>
+            <div class="brand">DOPTOY</div>
+            <div class="metrics">
+              <span><b>168</b><small>月销量</small></span>
+              <span><b>$6,046</b><small>月销售额</small></span>
+              <span><b>$35.99</b><small>价格</small></span>
+              <span><b>5</b><small>Reviews</small></span>
+              <span><b>2.8</b><small>评分</small></span>
+              <span><b>$5.72</b><small>FBA</small></span>
+              <span><b>69%</b><small>毛利</small></span>
+              <span><b>0.68 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 2</span>
+              <span>小类排名 #943</span>
+              <span>上架 2026-04-16 2个月</span>
+            </div>
+            <ul class="reasons"><li>月销 168</li><li>价格 $35.99</li><li>毛利 69%</li><li>Reviews 5</li></ul>
+            <div class="cautions">FBA $5.72</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-19">
+      <div class="section-head">
+        <div>
+          <h2>Women&#x27;s Casual Shorts</h2>
+          <p>1 products · avg score 92.0 · combined monthly sales 471</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0FYWGT6NP" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71nHp2CUJOL._AC_US600_.jpg" alt="ANRABESS Shorts for Women Dressy Stretchy Comfort Business Casual Work 2026 Summer Cute Going Out Shorts with Flat Pockets Parchment Small" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0FYWGT6NP" target="_blank" rel="noreferrer">B0FYWGT6NP</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>ANRABESS Shorts for Women Dressy Stretchy Comfort Business Casual Work 2026 Summer Cute Going Out Shorts with Flat Pockets Parchment Small</h3>
+            <div class="brand">ANRABESS</div>
+            <div class="metrics">
+              <span><b>471</b><small>月销量</small></span>
+              <span><b>$13,183</b><small>月销售额</small></span>
+              <span><b>$27.99</b><small>价格</small></span>
+              <span><b>1</b><small>Reviews</small></span>
+              <span><b>2.0</b><small>评分</small></span>
+              <span><b>$3.51</b><small>FBA</small></span>
+              <span><b>67%</b><small>毛利</small></span>
+              <span><b>0.1 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #123</span>
+              <span>上架 2026-02-20 3个月</span>
+            </div>
+            <ul class="reasons"><li>月销 471</li><li>价格 $27.99</li><li>毛利 67%</li><li>Reviews 1</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-20">
+      <div class="section-head">
+        <div>
+          <h2>Women&#x27;s Club &amp; Night Out Dresses</h2>
+          <p>1 products · avg score 92.0 · combined monthly sales 1,385</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0G4WQ1WJK" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/716teaDaQ3L._AC_US600_.jpg" alt="OYOANGLE Women&#x27;s Sleeveless Sequin Halter Short Dress Sparkly Party Wedding Guest Dresses Clubwear Black and Gold M" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0G4WQ1WJK" target="_blank" rel="noreferrer">B0G4WQ1WJK</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>OYOANGLE Women&#x27;s Sleeveless Sequin Halter Short Dress Sparkly Party Wedding Guest Dresses Clubwear Black and Gold M</h3>
+            <div class="brand">OYOANGLE</div>
+            <div class="metrics">
+              <span><b>1,385</b><small>月销量</small></span>
+              <span><b>$41,522</b><small>月销售额</small></span>
+              <span><b>$29.98</b><small>价格</small></span>
+              <span><b>2</b><small>Reviews</small></span>
+              <span><b>3.0</b><small>评分</small></span>
+              <span><b>$4.40</b><small>FBA</small></span>
+              <span><b>65%</b><small>毛利</small></span>
+              <span><b>1 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #5,265</span>
+              <span>上架 2026-01-14 5个月</span>
+            </div>
+            <ul class="reasons"><li>月销 1385</li><li>价格 $29.98</li><li>毛利 65%</li><li>Reviews 2</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-21">
+      <div class="section-head">
+        <div>
+          <h2>Women&#x27;s Formal Dresses</h2>
+          <p>1 products · avg score 92.0 · combined monthly sales 742</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0F4QRTH6Y" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51i22ys5AsL._AC_US600_.jpg" alt="Gmeitoey Women&#x27;s Summer Elegant Satin Off Shoulder Sleeveless Maxi Dress Formal Cocktail Wedding Guest Long Dresses" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0F4QRTH6Y" target="_blank" rel="noreferrer">B0F4QRTH6Y</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Gmeitoey Women&#x27;s Summer Elegant Satin Off Shoulder Sleeveless Maxi Dress Formal Cocktail Wedding Guest Long Dresses</h3>
+            <div class="brand">Gmeitoey</div>
+            <div class="metrics">
+              <span><b>742</b><small>月销量</small></span>
+              <span><b>$33,420</b><small>月销售额</small></span>
+              <span><b>$45.04</b><small>价格</small></span>
+              <span><b>35</b><small>Reviews</small></span>
+              <span><b>3.2</b><small>评分</small></span>
+              <span><b>$3.82</b><small>FBA</small></span>
+              <span><b>72%</b><small>毛利</small></span>
+              <span><b>0.4 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #817</span>
+              <span>上架 2026-02-01 4个月</span>
+            </div>
+            <ul class="reasons"><li>月销 742</li><li>价格 $45.04</li><li>毛利 72%</li><li>Reviews 35</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-22">
+      <div class="section-head">
+        <div>
+          <h2>Women&#x27;s Rompers</h2>
+          <p>1 products · avg score 92.0 · combined monthly sales 738</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0FHWGN54Q" target="_blank" rel="noreferrer">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71Rm0WLSJEL._AC_US600_.jpg" alt="Yanekop Womens Athletic Romper Sleeveless Workout Jumpsuits Exercise Active Rompers One Piece Outfits Gym Yoga Clothes(Dusty Green,M)" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0FHWGN54Q" target="_blank" rel="noreferrer">B0FHWGN54Q</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Yanekop Womens Athletic Romper Sleeveless Workout Jumpsuits Exercise Active Rompers One Piece Outfits Gym Yoga Clothes(Dusty Green,M)</h3>
+            <div class="brand">Yanekop</div>
+            <div class="metrics">
+              <span><b>738</b><small>月销量</small></span>
+              <span><b>$36,893</b><small>月销售额</small></span>
+              <span><b>$48.99</b><small>价格</small></span>
+              <span><b>2</b><small>Reviews</small></span>
+              <span><b>3.5</b><small>评分</small></span>
+              <span><b>$4.05</b><small>FBA</small></span>
+              <span><b>72%</b><small>毛利</small></span>
+              <span><b>0.62 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 1</span>
+              <span>卖家 1</span>
+              <span>小类排名 #1,376</span>
+              <span>上架 2025-08-14 10个月</span>
+            </div>
+            <ul class="reasons"><li>月销 738</li><li>价格 $48.99</li><li>毛利 72%</li><li>Reviews 2</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article></div>
+    </section>
+    <section class="category-section" id="cat-23">
+      <div class="section-head">
+        <div>
+          <h2>Women&#x27;s Skirt Sets</h2>
+          <p>1 products · avg score 92.0 · combined monthly sales 601</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="thumb" href="https://www.amazon.com/dp/B0H1VTSNVC" target="_blank" rel="noreferrer">
+            <img src="https://m.media-amazon.com/images/I/31KPlGHsp0L._AC_SR600,600_.jpg" alt="Womens Summer Skort Set Color Blocked Sleeveless Tank Top Mini Skirt 2 Piece Outfits Casual Matching Set with Pockets" loading="lazy">
+          </a>
+          <div class="product-main">
+            <div class="product-topline">
+              <a class="asin" href="https://www.amazon.com/dp/B0H1VTSNVC" target="_blank" rel="noreferrer">B0H1VTSNVC</a>
+              <span class="score">Score 92</span>
+            </div>
+            <h3>Womens Summer Skort Set Color Blocked Sleeveless Tank Top Mini Skirt 2 Piece Outfits Casual Matching Set with Pockets</h3>
+            <div class="brand">Meyhad</div>
+            <div class="metrics">
+              <span><b>601</b><small>月销量</small></span>
+              <span><b>$22,832</b><small>月销售额</small></span>
+              <span><b>$37.99</b><small>价格</small></span>
+              <span><b>2</b><small>Reviews</small></span>
+              <span><b>2.5</b><small>评分</small></span>
+              <span><b>$3.72</b><small>FBA</small></span>
+              <span><b>70%</b><small>毛利</small></span>
+              <span><b>0.95 pounds</b><small>重量</small></span>
+            </div>
+            <div class="submetrics">
+              <span>变体 4</span>
+              <span>卖家 1</span>
+              <span>小类排名 #1,254</span>
+              <span>上架 2026-05-15 1个月</span>
+            </div>
+            <ul class="reasons"><li>月销 601</li><li>价格 $37.99</li><li>毛利 70%</li><li>Reviews 2</li></ul>
+            <div class="cautions">类目风险: 服装/带电/认证或退货复杂</div>
+          </div>
+        </article></div>
+    </section>
+</main>
 </body>
 </html>
