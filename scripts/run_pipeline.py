@@ -240,7 +240,11 @@ def process_categories_loop(
         return attempted if attempted else ""
 
     to_process = sorted(
-        (cat for cat in db.values() if cat.get("level") == GREEN),
+        (
+            cat
+            for cat in db.values()
+            if cat.get("level") == GREEN and cat.get("last_scan_status") != "success"
+        ),
         key=sort_key,
     )
     if max_categories:
