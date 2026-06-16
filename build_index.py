@@ -50,8 +50,10 @@ def render_index(data: dict) -> str:
             asin = product.get("asin", "")
             amazon_url = f"https://www.amazon.com/dp/{asin}"
             sellersprite_url = (
-                "https://www.sellersprite.com/v3/traffic/extend/asin"
-                f"?q={asin}&marketId=1&date="
+                "https://www.sellersprite.com/v3/competitor-lookup"
+                f"?market=US&monthName=bsr_sales_nearly&asins=%5B%22{asin}%22%5D"
+                "&page=1&nodeIdPaths=%5B%5D&symbolFlag=true&size=60"
+                "&order%5Bfield%5D=amz_unit&order%5Bdesc%5D=true&lowPrice=N"
             )
             image_url = product.get("image_url") or ""
             reasons = "".join(
