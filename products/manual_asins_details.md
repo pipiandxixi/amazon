@@ -1,6 +1,6 @@
 # Manual ASIN Details Watchlist
 
-- **Total Unique ASINs**: `180`
+- **Total Unique ASINs**: `179`
 - **Source**: `manual competitor lookup scraper + xlsx import`
 - **Last Updated**: `2026-06-17`
 
@@ -185,4 +185,3 @@
 | 177 | <img src="https://m.media-amazon.com/images/I/71aQq5evhsL._AC_US600_.jpg" width="50" height="50" style="object-fit: contain;" /> | `B0DSBBKPBZ`<br>**Thiswing** | Thiswing 360° Adjustable Drip Irrigation System - 50 FT... | $26.99 | 4,855<br>*$131,036* | 709<br>(4.6⭐) | 62%<br>*$6.31* | 1年 5个月 | [Amazon](https://www.amazon.com/dp/B0DSBBKPBZ)<br>[卖家精灵](https://www.sellersprite.com/v3/competitor-lookup?market=US&monthName=bsr_sales_nearly&asins=%5B%22B0DSBBKPBZ%22%5D&page=1&nodeIdPaths=%5B%5D&symbolFlag=true&size=60&order%5Bfield%5D=amz_unit&order%5Bdesc%5D=true&lowPrice=N) |
 | 178 | <img src="https://m.media-amazon.com/images/I/71ym7rPmkgL._AC_US600_.jpg" width="50" height="50" style="object-fit: contain;" /> | `B09THGNFSV`<br>**Ezire** | Kids Snorkel Mask Full Face, Snorkeling Gear for Kids w... | $25.48 | 5,404<br>*$137,693* | 1,411<br>(4.4⭐) | 56%<br>*$7.46* | 4年 2个月 | [Amazon](https://www.amazon.com/dp/B09THGNFSV)<br>[卖家精灵](https://www.sellersprite.com/v3/competitor-lookup?market=US&monthName=bsr_sales_nearly&asins=%5B%22B09THGNFSV%22%5D&page=1&nodeIdPaths=%5B%5D&symbolFlag=true&size=60&order%5Bfield%5D=amz_unit&order%5Bdesc%5D=true&lowPrice=N) |
 | 179 | <img src="https://m.media-amazon.com/images/I/51YIad3gT0L._AC_SR600,600_.jpg" width="50" height="50" style="object-fit: contain;" /> | `B0FFH1FBM8`<br>**Tepaken** | Solar Lanterns Garden Decor Birthday Gifts for Women Mo... | $25.63 | 4,645<br>*$119,051* | 1,419<br>(4.6⭐) | 66%<br>*$4.76* | 9个月 | [Amazon](https://www.amazon.com/dp/B0FFH1FBM8)<br>[卖家精灵](https://www.sellersprite.com/v3/competitor-lookup?market=US&monthName=bsr_sales_nearly&asins=%5B%22B0FFH1FBM8%22%5D&page=1&nodeIdPaths=%5B%5D&symbolFlag=true&size=60&order%5Bfield%5D=amz_unit&order%5Bdesc%5D=true&lowPrice=N) |
-| 180 |  | `导出时会自动对变体去重。可能导致导出的产品总数与页面显示数量不一致`<br>**** |  | - | -<br>*-* | -<br>(-⭐) | -<br>*-* | - | [Amazon](https://www.amazon.com/dp/导出时会自动对变体去重。可能导致导出的产品总数与页面显示数量不一致)<br>[卖家精灵](https://www.sellersprite.com/v3/competitor-lookup?market=US&monthName=bsr_sales_nearly&asins=%5B%22导出时会自动对变体去重。可能导致导出的产品总数与页面显示数量不一致%22%5D&page=1&nodeIdPaths=%5B%5D&symbolFlag=true&size=60&order%5Bfield%5D=amz_unit&order%5Bdesc%5D=true&lowPrice=N) |

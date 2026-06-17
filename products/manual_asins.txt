@@ -177,4 +177,3 @@ B0CC5GTSQF
 B0DSBBKPBZ
 B09THGNFSV
 B0FFH1FBM8
-导出时会自动对变体去重。可能导致导出的产品总数与页面显示数量不一致

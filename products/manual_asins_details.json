@@ -1,8 +1,8 @@
 {
   "source": "manual competitor lookup scraper",
   "timestamp": "2026-06-16T06:20:23Z",
-  "asin_count": 180,
-  "scraped_count": 180,
+  "asin_count": 179,
+  "scraped_count": 179,
   "products": [
     {
       "asin": "B0DK4VM1SX",
@@ -4500,32 +4500,6 @@
       "package_weight": "0.62 pounds",
       "raw_metrics": "4,645 | 1.37 | $119,051 | 1,419 | $25.63 | 66% | FBA",
       "image_url": "https://m.media-amazon.com/images/I/51YIad3gT0L._AC_SR600,600_.jpg",
-      "_import_source": "xlsx"
-    },
-    {
-      "asin": "导出时会自动对变体去重。可能导致导出的产品总数与页面显示数量不一致",
-      "parent_asin": "",
-      "title": "",
-      "brand": "",
-      "monthly_sales": "-",
-      "sales_growth": "-",
-      "monthly_revenue": "-",
-      "variants": "-",
-      "price": "-",
-      "reviews": "-",
-      "monthly_new_reviews": "-",
-      "rating": "-",
-      "review_rate": "-",
-      "fba_fee": "-",
-      "profit_margin": "-",
-      "listing_date": "",
-      "listing_age": "-",
-      "leaf_rank": "-",
-      "leaf_category": "",
-      "sellers": "-",
-      "package_weight": "",
-      "raw_metrics": "",
-      "image_url": "",
       "_import_source": "xlsx"
     }
   ]

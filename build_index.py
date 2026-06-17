@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+"""Rebuild index.html from products/manual_asins_details.json.
+
+Scoring is computed inline from product attributes.
+Category metrics come from category/category_opportunity_pool.json via
+fuzzy name matching (word-overlap heuristic).
+IP risk badges are injected afterwards by patch_ip_risk.py.
+
+Usage:
+    python3 build_index.py
+"""
 from __future__ import annotations
 
 import collections
@@ -7,71 +17,251 @@ import json
 import re
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parent
-SOURCE = ROOT / "products" / "top_product_candidates.json"
+SOURCE = ROOT / "products" / "manual_asins_details.json"
+CATEGORY_POOL = ROOT / "category" / "category_opportunity_pool.json"
 OUTPUT = ROOT / "index.html"
 
+SELLERSPRITE_URL = (
+    "https://www.sellersprite.com/v3/competitor-lookup"
+    "?market=US&monthName=bsr_sales_nearly&asins=%5B%22{asin}%22%5D"
+    "&page=1&nodeIdPaths=%5B%5D&symbolFlag=true&size=60"
+    "&order%5Bfield%5D=amz_unit&order%5Bdesc%5D=true&lowPrice=N"
+)
+
+# Words to ignore when matching leaf_category to pool names.
+_STOP = {
+    "and", "or", "the", "a", "an", "for", "of", "in", "at", "to", "with",
+    "by", "&",
+    "combination", "automatic", "outdoor", "indoor", "cell", "phone",
+    "handheld", "toy", "landscape", "wall", "pool", "bed", "garden",
+    "solar", "led", "electric", "digital", "portable", "wireless",
+}
+
+
+def _tokens(name: str) -> set[str]:
+    return {w.lower() for w in re.split(r"[\s&,/]+", name) if w.lower() not in _STOP and len(w) > 1}
+
+
+def build_pool_index(pool: list[dict]) -> list[tuple[str, set[str], dict]]:
+    """Return [(pool_name, tokens, entry), ...] for fast lookup."""
+    return [(e["name"], _tokens(e["name"]), e) for e in pool]
+
+
+def match_pool(leaf: str, pool_index: list[tuple]) -> dict:
+    """Fuzzy-match a product leaf category to the best pool entry.
+    Returns the matched entry dict, or {} if no good match."""
+    leaf_tok = _tokens(leaf)
+    best_score = 0.0
+    best_entry: dict = {}
+    for pool_name, pool_tok, entry in pool_index:
+        if not pool_tok:
+            continue
+        overlap = len(leaf_tok & pool_tok)
+        # Score = overlap / pool_token_count (reward specificity in pool name)
+        score = overlap / len(pool_tok)
+        if score > best_score:
+            best_score = score
+            best_entry = entry
+    return best_entry if best_score >= 0.5 else {}
+
+
+# ── Scoring ───────────────────────────────────────────────────────────────────
+
+def _parse_float(value: object) -> float | None:
+    if value in (None, "", "-"):
+        return None
+    text = str(value).replace(",", "").replace("%", "")
+    m = re.search(r"-?\d+(?:\.\d+)?", text)
+    return float(m.group(0)) if m else None
+
+
+def _parse_int(value: object) -> int | None:
+    if value in (None, "", "-"):
+        return None
+    m = re.search(r"-?\d+", str(value).replace(",", ""))
+    return int(m.group(0)) if m else None
+
+
+def score_product(product: dict, category_meta: dict) -> tuple[int, list[str], list[str]]:
+    sales = _parse_int(product.get("monthly_sales")) or 0
+    reviews = _parse_int(product.get("reviews")) or 0
+    rating = _parse_float(product.get("rating"))
+    price = _parse_float(product.get("price"))
+    margin = _parse_float(product.get("profit_margin"))   # e.g. "62%" → 62.0
+    fba = _parse_float(product.get("fba_fee"))
+    sellers = _parse_int(product.get("sellers")) or 0
+    variants = _parse_int(product.get("variants")) or 0
+
+    score = 0.0
+    reasons: list[str] = []
+    cautions: list[str] = []
+
+    score += min(sales, 3000) / 30.0
+    if sales:
+        reasons.append(f"月销 {sales:,}")
+
+    if margin is not None:
+        score += margin * 0.85
+        reasons.append(f"毛利 {margin:.0f}%")
+
+    if rating is not None:
+        score += max(0.0, 4.0 - rating) * 18.0
+        reasons.append(f"评分 {rating:.1f}")
+    else:
+        score += 4.0
+
+    if reviews:
+        score += max(0.0, 220 - reviews) / 5.0
+        reasons.append(f"Reviews {reviews:,}")
+    else:
+        score += 12.0
+
+    if price is not None:
+        score += 8.0 if 20 <= price <= 60 else 3.0
+        reasons.append(f"价格 ${price:.2f}")
+    else:
+        score += 2.0
+
+    score += max(0.0, 3 - sellers) * 6.0
+    score += max(0.0, 6 - variants) * 2.5
+
+    if fba is not None:
+        score -= max(0.0, fba - 6.0) * 3.0
+
+    risk_flags = category_meta.get("risk_flags", [])
+    if risk_flags:
+        cautions.append(f"类目风险: {', '.join(risk_flags)}")
+    if "electronics_cert" in risk_flags:
+        cautions.append("需注意电类认证与售后")
+    if "bulky_watch" in risk_flags or "bulky_logistics" in risk_flags:
+        cautions.append("物流和仓储成本需复核")
+    if "fragile" in risk_flags:
+        cautions.append("易碎品要重点看包装和退货")
+    if "pool" in risk_flags:
+        cautions.append("泳池/水域相关产品先核实季节性")
+
+    return int(round(score)), reasons[:4], cautions[:3]
+
+
+# ── HTML helpers ──────────────────────────────────────────────────────────────
 
 def esc(value) -> str:
     return html.escape(str(value if value is not None else ""), quote=True)
 
 
-def short(value, max_len: int = 120) -> str:
+def short(value, max_len: int = 150) -> str:
     text = " ".join(str(value or "").split())
     return text if len(text) <= max_len else text[: max_len - 1] + "…"
 
 
-def safe_num(value) -> float | None:
-    if value in (None, "", "-"):
-        return None
-    match = re.search(r"-?\d+(?:\.\d+)?", str(value).replace(",", ""))
-    return float(match.group(0)) if match else None
+def fmt_pct(v: float | None, decimals: int = 1) -> str:
+    return f"{v:.{decimals}f}%" if v is not None else "-"
 
 
-def render_index(data: dict) -> str:
-    products = data["top_products"]
-    groups: dict[str, list[dict]] = collections.defaultdict(list)
-    for product in products:
-        groups[product.get("leaf_category") or "UNKNOWN"].append(product)
-    ordered = sorted(groups.items(), key=lambda item: (-len(item[1]), item[0]))
+def fmt_money(v: float | None) -> str:
+    return f"${v:,.0f}" if v is not None else "-"
 
-    category_nav = "".join(
-        f'<a href="#cat-{index}">{esc(name)} <span>{len(items)}</span></a>'
-        for index, (name, items) in enumerate(ordered, 1)
+
+def fmt_metric(v: float | None) -> str:
+    if v is None:
+        return "-"
+    if v == int(v):
+        return f"{int(v):,}"
+    return f"{v:,.2f}"
+
+
+# ── Category metrics panel ────────────────────────────────────────────────────
+
+def render_cat_metrics(entry: dict) -> str:
+    if not entry:
+        return ""
+    m = entry.get("metrics", {})
+    monthly_sales = m.get("monthly_sales")
+    avg_sales = m.get("avg_sales")
+    avg_revenue = m.get("avg_revenue")
+    price = m.get("price")
+    total_products = m.get("total_products")
+    rating = m.get("rating")
+    reviews = m.get("reviews")
+    product_conc = m.get("product_conc")
+    brand_conc = m.get("brand_conc")
+    seller_conc = m.get("seller_conc")
+    profit = m.get("profit")
+    return_rate = m.get("return_rate")
+    new_ratio = m.get("new_ratio")
+    spr = m.get("search_purchase_ratio")
+
+    def row(label: str, value: str) -> str:
+        return (
+            f'<div class="cat-metric-item">'
+            f'<span>{label}</span>'
+            f'<b>{value}</b>'
+            f'</div>'
+        )
+
+    def fmt_sales(total, avg) -> str:
+        t = f"{int(total):,}" if total is not None else "-"
+        a = f"{int(avg):,}" if avg is not None else "-"
+        return f"{t} / {a}"
+
+    def fmt_rev_price(rev, pr) -> str:
+        rv = fmt_money(rev)
+        pr_s = f"${pr:.2f}" if pr is not None else "-"
+        return f"{rv} / {pr_s}"
+
+    def fmt_prod_rating(tp, rt, rv) -> str:
+        tp_s = f"{int(tp):,}" if tp is not None else "-"
+        rt_s = f"{rt:.1f}⭐" if rt is not None else "-"
+        rv_s = f"{int(rv):,} Revs" if rv is not None else "-"
+        return f"{tp_s} / {rt_s} ({rv_s})"
+
+    def fmt_conc(pc, bc, sc) -> str:
+        parts = []
+        for v in (pc, bc, sc):
+            parts.append(fmt_pct(v, 1) if v is not None else "-")
+        return " / ".join(parts)
+
+    def fmt_profit_return(pf, rr) -> str:
+        pf_s = fmt_pct(pf, 1) if pf is not None else "-"
+        rr_s = fmt_pct(rr, 2) if rr is not None else "-"
+        return f"{pf_s} / {rr_s}"
+
+    def fmt_new_spr(nr, sp) -> str:
+        nr_s = fmt_pct(nr, 1) if nr is not None else "-"
+        sp_s = f"{sp:.2f}" if sp is not None else "-"
+        return f"{nr_s} / {sp_s}"
+
+    items = [
+        row("月销量 / 均销量", fmt_sales(monthly_sales, avg_sales)),
+        row("平均销售额 / 均价", fmt_rev_price(avg_revenue, price)),
+        row("商品总数 / 均评分 (评论数)", fmt_prod_rating(total_products, rating, reviews)),
+        row("行业集中度 (产品/品牌/卖家)", fmt_conc(product_conc, brand_conc, seller_conc)),
+        row("毛利率 / 退货率", fmt_profit_return(profit, return_rate)),
+        row("新品占比 / 搜索购买比", fmt_new_spr(new_ratio, spr)),
+    ]
+    return f'<div class="cat-metrics-panel">{"".join(items)}</div>'
+
+
+# ── Product card ──────────────────────────────────────────────────────────────
+
+def render_card(product: dict, score: int, reasons: list[str], cautions: list[str]) -> str:
+    asin = product.get("asin", "")
+    amazon_url = f"https://www.amazon.com/dp/{asin}"
+    sprite_url = SELLERSPRITE_URL.format(asin=asin)
+    image_url = product.get("image_url") or ""
+
+    image_html = (
+        f'<img src="{esc(image_url)}" alt="{esc(product.get("title", ""))}" loading="lazy">'
+        if image_url
+        else '<div class="no-img">No image</div>'
+    )
+    reasons_html = "".join(f"<li>{esc(r)}</li>" for r in reasons)
+    caution_html = (
+        f'<div class="cautions">{esc("；".join(cautions))}</div>' if cautions else ""
     )
 
-    sections = []
-    for index, (name, items) in enumerate(ordered, 1):
-        avg_score = sum(float(item.get("_score") or 0) for item in items) / len(items)
-        total_sales = sum(safe_num(item.get("monthly_sales")) or 0 for item in items)
-        cards = []
-        for product in items:
-            asin = product.get("asin", "")
-            amazon_url = f"https://www.amazon.com/dp/{asin}"
-            sellersprite_url = (
-                "https://www.sellersprite.com/v3/competitor-lookup"
-                f"?market=US&monthName=bsr_sales_nearly&asins=%5B%22{asin}%22%5D"
-                "&page=1&nodeIdPaths=%5B%5D&symbolFlag=true&size=60"
-                "&order%5Bfield%5D=amz_unit&order%5Bdesc%5D=true&lowPrice=N"
-            )
-            image_url = product.get("image_url") or ""
-            reasons = "".join(
-                f"<li>{esc(reason)}</li>" for reason in (product.get("_reasons") or [])[:4]
-            )
-            cautions = product.get("_cautions") or []
-            caution_html = (
-                f'<div class="cautions">{esc("；".join(cautions))}</div>'
-                if cautions
-                else ""
-            )
-            image_html = (
-                f'<img src="{esc(image_url)}" alt="{esc(product.get("title", ""))}" loading="lazy">'
-                if image_url
-                else '<div class="no-img">No image</div>'
-            )
-            cards.append(
-                f"""
+    return f"""
         <article class="product-card">
           <a class="thumb" href="{esc(amazon_url)}" target="_blank" rel="noreferrer">
             {image_html}
@@ -79,13 +269,13 @@ def render_index(data: dict) -> str:
           <div class="product-main">
             <div class="product-topline">
               <a class="asin" href="{esc(amazon_url)}" target="_blank" rel="noreferrer">{esc(asin)}</a>
-              <span class="score">Score {esc(product.get("_score", ""))}</span>
+              <span class="score">Score {score}</span>
             </div>
-            <h3>{esc(short(product.get("title", ""), 150))}</h3>
+            <h3>{esc(short(product.get("title", "")))}</h3>
             <div class="brand">{esc(product.get("brand") or "Unknown brand")}</div>
             <div class="external-links">
               <a class="link-btn amazon" href="{esc(amazon_url)}" target="_blank" rel="noreferrer">Amazon</a>
-              <a class="link-btn sprite" href="{esc(sellersprite_url)}" target="_blank" rel="noreferrer">卖家精灵</a>
+              <a class="link-btn sprite" href="{esc(sprite_url)}" target="_blank" rel="noreferrer">卖家精灵</a>
             </div>
             <div class="metrics">
               <span><b>{esc(product.get("monthly_sales"))}</b><small>月销量</small></span>
@@ -103,33 +293,16 @@ def render_index(data: dict) -> str:
               <span>小类排名 #{esc(product.get("leaf_rank"))}</span>
               <span>上架 {esc(product.get("listing_date"))} {esc(product.get("listing_age"))}</span>
             </div>
-            <ul class="reasons">{reasons}</ul>
+            <ul class="reasons">{reasons_html}</ul>
             {caution_html}
           </div>
         </article>"""
-            )
-        sections.append(
-            f"""
-    <section class="category-section" id="cat-{index}">
-      <div class="section-head">
-        <div>
-          <h2>{esc(name)}</h2>
-          <p>{len(items)} products · avg score {avg_score:.1f} · combined monthly sales {total_sales:,.0f}</p>
-        </div>
-        <a href="#top" class="back-top">Back to top</a>
-      </div>
-      <div class="product-grid">{''.join(cards)}</div>
-    </section>"""
-        )
 
-    return f"""<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amazon 产品候选清单</title>
-<style>
-:root {{
+
+# ── Full HTML ─────────────────────────────────────────────────────────────────
+
+CSS = """\
+:root {
   --bg: #f6f7f9;
   --panel: #ffffff;
   --text: #18202a;
@@ -139,61 +312,155 @@ def render_index(data: dict) -> str:
   --accent-2: #b45309;
   --good: #166534;
   --warn: #9a3412;
-}}
-* {{ box-sizing: border-box; }}
-body {{ margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }}
-a {{ color: inherit; }}
-.header {{ background: #ffffff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }}
-.header-inner {{ max-width: 1440px; margin: 0 auto; padding: 18px 28px 14px; }}
-.title-row {{ display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }}
-h1 {{ margin: 0; font-size: 24px; line-height: 1.2; letter-spacing: 0; }}
-.subtitle {{ margin: 6px 0 0; color: var(--muted); font-size: 13px; }}
-.summary {{ display: grid; grid-template-columns: repeat(4, minmax(120px, 1fr)); gap: 10px; min-width: 520px; }}
-.summary div {{ border: 1px solid var(--line); background: #fbfcfe; padding: 10px 12px; border-radius: 6px; }}
-.summary b {{ display: block; font-size: 20px; }}
-.summary small {{ color: var(--muted); font-size: 12px; }}
-.nav {{ display: flex; gap: 8px; overflow-x: auto; padding-top: 14px; }}
-.nav a {{ flex: 0 0 auto; text-decoration: none; border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; font-size: 12px; color: #344054; background: #fff; }}
-.nav span {{ color: var(--accent); font-weight: 700; }}
-main {{ max-width: 1440px; margin: 0 auto; padding: 24px 28px 48px; }}
-.category-section {{ margin-bottom: 30px; }}
-.section-head {{ display: flex; justify-content: space-between; gap: 16px; align-items: flex-end; padding: 0 0 10px; border-bottom: 1px solid var(--line); }}
-h2 {{ margin: 0; font-size: 20px; letter-spacing: 0; }}
-.section-head p {{ margin: 4px 0 0; color: var(--muted); font-size: 13px; }}
-.back-top {{ color: var(--muted); text-decoration: none; font-size: 12px; }}
-.product-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); gap: 12px; padding-top: 14px; }}
-.product-card {{ display: grid; grid-template-columns: 132px 1fr; gap: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-height: 190px; }}
-.thumb {{ display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 6px; background: #f9fafb; aspect-ratio: 1 / 1; overflow: hidden; }}
-.thumb img {{ width: 100%; height: 100%; object-fit: contain; }}
-.no-img {{ color: var(--muted); font-size: 12px; }}
-.product-topline {{ display: flex; justify-content: space-between; gap: 12px; align-items: center; margin-bottom: 5px; }}
-.asin {{ color: var(--accent); font-weight: 700; text-decoration: none; font-size: 13px; }}
-.score {{ color: var(--accent-2); background: #fff7ed; border: 1px solid #fed7aa; border-radius: 6px; padding: 3px 7px; font-size: 12px; font-weight: 700; }}
-h3 {{ margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }}
-.brand {{ color: var(--muted); font-size: 12px; margin: 4px 0 8px; }}
-.external-links {{ display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 9px; }}
-.link-btn {{ display: inline-flex; align-items: center; justify-content: center; min-height: 28px; padding: 5px 10px; border-radius: 6px; text-decoration: none; font-size: 12px; font-weight: 700; border: 1px solid var(--line); }}
-.link-btn.amazon {{ color: #7c2d12; background: #fff7ed; border-color: #fed7aa; }}
-.link-btn.sprite {{ color: #065f46; background: #ecfdf5; border-color: #a7f3d0; }}
-.metrics {{ display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }}
-.metrics span {{ background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 6px; padding: 6px 7px; min-width: 0; }}
-.metrics b {{ display: block; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
-.metrics small {{ color: var(--muted); font-size: 11px; }}
-.submetrics {{ display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; color: #475467; font-size: 12px; }}
-.submetrics span {{ border: 1px solid #e5e7eb; border-radius: 6px; padding: 3px 6px; background: #fff; }}
-.reasons {{ margin: 9px 0 0; padding-left: 18px; color: var(--good); font-size: 12px; line-height: 1.45; }}
-.cautions {{ margin-top: 8px; color: var(--warn); font-size: 12px; }}
-@media (max-width: 900px) {{
-  .title-row {{ flex-direction: column; }}
-  .summary {{ min-width: 0; width: 100%; grid-template-columns: repeat(2, 1fr); }}
-  .product-grid {{ grid-template-columns: 1fr; }}
-}}
-@media (max-width: 560px) {{
-  .header-inner, main {{ padding-left: 14px; padding-right: 14px; }}
-  .product-card {{ grid-template-columns: 1fr; }}
-  .thumb {{ max-width: 180px; }}
-  .metrics {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
-}}
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+a { color: inherit; }
+.header { background: #ffffff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
+.header-inner { max-width: 1440px; margin: 0 auto; padding: 18px 28px 14px; }
+.title-row { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
+h1 { margin: 0; font-size: 24px; line-height: 1.2; letter-spacing: 0; }
+.subtitle { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+.summary { display: grid; grid-template-columns: repeat(4, minmax(120px, 1fr)); gap: 10px; min-width: 520px; }
+.summary div { border: 1px solid var(--line); background: #fbfcfe; padding: 10px 12px; border-radius: 6px; }
+.summary b { display: block; font-size: 20px; }
+.summary small { color: var(--muted); font-size: 12px; }
+.nav { display: flex; gap: 8px; overflow-x: auto; padding-top: 14px; }
+.nav a { flex: 0 0 auto; text-decoration: none; border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; font-size: 12px; color: #344054; background: #fff; }
+.nav span { color: var(--accent); font-weight: 700; }
+main { max-width: 1440px; margin: 0 auto; padding: 24px 28px 48px; }
+.category-section { margin-bottom: 30px; }
+.section-head { display: flex; justify-content: space-between; gap: 16px; align-items: flex-end; padding: 0 0 10px; border-bottom: 1px solid var(--line); }
+h2 { margin: 0; font-size: 20px; letter-spacing: 0; }
+.section-head p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+.back-top { color: var(--muted); text-decoration: none; font-size: 12px; }
+
+/* Category Metrics Dashboard */
+.cat-metrics-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 10px 0 16px;
+}
+.cat-metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.cat-metric-item span {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.cat-metric-item b {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); gap: 12px; padding-top: 14px; }
+.product-card { display: grid; grid-template-columns: 132px 1fr; gap: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-height: 190px; }
+.thumb { display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 6px; background: #f9fafb; aspect-ratio: 1 / 1; overflow: hidden; }
+.thumb img { width: 100%; height: 100%; object-fit: contain; }
+.no-img { color: var(--muted); font-size: 12px; }
+.product-topline { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin-bottom: 5px; }
+.asin { color: var(--accent); font-weight: 700; text-decoration: none; font-size: 13px; }
+.score { color: var(--accent-2); background: #fff7ed; border: 1px solid #fed7aa; border-radius: 6px; padding: 3px 7px; font-size: 12px; font-weight: 700; }
+.ip-risk { display: inline-flex; align-items: center; border-radius: 6px; padding: 2px 7px; font-size: 11px; font-weight: 700; margin-left: 6px; cursor: help; white-space: nowrap; }
+.ip-high { color: #991b1b; background: #fef2f2; border: 1px solid #fca5a5; }
+.ip-medium { color: #78350f; background: #fffbeb; border: 1px solid #fcd34d; }
+.ip-low { color: #166534; background: #f0fdf4; border: 1px solid #86efac; }
+h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
+.brand { color: var(--muted); font-size: 12px; margin: 4px 0 8px; }
+.external-links { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 9px; }
+.link-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 28px; padding: 5px 10px; border-radius: 6px; text-decoration: none; font-size: 12px; font-weight: 700; border: 1px solid var(--line); }
+.link-btn.amazon { color: #7c2d12; background: #fff7ed; border-color: #fed7aa; }
+.link-btn.sprite { color: #065f46; background: #ecfdf5; border-color: #a7f3d0; }
+.metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.metrics span { background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 6px; padding: 6px 7px; min-width: 0; }
+.metrics b { display: block; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.metrics small { color: var(--muted); font-size: 11px; }
+.submetrics { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; color: #475467; font-size: 12px; }
+.submetrics span { border: 1px solid #e5e7eb; border-radius: 6px; padding: 3px 6px; background: #fff; }
+.reasons { margin: 9px 0 0; padding-left: 18px; color: var(--good); font-size: 12px; line-height: 1.45; }
+.cautions { margin-top: 8px; color: var(--warn); font-size: 12px; }
+@media (max-width: 900px) {
+  .title-row { flex-direction: column; }
+  .summary { min-width: 0; width: 100%; grid-template-columns: repeat(2, 1fr); }
+  .product-grid { grid-template-columns: 1fr; }
+  .cat-metrics-panel { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .header-inner, main { padding-left: 14px; padding-right: 14px; }
+  .product-card { grid-template-columns: 1fr; }
+  .thumb { max-width: 180px; }
+  .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}"""
+
+
+def render_index(products: list[dict], pool_index: list[tuple]) -> str:
+    # Group by leaf_category, skip products with no ASIN or empty category
+    groups: dict[str, list] = collections.defaultdict(list)
+    for p in products:
+        if not p.get("asin"):
+            continue
+        cat = p.get("leaf_category") or "UNKNOWN"
+        pool_entry = match_pool(cat, pool_index)
+        score, reasons, cautions = score_product(p, pool_entry)
+        groups[cat].append((p, score, reasons, cautions, pool_entry))
+
+    # Sort categories by product count desc, then alpha
+    ordered = sorted(groups.items(), key=lambda kv: (-len(kv[1]), kv[0]))
+
+    # Within each category sort by score desc
+    for cat in groups:
+        groups[cat].sort(key=lambda t: t[1], reverse=True)
+
+    total_products = sum(len(v) for v in groups.values())
+    total_cats = len(ordered)
+
+    category_nav = "".join(
+        f'<a href="#cat-{i}">{esc(name)} <span>{len(items)}</span></a>'
+        for i, (name, items) in enumerate(ordered, 1)
+    )
+
+    sections = []
+    for i, (name, items) in enumerate(ordered, 1):
+        avg_score = sum(t[1] for t in items) / len(items)
+        total_sales = sum(
+            (_parse_int(t[0].get("monthly_sales")) or 0) for t in items
+        )
+        # All items share the same pool entry (same leaf → same pool match)
+        pool_entry = items[0][4]
+        metrics_html = render_cat_metrics(pool_entry)
+        cards_html = "".join(render_card(*t[:4]) for t in items)
+
+        sections.append(f"""
+    <section class="category-section" id="cat-{i}">
+      <div class="section-head">
+        <div>
+          <h2>{esc(name)}</h2>
+          <p>{len(items)} products · avg score {avg_score:.1f} · combined monthly sales {total_sales:,}</p>
+        </div>
+        <a href="#top" class="back-top">Back to top</a>
+      </div>
+      {metrics_html}
+      <div class="product-grid">{cards_html}</div>
+    </section>""")
+
+    return f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon 产品候选清单</title>
+<style>
+{CSS}
 </style>
 </head>
 <body>
@@ -202,20 +469,20 @@ h3 {{ margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }}
     <div class="title-row">
       <div>
         <h1>Amazon 产品候选清单</h1>
-        <p class="subtitle">按 Leaf Category 分组展示；暂不包含 keyword 内容。数据来自 products/top_product_candidates.json。</p>
+        <p class="subtitle">按 Leaf Category 分组展示，含类目市场数据面板。数据源：products/manual_asins_details.json。</p>
       </div>
       <div class="summary">
-        <div><b>{len(products)}</b><small>优先候选产品</small></div>
-        <div><b>{data.get('qualified_parseable_count')}</b><small>可评分商品</small></div>
-        <div><b>{data.get('total_products')}</b><small>Combined 抓取商品</small></div>
-        <div><b>{len(ordered)}</b><small>Leaf Categories</small></div>
+        <div><b>{total_products}</b><small>候选产品</small></div>
+        <div><b>{total_cats}</b><small>Leaf Categories</small></div>
+        <div><b>{len(products)}</b><small>总观察产品</small></div>
+        <div><b>-</b><small>keyword 待接入</small></div>
       </div>
     </div>
     <nav class="nav">{category_nav}</nav>
   </div>
 </header>
 <main>
-  {''.join(sections)}
+  {"".join(sections)}
 </main>
 </body>
 </html>
@@ -224,11 +491,23 @@ h3 {{ margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }}
 
 def main() -> None:
     data = json.loads(SOURCE.read_text(encoding="utf-8"))
-    content = "\n".join(line.rstrip() for line in render_index(data).splitlines()) + "\n"
+    products: list[dict] = data.get("products", [])
+    print(f"Loaded {len(products)} products from {SOURCE.relative_to(ROOT)}")
+
+    pool_data = json.loads(CATEGORY_POOL.read_text(encoding="utf-8"))
+    pool = pool_data.get("target_pool", [])
+    pool_index = build_pool_index(pool)
+    print(f"Loaded {len(pool)} category pool entries")
+
+    content = render_index(products, pool_index)
+    # Normalise line endings
+    content = "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
     OUTPUT.write_text(content, encoding="utf-8")
-    products = data["top_products"]
-    groups = {product.get("leaf_category") or "UNKNOWN" for product in products}
-    print(f"Wrote {OUTPUT.relative_to(ROOT)} with {len(products)} products in {len(groups)} groups")
+
+    # Count for reporting
+    cats = {p.get("leaf_category") or "UNKNOWN" for p in products if p.get("asin")}
+    print(f"Wrote {OUTPUT.relative_to(ROOT)} — {len(products)} products, {len(cats)} categories")
+    print("Run  python3 patch_ip_risk.py  to inject IP risk badges.")
 
 
 if __name__ == "__main__":
