@@ -11,7 +11,6 @@ Usage:
 """
 from __future__ import annotations
 
-import collections
 import html
 import json
 import re
@@ -37,6 +36,27 @@ _STOP = {
     "handheld", "toy", "landscape", "wall", "pool", "bed", "garden",
     "solar", "led", "electric", "digital", "portable", "wireless",
 }
+
+TAG_RULES: list[tuple[str, tuple[str, ...]]] = [
+    ("户外庭院", ("outdoor", "backyard", "yard", "lawn", "deck", "patio", "porch")),
+    ("门廊露台", ("patio", "porch", "deck", "balcony", "front door", "entryway")),
+    ("花园装饰", ("garden", "planter", "plant", "flower", "birdbath", "wind chime", "stake")),
+    ("灯光氛围", ("light", "lantern", "solar", "string lights", "spotlight", "path light", "night-light")),
+    ("墙面悬挂", ("hanging", "wall", "wreath", "flag", "banner", "curtain", "tapestry")),
+    ("桌面摆件", ("table", "centerpiece", "vase", "bowl", "candle", "tray", "statue", "figurine")),
+    ("礼品送礼", ("gift", "gifts", "present", "mom", "dad", "women", "men", "grandma", "housewarming")),
+    ("纪念慰问", ("memorial", "sympathy", "remembrance", "bereavement", "condolence")),
+    ("节日季节", ("christmas", "holiday", "halloween", "thanksgiving", "easter", "fall", "spring", "summer", "winter")),
+    ("家居氛围", ("home decor", "room decor", "farmhouse", "boho", "rustic", "cozy", "aesthetic", "blanket", "rug")),
+    ("放松疗愈", ("relief", "relax", "calm", "massage", "heating pad", "aromatherapy", "self care", "spa")),
+    ("烧烤露营", ("grill", "bbq", "barbecue", "camping", "picnic", "outdoor cooking")),
+    ("派对活动", ("party", "game", "balloon", "garland", "centerpiece", "birthday", "wedding")),
+    ("儿童玩具", ("kids", "toy", "play", "toddler", "children", "water balloons", "walkie talkie")),
+    ("宠物鸟类", ("bird", "feeder", "pet", "dog", "cat")),
+    ("美妆护理", ("bath", "shower", "nail", "hair", "facial", "skin", "beauty")),
+    ("工具维修", ("tool", "flashlight", "crimper", "charger", "extension cord", "hardware")),
+    ("旅行出行", ("travel", "duffel", "tote", "backpack", "portable", "organizer")),
+]
 
 
 def _tokens(name: str) -> set[str]:
@@ -64,6 +84,30 @@ def match_pool(leaf: str, pool_index: list[tuple]) -> dict:
             best_score = score
             best_entry = entry
     return best_entry if best_score >= 0.5 else {}
+
+
+def classify_scene_tags(product: dict) -> list[str]:
+    text = " ".join(
+        str(product.get(key) or "")
+        for key in ("title", "leaf_category", "brand", "raw_metrics")
+    ).lower()
+    tags: list[str] = []
+    for label, patterns in TAG_RULES:
+        if any(pattern in text for pattern in patterns):
+            tags.append(label)
+    if not tags:
+        tags.append("泛生活方式")
+    return tags[:6]
+
+
+def ensure_scene_tags(products: list[dict]) -> bool:
+    changed = False
+    for product in products:
+        tags = classify_scene_tags(product)
+        if product.get("scene_tags") != tags:
+            product["scene_tags"] = tags
+            changed = True
+    return changed
 
 
 # ── Scoring ───────────────────────────────────────────────────────────────────
@@ -250,6 +294,18 @@ def render_card(product: dict, score: int, reasons: list[str], cautions: list[st
     amazon_url = f"https://www.amazon.com/dp/{asin}"
     sprite_url = SELLERSPRITE_URL.format(asin=asin)
     image_url = product.get("image_url") or ""
+    tags = product.get("scene_tags") or classify_scene_tags(product)
+    tags_html = "".join(f'<span class="tag">{esc(tag)}</span>' for tag in tags)
+    search_text = " ".join(
+        str(value or "")
+        for value in (
+            asin,
+            product.get("title"),
+            product.get("brand"),
+            product.get("leaf_category"),
+            " ".join(tags),
+        )
+    ).lower()
 
     image_html = (
         f'<img src="{esc(image_url)}" alt="{esc(product.get("title", ""))}" loading="lazy">'
@@ -262,7 +318,7 @@ def render_card(product: dict, score: int, reasons: list[str], cautions: list[st
     )
 
     return f"""
-        <article class="product-card">
+        <article class="product-card" data-search="{esc(search_text)}">
           <a class="thumb" href="{esc(amazon_url)}" target="_blank" rel="noreferrer">
             {image_html}
           </a>
@@ -273,6 +329,7 @@ def render_card(product: dict, score: int, reasons: list[str], cautions: list[st
             </div>
             <h3>{esc(short(product.get("title", "")))}</h3>
             <div class="brand">{esc(product.get("brand") or "Unknown brand")}</div>
+            <div class="tag-row">{tags_html}</div>
             <div class="external-links">
               <a class="link-btn amazon" href="{esc(amazon_url)}" target="_blank" rel="noreferrer">Amazon</a>
               <a class="link-btn sprite" href="{esc(sprite_url)}" target="_blank" rel="noreferrer">卖家精灵</a>
@@ -291,6 +348,7 @@ def render_card(product: dict, score: int, reasons: list[str], cautions: list[st
               <span>变体 {esc(product.get("variants"))}</span>
               <span>卖家 {esc(product.get("sellers"))}</span>
               <span>小类排名 #{esc(product.get("leaf_rank"))}</span>
+              <span>{esc(product.get("leaf_category") or "UNKNOWN")}</span>
               <span>上架 {esc(product.get("listing_date"))} {esc(product.get("listing_age"))}</span>
             </div>
             <ul class="reasons">{reasons_html}</ul>
@@ -325,11 +383,14 @@ h1 { margin: 0; font-size: 24px; line-height: 1.2; letter-spacing: 0; }
 .summary div { border: 1px solid var(--line); background: #fbfcfe; padding: 10px 12px; border-radius: 6px; }
 .summary b { display: block; font-size: 20px; }
 .summary small { color: var(--muted); font-size: 12px; }
-.nav { display: flex; gap: 8px; overflow-x: auto; padding-top: 14px; }
-.nav a { flex: 0 0 auto; text-decoration: none; border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; font-size: 12px; color: #344054; background: #fff; }
-.nav span { color: var(--accent); font-weight: 700; }
+.search-row { display: grid; grid-template-columns: minmax(220px, 1fr) auto; gap: 12px; align-items: center; padding-top: 14px; }
+.search-box { width: 100%; border: 1px solid var(--line); border-radius: 6px; padding: 11px 13px; font-size: 14px; color: var(--text); background: #fff; outline: none; }
+.search-box:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12); }
+.match-count { color: var(--muted); font-size: 13px; white-space: nowrap; }
 main { max-width: 1440px; margin: 0 auto; padding: 24px 28px 48px; }
-.category-section { margin-bottom: 30px; }
+.catalog-head { display: flex; justify-content: space-between; gap: 16px; align-items: flex-end; padding: 0 0 10px; border-bottom: 1px solid var(--line); }
+.catalog-head p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+.empty-state { display: none; border: 1px solid var(--line); background: #fff; border-radius: 8px; padding: 18px; color: var(--muted); margin-top: 14px; }
 .section-head { display: flex; justify-content: space-between; gap: 16px; align-items: flex-end; padding: 0 0 10px; border-bottom: 1px solid var(--line); }
 h2 { margin: 0; font-size: 20px; letter-spacing: 0; }
 .section-head p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
@@ -365,6 +426,7 @@ h2 { margin: 0; font-size: 20px; letter-spacing: 0; }
 
 .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); gap: 12px; padding-top: 14px; }
 .product-card { display: grid; grid-template-columns: 132px 1fr; gap: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-height: 190px; }
+.product-card.hidden { display: none; }
 .thumb { display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 6px; background: #f9fafb; aspect-ratio: 1 / 1; overflow: hidden; }
 .thumb img { width: 100%; height: 100%; object-fit: contain; }
 .no-img { color: var(--muted); font-size: 12px; }
@@ -377,6 +439,8 @@ h2 { margin: 0; font-size: 20px; letter-spacing: 0; }
 .ip-low { color: #166534; background: #f0fdf4; border: 1px solid #86efac; }
 h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
 .brand { color: var(--muted); font-size: 12px; margin: 4px 0 8px; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 9px; }
+.tag { display: inline-flex; align-items: center; min-height: 24px; border-radius: 999px; border: 1px solid #bfdbfe; background: #eff6ff; color: #1d4ed8; padding: 3px 8px; font-size: 12px; font-weight: 700; }
 .external-links { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 9px; }
 .link-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 28px; padding: 5px 10px; border-radius: 6px; text-decoration: none; font-size: 12px; font-weight: 700; border: 1px solid var(--line); }
 .link-btn.amazon { color: #7c2d12; background: #fff7ed; border-color: #fed7aa; }
@@ -392,6 +456,7 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
 @media (max-width: 900px) {
   .title-row { flex-direction: column; }
   .summary { min-width: 0; width: 100%; grid-template-columns: repeat(2, 1fr); }
+  .search-row { grid-template-columns: 1fr; }
   .product-grid { grid-template-columns: 1fr; }
   .cat-metrics-panel { grid-template-columns: repeat(2, 1fr); }
 }
@@ -404,54 +469,27 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
 
 
 def render_index(products: list[dict], pool_index: list[tuple]) -> str:
-    # Group by leaf_category, skip products with no ASIN or empty category
-    groups: dict[str, list] = collections.defaultdict(list)
+    scored_items = []
     for p in products:
         if not p.get("asin"):
             continue
-        cat = p.get("leaf_category") or "UNKNOWN"
-        pool_entry = match_pool(cat, pool_index)
+        pool_entry = match_pool(p.get("leaf_category") or "", pool_index)
         score, reasons, cautions = score_product(p, pool_entry)
-        groups[cat].append((p, score, reasons, cautions, pool_entry))
+        scored_items.append((p, score, reasons, cautions))
 
-    # Sort categories by product count desc, then alpha
-    ordered = sorted(groups.items(), key=lambda kv: (-len(kv[1]), kv[0]))
-
-    # Within each category sort by score desc
-    for cat in groups:
-        groups[cat].sort(key=lambda t: t[1], reverse=True)
-
-    total_products = sum(len(v) for v in groups.values())
-    total_cats = len(ordered)
-
-    category_nav = "".join(
-        f'<a href="#cat-{i}">{esc(name)} <span>{len(items)}</span></a>'
-        for i, (name, items) in enumerate(ordered, 1)
+    scored_items.sort(
+        key=lambda item: (
+            item[1],
+            _parse_int(item[0].get("monthly_sales")) or 0,
+            item[0].get("asin") or "",
+        ),
+        reverse=True,
     )
 
-    sections = []
-    for i, (name, items) in enumerate(ordered, 1):
-        avg_score = sum(t[1] for t in items) / len(items)
-        total_sales = sum(
-            (_parse_int(t[0].get("monthly_sales")) or 0) for t in items
-        )
-        # All items share the same pool entry (same leaf → same pool match)
-        pool_entry = items[0][4]
-        metrics_html = render_cat_metrics(pool_entry)
-        cards_html = "".join(render_card(*t[:4]) for t in items)
-
-        sections.append(f"""
-    <section class="category-section" id="cat-{i}">
-      <div class="section-head">
-        <div>
-          <h2>{esc(name)}</h2>
-          <p>{len(items)} products · avg score {avg_score:.1f} · combined monthly sales {total_sales:,}</p>
-        </div>
-        <a href="#top" class="back-top">Back to top</a>
-      </div>
-      {metrics_html}
-      <div class="product-grid">{cards_html}</div>
-    </section>""")
+    total_products = len(scored_items)
+    total_cats = len({p.get("leaf_category") or "UNKNOWN" for p, *_ in scored_items})
+    total_tags = len({tag for p, *_ in scored_items for tag in (p.get("scene_tags") or [])})
+    cards_html = "".join(render_card(*item) for item in scored_items)
 
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -469,21 +507,58 @@ def render_index(products: list[dict], pool_index: list[tuple]) -> str:
     <div class="title-row">
       <div>
         <h1>Amazon 产品候选清单</h1>
-        <p class="subtitle">按 Leaf Category 分组展示，含类目市场数据面板。数据源：products/manual_asins_details.json。</p>
+        <p class="subtitle">平铺展示全部候选商品，可按 title、ASIN、品牌、leaf category 和场景标签搜索。数据源：products/manual_asins_details.json。</p>
       </div>
       <div class="summary">
         <div><b>{total_products}</b><small>候选产品</small></div>
         <div><b>{total_cats}</b><small>Leaf Categories</small></div>
+        <div><b>{total_tags}</b><small>场景标签</small></div>
         <div><b>{len(products)}</b><small>总观察产品</small></div>
-        <div><b>-</b><small>keyword 待接入</small></div>
       </div>
     </div>
-    <nav class="nav">{category_nav}</nav>
+    <div class="search-row">
+      <input id="productSearch" class="search-box" type="search" placeholder="搜索 title / ASIN / 品牌 / 类目 / 场景标签，例如 patio、gift、户外庭院" autocomplete="off">
+      <div class="match-count"><b id="visibleCount">{total_products}</b> / {total_products} products</div>
+    </div>
   </div>
 </header>
 <main>
-  {"".join(sections)}
+  <section class="catalog">
+    <div class="catalog-head">
+      <div>
+        <h2>全部商品</h2>
+        <p>按综合评分和月销量排序；每张卡片保留原始商品指标，并附加场景、情绪、用途标签。</p>
+      </div>
+    </div>
+    <div id="emptyState" class="empty-state">没有匹配的商品。</div>
+    <div id="productGrid" class="product-grid">{cards_html}</div>
+  </section>
 </main>
+<script>
+const searchInput = document.getElementById('productSearch');
+const cards = Array.from(document.querySelectorAll('.product-card'));
+const visibleCount = document.getElementById('visibleCount');
+const emptyState = document.getElementById('emptyState');
+
+function normalize(value) {{
+  return value.toLowerCase().trim();
+}}
+
+function applySearch() {{
+  const terms = normalize(searchInput.value).split(/\\s+/).filter(Boolean);
+  let count = 0;
+  for (const card of cards) {{
+    const haystack = card.dataset.search || '';
+    const matched = terms.every(term => haystack.includes(term));
+    card.classList.toggle('hidden', !matched);
+    if (matched) count += 1;
+  }}
+  visibleCount.textContent = count;
+  emptyState.style.display = count ? 'none' : 'block';
+}}
+
+searchInput.addEventListener('input', applySearch);
+</script>
 </body>
 </html>
 """
@@ -493,6 +568,9 @@ def main() -> None:
     data = json.loads(SOURCE.read_text(encoding="utf-8"))
     products: list[dict] = data.get("products", [])
     print(f"Loaded {len(products)} products from {SOURCE.relative_to(ROOT)}")
+    if ensure_scene_tags(products):
+        SOURCE.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print("Updated scene_tags in products/manual_asins_details.json")
 
     pool_data = json.loads(CATEGORY_POOL.read_text(encoding="utf-8"))
     pool = pool_data.get("target_pool", [])

@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import html as htmllib
 import json
+import re
 import sys
 from datetime import date, datetime
 from pathlib import Path
@@ -31,7 +32,7 @@ SELLERSPRITE_URL = (
     "&order%5Bfield%5D=amz_unit&order%5Bdesc%5D=true&lowPrice=N"
 )
 
-TODAY = date(2026, 6, 17)
+TODAY = date.today()
 
 
 # ── formatters ────────────────────────────────────────────────────────────────
@@ -160,7 +161,7 @@ COLS = {
 def row_to_product(row: tuple) -> dict:
     c = COLS
     asin = fmt_str(row[c["asin"]], "")
-    if not asin:
+    if not re.fullmatch(r"B0[A-Z0-9]{8}", asin):
         return {}
 
     ld = row[c["listing_date"]]
