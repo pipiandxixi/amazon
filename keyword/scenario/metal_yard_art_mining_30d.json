@@ -1,0 +1,767 @@
+{
+  "source_file": "KeywordMining-US-metal-yard-art-Last-30-days-534645.xlsx",
+  "seed_keyword": "metal yard art",
+  "context": "mined from metal yard art, filtered monthly_searches>=5000 & ppc<=0.80 (ppc_suggested=null means no bid data)",
+  "market": "US",
+  "period": "last_30_days",
+  "keyword_count": 13,
+  "keywords": [
+    {
+      "keyword": "gifts for mom who wants nothing",
+      "keyword_zh": "给什么都不想要的妈妈的礼物",
+      "ac_recommended": true,
+      "relevance": 3.6,
+      "aba_monthly_rank": 67013.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 24326.0,
+      "monthly_purchases": 1496.0,
+      "purchase_rate": 0.0615,
+      "impressions": 626806.0,
+      "clicks": 11178.0,
+      "spr": 34.0,
+      "title_density": 2.0,
+      "competing_products": 903.0,
+      "supply_demand_ratio": 26.94,
+      "ad_competitors": 23.0,
+      "click_share": 0.6545,
+      "conversion_share": 0.0273,
+      "ppc_suggested": null,
+      "ppc_bid_range": null,
+      "avg_price": "$28.97",
+      "review_count": 389.0,
+      "rating": 4.5,
+      "categories": [
+        "Office Products",
+        "Clothing",
+        "Shoes",
+        "Jewelry",
+        "Toys",
+        "Games",
+        "Grocery",
+        "Gourmet Food",
+        "Home",
+        "Kitchen",
+        "Beauty",
+        "Personal Care"
+      ],
+      "top3": [
+        {
+          "asin": "B0DJ8RLDQ3",
+          "click_share": 0.4223,
+          "conversion_share": 0.0025
+        },
+        {
+          "asin": "B081D78MCJ",
+          "click_share": 0.2115,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0DHDCL8Y4",
+          "click_share": 0.0207,
+          "conversion_share": 0.0248
+        }
+      ],
+      "top10_asins": [
+        "146425141X",
+        "B0DHDCL8Y4",
+        "B0GRJ78J4D",
+        "B0CS3SQKYC",
+        "B0D922JHD8",
+        "B08R7T4ZHS",
+        "1950968871",
+        "B0BX5V62ZY",
+        "B0DDTHQJV5",
+        "B0CQBYSFQK"
+      ]
+    },
+    {
+      "keyword": "ladybugs live for garden",
+      "keyword_zh": "瓢虫为花园而生",
+      "ac_recommended": true,
+      "relevance": 2.4,
+      "aba_monthly_rank": 18184.0,
+      "aba_weekly_rank": 14757.0,
+      "monthly_searches": 67374.0,
+      "monthly_purchases": 3355.0,
+      "purchase_rate": 0.0498,
+      "impressions": 1788390.0,
+      "clicks": 27505.0,
+      "spr": 77.0,
+      "title_density": 1.0,
+      "competing_products": 278.0,
+      "supply_demand_ratio": 242.35,
+      "ad_competitors": 69.0,
+      "click_share": 0.4826,
+      "conversion_share": 0.4071,
+      "ppc_suggested": "0.48",
+      "ppc_bid_range": "$0.36-$0.60",
+      "avg_price": "$20.00",
+      "review_count": 3496.0,
+      "rating": 4.4,
+      "categories": [
+        "Toys",
+        "Games",
+        "Health",
+        "Household",
+        "Baby Care"
+      ],
+      "top3": [
+        {
+          "asin": "B076ZQQC79",
+          "click_share": 0.1886,
+          "conversion_share": 0.1935
+        },
+        {
+          "asin": "B0883BDKWF",
+          "click_share": 0.1494,
+          "conversion_share": 0.1293
+        },
+        {
+          "asin": "B01B5BBNPS",
+          "click_share": 0.1446,
+          "conversion_share": 0.0843
+        }
+      ],
+      "top10_asins": [
+        "B076ZQQC79",
+        "B0883BDKWF",
+        "B01B5BBNPS",
+        "B0D134R4H1",
+        "B0C9SYGZ9K",
+        "B01B205Q0U",
+        "B08QDY7C9P",
+        "B0CBQQHJ3N",
+        "B0C7D25751",
+        "B0CBQNZJXM"
+      ]
+    },
+    {
+      "keyword": "solar watering can with cascading lights outdoor garden decor",
+      "keyword_zh": "太阳能浇水壶与层叠的灯光户外花园装饰",
+      "ac_recommended": true,
+      "relevance": 4.8,
+      "aba_monthly_rank": 121907.0,
+      "aba_weekly_rank": 221588.0,
+      "monthly_searches": 14665.0,
+      "monthly_purchases": 660.0,
+      "purchase_rate": 0.045,
+      "impressions": 352797.0,
+      "clicks": 7271.0,
+      "spr": 15.0,
+      "title_density": 3.0,
+      "competing_products": 194.0,
+      "supply_demand_ratio": 75.59,
+      "ad_competitors": 107.0,
+      "click_share": 0.4557,
+      "conversion_share": 0.3457,
+      "ppc_suggested": null,
+      "ppc_bid_range": null,
+      "avg_price": "$19.99",
+      "review_count": 1035.0,
+      "rating": 4.4,
+      "categories": [],
+      "top3": [
+        {
+          "asin": "B0FFG9G1TH",
+          "click_share": 0.2563,
+          "conversion_share": 0.1308
+        },
+        {
+          "asin": "B0FRXH2M7C",
+          "click_share": 0.1108,
+          "conversion_share": 0.1308
+        },
+        {
+          "asin": "B0D66DF4Q6",
+          "click_share": 0.0886,
+          "conversion_share": 0.0841
+        }
+      ],
+      "top10_asins": [
+        "B0FRXH2M7C",
+        "B0G78T64WK",
+        "B0F93QNWPL",
+        "B0CY7S6PVH",
+        "B0B28V2G36",
+        "B0FFG9G1TH",
+        "B0995FNHV8",
+        "B0CS3SQKYC",
+        "B09PQL3JSB",
+        "B09CYP8JGT"
+      ]
+    },
+    {
+      "keyword": "bottle trees for the garden outside",
+      "keyword_zh": "室外花园的瓶子树",
+      "ac_recommended": true,
+      "relevance": 4.8,
+      "aba_monthly_rank": 283933.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 5405.0,
+      "monthly_purchases": 154.0,
+      "purchase_rate": 0.0285,
+      "impressions": 146674.0,
+      "clicks": 2118.0,
+      "spr": 4.0,
+      "title_density": 1.0,
+      "competing_products": 185.0,
+      "supply_demand_ratio": 29.22,
+      "ad_competitors": 56.0,
+      "click_share": 0.4113,
+      "conversion_share": 0.3162,
+      "ppc_suggested": null,
+      "ppc_bid_range": null,
+      "avg_price": "$32.73",
+      "review_count": 375.0,
+      "rating": 4.0,
+      "categories": [
+        "Home",
+        "Kitchen",
+        "Handmade"
+      ],
+      "top3": [
+        {
+          "asin": "B008519T6C",
+          "click_share": 0.2429,
+          "conversion_share": 0.2222
+        },
+        {
+          "asin": "B0DSLKZ1B4",
+          "click_share": 0.115,
+          "conversion_share": 0.0684
+        },
+        {
+          "asin": "B004YL7W3O",
+          "click_share": 0.0534,
+          "conversion_share": 0.0256
+        }
+      ],
+      "top10_asins": [
+        "B008519T6C",
+        "B0DP4JVTRF",
+        "B0DSLKZ1B4",
+        "B0GGGDP7WV",
+        "B009XGPPZM",
+        "B004YL7W3O",
+        "B0CVVN94XQ",
+        "B0F6TSXG3N",
+        "B07C7C8LDJ",
+        "B01MSJ5GUW"
+      ]
+    },
+    {
+      "keyword": "fairy garden accessories",
+      "keyword_zh": "仙女花园配件",
+      "ac_recommended": true,
+      "relevance": 3.6,
+      "aba_monthly_rank": 7228.0,
+      "aba_weekly_rank": 20436.0,
+      "monthly_searches": 125894.0,
+      "monthly_purchases": 3185.0,
+      "purchase_rate": 0.0253,
+      "impressions": 3585009.0,
+      "clicks": 54387.0,
+      "spr": 74.0,
+      "title_density": 24.0,
+      "competing_products": 2979.0,
+      "supply_demand_ratio": 42.26,
+      "ad_competitors": 616.0,
+      "click_share": 0.1868,
+      "conversion_share": 0.0785,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$15.99",
+      "review_count": 132.0,
+      "rating": 4.5,
+      "categories": [
+        "Toys",
+        "Games",
+        "Arts",
+        "Crafts",
+        "Sewing"
+      ],
+      "top3": [
+        {
+          "asin": "B0FCFBFBXM",
+          "click_share": 0.0654,
+          "conversion_share": 0.03
+        },
+        {
+          "asin": "B0DG91Q7L6",
+          "click_share": 0.0633,
+          "conversion_share": 0.037
+        },
+        {
+          "asin": "B0FN4N79N9",
+          "click_share": 0.0581,
+          "conversion_share": 0.0115
+        }
+      ],
+      "top10_asins": [
+        "B0FCFBFBXM",
+        "B0DBHL2QQG",
+        "B08GC1VXZB",
+        "B0D6RZR647",
+        "B0CPHZL35M",
+        "B0GVDHYSMC",
+        "B0GWQRD9BC",
+        "B0DG91Q7L6",
+        "B09M6JSBJ9",
+        "B0D3V77JFT"
+      ]
+    },
+    {
+      "keyword": "tree decorations outdoor",
+      "keyword_zh": "户外树装饰",
+      "ac_recommended": true,
+      "relevance": 6.0,
+      "aba_monthly_rank": 191144.0,
+      "aba_weekly_rank": 288126.0,
+      "monthly_searches": 8390.0,
+      "monthly_purchases": 119.0,
+      "purchase_rate": 0.0142,
+      "impressions": 238301.0,
+      "clicks": 4135.0,
+      "spr": 3.0,
+      "title_density": 2.0,
+      "competing_products": 349.0,
+      "supply_demand_ratio": 24.04,
+      "ad_competitors": 223.0,
+      "click_share": 0.1714,
+      "conversion_share": 0.2,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$19.65",
+      "review_count": 2123.0,
+      "rating": 4.5,
+      "categories": [],
+      "top3": [
+        {
+          "asin": "B0GFCYT1H1",
+          "click_share": 0.0694,
+          "conversion_share": 0.0333
+        },
+        {
+          "asin": "B097SR5PRR",
+          "click_share": 0.0571,
+          "conversion_share": 0.0667
+        },
+        {
+          "asin": "B0F2TK7WH7",
+          "click_share": 0.0449,
+          "conversion_share": 0.1
+        }
+      ],
+      "top10_asins": [
+        "B019ZXI14O",
+        "B07LCDJYVS",
+        "B097SR5PRR",
+        "B07HF2Z653",
+        "B0C2D2SZLT",
+        "B0BYNVLGJ3",
+        "B094RJJFKG",
+        "B0CNPL4FXX",
+        "B0CQHJL81C",
+        "B094X6TWM1"
+      ]
+    },
+    {
+      "keyword": "gargoyle statues outdoor",
+      "keyword_zh": "户外石像鬼雕像",
+      "ac_recommended": true,
+      "relevance": 2.4,
+      "aba_monthly_rank": 124761.0,
+      "aba_weekly_rank": 213470.0,
+      "monthly_searches": 13887.0,
+      "monthly_purchases": 160.0,
+      "purchase_rate": 0.0115,
+      "impressions": 348264.0,
+      "clicks": 6833.0,
+      "spr": 4.0,
+      "title_density": 3.0,
+      "competing_products": 593.0,
+      "supply_demand_ratio": 23.42,
+      "ad_competitors": 87.0,
+      "click_share": 0.2446,
+      "conversion_share": 0.3044,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$45.99",
+      "review_count": 231.0,
+      "rating": 4.5,
+      "categories": [],
+      "top3": [
+        {
+          "asin": "B09TK5LBGS",
+          "click_share": 0.0948,
+          "conversion_share": 0.087
+        },
+        {
+          "asin": "B08GHR7KK2",
+          "click_share": 0.0917,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B08SQMBDXY",
+          "click_share": 0.0581,
+          "conversion_share": 0.2174
+        }
+      ],
+      "top10_asins": [
+        "B09TK5LBGS",
+        "B07FTPQ18V",
+        "B000CQBY5C",
+        "B08GHR7KK2",
+        "B08SQMBDXY",
+        "B003IF1VNO",
+        "B001U5AU0E",
+        "B0DB2458XV",
+        "B00CW2QETK",
+        "B073SG18YL"
+      ]
+    },
+    {
+      "keyword": "wind mill for yard and garden",
+      "keyword_zh": "庭院和花园的风车",
+      "ac_recommended": true,
+      "relevance": 23.8,
+      "aba_monthly_rank": 278954.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 5591.0,
+      "monthly_purchases": 58.0,
+      "purchase_rate": 0.0103,
+      "impressions": 162807.0,
+      "clicks": 2659.0,
+      "spr": 2.0,
+      "title_density": 2.0,
+      "competing_products": 266.0,
+      "supply_demand_ratio": 21.02,
+      "ad_competitors": 77.0,
+      "click_share": 0.2249,
+      "conversion_share": 0.0853,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$54.14",
+      "review_count": 711.0,
+      "rating": 4.4,
+      "categories": [
+        "Toys",
+        "Games",
+        "Handmade"
+      ],
+      "top3": [
+        {
+          "asin": "B07PDW5C1R",
+          "click_share": 0.1436,
+          "conversion_share": 0.0388
+        },
+        {
+          "asin": "B08X4GZF6K",
+          "click_share": 0.0461,
+          "conversion_share": 0.0465
+        },
+        {
+          "asin": "B09NNK93ZD",
+          "click_share": 0.0352,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B07PDW5C1R",
+        "B09NNK93ZD",
+        "B08NVJ2QMH",
+        "B0BHYQZQX2",
+        "B0DGGQD56Z",
+        "B08TM49L93",
+        "B0DPKKB26L",
+        "B0BWCRFL6T",
+        "B0D4VVX1WR",
+        "B0DPG3LQSD"
+      ]
+    },
+    {
+      "keyword": "copper calla lily garden stake",
+      "keyword_zh": "铜喇叭百合花园桩",
+      "ac_recommended": true,
+      "relevance": 3.6,
+      "aba_monthly_rank": 304987.0,
+      "aba_weekly_rank": 2304608.0,
+      "monthly_searches": 5093.0,
+      "monthly_purchases": 52.0,
+      "purchase_rate": 0.0102,
+      "impressions": 120849.0,
+      "clicks": 2211.0,
+      "spr": 2.0,
+      "title_density": 6.0,
+      "competing_products": 119.0,
+      "supply_demand_ratio": 42.8,
+      "ad_competitors": 135.0,
+      "click_share": 0.4838,
+      "conversion_share": 0.25,
+      "ppc_suggested": null,
+      "ppc_bid_range": null,
+      "avg_price": "$27.99",
+      "review_count": 8.0,
+      "rating": 2.9,
+      "categories": [],
+      "top3": [
+        {
+          "asin": "B0H2MVX8CN",
+          "click_share": 0.1935,
+          "conversion_share": 0.25
+        },
+        {
+          "asin": "B0H1HRY9WZ",
+          "click_share": 0.1613,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0H2M22LDB",
+          "click_share": 0.129,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0GZKP46FC",
+        "B0GZKS6WTG",
+        "B0GZHD24ZV",
+        "B0GZKWM5MZ",
+        "B0H29WZ899",
+        "B0H29DCNX1",
+        "B0GYRDLV26",
+        "B0G5JH6JHF",
+        "B0H2MVX8CN",
+        "B0FDF4P4VW"
+      ]
+    },
+    {
+      "keyword": "pond decor",
+      "keyword_zh": "池塘装饰",
+      "ac_recommended": true,
+      "relevance": 3.6,
+      "aba_monthly_rank": 202135.0,
+      "aba_weekly_rank": 226756.0,
+      "monthly_searches": 7876.0,
+      "monthly_purchases": 76.0,
+      "purchase_rate": 0.0096,
+      "impressions": 235356.0,
+      "clicks": 3814.0,
+      "spr": 2.0,
+      "title_density": 14.0,
+      "competing_products": 346.0,
+      "supply_demand_ratio": 22.76,
+      "ad_competitors": 270.0,
+      "click_share": 0.2233,
+      "conversion_share": 0.0313,
+      "ppc_suggested": "0.41",
+      "ppc_bid_range": "$0.32-$0.51",
+      "avg_price": "$10.99",
+      "review_count": 146.0,
+      "rating": 4.3,
+      "categories": [],
+      "top3": [
+        {
+          "asin": "B0D6W5DY3G",
+          "click_share": 0.1262,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B08CS77NB9",
+          "click_share": 0.055,
+          "conversion_share": 0.0313
+        },
+        {
+          "asin": "B09YD4221P",
+          "click_share": 0.0421,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0DD6ZCD4K",
+        "B0002568YK",
+        "B0D6W5DY3G",
+        "B0DPXQS7VC",
+        "B09YD4221P",
+        "B083QV8Z9S",
+        "B0DDX9TPSP",
+        "B095NJVS9V",
+        "B07GDDPJPS",
+        "B094FCQ6YV"
+      ]
+    },
+    {
+      "keyword": "yellow submarine wind spinner",
+      "keyword_zh": "黄色潜水艇风车",
+      "ac_recommended": true,
+      "relevance": 14.3,
+      "aba_monthly_rank": 158003.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 11491.0,
+      "monthly_purchases": 87.0,
+      "purchase_rate": 0.0076,
+      "impressions": 270886.0,
+      "clicks": 4368.0,
+      "spr": 2.0,
+      "title_density": 14.0,
+      "competing_products": 394.0,
+      "supply_demand_ratio": 29.16,
+      "ad_competitors": 62.0,
+      "click_share": 0.3368,
+      "conversion_share": 0.3033,
+      "ppc_suggested": "0.77",
+      "ppc_bid_range": "$0.53-$1.02",
+      "avg_price": "$26.99",
+      "review_count": 2.0,
+      "rating": 1.0,
+      "categories": [
+        "Toys",
+        "Games",
+        "Handmade"
+      ],
+      "top3": [
+        {
+          "asin": "B0GZDVWMDF",
+          "click_share": 0.1206,
+          "conversion_share": 0.1769
+        },
+        {
+          "asin": "B0GZW3FQT1",
+          "click_share": 0.1123,
+          "conversion_share": 0.065
+        },
+        {
+          "asin": "B0GYSCQ52G",
+          "click_share": 0.104,
+          "conversion_share": 0.0614
+        }
+      ],
+      "top10_asins": [
+        "B0GZDVWMDF",
+        "B0GYXYTQH7",
+        "B0GYS55CRW",
+        "B0GW98K3LS",
+        "B0GYTCJ4GX",
+        "B0GYNTD7WV",
+        "B07BB3F7CM",
+        "B0DCHH9Z7H",
+        "B0F5F4LW4H",
+        "B094Q9PJT4"
+      ]
+    },
+    {
+      "keyword": "flamed copper three calla lilies garden stake with bells",
+      "keyword_zh": "火焰铜三支马蹄莲花园桩带铃铛",
+      "ac_recommended": true,
+      "relevance": 10.7,
+      "aba_monthly_rank": 211791.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 7614.0,
+      "monthly_purchases": 35.0,
+      "purchase_rate": 0.0046,
+      "impressions": 222694.0,
+      "clicks": 3421.0,
+      "spr": 1.0,
+      "title_density": 34.0,
+      "competing_products": 110.0,
+      "supply_demand_ratio": 69.22,
+      "ad_competitors": 291.0,
+      "click_share": 0.4343,
+      "conversion_share": 0.2305,
+      "ppc_suggested": null,
+      "ppc_bid_range": null,
+      "avg_price": "$27.99",
+      "review_count": 8.0,
+      "rating": 2.9,
+      "categories": [],
+      "top3": [
+        {
+          "asin": "B0GX22DG7J",
+          "click_share": 0.174,
+          "conversion_share": 0.0415
+        },
+        {
+          "asin": "B0GYRDLV26",
+          "click_share": 0.1657,
+          "conversion_share": 0.1014
+        },
+        {
+          "asin": "B0GZKP46FC",
+          "click_share": 0.0946,
+          "conversion_share": 0.0876
+        }
+      ],
+      "top10_asins": [
+        "B0H3KNLCFM",
+        "B0H3LPRYM7",
+        "B0H3L79YVQ",
+        "B0H3LJ5L1X",
+        "B0H3JZST3F",
+        "B0GZKP46FC",
+        "B0H3F9M6GW",
+        "B0GZHD24ZV",
+        "B0H3C9V1CD",
+        "B0H3L5CKHL"
+      ]
+    },
+    {
+      "keyword": "mariposas grandes para decoracion",
+      "keyword_zh": "装饰用大蝴蝶",
+      "ac_recommended": true,
+      "relevance": 2.4,
+      "aba_monthly_rank": 109885.0,
+      "aba_weekly_rank": 109402.0,
+      "monthly_searches": 15090.0,
+      "monthly_purchases": 60.0,
+      "purchase_rate": 0.004,
+      "impressions": 428145.0,
+      "clicks": 7506.0,
+      "spr": 2.0,
+      "title_density": 9.0,
+      "competing_products": 720.0,
+      "supply_demand_ratio": 20.96,
+      "ad_competitors": 179.0,
+      "click_share": 0.1581,
+      "conversion_share": 0.1515,
+      "ppc_suggested": null,
+      "ppc_bid_range": null,
+      "avg_price": "$12.59",
+      "review_count": 96.0,
+      "rating": 4.4,
+      "categories": [
+        "Baby",
+        "Toys",
+        "Games",
+        "Handmade"
+      ],
+      "top3": [
+        {
+          "asin": "B0FN3WZRYL",
+          "click_share": 0.0694,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0DPQDCPG3",
+          "click_share": 0.0452,
+          "conversion_share": 0.0606
+        },
+        {
+          "asin": "B0DNMRJFF5",
+          "click_share": 0.0435,
+          "conversion_share": 0.0909
+        }
+      ],
+      "top10_asins": [
+        "B0G1BZPXCR",
+        "B0FN3WZRYL",
+        "B0FG36FMXC",
+        "B0GDY7VBTW",
+        "B0FCXZSQJN",
+        "B0DPQDCPG3",
+        "B0C99CDBY5",
+        "B0G7J3TJ63",
+        "B0GK9DXM4V",
+        "B0GPXRC9NY"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2934 @@
+{
+  "source_file": "KeywordMining-US-patio-decor-Last-30-days-534651.xlsx",
+  "seed_keyword": "patio decor",
+  "context": "mined from patio decor, filtered monthly_searches>=5000 & ppc<=0.80",
+  "market": "US",
+  "period": "last_30_days",
+  "keyword_count": 47,
+  "keywords": [
+    {
+      "keyword": "warm light",
+      "keyword_zh": "暖光",
+      "ac_recommended": true,
+      "relevance": 3.0,
+      "aba_monthly_rank": 210429.0,
+      "aba_weekly_rank": 216668.0,
+      "monthly_searches": 7650.0,
+      "monthly_purchases": 920.0,
+      "purchase_rate": 0.1202,
+      "impressions": 219690.0,
+      "clicks": 3087.0,
+      "spr": 21.0,
+      "title_density": 5.0,
+      "competing_products": 307.0,
+      "supply_demand_ratio": 24.92,
+      "ad_competitors": 34.0,
+      "click_share": 0.2817,
+      "conversion_share": 0.24,
+      "ppc_suggested": "0.67",
+      "ppc_bid_range": "$0.50-$0.84",
+      "avg_price": "$13.99",
+      "review_count": 3472.0,
+      "rating": 4.4,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Industrial",
+        "Scientific",
+        "Baby"
+      ],
+      "top3": [
+        {
+          "asin": "B0925LXDSG",
+          "click_share": 0.1703,
+          "conversion_share": 0.16
+        },
+        {
+          "asin": "B0DZD1X83N",
+          "click_share": 0.065,
+          "conversion_share": 0.04
+        },
+        {
+          "asin": "B0C1VCWHMF",
+          "click_share": 0.0464,
+          "conversion_share": 0.04
+        }
+      ],
+      "top10_asins": [
+        "B0DZD1X83N",
+        "B0925LXDSG",
+        "B07SM6G1PD",
+        "B0C1VCWHMF",
+        "B0DG92NWYG",
+        "B07XGKX327",
+        "B08ZM1VBT9",
+        "B0CZ4G32J9",
+        "B0CZCVPX41",
+        "B0DBGZ35DY"
+      ]
+    },
+    {
+      "keyword": "copper bird bath",
+      "keyword_zh": "铜鸟浴",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 40565.0,
+      "aba_weekly_rank": 45157.0,
+      "monthly_searches": 37270.0,
+      "monthly_purchases": 2266.0,
+      "purchase_rate": 0.0608,
+      "impressions": 904812.0,
+      "clicks": 17224.0,
+      "spr": 52.0,
+      "title_density": 9.0,
+      "competing_products": 962.0,
+      "supply_demand_ratio": 38.74,
+      "ad_competitors": 242.0,
+      "click_share": 0.2609,
+      "conversion_share": 0.0909,
+      "ppc_suggested": "0.53",
+      "ppc_bid_range": "$0.44-$0.60",
+      "avg_price": "$13.99",
+      "review_count": 189.0,
+      "rating": 4.4,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Pet Supplies"
+      ],
+      "top3": [
+        {
+          "asin": "B083591R68",
+          "click_share": 0.1121,
+          "conversion_share": 0.0114
+        },
+        {
+          "asin": "B0G6YXD5MB",
+          "click_share": 0.0874,
+          "conversion_share": 0.0511
+        },
+        {
+          "asin": "B079R9T425",
+          "click_share": 0.0614,
+          "conversion_share": 0.0284
+        }
+      ],
+      "top10_asins": [
+        "B0G6YXD5MB",
+        "B0DQCPDR6B",
+        "B0CZ63PY86",
+        "B0GK8WCWKV",
+        "B0FZQM8C99",
+        "B0C5JFJ4MM",
+        "B0DTF88PR9",
+        "B0DWDKJZWX",
+        "B0GCS4W935",
+        "B07CWNH75P"
+      ]
+    },
+    {
+      "keyword": "rv rugs for outside",
+      "keyword_zh": "房车户外地毯",
+      "ac_recommended": true,
+      "relevance": 5.2,
+      "aba_monthly_rank": 134631.0,
+      "aba_weekly_rank": 125821.0,
+      "monthly_searches": 12905.0,
+      "monthly_purchases": 628.0,
+      "purchase_rate": 0.0487,
+      "impressions": 319391.0,
+      "clicks": 6019.0,
+      "spr": 15.0,
+      "title_density": 0.0,
+      "competing_products": 470.0,
+      "supply_demand_ratio": 27.46,
+      "ad_competitors": 60.0,
+      "click_share": 0.3076,
+      "conversion_share": 0.1429,
+      "ppc_suggested": "0.72",
+      "ppc_bid_range": "$0.54-$0.90",
+      "avg_price": "$23.45",
+      "review_count": 6623.0,
+      "rating": 4.3,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Sports",
+        "Outdoors",
+        "Automotive Parts",
+        "Accessories"
+      ],
+      "top3": [
+        {
+          "asin": "B0C2YVV59F",
+          "click_share": 0.1455,
+          "conversion_share": 0.1
+        },
+        {
+          "asin": "B09YCTD74F",
+          "click_share": 0.1142,
+          "conversion_share": 0.0286
+        },
+        {
+          "asin": "B0DMFSM5J7",
+          "click_share": 0.0479,
+          "conversion_share": 0.0143
+        }
+      ],
+      "top10_asins": [
+        "B09YCTD74F",
+        "B0C2YVV59F",
+        "B0DHV33GJ5",
+        "B0CR4414LH",
+        "B0D9V5VBH8",
+        "B091YMYV7Q",
+        "B09YCTM6DR",
+        "B0CRZ2PQ1H",
+        "B0CQCC6YP5",
+        "B0083LIKU0"
+      ]
+    },
+    {
+      "keyword": "gifts for best friend woman",
+      "keyword_zh": "最好的朋友女人的礼物",
+      "ac_recommended": true,
+      "relevance": 1.5,
+      "aba_monthly_rank": 142820.0,
+      "aba_weekly_rank": 167910.0,
+      "monthly_searches": 12869.0,
+      "monthly_purchases": 624.0,
+      "purchase_rate": 0.0485,
+      "impressions": 375979.0,
+      "clicks": 6151.0,
+      "spr": 15.0,
+      "title_density": 2.0,
+      "competing_products": 629.0,
+      "supply_demand_ratio": 20.46,
+      "ad_competitors": 169.0,
+      "click_share": 0.1408,
+      "conversion_share": 0.0125,
+      "ppc_suggested": "0.78",
+      "ppc_bid_range": "$0.59-$0.98",
+      "avg_price": "$34.96",
+      "review_count": 1285.0,
+      "rating": 4.8,
+      "categories": [
+        "Clothing",
+        "Shoes",
+        "Jewelry",
+        "Home",
+        "Kitchen",
+        "Office Products",
+        "Tools",
+        "Home Improvement",
+        "Garden",
+        "Outdoor",
+        "Arts",
+        "Crafts",
+        "Sewing",
+        "Health",
+        "Household",
+        "Baby Care",
+        "Handmade"
+      ],
+      "top3": [
+        {
+          "asin": "B0D5LC1572",
+          "click_share": 0.0631,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0D6SM9XLP",
+          "click_share": 0.0461,
+          "conversion_share": 0.0125
+        },
+        {
+          "asin": "B094V1M348",
+          "click_share": 0.0316,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0BVFR74VN",
+        "B094V1M348",
+        "B0BBVXRZ3F",
+        "B08L8TLM9T",
+        "B0CRDCRPJ6",
+        "B0CJBGQ4JS",
+        "B0D93V185W",
+        "B0DVR6VBRR",
+        "B0CB1B4SNP",
+        "B0CR17M53J"
+      ]
+    },
+    {
+      "keyword": "solar fountain for bird bath",
+      "keyword_zh": "用于鸟浴的太阳能喷泉",
+      "ac_recommended": true,
+      "relevance": 3.0,
+      "aba_monthly_rank": 1894.0,
+      "aba_weekly_rank": 2501.0,
+      "monthly_searches": 271898.0,
+      "monthly_purchases": 13051.0,
+      "purchase_rate": 0.048,
+      "impressions": 7207311.0,
+      "clicks": 124814.0,
+      "spr": 297.0,
+      "title_density": 10.0,
+      "competing_products": 1991.0,
+      "supply_demand_ratio": 136.56,
+      "ad_competitors": 253.0,
+      "click_share": 0.2576,
+      "conversion_share": 0.2192,
+      "ppc_suggested": "0.78",
+      "ppc_bid_range": "$0.67-$0.87",
+      "avg_price": "$9.99",
+      "review_count": 6919.0,
+      "rating": 3.9,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Pet Supplies"
+      ],
+      "top3": [
+        {
+          "asin": "B085C5LQN3",
+          "click_share": 0.1144,
+          "conversion_share": 0.0957
+        },
+        {
+          "asin": "B085TH7DN4",
+          "click_share": 0.0827,
+          "conversion_share": 0.0728
+        },
+        {
+          "asin": "B0859H7QW6",
+          "click_share": 0.0605,
+          "conversion_share": 0.0507
+        }
+      ],
+      "top10_asins": [
+        "B085C5LQN3",
+        "B0H1M4W1CV",
+        "B08V95ZRPH",
+        "B0GL8PGKRX",
+        "B0GTPTS2VG",
+        "B0GWCKKT14",
+        "B0GXB8TRQK",
+        "B0GZ3YQ522",
+        "B0GTBF2PL2",
+        "B0GZ3H55H5"
+      ]
+    },
+    {
+      "keyword": "outdoor toy box",
+      "keyword_zh": "户外玩具箱",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 156340.0,
+      "aba_weekly_rank": 249106.0,
+      "monthly_searches": 12016.0,
+      "monthly_purchases": 458.0,
+      "purchase_rate": 0.0381,
+      "impressions": 317590.0,
+      "clicks": 5883.0,
+      "spr": 11.0,
+      "title_density": 0.0,
+      "competing_products": 315.0,
+      "supply_demand_ratio": 38.15,
+      "ad_competitors": 114.0,
+      "click_share": 0.4008,
+      "conversion_share": 0.2667,
+      "ppc_suggested": "0.77",
+      "ppc_bid_range": "$0.58-$0.92",
+      "avg_price": "$28.99",
+      "review_count": 3410.0,
+      "rating": 4.5,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Baby"
+      ],
+      "top3": [
+        {
+          "asin": "B0DJLT6YMS",
+          "click_share": 0.1596,
+          "conversion_share": 0.0667
+        },
+        {
+          "asin": "B086X47D2T",
+          "click_share": 0.1348,
+          "conversion_share": 0.2
+        },
+        {
+          "asin": "B01LXSDDFX",
+          "click_share": 0.1064,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B086X47D2T",
+        "B0DJLT6YMS",
+        "B0BRX7K8LZ",
+        "B0G11JFGR9",
+        "B09N3JFSR4",
+        "B01HDPY7RG",
+        "B01LXSDDFX",
+        "B0DV6FDQKZ",
+        "B09Q39ZY44",
+        "B0GQZ7VZ8M"
+      ]
+    },
+    {
+      "keyword": "solar butterfly lights outdoor",
+      "keyword_zh": "户外太阳能蝴蝶灯",
+      "ac_recommended": true,
+      "relevance": 6.7,
+      "aba_monthly_rank": 135579.0,
+      "aba_weekly_rank": 85936.0,
+      "monthly_searches": 12587.0,
+      "monthly_purchases": 405.0,
+      "purchase_rate": 0.0322,
+      "impressions": 363358.0,
+      "clicks": 5122.0,
+      "spr": 10.0,
+      "title_density": 2.0,
+      "competing_products": 467.0,
+      "supply_demand_ratio": 26.95,
+      "ad_competitors": 266.0,
+      "click_share": 0.386,
+      "conversion_share": 0.1309,
+      "ppc_suggested": "0.75",
+      "ppc_bid_range": "$0.67-$0.84",
+      "avg_price": "$12.98",
+      "review_count": 2202.0,
+      "rating": 4.5,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Garden",
+        "Outdoor"
+      ],
+      "top3": [
+        {
+          "asin": "B0D4TD9V9Q",
+          "click_share": 0.2731,
+          "conversion_share": 0.0952
+        },
+        {
+          "asin": "B0BZ8LZPG5",
+          "click_share": 0.0603,
+          "conversion_share": 0.0119
+        },
+        {
+          "asin": "B0CZRDFBPY",
+          "click_share": 0.0526,
+          "conversion_share": 0.0238
+        }
+      ],
+      "top10_asins": [
+        "B0BZ8LZPG5",
+        "B0CZRDFBPY",
+        "B0BTCP3YMM",
+        "B074KJ4M5J",
+        "B0GJCL59D1",
+        "B0GKNX4Q77",
+        "B0FRDJN318",
+        "B0BVQZTBW6",
+        "B0BWDHFNM2",
+        "B0D1FMPYDT"
+      ]
+    },
+    {
+      "keyword": "fairy houses for outside",
+      "keyword_zh": "外界的仙女屋",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 154615.0,
+      "aba_weekly_rank": 186772.0,
+      "monthly_searches": 11666.0,
+      "monthly_purchases": 371.0,
+      "purchase_rate": 0.0318,
+      "impressions": 328609.0,
+      "clicks": 4684.0,
+      "spr": 9.0,
+      "title_density": 4.0,
+      "competing_products": 376.0,
+      "supply_demand_ratio": 31.03,
+      "ad_competitors": 36.0,
+      "click_share": 0.2205,
+      "conversion_share": 0.1296,
+      "ppc_suggested": "0.55",
+      "ppc_bid_range": "$0.41-$0.69",
+      "avg_price": "$13.36",
+      "review_count": 213.0,
+      "rating": 4.4,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement"
+      ],
+      "top3": [
+        {
+          "asin": "B0080J9KHW",
+          "click_share": 0.0753,
+          "conversion_share": 0.037
+        },
+        {
+          "asin": "B08DTX6SL3",
+          "click_share": 0.0753,
+          "conversion_share": 0.037
+        },
+        {
+          "asin": "B0DGXWPMNV",
+          "click_share": 0.0699,
+          "conversion_share": 0.0556
+        }
+      ],
+      "top10_asins": [
+        "B01N6ZAVNA",
+        "B08VS62KK7",
+        "B0G83618BG",
+        "B0DGXWPMNV",
+        "B093BYQ7NQ",
+        "B0080J9KHW",
+        "B0GBVM1HCY",
+        "B07SJR3SSP",
+        "B01MTAY0TM",
+        "B0DRV6ML98"
+      ]
+    },
+    {
+      "keyword": "patio carpet",
+      "keyword_zh": "天井地毯",
+      "ac_recommended": true,
+      "relevance": 7.5,
+      "aba_monthly_rank": 170292.0,
+      "aba_weekly_rank": 178463.0,
+      "monthly_searches": 9408.0,
+      "monthly_purchases": 289.0,
+      "purchase_rate": 0.0307,
+      "impressions": 246525.0,
+      "clicks": 4317.0,
+      "spr": 7.0,
+      "title_density": 0.0,
+      "competing_products": 451.0,
+      "supply_demand_ratio": 20.86,
+      "ad_competitors": 37.0,
+      "click_share": 0.1697,
+      "conversion_share": 0.0606,
+      "ppc_suggested": "0.76",
+      "ppc_bid_range": "$0.51-$0.87",
+      "avg_price": "$23.45",
+      "review_count": 6623.0,
+      "rating": 4.4,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement"
+      ],
+      "top3": [
+        {
+          "asin": "B09YCTD74F",
+          "click_share": 0.0643,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B091YMYV7Q",
+          "click_share": 0.0591,
+          "conversion_share": 0.0303
+        },
+        {
+          "asin": "B0BNBTFNLX",
+          "click_share": 0.0463,
+          "conversion_share": 0.0303
+        }
+      ],
+      "top10_asins": [
+        "B09YCTD74F",
+        "B091YMYV7Q",
+        "B0C2YVV59F",
+        "B09HKYHJ1W",
+        "B0FY671916",
+        "B0CR4414LH",
+        "B08Z7SLMZ9",
+        "B0D9V5VBH8",
+        "B0DMM9V35B",
+        "B07T7L441K"
+      ]
+    },
+    {
+      "keyword": "cute decor",
+      "keyword_zh": "可爱的装饰",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 145076.0,
+      "aba_weekly_rank": 146080.0,
+      "monthly_searches": 11779.0,
+      "monthly_purchases": 360.0,
+      "purchase_rate": 0.0306,
+      "impressions": 303817.0,
+      "clicks": 4689.0,
+      "spr": 9.0,
+      "title_density": 1.0,
+      "competing_products": 431.0,
+      "supply_demand_ratio": 27.33,
+      "ad_competitors": 99.0,
+      "click_share": 0.1213,
+      "conversion_share": 0.0,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$6.88",
+      "review_count": 2976.0,
+      "rating": 4.4,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Clothing",
+        "Shoes",
+        "Jewelry",
+        "Home",
+        "Kitchen",
+        "Garden",
+        "Outdoor",
+        "Baby",
+        "Electronics",
+        "Office Products"
+      ],
+      "top3": [
+        {
+          "asin": "B0CTBMYZH4",
+          "click_share": 0.0468,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0D6KDW17P",
+          "click_share": 0.0447,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B09KLPLCRF",
+          "click_share": 0.0298,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0CTBMYZH4",
+        "B0D6KDW17P",
+        "B0F293CJQV",
+        "B095P43V29",
+        "B0DHZGPMYJ",
+        "B0BPLFGJ3B",
+        "B0BXY61MQT",
+        "B09LQJBCT7",
+        "B09V7M9DSK",
+        "B09KLPLCRF"
+      ]
+    },
+    {
+      "keyword": "rain chime",
+      "keyword_zh": "雨声",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 144038.0,
+      "aba_weekly_rank": 213072.0,
+      "monthly_searches": 12384.0,
+      "monthly_purchases": 365.0,
+      "purchase_rate": 0.0295,
+      "impressions": 294908.0,
+      "clicks": 5459.0,
+      "spr": 9.0,
+      "title_density": 20.0,
+      "competing_products": 257.0,
+      "supply_demand_ratio": 48.19,
+      "ad_competitors": 45.0,
+      "click_share": 0.564,
+      "conversion_share": 0.2941,
+      "ppc_suggested": "0.64",
+      "ppc_bid_range": "$0.57-$0.74",
+      "avg_price": "$24.99",
+      "review_count": 33.0,
+      "rating": 4.5,
+      "categories": [
+        "Musical Instruments",
+        "Garden",
+        "Outdoor",
+        "Toys",
+        "Games"
+      ],
+      "top3": [
+        {
+          "asin": "B0F3XCVLZV",
+          "click_share": 0.4146,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0CQZGQBS9",
+          "click_share": 0.0762,
+          "conversion_share": 0.1176
+        },
+        {
+          "asin": "B0D9QJNPJ3",
+          "click_share": 0.0732,
+          "conversion_share": 0.1765
+        }
+      ],
+      "top10_asins": [
+        "B0D9QJNPJ3",
+        "B0DR8729LL",
+        "B0DNDQ844M",
+        "B09VFQVNBH",
+        "B0DBV7V6MB",
+        "B0F9FKZLQM",
+        "B0D8W1XFQ4",
+        "B0CQZGQBS9",
+        "B0DG5K2S8T",
+        "B0DR88R4DN"
+      ]
+    },
+    {
+      "keyword": "string of pearls plant live",
+      "keyword_zh": "一串珍珠植物活",
+      "ac_recommended": true,
+      "relevance": 1.5,
+      "aba_monthly_rank": 92222.0,
+      "aba_weekly_rank": 141085.0,
+      "monthly_searches": 18312.0,
+      "monthly_purchases": 524.0,
+      "purchase_rate": 0.0286,
+      "impressions": 508390.0,
+      "clicks": 8644.0,
+      "spr": 13.0,
+      "title_density": 2.0,
+      "competing_products": 400.0,
+      "supply_demand_ratio": 45.78,
+      "ad_competitors": 46.0,
+      "click_share": 0.5113,
+      "conversion_share": 0.3562,
+      "ppc_suggested": "0.43",
+      "ppc_bid_range": "$0.38-$0.57",
+      "avg_price": "$10.99",
+      "review_count": 1091.0,
+      "rating": 4.0,
+      "categories": [
+        "Garden",
+        "Outdoor"
+      ],
+      "top3": [
+        {
+          "asin": "B0FDVVS5CY",
+          "click_share": 0.2012,
+          "conversion_share": 0.1034
+        },
+        {
+          "asin": "B09NPRV6ZB",
+          "click_share": 0.1992,
+          "conversion_share": 0.1494
+        },
+        {
+          "asin": "B0GQ665SL8",
+          "click_share": 0.1109,
+          "conversion_share": 0.1034
+        }
+      ],
+      "top10_asins": [
+        "B09NPRV6ZB",
+        "B0BDM3GY9N",
+        "B0GQ665SL8",
+        "B0FDVVS5CY",
+        "B0B629THKF",
+        "B09WXXW1ZW",
+        "B09TQCP35C",
+        "B0BJ1N1HLZ",
+        "B0F5LK1GFF",
+        "B0DC227HTG"
+      ]
+    },
+    {
+      "keyword": "solar hot air balloon",
+      "keyword_zh": "太阳能热气球",
+      "ac_recommended": true,
+      "relevance": 1.5,
+      "aba_monthly_rank": 181250.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 8870.0,
+      "monthly_purchases": 233.0,
+      "purchase_rate": 0.0263,
+      "impressions": 227882.0,
+      "clicks": 4204.0,
+      "spr": 6.0,
+      "title_density": 10.0,
+      "competing_products": 248.0,
+      "supply_demand_ratio": 35.77,
+      "ad_competitors": 26.0,
+      "click_share": 0.2678,
+      "conversion_share": 0.1305,
+      "ppc_suggested": "0.68",
+      "ppc_bid_range": "$0.55-$0.75",
+      "avg_price": "$27.99",
+      "review_count": 626.0,
+      "rating": 4.5,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Garden",
+        "Outdoor"
+      ],
+      "top3": [
+        {
+          "asin": "B09H336RZ4",
+          "click_share": 0.1336,
+          "conversion_share": 0.1107
+        },
+        {
+          "asin": "B0B9RFWJ8F",
+          "click_share": 0.0766,
+          "conversion_share": 0.0158
+        },
+        {
+          "asin": "B0CF8QFM6G",
+          "click_share": 0.0576,
+          "conversion_share": 0.004
+        }
+      ],
+      "top10_asins": [
+        "B0CX19DTMJ",
+        "B0CNPQSCYL",
+        "B0B9RFWJ8F",
+        "B0DPZ62W6Q",
+        "B0CSSYD71D",
+        "B0CCNM3PTB",
+        "B09H336RZ4",
+        "B0CYBBB7DP",
+        "B0CF8QFM6G",
+        "B0CXNW779V"
+      ]
+    },
+    {
+      "keyword": "outdoor box",
+      "keyword_zh": "户外包厢",
+      "ac_recommended": true,
+      "relevance": 3.0,
+      "aba_monthly_rank": 255131.0,
+      "aba_weekly_rank": 242881.0,
+      "monthly_searches": 6193.0,
+      "monthly_purchases": 156.0,
+      "purchase_rate": 0.0252,
+      "impressions": 154700.0,
+      "clicks": 3036.0,
+      "spr": 4.0,
+      "title_density": 1.0,
+      "competing_products": 246.0,
+      "supply_demand_ratio": 25.17,
+      "ad_competitors": 21.0,
+      "click_share": 0.2319,
+      "conversion_share": 0.1538,
+      "ppc_suggested": "0.79",
+      "ppc_bid_range": "$0.59-$0.99",
+      "avg_price": "$28.99",
+      "review_count": 3410.0,
+      "rating": 4.5,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement"
+      ],
+      "top3": [
+        {
+          "asin": "B0DJLT6YMS",
+          "click_share": 0.1073,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0BRX7K8LZ",
+          "click_share": 0.0727,
+          "conversion_share": 0.1538
+        },
+        {
+          "asin": "B09Q39ZY44",
+          "click_share": 0.0519,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B01HDPY7RG",
+        "B086X47D2T",
+        "B01LW83O84",
+        "B0BRC25B8K",
+        "B091V3KQXV",
+        "B07S45T1P3",
+        "B0FKC2C56K",
+        "B0DJLT6YMS",
+        "B08WVHV3H5",
+        "B09DTJPPG8"
+      ]
+    },
+    {
+      "keyword": "cool room decor",
+      "keyword_zh": "凉爽的房间装饰",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 119669.0,
+      "aba_weekly_rank": 122116.0,
+      "monthly_searches": 14490.0,
+      "monthly_purchases": 313.0,
+      "purchase_rate": 0.0216,
+      "impressions": 386567.0,
+      "clicks": 5679.0,
+      "spr": 8.0,
+      "title_density": 0.0,
+      "competing_products": 631.0,
+      "supply_demand_ratio": 22.96,
+      "ad_competitors": 187.0,
+      "click_share": 0.1362,
+      "conversion_share": 0.0,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$9.99",
+      "review_count": 752.0,
+      "rating": 4.5,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Garden",
+        "Outdoor",
+        "Baby",
+        "Home",
+        "Kitchen",
+        "Video Games",
+        "Electronics",
+        "Toys",
+        "Games",
+        "Clothing",
+        "Shoes",
+        "Jewelry"
+      ],
+      "top3": [
+        {
+          "asin": "B096BD3BHL",
+          "click_share": 0.0645,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0CH8G5KZK",
+          "click_share": 0.0394,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0C2MHG632",
+          "click_share": 0.0323,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0BY8Z72BJ",
+        "B0CH8G5KZK",
+        "B0C2MHG632",
+        "B08KJJFFY8",
+        "B096BD3BHL",
+        "B0077AM71Q",
+        "B0DRFPCJ49",
+        "B09LQJBCT7",
+        "B0D4LBJ8MQ",
+        "B0D4DJ5TYP"
+      ]
+    },
+    {
+      "keyword": "room decorations",
+      "keyword_zh": "房间装饰",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 120180.0,
+      "aba_weekly_rank": 112156.0,
+      "monthly_searches": 14453.0,
+      "monthly_purchases": 312.0,
+      "purchase_rate": 0.0216,
+      "impressions": 429496.0,
+      "clicks": 6799.0,
+      "spr": 8.0,
+      "title_density": 0.0,
+      "competing_products": 566.0,
+      "supply_demand_ratio": 25.54,
+      "ad_competitors": 137.0,
+      "click_share": 0.1024,
+      "conversion_share": 0.0588,
+      "ppc_suggested": "0.40",
+      "ppc_bid_range": "$0.32-$0.50",
+      "avg_price": "$8.49",
+      "review_count": 5898.0,
+      "rating": 4.4,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Baby",
+        "Clothing",
+        "Shoes",
+        "Jewelry",
+        "Electronics",
+        "Industrial",
+        "Scientific",
+        "Health",
+        "Household",
+        "Baby Care"
+      ],
+      "top3": [
+        {
+          "asin": "B0BY8Z72BJ",
+          "click_share": 0.0495,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0CYLKRRQX",
+          "click_share": 0.0281,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0BYSQPLJN",
+          "click_share": 0.0248,
+          "conversion_share": 0.0588
+        }
+      ],
+      "top10_asins": [
+        "B0BY8Z72BJ",
+        "B0CYLKRRQX",
+        "B08Z36X6B4",
+        "B0D4DJ6BRR",
+        "B09K58K13V",
+        "B0CRTLZ4KW",
+        "B0BYSQPLJN",
+        "B0G6Y34K6C",
+        "B01CS31R94",
+        "B0D6KDW17P"
+      ]
+    },
+    {
+      "keyword": "solar lights outdoor",
+      "keyword_zh": "户外太阳能灯",
+      "ac_recommended": true,
+      "relevance": 34.3,
+      "aba_monthly_rank": 191.0,
+      "aba_weekly_rank": 220.0,
+      "monthly_searches": 1109980.0,
+      "monthly_purchases": 19203.0,
+      "purchase_rate": 0.0173,
+      "impressions": 32147706.0,
+      "clicks": 547685.0,
+      "spr": 436.0,
+      "title_density": 18.0,
+      "competing_products": 33368.0,
+      "supply_demand_ratio": 33.26,
+      "ad_competitors": 897.0,
+      "click_share": 0.1512,
+      "conversion_share": 0.094,
+      "ppc_suggested": "0.71",
+      "ppc_bid_range": "$0.53-$0.89",
+      "avg_price": "$19.99",
+      "review_count": 1923.0,
+      "rating": 4.4,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Sports",
+        "Outdoors",
+        "Garden",
+        "Outdoor"
+      ],
+      "top3": [
+        {
+          "asin": "B0G6YJZ3VK",
+          "click_share": 0.0897,
+          "conversion_share": 0.0574
+        },
+        {
+          "asin": "B0GYYK75X8",
+          "click_share": 0.033,
+          "conversion_share": 0.0212
+        },
+        {
+          "asin": "B0DPWS1YDK",
+          "click_share": 0.0285,
+          "conversion_share": 0.0154
+        }
+      ],
+      "top10_asins": [
+        "B0DRFV27P5",
+        "B0DRFSN69P",
+        "B0G3PDLNV4",
+        "B0GFNP7GCP",
+        "B0GVSVSZGG",
+        "B0D6QTCB97",
+        "B0GD6BQ5DR",
+        "B0GFV347J3",
+        "B0GK79R1QW",
+        "B0GM6N7GNP"
+      ]
+    },
+    {
+      "keyword": "tree decorations outdoor",
+      "keyword_zh": "户外树装饰",
+      "ac_recommended": true,
+      "relevance": 15.7,
+      "aba_monthly_rank": 191144.0,
+      "aba_weekly_rank": 288126.0,
+      "monthly_searches": 8390.0,
+      "monthly_purchases": 119.0,
+      "purchase_rate": 0.0142,
+      "impressions": 238301.0,
+      "clicks": 4135.0,
+      "spr": 3.0,
+      "title_density": 2.0,
+      "competing_products": 349.0,
+      "supply_demand_ratio": 24.04,
+      "ad_competitors": 223.0,
+      "click_share": 0.1714,
+      "conversion_share": 0.2,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$19.65",
+      "review_count": 2123.0,
+      "rating": 4.5,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement"
+      ],
+      "top3": [
+        {
+          "asin": "B0GFCYT1H1",
+          "click_share": 0.0694,
+          "conversion_share": 0.0333
+        },
+        {
+          "asin": "B097SR5PRR",
+          "click_share": 0.0571,
+          "conversion_share": 0.0667
+        },
+        {
+          "asin": "B0F2TK7WH7",
+          "click_share": 0.0449,
+          "conversion_share": 0.1
+        }
+      ],
+      "top10_asins": [
+        "B019ZXI14O",
+        "B07LCDJYVS",
+        "B097SR5PRR",
+        "B07HF2Z653",
+        "B0C2D2SZLT",
+        "B0BYNVLGJ3",
+        "B094RJJFKG",
+        "B0CNPL4FXX",
+        "B0CQHJL81C",
+        "B094X6TWM1"
+      ]
+    },
+    {
+      "keyword": "gargoyle statues outdoor",
+      "keyword_zh": "户外石像鬼雕像",
+      "ac_recommended": true,
+      "relevance": 3.0,
+      "aba_monthly_rank": 124761.0,
+      "aba_weekly_rank": 213470.0,
+      "monthly_searches": 13887.0,
+      "monthly_purchases": 160.0,
+      "purchase_rate": 0.0115,
+      "impressions": 348264.0,
+      "clicks": 6833.0,
+      "spr": 4.0,
+      "title_density": 3.0,
+      "competing_products": 593.0,
+      "supply_demand_ratio": 23.42,
+      "ad_competitors": 87.0,
+      "click_share": 0.2446,
+      "conversion_share": 0.3044,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$45.99",
+      "review_count": 231.0,
+      "rating": 4.5,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement"
+      ],
+      "top3": [
+        {
+          "asin": "B09TK5LBGS",
+          "click_share": 0.0948,
+          "conversion_share": 0.087
+        },
+        {
+          "asin": "B08GHR7KK2",
+          "click_share": 0.0917,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B08SQMBDXY",
+          "click_share": 0.0581,
+          "conversion_share": 0.2174
+        }
+      ],
+      "top10_asins": [
+        "B09TK5LBGS",
+        "B07FTPQ18V",
+        "B000CQBY5C",
+        "B08GHR7KK2",
+        "B08SQMBDXY",
+        "B003IF1VNO",
+        "B001U5AU0E",
+        "B0DB2458XV",
+        "B00CW2QETK",
+        "B073SG18YL"
+      ]
+    },
+    {
+      "keyword": "bird bath for outside",
+      "keyword_zh": "户外鸟浴",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 3052.0,
+      "aba_weekly_rank": 4079.0,
+      "monthly_searches": 198049.0,
+      "monthly_purchases": 2258.0,
+      "purchase_rate": 0.0114,
+      "impressions": 5093235.0,
+      "clicks": 78089.0,
+      "spr": 52.0,
+      "title_density": 18.0,
+      "competing_products": 4983.0,
+      "supply_demand_ratio": 39.74,
+      "ad_competitors": 314.0,
+      "click_share": 0.1952,
+      "conversion_share": 0.1188,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$23.99",
+      "review_count": 2274.0,
+      "rating": 4.4,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Pet Supplies"
+      ],
+      "top3": [
+        {
+          "asin": "B0CZ63PY86",
+          "click_share": 0.0823,
+          "conversion_share": 0.0639
+        },
+        {
+          "asin": "B0GG8WNY1B",
+          "click_share": 0.0595,
+          "conversion_share": 0.0246
+        },
+        {
+          "asin": "B07597XGSN",
+          "click_share": 0.0534,
+          "conversion_share": 0.0303
+        }
+      ],
+      "top10_asins": [
+        "B0GZP531MT",
+        "B0GZW6FFTT",
+        "B0H1X14QP4",
+        "B0GG958HF1",
+        "B07597XGSN",
+        "B0GCZP7ML7",
+        "B0GX6RQ3PY",
+        "B0GZ2TPGZ3",
+        "B0DTFB25V8",
+        "B0GT8R979S"
+      ]
+    },
+    {
+      "keyword": "wishing well for outside",
+      "keyword_zh": "室外许愿池",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 70561.0,
+      "aba_weekly_rank": 102116.0,
+      "monthly_searches": 22889.0,
+      "monthly_purchases": 247.0,
+      "purchase_rate": 0.0108,
+      "impressions": 569588.0,
+      "clicks": 9460.0,
+      "spr": 6.0,
+      "title_density": 6.0,
+      "competing_products": 209.0,
+      "supply_demand_ratio": 109.52,
+      "ad_competitors": 116.0,
+      "click_share": 0.4712,
+      "conversion_share": 0.234,
+      "ppc_suggested": "0.36",
+      "ppc_bid_range": "$0.32-$0.45",
+      "avg_price": "$89.99",
+      "review_count": 807.0,
+      "rating": 4.3,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement"
+      ],
+      "top3": [
+        {
+          "asin": "B01CIPDKPG",
+          "click_share": 0.2734,
+          "conversion_share": 0.1489
+        },
+        {
+          "asin": "B0CM63RMTK",
+          "click_share": 0.1057,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0C1RSH9JR",
+          "click_share": 0.0921,
+          "conversion_share": 0.0851
+        }
+      ],
+      "top10_asins": [
+        "B01CIPDKPG",
+        "B0C1RSH9JR",
+        "B0G4GV1HPT",
+        "B09MRW54KN",
+        "B0CM63RMTK",
+        "B0BPY861M7",
+        "B0G4GR7CVH",
+        "B0B95T8XKJ",
+        "B0BPY8JNMC",
+        "B0DRFTGRLR"
+      ]
+    },
+    {
+      "keyword": "outdoor stuff",
+      "keyword_zh": "户外用品",
+      "ac_recommended": true,
+      "relevance": 15.7,
+      "aba_monthly_rank": 176789.0,
+      "aba_weekly_rank": 250024.0,
+      "monthly_searches": 9081.0,
+      "monthly_purchases": 94.0,
+      "purchase_rate": 0.0104,
+      "impressions": 252131.0,
+      "clicks": 3467.0,
+      "spr": 3.0,
+      "title_density": 0.0,
+      "competing_products": 351.0,
+      "supply_demand_ratio": 25.87,
+      "ad_competitors": 89.0,
+      "click_share": 0.694,
+      "conversion_share": 0.0,
+      "ppc_suggested": "0.79",
+      "ppc_bid_range": "$0.59-$0.99",
+      "avg_price": "$59.99",
+      "review_count": 6054.0,
+      "rating": 4.3,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement",
+        "Sports",
+        "Outdoors",
+        "Electronics",
+        "Industrial",
+        "Scientific",
+        "Health",
+        "Household",
+        "Baby Care"
+      ],
+      "top3": [
+        {
+          "asin": "B0DFYFM5G8",
+          "click_share": 0.6584,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0C9THKCWY",
+          "click_share": 0.0214,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B004GCW6LE",
+          "click_share": 0.0142,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B07VDKMGPM",
+        "B004GCW6LE",
+        "B0BRNYPMV9",
+        "B08HGY1Q4K",
+        "B0C2VGNTW1",
+        "B0DPHLW22V",
+        "B0C9THKCWY",
+        "B0D4765KKT",
+        "B09YCTD74F",
+        "B0DFYFM5G8"
+      ]
+    },
+    {
+      "keyword": "garden stepping stones outdoor",
+      "keyword_zh": "户外花园垫脚石",
+      "ac_recommended": true,
+      "relevance": 1.5,
+      "aba_monthly_rank": 152754.0,
+      "aba_weekly_rank": 200207.0,
+      "monthly_searches": 10746.0,
+      "monthly_purchases": 105.0,
+      "purchase_rate": 0.0098,
+      "impressions": 278938.0,
+      "clicks": 4443.0,
+      "spr": 3.0,
+      "title_density": 6.0,
+      "competing_products": 311.0,
+      "supply_demand_ratio": 34.55,
+      "ad_competitors": 68.0,
+      "click_share": 0.1782,
+      "conversion_share": 0.1163,
+      "ppc_suggested": "0.60",
+      "ppc_bid_range": "$0.37-$0.75",
+      "avg_price": "$31.99",
+      "review_count": 302.0,
+      "rating": 3.7,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Toys",
+        "Games",
+        "Tools",
+        "Home Improvement",
+        "Handmade"
+      ],
+      "top3": [
+        {
+          "asin": "B0BPRTZPRL",
+          "click_share": 0.0747,
+          "conversion_share": 0.093
+        },
+        {
+          "asin": "B0GT8TCQ4Y",
+          "click_share": 0.0546,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B07NRYZGQ6",
+          "click_share": 0.0489,
+          "conversion_share": 0.0233
+        }
+      ],
+      "top10_asins": [
+        "B0DHRTC92T",
+        "B0F37G1LHG",
+        "B0FGF8H5RK",
+        "B0GVPQ55GH",
+        "B0BC15CN9Q",
+        "B01DSNH2I8",
+        "B0DTYZFJPV",
+        "B0DY6Z6DT6",
+        "B0BYP6NW5D",
+        "B075MJQNXS"
+      ]
+    },
+    {
+      "keyword": "pond decor",
+      "keyword_zh": "池塘装饰",
+      "ac_recommended": true,
+      "relevance": 6.0,
+      "aba_monthly_rank": 202135.0,
+      "aba_weekly_rank": 226756.0,
+      "monthly_searches": 7876.0,
+      "monthly_purchases": 76.0,
+      "purchase_rate": 0.0096,
+      "impressions": 235356.0,
+      "clicks": 3814.0,
+      "spr": 2.0,
+      "title_density": 14.0,
+      "competing_products": 346.0,
+      "supply_demand_ratio": 22.76,
+      "ad_competitors": 270.0,
+      "click_share": 0.2233,
+      "conversion_share": 0.0313,
+      "ppc_suggested": "0.41",
+      "ppc_bid_range": "$0.32-$0.51",
+      "avg_price": "$10.99",
+      "review_count": 146.0,
+      "rating": 4.3,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement",
+        "Pet Supplies"
+      ],
+      "top3": [
+        {
+          "asin": "B0D6W5DY3G",
+          "click_share": 0.1262,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B08CS77NB9",
+          "click_share": 0.055,
+          "conversion_share": 0.0313
+        },
+        {
+          "asin": "B09YD4221P",
+          "click_share": 0.0421,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0DD6ZCD4K",
+        "B0002568YK",
+        "B0D6W5DY3G",
+        "B0DPXQS7VC",
+        "B09YD4221P",
+        "B083QV8Z9S",
+        "B0DDX9TPSP",
+        "B095NJVS9V",
+        "B07GDDPJPS",
+        "B094FCQ6YV"
+      ]
+    },
+    {
+      "keyword": "balcony privacy screen",
+      "keyword_zh": "阳台隐私屏风",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 13736.0,
+      "aba_weekly_rank": 16209.0,
+      "monthly_searches": 80346.0,
+      "monthly_purchases": 771.0,
+      "purchase_rate": 0.0096,
+      "impressions": 1917577.0,
+      "clicks": 31472.0,
+      "spr": 18.0,
+      "title_density": 13.0,
+      "competing_products": 3879.0,
+      "supply_demand_ratio": 20.71,
+      "ad_competitors": 240.0,
+      "click_share": 0.1959,
+      "conversion_share": 0.0983,
+      "ppc_suggested": "0.78",
+      "ppc_bid_range": "$0.59-$0.98",
+      "avg_price": "$15.98",
+      "review_count": 191.0,
+      "rating": 4.5,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Baby"
+      ],
+      "top3": [
+        {
+          "asin": "B08LDB7MQD",
+          "click_share": 0.0816,
+          "conversion_share": 0.0459
+        },
+        {
+          "asin": "B081KTSL6S",
+          "click_share": 0.0655,
+          "conversion_share": 0.0262
+        },
+        {
+          "asin": "B0BYDWH4LV",
+          "click_share": 0.0488,
+          "conversion_share": 0.0262
+        }
+      ],
+      "top10_asins": [
+        "B0BYDWH4LV",
+        "B08Q82V4GC",
+        "B0F1TMYHSM",
+        "B08LDB7MQD",
+        "B0GRH6D6YS",
+        "B0GT4V4X1D",
+        "B0GZ8KBFXH",
+        "B0H1GYK1TX",
+        "B0H2DCH5HB",
+        "B081DTLK2Q"
+      ]
+    },
+    {
+      "keyword": "plantas",
+      "keyword_zh": "植物",
+      "ac_recommended": true,
+      "relevance": 3.0,
+      "aba_monthly_rank": 280384.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 5445.0,
+      "monthly_purchases": 51.0,
+      "purchase_rate": 0.0093,
+      "impressions": 148554.0,
+      "clicks": 2630.0,
+      "spr": 2.0,
+      "title_density": 1.0,
+      "competing_products": 139.0,
+      "supply_demand_ratio": 39.17,
+      "ad_competitors": 24.0,
+      "click_share": 0.1089,
+      "conversion_share": 0.0572,
+      "ppc_suggested": "0.76",
+      "ppc_bid_range": "$0.63-$0.85",
+      "avg_price": "$27.52",
+      "review_count": 10870.0,
+      "rating": 4.0,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Grocery",
+        "Gourmet Food"
+      ],
+      "top3": [
+        {
+          "asin": "B091647KGL",
+          "click_share": 0.0391,
+          "conversion_share": 0.0286
+        },
+        {
+          "asin": "B07L1G31YT",
+          "click_share": 0.0372,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B07P9FBY7K",
+          "click_share": 0.0327,
+          "conversion_share": 0.0286
+        }
+      ],
+      "top10_asins": [
+        "0316495107",
+        "B07L1G31YT",
+        "B091647KGL",
+        "B07P9FBY7K",
+        "B09HT9D3RT",
+        "B0CJYN69ZY",
+        "B0BZ84VZY8",
+        "B0D25BQ9PP",
+        "B07G853D6N",
+        "B0DPZNRLF8"
+      ]
+    },
+    {
+      "keyword": "artificial hostas for outdoors",
+      "keyword_zh": "户外人造玉簪",
+      "ac_recommended": true,
+      "relevance": 7.5,
+      "aba_monthly_rank": 258245.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 5998.0,
+      "monthly_purchases": 55.0,
+      "purchase_rate": 0.0092,
+      "impressions": 159543.0,
+      "clicks": 2457.0,
+      "spr": 2.0,
+      "title_density": 1.0,
+      "competing_products": 283.0,
+      "supply_demand_ratio": 21.19,
+      "ad_competitors": 45.0,
+      "click_share": 0.2815,
+      "conversion_share": 0.1566,
+      "ppc_suggested": "0.65",
+      "ppc_bid_range": "$0.52-$0.72",
+      "avg_price": "$28.99",
+      "review_count": 122.0,
+      "rating": 4.0,
+      "categories": [
+        "Garden",
+        "Outdoor"
+      ],
+      "top3": [
+        {
+          "asin": "B0FCLQJ9GC",
+          "click_share": 0.1182,
+          "conversion_share": 0.0482
+        },
+        {
+          "asin": "B07MWSV3Z8",
+          "click_share": 0.0914,
+          "conversion_share": 0.0482
+        },
+        {
+          "asin": "B0G6YX4T9W",
+          "click_share": 0.0721,
+          "conversion_share": 0.0602
+        }
+      ],
+      "top10_asins": [
+        "B0FV8V9VB4",
+        "B0F9XBHHKQ",
+        "B0FCLQJ9GC",
+        "B0G6YX4T9W",
+        "B0F8HTGNPP",
+        "B07MWSV3Z8",
+        "B07BT13C1L",
+        "B0F9V5MJC9",
+        "B0GLYG7M85",
+        "B0DB5XZLCG"
+      ]
+    },
+    {
+      "keyword": "black decor",
+      "keyword_zh": "黑色装饰",
+      "ac_recommended": true,
+      "relevance": 1.5,
+      "aba_monthly_rank": 136609.0,
+      "aba_weekly_rank": 149683.0,
+      "monthly_searches": 13196.0,
+      "monthly_purchases": 115.0,
+      "purchase_rate": 0.0087,
+      "impressions": 323156.0,
+      "clicks": 5615.0,
+      "spr": 3.0,
+      "title_density": 3.0,
+      "competing_products": 611.0,
+      "supply_demand_ratio": 21.6,
+      "ad_competitors": 195.0,
+      "click_share": 0.1002,
+      "conversion_share": 0.1725,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.39",
+      "avg_price": "$12.99",
+      "review_count": 2489.0,
+      "rating": 4.5,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Home",
+        "Kitchen",
+        "Garden",
+        "Outdoor"
+      ],
+      "top3": [
+        {
+          "asin": "B0BHSW6NWB",
+          "click_share": 0.0392,
+          "conversion_share": 0.0345
+        },
+        {
+          "asin": "B0BZ85F98Q",
+          "click_share": 0.0305,
+          "conversion_share": 0.069
+        },
+        {
+          "asin": "B0BZ8DZV6D",
+          "click_share": 0.0305,
+          "conversion_share": 0.069
+        }
+      ],
+      "top10_asins": [
+        "B0BHSW6NWB",
+        "B0BZ85F98Q",
+        "B0D1G1ZZBD",
+        "B0CL66MF6T",
+        "B08FY9JCXV",
+        "B0BZ8DZV6D",
+        "B01CS31R94",
+        "B0D25FQZHC",
+        "B0DPSJP47V",
+        "B0BJKRSL5P"
+      ]
+    },
+    {
+      "keyword": "covers for outdoor cushions",
+      "keyword_zh": "户外靠垫套",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 178879.0,
+      "aba_weekly_rank": 254275.0,
+      "monthly_searches": 8983.0,
+      "monthly_purchases": 61.0,
+      "purchase_rate": 0.0068,
+      "impressions": 249784.0,
+      "clicks": 4044.0,
+      "spr": 2.0,
+      "title_density": 0.0,
+      "competing_products": 318.0,
+      "supply_demand_ratio": 28.25,
+      "ad_competitors": 43.0,
+      "click_share": 0.2717,
+      "conversion_share": 0.0435,
+      "ppc_suggested": "0.79",
+      "ppc_bid_range": "$0.59-$0.99",
+      "avg_price": "$39.99",
+      "review_count": 467.0,
+      "rating": 4.4,
+      "categories": [
+        "Garden",
+        "Outdoor"
+      ],
+      "top3": [
+        {
+          "asin": "B0DTNYMQSZ",
+          "click_share": 0.1159,
+          "conversion_share": 0.0435
+        },
+        {
+          "asin": "B099NDL9WM",
+          "click_share": 0.0942,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0GDQPZRL7",
+          "click_share": 0.0616,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0DTNYMQSZ",
+        "B0DT5W6P8B",
+        "B0G79THPWV",
+        "B0B7B6YNNB",
+        "B0GL3TM74L",
+        "B0GBX8NLH7",
+        "B09YNGQKVW",
+        "B0B6J4JXT8",
+        "B0DPZNHLQZ",
+        "B0D2ZQ3J3D"
+      ]
+    },
+    {
+      "keyword": "outdoor throw pillow covers",
+      "keyword_zh": "户外抱枕套",
+      "ac_recommended": true,
+      "relevance": 3.0,
+      "aba_monthly_rank": 140668.0,
+      "aba_weekly_rank": 185918.0,
+      "monthly_searches": 11663.0,
+      "monthly_purchases": 76.0,
+      "purchase_rate": 0.0065,
+      "impressions": 324760.0,
+      "clicks": 4575.0,
+      "spr": 2.0,
+      "title_density": 6.0,
+      "competing_products": 356.0,
+      "supply_demand_ratio": 32.76,
+      "ad_competitors": 81.0,
+      "click_share": 0.1632,
+      "conversion_share": 0.0508,
+      "ppc_suggested": "0.62",
+      "ppc_bid_range": "$0.48-$0.80",
+      "avg_price": "$15.99",
+      "review_count": 1585.0,
+      "rating": 4.4,
+      "categories": [
+        "Garden",
+        "Outdoor"
+      ],
+      "top3": [
+        {
+          "asin": "B0BMGJ71QW",
+          "click_share": 0.0642,
+          "conversion_share": 0.0339
+        },
+        {
+          "asin": "B0BP7XC6M2",
+          "click_share": 0.0642,
+          "conversion_share": 0.0169
+        },
+        {
+          "asin": "B0866GZY9J",
+          "click_share": 0.0348,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0BMGJ71QW",
+        "B0866GZY9J",
+        "B085H9YYSP",
+        "B0BP7XC6M2",
+        "B0BXNGCYQ1",
+        "B0DJXMGSR9",
+        "B08SJDPF3X",
+        "B0C2K7DLVS",
+        "B0CSC2YYWK",
+        "B096Z5HT2G"
+      ]
+    },
+    {
+      "keyword": "decoraciones para sala",
+      "keyword_zh": "萨拉装饰",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 68224.0,
+      "aba_weekly_rank": 90594.0,
+      "monthly_searches": 23953.0,
+      "monthly_purchases": 151.0,
+      "purchase_rate": 0.0063,
+      "impressions": 679911.0,
+      "clicks": 9371.0,
+      "spr": 4.0,
+      "title_density": 0.0,
+      "competing_products": 1169.0,
+      "supply_demand_ratio": 20.49,
+      "ad_competitors": 187.0,
+      "click_share": 0.1214,
+      "conversion_share": 0.1176,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$16.99",
+      "review_count": 8763.0,
+      "rating": 4.5,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Home",
+        "Kitchen"
+      ],
+      "top3": [
+        {
+          "asin": "B0CDLXVVVZ",
+          "click_share": 0.0445,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0FTVVM8QG",
+          "click_share": 0.0391,
+          "conversion_share": 0.0588
+        },
+        {
+          "asin": "B0C6DHZJWN",
+          "click_share": 0.0378,
+          "conversion_share": 0.0588
+        }
+      ],
+      "top10_asins": [
+        "B0BVB49S62",
+        "B0FWHKT55B",
+        "B0D2SHCYSP",
+        "B0CTJGJL2T",
+        "B0GHVDKVN4",
+        "B0GS7T6HZB",
+        "B091647KGL",
+        "B0CVVVNB9L",
+        "B08Z36X6B4",
+        "B000QTUJXS"
+      ]
+    },
+    {
+      "keyword": "garden party",
+      "keyword_zh": "花园派对",
+      "ac_recommended": true,
+      "relevance": 3.7,
+      "aba_monthly_rank": 171893.0,
+      "aba_weekly_rank": 287486.0,
+      "monthly_searches": 9435.0,
+      "monthly_purchases": 58.0,
+      "purchase_rate": 0.0062,
+      "impressions": 272549.0,
+      "clicks": 4151.0,
+      "spr": 2.0,
+      "title_density": 14.0,
+      "competing_products": 432.0,
+      "supply_demand_ratio": 21.84,
+      "ad_competitors": 203.0,
+      "click_share": 0.2409,
+      "conversion_share": 0.0435,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.40",
+      "avg_price": "$20.90",
+      "review_count": 520.0,
+      "rating": 4.5,
+      "categories": [
+        "Toys",
+        "Games",
+        "Tools",
+        "Home Improvement",
+        "Home",
+        "Kitchen",
+        "Health",
+        "Household",
+        "Baby Care",
+        "Beauty",
+        "Personal Care",
+        "Grocery",
+        "Gourmet Food",
+        "Garden",
+        "Outdoor",
+        "Kindle Store",
+        "Baby",
+        "Movies",
+        "TV"
+      ],
+      "top3": [
+        {
+          "asin": "B0DS3YFWR5",
+          "click_share": 0.1143,
+          "conversion_share": 0.0435
+        },
+        {
+          "asin": "B0CS3F6VC8",
+          "click_share": 0.0735,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0FWBWDMW7",
+          "click_share": 0.0531,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B071Z2PRRM",
+        "B0CSFBZ68X",
+        "B0DBV9YQN4",
+        "B095P43V29",
+        "B0BM3YMD8T",
+        "B0DPH4JTLC",
+        "B0C6D9VHKR",
+        "B07JVRS55G",
+        "B0F8HW3JWP",
+        "B0CS3F6VC8"
+      ]
+    },
+    {
+      "keyword": "solar umbrella lights outdoor",
+      "keyword_zh": "户外太阳能伞灯",
+      "ac_recommended": true,
+      "relevance": 6.0,
+      "aba_monthly_rank": 180258.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 8915.0,
+      "monthly_purchases": 43.0,
+      "purchase_rate": 0.0048,
+      "impressions": 231887.0,
+      "clicks": 3436.0,
+      "spr": 1.0,
+      "title_density": 2.0,
+      "competing_products": 318.0,
+      "supply_demand_ratio": 28.03,
+      "ad_competitors": 30.0,
+      "click_share": 0.2354,
+      "conversion_share": 0.093,
+      "ppc_suggested": "0.73",
+      "ppc_bid_range": "$0.53-$0.96",
+      "avg_price": "$18.99",
+      "review_count": 803.0,
+      "rating": 4.3,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Garden",
+        "Outdoor"
+      ],
+      "top3": [
+        {
+          "asin": "B08T97BS3N",
+          "click_share": 0.0868,
+          "conversion_share": 0.0335
+        },
+        {
+          "asin": "B08TZTHDKG",
+          "click_share": 0.0786,
+          "conversion_share": 0.0335
+        },
+        {
+          "asin": "B0G5942TFC",
+          "click_share": 0.0703,
+          "conversion_share": 0.026
+        }
+      ],
+      "top10_asins": [
+        "B0G5942TFC",
+        "B07K811CQV",
+        "B08TZTHDKG",
+        "B0CX1L43ZG",
+        "B0836DZHZ8",
+        "B01N9HR1SX",
+        "B07D37W89P",
+        "B07535FYYH",
+        "B09KTCWX2R",
+        "B0FGPZHFJR"
+      ]
+    },
+    {
+      "keyword": "matas artificial para sala",
+      "keyword_zh": "客厅用仿真植物",
+      "ac_recommended": true,
+      "relevance": 6.7,
+      "aba_monthly_rank": 233124.0,
+      "aba_weekly_rank": 250845.0,
+      "monthly_searches": 6708.0,
+      "monthly_purchases": 31.0,
+      "purchase_rate": 0.0046,
+      "impressions": 185757.0,
+      "clicks": 3030.0,
+      "spr": 1.0,
+      "title_density": 0.0,
+      "competing_products": 223.0,
+      "supply_demand_ratio": 30.08,
+      "ad_competitors": 95.0,
+      "click_share": 0.1571,
+      "conversion_share": 0.0,
+      "ppc_suggested": "0.64",
+      "ppc_bid_range": "$0.55-$0.72",
+      "avg_price": "$23.99",
+      "review_count": 902.0,
+      "rating": 4.0,
+      "categories": [
+        "Grocery",
+        "Gourmet Food"
+      ],
+      "top3": [
+        {
+          "asin": "B0GYX5M64X",
+          "click_share": 0.0607,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0BZ84VZY8",
+          "click_share": 0.05,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0D3QJ85Y2",
+          "click_share": 0.0464,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0DP6VR718",
+        "B00B3LO53S",
+        "B0GTQWBJZQ",
+        "B0GXZQNHHT",
+        "B0GV3KTQHT",
+        "B0BZ84VZY8",
+        "B0DC9NBSYY",
+        "B0DSKX2XKM",
+        "B0CYZLWMG7",
+        "B0F32VJMYJ"
+      ]
+    },
+    {
+      "keyword": "picnic essentials",
+      "keyword_zh": "野餐必需品",
+      "ac_recommended": true,
+      "relevance": 1.5,
+      "aba_monthly_rank": 42244.0,
+      "aba_weekly_rank": 51805.0,
+      "monthly_searches": 36331.0,
+      "monthly_purchases": 156.0,
+      "purchase_rate": 0.0043,
+      "impressions": 914327.0,
+      "clicks": 14505.0,
+      "spr": 4.0,
+      "title_density": 0.0,
+      "competing_products": 341.0,
+      "supply_demand_ratio": 106.54,
+      "ad_competitors": 143.0,
+      "click_share": 0.1931,
+      "conversion_share": 0.1455,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$23.99",
+      "review_count": 3688.0,
+      "rating": 4.5,
+      "categories": [
+        "Home",
+        "Kitchen",
+        "Garden",
+        "Outdoor",
+        "Sports",
+        "Outdoors",
+        "Health",
+        "Household",
+        "Baby Care",
+        "Electronics",
+        "Baby",
+        "Clothing",
+        "Shoes",
+        "Jewelry"
+      ],
+      "top3": [
+        {
+          "asin": "B09SQ5CB2L",
+          "click_share": 0.0825,
+          "conversion_share": 0.0182
+        },
+        {
+          "asin": "B07W81XXLQ",
+          "click_share": 0.0585,
+          "conversion_share": 0.0909
+        },
+        {
+          "asin": "B0DN6HH7TQ",
+          "click_share": 0.0521,
+          "conversion_share": 0.0364
+        }
+      ],
+      "top10_asins": [
+        "B08W4GWCZS",
+        "B0CKBYP86C",
+        "B0DCK32SXQ",
+        "B0BP27JWQ5",
+        "B0DHRHL3XD",
+        "B0DN6HH7TQ",
+        "B0GC4P836L",
+        "B09GF1ND4D",
+        "B017G1051Y",
+        "B0GD11YVYJ"
+      ]
+    },
+    {
+      "keyword": "hypebeast room decor",
+      "keyword_zh": "hypebeast 房间装饰",
+      "ac_recommended": true,
+      "relevance": 1.5,
+      "aba_monthly_rank": 177437.0,
+      "aba_weekly_rank": 175422.0,
+      "monthly_searches": 9158.0,
+      "monthly_purchases": 39.0,
+      "purchase_rate": 0.0043,
+      "impressions": 223558.0,
+      "clicks": 3554.0,
+      "spr": 1.0,
+      "title_density": 11.0,
+      "competing_products": 370.0,
+      "supply_demand_ratio": 24.75,
+      "ad_competitors": 91.0,
+      "click_share": 0.2608,
+      "conversion_share": 0.125,
+      "ppc_suggested": "0.53",
+      "ppc_bid_range": "$0.40-$0.66",
+      "avg_price": "$19.95",
+      "review_count": 168.0,
+      "rating": 4.5,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Sports",
+        "Outdoors",
+        "Garden",
+        "Outdoor",
+        "Industrial",
+        "Scientific",
+        "Home",
+        "Kitchen"
+      ],
+      "top3": [
+        {
+          "asin": "B0DZCYD1D9",
+          "click_share": 0.1241,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B09ZQPJ6G8",
+          "click_share": 0.0759,
+          "conversion_share": 0.125
+        },
+        {
+          "asin": "B0BJZP3LH4",
+          "click_share": 0.0608,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0DZCYD1D9",
+        "B09ZQPJ6G8",
+        "B0CXHNH5C6",
+        "B0BJZP3LH4",
+        "B0CB4PF7MK",
+        "B0GR14JJ4N",
+        "B09K58K13V",
+        "B0GVY2YY3N",
+        "B0BMVK4RFD",
+        "B0B69F8Y4L"
+      ]
+    },
+    {
+      "keyword": "solar fire bowl",
+      "keyword_zh": "太阳能火盆",
+      "ac_recommended": true,
+      "relevance": 6.7,
+      "aba_monthly_rank": 57949.0,
+      "aba_weekly_rank": 84522.0,
+      "monthly_searches": 27464.0,
+      "monthly_purchases": 104.0,
+      "purchase_rate": 0.0038,
+      "impressions": 771396.0,
+      "clicks": 11802.0,
+      "spr": 3.0,
+      "title_density": 2.0,
+      "competing_products": 188.0,
+      "supply_demand_ratio": 146.09,
+      "ad_competitors": 14.0,
+      "click_share": 0.5644,
+      "conversion_share": 0.375,
+      "ppc_suggested": "0.60",
+      "ppc_bid_range": "$0.45-$0.75",
+      "avg_price": "$34.99",
+      "review_count": 110.0,
+      "rating": 4.4,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Garden",
+        "Outdoor",
+        "Sports",
+        "Outdoors"
+      ],
+      "top3": [
+        {
+          "asin": "B0CLHHMB18",
+          "click_share": 0.4028,
+          "conversion_share": 0.3571
+        },
+        {
+          "asin": "B0DGQ65ZQW",
+          "click_share": 0.0985,
+          "conversion_share": 0.0179
+        },
+        {
+          "asin": "B0C48D6H6M",
+          "click_share": 0.0631,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0CLHHMB18",
+        "B0CSSXZKH9",
+        "B0C48D6H6M",
+        "B0F21WQ24B",
+        "B087T9FYL1",
+        "B0D6VPGSXP",
+        "B0DCNV4HDB",
+        "B0DPB6PFK3",
+        "B0DG9FM7M1",
+        "B0DQ49RF2T"
+      ]
+    },
+    {
+      "keyword": "fuentes de agua para interior",
+      "keyword_zh": "富恩特斯德阿瓜帕拉内政部",
+      "ac_recommended": true,
+      "relevance": 1.5,
+      "aba_monthly_rank": 228635.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 6985.0,
+      "monthly_purchases": 27.0,
+      "purchase_rate": 0.0038,
+      "impressions": 166577.0,
+      "clicks": 3090.0,
+      "spr": 1.0,
+      "title_density": 0.0,
+      "competing_products": 223.0,
+      "supply_demand_ratio": 31.32,
+      "ad_competitors": 40.0,
+      "click_share": 0.2001,
+      "conversion_share": 0.15,
+      "ppc_suggested": "0.35",
+      "ppc_bid_range": "$0.32-$0.38",
+      "avg_price": "$46.28",
+      "review_count": 203.0,
+      "rating": 4.0,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Pet Supplies"
+      ],
+      "top3": [
+        {
+          "asin": "B0CXD11DH3",
+          "click_share": 0.093,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B000QTUJXS",
+          "click_share": 0.0699,
+          "conversion_share": 0.075
+        },
+        {
+          "asin": "B0DCFQKZY9",
+          "click_share": 0.0372,
+          "conversion_share": 0.075
+        }
+      ],
+      "top10_asins": [
+        "B0GGZC7NYF",
+        "B0H1H4662L",
+        "B000QTUJXS",
+        "B0CXD11DH3",
+        "B0GSPQ9WVN",
+        "B0GVNKRM9P",
+        "B0DCFQKZY9",
+        "B0993P7RTF",
+        "B0F7LSH3CG",
+        "B0GSMRX124"
+      ]
+    },
+    {
+      "keyword": "front porch",
+      "keyword_zh": "前阳台",
+      "ac_recommended": true,
+      "relevance": 16.4,
+      "aba_monthly_rank": 211340.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 7578.0,
+      "monthly_purchases": 29.0,
+      "purchase_rate": 0.0038,
+      "impressions": 193572.0,
+      "clicks": 3144.0,
+      "spr": 1.0,
+      "title_density": 20.0,
+      "competing_products": 312.0,
+      "supply_demand_ratio": 24.29,
+      "ad_competitors": 65.0,
+      "click_share": 0.1685,
+      "conversion_share": 0.0334,
+      "ppc_suggested": "0.58",
+      "ppc_bid_range": "$0.43-$0.73",
+      "avg_price": "$15.99",
+      "review_count": 415.0,
+      "rating": 4.5,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement",
+        "Toys",
+        "Games",
+        "Office Products"
+      ],
+      "top3": [
+        {
+          "asin": "B09W31DP43",
+          "click_share": 0.0689,
+          "conversion_share": 0.0167
+        },
+        {
+          "asin": "B0F3Y351TJ",
+          "click_share": 0.0524,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0GGN81FKR",
+          "click_share": 0.0476,
+          "conversion_share": 0.0167
+        }
+      ],
+      "top10_asins": [
+        "B09W31DP43",
+        "B07L1T8LVH",
+        "B08QFBHYZC",
+        "B0BPY9Z1Q3",
+        "B0DFCGDVCK",
+        "B09YD4221P",
+        "B08ZSTST3M",
+        "B091YMYV7Q",
+        "B0F3Y351TJ",
+        "B08TPGXW5B"
+      ]
+    },
+    {
+      "keyword": "artverastudio",
+      "keyword_zh": "Artverastudio",
+      "ac_recommended": true,
+      "relevance": 1.5,
+      "aba_monthly_rank": 223322.0,
+      "aba_weekly_rank": null,
+      "monthly_searches": 7076.0,
+      "monthly_purchases": 26.0,
+      "purchase_rate": 0.0037,
+      "impressions": 172348.0,
+      "clicks": 3125.0,
+      "spr": 1.0,
+      "title_density": 2.0,
+      "competing_products": 106.0,
+      "supply_demand_ratio": 66.75,
+      "ad_competitors": 32.0,
+      "click_share": 0.2311,
+      "conversion_share": 0.0884,
+      "ppc_suggested": "0.39",
+      "ppc_bid_range": "$0.32-$0.49",
+      "avg_price": "$16.99",
+      "review_count": 5.0,
+      "rating": 3.5,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Clothing",
+        "Shoes",
+        "Jewelry",
+        "Tools",
+        "Home Improvement",
+        "Arts",
+        "Crafts",
+        "Sewing",
+        "Handmade"
+      ],
+      "top3": [
+        {
+          "asin": "B0GXFSP724",
+          "click_share": 0.0946,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0GWGFBGCN",
+          "click_share": 0.0721,
+          "conversion_share": 0.0619
+        },
+        {
+          "asin": "B0GX9DKDVC",
+          "click_share": 0.0648,
+          "conversion_share": 0.0265
+        }
+      ],
+      "top10_asins": [
+        "B0GX96WX2G",
+        "B0GX9DKDVC",
+        "B0CZ3W4M4P",
+        "B0BNM8NCTP",
+        "B0GWZM5VX8",
+        "B0GX17K44X",
+        "B0F32F3FZZ",
+        "B0GWGFBGCN",
+        "B0GWDLPQ1R",
+        "B0GYRVD9T8"
+      ]
+    },
+    {
+      "keyword": "balcony screen for apartments",
+      "keyword_zh": "公寓阳台屏风",
+      "ac_recommended": true,
+      "relevance": 3.0,
+      "aba_monthly_rank": 258910.0,
+      "aba_weekly_rank": 243256.0,
+      "monthly_searches": 6036.0,
+      "monthly_purchases": 22.0,
+      "purchase_rate": 0.0037,
+      "impressions": 171369.0,
+      "clicks": 2488.0,
+      "spr": 1.0,
+      "title_density": 0.0,
+      "competing_products": 255.0,
+      "supply_demand_ratio": 23.67,
+      "ad_competitors": 20.0,
+      "click_share": 0.4687,
+      "conversion_share": 0.1364,
+      "ppc_suggested": "0.49",
+      "ppc_bid_range": "$0.37-$0.55",
+      "avg_price": "$26.99",
+      "review_count": 523.0,
+      "rating": 4.5,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement",
+        "Pet Supplies",
+        "Baby"
+      ],
+      "top3": [
+        {
+          "asin": "B0CRH2W1BW",
+          "click_share": 0.3194,
+          "conversion_share": 0.1364
+        },
+        {
+          "asin": "B0CHFFRS51",
+          "click_share": 0.0868,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B09YKX9DS7",
+          "click_share": 0.0625,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0CRH2W1BW",
+        "B08Q82V4GC",
+        "B0G4BMR5BJ",
+        "B081KTSL6S",
+        "B0CB4N7CYP",
+        "B0F5BJ37LS",
+        "B0BYDWH4LV",
+        "B0CWRTCC5R",
+        "B0CZ8M61V5",
+        "B0GFDRZ9K5"
+      ]
+    },
+    {
+      "keyword": "pavers for outside walkway",
+      "keyword_zh": "室外人行道摊铺机",
+      "ac_recommended": true,
+      "relevance": 4.5,
+      "aba_monthly_rank": 127234.0,
+      "aba_weekly_rank": 134650.0,
+      "monthly_searches": 14076.0,
+      "monthly_purchases": 44.0,
+      "purchase_rate": 0.0031,
+      "impressions": 416452.0,
+      "clicks": 6152.0,
+      "spr": 1.0,
+      "title_density": 3.0,
+      "competing_products": 221.0,
+      "supply_demand_ratio": 63.69,
+      "ad_competitors": 80.0,
+      "click_share": 0.2554,
+      "conversion_share": 0.15,
+      "ppc_suggested": "0.71",
+      "ppc_bid_range": "$0.38-$0.89",
+      "avg_price": "$54.99",
+      "review_count": 197.0,
+      "rating": 4.0,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement",
+        "Industrial",
+        "Scientific"
+      ],
+      "top3": [
+        {
+          "asin": "B0F37G1LHG",
+          "click_share": 0.1395,
+          "conversion_share": 0.05
+        },
+        {
+          "asin": "B0D478Q4ML",
+          "click_share": 0.0668,
+          "conversion_share": 0.05
+        },
+        {
+          "asin": "B09XQXPXX3",
+          "click_share": 0.0491,
+          "conversion_share": 0.05
+        }
+      ],
+      "top10_asins": [
+        "B0F37G1LHG",
+        "B0GVPQ55GH",
+        "B0GF6GTDPQ",
+        "B0CMXZ5VSH",
+        "B0D478Q4ML",
+        "B0DHRTC92T",
+        "B0FDH7DFSX",
+        "B0FDN5S2FF",
+        "B0FGF8H5RK",
+        "B0CPPN2K2M"
+      ]
+    },
+    {
+      "keyword": "rubber pavers",
+      "keyword_zh": "橡胶摊铺机",
+      "ac_recommended": true,
+      "relevance": 1.5,
+      "aba_monthly_rank": 134266.0,
+      "aba_weekly_rank": 176543.0,
+      "monthly_searches": 13752.0,
+      "monthly_purchases": 41.0,
+      "purchase_rate": 0.003,
+      "impressions": 371911.0,
+      "clicks": 6044.0,
+      "spr": 1.0,
+      "title_density": 3.0,
+      "competing_products": 558.0,
+      "supply_demand_ratio": 24.65,
+      "ad_competitors": 31.0,
+      "click_share": 0.3181,
+      "conversion_share": 0.0,
+      "ppc_suggested": "0.79",
+      "ppc_bid_range": "$0.59-$0.99",
+      "avg_price": "$22.99",
+      "review_count": 186.0,
+      "rating": 4.5,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Tools",
+        "Home Improvement",
+        "Sports",
+        "Outdoors",
+        "Industrial",
+        "Scientific"
+      ],
+      "top3": [
+        {
+          "asin": "B0GBYMQN5Q",
+          "click_share": 0.1349,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0BG943HVZ",
+          "click_share": 0.1043,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0DHRTC92T",
+          "click_share": 0.0789,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0DHRTC92T",
+        "B0GBYMQN5Q",
+        "B0BG944G74",
+        "B09XQXPXX3",
+        "B0BG94H8TT",
+        "B0GLQH4453",
+        "B0F37G1LHG",
+        "B0GF6FQBMM",
+        "B0GF6GTDPQ",
+        "B0CM6N97XT"
+      ]
+    },
+    {
+      "keyword": "living room wall decor",
+      "keyword_zh": "客厅墙面装饰",
+      "ac_recommended": true,
+      "relevance": 3.0,
+      "aba_monthly_rank": 28251.0,
+      "aba_weekly_rank": 29281.0,
+      "monthly_searches": 48789.0,
+      "monthly_purchases": 132.0,
+      "purchase_rate": 0.0027,
+      "impressions": 1190155.0,
+      "clicks": 20416.0,
+      "spr": 3.0,
+      "title_density": 0.0,
+      "competing_products": 2147.0,
+      "supply_demand_ratio": 22.72,
+      "ad_competitors": 379.0,
+      "click_share": 0.1035,
+      "conversion_share": 0.04,
+      "ppc_suggested": "0.40",
+      "ppc_bid_range": "$0.32-$0.55",
+      "avg_price": "$29.99",
+      "review_count": 690.0,
+      "rating": 4.5,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Home",
+        "Kitchen",
+        "Garden",
+        "Outdoor",
+        "Musical Instruments",
+        "Arts",
+        "Crafts",
+        "Sewing",
+        "Industrial",
+        "Scientific"
+      ],
+      "top3": [
+        {
+          "asin": "B0CZRJH33N",
+          "click_share": 0.042,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0C9QFGJ3V",
+          "click_share": 0.0367,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0B3WQGVPW",
+          "click_share": 0.0248,
+          "conversion_share": 0.04
+        }
+      ],
+      "top10_asins": [
+        "B0DHW91KK4",
+        "B0C9QFGJ3V",
+        "B0GTQB69LK",
+        "B0GW7WNFSB",
+        "B0H1DLVLN8",
+        "B0GR8VP7WJ",
+        "B0GK6PWMGD",
+        "B0BTD82CYG",
+        "B0FRMTSRFM",
+        "B0CZRJH33N"
+      ]
+    },
+    {
+      "keyword": "privacy wall outdoor",
+      "keyword_zh": "户外隐私墙",
+      "ac_recommended": true,
+      "relevance": 1.5,
+      "aba_monthly_rank": 144166.0,
+      "aba_weekly_rank": 260603.0,
+      "monthly_searches": 12516.0,
+      "monthly_purchases": 19.0,
+      "purchase_rate": 0.0015,
+      "impressions": 330972.0,
+      "clicks": 5065.0,
+      "spr": 1.0,
+      "title_density": 2.0,
+      "competing_products": 403.0,
+      "supply_demand_ratio": 31.06,
+      "ad_competitors": 120.0,
+      "click_share": 0.1925,
+      "conversion_share": 0.0,
+      "ppc_suggested": "0.63",
+      "ppc_bid_range": "$0.38-$0.75",
+      "avg_price": "$85.85",
+      "review_count": 236.0,
+      "rating": 4.0,
+      "categories": [
+        "Garden",
+        "Outdoor"
+      ],
+      "top3": [
+        {
+          "asin": "B0DWWTH2PC",
+          "click_share": 0.1222,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0DK6P3N2V",
+          "click_share": 0.037,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0GHYHS2VK",
+          "click_share": 0.0333,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B09MTX9RLF",
+        "B0GMG645W7",
+        "B0DWWTH2PC",
+        "B0CB4Q9SN5",
+        "B0DPHV89VD",
+        "B09574GPJJ",
+        "B0CTPD9NK9",
+        "B0FR9KX4T8",
+        "B0FFB1PJLB",
+        "B0G339J8HT"
+      ]
+    },
+    {
+      "keyword": "outdoor privacy",
+      "keyword_zh": "户外隐私",
+      "ac_recommended": true,
+      "relevance": 2.2,
+      "aba_monthly_rank": 156339.0,
+      "aba_weekly_rank": 194529.0,
+      "monthly_searches": 10952.0,
+      "monthly_purchases": 14.0,
+      "purchase_rate": 0.0013,
+      "impressions": 275132.0,
+      "clicks": 4793.0,
+      "spr": 1.0,
+      "title_density": 19.0,
+      "competing_products": 461.0,
+      "supply_demand_ratio": 23.76,
+      "ad_competitors": 38.0,
+      "click_share": 0.1564,
+      "conversion_share": 0.0,
+      "ppc_suggested": "0.48",
+      "ppc_bid_range": "$0.36-$0.67",
+      "avg_price": "$63.99",
+      "review_count": 665.0,
+      "rating": 4.0,
+      "categories": [
+        "Garden",
+        "Outdoor",
+        "Sports",
+        "Outdoors",
+        "Tools",
+        "Home Improvement"
+      ],
+      "top3": [
+        {
+          "asin": "B0FZLGQ6ZR",
+          "click_share": 0.0642,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0FR9KX4T8",
+          "click_share": 0.0475,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B08Y89MQNC",
+          "click_share": 0.0447,
+          "conversion_share": 0.0
+        }
+      ],
+      "top10_asins": [
+        "B0DPHV89VD",
+        "B0FZLGQ6ZR",
+        "B0CBQ7KF5Z",
+        "B0GBVKHVSY",
+        "B0DNDBP35F",
+        "B0FR9KX4T8",
+        "B08T1DGHJR",
+        "B0FQ4XSR45",
+        "B0DWWTH2PC",
+        "B07GXN1SB3"
+      ]
+    },
+    {
+      "keyword": "piso para patio exterior",
+      "keyword_zh": "Piso para 露台外部",
+      "ac_recommended": true,
+      "relevance": 5.2,
+      "aba_monthly_rank": 263813.0,
+      "aba_weekly_rank": 196859.0,
+      "monthly_searches": 5920.0,
+      "monthly_purchases": 4.0,
+      "purchase_rate": 0.0006,
+      "impressions": 171346.0,
+      "clicks": 2711.0,
+      "spr": 1.0,
+      "title_density": 0.0,
+      "competing_products": 268.0,
+      "supply_demand_ratio": 22.09,
+      "ad_competitors": 39.0,
+      "click_share": 0.2994,
+      "conversion_share": 0.2,
+      "ppc_suggested": "0.60",
+      "ppc_bid_range": "$0.50-$0.76",
+      "avg_price": "$44.99",
+      "review_count": 934.0,
+      "rating": 4.4,
+      "categories": [
+        "Tools",
+        "Home Improvement",
+        "Garden",
+        "Outdoor",
+        "Industrial",
+        "Scientific"
+      ],
+      "top3": [
+        {
+          "asin": "B0G6KWGCTS",
+          "click_share": 0.1469,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B09QPZZVVZ",
+          "click_share": 0.096,
+          "conversion_share": 0.0
+        },
+        {
+          "asin": "B0CLVGGDKD",
+          "click_share": 0.0565,
+          "conversion_share": 0.2
+        }
+      ],
+      "top10_asins": [
+        "B09QPZZVVZ",
+        "B0D533XWXZ",
+        "B0G6KWGCTS",
+        "B0G3RK885C",
+        "B09XQXPXX3",
+        "B0FHQJ49FX",
+        "B0GDDJBPVQ",
+        "B07KLTXPZP",
+        "B0CQMTNSQ8",
+        "B09YCTD74F"
+      ]
+    }
+  ]
+}
