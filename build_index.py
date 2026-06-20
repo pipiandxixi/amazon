@@ -19,7 +19,48 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 SOURCE = ROOT / "products" / "manual_asins_details.json"
 CATEGORY_POOL = ROOT / "category" / "category_opportunity_pool.json"
+SCENARIO_DIR = ROOT / "keyword" / "scenario"
 OUTPUT = ROOT / "index.html"
+
+_SRC_LABEL = {
+    "wind chime":    ("wind",  "Wind Chime",    "kw-src-wind"),
+    "metal yard art":("metal", "Metal Yard Art", "kw-src-metal"),
+    "patio decor":   ("patio", "Patio Decor",   "kw-src-patio"),
+}
+
+
+def load_keywords() -> list[dict]:
+    seen: dict[str, dict] = {}
+    for path in sorted(SCENARIO_DIR.glob("*mining*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        seed = data.get("seed_keyword", "")
+        src_key, src_label, src_cls = _SRC_LABEL.get(seed, (seed[:5], seed, "kw-src-wind"))
+        for kw in data.get("keywords", []):
+            name = kw.get("keyword", "").strip().lower()
+            if not name or name in seen:
+                continue
+            top3 = kw.get("top3") or []
+            aba_top1 = top3[0]["click_share"] if top3 else None
+            aba_top3 = sum(t["click_share"] for t in top3[:3]) if top3 else None
+            seen[name] = {
+                "keyword":       kw.get("keyword", ""),
+                "keyword_zh":    kw.get("keyword_zh", ""),
+                "source_seed":   seed,
+                "source_label":  src_label,
+                "source_cls":    src_cls,
+                "ac_recommended": kw.get("ac_recommended", False),
+                "monthly_searches": kw.get("monthly_searches") or 0,
+                "purchase_rate": kw.get("purchase_rate"),
+                "ppc_suggested": kw.get("ppc_suggested"),
+                "title_density": kw.get("title_density"),
+                "supply_demand_ratio": kw.get("supply_demand_ratio"),
+                "competing_products": kw.get("competing_products"),
+                "avg_price":     kw.get("avg_price"),
+                "aba_top1":      aba_top1,
+                "aba_top3":      aba_top3,
+                "relevance":     kw.get("relevance"),
+            }
+    return sorted(seen.values(), key=lambda k: k["monthly_searches"], reverse=True)
 
 SELLERSPRITE_URL = (
     "https://www.sellersprite.com/v3/competitor-lookup"
@@ -476,10 +517,189 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
   .product-card { grid-template-columns: 1fr; }
   .thumb { max-width: 180px; }
   .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}"""
+}
+/* ── Tabs ── */
+.tab-nav { display: flex; gap: 0; border-bottom: 2px solid var(--line); margin-top: 14px; }
+.tab-btn { background: none; border: none; border-bottom: 3px solid transparent; margin-bottom: -2px; padding: 8px 20px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; transition: color .15s, border-color .15s; }
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+/* ── Keyword table ── */
+.kw-toolbar { display: flex; gap: 12px; align-items: center; padding: 14px 0 10px; flex-wrap: wrap; }
+.kw-search { flex: 1; min-width: 220px; border: 1px solid var(--line); border-radius: 6px; padding: 9px 13px; font-size: 14px; outline: none; }
+.kw-search:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15,118,110,.12); }
+.kw-count { color: var(--muted); font-size: 13px; white-space: nowrap; }
+.kw-table-wrap { overflow-x: auto; }
+table.kw-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.kw-table th { position: sticky; top: 0; background: #f1f5f9; border: 1px solid var(--line); padding: 8px 10px; text-align: left; white-space: nowrap; cursor: pointer; user-select: none; font-size: 12px; }
+table.kw-table th:hover { background: #e2e8f0; }
+table.kw-table th.sorted-asc::after { content: " ▲"; }
+table.kw-table th.sorted-desc::after { content: " ▼"; }
+table.kw-table td { border: 1px solid #e5e7eb; padding: 7px 10px; vertical-align: middle; }
+table.kw-table tr.kw-hidden { display: none; }
+table.kw-table tbody tr:hover { background: #f8fafc; }
+.kw-name { font-weight: 600; color: var(--text); max-width: 260px; }
+.kw-src { display: inline-block; border-radius: 999px; padding: 2px 8px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.kw-src-wind  { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.kw-src-metal { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+.kw-src-patio { background: #f0fdf4; color: #166534; border: 1px solid #86efac; }
+.kw-num { text-align: right; font-variant-numeric: tabular-nums; }
+.c-great { color: #166534; font-weight: 700; }
+.c-good  { color: #0f766e; }
+.c-warn  { color: #b45309; }
+.c-bad   { color: #991b1b; font-weight: 700; }
+.ac-yes  { color: #166534; font-weight: 700; }"""
 
 
-def render_index(products: list[dict], pool_index: list[tuple]) -> str:
+def _fmt_pct(v) -> str:
+    if v is None:
+        return "—"
+    return f"{float(v)*100:.1f}%"
+
+
+def _fmt_ppc(v) -> str:
+    if v is None or str(v).strip() == "":
+        return "—"
+    try:
+        return f"${float(str(v).replace('$','').strip()):.2f}"
+    except ValueError:
+        return str(v)
+
+
+def _color_pr(v) -> str:
+    if v is None:
+        return ""
+    p = float(v) * 100
+    if p >= 8:
+        return "c-great"
+    if p >= 5:
+        return "c-good"
+    if p >= 2:
+        return "c-warn"
+    return "c-bad"
+
+
+def _color_ppc(v) -> str:
+    if v is None or str(v).strip() == "":
+        return ""
+    try:
+        p = float(str(v).replace("$", "").strip())
+    except ValueError:
+        return ""
+    if p <= 0.45:
+        return "c-great"
+    if p <= 0.65:
+        return "c-good"
+    if p <= 0.80:
+        return "c-warn"
+    return "c-bad"
+
+
+def _color_td(v) -> str:
+    if v is None:
+        return ""
+    td = int(v)
+    if td <= 4:
+        return "c-great"
+    if td <= 10:
+        return "c-good"
+    if td <= 20:
+        return "c-warn"
+    return "c-bad"
+
+
+def _color_sdr(v) -> str:
+    if v is None:
+        return ""
+    s = float(v)
+    if s >= 80:
+        return "c-great"
+    if s >= 30:
+        return "c-good"
+    if s >= 10:
+        return "c-warn"
+    return "c-bad"
+
+
+def _color_aba(v) -> str:
+    if v is None:
+        return ""
+    a = float(v) * 100
+    if a <= 20:
+        return "c-great"
+    if a <= 35:
+        return "c-good"
+    if a <= 50:
+        return "c-warn"
+    return "c-bad"
+
+
+def render_keyword_table(keywords: list[dict]) -> str:
+    rows = []
+    for i, kw in enumerate(keywords):
+        pr_cls   = _color_pr(kw["purchase_rate"])
+        ppc_cls  = _color_ppc(kw["ppc_suggested"])
+        td_cls   = _color_td(kw["title_density"])
+        sdr_cls  = _color_sdr(kw["supply_demand_ratio"])
+        ab1_cls  = _color_aba(kw["aba_top1"])
+        ab3_cls  = _color_aba(kw["aba_top3"])
+        ac_badge = '<span class="ac-yes">✓ AC</span>' if kw["ac_recommended"] else ""
+        src_span = (f'<span class="kw-src {kw["source_cls"]}">'
+                    f'{kw["source_label"]}</span>')
+        ms = kw["monthly_searches"]
+        ms_fmt = f"{ms:,}" if ms else "—"
+        rows.append(
+            f'<tr data-ms="{ms}" data-pr="{kw["purchase_rate"] or 0}" '
+            f'data-ppc="{kw["ppc_suggested"] or 9999}" '
+            f'data-td="{kw["title_density"] if kw["title_density"] is not None else 9999}" '
+            f'data-sdr="{kw["supply_demand_ratio"] or 0}" '
+            f'data-aba3="{kw["aba_top3"] or 1}">'
+            f'<td class="kw-name">{kw["keyword"]}<br>'
+            f'<small style="color:var(--muted);font-weight:400">{kw["keyword_zh"]}</small> {ac_badge}</td>'
+            f'<td>{src_span}</td>'
+            f'<td class="kw-num">{ms_fmt}</td>'
+            f'<td class="kw-num {pr_cls}">{_fmt_pct(kw["purchase_rate"])}</td>'
+            f'<td class="kw-num {ppc_cls}">{_fmt_ppc(kw["ppc_suggested"])}</td>'
+            f'<td class="kw-num {td_cls}">{kw["title_density"] if kw["title_density"] is not None else "—"}</td>'
+            f'<td class="kw-num {sdr_cls}">{kw["supply_demand_ratio"] if kw["supply_demand_ratio"] is not None else "—"}</td>'
+            f'<td class="kw-num {ab1_cls}">{_fmt_pct(kw["aba_top1"])}</td>'
+            f'<td class="kw-num {ab3_cls}">{_fmt_pct(kw["aba_top3"])}</td>'
+            f'<td class="kw-num">{kw["avg_price"] or "—"}</td>'
+            f'<td class="kw-num">{kw["competing_products"] if kw["competing_products"] is not None else "—"}</td>'
+            f'</tr>'
+        )
+    rows_html = "\n".join(rows)
+    return f"""
+<div class="kw-toolbar">
+  <input id="kwSearch" class="kw-search" type="search" placeholder="搜索关键词…" autocomplete="off">
+  <span class="kw-count">共 <b id="kwCount">{len(keywords)}</b> / {len(keywords)} 个关键词</span>
+</div>
+<div class="kw-table-wrap">
+<table class="kw-table" id="kwTable">
+<thead>
+<tr>
+  <th data-col="name">关键词</th>
+  <th data-col="src">来源</th>
+  <th data-col="ms" class="sorted-desc">月搜索量</th>
+  <th data-col="pr">购买率</th>
+  <th data-col="ppc">PPC 建议</th>
+  <th data-col="td">标题密度</th>
+  <th data-col="sdr">需供比 SDR</th>
+  <th data-col="aba1">ABA Top1</th>
+  <th data-col="aba3">ABA Top3</th>
+  <th data-col="price">均价</th>
+  <th data-col="cp">竞品数</th>
+</tr>
+</thead>
+<tbody>
+{rows_html}
+</tbody>
+</table>
+</div>"""
+
+
+def render_index(products: list[dict], pool_index: list[tuple], keywords: list[dict] | None = None) -> str:
     from patch_ip_risk import assess_ip_risk
     scored_items = []
     skipped_high = 0
@@ -510,6 +730,10 @@ def render_index(products: list[dict], pool_index: list[tuple]) -> str:
     total_tags = len({tag for p, *_ in scored_items for tag in (p.get("scene_tags") or [])})
     cards_html = "".join(render_card(*item) for item in scored_items)
 
+    kw_list = keywords or []
+    kw_section = render_keyword_table(kw_list) if kw_list else "<p style='color:var(--muted)'>暂无关键词数据</p>"
+    total_kw = len(kw_list)
+
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -531,29 +755,48 @@ def render_index(products: list[dict], pool_index: list[tuple]) -> str:
       <div class="summary">
         <div><b>{total_products}</b><small>候选产品</small></div>
         <div><b>{total_cats}</b><small>Leaf Categories</small></div>
-        <div><b>{total_tags}</b><small>场景标签</small></div>
+        <div><b>{total_kw}</b><small>关键词</small></div>
         <div><b>{len(products)}</b><small>总观察产品</small></div>
       </div>
     </div>
-    <div class="search-row">
-      <input id="productSearch" class="search-box" type="search" placeholder="搜索 title / ASIN / 品牌 / 类目 / 场景标签；输入「推荐新店」筛选精选产品" autocomplete="off">
-      <div class="match-count"><b id="visibleCount">{total_products}</b> / {total_products} products</div>
-    </div>
+    <nav class="tab-nav">
+      <button class="tab-btn active" onclick="switchTab('products', this)">产品候选 ({total_products})</button>
+      <button class="tab-btn" onclick="switchTab('keywords', this)">关键词机会 ({total_kw})</button>
+    </nav>
   </div>
 </header>
 <main>
-  <section class="catalog">
-    <div class="catalog-head">
-      <div>
-        <h2>全部商品</h2>
-        <p>按综合评分和月销量排序；每张卡片保留原始商品指标，并附加场景、情绪、用途标签。</p>
+  <!-- Products tab -->
+  <div id="tab-products" class="tab-panel active">
+    <div style="padding: 12px 0 0">
+      <div class="search-row" style="margin-top:0">
+        <input id="productSearch" class="search-box" type="search" placeholder="搜索 title / ASIN / 品牌 / 类目 / 场景标签；输入「推荐新店」筛选精选产品" autocomplete="off">
+        <div class="match-count"><b id="visibleCount">{total_products}</b> / {total_products} products</div>
       </div>
     </div>
-    <div id="emptyState" class="empty-state">没有匹配的商品。</div>
-    <div id="productGrid" class="product-grid">{cards_html}</div>
-  </section>
+    <section class="catalog">
+      <div id="emptyState" class="empty-state">没有匹配的商品。</div>
+      <div id="productGrid" class="product-grid">{cards_html}</div>
+    </section>
+  </div>
+  <!-- Keywords tab -->
+  <div id="tab-keywords" class="tab-panel">
+    <div style="padding: 10px 0 4px">
+      <p style="color:var(--muted);font-size:13px;margin:0">来源：3 个关键词挖掘文件（wind chime / metal yard art / patio decor），月搜索 ≥ 5,000，PPC ≤ $0.80。颜色含义：<span class="c-great">■ 优秀</span> <span class="c-good">■ 良好</span> <span class="c-warn">■ 注意</span> <span class="c-bad">■ 风险</span></p>
+    </div>
+    {kw_section}
+  </div>
 </main>
 <script>
+// ── Tab switching ──
+function switchTab(name, btn) {{
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  btn.classList.add('active');
+}}
+
+// ── Product search ──
 const searchInput = document.getElementById('productSearch');
 const cards = Array.from(document.querySelectorAll('.product-card'));
 const visibleCount = document.getElementById('visibleCount');
@@ -577,6 +820,77 @@ function applySearch() {{
 }}
 
 searchInput.addEventListener('input', applySearch);
+
+// ── Keyword search + sort ──
+const kwSearch = document.getElementById('kwSearch');
+const kwCount = document.getElementById('kwCount');
+const kwTable = document.getElementById('kwTable');
+
+function applyKwSearch() {{
+  if (!kwSearch || !kwTable) return;
+  const term = kwSearch.value.toLowerCase().trim();
+  let count = 0;
+  const rows = kwTable.querySelectorAll('tbody tr');
+  for (const row of rows) {{
+    const text = row.textContent.toLowerCase();
+    const hidden = term && !text.includes(term);
+    row.classList.toggle('kw-hidden', hidden);
+    if (!hidden) count++;
+  }}
+  if (kwCount) kwCount.textContent = count;
+}}
+
+if (kwSearch) kwSearch.addEventListener('input', applyKwSearch);
+
+// sortable table
+let sortCol = 'ms', sortDesc = true;
+
+const colDataKey = {{
+  ms: r => parseFloat(r.dataset.ms) || 0,
+  pr: r => parseFloat(r.dataset.pr) || 0,
+  ppc: r => parseFloat(r.dataset.ppc) || 9999,
+  td: r => parseFloat(r.dataset.td) || 9999,
+  sdr: r => parseFloat(r.dataset.sdr) || 0,
+  aba3: r => parseFloat(r.dataset.aba3) || 1,
+  name: r => r.cells[0].textContent.trim(),
+  src: r => r.cells[1].textContent.trim(),
+  price: r => parseFloat((r.cells[9].textContent || '0').replace(/[^0-9.]/g, '')) || 0,
+  cp: r => parseFloat(r.cells[10].textContent) || 0,
+  aba1: r => parseFloat(r.dataset.aba3) || 1,
+}};
+
+const colIndex = {{ms:2, pr:3, ppc:4, td:5, sdr:6, aba1:7, aba3:8, price:9, cp:10, name:0, src:1}};
+
+function sortKwTable(col) {{
+  if (!kwTable) return;
+  if (sortCol === col) {{
+    sortDesc = !sortDesc;
+  }} else {{
+    sortCol = col;
+    sortDesc = ['ms','pr','sdr','price','cp'].includes(col) ? true : false;
+  }}
+  const ths = kwTable.querySelectorAll('thead th');
+  ths.forEach(th => th.classList.remove('sorted-asc','sorted-desc'));
+  const idx = colIndex[col];
+  if (idx !== undefined) {{
+    ths[idx].classList.add(sortDesc ? 'sorted-desc' : 'sorted-asc');
+  }}
+  const tbody = kwTable.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const getter = colDataKey[col] || (r => r.textContent);
+  rows.sort((a, b) => {{
+    const va = getter(a), vb = getter(b);
+    if (typeof va === 'string') return sortDesc ? vb.localeCompare(va) : va.localeCompare(vb);
+    return sortDesc ? vb - va : va - vb;
+  }});
+  rows.forEach(r => tbody.appendChild(r));
+}}
+
+if (kwTable) {{
+  kwTable.querySelectorAll('thead th').forEach(th => {{
+    th.addEventListener('click', () => sortKwTable(th.dataset.col || 'ms'));
+  }});
+}}
 </script>
 </body>
 </html>
@@ -596,7 +910,9 @@ def main() -> None:
     pool_index = build_pool_index(pool)
     print(f"Loaded {len(pool)} category pool entries")
 
-    content = render_index(products, pool_index)
+    keywords = load_keywords()
+
+    content = render_index(products, pool_index, keywords)
     # Normalise line endings
     content = "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
     OUTPUT.write_text(content, encoding="utf-8")
