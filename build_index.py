@@ -296,6 +296,8 @@ def render_card(product: dict, score: int, reasons: list[str], cautions: list[st
     image_url = product.get("image_url") or ""
     tags = product.get("scene_tags") or classify_scene_tags(product)
     tags_html = "".join(f'<span class="tag">{esc(tag)}</span>' for tag in tags)
+    is_pick = bool(product.get("new_store_pick"))
+    pick_reason = product.get("pick_reason", "")
     search_text = " ".join(
         str(value or "")
         for value in (
@@ -304,6 +306,7 @@ def render_card(product: dict, score: int, reasons: list[str], cautions: list[st
             product.get("brand"),
             product.get("leaf_category"),
             " ".join(tags),
+            "推荐新店 new store pick" if is_pick else "",
         )
     ).lower()
 
@@ -317,14 +320,20 @@ def render_card(product: dict, score: int, reasons: list[str], cautions: list[st
         f'<div class="cautions">{esc("；".join(cautions))}</div>' if cautions else ""
     )
 
+    pick_class = " is-pick" if is_pick else ""
+    pick_badge_html = (
+        f'<span class="pick-badge" title="{esc(pick_reason)}">★ 推荐新店</span>'
+        if is_pick else ""
+    )
+
     return f"""
-        <article class="product-card" data-search="{esc(search_text)}">
+        <article class="product-card{pick_class}" data-search="{esc(search_text)}">
           <a class="thumb" href="{esc(amazon_url)}" target="_blank" rel="noreferrer">
             {image_html}
           </a>
           <div class="product-main">
             <div class="product-topline">
-              <a class="asin" href="{esc(amazon_url)}" target="_blank" rel="noreferrer">{esc(asin)}</a>
+              <a class="asin" href="{esc(amazon_url)}" target="_blank" rel="noreferrer">{esc(asin)}</a>{pick_badge_html}
               <span class="score">Score {score}</span>
             </div>
             <h3>{esc(short(product.get("title", "")))}</h3>
@@ -453,6 +462,8 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
 .submetrics span { border: 1px solid #e5e7eb; border-radius: 6px; padding: 3px 6px; background: #fff; }
 .reasons { margin: 9px 0 0; padding-left: 18px; color: var(--good); font-size: 12px; line-height: 1.45; }
 .cautions { margin-top: 8px; color: var(--warn); font-size: 12px; }
+.pick-badge { display: inline-flex; align-items: center; gap: 4px; border-radius: 6px; padding: 2px 8px; font-size: 11px; font-weight: 700; background: #fdf4ff; border: 1px solid #d946ef; color: #86198f; margin-left: 6px; white-space: nowrap; cursor: help; }
+.product-card.is-pick { border-color: #e879f9; box-shadow: 0 0 0 2px #fdf4ff; }
 @media (max-width: 900px) {
   .title-row { flex-direction: column; }
   .summary { min-width: 0; width: 100%; grid-template-columns: repeat(2, 1fr); }
@@ -479,6 +490,7 @@ def render_index(products: list[dict], pool_index: list[tuple]) -> str:
 
     scored_items.sort(
         key=lambda item: (
+            1 if item[0].get("new_store_pick") else 0,
             item[1],
             _parse_int(item[0].get("monthly_sales")) or 0,
             item[0].get("asin") or "",
@@ -507,7 +519,7 @@ def render_index(products: list[dict], pool_index: list[tuple]) -> str:
     <div class="title-row">
       <div>
         <h1>Amazon 产品候选清单</h1>
-        <p class="subtitle">平铺展示全部候选商品，可按 title、ASIN、品牌、leaf category 和场景标签搜索。数据源：products/manual_asins_details.json。</p>
+        <p class="subtitle">平铺展示全部候选商品，可按 title、ASIN、品牌、leaf category 和场景标签搜索；输入 <b>推荐新店</b> 快速筛选新店精选产品。数据源：products/manual_asins_details.json。</p>
       </div>
       <div class="summary">
         <div><b>{total_products}</b><small>候选产品</small></div>
@@ -517,7 +529,7 @@ def render_index(products: list[dict], pool_index: list[tuple]) -> str:
       </div>
     </div>
     <div class="search-row">
-      <input id="productSearch" class="search-box" type="search" placeholder="搜索 title / ASIN / 品牌 / 类目 / 场景标签，例如 patio、gift、户外庭院" autocomplete="off">
+      <input id="productSearch" class="search-box" type="search" placeholder="搜索 title / ASIN / 品牌 / 类目 / 场景标签；输入「推荐新店」筛选精选产品" autocomplete="off">
       <div class="match-count"><b id="visibleCount">{total_products}</b> / {total_products} products</div>
     </div>
   </div>
