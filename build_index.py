@@ -480,13 +480,20 @@ h3 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: 0; }
 
 
 def render_index(products: list[dict], pool_index: list[tuple]) -> str:
+    from patch_ip_risk import assess_ip_risk
     scored_items = []
+    skipped_high = 0
     for p in products:
         if not p.get("asin"):
+            continue
+        if assess_ip_risk(p)[0] == "high":
+            skipped_high += 1
             continue
         pool_entry = match_pool(p.get("leaf_category") or "", pool_index)
         score, reasons, cautions = score_product(p, pool_entry)
         scored_items.append((p, score, reasons, cautions))
+    if skipped_high:
+        print(f"  Excluded {skipped_high} high-risk products from index")
 
     scored_items.sort(
         key=lambda item: (
