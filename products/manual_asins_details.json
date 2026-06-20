@@ -1,8 +1,8 @@
 {
   "source": "manual competitor lookup scraper",
   "timestamp": "2026-06-16T06:20:23Z",
-  "asin_count": 767,
-  "scraped_count": 767,
+  "asin_count": 768,
+  "scraped_count": 768,
   "products": [
     {
       "asin": "B0DK4VM1SX",
@@ -23908,6 +23908,37 @@
         "灯光氛围",
         "桌面摆件",
         "礼品送礼"
+      ]
+    },
+    {
+      "asin": "B0GKFM769G",
+      "parent_asin": "B0H4FR27K1",
+      "title": "36\" Memorial Wind Chimes for Outside, Sympathy Gift for Loss of Loved One, Hummingbird Wind Chime for Mom Dad, Bereavement Remembrance Funeral Condolence Gift",
+      "brand": "PIXPRI",
+      "monthly_sales": "1,539",
+      "sales_growth": "470.75%",
+      "monthly_revenue": "$46,139",
+      "variants": "3",
+      "price": "$29.98",
+      "reviews": "43",
+      "monthly_new_reviews": "28",
+      "rating": "4.8",
+      "review_rate": "1.82%",
+      "fba_fee": "$5.61",
+      "profit_margin": "66%",
+      "listing_date": "2026-03-07",
+      "listing_age": "3个月",
+      "leaf_rank": "9",
+      "leaf_category": "Wind Chimes",
+      "sellers": "1",
+      "package_weight": "1.48 pounds",
+      "raw_metrics": "9 | - | - | 1,539 | 470.75% | $46,139 | 1K+ | $38K+ | 3 | $29.98 | - | 43 | 28 | 4.8 | 1.82% | $5.61 | 66% | 2026-03-07 | 3个月 | FBA | -",
+      "image_url": "",
+      "scene_tags": [
+        "花园装饰",
+        "礼品送礼",
+        "纪念慰问",
+        "宠物鸟类"
       ]
     }
   ]
